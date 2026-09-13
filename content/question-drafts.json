@@ -1,0 +1,1174 @@
+[
+  {
+    "grade": "K",
+    "subject": "Math",
+    "weekOf": "2026-08-10",
+    "document": "linked-k-math.json",
+    "section": "August 10–14, 2026",
+    "evidence": "I can use positional words to describe the location of objects.",
+    "standard": "K.GSR.8.2",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "position-above",
+        1,
+        "The ball is above the box. Is it below the box?",
+        "No. It is above the box."
+      ],
+      [
+        "position-follow",
+        2,
+        "Put your hand above your head.",
+        "Teacher checks: the hand is above the student’s head."
+      ],
+      [
+        "position-two",
+        3,
+        "Put one hand beside your head and one above it.",
+        "Teacher checks: one hand is beside the head and the other is above it."
+      ]
+    ],
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-31"
+    ]
+  },
+  {
+    "grade": "K",
+    "subject": "Math",
+    "weekOf": "2026-08-17",
+    "document": "linked-k-math.json",
+    "section": "August 17–21, 2026",
+    "evidence": "I can identify which of two objects is longer or shorter.",
+    "standard": "K.GSR.8.2",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "length-name",
+        1,
+        "Point to the longer strip.",
+        "Teacher checks: student points to the visibly longer strip.",
+        "Show two strips of clearly different lengths, lined up at one end."
+      ],
+      [
+        "length-compare",
+        2,
+        "The red strip is longer than the blue strip. Which is shorter?",
+        "The blue strip."
+      ],
+      [
+        "length-explain",
+        3,
+        "Show which strip is shorter. Tell how you know.",
+        "Teacher checks: student aligns the ends and identifies the strip that does not reach as far.",
+        "Show two strips of different lengths."
+      ]
+    ],
+    "alignedWeeks": [
+      "2026-08-17",
+      "2026-08-31"
+    ]
+  },
+  {
+    "grade": "K",
+    "subject": "Literacy",
+    "weekOf": "2026-08-03",
+    "document": "linked-k-literacy.json",
+    "section": "Aug 3–7, Unit 1 Sessions 1–2",
+    "evidence": "ML Unit 1 - Session 1: Introduce Letter Mm",
+    "standard": null,
+    "session": "Sessions 1–2",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "letter-m",
+        1,
+        "What letter is this? M",
+        "M (em)."
+      ],
+      [
+        "letter-match",
+        2,
+        "Which matches M: m or t?",
+        "m."
+      ],
+      [
+        "letter-sound",
+        3,
+        "Say the sound for M. Then say a word that starts with it.",
+        "Teacher checks: /m/ and a word beginning with /m/."
+      ]
+    ]
+  },
+  {
+    "grade": "K",
+    "subject": "Literacy",
+    "weekOf": "2026-08-31",
+    "document": "linked-k-literacy.json",
+    "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+    "evidence": "Weekly Sight Words:  in, is, you, that, it",
+    "standard": null,
+    "session": "Sessions 18–22",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "word-in",
+        1,
+        "Point to “in”: in · is · it",
+        "in."
+      ],
+      [
+        "word-you",
+        2,
+        "Find “you” on our word wall.",
+        "Teacher checks: student identifies the word “you”.",
+        "Display the five listed sight words: in, is, you, that, it."
+      ],
+      [
+        "word-sentence",
+        3,
+        "Say a sentence using “it”.",
+        "Teacher checks: a complete spoken thought using “it” meaningfully."
+      ]
+    ]
+  },
+  {
+    "grade": "K",
+    "subject": "Science",
+    "weekOf": "2026-08-31",
+    "document": "linked-k-science-social.json",
+    "section": "Aug 31–Sep 4, Time Patterns",
+    "evidence": "I can classify objects according to what is seen in the day sky, night sky, or both.",
+    "standard": "SKE1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "sky-name",
+        1,
+        "Name one thing you observed in the day sky.",
+        "Teacher checks: response matches a recorded class observation.",
+        "Have the class’s day-sky observations available."
+      ],
+      [
+        "sky-sort",
+        2,
+        "Sort this sky picture: day, night, or both.",
+        "Teacher checks: classification matches the picture and class observations; accept more than one category when justified.",
+        "Select a sky picture from the taught lesson with an agreed classification."
+      ],
+      [
+        "sky-compare",
+        3,
+        "Tell one way our day and night sky pictures differ.",
+        "Teacher checks: student describes a visible difference supported by the two pictures.",
+        "Display one day-sky and one night-sky picture from the lesson."
+      ]
+    ]
+  },
+  {
+    "grade": "K",
+    "subject": "Social Studies",
+    "weekOf": "2026-08-10",
+    "document": "linked-k-science-social.json",
+    "section": "Aug 10–14, Citizenship",
+    "evidence": "I can demonstrate and explain what it means to be a good citizen",
+    "standard": "SSKCG1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "citizen-rule",
+        1,
+        "Tell one classroom rule.",
+        "Teacher checks: names an actual classroom rule."
+      ],
+      [
+        "citizen-show",
+        2,
+        "Show one way to be a good classroom citizen.",
+        "Teacher checks: demonstrates behavior consistent with a taught citizenship expectation."
+      ],
+      [
+        "citizen-why",
+        3,
+        "Choose a classroom rule. Tell how it helps our class.",
+        "Teacher checks: connects the rule to a reasonable benefit for the class."
+      ]
+    ]
+  },
+  {
+    "grade": "1",
+    "subject": "Math",
+    "weekOf": "2026-09-07",
+    "document": "support-1.json",
+    "section": "Sep 7–11, Unit 1",
+    "evidence": "I can solve word problems to 10.",
+    "standard": "1.NR.2.2",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "birds-join",
+        1,
+        "Three birds sit on a branch. Two more join. How many birds now?",
+        "5 birds."
+      ],
+      [
+        "blocks-left",
+        1,
+        "You have 8 blocks. Give away 3. How many are left?",
+        "5 blocks."
+      ],
+      [
+        "ten-partner",
+        2,
+        "A box holds 10 crayons. It has 6. How many more will fill it?",
+        "4 crayons."
+      ],
+      [
+        "compare-counters",
+        2,
+        "Ana has 7 counters. Ben has 4. How many more does Ana have?",
+        "3 counters."
+      ],
+      [
+        "start-unknown",
+        3,
+        "Some ducks are in a pond. Two leave. Now there are 4. How many were there at first?",
+        "6 ducks."
+      ],
+      [
+        "explain-subtraction",
+        3,
+        "There are 9 apples. We eat 2. How many remain? Tell how you know.",
+        "7 apples. Accept a correct explanation, such as counting back two from nine."
+      ]
+    ]
+  },
+  {
+    "grade": "1",
+    "subject": "Literacy",
+    "weekOf": "2026-09-07",
+    "document": "linked-1-literacy.json",
+    "section": "Sep 7–11, Unit 1 Sessions 22–25",
+    "evidence": "I can read words with short vowels.",
+    "standard": null,
+    "session": "Sessions 22–25",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "short-u",
+        1,
+        "Which word has the middle sound /ŭ/: sun or sit?",
+        "sun."
+      ],
+      [
+        "vowel-identify",
+        2,
+        "Say “bed”. Which vowel makes its middle sound?",
+        "e, making the short /ĕ/ sound."
+      ],
+      [
+        "blend-sun",
+        3,
+        "Listen: /s/ /ŭ/ /n/. Blend the sounds. Then change /s/ to /f/.",
+        "sun; fun."
+      ]
+    ]
+  },
+  {
+    "grade": "1",
+    "subject": "Literacy",
+    "weekOf": "2026-09-07",
+    "document": "linked-1-literacy.json",
+    "section": "Sep 7–11, Unit 1 Sessions 22–25",
+    "evidence": "I can use details to retell a story using first, next, and last to order events.",
+    "standard": null,
+    "session": "Sessions 22–25",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "events-first",
+        1,
+        "Mia picks up a book. She reads it. She closes it. What happened first?",
+        "Mia picked up a book."
+      ],
+      [
+        "events-middle",
+        2,
+        "Jay gets paper, draws a cat, then hangs the picture. What happened next after getting paper?",
+        "Jay drew a cat."
+      ],
+      [
+        "retell-sequence",
+        3,
+        "Bo opens a box, takes out a toy, then plays. Retell using first, next, and last.",
+        "First Bo opens the box. Next he takes out a toy. Last he plays."
+      ]
+    ]
+  },
+  {
+    "grade": "1",
+    "subject": "Science",
+    "weekOf": "2026-08-31",
+    "document": "support-2.json",
+    "section": "Aug 31–Sept 4, Plants and Animals",
+    "evidence": "I can compare and contrast the basic needs of plants (air, water, light, nutrients) and animals (air, water, food, shelter).",
+    "standard": "S1L1.b",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "plant-need",
+        1,
+        "Which does a plant need: water or a toy?",
+        "Water."
+      ],
+      [
+        "shared-needs",
+        2,
+        "Name two needs that plants and animals share.",
+        "Air and water."
+      ],
+      [
+        "needs-compare",
+        3,
+        "Our plant list is air, water, light, nutrients. Our animal list is air, water, food, shelter. Which needs appear only on the animal list?",
+        "Food and shelter."
+      ]
+    ]
+  },
+  {
+    "grade": "1",
+    "subject": "Social Studies",
+    "weekOf": "2026-08-17",
+    "document": "support-2.json",
+    "section": "Aug 17–21, Our National Heritage",
+    "evidence": "I can identify and describe my city, county, state, nation, and continent.",
+    "standard": "SS1G2",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "my-state",
+        1,
+        "What state do you live in?",
+        "Teacher checks: the student names their actual state."
+      ],
+      [
+        "city-state",
+        2,
+        "Name your city and your state.",
+        "Teacher checks: both names match the student’s location."
+      ],
+      [
+        "location-nest",
+        3,
+        "Put these in order from smaller to larger: nation, city, state.",
+        "City, state, nation."
+      ]
+    ]
+  },
+  {
+    "grade": "2",
+    "subject": "Math",
+    "weekOf": "2026-08-17",
+    "document": "support-5.json",
+    "section": "Aug 17–21, Unit 1",
+    "evidence": "I can use strategies to solve addition problems within 20.",
+    "standard": "2.NR.2.1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "doubles",
+        1,
+        "Double 6. What number do you get?",
+        "12."
+      ],
+      [
+        "missing-addend",
+        2,
+        "8 + what number equals 15?",
+        "7."
+      ],
+      [
+        "make-ten",
+        3,
+        "Find 9 + 7. Explain how making a ten helps.",
+        "16. Move 1 from 7 to 9: 10 + 6 = 16."
+      ]
+    ]
+  },
+  {
+    "grade": "2",
+    "subject": "Math",
+    "weekOf": "2026-08-24",
+    "document": "support-5.json",
+    "section": "Aug 24–28, Unit 1",
+    "evidence": "I can use strategies to solve a subtraction problems within 20.",
+    "standard": "2.NR.2.3",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "subtract-ten",
+        1,
+        "What is 17 − 10?",
+        "7."
+      ],
+      [
+        "subtraction-unknown",
+        2,
+        "What number minus 5 equals 8?",
+        "13."
+      ],
+      [
+        "count-up",
+        3,
+        "Find 14 − 9 by counting up from 9. Explain.",
+        "5. From 9 to 10 is 1, and from 10 to 14 is 4; 1 + 4 = 5."
+      ]
+    ]
+  },
+  {
+    "grade": "2",
+    "subject": "Literacy",
+    "weekOf": "2026-08-31",
+    "document": "support-3.json",
+    "section": "Aug 31–Sep 4, Unit 1 Sessions 17–21",
+    "evidence": "Use context clues to determine the meaning of unknown words.",
+    "standard": null,
+    "session": "Sessions 17–21",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "context-tiny",
+        1,
+        "The tiny box was so small it fit in my hand. What does “tiny” mean?",
+        "Very small."
+      ],
+      [
+        "context-weary",
+        2,
+        "After walking all day, Eli felt weary and needed a rest. What does “weary” mean?",
+        "Tired."
+      ],
+      [
+        "context-evidence",
+        3,
+        "The path was narrow; only one child could walk along it at a time. What does “narrow” mean? Which clue helps?",
+        "Not wide. The clue is that only one child could walk along it at a time."
+      ]
+    ]
+  },
+  {
+    "grade": "2",
+    "subject": "Literacy",
+    "weekOf": "2026-08-10",
+    "document": "support-3.json",
+    "section": "Aug 10–14, Unit 1 Sessions 3–7",
+    "evidence": "Identify compound words and use them in speech or writing.",
+    "standard": null,
+    "session": "Sessions 3–7",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "compound-parts",
+        1,
+        "What two words make “raincoat”?",
+        "rain and coat."
+      ],
+      [
+        "compound-build",
+        2,
+        "Put “sun” and “light” together. What compound word do they make?",
+        "sunlight."
+      ],
+      [
+        "compound-use",
+        3,
+        "Make a compound word from “play” and “ground”. Use it in a sentence.",
+        "playground. Teacher checks that the sentence uses “playground” meaningfully."
+      ]
+    ]
+  },
+  {
+    "grade": "2",
+    "subject": "Science",
+    "weekOf": "2026-09-07",
+    "document": "support-6.json",
+    "section": "Sep 7–11, Patterns in Day and Night",
+    "evidence": "I can identify patterns in the sky, including how the sun, moon, and stars appear to move.",
+    "standard": "S2E1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "sky-record",
+        1,
+        "Name one sky object we tracked in class.",
+        "Teacher checks: a tracked object such as the sun, moon, or stars.",
+        "Have the class observation chart available."
+      ],
+      [
+        "sky-pattern",
+        2,
+        "What pattern can you find in our sky observations?",
+        "Teacher checks: the claimed repetition or change is present in the class observation record.",
+        "Display a taught sky-observation chart with a visible pattern."
+      ],
+      [
+        "sky-evidence",
+        3,
+        "Use two observations to explain how a sky object appeared to move.",
+        "Teacher checks: the student names an object and compares two recorded positions or times.",
+        "Display at least two dated/timed class sky observations."
+      ]
+    ]
+  },
+  {
+    "grade": "2",
+    "subject": "Social Studies",
+    "weekOf": "2026-08-10",
+    "document": "support-6.json",
+    "section": "Aug 10–14, Connecting Themes",
+    "evidence": "I can explain the purpose of government, rules, and laws; identify the roles of the President, Governor, and Mayor; and describe how scarcity affects how and where people live. (Government and Economics)",
+    "standard": "SSIPS",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "rules-purpose",
+        1,
+        "Why does our classroom have rules?",
+        "Teacher checks: an explanation tied to a taught purpose, such as helping people work or live together."
+      ],
+      [
+        "leader-role",
+        2,
+        "Choose President, Governor, or Mayor. Describe the role you learned about.",
+        "Teacher checks: the description agrees with the taught role.",
+        "Use the class’s taught government-role chart. Do not ask for current officeholders."
+      ],
+      [
+        "scarcity-class",
+        3,
+        "Our class needs 8 glue sticks but has 5. Suggest a way to share them and explain your choice.",
+        "Teacher checks: a workable sharing plan and an explanation of how it addresses limited supplies."
+      ]
+    ]
+  },
+  {
+    "grade": "3",
+    "subject": "Math",
+    "weekOf": "2026-08-10",
+    "document": "support-10.json",
+    "section": "Aug 10–14, Unit 1",
+    "evidence": "I can use place value to round numbers.",
+    "standard": "3.NR.1.3",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "round-ten",
+        1,
+        "Round 243 to the nearest ten.",
+        "240."
+      ],
+      [
+        "round-hundred",
+        2,
+        "680 is between 600 and 700. Which hundred is it nearest?",
+        "700."
+      ]
+    ]
+  },
+  {
+    "grade": "3",
+    "subject": "Math",
+    "weekOf": "2026-08-17",
+    "document": "support-10.json",
+    "section": "Aug 17–21, Unit 1",
+    "evidence": "I can use place value to add three-digit numbers",
+    "standard": "3.NR.1.1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "add-hundreds",
+        1,
+        "What is 300 + 200?",
+        "500."
+      ],
+      [
+        "add-explain",
+        3,
+        "Find 268 + 157. Explain one regrouping step.",
+        "425. For example, 8 + 7 = 15 ones: regroup 10 ones as 1 ten."
+      ]
+    ]
+  },
+  {
+    "grade": "3",
+    "subject": "Math",
+    "weekOf": "2026-08-24",
+    "document": "support-10.json",
+    "section": "Aug 24–28, Unit 1",
+    "evidence": "I can use place value to fluently subtract three digit numbers.",
+    "standard": "3.PAR.2.1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "subtract-regroup",
+        2,
+        "Take 118 away from 432. What remains?",
+        "314."
+      ],
+      [
+        "subtract-error",
+        3,
+        "Sam says 402 − 185 = 383. Is Sam correct? Solve and explain how to check.",
+        "No. 402 − 185 = 217. Check: 217 + 185 = 402."
+      ]
+    ]
+  },
+  {
+    "grade": "3",
+    "subject": "Literacy",
+    "weekOf": "2026-08-24",
+    "document": "support-8.json",
+    "section": "Aug 24–28, Unit 1 Sessions 13–18",
+    "evidence": "I can summarize a text using Somebody, Wanted, But, So, Then.",
+    "standard": null,
+    "session": "Sessions 13–18",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "story-wanted",
+        1,
+        "Lia wanted to fly her kite, but there was no wind. What did Lia want?",
+        "To fly her kite."
+      ],
+      [
+        "story-problem",
+        2,
+        "Max wanted to draw, but his pencil broke. He sharpened it and finished. What was the problem and solution?",
+        "Problem: his pencil broke. Solution: he sharpened it."
+      ],
+      [
+        "summary-five",
+        3,
+        "Nia wanted to read, but the room was noisy. She moved to a quiet room and read. Summarize using Somebody, Wanted, But, So, Then.",
+        "Nia wanted to read, but it was noisy, so she moved to a quiet room; then she read."
+      ]
+    ]
+  },
+  {
+    "grade": "3",
+    "subject": "Literacy",
+    "weekOf": "2026-09-07",
+    "document": "support-8.json",
+    "section": "Sep 7–11, Unit 1 Sessions 25–28",
+    "evidence": "Support students in using transition words during their paragraphs such as; first, then, therefore, as a result, and finally.",
+    "standard": null,
+    "session": "Sessions 25–28",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "transition-first",
+        1,
+        "Which word starts a sequence: first or finally?",
+        "first."
+      ],
+      [
+        "transition-result",
+        2,
+        "The path was flooded. ___, we took another route. Use “as a result” or “first”.",
+        "As a result."
+      ],
+      [
+        "transition-write",
+        3,
+        "Explain making a paper drawing in three steps. Use first, then, and finally.",
+        "Teacher checks: three logically ordered steps, with first, then, and finally used appropriately."
+      ]
+    ]
+  },
+  {
+    "grade": "3",
+    "subject": "Science",
+    "weekOf": "2026-08-10",
+    "document": "support-11.json",
+    "section": "Aug 10–14, Rocks, Soils and Fossils",
+    "evidence": "I can accurately identify and describe at least three physical characteristics (e.g., hardness, color, luster, streak, cleavage) for a given rock or mineral sample.",
+    "standard": "S3E1a",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "rock-color",
+        1,
+        "Describe the color of this rock sample.",
+        "Teacher checks: the color description matches the sample.",
+        "Display a clearly visible rock or mineral sample/photo from the lesson."
+      ],
+      [
+        "rock-sort",
+        2,
+        "These samples are red, gray, red, and gray. How could you sort them by color?",
+        "Make a red group with two samples and a gray group with two samples."
+      ],
+      [
+        "rock-properties",
+        3,
+        "Describe three physical characteristics of the sample using our observation notes.",
+        "Teacher checks: three accurate recorded characteristics, such as color, hardness, luster, streak, or cleavage.",
+        "Show a studied sample and its class-tested property notes. Do not ask students to perform new tests during play."
+      ]
+    ]
+  },
+  {
+    "grade": "3",
+    "subject": "Social Studies",
+    "weekOf": "2026-08-31",
+    "document": "support-12.json",
+    "section": "Aug 31–Sep 4, United States Geography",
+    "evidence": "I can locate and describe the equator, prime meridian, and lines of latitude and longitude.",
+    "standard": "SS3G1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "map-equator",
+        1,
+        "Point to the equator on our map.",
+        "Teacher checks: the student identifies the equator on the classroom reference map.",
+        "Display the physical/world map used in the lesson."
+      ],
+      [
+        "map-meridian",
+        2,
+        "Locate the prime meridian and describe it using our lesson vocabulary.",
+        "Teacher checks: the location and description agree with the taught map reference.",
+        "Display the map and vocabulary reference used in class."
+      ],
+      [
+        "map-lines",
+        3,
+        "Show a line of latitude and a line of longitude. Explain a difference using the map.",
+        "Teacher checks: both lines are correctly identified and the comparison agrees with the map lesson.",
+        "Display the classroom map showing latitude and longitude."
+      ]
+    ]
+  },
+  {
+    "grade": "4",
+    "subject": "Math",
+    "weekOf": "2026-08-10",
+    "document": "support-15.json",
+    "section": "Aug 10–14, Unit 1",
+    "evidence": "I can read and write multi-digit numbers to the hundred thousands place using base 10 numerals and expanded form, and I can recognize and show that a digit in one place has a value ten times greater than the digit to its right based on the relationship between multiplication and division.",
+    "standard": "4.NR.1.1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "digit-value",
+        1,
+        "What is the value of the 6 in 46,208?",
+        "6,000."
+      ],
+      [
+        "expanded-form",
+        2,
+        "Write 52,406 in expanded form.",
+        "50,000 + 2,000 + 400 + 6."
+      ],
+      [
+        "place-relationship",
+        3,
+        "In 55,000, how does the value of the left 5 compare with the value of the right 5? Explain.",
+        "50,000 is ten times 5,000 because moving one place left multiplies a digit’s value by ten."
+      ]
+    ]
+  },
+  {
+    "grade": "4",
+    "subject": "Math",
+    "weekOf": "2026-08-31",
+    "document": "support-15.json",
+    "section": "Aug 31–Sep 4, Unit 1",
+    "evidence": "I can fluently add multi-digit whole numbers to solve real-life mathematical problems.",
+    "standard": "4.NR.2.1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "add-thousands",
+        1,
+        "What is 2,000 + 3,000?",
+        "5,000."
+      ],
+      [
+        "add-money",
+        2,
+        "A school raised $1,275 in August and $2,408 in September. How much altogether?",
+        "$3,683."
+      ],
+      [
+        "add-missing",
+        3,
+        "Two classes collect 4,000 cans altogether. One collects 1,685. How many does the other collect? Check with addition.",
+        "2,315 cans; 1,685 + 2,315 = 4,000."
+      ]
+    ]
+  },
+  {
+    "grade": "4",
+    "subject": "Literacy",
+    "weekOf": "2026-08-10",
+    "document": "support-13.json",
+    "section": "Aug 10–14, Unit 1 Sessions 3–7",
+    "evidence": "I can explain cause-and-effect relationships within a text.",
+    "standard": null,
+    "session": "Sessions 3–7",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "cause-rain",
+        1,
+        "Rain filled the bucket. What caused the bucket to fill?",
+        "The rain."
+      ],
+      [
+        "effect-missed",
+        2,
+        "The bus left before Leo reached the stop, so he walked. What was the cause, and what was the effect?",
+        "Cause: the bus left before Leo arrived. Effect: Leo walked."
+      ],
+      [
+        "cause-evidence",
+        3,
+        "A ball hit the stacked cups. The cups fell, and water spilled. Explain the chain of events using evidence from these sentences.",
+        "The ball hit the cups, causing them to fall; their falling caused the water to spill."
+      ]
+    ]
+  },
+  {
+    "grade": "4",
+    "subject": "Literacy",
+    "weekOf": "2026-08-31",
+    "document": "support-13.json",
+    "section": "Aug 31–Sep 4, Unit 1 Sessions 19–23",
+    "evidence": "I can use details from the text to identify and explain the main idea.",
+    "standard": null,
+    "session": "Sessions 19–23",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "main-topic",
+        1,
+        "Our class reads poems, writes poems, and shares poems. What is this text mostly about?",
+        "The class’s work with poems."
+      ],
+      [
+        "main-detail",
+        2,
+        "The club keeps the park clean. Members pick up litter and empty bins. Give the main idea and one supporting detail.",
+        "Main idea: the club keeps the park clean. Detail: members pick up litter or empty bins."
+      ],
+      [
+        "main-revise",
+        3,
+        "The library lends books, offers story time, and hosts reading clubs. Is “The library only lends books” a good main idea? Explain and improve it.",
+        "No; “only” leaves out the other activities. Better: the library offers several ways to read and enjoy books."
+      ]
+    ]
+  },
+  {
+    "grade": "4",
+    "subject": "Science",
+    "weekOf": "2026-08-10",
+    "document": "support-16.json",
+    "section": "Aug 10–14, Weather and Moon Phases",
+    "evidence": "I can collect, record, and analyze weather, cloud, and moon phase data to identify patterns and explain changes over time.",
+    "standard": "S4E4.a",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "weather-read",
+        1,
+        "Our chart says Monday: sunny; Tuesday: cloudy. What weather was recorded Tuesday?",
+        "Cloudy."
+      ],
+      [
+        "weather-compare",
+        2,
+        "Cloud-cover notes: Monday clear, Tuesday partly cloudy, Wednesday fully cloudy. Describe the change.",
+        "The recorded cloud cover increased from clear to partly cloudy to fully cloudy."
+      ],
+      [
+        "weather-limits",
+        3,
+        "One day was rainy. Is that enough data to show a repeating weekly weather pattern? Explain.",
+        "No. One observation cannot show repetition; collect observations across more days and weeks."
+      ]
+    ],
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31"
+    ]
+  },
+  {
+    "grade": "4",
+    "subject": "Social Studies",
+    "weekOf": "2026-08-24",
+    "document": "support-17.json",
+    "section": "Aug 24–28, Forming a New Nation",
+    "evidence": "I can explain how the United States was formed and describe the key people, events, and decisions that helped shape our nation.",
+    "standard": "SS4H1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "nation-person",
+        1,
+        "Name a person from our Forming a New Nation lesson.",
+        "Teacher checks: the person appears in the taught lesson.",
+        "Have the taught lesson’s list of people and events available."
+      ],
+      [
+        "nation-event",
+        2,
+        "Choose an event from our lesson. Explain how it helped shape the new nation.",
+        "Teacher checks: the event and explanation agree with the taught source.",
+        "Use a specific already-taught event and its source material."
+      ],
+      [
+        "nation-decision",
+        3,
+        "Describe a decision from our lesson and one consequence. Use evidence from the lesson.",
+        "Teacher checks: an accurate decision, a supported consequence, and relevant evidence.",
+        "Have the taught historical source or notes available."
+      ]
+    ]
+  },
+  {
+    "grade": "5",
+    "subject": "Math",
+    "weekOf": "2026-08-24",
+    "document": "support-20.json",
+    "section": "Aug 24–28, Whole Number Operations and Applications",
+    "evidence": "I can find the volume of a rectangular prism by counting cubes or using a formula.",
+    "standard": "5.GSR.8.4",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "volume-cubes",
+        1,
+        "A solid is built from 18 unit cubes, with no gaps or overlaps. What is its volume?",
+        "18 cubic units."
+      ],
+      [
+        "volume-layers",
+        2,
+        "A rectangular prism has 4 layers of 6 unit cubes. What is its volume?",
+        "24 cubic units."
+      ],
+      [
+        "volume-dimensions",
+        3,
+        "A rectangular prism is 5 units long, 3 units wide, and 2 units high. Find its volume and explain.",
+        "30 cubic units: 5 × 3 × 2 = 30. Each of two layers has 15 unit cubes."
+      ]
+    ]
+  },
+  {
+    "grade": "5",
+    "subject": "Math",
+    "weekOf": "2026-08-31",
+    "document": "support-20.json",
+    "section": "Aug 31–Sep 4, Unit 1",
+    "evidence": "I can multiply multi-digit whole numbers using place value strategies and the standard algorithm.",
+    "standard": "5.NR.2.1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "multiply-ten",
+        1,
+        "What is 34 × 10?",
+        "340."
+      ],
+      [
+        "multiply-partial",
+        2,
+        "Find 23 × 14 using partial products.",
+        "322: 23 × 10 = 230 and 23 × 4 = 92; 230 + 92 = 322."
+      ],
+      [
+        "multiply-error",
+        3,
+        "A student writes 42 × 13 = 42 × 10 + 42 × 2. What is wrong? Find the correct product.",
+        "13 = 10 + 3, not 10 + 2. The correct product is 420 + 126 = 546."
+      ]
+    ]
+  },
+  {
+    "grade": "5",
+    "subject": "Literacy",
+    "weekOf": "2026-08-03",
+    "document": "support-18.json",
+    "section": "Aug 3–7, Unit 1 Sessions 1–2",
+    "evidence": "I can analyze the use of narrative techniques to present ideas, design texts, and convey information about characters, setting, and plot. (5.T.T.1.a)",
+    "standard": "5.T.T.1.a",
+    "session": "Sessions 1–2",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "setting-evidence",
+        1,
+        "“At dawn, Jo waited beside the school gate.” Identify the setting details.",
+        "Time: dawn. Place: beside the school gate."
+      ],
+      [
+        "character-action",
+        2,
+        "“Even after missing three shots, Maya kept practicing.” What does this action suggest about Maya? Cite evidence.",
+        "She is persistent or determined; she keeps practicing after missing three shots."
+      ],
+      [
+        "dialogue-inference",
+        3,
+        "“I can’t wait!” Ari whispered, bouncing in his seat. How do the words and actions work together to reveal his feelings?",
+        "Both suggest excitement or eagerness: “I can’t wait” and bouncing in his seat support that inference."
+      ]
+    ],
+    "alignedWeeks": [
+      "2026-08-03",
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ]
+  },
+  {
+    "grade": "5",
+    "subject": "Literacy",
+    "weekOf": "2026-08-03",
+    "document": "support-18.json",
+    "section": "Aug 3–7, Unit 1 Sessions 1–2",
+    "evidence": "I can explain how a character changes and how that shows the theme of the story. (5.T.T.1.c)",
+    "standard": "5.T.T.1.c",
+    "session": "Sessions 1–2",
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "character-change",
+        1,
+        "At first, Lee refused help. Later, Lee asked a friend for help. What changed?",
+        "Lee changed from refusing help to accepting or asking for it."
+      ],
+      [
+        "theme-help",
+        2,
+        "Sam tried alone and struggled. After asking for help, Sam succeeded. What possible theme does this suggest?",
+        "Asking for help can help us succeed. Accept another theme supported by the events."
+      ],
+      [
+        "theme-evidence",
+        3,
+        "Rae hid every mistake. After a friend shared a mistake, Rae admitted one and learned from it. Explain a possible theme using Rae’s change.",
+        "Being honest about mistakes can help us learn. Rae changes from hiding mistakes to admitting one and learning from it."
+      ]
+    ]
+  },
+  {
+    "grade": "5",
+    "subject": "Science",
+    "weekOf": "2026-08-10",
+    "document": "support-21.json",
+    "section": "Aug 10–14, Earth Science",
+    "evidence": "I can describe how weathering, erosion and deposition changes Earth's surface over time.",
+    "standard": "S5E1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "earth-processes",
+        1,
+        "Name one Earth-surface process from our lesson.",
+        "Weathering, erosion, or deposition."
+      ],
+      [
+        "earth-observation",
+        2,
+        "Use our before-and-after pictures to describe one change to Earth’s surface.",
+        "Teacher checks: the described change is visible in the pictures and matches the taught investigation.",
+        "Display a previously taught before-and-after weathering, erosion, or deposition example."
+      ],
+      [
+        "earth-explanation",
+        3,
+        "Explain which taught process changed the surface in our example. Support your answer with an observation.",
+        "Teacher checks: correctly identifies weathering, erosion, or deposition and connects it to evidence from the taught example.",
+        "Display an example already studied in class with an established explanation."
+      ]
+    ],
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ]
+  },
+  {
+    "grade": "5",
+    "subject": "Social Studies",
+    "weekOf": "2026-08-24",
+    "document": "support-22.json",
+    "section": "Aug 24–28, Citizenship, Business, and the Government",
+    "evidence": "I can explain the rights and responsibilities of good citizens and describe how businesses and government work together to meet the needs of communities.",
+    "standard": "SS5CG1",
+    "session": null,
+    "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping.",
+    "questions": [
+      [
+        "citizen-responsibility",
+        1,
+        "Name a responsibility of a good citizen discussed in our lesson.",
+        "Teacher checks: a responsibility supported by the taught citizenship material.",
+        "Use the class citizenship notes or anchor chart."
+      ],
+      [
+        "citizen-right",
+        2,
+        "Choose a right and a responsibility from our lesson. Explain the difference using those examples.",
+        "Teacher checks: the examples and distinction match the taught source.",
+        "Have the taught rights-and-responsibilities chart available."
+      ],
+      [
+        "citizen-impact",
+        3,
+        "Describe how one responsible action by a citizen can help a community. Explain the connection.",
+        "Teacher checks: identifies a taught responsibility and explains a plausible community benefit."
+      ]
+    ],
+    "alignedWeeks": [
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ]
+  }
+]

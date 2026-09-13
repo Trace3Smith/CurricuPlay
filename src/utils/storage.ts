@@ -10,7 +10,7 @@ export function loadState(): GameState {
     if (!s || s.version !== 1 || !grades.includes(s.grade) || !['recent', 'all'].includes(s.range) || !validDate(s.asOf) || !['home', 'setup', 'board', 'question'].includes(s.screen) ||
       ![null, 'jeopardy'].includes(s.selectedGame) || !Array.isArray(s.usedQuestionIds) || !s.usedQuestionIds.every((id: unknown) => typeof id === 'string') ||
       !Array.isArray(s.usedTiles) || !s.usedTiles.every((id: string) => tiles.some(t => t.id === id))) return freshState();
-    if (s.current && (!bank.questions.some(q => q.id === s.current.questionId && q.grade === s.grade && q.weekIntroduced <= s.asOf && q.weekIntroduced <= localDate()) ||
+    if (s.current && (!bank.questions.some(q => q.reviewStatus !== 'pending' && q.id === s.current.questionId && q.grade === s.grade && q.weekIntroduced <= s.asOf && q.weekIntroduced <= localDate()) ||
       !tiles.some(t => t.id === s.current.tileId && t.category === s.current.category) || typeof s.current.revealed !== 'boolean' || !s.usedTiles.includes(s.current.tileId) || !s.usedQuestionIds.includes(s.current.questionId))) {
       s.current = null; s.screen = 'board';
     }

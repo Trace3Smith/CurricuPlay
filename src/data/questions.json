@@ -1,1 +1,4008 @@
-[]
+[
+  {
+    "id": "dcss-K-math-position-above",
+    "grade": "K",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "The ball is above the box. Is it below the box?",
+    "answer": "No. It is above the box.",
+    "standard": "K.GSR.8.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-math-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-math.json",
+      "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+      "sourceTitle": "Kinder Math Pacing Support",
+      "section": "August 10–14, 2026",
+      "quote": "I can use positional words to describe the location of objects.",
+      "characterOffset": 4269,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-math-r11",
+      "dcss-fy27-K-math-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-math-position-follow",
+    "grade": "K",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "Put your hand above your head.",
+    "answer": "Teacher checks: the hand is above the student’s head.",
+    "standard": "K.GSR.8.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-math-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-math.json",
+      "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+      "sourceTitle": "Kinder Math Pacing Support",
+      "section": "August 10–14, 2026",
+      "quote": "I can use positional words to describe the location of objects.",
+      "characterOffset": 4269,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-math-r11",
+      "dcss-fy27-K-math-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-math-position-two",
+    "grade": "K",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Put one hand beside your head and one above it.",
+    "answer": "Teacher checks: one hand is beside the head and the other is above it.",
+    "standard": "K.GSR.8.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-math-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-math.json",
+      "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+      "sourceTitle": "Kinder Math Pacing Support",
+      "section": "August 10–14, 2026",
+      "quote": "I can use positional words to describe the location of objects.",
+      "characterOffset": 4269,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-math-r11",
+      "dcss-fy27-K-math-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-math-length-name",
+    "grade": "K",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "Point to the longer strip.",
+    "answer": "Teacher checks: student points to the visibly longer strip.",
+    "standard": "K.GSR.8.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-math.json",
+      "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+      "sourceTitle": "Kinder Math Pacing Support",
+      "section": "August 17–21, 2026",
+      "quote": "I can identify which of two objects is longer or shorter.",
+      "characterOffset": 5398,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-math-r12",
+      "dcss-fy27-K-math-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Show two strips of clearly different lengths, lined up at one end."
+  },
+  {
+    "id": "dcss-K-math-length-compare",
+    "grade": "K",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "The red strip is longer than the blue strip. Which is shorter?",
+    "answer": "The blue strip.",
+    "standard": "K.GSR.8.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-math.json",
+      "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+      "sourceTitle": "Kinder Math Pacing Support",
+      "section": "August 17–21, 2026",
+      "quote": "I can identify which of two objects is longer or shorter.",
+      "characterOffset": 5398,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-math-r12",
+      "dcss-fy27-K-math-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-math-length-explain",
+    "grade": "K",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Show which strip is shorter. Tell how you know.",
+    "answer": "Teacher checks: student aligns the ends and identifies the strip that does not reach as far.",
+    "standard": "K.GSR.8.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-math.json",
+      "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+      "sourceTitle": "Kinder Math Pacing Support",
+      "section": "August 17–21, 2026",
+      "quote": "I can identify which of two objects is longer or shorter.",
+      "characterOffset": 5398,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-math-r12",
+      "dcss-fy27-K-math-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Show two strips of different lengths."
+  },
+  {
+    "id": "dcss-K-literacy-letter-m",
+    "grade": "K",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "What letter is this? M",
+    "answer": "M (em).",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-literacy-r10",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K10",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "linked-k-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "ML Unit 1 - Session 1: Introduce Letter Mm",
+      "characterOffset": 2349,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-literacy-r10"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-literacy-letter-match",
+    "grade": "K",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "Which matches M: m or t?",
+    "answer": "m.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-literacy-r10",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K10",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "linked-k-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "ML Unit 1 - Session 1: Introduce Letter Mm",
+      "characterOffset": 2349,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-literacy-r10"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-literacy-letter-sound",
+    "grade": "K",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Say the sound for M. Then say a word that starts with it.",
+    "answer": "Teacher checks: /m/ and a word beginning with /m/.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-literacy-r10",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K10",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "linked-k-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "ML Unit 1 - Session 1: Introduce Letter Mm",
+      "characterOffset": 2349,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-literacy-r10"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-literacy-word-in",
+    "grade": "K",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "Point to “in”: in · is · it",
+    "answer": "in.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-literacy-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+    "unit": "U1",
+    "session": "Sessions 18–22",
+    "evidence": {
+      "document": "linked-k-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+      "quote": "Weekly Sight Words:  in, is, you, that, it",
+      "characterOffset": 7995,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-literacy-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-literacy-word-you",
+    "grade": "K",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "Find “you” on our word wall.",
+    "answer": "Teacher checks: student identifies the word “you”.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-literacy-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+    "unit": "U1",
+    "session": "Sessions 18–22",
+    "evidence": {
+      "document": "linked-k-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+      "quote": "Weekly Sight Words:  in, is, you, that, it",
+      "characterOffset": 7995,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-literacy-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display the five listed sight words: in, is, you, that, it."
+  },
+  {
+    "id": "dcss-K-literacy-word-sentence",
+    "grade": "K",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Say a sentence using “it”.",
+    "answer": "Teacher checks: a complete spoken thought using “it” meaningfully.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-literacy-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+    "unit": "U1",
+    "session": "Sessions 18–22",
+    "evidence": {
+      "document": "linked-k-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+      "quote": "Weekly Sight Words:  in, is, you, that, it",
+      "characterOffset": 7995,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-literacy-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-science-sky-name",
+    "grade": "K",
+    "subject": "Science",
+    "difficulty": 1,
+    "question": "Name one thing you observed in the day sky.",
+    "answer": "Teacher checks: response matches a recorded class observation.",
+    "standard": "SKE1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-science-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
+    "unit": "Unit 1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-science-social.json",
+      "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+      "sourceTitle": "Kinder Sci & SS Pacing Support",
+      "section": "Aug 31–Sep 4, Time Patterns",
+      "quote": "I can classify objects according to what is seen in the day sky, night sky, or both.",
+      "characterOffset": 5955,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-science-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Have the class’s day-sky observations available."
+  },
+  {
+    "id": "dcss-K-science-sky-sort",
+    "grade": "K",
+    "subject": "Science",
+    "difficulty": 2,
+    "question": "Sort this sky picture: day, night, or both.",
+    "answer": "Teacher checks: classification matches the picture and class observations; accept more than one category when justified.",
+    "standard": "SKE1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-science-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
+    "unit": "Unit 1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-science-social.json",
+      "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+      "sourceTitle": "Kinder Sci & SS Pacing Support",
+      "section": "Aug 31–Sep 4, Time Patterns",
+      "quote": "I can classify objects according to what is seen in the day sky, night sky, or both.",
+      "characterOffset": 5955,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-science-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Select a sky picture from the taught lesson with an agreed classification."
+  },
+  {
+    "id": "dcss-K-science-sky-compare",
+    "grade": "K",
+    "subject": "Science",
+    "difficulty": 3,
+    "question": "Tell one way our day and night sky pictures differ.",
+    "answer": "Teacher checks: student describes a visible difference supported by the two pictures.",
+    "standard": "SKE1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-science-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
+    "unit": "Unit 1",
+    "session": null,
+    "evidence": {
+      "document": "linked-k-science-social.json",
+      "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+      "sourceTitle": "Kinder Sci & SS Pacing Support",
+      "section": "Aug 31–Sep 4, Time Patterns",
+      "quote": "I can classify objects according to what is seen in the day sky, night sky, or both.",
+      "characterOffset": 5955,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-science-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display one day-sky and one night-sky picture from the lesson."
+  },
+  {
+    "id": "dcss-K-social-studies-citizen-rule",
+    "grade": "K",
+    "subject": "Social Studies",
+    "difficulty": 1,
+    "question": "Tell one classroom rule.",
+    "answer": "Teacher checks: names an actual classroom rule.",
+    "standard": "SSKCG1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-social-studies-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "linked-k-science-social.json",
+      "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+      "sourceTitle": "Kinder Sci & SS Pacing Support",
+      "section": "Aug 10–14, Citizenship",
+      "quote": "I can demonstrate and explain what it means to be a good citizen",
+      "characterOffset": 1930,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-social-studies-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-social-studies-citizen-show",
+    "grade": "K",
+    "subject": "Social Studies",
+    "difficulty": 2,
+    "question": "Show one way to be a good classroom citizen.",
+    "answer": "Teacher checks: demonstrates behavior consistent with a taught citizenship expectation.",
+    "standard": "SSKCG1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-social-studies-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "linked-k-science-social.json",
+      "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+      "sourceTitle": "Kinder Sci & SS Pacing Support",
+      "section": "Aug 10–14, Citizenship",
+      "quote": "I can demonstrate and explain what it means to be a good citizen",
+      "characterOffset": 1930,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-social-studies-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-K-social-studies-citizen-why",
+    "grade": "K",
+    "subject": "Social Studies",
+    "difficulty": 3,
+    "question": "Choose a classroom rule. Tell how it helps our class.",
+    "answer": "Teacher checks: connects the rule to a reasonable benefit for the class.",
+    "standard": "SSKCG1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-K-social-studies-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "linked-k-science-social.json",
+      "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+      "sourceTitle": "Kinder Sci & SS Pacing Support",
+      "section": "Aug 10–14, Citizenship",
+      "quote": "I can demonstrate and explain what it means to be a good citizen",
+      "characterOffset": 1930,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-K-social-studies-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-math-birds-join",
+    "grade": "1",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "Three birds sit on a branch. Two more join. How many birds now?",
+    "answer": "5 birds.",
+    "standard": "1.NR.2.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-math-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-1.json",
+      "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit?usp=sharing",
+      "sourceTitle": "1st Math Pacing Support",
+      "section": "Sep 7–11, Unit 1",
+      "quote": "I can solve word problems to 10.",
+      "characterOffset": 4841,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-math-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-math-blocks-left",
+    "grade": "1",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "You have 8 blocks. Give away 3. How many are left?",
+    "answer": "5 blocks.",
+    "standard": "1.NR.2.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-math-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-1.json",
+      "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit?usp=sharing",
+      "sourceTitle": "1st Math Pacing Support",
+      "section": "Sep 7–11, Unit 1",
+      "quote": "I can solve word problems to 10.",
+      "characterOffset": 4841,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-math-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-math-ten-partner",
+    "grade": "1",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "A box holds 10 crayons. It has 6. How many more will fill it?",
+    "answer": "4 crayons.",
+    "standard": "1.NR.2.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-math-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-1.json",
+      "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit?usp=sharing",
+      "sourceTitle": "1st Math Pacing Support",
+      "section": "Sep 7–11, Unit 1",
+      "quote": "I can solve word problems to 10.",
+      "characterOffset": 4841,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-math-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-math-compare-counters",
+    "grade": "1",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "Ana has 7 counters. Ben has 4. How many more does Ana have?",
+    "answer": "3 counters.",
+    "standard": "1.NR.2.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-math-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-1.json",
+      "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit?usp=sharing",
+      "sourceTitle": "1st Math Pacing Support",
+      "section": "Sep 7–11, Unit 1",
+      "quote": "I can solve word problems to 10.",
+      "characterOffset": 4841,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-math-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-math-start-unknown",
+    "grade": "1",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Some ducks are in a pond. Two leave. Now there are 4. How many were there at first?",
+    "answer": "6 ducks.",
+    "standard": "1.NR.2.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-math-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-1.json",
+      "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit?usp=sharing",
+      "sourceTitle": "1st Math Pacing Support",
+      "section": "Sep 7–11, Unit 1",
+      "quote": "I can solve word problems to 10.",
+      "characterOffset": 4841,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-math-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-math-explain-subtraction",
+    "grade": "1",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "There are 9 apples. We eat 2. How many remain? Tell how you know.",
+    "answer": "7 apples. Accept a correct explanation, such as counting back two from nine.",
+    "standard": "1.NR.2.2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-math-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-1.json",
+      "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit?usp=sharing",
+      "sourceTitle": "1st Math Pacing Support",
+      "section": "Sep 7–11, Unit 1",
+      "quote": "I can solve word problems to 10.",
+      "characterOffset": 4841,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-math-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-literacy-short-u",
+    "grade": "1",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "Which word has the middle sound /ŭ/: sun or sit?",
+    "answer": "sun.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=K17",
+    "unit": "U1",
+    "session": "Sessions 22–25",
+    "evidence": {
+      "document": "linked-1-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "section": "Sep 7–11, Unit 1 Sessions 22–25",
+      "quote": "I can read words with short vowels.",
+      "characterOffset": 11985,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-literacy-vowel-identify",
+    "grade": "1",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "Say “bed”. Which vowel makes its middle sound?",
+    "answer": "e, making the short /ĕ/ sound.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=K17",
+    "unit": "U1",
+    "session": "Sessions 22–25",
+    "evidence": {
+      "document": "linked-1-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "section": "Sep 7–11, Unit 1 Sessions 22–25",
+      "quote": "I can read words with short vowels.",
+      "characterOffset": 11985,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-literacy-blend-sun",
+    "grade": "1",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Listen: /s/ /ŭ/ /n/. Blend the sounds. Then change /s/ to /f/.",
+    "answer": "sun; fun.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=K17",
+    "unit": "U1",
+    "session": "Sessions 22–25",
+    "evidence": {
+      "document": "linked-1-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "section": "Sep 7–11, Unit 1 Sessions 22–25",
+      "quote": "I can read words with short vowels.",
+      "characterOffset": 11985,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-literacy-events-first",
+    "grade": "1",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "Mia picks up a book. She reads it. She closes it. What happened first?",
+    "answer": "Mia picked up a book.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=K17",
+    "unit": "U1",
+    "session": "Sessions 22–25",
+    "evidence": {
+      "document": "linked-1-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "section": "Sep 7–11, Unit 1 Sessions 22–25",
+      "quote": "I can use details to retell a story using first, next, and last to order events.",
+      "characterOffset": 12462,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-literacy-events-middle",
+    "grade": "1",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "Jay gets paper, draws a cat, then hangs the picture. What happened next after getting paper?",
+    "answer": "Jay drew a cat.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=K17",
+    "unit": "U1",
+    "session": "Sessions 22–25",
+    "evidence": {
+      "document": "linked-1-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "section": "Sep 7–11, Unit 1 Sessions 22–25",
+      "quote": "I can use details to retell a story using first, next, and last to order events.",
+      "characterOffset": 12462,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-literacy-retell-sequence",
+    "grade": "1",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Bo opens a box, takes out a toy, then plays. Retell using first, next, and last.",
+    "answer": "First Bo opens the box. Next he takes out a toy. Last he plays.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=K17",
+    "unit": "U1",
+    "session": "Sessions 22–25",
+    "evidence": {
+      "document": "linked-1-literacy.json",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "section": "Sep 7–11, Unit 1 Sessions 22–25",
+      "quote": "I can use details to retell a story using first, next, and last to order events.",
+      "characterOffset": 12462,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-science-plant-need",
+    "grade": "1",
+    "subject": "Science",
+    "difficulty": 1,
+    "question": "Which does a plant need: water or a toy?",
+    "answer": "Water.",
+    "standard": "S1L1.b",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-science-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-2.json",
+      "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+      "sourceTitle": "1st Grade Pacing",
+      "section": "Aug 31–Sept 4, Plants and Animals",
+      "quote": "I can compare and contrast the basic needs of plants (air, water, light, nutrients) and animals (air, water, food, shelter).",
+      "characterOffset": 3769,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-science-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-science-shared-needs",
+    "grade": "1",
+    "subject": "Science",
+    "difficulty": 2,
+    "question": "Name two needs that plants and animals share.",
+    "answer": "Air and water.",
+    "standard": "S1L1.b",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-science-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-2.json",
+      "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+      "sourceTitle": "1st Grade Pacing",
+      "section": "Aug 31–Sept 4, Plants and Animals",
+      "quote": "I can compare and contrast the basic needs of plants (air, water, light, nutrients) and animals (air, water, food, shelter).",
+      "characterOffset": 3769,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-science-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-science-needs-compare",
+    "grade": "1",
+    "subject": "Science",
+    "difficulty": 3,
+    "question": "Our plant list is air, water, light, nutrients. Our animal list is air, water, food, shelter. Which needs appear only on the animal list?",
+    "answer": "Food and shelter.",
+    "standard": "S1L1.b",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-science-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-2.json",
+      "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+      "sourceTitle": "1st Grade Pacing",
+      "section": "Aug 31–Sept 4, Plants and Animals",
+      "quote": "I can compare and contrast the basic needs of plants (air, water, light, nutrients) and animals (air, water, food, shelter).",
+      "characterOffset": 3769,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-science-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-social-studies-my-state",
+    "grade": "1",
+    "subject": "Social Studies",
+    "difficulty": 1,
+    "question": "What state do you live in?",
+    "answer": "Teacher checks: the student names their actual state.",
+    "standard": "SS1G2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-social-studies-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-2.json",
+      "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+      "sourceTitle": "1st Grade Pacing",
+      "section": "Aug 17–21, Our National Heritage",
+      "quote": "I can identify and describe my city, county, state, nation, and continent.",
+      "characterOffset": 2655,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-social-studies-r12"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-social-studies-city-state",
+    "grade": "1",
+    "subject": "Social Studies",
+    "difficulty": 2,
+    "question": "Name your city and your state.",
+    "answer": "Teacher checks: both names match the student’s location.",
+    "standard": "SS1G2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-social-studies-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-2.json",
+      "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+      "sourceTitle": "1st Grade Pacing",
+      "section": "Aug 17–21, Our National Heritage",
+      "quote": "I can identify and describe my city, county, state, nation, and continent.",
+      "characterOffset": 2655,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-social-studies-r12"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-1-social-studies-location-nest",
+    "grade": "1",
+    "subject": "Social Studies",
+    "difficulty": 3,
+    "question": "Put these in order from smaller to larger: nation, city, state.",
+    "answer": "City, state, nation.",
+    "standard": "SS1G2",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-1-social-studies-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-2.json",
+      "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+      "sourceTitle": "1st Grade Pacing",
+      "section": "Aug 17–21, Our National Heritage",
+      "quote": "I can identify and describe my city, county, state, nation, and continent.",
+      "characterOffset": 2655,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-1-social-studies-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": true,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-math-doubles",
+    "grade": "2",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "Double 6. What number do you get?",
+    "answer": "12.",
+    "standard": "2.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-5.json",
+      "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit?usp=sharing",
+      "sourceTitle": "2nd Math Pacing Support",
+      "section": "Aug 17–21, Unit 1",
+      "quote": "I can use strategies to solve addition problems within 20.",
+      "characterOffset": 3208,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-math-missing-addend",
+    "grade": "2",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "8 + what number equals 15?",
+    "answer": "7.",
+    "standard": "2.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-5.json",
+      "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit?usp=sharing",
+      "sourceTitle": "2nd Math Pacing Support",
+      "section": "Aug 17–21, Unit 1",
+      "quote": "I can use strategies to solve addition problems within 20.",
+      "characterOffset": 3208,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-math-make-ten",
+    "grade": "2",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Find 9 + 7. Explain how making a ten helps.",
+    "answer": "16. Move 1 from 7 to 9: 10 + 6 = 16.",
+    "standard": "2.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-5.json",
+      "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit?usp=sharing",
+      "sourceTitle": "2nd Math Pacing Support",
+      "section": "Aug 17–21, Unit 1",
+      "quote": "I can use strategies to solve addition problems within 20.",
+      "characterOffset": 3208,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-math-subtract-ten",
+    "grade": "2",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "What is 17 − 10?",
+    "answer": "7.",
+    "standard": "2.NR.2.3",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O13",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O13",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-5.json",
+      "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit?usp=sharing",
+      "sourceTitle": "2nd Math Pacing Support",
+      "section": "Aug 24–28, Unit 1",
+      "quote": "I can use strategies to solve a subtraction problems within 20.",
+      "characterOffset": 3674,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-math-subtraction-unknown",
+    "grade": "2",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "What number minus 5 equals 8?",
+    "answer": "13.",
+    "standard": "2.NR.2.3",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O13",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O13",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-5.json",
+      "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit?usp=sharing",
+      "sourceTitle": "2nd Math Pacing Support",
+      "section": "Aug 24–28, Unit 1",
+      "quote": "I can use strategies to solve a subtraction problems within 20.",
+      "characterOffset": 3674,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-math-count-up",
+    "grade": "2",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Find 14 − 9 by counting up from 9. Explain.",
+    "answer": "5. From 9 to 10 is 1, and from 10 to 14 is 4; 1 + 4 = 5.",
+    "standard": "2.NR.2.3",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O13",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O13",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-5.json",
+      "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit?usp=sharing",
+      "sourceTitle": "2nd Math Pacing Support",
+      "section": "Aug 24–28, Unit 1",
+      "quote": "I can use strategies to solve a subtraction problems within 20.",
+      "characterOffset": 3674,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-literacy-context-tiny",
+    "grade": "2",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "The tiny box was so small it fit in my hand. What does “tiny” mean?",
+    "answer": "Very small.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-literacy-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=K16",
+    "unit": "U1",
+    "session": "Sessions 17–21",
+    "evidence": {
+      "document": "support-3.json",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+      "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 17–21",
+      "quote": "Use context clues to determine the meaning of unknown words.",
+      "characterOffset": 8736,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-literacy-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-literacy-context-weary",
+    "grade": "2",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "After walking all day, Eli felt weary and needed a rest. What does “weary” mean?",
+    "answer": "Tired.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-literacy-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=K16",
+    "unit": "U1",
+    "session": "Sessions 17–21",
+    "evidence": {
+      "document": "support-3.json",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+      "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 17–21",
+      "quote": "Use context clues to determine the meaning of unknown words.",
+      "characterOffset": 8736,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-literacy-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-literacy-context-evidence",
+    "grade": "2",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "The path was narrow; only one child could walk along it at a time. What does “narrow” mean? Which clue helps?",
+    "answer": "Not wide. The clue is that only one child could walk along it at a time.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-literacy-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=K16",
+    "unit": "U1",
+    "session": "Sessions 17–21",
+    "evidence": {
+      "document": "support-3.json",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+      "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 17–21",
+      "quote": "Use context clues to determine the meaning of unknown words.",
+      "characterOffset": 8736,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-literacy-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-literacy-compound-parts",
+    "grade": "2",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "What two words make “raincoat”?",
+    "answer": "rain and coat.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-literacy-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=K11",
+    "unit": "U1",
+    "session": "Sessions 3–7",
+    "evidence": {
+      "document": "support-3.json",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+      "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+      "section": "Aug 10–14, Unit 1 Sessions 3–7",
+      "quote": "Identify compound words and use them in speech or writing.",
+      "characterOffset": 3943,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-literacy-r11"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-literacy-compound-build",
+    "grade": "2",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "Put “sun” and “light” together. What compound word do they make?",
+    "answer": "sunlight.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-literacy-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=K11",
+    "unit": "U1",
+    "session": "Sessions 3–7",
+    "evidence": {
+      "document": "support-3.json",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+      "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+      "section": "Aug 10–14, Unit 1 Sessions 3–7",
+      "quote": "Identify compound words and use them in speech or writing.",
+      "characterOffset": 3943,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-literacy-r11"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-literacy-compound-use",
+    "grade": "2",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Make a compound word from “play” and “ground”. Use it in a sentence.",
+    "answer": "playground. Teacher checks that the sentence uses “playground” meaningfully.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-literacy-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=K11",
+    "unit": "U1",
+    "session": "Sessions 3–7",
+    "evidence": {
+      "document": "support-3.json",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
+      "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+      "section": "Aug 10–14, Unit 1 Sessions 3–7",
+      "quote": "Identify compound words and use them in speech or writing.",
+      "characterOffset": 3943,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-literacy-r11"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-science-sky-record",
+    "grade": "2",
+    "subject": "Science",
+    "difficulty": 1,
+    "question": "Name one sky object we tracked in class.",
+    "answer": "Teacher checks: a tracked object such as the sun, moon, or stars.",
+    "standard": "S2E1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-science-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-6.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+      "sourceTitle": "2nd Science/Social Studies Pacing Support",
+      "section": "Sep 7–11, Patterns in Day and Night",
+      "quote": "I can identify patterns in the sky, including how the sun, moon, and stars appear to move.",
+      "characterOffset": 8176,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-science-r17"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Have the class observation chart available."
+  },
+  {
+    "id": "dcss-2-science-sky-pattern",
+    "grade": "2",
+    "subject": "Science",
+    "difficulty": 2,
+    "question": "What pattern can you find in our sky observations?",
+    "answer": "Teacher checks: the claimed repetition or change is present in the class observation record.",
+    "standard": "S2E1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-science-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-6.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+      "sourceTitle": "2nd Science/Social Studies Pacing Support",
+      "section": "Sep 7–11, Patterns in Day and Night",
+      "quote": "I can identify patterns in the sky, including how the sun, moon, and stars appear to move.",
+      "characterOffset": 8176,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-science-r17"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display a taught sky-observation chart with a visible pattern."
+  },
+  {
+    "id": "dcss-2-science-sky-evidence",
+    "grade": "2",
+    "subject": "Science",
+    "difficulty": 3,
+    "question": "Use two observations to explain how a sky object appeared to move.",
+    "answer": "Teacher checks: the student names an object and compares two recorded positions or times.",
+    "standard": "S2E1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-science-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-6.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+      "sourceTitle": "2nd Science/Social Studies Pacing Support",
+      "section": "Sep 7–11, Patterns in Day and Night",
+      "quote": "I can identify patterns in the sky, including how the sun, moon, and stars appear to move.",
+      "characterOffset": 8176,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-science-r17"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display at least two dated/timed class sky observations."
+  },
+  {
+    "id": "dcss-2-social-studies-rules-purpose",
+    "grade": "2",
+    "subject": "Social Studies",
+    "difficulty": 1,
+    "question": "Why does our classroom have rules?",
+    "answer": "Teacher checks: an explanation tied to a taught purpose, such as helping people work or live together.",
+    "standard": "SSIPS",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-social-studies-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-6.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+      "sourceTitle": "2nd Science/Social Studies Pacing Support",
+      "section": "Aug 10–14, Connecting Themes",
+      "quote": "I can explain the purpose of government, rules, and laws; identify the roles of the President, Governor, and Mayor; and describe how scarcity affects how and where people live. (Government and Economics)",
+      "characterOffset": 2206,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-social-studies-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-2-social-studies-leader-role",
+    "grade": "2",
+    "subject": "Social Studies",
+    "difficulty": 2,
+    "question": "Choose President, Governor, or Mayor. Describe the role you learned about.",
+    "answer": "Teacher checks: the description agrees with the taught role.",
+    "standard": "SSIPS",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-social-studies-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-6.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+      "sourceTitle": "2nd Science/Social Studies Pacing Support",
+      "section": "Aug 10–14, Connecting Themes",
+      "quote": "I can explain the purpose of government, rules, and laws; identify the roles of the President, Governor, and Mayor; and describe how scarcity affects how and where people live. (Government and Economics)",
+      "characterOffset": 2206,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-social-studies-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Use the class’s taught government-role chart. Do not ask for current officeholders."
+  },
+  {
+    "id": "dcss-2-social-studies-scarcity-class",
+    "grade": "2",
+    "subject": "Social Studies",
+    "difficulty": 3,
+    "question": "Our class needs 8 glue sticks but has 5. Suggest a way to share them and explain your choice.",
+    "answer": "Teacher checks: a workable sharing plan and an explanation of how it addresses limited supplies.",
+    "standard": "SSIPS",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-2-social-studies-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-6.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+      "sourceTitle": "2nd Science/Social Studies Pacing Support",
+      "section": "Aug 10–14, Connecting Themes",
+      "quote": "I can explain the purpose of government, rules, and laws; identify the roles of the President, Governor, and Mayor; and describe how scarcity affects how and where people live. (Government and Economics)",
+      "characterOffset": 2206,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-2-social-studies-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-math-round-ten",
+    "grade": "3",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "Round 243 to the nearest ten.",
+    "answer": "240.",
+    "standard": "3.NR.1.3",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-math-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-10.json",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "sourceTitle": "3rd Math Pacing Support",
+      "section": "Aug 10–14, Unit 1",
+      "quote": "I can use place value to round numbers.",
+      "characterOffset": 2811,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-math-r11"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-math-round-hundred",
+    "grade": "3",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "680 is between 600 and 700. Which hundred is it nearest?",
+    "answer": "700.",
+    "standard": "3.NR.1.3",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-math-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-10.json",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "sourceTitle": "3rd Math Pacing Support",
+      "section": "Aug 10–14, Unit 1",
+      "quote": "I can use place value to round numbers.",
+      "characterOffset": 2811,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-math-r11"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-math-add-hundreds",
+    "grade": "3",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "What is 300 + 200?",
+    "answer": "500.",
+    "standard": "3.NR.1.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-10.json",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "sourceTitle": "3rd Math Pacing Support",
+      "section": "Aug 17–21, Unit 1",
+      "quote": "I can use place value to add three-digit numbers",
+      "characterOffset": 3304,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-math-add-explain",
+    "grade": "3",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Find 268 + 157. Explain one regrouping step.",
+    "answer": "425. For example, 8 + 7 = 15 ones: regroup 10 ones as 1 ten.",
+    "standard": "3.NR.1.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N12",
+    "weekIntroduced": "2026-08-17",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-10.json",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "sourceTitle": "3rd Math Pacing Support",
+      "section": "Aug 17–21, Unit 1",
+      "quote": "I can use place value to add three-digit numbers",
+      "characterOffset": 3304,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-17"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-math-subtract-regroup",
+    "grade": "3",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "Take 118 away from 432. What remains?",
+    "answer": "314.",
+    "standard": "3.PAR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N13",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N13",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-10.json",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "sourceTitle": "3rd Math Pacing Support",
+      "section": "Aug 24–28, Unit 1",
+      "quote": "I can use place value to fluently subtract three digit numbers.",
+      "characterOffset": 3822,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-math-subtract-error",
+    "grade": "3",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Sam says 402 − 185 = 383. Is Sam correct? Solve and explain how to check.",
+    "answer": "No. 402 − 185 = 217. Check: 217 + 185 = 402.",
+    "standard": "3.PAR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N13",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N13",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-10.json",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "sourceTitle": "3rd Math Pacing Support",
+      "section": "Aug 24–28, Unit 1",
+      "quote": "I can use place value to fluently subtract three digit numbers.",
+      "characterOffset": 3822,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-literacy-story-wanted",
+    "grade": "3",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "Lia wanted to fly her kite, but there was no wind. What did Lia want?",
+    "answer": "To fly her kite.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-literacy-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=K13",
+    "unit": "U1",
+    "session": "Sessions 13–18",
+    "evidence": {
+      "document": "support-8.json",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+      "sourceTitle": "3rd ELA Pacing Support",
+      "section": "Aug 24–28, Unit 1 Sessions 13–18",
+      "quote": "I can summarize a text using Somebody, Wanted, But, So, Then.",
+      "characterOffset": 5210,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-literacy-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-literacy-story-problem",
+    "grade": "3",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "Max wanted to draw, but his pencil broke. He sharpened it and finished. What was the problem and solution?",
+    "answer": "Problem: his pencil broke. Solution: he sharpened it.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-literacy-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=K13",
+    "unit": "U1",
+    "session": "Sessions 13–18",
+    "evidence": {
+      "document": "support-8.json",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+      "sourceTitle": "3rd ELA Pacing Support",
+      "section": "Aug 24–28, Unit 1 Sessions 13–18",
+      "quote": "I can summarize a text using Somebody, Wanted, But, So, Then.",
+      "characterOffset": 5210,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-literacy-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-literacy-summary-five",
+    "grade": "3",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Nia wanted to read, but the room was noisy. She moved to a quiet room and read. Summarize using Somebody, Wanted, But, So, Then.",
+    "answer": "Nia wanted to read, but it was noisy, so she moved to a quiet room; then she read.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-literacy-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=K13",
+    "unit": "U1",
+    "session": "Sessions 13–18",
+    "evidence": {
+      "document": "support-8.json",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+      "sourceTitle": "3rd ELA Pacing Support",
+      "section": "Aug 24–28, Unit 1 Sessions 13–18",
+      "quote": "I can summarize a text using Somebody, Wanted, But, So, Then.",
+      "characterOffset": 5210,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-literacy-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-literacy-transition-first",
+    "grade": "3",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "Which word starts a sequence: first or finally?",
+    "answer": "first.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=K17",
+    "unit": "U1",
+    "session": "Sessions 25–28",
+    "evidence": {
+      "document": "support-8.json",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+      "sourceTitle": "3rd ELA Pacing Support",
+      "section": "Sep 7–11, Unit 1 Sessions 25–28",
+      "quote": "Support students in using transition words during their paragraphs such as; first, then, therefore, as a result, and finally.",
+      "characterOffset": 7914,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-literacy-transition-result",
+    "grade": "3",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "The path was flooded. ___, we took another route. Use “as a result” or “first”.",
+    "answer": "As a result.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=K17",
+    "unit": "U1",
+    "session": "Sessions 25–28",
+    "evidence": {
+      "document": "support-8.json",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+      "sourceTitle": "3rd ELA Pacing Support",
+      "section": "Sep 7–11, Unit 1 Sessions 25–28",
+      "quote": "Support students in using transition words during their paragraphs such as; first, then, therefore, as a result, and finally.",
+      "characterOffset": 7914,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-literacy-r17"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-literacy-transition-write",
+    "grade": "3",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Explain making a paper drawing in three steps. Use first, then, and finally.",
+    "answer": "Teacher checks: three logically ordered steps, with first, then, and finally used appropriately.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+    "weekIntroduced": "2026-09-07",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-literacy-r17",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=K17",
+    "unit": "U1",
+    "session": "Sessions 25–28",
+    "evidence": {
+      "document": "support-8.json",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
+      "sourceTitle": "3rd ELA Pacing Support",
+      "section": "Sep 7–11, Unit 1 Sessions 25–28",
+      "quote": "Support students in using transition words during their paragraphs such as; first, then, therefore, as a result, and finally.",
+      "characterOffset": 7914,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-literacy-r17"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-science-rock-color",
+    "grade": "3",
+    "subject": "Science",
+    "difficulty": 1,
+    "question": "Describe the color of this rock sample.",
+    "answer": "Teacher checks: the color description matches the sample.",
+    "standard": "S3E1a",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-science-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-11.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit?usp=sharing",
+      "sourceTitle": "3rd Science Pacing Support",
+      "section": "Aug 10–14, Rocks, Soils and Fossils",
+      "quote": "I can accurately identify and describe at least three physical characteristics (e.g., hardness, color, luster, streak, cleavage) for a given rock or mineral sample.",
+      "characterOffset": 1396,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-science-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display a clearly visible rock or mineral sample/photo from the lesson."
+  },
+  {
+    "id": "dcss-3-science-rock-sort",
+    "grade": "3",
+    "subject": "Science",
+    "difficulty": 2,
+    "question": "These samples are red, gray, red, and gray. How could you sort them by color?",
+    "answer": "Make a red group with two samples and a gray group with two samples.",
+    "standard": "S3E1a",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-science-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-11.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit?usp=sharing",
+      "sourceTitle": "3rd Science Pacing Support",
+      "section": "Aug 10–14, Rocks, Soils and Fossils",
+      "quote": "I can accurately identify and describe at least three physical characteristics (e.g., hardness, color, luster, streak, cleavage) for a given rock or mineral sample.",
+      "characterOffset": 1396,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-science-r11"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-3-science-rock-properties",
+    "grade": "3",
+    "subject": "Science",
+    "difficulty": 3,
+    "question": "Describe three physical characteristics of the sample using our observation notes.",
+    "answer": "Teacher checks: three accurate recorded characteristics, such as color, hardness, luster, streak, or cleavage.",
+    "standard": "S3E1a",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-science-r11",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-11.json",
+      "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit?usp=sharing",
+      "sourceTitle": "3rd Science Pacing Support",
+      "section": "Aug 10–14, Rocks, Soils and Fossils",
+      "quote": "I can accurately identify and describe at least three physical characteristics (e.g., hardness, color, luster, streak, cleavage) for a given rock or mineral sample.",
+      "characterOffset": 1396,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-science-r11"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Show a studied sample and its class-tested property notes. Do not ask students to perform new tests during play."
+  },
+  {
+    "id": "dcss-3-social-studies-map-equator",
+    "grade": "3",
+    "subject": "Social Studies",
+    "difficulty": 1,
+    "question": "Point to the equator on our map.",
+    "answer": "Teacher checks: the student identifies the equator on the classroom reference map.",
+    "standard": "SS3G1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-social-studies-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-12.json",
+      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit?usp=drive_link",
+      "sourceTitle": "3rd Social Studies Pacing Support",
+      "section": "Aug 31–Sep 4, United States Geography",
+      "quote": "I can locate and describe the equator, prime meridian, and lines of latitude and longitude.",
+      "characterOffset": 3090,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-social-studies-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display the physical/world map used in the lesson."
+  },
+  {
+    "id": "dcss-3-social-studies-map-meridian",
+    "grade": "3",
+    "subject": "Social Studies",
+    "difficulty": 2,
+    "question": "Locate the prime meridian and describe it using our lesson vocabulary.",
+    "answer": "Teacher checks: the location and description agree with the taught map reference.",
+    "standard": "SS3G1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-social-studies-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-12.json",
+      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit?usp=drive_link",
+      "sourceTitle": "3rd Social Studies Pacing Support",
+      "section": "Aug 31–Sep 4, United States Geography",
+      "quote": "I can locate and describe the equator, prime meridian, and lines of latitude and longitude.",
+      "characterOffset": 3090,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-social-studies-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display the map and vocabulary reference used in class."
+  },
+  {
+    "id": "dcss-3-social-studies-map-lines",
+    "grade": "3",
+    "subject": "Social Studies",
+    "difficulty": 3,
+    "question": "Show a line of latitude and a line of longitude. Explain a difference using the map.",
+    "answer": "Teacher checks: both lines are correctly identified and the comparison agrees with the map lesson.",
+    "standard": "SS3G1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-3-social-studies-r16",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-12.json",
+      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit?usp=drive_link",
+      "sourceTitle": "3rd Social Studies Pacing Support",
+      "section": "Aug 31–Sep 4, United States Geography",
+      "quote": "I can locate and describe the equator, prime meridian, and lines of latitude and longitude.",
+      "characterOffset": 3090,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-3-social-studies-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display the classroom map showing latitude and longitude."
+  },
+  {
+    "id": "dcss-4-math-digit-value",
+    "grade": "4",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "What is the value of the 6 in 46,208?",
+    "answer": "6,000.",
+    "standard": "4.NR.1.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M13",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M13",
+    "unit": "Unit 1",
+    "session": null,
+    "evidence": {
+      "document": "support-15.json",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "sourceTitle": "4th Math Pacing Support",
+      "section": "Aug 10–14, Unit 1",
+      "quote": "I can read and write multi-digit numbers to the hundred thousands place using base 10 numerals and expanded form, and I can recognize and show that a digit in one place has a value ten times greater than the digit to its right based on the relationship between multiplication and division.",
+      "characterOffset": 3016,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-math-expanded-form",
+    "grade": "4",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "Write 52,406 in expanded form.",
+    "answer": "50,000 + 2,000 + 400 + 6.",
+    "standard": "4.NR.1.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M13",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M13",
+    "unit": "Unit 1",
+    "session": null,
+    "evidence": {
+      "document": "support-15.json",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "sourceTitle": "4th Math Pacing Support",
+      "section": "Aug 10–14, Unit 1",
+      "quote": "I can read and write multi-digit numbers to the hundred thousands place using base 10 numerals and expanded form, and I can recognize and show that a digit in one place has a value ten times greater than the digit to its right based on the relationship between multiplication and division.",
+      "characterOffset": 3016,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-math-place-relationship",
+    "grade": "4",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "In 55,000, how does the value of the left 5 compare with the value of the right 5? Explain.",
+    "answer": "50,000 is ten times 5,000 because moving one place left multiplies a digit’s value by ten.",
+    "standard": "4.NR.1.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M13",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-math-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M13",
+    "unit": "Unit 1",
+    "session": null,
+    "evidence": {
+      "document": "support-15.json",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "sourceTitle": "4th Math Pacing Support",
+      "section": "Aug 10–14, Unit 1",
+      "quote": "I can read and write multi-digit numbers to the hundred thousands place using base 10 numerals and expanded form, and I can recognize and show that a digit in one place has a value ten times greater than the digit to its right based on the relationship between multiplication and division.",
+      "characterOffset": 3016,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-math-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-math-add-thousands",
+    "grade": "4",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "What is 2,000 + 3,000?",
+    "answer": "5,000.",
+    "standard": "4.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M18",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-math-r18",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M18",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-15.json",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "sourceTitle": "4th Math Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1",
+      "quote": "I can fluently add multi-digit whole numbers to solve real-life mathematical problems.",
+      "characterOffset": 5588,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-math-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-math-add-money",
+    "grade": "4",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "A school raised $1,275 in August and $2,408 in September. How much altogether?",
+    "answer": "$3,683.",
+    "standard": "4.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M18",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-math-r18",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M18",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-15.json",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "sourceTitle": "4th Math Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1",
+      "quote": "I can fluently add multi-digit whole numbers to solve real-life mathematical problems.",
+      "characterOffset": 5588,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-math-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-math-add-missing",
+    "grade": "4",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "Two classes collect 4,000 cans altogether. One collects 1,685. How many does the other collect? Check with addition.",
+    "answer": "2,315 cans; 1,685 + 2,315 = 4,000.",
+    "standard": "4.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M18",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-math-r18",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M18",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-15.json",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "sourceTitle": "4th Math Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1",
+      "quote": "I can fluently add multi-digit whole numbers to solve real-life mathematical problems.",
+      "characterOffset": 5588,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-math-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-literacy-cause-rain",
+    "grade": "4",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "Rain filled the bucket. What caused the bucket to fill?",
+    "answer": "The rain.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-literacy-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=K13",
+    "unit": "U1",
+    "session": "Sessions 3–7",
+    "evidence": {
+      "document": "support-13.json",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+      "sourceTitle": "4th ELA Pacing Support",
+      "section": "Aug 10–14, Unit 1 Sessions 3–7",
+      "quote": "I can explain cause-and-effect relationships within a text.",
+      "characterOffset": 3507,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-literacy-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-literacy-effect-missed",
+    "grade": "4",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "The bus left before Leo reached the stop, so he walked. What was the cause, and what was the effect?",
+    "answer": "Cause: the bus left before Leo arrived. Effect: Leo walked.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-literacy-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=K13",
+    "unit": "U1",
+    "session": "Sessions 3–7",
+    "evidence": {
+      "document": "support-13.json",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+      "sourceTitle": "4th ELA Pacing Support",
+      "section": "Aug 10–14, Unit 1 Sessions 3–7",
+      "quote": "I can explain cause-and-effect relationships within a text.",
+      "characterOffset": 3507,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-literacy-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-literacy-cause-evidence",
+    "grade": "4",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "A ball hit the stacked cups. The cups fell, and water spilled. Explain the chain of events using evidence from these sentences.",
+    "answer": "The ball hit the cups, causing them to fall; their falling caused the water to spill.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-literacy-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=K13",
+    "unit": "U1",
+    "session": "Sessions 3–7",
+    "evidence": {
+      "document": "support-13.json",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+      "sourceTitle": "4th ELA Pacing Support",
+      "section": "Aug 10–14, Unit 1 Sessions 3–7",
+      "quote": "I can explain cause-and-effect relationships within a text.",
+      "characterOffset": 3507,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-literacy-r13"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-literacy-main-topic",
+    "grade": "4",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "Our class reads poems, writes poems, and shares poems. What is this text mostly about?",
+    "answer": "The class’s work with poems.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-literacy-r18",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=K18",
+    "unit": "U1",
+    "session": "Sessions 19–23",
+    "evidence": {
+      "document": "support-13.json",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+      "sourceTitle": "4th ELA Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 19–23",
+      "quote": "I can use details from the text to identify and explain the main idea.",
+      "characterOffset": 6573,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-literacy-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-literacy-main-detail",
+    "grade": "4",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "The club keeps the park clean. Members pick up litter and empty bins. Give the main idea and one supporting detail.",
+    "answer": "Main idea: the club keeps the park clean. Detail: members pick up litter or empty bins.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-literacy-r18",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=K18",
+    "unit": "U1",
+    "session": "Sessions 19–23",
+    "evidence": {
+      "document": "support-13.json",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+      "sourceTitle": "4th ELA Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 19–23",
+      "quote": "I can use details from the text to identify and explain the main idea.",
+      "characterOffset": 6573,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-literacy-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-literacy-main-revise",
+    "grade": "4",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "The library lends books, offers story time, and hosts reading clubs. Is “The library only lends books” a good main idea? Explain and improve it.",
+    "answer": "No; “only” leaves out the other activities. Better: the library offers several ways to read and enjoy books.",
+    "standard": null,
+    "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-literacy-r18",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=K18",
+    "unit": "U1",
+    "session": "Sessions 19–23",
+    "evidence": {
+      "document": "support-13.json",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
+      "sourceTitle": "4th ELA Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1 Sessions 19–23",
+      "quote": "I can use details from the text to identify and explain the main idea.",
+      "characterOffset": 6573,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-literacy-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-science-weather-read",
+    "grade": "4",
+    "subject": "Science",
+    "difficulty": 1,
+    "question": "Our chart says Monday: sunny; Tuesday: cloudy. What weather was recorded Tuesday?",
+    "answer": "Cloudy.",
+    "standard": "S4E4.a",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-science-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-16.json",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit?usp=sharing",
+      "sourceTitle": "4th Science Pacing Support",
+      "section": "Aug 10–14, Weather and Moon Phases",
+      "quote": "I can collect, record, and analyze weather, cloud, and moon phase data to identify patterns and explain changes over time.",
+      "characterOffset": 1633,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-science-r13",
+      "dcss-fy27-4-science-r14",
+      "dcss-fy27-4-science-r15",
+      "dcss-fy27-4-science-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-science-weather-compare",
+    "grade": "4",
+    "subject": "Science",
+    "difficulty": 2,
+    "question": "Cloud-cover notes: Monday clear, Tuesday partly cloudy, Wednesday fully cloudy. Describe the change.",
+    "answer": "The recorded cloud cover increased from clear to partly cloudy to fully cloudy.",
+    "standard": "S4E4.a",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-science-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-16.json",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit?usp=sharing",
+      "sourceTitle": "4th Science Pacing Support",
+      "section": "Aug 10–14, Weather and Moon Phases",
+      "quote": "I can collect, record, and analyze weather, cloud, and moon phase data to identify patterns and explain changes over time.",
+      "characterOffset": 1633,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-science-r13",
+      "dcss-fy27-4-science-r14",
+      "dcss-fy27-4-science-r15",
+      "dcss-fy27-4-science-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-science-weather-limits",
+    "grade": "4",
+    "subject": "Science",
+    "difficulty": 3,
+    "question": "One day was rainy. Is that enough data to show a repeating weekly weather pattern? Explain.",
+    "answer": "No. One observation cannot show repetition; collect observations across more days and weeks.",
+    "standard": "S4E4.a",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-science-r13",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
+    "unit": null,
+    "session": null,
+    "evidence": {
+      "document": "support-16.json",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit?usp=sharing",
+      "sourceTitle": "4th Science Pacing Support",
+      "section": "Aug 10–14, Weather and Moon Phases",
+      "quote": "I can collect, record, and analyze weather, cloud, and moon phase data to identify patterns and explain changes over time.",
+      "characterOffset": 1633,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-science-r13",
+      "dcss-fy27-4-science-r14",
+      "dcss-fy27-4-science-r15",
+      "dcss-fy27-4-science-r18"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-4-social-studies-nation-person",
+    "grade": "4",
+    "subject": "Social Studies",
+    "difficulty": 1,
+    "question": "Name a person from our Forming a New Nation lesson.",
+    "answer": "Teacher checks: the person appears in the taught lesson.",
+    "standard": "SS4H1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-social-studies-r15",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
+    "unit": "Unit 2",
+    "session": null,
+    "evidence": {
+      "document": "support-17.json",
+      "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit?usp=drive_link",
+      "sourceTitle": "4th Social Studies Pacing Support",
+      "section": "Aug 24–28, Forming a New Nation",
+      "quote": "I can explain how the United States was formed and describe the key people, events, and decisions that helped shape our nation.",
+      "characterOffset": 6491,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-social-studies-r15"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Have the taught lesson’s list of people and events available."
+  },
+  {
+    "id": "dcss-4-social-studies-nation-event",
+    "grade": "4",
+    "subject": "Social Studies",
+    "difficulty": 2,
+    "question": "Choose an event from our lesson. Explain how it helped shape the new nation.",
+    "answer": "Teacher checks: the event and explanation agree with the taught source.",
+    "standard": "SS4H1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-social-studies-r15",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
+    "unit": "Unit 2",
+    "session": null,
+    "evidence": {
+      "document": "support-17.json",
+      "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit?usp=drive_link",
+      "sourceTitle": "4th Social Studies Pacing Support",
+      "section": "Aug 24–28, Forming a New Nation",
+      "quote": "I can explain how the United States was formed and describe the key people, events, and decisions that helped shape our nation.",
+      "characterOffset": 6491,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-social-studies-r15"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Use a specific already-taught event and its source material."
+  },
+  {
+    "id": "dcss-4-social-studies-nation-decision",
+    "grade": "4",
+    "subject": "Social Studies",
+    "difficulty": 3,
+    "question": "Describe a decision from our lesson and one consequence. Use evidence from the lesson.",
+    "answer": "Teacher checks: an accurate decision, a supported consequence, and relevant evidence.",
+    "standard": "SS4H1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-4-social-studies-r15",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
+    "unit": "Unit 2",
+    "session": null,
+    "evidence": {
+      "document": "support-17.json",
+      "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit?usp=drive_link",
+      "sourceTitle": "4th Social Studies Pacing Support",
+      "section": "Aug 24–28, Forming a New Nation",
+      "quote": "I can explain how the United States was formed and describe the key people, events, and decisions that helped shape our nation.",
+      "characterOffset": 6491,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-4-social-studies-r15"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Have the taught historical source or notes available."
+  },
+  {
+    "id": "dcss-5-math-volume-cubes",
+    "grade": "5",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "A solid is built from 18 unit cubes, with no gaps or overlaps. What is its volume?",
+    "answer": "18 cubic units.",
+    "standard": "5.GSR.8.4",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-20.json",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "sourceTitle": "5th Math Pacing Support",
+      "section": "Aug 24–28, Whole Number Operations and Applications",
+      "quote": "I can find the volume of a rectangular prism by counting cubes or using a formula.",
+      "characterOffset": 3723,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-math-volume-layers",
+    "grade": "5",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "A rectangular prism has 4 layers of 6 unit cubes. What is its volume?",
+    "answer": "24 cubic units.",
+    "standard": "5.GSR.8.4",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-20.json",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "sourceTitle": "5th Math Pacing Support",
+      "section": "Aug 24–28, Whole Number Operations and Applications",
+      "quote": "I can find the volume of a rectangular prism by counting cubes or using a formula.",
+      "characterOffset": 3723,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-math-volume-dimensions",
+    "grade": "5",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "A rectangular prism is 5 units long, 3 units wide, and 2 units high. Find its volume and explain.",
+    "answer": "30 cubic units: 5 × 3 × 2 = 30. Each of two layers has 15 unit cubes.",
+    "standard": "5.GSR.8.4",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-math-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-20.json",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "sourceTitle": "5th Math Pacing Support",
+      "section": "Aug 24–28, Whole Number Operations and Applications",
+      "quote": "I can find the volume of a rectangular prism by counting cubes or using a formula.",
+      "characterOffset": 3723,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-math-r12"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-math-multiply-ten",
+    "grade": "5",
+    "subject": "Math",
+    "difficulty": 1,
+    "question": "What is 34 × 10?",
+    "answer": "340.",
+    "standard": "5.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N15",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-math-r15",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N15",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-20.json",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "sourceTitle": "5th Math Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1",
+      "quote": "I can multiply multi-digit whole numbers using place value strategies and the standard algorithm.",
+      "characterOffset": 4356,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-math-r15"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-math-multiply-partial",
+    "grade": "5",
+    "subject": "Math",
+    "difficulty": 2,
+    "question": "Find 23 × 14 using partial products.",
+    "answer": "322: 23 × 10 = 230 and 23 × 4 = 92; 230 + 92 = 322.",
+    "standard": "5.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N15",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-math-r15",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N15",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-20.json",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "sourceTitle": "5th Math Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1",
+      "quote": "I can multiply multi-digit whole numbers using place value strategies and the standard algorithm.",
+      "characterOffset": 4356,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-math-r15"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-math-multiply-error",
+    "grade": "5",
+    "subject": "Math",
+    "difficulty": 3,
+    "question": "A student writes 42 × 13 = 42 × 10 + 42 × 2. What is wrong? Find the correct product.",
+    "answer": "13 = 10 + 3, not 10 + 2. The correct product is 420 + 126 = 546.",
+    "standard": "5.NR.2.1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N15",
+    "weekIntroduced": "2026-08-31",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-math-r15",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N15",
+    "unit": "U1",
+    "session": null,
+    "evidence": {
+      "document": "support-20.json",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "sourceTitle": "5th Math Pacing Support",
+      "section": "Aug 31–Sep 4, Unit 1",
+      "quote": "I can multiply multi-digit whole numbers using place value strategies and the standard algorithm.",
+      "characterOffset": 4356,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-31"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-math-r15"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-literacy-setting-evidence",
+    "grade": "5",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "“At dawn, Jo waited beside the school gate.” Identify the setting details.",
+    "answer": "Time: dawn. Place: beside the school gate.",
+    "standard": "5.T.T.1.a",
+    "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-literacy-r9",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=L9",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "support-18.json",
+      "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+      "sourceTitle": "5th ELA Pacing Support",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "I can analyze the use of narrative techniques to present ideas, design texts, and convey information about characters, setting, and plot. (5.T.T.1.a)",
+      "characterOffset": 2961,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03",
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-literacy-r9",
+      "dcss-fy27-5-literacy-r10",
+      "dcss-fy27-5-literacy-r11",
+      "dcss-fy27-5-literacy-r12",
+      "dcss-fy27-5-literacy-r15",
+      "dcss-fy27-5-literacy-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-literacy-character-action",
+    "grade": "5",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "“Even after missing three shots, Maya kept practicing.” What does this action suggest about Maya? Cite evidence.",
+    "answer": "She is persistent or determined; she keeps practicing after missing three shots.",
+    "standard": "5.T.T.1.a",
+    "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-literacy-r9",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=L9",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "support-18.json",
+      "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+      "sourceTitle": "5th ELA Pacing Support",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "I can analyze the use of narrative techniques to present ideas, design texts, and convey information about characters, setting, and plot. (5.T.T.1.a)",
+      "characterOffset": 2961,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03",
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-literacy-r9",
+      "dcss-fy27-5-literacy-r10",
+      "dcss-fy27-5-literacy-r11",
+      "dcss-fy27-5-literacy-r12",
+      "dcss-fy27-5-literacy-r15",
+      "dcss-fy27-5-literacy-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-literacy-dialogue-inference",
+    "grade": "5",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "“I can’t wait!” Ari whispered, bouncing in his seat. How do the words and actions work together to reveal his feelings?",
+    "answer": "Both suggest excitement or eagerness: “I can’t wait” and bouncing in his seat support that inference.",
+    "standard": "5.T.T.1.a",
+    "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-literacy-r9",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=L9",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "support-18.json",
+      "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+      "sourceTitle": "5th ELA Pacing Support",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "I can analyze the use of narrative techniques to present ideas, design texts, and convey information about characters, setting, and plot. (5.T.T.1.a)",
+      "characterOffset": 2961,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03",
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-literacy-r9",
+      "dcss-fy27-5-literacy-r10",
+      "dcss-fy27-5-literacy-r11",
+      "dcss-fy27-5-literacy-r12",
+      "dcss-fy27-5-literacy-r15",
+      "dcss-fy27-5-literacy-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-literacy-character-change",
+    "grade": "5",
+    "subject": "Literacy",
+    "difficulty": 1,
+    "question": "At first, Lee refused help. Later, Lee asked a friend for help. What changed?",
+    "answer": "Lee changed from refusing help to accepting or asking for it.",
+    "standard": "5.T.T.1.c",
+    "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-literacy-r9",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=L9",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "support-18.json",
+      "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+      "sourceTitle": "5th ELA Pacing Support",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "I can explain how a character changes and how that shows the theme of the story. (5.T.T.1.c)",
+      "characterOffset": 3114,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-literacy-r9"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-literacy-theme-help",
+    "grade": "5",
+    "subject": "Literacy",
+    "difficulty": 2,
+    "question": "Sam tried alone and struggled. After asking for help, Sam succeeded. What possible theme does this suggest?",
+    "answer": "Asking for help can help us succeed. Accept another theme supported by the events.",
+    "standard": "5.T.T.1.c",
+    "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-literacy-r9",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=L9",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "support-18.json",
+      "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+      "sourceTitle": "5th ELA Pacing Support",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "I can explain how a character changes and how that shows the theme of the story. (5.T.T.1.c)",
+      "characterOffset": 3114,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-literacy-r9"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-literacy-theme-evidence",
+    "grade": "5",
+    "subject": "Literacy",
+    "difficulty": 3,
+    "question": "Rae hid every mistake. After a friend shared a mistake, Rae admitted one and learned from it. Explain a possible theme using Rae’s change.",
+    "answer": "Being honest about mistakes can help us learn. Rae changes from hiding mistakes to admitting one and learning from it.",
+    "standard": "5.T.T.1.c",
+    "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+    "weekIntroduced": "2026-08-03",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-literacy-r9",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=L9",
+    "unit": "U1",
+    "session": "Sessions 1–2",
+    "evidence": {
+      "document": "support-18.json",
+      "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
+      "sourceTitle": "5th ELA Pacing Support",
+      "section": "Aug 3–7, Unit 1 Sessions 1–2",
+      "quote": "I can explain how a character changes and how that shows the theme of the story. (5.T.T.1.c)",
+      "characterOffset": 3114,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-03"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-literacy-r9"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-science-earth-processes",
+    "grade": "5",
+    "subject": "Science",
+    "difficulty": 1,
+    "question": "Name one Earth-surface process from our lesson.",
+    "answer": "Weathering, erosion, or deposition.",
+    "standard": "S5E1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-science-r10",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
+    "unit": "U7",
+    "session": null,
+    "evidence": {
+      "document": "support-21.json",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit?usp=drive_link",
+      "sourceTitle": "5th Science Pacing Support",
+      "section": "Aug 10–14, Earth Science",
+      "quote": "I can describe how weathering, erosion and deposition changes Earth's surface over time.",
+      "characterOffset": 2407,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-science-r10",
+      "dcss-fy27-5-science-r11",
+      "dcss-fy27-5-science-r12",
+      "dcss-fy27-5-science-r15",
+      "dcss-fy27-5-science-r16"
+    ],
+    "questionType": "short-answer",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  },
+  {
+    "id": "dcss-5-science-earth-observation",
+    "grade": "5",
+    "subject": "Science",
+    "difficulty": 2,
+    "question": "Use our before-and-after pictures to describe one change to Earth’s surface.",
+    "answer": "Teacher checks: the described change is visible in the pictures and matches the taught investigation.",
+    "standard": "S5E1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-science-r10",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
+    "unit": "U7",
+    "session": null,
+    "evidence": {
+      "document": "support-21.json",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit?usp=drive_link",
+      "sourceTitle": "5th Science Pacing Support",
+      "section": "Aug 10–14, Earth Science",
+      "quote": "I can describe how weathering, erosion and deposition changes Earth's surface over time.",
+      "characterOffset": 2407,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-science-r10",
+      "dcss-fy27-5-science-r11",
+      "dcss-fy27-5-science-r12",
+      "dcss-fy27-5-science-r15",
+      "dcss-fy27-5-science-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display a previously taught before-and-after weathering, erosion, or deposition example."
+  },
+  {
+    "id": "dcss-5-science-earth-explanation",
+    "grade": "5",
+    "subject": "Science",
+    "difficulty": 3,
+    "question": "Explain which taught process changed the surface in our example. Support your answer with an observation.",
+    "answer": "Teacher checks: correctly identifies weathering, erosion, or deposition and connects it to evidence from the taught example.",
+    "standard": "S5E1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
+    "weekIntroduced": "2026-08-10",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-science-r10",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
+    "unit": "U7",
+    "session": null,
+    "evidence": {
+      "document": "support-21.json",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit?usp=drive_link",
+      "sourceTitle": "5th Science Pacing Support",
+      "section": "Aug 10–14, Earth Science",
+      "quote": "I can describe how weathering, erosion and deposition changes Earth's surface over time.",
+      "characterOffset": 2407,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-10",
+      "2026-08-17",
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-science-r10",
+      "dcss-fy27-5-science-r11",
+      "dcss-fy27-5-science-r12",
+      "dcss-fy27-5-science-r15",
+      "dcss-fy27-5-science-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Display an example already studied in class with an established explanation."
+  },
+  {
+    "id": "dcss-5-social-studies-citizen-responsibility",
+    "grade": "5",
+    "subject": "Social Studies",
+    "difficulty": 1,
+    "question": "Name a responsibility of a good citizen discussed in our lesson.",
+    "answer": "Teacher checks: a responsibility supported by the taught citizenship material.",
+    "standard": "SS5CG1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=P12",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-social-studies-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=P12",
+    "unit": "Unit 2",
+    "session": null,
+    "evidence": {
+      "document": "support-22.json",
+      "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit?usp=drive_link",
+      "sourceTitle": "5th Social Studies Pacing Support",
+      "section": "Aug 24–28, Citizenship, Business, and the Government",
+      "quote": "I can explain the rights and responsibilities of good citizens and describe how businesses and government work together to meet the needs of communities.",
+      "characterOffset": 6053,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-social-studies-r12",
+      "dcss-fy27-5-social-studies-r15",
+      "dcss-fy27-5-social-studies-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Use the class citizenship notes or anchor chart."
+  },
+  {
+    "id": "dcss-5-social-studies-citizen-right",
+    "grade": "5",
+    "subject": "Social Studies",
+    "difficulty": 2,
+    "question": "Choose a right and a responsibility from our lesson. Explain the difference using those examples.",
+    "answer": "Teacher checks: the examples and distinction match the taught source.",
+    "standard": "SS5CG1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=P12",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-social-studies-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=P12",
+    "unit": "Unit 2",
+    "session": null,
+    "evidence": {
+      "document": "support-22.json",
+      "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit?usp=drive_link",
+      "sourceTitle": "5th Social Studies Pacing Support",
+      "section": "Aug 24–28, Citizenship, Business, and the Government",
+      "quote": "I can explain the rights and responsibilities of good citizens and describe how businesses and government work together to meet the needs of communities.",
+      "characterOffset": 6053,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-social-studies-r12",
+      "dcss-fy27-5-social-studies-r15",
+      "dcss-fy27-5-social-studies-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+    "teacherSetup": "Have the taught rights-and-responsibilities chart available."
+  },
+  {
+    "id": "dcss-5-social-studies-citizen-impact",
+    "grade": "5",
+    "subject": "Social Studies",
+    "difficulty": 3,
+    "question": "Describe how one responsible action by a citizen can help a community. Explain the connection.",
+    "answer": "Teacher checks: identifies a taught responsibility and explains a plausible community benefit.",
+    "standard": "SS5CG1",
+    "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=P12",
+    "weekIntroduced": "2026-08-24",
+    "source": "DCSS Pacing Guide FY27",
+    "curriculumId": "dcss-fy27-5-social-studies-r12",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=P12",
+    "unit": "Unit 2",
+    "session": null,
+    "evidence": {
+      "document": "support-22.json",
+      "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit?usp=drive_link",
+      "sourceTitle": "5th Social Studies Pacing Support",
+      "section": "Aug 24–28, Citizenship, Business, and the Government",
+      "quote": "I can explain the rights and responsibilities of good citizens and describe how businesses and government work together to meet the needs of communities.",
+      "characterOffset": 6053,
+      "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+    },
+    "alignedWeeks": [
+      "2026-08-24",
+      "2026-08-31",
+      "2026-09-07"
+    ],
+    "curriculumIds": [
+      "dcss-fy27-5-social-studies-r12",
+      "dcss-fy27-5-social-studies-r15",
+      "dcss-fy27-5-social-studies-r16"
+    ],
+    "questionType": "teacher-check",
+    "teacherRead": false,
+    "reviewQuestion": true,
+    "reviewStatus": "pending",
+    "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved."
+  }
+]

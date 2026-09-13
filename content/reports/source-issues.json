@@ -1,0 +1,234 @@
+{
+  "asOf": "2026-09-13",
+  "tabs": [
+    {
+      "tab": "COVER",
+      "hidden": false,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "Unit Review",
+      "hidden": false,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "KINDER",
+      "hidden": false,
+      "imported": true,
+      "reason": "K–5 primary pacing tab"
+    },
+    {
+      "tab": "FIRST",
+      "hidden": false,
+      "imported": true,
+      "reason": "K–5 primary pacing tab"
+    },
+    {
+      "tab": "SECOND",
+      "hidden": false,
+      "imported": true,
+      "reason": "K–5 primary pacing tab"
+    },
+    {
+      "tab": "THIRD",
+      "hidden": false,
+      "imported": true,
+      "reason": "K–5 primary pacing tab"
+    },
+    {
+      "tab": "FOURTH",
+      "hidden": false,
+      "imported": true,
+      "reason": "K–5 primary pacing tab"
+    },
+    {
+      "tab": "FIFTH",
+      "hidden": false,
+      "imported": true,
+      "reason": "K–5 primary pacing tab"
+    },
+    {
+      "tab": "SIXTH",
+      "hidden": false,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "SEVENTH",
+      "hidden": false,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "EIGHTH",
+      "hidden": false,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "HIGH SCHOOL",
+      "hidden": false,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "GrammarPlanning",
+      "hidden": true,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "Principals Newsletter",
+      "hidden": true,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    },
+    {
+      "tab": "K - PA",
+      "hidden": true,
+      "imported": false,
+      "reason": "Context only; outside K–5 primary FY27 pacing"
+    }
+  ],
+  "undatedContent": [
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-K-literacy-r24",
+      "sheet": "KINDER",
+      "row": 24,
+      "text": "week 10"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-K-literacy-r51",
+      "sheet": "KINDER",
+      "row": 51,
+      "text": "week 25"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-1-math-r24",
+      "sheet": "FIRST",
+      "row": 24,
+      "text": "U2: 1.NR.2.1, 1.NR.2.7"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-1-social-studies-r24",
+      "sheet": "FIRST",
+      "row": 24,
+      "text": "SS1H1"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-1-math-r51",
+      "sheet": "FIRST",
+      "row": 51,
+      "text": "U5: 1.NR.5.1"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-2-literacy-r24",
+      "sheet": "SECOND",
+      "row": 24,
+      "text": "week 10"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-2-literacy-r51",
+      "sheet": "SECOND",
+      "row": 51,
+      "text": "week 25"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-math-r24",
+      "sheet": "THIRD",
+      "row": 24,
+      "text": "U2: 3.PAR.3.3"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-science-r24",
+      "sheet": "THIRD",
+      "row": 24,
+      "text": "U1: S3E2"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-social-studies-r24",
+      "sheet": "THIRD",
+      "row": 24,
+      "text": "H1, G3a, E1a, E1b"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-literacy-r47",
+      "sheet": "THIRD",
+      "row": 47,
+      "text": "U4W5"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-math-r51",
+      "sheet": "THIRD",
+      "row": 51,
+      "text": "U4: 3.MDR.5.1 ★ UA-4"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-science-r51",
+      "sheet": "THIRD",
+      "row": 51,
+      "text": "U2: S3P1"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-social-studies-r51",
+      "sheet": "THIRD",
+      "row": 51,
+      "text": "H3, G3c, E1, E3"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-3-literacy-r66",
+      "sheet": "THIRD",
+      "row": 66,
+      "text": "U6W"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-4-science-r26",
+      "sheet": "FOURTH",
+      "row": 26,
+      "text": "S4E1, S4E2, S4P1.c"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-5-science-r23",
+      "sheet": "FIFTH",
+      "row": 23,
+      "text": "U8: S5P1"
+    },
+    {
+      "type": "undated-content",
+      "recordId": "dcss-fy27-5-science-r50",
+      "sheet": "FIFTH",
+      "row": 50,
+      "text": "U7: S5E1"
+    }
+  ],
+  "knownProblems": [
+    "KINDER P17: main guide has U1 K.GSR.8.2 on Sep 7; linked math support starts U2 K.NR.1.2. No Sep 7 K math questions generated.",
+    "THIRD N17: main guide starts U2 3.PAR.3.2 on Sep 7; linked math support has Unit 1 assessment, and starts Unit 2 Sep 14. No Sep 7 third-grade math questions generated.",
+    "FIRST Q3/Q4 labels occur at different weeks from other grades; source placement is preserved, not harmonized.",
+    "Main sheet uses abbreviated social studies codes in grade 3 and inconsistent punctuation in several math codes. Raw spelling is retained; meanings are not inferred.",
+    "GrammarPlanning contains 2024 dates; K - PA is labeled 2024–2025; Principals Newsletter dates differ from the FY27 primary tabs. Excluded from FY27 mappings.",
+    "KINDER K36 has a duplicated Heggerty URL. Retained as source text, not used for questions.",
+    "Linked documents include placeholders, assessment codes, source title typos, and timing/standard inconsistencies. No assessment access codes are bundled into the application.",
+    "Some grade 3 science supporting statements cover multiple substandards; only sample-observation prompts are generated for the explicitly matching S3E1a period.",
+    "Questions needing classroom materials have teacherSetup and teacher-check rubrics. They require teacher preparation, not an assumed universal answer."
+  ]
+}

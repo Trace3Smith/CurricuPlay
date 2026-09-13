@@ -2,15 +2,17 @@
 
 **This week’s content. Ready to play.**
 
-Client-only React + Vite + TypeScript classroom quiz platform. Jeopardy is the only playable game. No accounts, backend, AI calls, or student submissions.
+React + Vite + TypeScript, client-side classroom games. Jeopardy consumes the shared local question engine. No accounts, database, live generation or student submissions.
 
-## Current readiness
+## Current content status
 
-The software flow is implemented. **Classroom content is pending:** the DCSS FY27 K–5 pacing guide and verified question bank have not yet been supplied. Both JSON data files intentionally contain empty arrays. Start Game stays disabled until suitable questions exist. No standards, mappings, or academic questions have been invented. Synthetic browser-test fixtures are isolated in `tests/` and never ship in the app.
+The DCSS FY27 pacing guide has been imported: **755 subject-row records** (737 dated, 18 unresolved dates). The locally generated bank contains **108 drafts, 18 per grade K–5**. Generation uses the main guide for timing and explicitly cited instructional documents linked from its subject headers for lesson detail. It does not expand codes using outside knowledge.
+
+**All drafts await teacher review and are excluded from gameplay until approved.** Each grade currently has fewer than the 30 distinct questions needed for a full board. Recent Content has additional gaps. See [the import report](content/reports/IMPORT_REPORT.md), [question review worksheet](content/reports/question-review.csv), and [curriculum review inventory](content/reports/curriculum-review.csv). This is not yet a fully populated classroom-ready bank.
 
 ## Run
 
-Requires Node.js 22.12+ (tested with Node 24).
+Node.js 22.12+ is required; tested with Node 24. Python 3 is used only for offline content scripts.
 
 ```bash
 cd /home/trace3smith/curricuplay/CurricuPlay
@@ -18,57 +20,57 @@ npm ci
 npm run dev -- --port 5173 --strictPort
 ```
 
-Open http://localhost:5173. Dependencies are already installed in this workspace. Keep the server running. Use the same URL and browser each class so localStorage stays consistent. Use one tab per game.
-
-For a production build:
+Open http://localhost:5173. Keep the local server running. Use one browser tab per game and the same browser/URL each class to retain localStorage. No internet is needed for installed, locally served gameplay.
 
 ```bash
 npm run build
 npm run preview -- --port 4173 --strictPort
 ```
 
-Open http://localhost:4173. This is a separate localStorage origin from port 5173. The generated `dist/` can also be served by any static web server; opening `index.html` directly as a file is not supported. No internet is needed for gameplay once installed and served locally. Offline reload without a running local server is not supported.
+The production preview is http://localhost:4173, a separate storage origin. `dist/` can be hosted by a static web server; do not open its HTML as a filesystem URL. There is no service worker for offline reloads without a running server.
 
-## Add approved content
+## Offline content workflow
 
-1. Replace the empty array in `src/data/questions.json` with the verified bank, normalized to the schema in `src/types/index.ts`.
-2. Populate `src/data/curriculum.json` from the pacing guide itself. Preserve source attribution. Do not infer dates or standards where the source is ambiguous.
-3. Use unique question IDs, grade strings `K`, `1`–`5`, subjects `Literacy`, `Math`, `Science`, `Social Studies`, and numeric difficulty `1`, `2`, or `3`. Each question requires nonempty `question`, `answer`, `standard`, `source` and a valid `weekIntroduced` date (`YYYY-MM-DD`). Standard and source must be taken from the supplied verified material.
-4. Optional fields: `questionType`, `choices` (up to four short strings), `teacherRead`, `reviewQuestion`. Answers should include an understandable response, not just a choice letter. The app adds A/B/C/D labels to choices.
-5. Keep K/1 questions short and suitable for reading aloud. Preview every unusually long prompt/answer on the classroom display: automatic unlimited-text fitting is not implemented.
-6. Save the file. Vite reloads in development; rebuild for production. Reset any existing game after changing the bank. Invalid records or duplicate IDs disable the entire bank with an error, rather than quietly mixing valid and invalid content.
+- `content/sources/`: complete workbook text snapshot, source cell values/links and linked district documents. These source snapshots are outside the application bundle. The source spreadsheet is read-only.
+- `content/question-drafts.json`: authored question groups, exact supporting quotes and explicit timing mappings. This is an editorial input, not a runtime AI generator.
+- `scripts/ingest-content.py`: deterministic conversion into `src/data/curriculum.json` and `src/data/questions.json`. It makes no network or AI calls. The question-generation cutoff is explicitly recorded as September 13, 2026.
+- `scripts/validate-content.py`: structural, source text/provenance, dates, ID, duplication, length and coverage checks.
+- `scripts/report-content.py`: regenerates the human-readable report and review worksheets.
 
-The curriculum entry shape supports `grade`, `weekOf`, `source`, `literacy` (unit, sessions, standards), `math` and `science` (standard or standards), and `socialStudies` (standards). See `src/types/index.ts`. Question eligibility currently uses the verified `weekIntroduced` metadata; the app does not parse a pacing-guide PDF or automatically verify its standards against the bank.
+```bash
+npm run content:import
+npm run content:validate
+python3 scripts/report-content.py
+```
+
+**Import resets generated questions to pending review.** Edit draft inputs before regeneration, not just generated output. After reviewing a question against its cited sources and its difficulty/age appropriateness, set that question’s `reviewStatus` to `approved` in `src/data/questions.json`. Leave unresolved questions `pending`. Approvals are a local data edit; no dashboard is needed. Rebuild production after edits and reset the current game if its bank changed.
+
+Keep question IDs unique. Required fields include `id`, grade string (`K`, `1`–`5`), subject (`Literacy`, `Math`, `Science`, `Social Studies`), numeric difficulty (`1`–`3`), `question`, `answer`, `standard`, `weekIntroduced`, and `source`. Generated records also retain `curriculumId`, `curriculumIds`, `alignedWeeks`, `evidence`, `reviewStatus` and source URLs. Standards may be null when the source only supports an identified session; do not invent a standard to fill the field. `standardSource` distinguishes primary-sheet codes from explicitly stated linked-document codes.
+
+`teacherSetup` names any required class map, sample, word wall, or observation record. Teacher-check responses intentionally give an assessment rubric. Review these dependencies before class. Keep prompts ≤240 characters and answers ≤300; K/1 prompts should stay short and teacher-readable.
+
+Curriculum records preserve exact source cells plus grade, subject, instructional week, source Week of label, normalized date, quarter, raw standard/unit/session references, source location and unresolved-status flags. Month/day dates are normalized using the explicit 2026–2027 school-year context. Undated rows remain null, and future planned curriculum stays future.
 
 ## Classroom controls
 
-- Home → Jeopardy → grade → content range → Start Game.
-- **Recent Content:** the Monday of the selected date’s week and the previous instructional calendar week, through the selected date. It does not infer district holiday schedules.
-- **Everything Taught So Far:** all bank questions introduced on or before the selected date. Neither range includes future dates relative to the device’s local date. The content date remains fixed across refresh/reset; change it in setup for a later teaching day.
-- Each category has two opportunities at each point value, for 30 tiles total. Duration depends on discussion and teacher pacing. Full coverage requires enough eligible questions: at least 30 distinct questions per grade/range, with sufficient questions in every category/difficulty pool, including Review overlap.
-- **Review:** eligible questions explicitly marked `reviewQuestion: true`, or content introduced before the two-week recent window. Recent range still applies, so recent Review needs explicitly marked questions. Review draws from the same used-ID tracker as other categories.
-- Select a tile, let students respond outside the app, Reveal Answer, then Back to Board. No scorekeeping is included.
-- A question and tile are marked used immediately when opened. A refresh or Home → Continue returns to the same question and reveal state. Used and exhausted tiles cannot be selected.
-- **Reset Game:** confirm to clear all used IDs/tiles and the current question. Grade, range, and content date stay selected. Previously seen questions can appear in this new game. Cancel preserves the game.
-- **Change Grade:** confirm to end the current game and open setup. Pick the grade and/or range, then Start Game.
-- **Home:** preserves the current game. Select Jeopardy / Continue to resume.
-- **Full Screen:** uses the browser full-screen control; F11 is an alternative. Designed primarily for 1920 × 1080 landscape.
-- Kindergarten displays “TEACHER READS QUESTION ALOUD”; grade 1 displays “TEACHER MAY READ QUESTION ALOUD”.
-- State is versioned in localStorage under `curricuplay.game.v1`. Storage failures display a warning; malformed saved data falls back to Home safely. Clearing browser data removes progress.
+Home → Jeopardy → grade → range → Start Game. Start is enabled only when approved questions are available.
 
-## Structure
+- **Recent Content:** the selected date’s calendar week and the preceding week. Questions can match explicitly reviewed recurring `alignedWeeks`, while their original introduction date is preserved. The app does not infer holidays or fill missing lessons.
+- **Everything Taught So Far:** eligible content introduced/aligned on or before the selected date. Both ranges always exclude future dates relative to the device’s local date. Changing content dates happens in setup; reset preserves the chosen date.
+- **Review:** draws from the same eligible question bank and used-ID set. It adds no duplicate question records.
+- The board offers two tiles at each of 1, 2, and 3 points per category, for 30 total. Missing/exhausted pools disable tiles. Actual duration depends on available questions and teacher pacing.
+- Open a tile → students answer outside the app → Reveal Answer → Back to Board. Used IDs and tiles are saved when opened.
+- **Reset Game:** confirmation clears used questions/tiles and the open question; preserves grade, range and date. Previously used questions can appear in the new game. Cancel preserves progress.
+- **Change Grade:** confirmation ends the game and opens setup.
+- **Home:** preserves the game; Jeopardy / Continue resumes it.
+- Refresh restores progress and answer-reveal state, except a question that has been removed or returned to pending review is no longer restored.
+- **Full Screen:** browser full-screen mode; F11 is an alternative. Designed for 1920 × 1080 landscape.
+- K displays “TEACHER READS QUESTION ALOUD”; grade 1 displays “TEACHER MAY READ QUESTION ALOUD”. Teacher preparation notes appear when required.
+- localStorage key: `curricuplay.game.v1`. Corrupt saves recover safely; storage failures show a warning. Clearing browser data removes progress.
 
-- `src/data/`: approved questions and pacing-guide mappings
-- `src/services/curriculumService.ts`: date/range filtering and curriculum lookup
-- `src/services/questionEngine.ts`: validation, filtering, random selection and used-ID tracking
-- `src/games/jeopardy/`: game board definition
-- `src/App.tsx`: setup, navigation and game rendering
-- `src/utils/storage.ts`: defensive loading and saving
-- `tests/`: synthetic browser fixtures and end-to-end verification
+## Architecture and tests
 
-Other games can consume `createQuestionEngine()` without embedding academic content. The engine exposes `getQuestions`, `getRandomQuestion`, `markQuestionUsed`, `isQuestionUsed`, `getAvailableQuestionCount`, and `resetUsedQuestions`.
-
-## Verification
+`src/services/curriculumService.ts` supplies date/range filtering and curriculum lookup. `src/services/questionEngine.ts` supplies shared validation, filtering, randomization and used-ID tracking. `src/games/jeopardy/board.ts` defines the board; academic content stays in data. Offline ingestion scripts are never called by gameplay.
 
 ```bash
 npx playwright install chromium
@@ -76,6 +78,6 @@ npm test -- --workers=2
 npm run build
 ```
 
-Tests exercise all six grades across 30-tile games, category/value selection, randomization, no repeats across Review and subject pools, reveal, reset/cancel, Home/resume, Change Grade, refresh, date ranges, future exclusion, empty/exhausted pools, invalid question data, storage failures and 1920 × 1080 geometry. Screenshots are written to `test-results/`. Test data is supplied through intercepted browser module requests, not production data files.
+The original synthetic flow tests remain. Additional tests render and reveal every generated question at 1920 × 1080, verify no repeats, verify pending content cannot play, and check real curriculum/date filtering. Approval is simulated only through intercepted browser responses; production drafts remain pending. See [VERIFICATION.md](VERIFICATION.md).
 
-Content accuracy, actual K–5 coverage, prompt-length fitting with the real bank, and the district’s exact week mappings still require the supplied files and a final content-backed test. Optional Learning Information was deferred. No second game has been built.
+Only Jeopardy is implemented. Other game cards are placeholders. Optional Learning Information remains deferred.

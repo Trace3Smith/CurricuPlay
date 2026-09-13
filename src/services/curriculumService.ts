@@ -16,5 +16,5 @@ export function inRange(week: string, range: ContentRange, asOf: string): boolea
   return validDate(week) && week <= cutoff && (range === 'all' || week >= recentStart(cutoff));
 }
 export function getCurriculum(grade: Grade, range: ContentRange, asOf: string) {
-  return (data as CurriculumEntry[]).filter(row => row.grade === grade && inRange(row.weekOf, range, asOf));
+  return (data as CurriculumEntry[]).filter(row => row.grade === grade && row.weekOf !== null && inRange(row.weekOf, range, asOf));
 }

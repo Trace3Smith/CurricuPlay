@@ -56,7 +56,7 @@ for (const grade of grades) test(`Grade ${grade}: complete game, no repeats, rev
   expect(errors).toEqual([]);
 });
 test('Unmodified app clearly reports missing source content and prevents starting', async ({ page }) => {
-  await page.goto('/'); await expect(page.getByText(/Awaiting the verified/)).toBeVisible(); await noOverflow(page);
+  await inject(page, []); await page.goto('/'); await expect(page.getByText(/No approved local questions/)).toBeVisible(); await noOverflow(page);
   await page.screenshot({ path: 'test-results/home.png' });
   await page.getByRole('button', { name: /JEOPARDY/ }).click();
   for (const grade of ['Kindergarten', '1st Grade', '2nd Grade', '3rd Grade', '4th Grade', '5th Grade']) {
@@ -67,9 +67,9 @@ test('Ranges, future exclusion, empty pools and exhausted overlapping Review poo
   const q = fixture[0];
   await inject(page, [{ ...q, id: 'old', weekIntroduced: '2026-08-17' }, { ...q, id: 'recent' }, { ...q, id: 'future', weekIntroduced: '2026-09-14' }]);
   await page.goto('/'); await page.getByRole('button', { name: /JEOPARDY/ }).click();
-  await expect(page.getByText('1 verified questions available')).toBeVisible();
+  await expect(page.getByText('1 approved questions available')).toBeVisible();
   await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
-  await expect(page.getByText('2 verified questions available')).toBeVisible();
+  await expect(page.getByText('2 approved questions available')).toBeVisible();
   await page.getByRole('button', { name: /RECENT CONTENT/ }).click();
   await page.getByRole('button', { name: 'Start Game' }).click();
   await expect(page.getByRole('button', { name: /Math.*no questions available/ }).first()).toBeDisabled();
