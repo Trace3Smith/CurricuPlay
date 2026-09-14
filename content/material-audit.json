@@ -4612,8 +4612,8 @@
     "auditReason": "Explicit preparation instruction: Display a taught chart with time and position recorded for the same sky object.",
     "resolution": "replaced",
     "replacement": {
-      "question": "At 7 p.m., the moon was beside a tree. At 8 p.m., it was above the tree. What shows that the moon seemed to move?",
-      "answer": "Its position changed from beside the tree to above it."
+      "question": "At 7 p.m., the moon was beside a tree. At 8 p.m., it was above the tree. Did the moon seem to move?",
+      "answer": "Yes. It changed from beside the tree to above it."
     },
     "gap": ""
   },
