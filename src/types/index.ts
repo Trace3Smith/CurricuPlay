@@ -5,11 +5,13 @@ export type Subject = typeof subjects[number];
 export type Category = Subject | 'Review';
 export type ContentRange = 'recent' | 'all';
 export interface Question {
+  packId?: string; packName?: string; originId?: string; approvalBasis?: string; verificationEvidence?: Partial<SourceEvidence>;
   id: string; grade: Grade; subject: Subject; difficulty: 1 | 2 | 3;
   question: string; answer: string; standard: string | null; weekIntroduced: string; source: string;
   curriculumId?: string; curriculumIds?: string[]; alignedWeeks?: string[];
   standardSource?: string; sourceUrl?: string; unit?: string | null; session?: string | null; evidence?: SourceEvidence;
-  reviewStatus?: 'pending' | 'approved'; reviewNote?: string; teacherSetup?: string;
+  reviewStatus?: 'pending' | 'approved' | 'needs-edit' | 'rejected'; reviewNote?: string; teacherSetup?: string;
+  requiresExternalClassroomMaterial: boolean; materialReviewNote?: string;
   questionType?: string; choices?: string[]; teacherRead?: boolean; reviewQuestion?: boolean;
 }
 export interface SourceEvidence {
@@ -29,5 +31,7 @@ export interface Filters { grade: Grade; subject?: Category; difficulty?: number
 export interface GameState {
   version: 1; screen: 'home' | 'setup' | 'board' | 'question'; selectedGame: 'jeopardy' | null;
   grade: Grade; range: ContentRange; asOf: string; usedQuestionIds: string[]; usedTiles: string[];
+  contentSource?: 'classroom' | 'drafts';
+  assignments?: Record<string, string>;
   current: { questionId: string; tileId: string; category: Category; revealed: boolean } | null;
 }

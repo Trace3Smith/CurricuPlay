@@ -1,4 +1,1537 @@
 {
+  "withdrawnQuestionIds": [
+    "dcss-1-social-studies-my-state",
+    "dcss-1-social-studies-city-state",
+    "dcss-1-social-studies-location-country",
+    "dcss-1-social-studies-location-county",
+    "dcss-1-social-studies-location-fix"
+  ],
+  "materialAudit": {
+    "existingExternal": 56,
+    "replaced": 37,
+    "excluded": 19,
+    "selfContainedByGrade": {
+      "K": 36,
+      "1": 31,
+      "2": 34,
+      "3": 30,
+      "4": 30,
+      "5": 31
+    }
+  },
+  "coverageRequirements": {
+    "tilesPerGame": 30,
+    "minimumEligibleUniqueQuestionsPerGrade": 30,
+    "targetApprovedUniqueQuestionsPerGrade": 60,
+    "tilesPerCategoryDifficulty": 2
+  },
+  "gradeCoverage": [
+    {
+      "grade": "K",
+      "range": "Recent Content",
+      "eligibleGeneratedUnique": 24,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 6,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 36,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "K",
+      "range": "Everything Taught So Far",
+      "eligibleGeneratedUnique": 36,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 0,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 24,
+      "undersuppliedDraftPools": [],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "1",
+      "range": "Recent Content",
+      "eligibleGeneratedUnique": 30,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 0,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 30,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "1",
+      "range": "Everything Taught So Far",
+      "eligibleGeneratedUnique": 31,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 0,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 29,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 1,
+          "shortfall": 1
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "2",
+      "range": "Recent Content",
+      "eligibleGeneratedUnique": 12,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 18,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 48,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "2",
+      "range": "Everything Taught So Far",
+      "eligibleGeneratedUnique": 34,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 0,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 26,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 1,
+          "shortfall": 1
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 1,
+          "shortfall": 1
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "3",
+      "range": "Recent Content",
+      "eligibleGeneratedUnique": 6,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 24,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 54,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "3",
+      "range": "Everything Taught So Far",
+      "eligibleGeneratedUnique": 30,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 0,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 30,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "4",
+      "range": "Recent Content",
+      "eligibleGeneratedUnique": 18,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 12,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 42,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "4",
+      "range": "Everything Taught So Far",
+      "eligibleGeneratedUnique": 30,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 0,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 30,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "5",
+      "range": "Recent Content",
+      "eligibleGeneratedUnique": 19,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 11,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 41,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 1,
+          "shortfall": 1
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 1,
+          "shortfall": 1
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 1,
+          "shortfall": 1
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    },
+    {
+      "grade": "5",
+      "range": "Everything Taught So Far",
+      "eligibleGeneratedUnique": 31,
+      "eligibleApprovedUnique": 0,
+      "approvedShortfallForFullGame": 30,
+      "approvedShortfallForVariationTarget": 60,
+      "additionalDraftsNeededEvenIfAllApprovedForFullGame": 0,
+      "additionalDraftsNeededEvenIfAllApprovedForVariationTarget": 29,
+      "undersuppliedDraftPools": [
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 1,
+          "shortfall": 1
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 1,
+          "shortfall": 1
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 1,
+          "shortfall": 1
+        }
+      ],
+      "undersuppliedApprovedPools": [
+        {
+          "category": "Literacy",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Literacy",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Math",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Science",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Social Studies",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 1,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 2,
+          "available": 0,
+          "shortfall": 2
+        },
+        {
+          "category": "Review",
+          "difficulty": 3,
+          "available": 0,
+          "shortfall": 2
+        }
+      ]
+    }
+  ],
   "asOf": "2026-09-13",
   "curriculumRecords": 755,
   "datedCurriculumRecords": 737,
@@ -12,25 +1545,25 @@
     "4": 137,
     "5": 143
   },
-  "questions": 108,
+  "questions": 211,
   "questionsByGrade": {
-    "K": 18,
-    "1": 18,
-    "2": 18,
-    "3": 18,
-    "4": 18,
-    "5": 18
+    "K": 36,
+    "1": 31,
+    "2": 36,
+    "3": 36,
+    "4": 36,
+    "5": 36
   },
   "questionsBySubject": {
-    "Math": 36,
-    "Literacy": 36,
-    "Science": 18,
-    "Social Studies": 18
+    "Math": 72,
+    "Literacy": 72,
+    "Science": 36,
+    "Social Studies": 31
   },
   "questionsByDifficulty": {
-    "1": 36,
-    "2": 36,
-    "3": 36
+    "1": 70,
+    "2": 70,
+    "3": 71
   },
   "approvedQuestions": 0,
   "curriculumWithoutQuestionEvidence": [
@@ -799,39 +2332,37 @@
   "teacherCheckedOrMaterialsRequired": [
     "dcss-K-math-position-follow",
     "dcss-K-math-position-two",
-    "dcss-K-math-length-name",
-    "dcss-K-math-length-explain",
     "dcss-K-literacy-letter-sound",
-    "dcss-K-literacy-word-you",
+    "dcss-K-literacy-m-build",
     "dcss-K-literacy-word-sentence",
-    "dcss-K-science-sky-name",
-    "dcss-K-science-sky-sort",
-    "dcss-K-science-sky-compare",
-    "dcss-K-social-studies-citizen-rule",
+    "dcss-K-literacy-sight-two",
     "dcss-K-social-studies-citizen-show",
-    "dcss-K-social-studies-citizen-why",
-    "dcss-1-social-studies-my-state",
-    "dcss-1-social-studies-city-state",
-    "dcss-2-science-sky-record",
-    "dcss-2-science-sky-pattern",
-    "dcss-2-science-sky-evidence",
+    "dcss-K-social-studies-citizen-repair",
+    "dcss-K-social-studies-citizen-together",
+    "dcss-1-math-story-create",
     "dcss-2-social-studies-rules-purpose",
     "dcss-2-social-studies-leader-role",
     "dcss-2-social-studies-scarcity-class",
+    "dcss-2-social-studies-scarcity-choice",
+    "dcss-2-social-studies-government-compare",
     "dcss-3-literacy-transition-write",
-    "dcss-3-science-rock-color",
-    "dcss-3-science-rock-properties",
     "dcss-3-social-studies-map-equator",
     "dcss-3-social-studies-map-meridian",
     "dcss-3-social-studies-map-lines",
+    "dcss-3-social-studies-map-longitude-find",
+    "dcss-3-social-studies-map-label-correct",
+    "dcss-3-social-studies-map-peer-guide",
     "dcss-4-social-studies-nation-person",
     "dcss-4-social-studies-nation-event",
     "dcss-4-social-studies-nation-decision",
-    "dcss-5-science-earth-observation",
+    "dcss-4-social-studies-nation-source-event",
+    "dcss-4-social-studies-nation-person-action",
+    "dcss-4-social-studies-nation-sequence-evidence",
     "dcss-5-science-earth-explanation",
+    "dcss-5-science-earth-record-find",
+    "dcss-5-science-earth-compare-process",
     "dcss-5-social-studies-citizen-responsibility",
-    "dcss-5-social-studies-citizen-right",
-    "dcss-5-social-studies-citizen-impact"
+    "dcss-5-social-studies-citizen-right"
   ],
   "coverage": [
     {
@@ -839,23 +2370,23 @@
       "category": "Literacy",
       "difficulty": 1,
       "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Literacy",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
       "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
       "grade": "K",
       "category": "Literacy",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Literacy",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -863,7 +2394,7 @@
       "category": "Literacy",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -871,7 +2402,7 @@
       "category": "Literacy",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -879,156 +2410,12 @@
       "category": "Literacy",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
       "grade": "K",
       "category": "Math",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Math",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "K",
-      "category": "Review",
       "difficulty": 1,
       "range": "Recent Content",
       "draftQuestions": 4,
@@ -1036,10 +2423,154 @@
     },
     {
       "grade": "K",
+      "category": "Math",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
+      "category": "Review",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 8,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "K",
       "category": "Review",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 12,
       "approvedQuestions": 0
     },
     {
@@ -1047,7 +2578,7 @@
       "category": "Review",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 4,
+      "draftQuestions": 8,
       "approvedQuestions": 0
     },
     {
@@ -1055,7 +2586,7 @@
       "category": "Review",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 12,
       "approvedQuestions": 0
     },
     {
@@ -1063,7 +2594,7 @@
       "category": "Review",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 4,
+      "draftQuestions": 8,
       "approvedQuestions": 0
     },
     {
@@ -1071,7 +2602,7 @@
       "category": "Review",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 12,
       "approvedQuestions": 0
     },
     {
@@ -1079,7 +2610,7 @@
       "category": "Literacy",
       "difficulty": 1,
       "range": "Recent Content",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1087,7 +2618,7 @@
       "category": "Literacy",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1095,7 +2626,7 @@
       "category": "Literacy",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1103,7 +2634,7 @@
       "category": "Literacy",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1111,7 +2642,7 @@
       "category": "Literacy",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1119,7 +2650,7 @@
       "category": "Literacy",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1127,7 +2658,7 @@
       "category": "Math",
       "difficulty": 1,
       "range": "Recent Content",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1135,7 +2666,7 @@
       "category": "Math",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1143,7 +2674,7 @@
       "category": "Math",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1151,7 +2682,7 @@
       "category": "Math",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1159,7 +2690,7 @@
       "category": "Math",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1167,7 +2698,7 @@
       "category": "Math",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1175,7 +2706,7 @@
       "category": "Science",
       "difficulty": 1,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1183,7 +2714,7 @@
       "category": "Science",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1191,7 +2722,7 @@
       "category": "Science",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1199,7 +2730,7 @@
       "category": "Science",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1207,7 +2738,7 @@
       "category": "Science",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1215,7 +2746,7 @@
       "category": "Science",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1231,14 +2762,6 @@
       "category": "Social Studies",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "1",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Recent Content",
       "draftQuestions": 0,
       "approvedQuestions": 0
     },
@@ -1246,8 +2769,16 @@
       "grade": "1",
       "category": "Social Studies",
       "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "1",
+      "category": "Social Studies",
+      "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 0,
       "approvedQuestions": 0
     },
     {
@@ -1271,7 +2802,7 @@
       "category": "Review",
       "difficulty": 1,
       "range": "Recent Content",
-      "draftQuestions": 5,
+      "draftQuestions": 10,
       "approvedQuestions": 0
     },
     {
@@ -1279,7 +2810,7 @@
       "category": "Review",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 10,
       "approvedQuestions": 0
     },
     {
@@ -1287,7 +2818,7 @@
       "category": "Review",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 5,
+      "draftQuestions": 10,
       "approvedQuestions": 0
     },
     {
@@ -1295,7 +2826,7 @@
       "category": "Review",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 10,
       "approvedQuestions": 0
     },
     {
@@ -1303,7 +2834,7 @@
       "category": "Review",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 5,
+      "draftQuestions": 10,
       "approvedQuestions": 0
     },
     {
@@ -1311,7 +2842,7 @@
       "category": "Review",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 11,
       "approvedQuestions": 0
     },
     {
@@ -1319,7 +2850,7 @@
       "category": "Literacy",
       "difficulty": 1,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1327,7 +2858,7 @@
       "category": "Literacy",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1335,7 +2866,7 @@
       "category": "Literacy",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1343,7 +2874,7 @@
       "category": "Literacy",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1351,7 +2882,7 @@
       "category": "Literacy",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1359,7 +2890,7 @@
       "category": "Literacy",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1375,7 +2906,7 @@
       "category": "Math",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1391,7 +2922,7 @@
       "category": "Math",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 2,
+      "draftQuestions": 4,
       "approvedQuestions": 0
     },
     {
@@ -1407,6 +2938,14 @@
       "category": "Math",
       "difficulty": 3,
       "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "2",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Recent Content",
       "draftQuestions": 2,
       "approvedQuestions": 0
     },
@@ -1414,16 +2953,8 @@
       "grade": "2",
       "category": "Science",
       "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Science",
-      "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1431,7 +2962,7 @@
       "category": "Science",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1439,7 +2970,7 @@
       "category": "Science",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1447,7 +2978,7 @@
       "category": "Science",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1455,7 +2986,7 @@
       "category": "Science",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
@@ -1471,29 +3002,13 @@
       "category": "Social Studies",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 1,
+      "draftQuestions": 2,
       "approvedQuestions": 0
     },
     {
       "grade": "2",
       "category": "Social Studies",
       "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Social Studies",
-      "difficulty": 3,
       "range": "Recent Content",
       "draftQuestions": 0,
       "approvedQuestions": 0
@@ -1501,6 +3016,22 @@
     {
       "grade": "2",
       "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 1,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "2",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "2",
+      "category": "Social Studies",
       "difficulty": 3,
       "range": "Everything Taught So Far",
       "draftQuestions": 1,
@@ -1508,726 +3039,6 @@
     },
     {
       "grade": "2",
-      "category": "Review",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Review",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Review",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Review",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Review",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "2",
-      "category": "Review",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Literacy",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Literacy",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Literacy",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Literacy",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Literacy",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Literacy",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Math",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Math",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Review",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Review",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Review",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Review",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Review",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "3",
-      "category": "Review",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Literacy",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Literacy",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Literacy",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Literacy",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Literacy",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Literacy",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Math",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Math",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 0,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Review",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 3,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Review",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Review",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 3,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Review",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Review",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 3,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "4",
-      "category": "Review",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 6,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Literacy",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Literacy",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Literacy",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Literacy",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Literacy",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Literacy",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Math",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Math",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Math",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Math",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 2,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Science",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Science",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Science",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Social Studies",
-      "difficulty": 1,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Social Studies",
-      "difficulty": 2,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Recent Content",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
-      "category": "Social Studies",
-      "difficulty": 3,
-      "range": "Everything Taught So Far",
-      "draftQuestions": 1,
-      "approvedQuestions": 0
-    },
-    {
-      "grade": "5",
       "category": "Review",
       "difficulty": 1,
       "range": "Recent Content",
@@ -2235,11 +3046,731 @@
       "approvedQuestions": 0
     },
     {
+      "grade": "2",
+      "category": "Review",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 12,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "2",
+      "category": "Review",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "2",
+      "category": "Review",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 11,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "2",
+      "category": "Review",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "2",
+      "category": "Review",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 11,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Literacy",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Literacy",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Literacy",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Literacy",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Literacy",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Literacy",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Math",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Math",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Review",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Review",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 10,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Review",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Review",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 10,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Review",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "3",
+      "category": "Review",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 10,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Literacy",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Literacy",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Literacy",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Literacy",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Literacy",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Literacy",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Math",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Math",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Review",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 6,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Review",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 10,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Review",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 6,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Review",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 10,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Review",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 6,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "4",
+      "category": "Review",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 10,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Literacy",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Literacy",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Literacy",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Literacy",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Literacy",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Literacy",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Math",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Math",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Math",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Math",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 4,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 1,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Science",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 1,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Science",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Science",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 0,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 1,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Social Studies",
+      "difficulty": 1,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 1,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Recent Content",
+      "draftQuestions": 1,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Social Studies",
+      "difficulty": 2,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 1,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Recent Content",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Social Studies",
+      "difficulty": 3,
+      "range": "Everything Taught So Far",
+      "draftQuestions": 2,
+      "approvedQuestions": 0
+    },
+    {
+      "grade": "5",
+      "category": "Review",
+      "difficulty": 1,
+      "range": "Recent Content",
+      "draftQuestions": 6,
+      "approvedQuestions": 0
+    },
+    {
       "grade": "5",
       "category": "Review",
       "difficulty": 1,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 10,
       "approvedQuestions": 0
     },
     {
@@ -2247,7 +3778,7 @@
       "category": "Review",
       "difficulty": 2,
       "range": "Recent Content",
-      "draftQuestions": 4,
+      "draftQuestions": 7,
       "approvedQuestions": 0
     },
     {
@@ -2255,7 +3786,7 @@
       "category": "Review",
       "difficulty": 2,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 11,
       "approvedQuestions": 0
     },
     {
@@ -2263,7 +3794,7 @@
       "category": "Review",
       "difficulty": 3,
       "range": "Recent Content",
-      "draftQuestions": 4,
+      "draftQuestions": 6,
       "approvedQuestions": 0
     },
     {
@@ -2271,13 +3802,13 @@
       "category": "Review",
       "difficulty": 3,
       "range": "Everything Taught So Far",
-      "draftQuestions": 6,
+      "draftQuestions": 10,
       "approvedQuestions": 0
     }
   ],
   "limitations": [
     "All generated questions require teacher review. Exact evidence matching verifies provenance, not semantic correctness.",
-    "No grade yet has enough distinct questions for all 30 tiles: each has 18 drafts. Review shares the same question pool and does not add unique questions.",
+    "30 eligible unique questions is a necessary minimum; target at least 60 approved per grade for variation, not a generation cap. Category/difficulty coverage is also required; overlapping Review pools cannot be double-counted. See gradeCoverage shortages.",
     "Age appropriateness was editorially checked; length/read-aloud checks are automated proxies, not a reading-level guarantee.",
     "Only instruction through the cutoff is considered for generation. Future calendar rows are retained as planned, never backdated into questions."
   ]

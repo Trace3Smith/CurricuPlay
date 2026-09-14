@@ -1,10 +1,13 @@
 import { test, expect, type Page } from '@playwright/test';
+// Isolate the long-term draft workflow from the independently tested classroom pack.
+test.beforeEach(async ({ page }) => { await page.route("**/src/data/tomorrow-pack.json*", route => route.fulfill({ contentType: "application/javascript", body: "export default []" })); });
+
 // Synthetic software fixtures only. Not curriculum content and never included in src/data.
 const grades = ['K', '1', '2', '3', '4', '5'];
 const subjects = ['Literacy', 'Math', 'Science', 'Social Studies'];
-const fixture = grades.flatMap(grade => subjects.flatMap(subject => [1, 2, 3].flatMap(difficulty => [0, 1, 2, 3].map(n => ({
+const fixture = grades.flatMap(grade => subjects.flatMap(subject => [1, 2, 3].flatMap(difficulty => [0, 1, 2, 3, 4].map(n => ({
   id: `${grade}-${subject}-${difficulty}-${n}`, grade, subject, difficulty, question: `TEST ONLY: ${grade} ${subject} ${difficulty} prompt ${n}?`, answer: `TEST ONLY: answer ${n}`,
-  standard: 'TEST-ONLY', source: 'Synthetic software test fixture — not approved curriculum', weekIntroduced: '2026-09-07', reviewQuestion: true,
+  requiresExternalClassroomMaterial: false, standard: 'TEST-ONLY', source: 'Synthetic software test fixture — not approved curriculum', weekIntroduced: '2026-09-07', reviewQuestion: true,
   choices: ['Test option one', 'Test option two', 'Test option three'],
 })))));
 async function inject(page: Page, questions = fixture) {
@@ -25,9 +28,31 @@ for (const grade of grades) test(`Grade ${grade}: complete game, no repeats, rev
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message)); page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
   await inject(page); await start(page, grade); await noOverflow(page);
   await expect(page.getByRole('button', { name: /opportunity/ })).toHaveCount(30);
+  for (const category of [...subjects, 'Review']) {
+    const column = page.getByRole('region', { name: category, exact: true });
+    await expect(column.locator('.tile')).toHaveCount(6);
+    for (const difficulty of [1, 2, 3]) await expect(column.locator('.tile').filter({ hasText: new RegExp(`^${difficulty}POINT`) })).toHaveCount(2);
+  }
+  expect(await page.locator('.tile').evaluateAll(elements => elements.every(el => {
+    const rect = el.getBoundingClientRect();
+    return rect.width >= 150 && rect.height >= 80 && rect.left >= 0 && rect.right <= innerWidth;
+  }))).toBe(true);
   const used = new Set<string>();
+  const usedIds = new Set<string>();
   for (let i = 0; i < 30; i++) {
-    await page.getByRole('button', { name: /opportunity/ }).filter({ hasText: /POINT/ }).first().click();
+    const choices = page.getByRole('button', { name: /opportunity/ }).filter({ hasText: /POINT/ });
+    // Alternate board order across grades, including Review before the subject pools.
+    const tile = Number(grade) % 2 ? choices.last() : choices.first();
+    const tileName = (await tile.getAttribute('aria-label'))!;
+    await tile.click();
+    const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('curricuplay.game.v1')!));
+    const selected = fixture.find(q => q.id === saved.current.questionId)!;
+    expect(selected).toBeTruthy();
+    expect(selected.grade).toBe(grade);
+    expect(tileName).toContain(`${selected.difficulty} point`);
+    expect(tileName.startsWith(selected.subject) || tileName.startsWith('Review')).toBe(true);
+    expect(selected.weekIntroduced).toBe('2026-09-07');
+    expect(usedIds.has(selected.id)).toBe(false); usedIds.add(selected.id);
     const prompt = await page.locator('main h1').innerText(); expect(used.has(prompt)).toBe(false); used.add(prompt);
     await expect(page.getByText('CORRECT ANSWER', { exact: true })).toHaveCount(0);
     if (grade === 'K') await expect(page.getByText('TEACHER READS QUESTION ALOUD', { exact: true })).toBeVisible();
@@ -40,6 +65,8 @@ for (const grade of grades) test(`Grade ${grade}: complete game, no repeats, rev
     await expect(page.getByRole('button', { name: /opportunity.*used/ })).toHaveCount(i + 1);
     for (const b of await page.getByRole('button', { name: /opportunity.*used/ }).all()) await expect(b).toBeDisabled();
   }
+  expect(usedIds.size).toBe(30);
+  await noOverflow(page);
   await page.getByRole('button', { name: 'Reset Game', exact: true }).click();
   await page.getByRole('button', { name: 'Keep Playing' }).click();
   await expect(page.getByRole('button', { name: /opportunity.*used/ })).toHaveCount(30);
@@ -71,7 +98,10 @@ test('Ranges, future exclusion, empty pools and exhausted overlapping Review poo
   await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
   await expect(page.getByText('2 approved questions available')).toBeVisible();
   await page.getByRole('button', { name: /RECENT CONTENT/ }).click();
-  await page.getByRole('button', { name: 'Start Game' }).click();
+  await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
+  // Exercise exhausted-pool recovery in a legacy saved partial game.
+  await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('curricuplay.game.v1')!); localStorage.setItem('curricuplay.game.v1', JSON.stringify({ ...s, screen: 'board', selectedGame: 'jeopardy' })); });
+  await page.reload();
   await expect(page.getByRole('button', { name: /Math.*no questions available/ }).first()).toBeDisabled();
   await page.getByRole('button', { name: 'Literacy 1 point opportunity 1', exact: true }).click();
   await page.getByRole('button', { name: 'Reveal Answer' }).click(); await page.getByRole('button', { name: 'Back to Board' }).click();
@@ -90,7 +120,7 @@ test('Engine random selection, filters, tracking and invalid-bank rejection', as
     const used = engine.isQuestionUsed(first.id); engine.resetUsedQuestions();
     return { random: choices.size > 1, excluded, used, count: engine.getAvailableQuestionCount(filters), invalid: validateQuestions([questions[0], questions[0]]).questions.length };
   }, fixture);
-  expect(results).toEqual({ random: true, excluded: true, used: true, count: 4, invalid: 0 });
+  expect(results).toEqual({ random: true, excluded: true, used: true, count: 5, invalid: 0 });
 });
 test('Corrupt storage and storage unavailability fail gracefully', async ({ page }) => {
   await page.addInitScript(() => { localStorage.setItem('curricuplay.game.v1', '{broken'); });

@@ -9,7 +9,8 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "playwright test",
     "content:import": "python3 scripts/ingest-content.py",
-    "content:validate": "python3 scripts/validate-content.py"
+    "content:validate": "python3 scripts/validate-content.py",
+    "content:tomorrow": "python3 scripts/build-tomorrow-pack.py"
   },
   "dependencies": {
     "react": "^19.1.0",

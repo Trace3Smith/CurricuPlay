@@ -1,0 +1,207 @@
+{
+  "dcss-1-social-studies-my-state": {
+    "question": {
+      "id": "dcss-1-social-studies-my-state",
+      "grade": "1",
+      "subject": "Social Studies",
+      "difficulty": 1,
+      "question": "A pretend location card says: city—Brook; state—Hill. What is the state’s name on this card?",
+      "answer": "Hill.",
+      "standard": "SS1G2",
+      "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "weekIntroduced": "2026-08-17",
+      "source": "DCSS Pacing Guide FY27",
+      "curriculumId": "dcss-fy27-1-social-studies-r12",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "unit": null,
+      "session": null,
+      "evidence": {
+        "document": "support-2.json",
+        "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+        "sourceTitle": "1st Grade Pacing",
+        "section": "Aug 17–21, Our National Heritage",
+        "quote": "I can identify and describe my city, county, state, nation, and continent.",
+        "characterOffset": 2655,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-17"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-1-social-studies-r12"
+      ],
+      "questionType": "short-answer",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "pending",
+      "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Self-contained replacement; all example data is displayed in the prompt. Re-review before approval."
+    },
+    "reason": "Withdrawn: invented place names or placeholder location labels do not provide a strong geography question. The linked Aug 17–21 source supplies location levels and a nesting relationship, but no named real locations or authentic address/map to support this slot. Leave unfilled until sufficient district evidence is available."
+  },
+  "dcss-1-social-studies-city-state": {
+    "question": {
+      "id": "dcss-1-social-studies-city-state",
+      "grade": "1",
+      "subject": "Social Studies",
+      "difficulty": 2,
+      "question": "Pretend location card: city—Oak; state—Lake. Name the city first, then the state.",
+      "answer": "City: Oak. State: Lake. These are pretend place names.",
+      "standard": "SS1G2",
+      "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "weekIntroduced": "2026-08-17",
+      "source": "DCSS Pacing Guide FY27",
+      "curriculumId": "dcss-fy27-1-social-studies-r12",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "unit": null,
+      "session": null,
+      "evidence": {
+        "document": "support-2.json",
+        "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+        "sourceTitle": "1st Grade Pacing",
+        "section": "Aug 17–21, Our National Heritage",
+        "quote": "I can identify and describe my city, county, state, nation, and continent.",
+        "characterOffset": 2655,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-17"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-1-social-studies-r12"
+      ],
+      "questionType": "short-answer",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "pending",
+      "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Self-contained replacement; all example data is displayed in the prompt. Re-review before approval."
+    },
+    "reason": "Withdrawn: invented place names or placeholder location labels do not provide a strong geography question. The linked Aug 17–21 source supplies location levels and a nesting relationship, but no named real locations or authentic address/map to support this slot. Leave unfilled until sufficient district evidence is available."
+  },
+  "dcss-1-social-studies-location-country": {
+    "question": {
+      "id": "dcss-1-social-studies-location-country",
+      "grade": "1",
+      "subject": "Social Studies",
+      "difficulty": 1,
+      "question": "Pretend location labels: nation—A; continent—B. Which letter labels the nation?",
+      "answer": "A.",
+      "standard": "SS1G2",
+      "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "weekIntroduced": "2026-08-17",
+      "source": "DCSS Pacing Guide FY27",
+      "curriculumId": "dcss-fy27-1-social-studies-r12",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "unit": null,
+      "session": null,
+      "evidence": {
+        "document": "support-2.json",
+        "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+        "sourceTitle": "1st Grade Pacing",
+        "section": "Aug 17–21, Our National Heritage",
+        "quote": "I can identify and describe my city, county, state, nation, and continent.",
+        "characterOffset": 2655,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-17"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-1-social-studies-r12"
+      ],
+      "questionType": "short-answer",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "pending",
+      "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Self-contained replacement; all example data is displayed in the prompt. Re-review before approval."
+    },
+    "reason": "Withdrawn: invented place names or placeholder location labels do not provide a strong geography question. The linked Aug 17–21 source supplies location levels and a nesting relationship, but no named real locations or authentic address/map to support this slot. Leave unfilled until sufficient district evidence is available."
+  },
+  "dcss-1-social-studies-location-county": {
+    "question": {
+      "id": "dcss-1-social-studies-location-county",
+      "grade": "1",
+      "subject": "Social Studies",
+      "difficulty": 2,
+      "question": "A pretend school address lists county—Pine and state—Stone. What county does this address name?",
+      "answer": "Pine.",
+      "standard": "SS1G2",
+      "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "weekIntroduced": "2026-08-17",
+      "source": "DCSS Pacing Guide FY27",
+      "curriculumId": "dcss-fy27-1-social-studies-r12",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "unit": null,
+      "session": null,
+      "evidence": {
+        "document": "support-2.json",
+        "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+        "sourceTitle": "1st Grade Pacing",
+        "section": "Aug 17–21, Our National Heritage",
+        "quote": "I can identify and describe my city, county, state, nation, and continent.",
+        "characterOffset": 2655,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-17"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-1-social-studies-r12"
+      ],
+      "questionType": "short-answer",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "pending",
+      "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Self-contained replacement; all example data is displayed in the prompt. Re-review before approval."
+    },
+    "reason": "Withdrawn: invented place names or placeholder location labels do not provide a strong geography question. The linked Aug 17–21 source supplies location levels and a nesting relationship, but no named real locations or authentic address/map to support this slot. Leave unfilled until sufficient district evidence is available."
+  },
+  "dcss-1-social-studies-location-fix": {
+    "question": {
+      "id": "dcss-1-social-studies-location-fix",
+      "grade": "1",
+      "subject": "Social Studies",
+      "difficulty": 3,
+      "question": "A pretend card says city—Elm and state—Bay. Jo calls Bay the city. Use the card’s words to correct Jo.",
+      "answer": "Elm is the city. Bay is the state.",
+      "standard": "SS1G2",
+      "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "weekIntroduced": "2026-08-17",
+      "source": "DCSS Pacing Guide FY27",
+      "curriculumId": "dcss-fy27-1-social-studies-r12",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
+      "unit": null,
+      "session": null,
+      "evidence": {
+        "document": "support-2.json",
+        "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+        "sourceTitle": "1st Grade Pacing",
+        "section": "Aug 17–21, Our National Heritage",
+        "quote": "I can identify and describe my city, county, state, nation, and continent.",
+        "characterOffset": 2655,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-17"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-1-social-studies-r12"
+      ],
+      "questionType": "short-answer",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "pending",
+      "reviewNote": "Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Self-contained replacement; all example data is displayed in the prompt. Re-review before approval."
+    },
+    "reason": "Withdrawn: invented place names or placeholder location labels do not provide a strong geography question. The linked Aug 17–21 source supplies location levels and a nesting relationship, but no named real locations or authentic address/map to support this slot. Leave unfilled until sufficient district evidence is available."
+  }
+}

@@ -12,6 +12,7 @@ def valid_date(s):
  except (ValueError,TypeError):return False
 def nonempty(x):return isinstance(x,str) and bool(x.strip())
 records=read('src/data/curriculum.json');questions=read('src/data/questions.json');source=read('content/sources/pacing-guide-cells.json')
+audits=read('content/material-audit.json')
 errors=[];warnings=[]
 def check(cond,msg):
  if not cond:errors.append(msg)
@@ -47,6 +48,8 @@ for grade in ['K','1','2','3','4','5']:
  weeks={r['instructionalWeek'] for r in records if r['grade']==grade and r['weekOf']}
  check(weeks==set(range(1,37)),f'{grade}: incomplete instructional weeks')
 ids=[q['id'] for q in questions];check(len(ids)==len(set(ids)),'Duplicate question IDs')
+withdrawn=read('content/withdrawn-questions.json')
+check(not set(ids)&set(withdrawn),'Withdrawn content must not appear in the active bank')
 normalized={};near=[];long=[];teacher=[]
 def norm(s):return re.sub(r'\s+',' ',s.casefold()).strip()
 for q in questions:
@@ -54,6 +57,12 @@ for q in questions:
  for key in ['id','grade','subject','question','answer','source','sourceUrl','curriculumId','reviewStatus']:
   check(nonempty(q.get(key)),f'{ident}: missing {key}')
  check(q['grade'] in ['K','1','2','3','4','5'] and q['subject'] in ['Literacy','Math','Science','Social Studies'],f'{ident}: invalid classification')
+ check(type(q.get('requiresExternalClassroomMaterial')) is bool,f'{ident}: missing material audit boolean')
+ audit=audits.get(ident,{})
+ check(audit.get('requiresExternalClassroomMaterial')==q.get('requiresExternalClassroomMaterial'),f'{ident}: material flag differs from audit')
+ if audit.get('replacement'):
+  check(q['question']==audit['replacement']['question'] and q['answer']==audit['replacement']['answer'] and not q.get('teacherSetup'),f'{ident}: replacement differs from reviewed ingestion input')
+ check(not q.get('teacherSetup') or q['requiresExternalClassroomMaterial'],f'{ident}: preparation-dependent content marked playable')
  check(q['difficulty'] in [1,2,3],f'{ident}: invalid difficulty')
  check(valid_date(q['weekIntroduced']) and q['weekIntroduced']<=AS_OF,f'{ident}: future/invalid introduction')
  check(q['reviewStatus'] in ['pending','approved'],f'{ident}: invalid review status')
@@ -95,9 +104,23 @@ for grade in ['K','1','2','3','4','5']:
   for difficulty in [1,2,3]:
    pool=[q for q in questions if q['grade']==grade and (subject=='Review' and q['reviewQuestion'] or q['subject']==subject) and q['difficulty']==difficulty]
    for name,start in [('Recent Content','2026-08-31'),('Everything Taught So Far','2026-08-03')]:
-    selected=[q for q in pool if any(start<=w<=AS_OF for w in q['alignedWeeks'])]
+    selected=[q for q in pool if q['requiresExternalClassroomMaterial'] is False and any(start<=w<=AS_OF for w in q['alignedWeeks'])]
     coverage.append({'grade':grade,'category':subject,'difficulty':difficulty,'range':name,'draftQuestions':len(selected),'approvedQuestions':sum(q['reviewStatus']=='approved' for q in selected)})
-report={'asOf':AS_OF,'curriculumRecords':len(records),'datedCurriculumRecords':sum(r['weekOf'] is not None for r in records),'undatedCurriculumRecords':sum(r['weekOf'] is None for r in records),
+# Counts are unique across all subjects: Review never adds another copy of a question.
+requirements={'tilesPerGame':30,'minimumEligibleUniqueQuestionsPerGrade':30,'targetApprovedUniqueQuestionsPerGrade':60,'tilesPerCategoryDifficulty':2}
+grade_coverage=[]
+for grade in ['K','1','2','3','4','5']:
+ for name,start in [('Recent Content','2026-08-31'),('Everything Taught So Far','2026-08-03')]:
+  eligible=[q for q in questions if q['requiresExternalClassroomMaterial'] is False and q['grade']==grade and q['weekIntroduced']<=AS_OF and any(start<=w<=AS_OF for w in q['alignedWeeks'])]
+  drafts=len({q['id'] for q in eligible})
+  approved=len({q['id'] for q in eligible if q['reviewStatus']=='approved'})
+  grade_coverage.append({'grade':grade,'range':name,'eligibleGeneratedUnique':drafts,'eligibleApprovedUnique':approved,
+   'approvedShortfallForFullGame':max(0,30-approved),'approvedShortfallForVariationTarget':max(0,60-approved),
+   'additionalDraftsNeededEvenIfAllApprovedForFullGame':max(0,30-drafts),
+   'additionalDraftsNeededEvenIfAllApprovedForVariationTarget':max(0,60-drafts),
+   'undersuppliedDraftPools':[{'category':c['category'],'difficulty':c['difficulty'],'available':c['draftQuestions'],'shortfall':max(0,2-c['draftQuestions'])} for c in coverage if c['grade']==grade and c['range']==name and c['draftQuestions']<2],
+   'undersuppliedApprovedPools':[{'category':c['category'],'difficulty':c['difficulty'],'available':c['approvedQuestions'],'shortfall':max(0,2-c['approvedQuestions'])} for c in coverage if c['grade']==grade and c['range']==name and c['approvedQuestions']<2]})
+report={'withdrawnQuestionIds':list(withdrawn),'materialAudit':{'existingExternal':sum(a['requiredExternalBefore'] for a in audits.values()),'replaced':sum(a['resolution']=='replaced' for a in audits.values()),'excluded':sum(q['requiresExternalClassroomMaterial'] for q in questions),'selfContainedByGrade':dict(Counter(q['grade'] for q in questions if q['requiresExternalClassroomMaterial'] is False))},'coverageRequirements':requirements,'gradeCoverage':grade_coverage,'asOf':AS_OF,'curriculumRecords':len(records),'datedCurriculumRecords':sum(r['weekOf'] is not None for r in records),'undatedCurriculumRecords':sum(r['weekOf'] is None for r in records),
  'scheduledFutureCurriculumRecords':sum(r['weekOf'] is not None and r['weekOf']>AS_OF for r in records),
  'curriculumByGrade':dict(Counter(r['grade'] for r in records)),
  'questions':len(questions),'questionsByGrade':dict(Counter(q['grade'] for q in questions)),'questionsBySubject':dict(Counter(q['subject'] for q in questions)),
@@ -106,7 +129,7 @@ report={'asOf':AS_OF,'curriculumRecords':len(records),'datedCurriculumRecords':s
  'partiallySupportedCurriculum':[r['id'] for r in records if r['supportingEvidence']],
  'errors':errors,'warnings':warnings,'nearDuplicateCandidates':near,'overlongQuestions':long,'teacherCheckedOrMaterialsRequired':teacher,
  'coverage':coverage,'limitations':['All generated questions require teacher review. Exact evidence matching verifies provenance, not semantic correctness.',
- 'No grade yet has enough distinct questions for all 30 tiles: each has 18 drafts. Review shares the same question pool and does not add unique questions.',
+ '30 eligible unique questions is a necessary minimum; target at least 60 approved per grade for variation, not a generation cap. Category/difficulty coverage is also required; overlapping Review pools cannot be double-counted. See gradeCoverage shortages.',
  'Age appropriateness was editorially checked; length/read-aloud checks are automated proxies, not a reading-level guarantee.',
  'Only instruction through the cutoff is considered for generation. Future calendar rows are retained as planned, never backdated into questions.']}
 (ROOT/'content/reports/validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

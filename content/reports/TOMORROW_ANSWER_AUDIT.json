@@ -1,0 +1,169 @@
+{
+  "pack": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+  "answersAudited": 180,
+  "totalChanged": 21,
+  "changedByGrade": {
+    "K": 10,
+    "1": 1,
+    "2": 3,
+    "3": 2,
+    "4": 1,
+    "5": 4
+  },
+  "scope": "Only accepted candidate answers and rebuilt pack answer/fingerprint fields change. Open-response examples illustrate valid responses, not an exhaustive grading key. No questions or curriculum metadata changed.",
+  "changes": [
+    {
+      "id": "tomorrow-dcss-K-math-position-follow",
+      "grade": "K",
+      "question": "Put your hand above your head.",
+      "before": "Teacher checks: the hand is above the student’s head.",
+      "after": "Your hand is above your head."
+    },
+    {
+      "id": "tomorrow-dcss-K-math-position-two",
+      "grade": "K",
+      "question": "Put one hand beside your head and one above it.",
+      "before": "Teacher checks: one hand is beside the head and the other is above it.",
+      "after": "One hand is beside your head; the other is above it."
+    },
+    {
+      "id": "tomorrow-dcss-K-literacy-letter-sound",
+      "grade": "K",
+      "question": "Say the sound for M. Then say a word that starts with it.",
+      "before": "Teacher checks: /m/ and a word beginning with /m/.",
+      "after": "/m/ — moon, milk, or another word starting with /m/."
+    },
+    {
+      "id": "tomorrow-dcss-K-literacy-word-sentence",
+      "grade": "K",
+      "question": "Say a sentence using “it”.",
+      "before": "Teacher checks: a complete spoken thought using “it” meaningfully.",
+      "after": "“It is wet.” or “It is in the box.”"
+    },
+    {
+      "id": "tomorrow-dcss-K-literacy-sight-two",
+      "grade": "K",
+      "question": "Use “you” and “that” in one sentence.",
+      "before": "Teacher checks: an understandable spoken sentence that uses both words meaningfully.",
+      "after": "“You can see that.” or “You have that book.”"
+    },
+    {
+      "id": "tomorrow-dcss-1-math-explain-subtraction",
+      "grade": "1",
+      "question": "There are 9 apples. We eat 2. How many remain? Tell how you know.",
+      "before": "7 apples. Accept a correct explanation, such as counting back two from nine.",
+      "after": "7 apples. Count back two from nine: 8, 7. Or subtract: 9 − 2 = 7."
+    },
+    {
+      "id": "tomorrow-dcss-2-literacy-compound-use",
+      "grade": "2",
+      "question": "Make a compound word from “play” and “ground”. Use it in a sentence.",
+      "before": "playground. Teacher checks that the sentence uses “playground” meaningfully.",
+      "after": "playground. “We play at the playground.” or “The playground is busy.”"
+    },
+    {
+      "id": "tomorrow-dcss-2-literacy-compound-explain",
+      "grade": "2",
+      "question": "A classmate split “snowman” into “sno” and “wman.” Explain a better split and use the word.",
+      "before": "Split it into snow and man, two words. Teacher checks a meaningful sentence using snowman.",
+      "after": "snow + man = snowman. “We made a snowman.” or “The snowman is tall.”"
+    },
+    {
+      "id": "tomorrow-dcss-3-math-add-explain",
+      "grade": "3",
+      "question": "Find 268 + 157. Explain one regrouping step.",
+      "before": "425. For example, 8 + 7 = 15 ones: regroup 10 ones as 1 ten.",
+      "after": "425. Regroup 15 ones as 1 ten and 5 ones, or 12 tens as 1 hundred and 2 tens."
+    },
+    {
+      "id": "tomorrow-dcss-3-literacy-transition-write",
+      "grade": "3",
+      "question": "Explain making a paper drawing in three steps. Use first, then, and finally.",
+      "before": "Teacher checks: three logically ordered steps, with first, then, and finally used appropriately.",
+      "after": "First, get paper. Then, draw a cat. Finally, color it. Or: First, draw a flower. Then, add leaves. Finally, sign your name."
+    },
+    {
+      "id": "tomorrow-dcss-4-literacy-main-build",
+      "grade": "4",
+      "question": "A class labels supply bins, assigns shelf spaces, and returns tools after use. Write a main-idea sentence supported by all three details.",
+      "before": "The class keeps its supplies organized. Accept another main idea that covers all three details.",
+      "after": "The class keeps its supplies organized. Or: The class has a system for storing and returning supplies."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-theme-help",
+      "grade": "5",
+      "question": "Sam tried alone and struggled. After asking for help, Sam succeeded. What possible theme does this suggest?",
+      "before": "Asking for help can help us succeed. Accept another theme supported by the events.",
+      "after": "Asking for help can help us succeed. Or: We do not have to solve every problem alone."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-theme-sharing",
+      "grade": "5",
+      "question": "Dee kept all the supplies and could not finish alone. Later, Dee shared and the group finished together. Suggest a supported theme.",
+      "before": "Sharing and working together can help people succeed. Accept another theme supported by the events.",
+      "after": "Sharing and working together can help people succeed. Or: We can accomplish more together than alone."
+    },
+    {
+      "id": "tomorrow-K-social-studies-kind",
+      "grade": "K",
+      "question": "A new child joins your group. What could you say to welcome them?",
+      "before": "Accept a welcoming invitation, such as “Would you like to play with us?”",
+      "after": "“Would you like to play with us?” or “Come join us!”"
+    },
+    {
+      "id": "tomorrow-K-social-studies-repair",
+      "grade": "K",
+      "question": "You knock down a friend’s blocks by accident. What can you do to help?",
+      "before": "Accept apologizing and helping rebuild.",
+      "after": "Say “I’m sorry” and help rebuild the blocks."
+    },
+    {
+      "id": "tomorrow-K-social-studies-fair",
+      "grade": "K",
+      "question": "Two children want the same toy. Give a fair plan and tell why it helps.",
+      "before": "Accept taking turns or sharing, with an explanation that both children get a chance.",
+      "after": "Take turns or share so both children get a chance."
+    },
+    {
+      "id": "tomorrow-K-social-studies-reason",
+      "grade": "K",
+      "question": "Why should we listen when another person is speaking?",
+      "before": "Accept an explanation that listening shows respect or helps us understand the speaker.",
+      "after": "Listening shows respect or helps us understand the speaker."
+    },
+    {
+      "id": "tomorrow-2-social-studies-limited",
+      "grade": "2",
+      "question": "There are three swings and six children waiting. Suggest a way everyone can have a turn.",
+      "before": "Accept taking turns or setting equal turns so everyone can use a swing.",
+      "after": "Take turns, or give everyone equal time on a swing."
+    },
+    {
+      "id": "tomorrow-5-social-studies-speech",
+      "grade": "5",
+      "question": "Name one freedom listed as a right of citizens.",
+      "before": "Accept freedom of speech or freedom of religion.",
+      "after": "Freedom of speech or freedom of religion."
+    },
+    {
+      "id": "tomorrow-5-social-studies-example",
+      "grade": "5",
+      "question": "Give one right and one responsibility of a citizen, and explain how they differ.",
+      "before": "Accept freedom of speech as a right and obeying laws as a responsibility, with a freedom-versus-duty explanation.",
+      "after": "Freedom of speech or religion is a right: a freedom. Obeying laws is a responsibility: a duty."
+    },
+    {
+      "id": "tomorrow-K-science-compare",
+      "grade": "K",
+      "question": "Tell one way the sky looks different in daytime and nighttime.",
+      "before": "Accept that the daytime sky is lit by the Sun and the nighttime sky is dark.",
+      "after": "The sky is bright during the day and dark at night."
+    }
+  ],
+  "validation": {
+    "tomorrowPack": "Passed: zero errors or near duplicates; 30/30 assignments in all six grades.",
+    "curriculumAndDraftPipeline": "Passed: zero errors or warnings.",
+    "preservation": "All 180 questions and all curriculum metadata unchanged; exactly 21 answers updated, with corresponding audit fingerprints rebuilt.",
+    "browserGameplay": "All six K–5 actual release gameplay tests passed (7.5s): complete boards, no repeats/unavailable tiles, eligibility, answer reveal, USED state, reset, grade change, refresh/localStorage, no console errors or scrolling at 1920×1080."
+  }
+}

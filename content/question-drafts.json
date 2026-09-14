@@ -27,6 +27,27 @@
         3,
         "Put one hand beside your head and one above it.",
         "Teacher checks: one hand is beside the head and the other is above it."
+      ],
+      [
+        "position-inside",
+        1,
+        "The toy is in the basket. Point to where it belongs.",
+        "Teacher checks: student points inside the basket.",
+        "Display an empty basket or its picture."
+      ],
+      [
+        "position-describe",
+        2,
+        "Where is the bear compared with the chair?",
+        "Teacher checks: uses a positional word that matches the displayed arrangement.",
+        "Place a toy bear beside, behind, or in front of a chair; make the position clear."
+      ],
+      [
+        "position-correct",
+        3,
+        "I said “below,” but pointed above the table. Fix my mistake.",
+        "Teacher checks: points below the table and identifies that the original gesture showed above.",
+        "Point above a visible table while reading."
       ]
     ],
     "alignedWeeks": [
@@ -64,6 +85,27 @@
         "Show which strip is shorter. Tell how you know.",
         "Teacher checks: student aligns the ends and identifies the strip that does not reach as far.",
         "Show two strips of different lengths."
+      ],
+      [
+        "length-equal-end",
+        1,
+        "Do these strips end at the same place: yes or no?",
+        "No.",
+        "Display unequal strips aligned at one end."
+      ],
+      [
+        "length-order",
+        2,
+        "Place the shorter ribbon on the left.",
+        "Teacher checks: compares the two ribbons and places the shorter on the left.",
+        "Provide two ribbons of clearly different lengths; show which side is left."
+      ],
+      [
+        "length-fair",
+        3,
+        "The strips start in different places. Move them so we can compare their lengths fairly.",
+        "Teacher checks: lines up one end of each strip without changing their lengths.",
+        "Lay two unequal strips with their starting ends offset."
       ]
     ],
     "alignedWeeks": [
@@ -99,6 +141,24 @@
         3,
         "Say the sound for M. Then say a word that starts with it.",
         "Teacher checks: /m/ and a word beginning with /m/."
+      ],
+      [
+        "m-name-small",
+        1,
+        "Is this a big M or a little m? m",
+        "A little m (lowercase m)."
+      ],
+      [
+        "m-listen",
+        2,
+        "Listen to “moon.” Say just its first sound.",
+        "/m/."
+      ],
+      [
+        "m-build",
+        3,
+        "Make the letter M with your finger. Say its sound.",
+        "Teacher checks: traces an uppercase M and says /m/."
       ]
     ]
   },
@@ -131,6 +191,24 @@
         3,
         "Say a sentence using “it”.",
         "Teacher checks: a complete spoken thought using “it” meaningfully."
+      ],
+      [
+        "sight-is",
+        1,
+        "Which word do you hear: “is” or “that”? Point to “is.”",
+        "is."
+      ],
+      [
+        "sight-complete",
+        2,
+        "Choose “is” or “in”: The cat ___ wet.",
+        "is."
+      ],
+      [
+        "sight-two",
+        3,
+        "Use “you” and “that” in one sentence.",
+        "Teacher checks: an understandable spoken sentence that uses both words meaningfully."
       ]
     ]
   },
@@ -165,6 +243,27 @@
         "Tell one way our day and night sky pictures differ.",
         "Teacher checks: student describes a visible difference supported by the two pictures.",
         "Display one day-sky and one night-sky picture from the lesson."
+      ],
+      [
+        "sky-both",
+        1,
+        "Our chart puts this object in day and night. Which group: day, night, or both?",
+        "Both.",
+        "Point to an object recorded in both columns of the taught sky chart."
+      ],
+      [
+        "sky-correct-sort",
+        2,
+        "This object was seen at night. It is in our “day only” pile. Fix the sorting.",
+        "Teacher checks: moves it to night or both, according to the class observations.",
+        "Use a taught sky-object card and the class observation chart."
+      ],
+      [
+        "sky-justify-both",
+        3,
+        "Pick a card for “both.” Show why it belongs there.",
+        "Teacher checks: identifies observations of that object in both the day and night records.",
+        "Provide a taught sky-object card with recorded day and night observations."
       ]
     ]
   },
@@ -196,6 +295,24 @@
         3,
         "Choose a classroom rule. Tell how it helps our class.",
         "Teacher checks: connects the rule to a reasonable benefit for the class."
+      ],
+      [
+        "citizen-choice",
+        1,
+        "A classmate is speaking. Which helps: listen or shout over them?",
+        "Listen."
+      ],
+      [
+        "citizen-repair",
+        2,
+        "You knocked down a classmate’s blocks. What could you do to help?",
+        "Teacher checks: offers a helpful response, such as apologizing and helping rebuild."
+      ],
+      [
+        "citizen-together",
+        3,
+        "Two children want the same classroom toy. Suggest a fair plan and tell why it helps.",
+        "Teacher checks: proposes sharing or taking turns and explains how the plan respects both children."
       ]
     ]
   },
@@ -245,6 +362,42 @@
         3,
         "There are 9 apples. We eat 2. How many remain? Tell how you know.",
         "7 apples. Accept a correct explanation, such as counting back two from nine."
+      ],
+      [
+        "join-drawing",
+        1,
+        "Draw 4 dots, then 3 more. How many dots did you draw?",
+        "7 dots."
+      ],
+      [
+        "take-away-zero",
+        1,
+        "All 6 crackers are eaten. How many crackers remain?",
+        "0 crackers."
+      ],
+      [
+        "join-equation",
+        2,
+        "Five children are painting. One joins them. Choose the matching expression: 5 + 1 or 5 − 1.",
+        "5 + 1."
+      ],
+      [
+        "story-missing",
+        2,
+        "There were 9 beads. Some fell. Now 6 remain. How many fell?",
+        "3 beads."
+      ],
+      [
+        "story-error",
+        3,
+        "Tia has 4 shells and finds 2. She says she has 2 shells now. Explain her mistake.",
+        "She subtracted instead of adding. She now has 6 shells."
+      ],
+      [
+        "story-create",
+        3,
+        "Tell a joining story for 3 + 4. Give its answer.",
+        "Teacher checks: a story joining groups of 3 and 4, with a total of 7."
       ]
     ]
   },
@@ -276,6 +429,24 @@
         3,
         "Listen: /s/ /ŭ/ /n/. Blend the sounds. Then change /s/ to /f/.",
         "sun; fun."
+      ],
+      [
+        "short-a-read",
+        1,
+        "Read this word aloud: map",
+        "map, with short /ă/."
+      ],
+      [
+        "vowel-sort",
+        2,
+        "Which pair shares a middle vowel sound: pin and pig, or pin and pot?",
+        "pin and pig share short /ĭ/."
+      ],
+      [
+        "vowel-repair",
+        3,
+        "The word is “hop.” A reader says “hope.” Say the word correctly and explain the vowel sound.",
+        "hop has the short /ŏ/ sound. It is not the long-o sound in hope."
       ]
     ]
   },
@@ -307,6 +478,24 @@
         3,
         "Bo opens a box, takes out a toy, then plays. Retell using first, next, and last.",
         "First Bo opens the box. Next he takes out a toy. Last he plays."
+      ],
+      [
+        "events-last",
+        1,
+        "Liv washes a cup, dries it, and puts it away. What happens last?",
+        "Liv puts the cup away."
+      ],
+      [
+        "events-order",
+        2,
+        "Put these in order: eat the sandwich, make the sandwich, get the bread.",
+        "Get the bread, make the sandwich, eat the sandwich."
+      ],
+      [
+        "retell-fix",
+        3,
+        "Zed packs a bag, walks to class, then unpacks. I said he unpacked first. Correct my retelling.",
+        "First Zed packs a bag, next he walks to class, and last he unpacks."
       ]
     ]
   },
@@ -338,6 +527,24 @@
         3,
         "Our plant list is air, water, light, nutrients. Our animal list is air, water, food, shelter. Which needs appear only on the animal list?",
         "Food and shelter."
+      ],
+      [
+        "animal-shelter",
+        1,
+        "Which is on our animal-needs list: shelter or crayons?",
+        "Shelter."
+      ],
+      [
+        "plant-list",
+        2,
+        "Our plant list says air, water, light, nutrients. Which word did I leave out: air, light, nutrients?",
+        "Water."
+      ],
+      [
+        "needs-sort-check",
+        3,
+        "A student puts water in the “plants only” group. Explain how to fix the group.",
+        "Water belongs in the shared-needs group because plants and animals both need water."
       ]
     ]
   },
@@ -369,6 +576,27 @@
         3,
         "Put these in order from smaller to larger: nation, city, state.",
         "City, state, nation."
+      ],
+      [
+        "location-country",
+        1,
+        "Point to our nation on the class “Where I Live” chart.",
+        "Teacher checks: student selects the nation entry.",
+        "Display the taught chart with city, county, state, nation, and continent labeled."
+      ],
+      [
+        "location-county",
+        2,
+        "Use our chart to name the county that contains our school.",
+        "Teacher checks: names the school’s county correctly.",
+        "Display the accurate school-location chart from the lesson."
+      ],
+      [
+        "location-fix",
+        3,
+        "A label says our state is our city. Use the class chart to explain the mistake.",
+        "Teacher checks: identifies the city and state as different location levels and supplies their taught names.",
+        "Use the taught Where I Live chart."
       ]
     ]
   },
@@ -400,6 +628,24 @@
         3,
         "Find 9 + 7. Explain how making a ten helps.",
         "16. Move 1 from 7 to 9: 10 + 6 = 16."
+      ],
+      [
+        "addition-zero",
+        1,
+        "Add zero to 13. What is the sum?",
+        "13."
+      ],
+      [
+        "addition-choice",
+        2,
+        "Which equals 18: 9 + 8 or 9 + 9?",
+        "9 + 9."
+      ],
+      [
+        "addition-strategies",
+        3,
+        "For 7 + 8, Jo starts with 7 + 7. Finish Jo’s strategy and explain why it works.",
+        "7 + 7 = 14, then add 1 to get 15 because 8 is one more than 7."
       ]
     ]
   },
@@ -431,6 +677,24 @@
         3,
         "Find 14 − 9 by counting up from 9. Explain.",
         "5. From 9 to 10 is 1, and from 10 to 14 is 4; 1 + 4 = 5."
+      ],
+      [
+        "subtract-all",
+        1,
+        "There are 11 counters. Remove all 11. How many remain?",
+        "0 counters."
+      ],
+      [
+        "subtract-related",
+        2,
+        "Use 6 + 7 = 13 to solve 13 − 6.",
+        "7."
+      ],
+      [
+        "subtract-choice",
+        3,
+        "To solve 18 − 16, would you count back 16 or count up from 16? Explain an efficient choice.",
+        "Counting up from 16 takes only two steps: 17, 18. The difference is 2. Accept another correct explained strategy."
       ]
     ]
   },
@@ -462,6 +726,24 @@
         3,
         "The path was narrow; only one child could walk along it at a time. What does “narrow” mean? Which clue helps?",
         "Not wide. The clue is that only one child could walk along it at a time."
+      ],
+      [
+        "context-damp",
+        1,
+        "The damp towel was still a little wet. Does “damp” mean wet or dry?",
+        "A little wet."
+      ],
+      [
+        "context-contrast",
+        2,
+        "Unlike the noisy hall, the room was silent. What does “silent” mean?",
+        "Quiet; without sound."
+      ],
+      [
+        "context-fix",
+        3,
+        "“The fragile cup broke when it fell.” A reader says fragile means hard to break. Use the sentence to correct the reader.",
+        "Fragile means easily broken; the cup broke when it fell."
       ]
     ]
   },
@@ -493,6 +775,24 @@
         3,
         "Make a compound word from “play” and “ground”. Use it in a sentence.",
         "playground. Teacher checks that the sentence uses “playground” meaningfully."
+      ],
+      [
+        "compound-select",
+        1,
+        "Which word joins two words: bathtub or cat?",
+        "bathtub joins bath and tub."
+      ],
+      [
+        "compound-finish",
+        2,
+        "Complete the compound word for a brush used on teeth: tooth___.",
+        "toothbrush."
+      ],
+      [
+        "compound-explain",
+        3,
+        "A classmate split “snowman” into “sno” and “wman.” Explain a better split and use the word.",
+        "Split it into snow and man, two words. Teacher checks a meaningful sentence using snowman."
       ]
     ]
   },
@@ -527,6 +827,25 @@
         "Use two observations to explain how a sky object appeared to move.",
         "Teacher checks: the student names an object and compares two recorded positions or times.",
         "Display at least two dated/timed class sky observations."
+      ],
+      [
+        "sky-chart-label",
+        1,
+        "Our chart tracks the moon at 7 p.m. and 8 p.m. Which sky object is being observed?",
+        "The moon."
+      ],
+      [
+        "sky-order-notes",
+        2,
+        "A sky-object chart has entries at 8 a.m., noon, and 4 p.m. Which two entries compare the start and end of that observation period?",
+        "8 a.m. and 4 p.m."
+      ],
+      [
+        "sky-claim-check",
+        3,
+        "A student says our tracked sky object stayed in one place. Which two entries on our chart could you use to check that claim?",
+        "Teacher checks: selects two different times and accurately compares the recorded positions; the claim may be supported or contradicted.",
+        "Display a taught chart with time and position recorded for the same sky object."
       ]
     ]
   },
@@ -559,6 +878,26 @@
         3,
         "Our class needs 8 glue sticks but has 5. Suggest a way to share them and explain your choice.",
         "Teacher checks: a workable sharing plan and an explanation of how it addresses limited supplies."
+      ],
+      [
+        "government-match",
+        1,
+        "On our government chart, find the label “Mayor.”",
+        "Teacher checks: correctly locates Mayor.",
+        "Display the taught chart with President, Governor, and Mayor."
+      ],
+      [
+        "scarcity-choice",
+        2,
+        "Six students need scissors, but there are three pairs. How could everyone get a turn?",
+        "Teacher checks: a feasible plan, such as partners taking turns with each pair."
+      ],
+      [
+        "government-compare",
+        3,
+        "Use our notes to explain one difference between the work of a Governor and a Mayor.",
+        "Teacher checks: compares the two roles accurately using the taught notes.",
+        "Display the government-role notes from the lesson; do not require current officeholders."
       ]
     ]
   },
@@ -584,6 +923,18 @@
         2,
         "680 is between 600 and 700. Which hundred is it nearest?",
         "700."
+      ],
+      [
+        "round-range",
+        2,
+        "Which rounds to 500 to the nearest hundred: 462 or 438?",
+        "462."
+      ],
+      [
+        "round-two-places",
+        3,
+        "Round 351 to the nearest ten and nearest hundred. Explain why the rounded numbers differ.",
+        "350 and 400. Rounding to tens and hundreds uses different neighboring multiples."
       ]
     ]
   },
@@ -609,6 +960,18 @@
         3,
         "Find 268 + 157. Explain one regrouping step.",
         "425. For example, 8 + 7 = 15 ones: regroup 10 ones as 1 ten."
+      ],
+      [
+        "add-place-parts",
+        1,
+        "Combine 200 + 30 + 4 with 100 + 20 + 3. What is the total?",
+        "357."
+      ],
+      [
+        "add-context",
+        2,
+        "One class collects 146 cans and another collects 235. How many cans do they collect altogether?",
+        "381 cans."
       ]
     ]
   },
@@ -634,6 +997,18 @@
         3,
         "Sam says 402 − 185 = 383. Is Sam correct? Solve and explain how to check.",
         "No. 402 − 185 = 217. Check: 217 + 185 = 402."
+      ],
+      [
+        "subtract-no-regroup",
+        1,
+        "Find the difference between 765 and 243.",
+        "522."
+      ],
+      [
+        "subtract-missing-digit",
+        3,
+        "Complete 5_2 − 231 = 321. Explain how you found the missing digit.",
+        "5. Adding 321 and 231 gives 552, so the missing tens digit is 5."
       ]
     ]
   },
@@ -665,6 +1040,24 @@
         3,
         "Nia wanted to read, but the room was noisy. She moved to a quiet room and read. Summarize using Somebody, Wanted, But, So, Then.",
         "Nia wanted to read, but it was noisy, so she moved to a quiet room; then she read."
+      ],
+      [
+        "summary-somebody",
+        1,
+        "“Ava wanted a seat, but every chair was taken.” Who is the Somebody in this story?",
+        "Ava."
+      ],
+      [
+        "summary-then",
+        2,
+        "Omar wanted to paint, but the brush was missing. He found it in a drawer and painted a tree. What belongs after “Then” in his summary?",
+        "He painted a tree."
+      ],
+      [
+        "summary-fix",
+        3,
+        "Kim wanted to bake, but had no flour. She borrowed some and baked. A summary says she gave up. Correct it using all five summary parts.",
+        "Kim wanted to bake, but had no flour, so she borrowed some; then she baked."
       ]
     ]
   },
@@ -696,6 +1089,24 @@
         3,
         "Explain making a paper drawing in three steps. Use first, then, and finally.",
         "Teacher checks: three logically ordered steps, with first, then, and finally used appropriately."
+      ],
+      [
+        "transition-ending",
+        1,
+        "Choose a word for the last step: finally or first.",
+        "finally."
+      ],
+      [
+        "transition-next",
+        2,
+        "First, fold the paper. ___, draw on the front. Finally, sign your name. Which fits: then or therefore?",
+        "then."
+      ],
+      [
+        "transition-cause",
+        3,
+        "The team practiced every day. Their passing improved. Connect these ideas with “as a result” and explain the relationship.",
+        "The team practiced every day; as a result, their passing improved. The phrase links the practice to its stated result."
       ]
     ]
   },
@@ -729,6 +1140,25 @@
         "Describe three physical characteristics of the sample using our observation notes.",
         "Teacher checks: three accurate recorded characteristics, such as color, hardness, luster, streak, or cleavage.",
         "Show a studied sample and its class-tested property notes. Do not ask students to perform new tests during play."
+      ],
+      [
+        "rock-trait-name",
+        1,
+        "Which names an observable property of a rock: color or owner’s name?",
+        "Color."
+      ],
+      [
+        "rock-compare-notes",
+        2,
+        "Notes say sample A is gray and shiny; B is gray and dull. Name one similarity and one difference.",
+        "Both are gray. A is shiny while B is dull."
+      ],
+      [
+        "rock-unsupported",
+        3,
+        "A photo shows a rock’s color. Can the photo alone establish its hardness? Explain what other lesson evidence you would need.",
+        "No. Use the recorded results of a hardness test from the lesson; color alone does not establish hardness.",
+        "Have class-tested hardness notes available; no new physical testing is required."
       ]
     ]
   },
@@ -763,6 +1193,27 @@
         "Show a line of latitude and a line of longitude. Explain a difference using the map.",
         "Teacher checks: both lines are correctly identified and the comparison agrees with the map lesson.",
         "Display the classroom map showing latitude and longitude."
+      ],
+      [
+        "map-longitude-find",
+        1,
+        "Find a labeled line of longitude on our map.",
+        "Teacher checks: points to a longitude line, using the taught map key.",
+        "Display a classroom map with latitude and longitude labeled."
+      ],
+      [
+        "map-label-correct",
+        2,
+        "I have labeled the equator “prime meridian.” Use our map to correct the label.",
+        "Teacher checks: identifies the equator and replaces the incorrect label with equator.",
+        "Place the incorrect label on the equator of the taught map."
+      ],
+      [
+        "map-peer-guide",
+        3,
+        "Give a classmate directions for finding the prime meridian on this map. Use its labels or grid as evidence.",
+        "Teacher checks: clear directions lead to the prime meridian and agree with the displayed map.",
+        "Use the taught map with its grid and labels visible."
       ]
     ]
   },
@@ -794,6 +1245,24 @@
         3,
         "In 55,000, how does the value of the left 5 compare with the value of the right 5? Explain.",
         "50,000 is ten times 5,000 because moving one place left multiplies a digit’s value by ten."
+      ],
+      [
+        "expanded-build",
+        1,
+        "Write 40,000 + 700 + 20 + 9 as one number.",
+        "40,729."
+      ],
+      [
+        "place-zero",
+        2,
+        "A number has 3 ten-thousands, 0 thousands, 6 hundreds, 2 tens, and 4 ones. Write it in base-ten numerals.",
+        "30,624."
+      ],
+      [
+        "expanded-error",
+        3,
+        "A student expands 72,305 as 70,000 + 2,000 + 30 + 5. Explain and correct the error.",
+        "The 3 is in the hundreds place, not tens. The correct form is 70,000 + 2,000 + 300 + 5."
       ]
     ]
   },
@@ -825,6 +1294,24 @@
         3,
         "Two classes collect 4,000 cans altogether. One collects 1,685. How many does the other collect? Check with addition.",
         "2,315 cans; 1,685 + 2,315 = 4,000."
+      ],
+      [
+        "add-round-context",
+        1,
+        "A library adds 1,200 books to its 2,300 books. How many books does it have?",
+        "3,500 books."
+      ],
+      [
+        "add-three-groups",
+        2,
+        "A drive collects 425 cans on Monday, 316 on Tuesday, and 208 on Wednesday. Find the total.",
+        "949 cans."
+      ],
+      [
+        "add-error-check",
+        3,
+        "For 1,586 + 2,247, a student reports 3,733. Find the correct sum and explain a place-value check.",
+        "3,833. The tens total includes the ten regrouped from 6 + 7 ones; 8 + 4 + 1 = 13 tens."
       ]
     ]
   },
@@ -856,6 +1343,24 @@
         3,
         "A ball hit the stacked cups. The cups fell, and water spilled. Explain the chain of events using evidence from these sentences.",
         "The ball hit the cups, causing them to fall; their falling caused the water to spill."
+      ],
+      [
+        "effect-text",
+        1,
+        "“The bell rang, so the children lined up.” What happened as a result of the bell ringing?",
+        "The children lined up."
+      ],
+      [
+        "cause-two",
+        2,
+        "“The bag tore because it was old and too full.” Give both stated causes of the tear.",
+        "The bag was old and too full."
+      ],
+      [
+        "cause-unsupported",
+        3,
+        "“Lena smiled when she opened the envelope.” Does this sentence prove she received money? Explain using only the text.",
+        "No. It says she smiled and opened an envelope, but does not tell what was inside."
       ]
     ]
   },
@@ -887,6 +1392,24 @@
         3,
         "The library lends books, offers story time, and hosts reading clubs. Is “The library only lends books” a good main idea? Explain and improve it.",
         "No; “only” leaves out the other activities. Better: the library offers several ways to read and enjoy books."
+      ],
+      [
+        "main-title",
+        1,
+        "“We mend torn books and replace broken covers.” Choose a title: Caring for Books or Making Lunch.",
+        "Caring for Books."
+      ],
+      [
+        "main-unrelated",
+        2,
+        "A paragraph explains how students care for a garden. Which detail fits: students water seedlings, or the bus is yellow?",
+        "Students water seedlings."
+      ],
+      [
+        "main-build",
+        3,
+        "A class labels supply bins, assigns shelf spaces, and returns tools after use. Write a main-idea sentence supported by all three details.",
+        "The class keeps its supplies organized. Accept another main idea that covers all three details."
       ]
     ]
   },
@@ -918,6 +1441,24 @@
         3,
         "One day was rainy. Is that enough data to show a repeating weekly weather pattern? Explain.",
         "No. One observation cannot show repetition; collect observations across more days and weeks."
+      ],
+      [
+        "weather-frequency",
+        1,
+        "Rain was recorded on Monday and Friday, but not the other weekdays. How many weekdays were rainy?",
+        "2 weekdays."
+      ],
+      [
+        "weather-data-gap",
+        2,
+        "A chart has weather entries for Monday and Wednesday. Which missing weekday entry would complete that three-day record?",
+        "Tuesday."
+      ],
+      [
+        "weather-comparison-fair",
+        3,
+        "One cloud chart records noon each day; another records different times. Which makes a clearer same-time comparison across days? Explain.",
+        "The noon chart keeps observation time consistent, making changes across days easier to compare."
       ]
     ],
     "alignedWeeks": [
@@ -958,6 +1499,27 @@
         "Describe a decision from our lesson and one consequence. Use evidence from the lesson.",
         "Teacher checks: an accurate decision, a supported consequence, and relevant evidence.",
         "Have the taught historical source or notes available."
+      ],
+      [
+        "nation-source-event",
+        1,
+        "Point to an event title on our Forming a New Nation timeline.",
+        "Teacher checks: selects an event actually taught in the lesson.",
+        "Display the taught historical timeline."
+      ],
+      [
+        "nation-person-action",
+        2,
+        "Match one person on our lesson chart to an action recorded beside that person.",
+        "Teacher checks: the person-action match agrees with the taught chart.",
+        "Provide the taught chart of people and their documented actions."
+      ],
+      [
+        "nation-sequence-evidence",
+        3,
+        "Choose two events on our lesson timeline. Explain their order and cite the timeline evidence.",
+        "Teacher checks: identifies the events in correct chronological order and uses the dates or sequence shown.",
+        "Use the taught Forming a New Nation timeline; do not introduce new events."
       ]
     ]
   },
@@ -989,6 +1551,24 @@
         3,
         "A rectangular prism is 5 units long, 3 units wide, and 2 units high. Find its volume and explain.",
         "30 cubic units: 5 × 3 × 2 = 30. Each of two layers has 15 unit cubes."
+      ],
+      [
+        "volume-unit",
+        1,
+        "A prism’s volume is counted using unit cubes. Which label fits its volume: units or cubic units?",
+        "Cubic units."
+      ],
+      [
+        "volume-compare",
+        2,
+        "Prism A has 3 layers of 8 cubes. Prism B has 2 layers of 12 cubes. Which has greater volume, or are they equal?",
+        "They are equal: each has 24 cubic units."
+      ],
+      [
+        "volume-error",
+        3,
+        "For a 4 by 3 by 2 prism, Jo adds 4 + 3 + 2 and says its volume is 9. Explain why this does not count the cubes correctly.",
+        "Each layer has 4 × 3 = 12 cubes, and there are 2 layers. The volume is 24 cubic units; adding the edge lengths does not count the cubes."
       ]
     ]
   },
@@ -1020,6 +1600,24 @@
         3,
         "A student writes 42 × 13 = 42 × 10 + 42 × 2. What is wrong? Find the correct product.",
         "13 = 10 + 3, not 10 + 2. The correct product is 420 + 126 = 546."
+      ],
+      [
+        "multiply-hundred",
+        1,
+        "Complete the product: 21 × 100.",
+        "2,100."
+      ],
+      [
+        "multiply-area-parts",
+        2,
+        "To compute 36 × 12, the first partial product is 360. What is the other partial product and the total?",
+        "72; total 432."
+      ],
+      [
+        "multiply-estimate-check",
+        3,
+        "Someone says 48 × 21 = 148. Explain why that is too small, then calculate the product.",
+        "Even 48 × 20 is 960, so 148 is too small. 960 + 48 = 1,008."
       ]
     ]
   },
@@ -1051,6 +1649,24 @@
         3,
         "“I can’t wait!” Ari whispered, bouncing in his seat. How do the words and actions work together to reveal his feelings?",
         "Both suggest excitement or eagerness: “I can’t wait” and bouncing in his seat support that inference."
+      ],
+      [
+        "narrative-dialogue",
+        1,
+        "“Please stay,” Eva said. Which words are the character’s spoken dialogue?",
+        "Please stay."
+      ],
+      [
+        "narrative-setting-effect",
+        2,
+        "“In the dark hallway, Ren felt along the wall for the switch.” How does the setting explain Ren’s action?",
+        "The hallway is dark, so Ren feels for the switch instead of relying on sight."
+      ],
+      [
+        "narrative-contrast",
+        3,
+        "“I am not worried,” Sol said, gripping the chair tightly. How might the dialogue and action suggest different feelings?",
+        "The words deny worry, but gripping tightly may suggest tension or worry. Accept an interpretation supported by both details."
       ]
     ],
     "alignedWeeks": [
@@ -1090,6 +1706,24 @@
         3,
         "Rae hid every mistake. After a friend shared a mistake, Rae admitted one and learned from it. Explain a possible theme using Rae’s change.",
         "Being honest about mistakes can help us learn. Rae changes from hiding mistakes to admitting one and learning from it."
+      ],
+      [
+        "change-end",
+        1,
+        "At first, Pat quit when a puzzle was hard. By the end, Pat tried again. What does Pat do differently at the end?",
+        "Pat keeps trying instead of quitting."
+      ],
+      [
+        "theme-sharing",
+        2,
+        "Dee kept all the supplies and could not finish alone. Later, Dee shared and the group finished together. Suggest a supported theme.",
+        "Sharing and working together can help people succeed. Accept another theme supported by the events."
+      ],
+      [
+        "theme-reject",
+        3,
+        "Jo mocked a beginner, then struggled with a new skill and became kinder. Does “Winning is everything” fit Jo’s change? Explain a better theme.",
+        "No. A better theme is that experiencing difficulty can help us understand and treat others kindly; Jo changes from mocking to kindness."
       ]
     ]
   },
@@ -1123,6 +1757,26 @@
         "Explain which taught process changed the surface in our example. Support your answer with an observation.",
         "Teacher checks: correctly identifies weathering, erosion, or deposition and connects it to evidence from the taught example.",
         "Display an example already studied in class with an established explanation."
+      ],
+      [
+        "earth-record-find",
+        1,
+        "Locate a picture labeled “deposition” in our investigation notes.",
+        "Teacher checks: identifies the taught deposition example.",
+        "Display labeled examples from the completed Earth-surface investigation."
+      ],
+      [
+        "earth-evidence-select",
+        2,
+        "We want to compare the surface before and after our taught investigation. Which is more useful: two labeled surface pictures or the class attendance list?",
+        "The two labeled surface pictures."
+      ],
+      [
+        "earth-compare-process",
+        3,
+        "Compare two taught examples labeled with different Earth-surface processes. Use one recorded observation from each.",
+        "Teacher checks: accurately compares the examples and links observations to their taught weathering, erosion, or deposition labels.",
+        "Provide two completed investigations or lesson examples with established process labels and observations."
       ]
     ],
     "alignedWeeks": [
@@ -1163,6 +1817,27 @@
         3,
         "Describe how one responsible action by a citizen can help a community. Explain the connection.",
         "Teacher checks: identifies a taught responsibility and explains a plausible community benefit."
+      ],
+      [
+        "community-business",
+        1,
+        "Find one business named in our community-needs lesson.",
+        "Teacher checks: identifies a business included in the taught source.",
+        "Display the taught community-needs chart."
+      ],
+      [
+        "community-meet-need",
+        2,
+        "Use our lesson chart to match a community need to the business or government service shown meeting it.",
+        "Teacher checks: matches a need to the provider identified in the taught chart.",
+        "Display the taught needs-and-providers chart; do not add unsupported examples."
+      ],
+      [
+        "community-cooperation",
+        3,
+        "Choose a taught example of a business and government working together. Explain what each contributes to meeting the community need.",
+        "Teacher checks: names the supported example and accurately explains both contributions.",
+        "Provide the already-taught cooperation example and its evidence."
       ]
     ],
     "alignedWeeks": [

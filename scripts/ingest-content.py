@@ -107,7 +107,25 @@ def main():
     'teacherRead':g['grade'] in ['K','1'],'reviewQuestion':True,'reviewStatus':'pending',
     'reviewNote':'Generated ahead of play. Teacher must check accuracy, pacing fit and difficulty before setting reviewStatus to approved.',
     **({'teacherSetup':q[4]} if len(q)>4 else {})})
+ audits=read(ROOT/'content/material-audit.json')
+ assert set(audits)=={q['id'] for q in questions}, 'Every draft needs an explicit material audit'
+ for q in questions:
+  audit=audits[q['id']]
+  assert audit['original']==q, f'Material audit is stale for {q["id"]}'
+  q['requiresExternalClassroomMaterial']=audit['requiresExternalClassroomMaterial']
+  q['materialReviewNote']=audit['gap'] or ('Self-contained replacement; all example data is displayed in the prompt. Re-review before approval.' if audit['replacement'] else 'Audited for self-contained gameplay. Teacher reading is allowed.')
+  if audit['replacement']:
+   q.update(audit['replacement'])
+   q.pop('teacherSetup',None)
+   q['questionType']='teacher-check' if q['answer'].startswith('Teacher checks:') else 'short-answer'
+ withdrawn=read(ROOT/'content/withdrawn-questions.json')
+ assert set(withdrawn)<={q['id'] for q in questions}, 'Unknown withdrawn question'
+ for q in questions:
+  if q['id'] in withdrawn:
+   assert withdrawn[q['id']]['question']==q, 'Withdrawn snapshot is stale'
+ questions=[q for q in questions if q['id'] not in withdrawn]
  assert len({q['id'] for q in questions})==len(questions)
+ write(ROOT/'src/data/replacementQuestionIds.json',[key for key,audit in audits.items() if audit['resolution']=='replaced'])
  write(ROOT/'src/data/curriculum.json',records);write(ROOT/'src/data/questions.json',questions)
  write(ROOT/'content/reports/source-issues.json',{'asOf':CUTOFF,'tabs':tab_report,'undatedContent':issues,
   'knownProblems':[

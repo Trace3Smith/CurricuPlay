@@ -1,0 +1,137 @@
+{
+  "pack": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+  "cutoff": "2026-09-13",
+  "approvalBasis": "Automated checks plus assistant editorial review authorized for this pack; not human teacher approval.",
+  "grades": [
+    {
+      "grade": "K",
+      "candidatesEvaluated": 54,
+      "newCandidates": 18,
+      "classroomAccepted": 30,
+      "tilesCovered": 30,
+      "status": "READY",
+      "gaps": [],
+      "subjects": {
+        "Math": 9,
+        "Literacy": 9,
+        "Social Studies": 6,
+        "Science": 6
+      },
+      "difficulties": {
+        "1": 10,
+        "2": 10,
+        "3": 10
+      }
+    },
+    {
+      "grade": "1",
+      "candidatesEvaluated": 53,
+      "newCandidates": 22,
+      "classroomAccepted": 30,
+      "tilesCovered": 30,
+      "status": "READY",
+      "gaps": [],
+      "subjects": {
+        "Math": 9,
+        "Literacy": 9,
+        "Social Studies": 6,
+        "Science": 6
+      },
+      "difficulties": {
+        "1": 10,
+        "2": 10,
+        "3": 10
+      }
+    },
+    {
+      "grade": "2",
+      "candidatesEvaluated": 54,
+      "newCandidates": 18,
+      "classroomAccepted": 30,
+      "tilesCovered": 30,
+      "status": "READY",
+      "gaps": [],
+      "subjects": {
+        "Math": 9,
+        "Literacy": 9,
+        "Social Studies": 6,
+        "Science": 6
+      },
+      "difficulties": {
+        "1": 10,
+        "2": 10,
+        "3": 10
+      }
+    },
+    {
+      "grade": "3",
+      "candidatesEvaluated": 60,
+      "newCandidates": 24,
+      "classroomAccepted": 30,
+      "tilesCovered": 30,
+      "status": "READY",
+      "gaps": [],
+      "subjects": {
+        "Math": 9,
+        "Literacy": 9,
+        "Social Studies": 6,
+        "Science": 6
+      },
+      "difficulties": {
+        "1": 10,
+        "2": 10,
+        "3": 10
+      }
+    },
+    {
+      "grade": "4",
+      "candidatesEvaluated": 54,
+      "newCandidates": 18,
+      "classroomAccepted": 30,
+      "tilesCovered": 30,
+      "status": "READY",
+      "gaps": [],
+      "subjects": {
+        "Math": 9,
+        "Literacy": 9,
+        "Social Studies": 6,
+        "Science": 6
+      },
+      "difficulties": {
+        "1": 10,
+        "2": 10,
+        "3": 10
+      }
+    },
+    {
+      "grade": "5",
+      "candidatesEvaluated": 54,
+      "newCandidates": 18,
+      "classroomAccepted": 30,
+      "tilesCovered": 30,
+      "status": "READY",
+      "gaps": [],
+      "subjects": {
+        "Math": 9,
+        "Literacy": 9,
+        "Science": 6,
+        "Social Studies": 6
+      },
+      "difficulties": {
+        "1": 10,
+        "2": 10,
+        "3": 10
+      }
+    }
+  ],
+  "errors": [],
+  "nearDuplicates": [],
+  "sourceProblems": [
+    "Fourth-grade deck conflates Declaration adoption/signing; those date questions excluded.",
+    "Fifth-grade citizenship deck has an incorrect answer key and oversimplified naturalization rules; excluded.",
+    "Second-grade notes contain advanced teacher-only astronomy and historical biographical text; not treated as current student content.",
+    "Third-grade science source conflicts on advanced rock taxonomy/streak/cleavage; excluded.",
+    "GaDOE Kindergarten lesson 1449 retrieval was blocked by its web security gateway.",
+    "Five geography gaps resolved with verified city/state address comparisons and the linked Unit 2 compass evidence; no category substitution or filler."
+  ]
+}

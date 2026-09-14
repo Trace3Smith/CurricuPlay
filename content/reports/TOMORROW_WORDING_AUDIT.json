@@ -1,0 +1,357 @@
+{
+  "pack": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+  "questionsAudited": 180,
+  "totalChanged": 42,
+  "changedByGrade": {
+    "K": 2,
+    "1": 9,
+    "2": 7,
+    "3": 6,
+    "4": 9,
+    "5": 9
+  },
+  "scope": "Read-aloud wording only. Original facts, skills, explanation/reasoning demands, and curriculum metadata preserved. Answers adjusted where needed to match the conversational prompt.",
+  "changes": [
+    {
+      "id": "tomorrow-dcss-K-math-position-correct",
+      "grade": "K",
+      "before": "A toy is above a shelf. Jo says it is below the shelf. Correct Jo.",
+      "after": "A toy is above a shelf. Jo says the toy is below the shelf. Is Jo right? Where is the toy?",
+      "answerBefore": "The toy is above the shelf, not below it.",
+      "answerAfter": "No. The toy is above the shelf."
+    },
+    {
+      "id": "tomorrow-K-social-studies-fair",
+      "grade": "K",
+      "before": "Two children want the same toy. Give a fair plan and tell why it helps.",
+      "after": "Two children want the same toy. What could they do to be fair? Why would that help?",
+      "answerBefore": "Take turns or share so both children get a chance.",
+      "answerAfter": "Take turns or share so both children get a chance."
+    },
+    {
+      "id": "tomorrow-dcss-1-math-birds-join",
+      "grade": "1",
+      "before": "Three birds sit on a branch. Two more join. How many birds now?",
+      "after": "Three birds sit on a branch. Two more join them. How many birds are there now?",
+      "answerBefore": "5 birds.",
+      "answerAfter": "5 birds."
+    },
+    {
+      "id": "tomorrow-dcss-1-math-explain-subtraction",
+      "grade": "1",
+      "before": "There are 9 apples. We eat 2. How many remain? Tell how you know.",
+      "after": "There are 9 apples. We eat 2. How many are left? How do you know?",
+      "answerBefore": "7 apples. Count back two from nine: 8, 7. Or subtract: 9 − 2 = 7.",
+      "answerAfter": "7 apples. Count back two from nine: 8, 7. Or subtract: 9 − 2 = 7."
+    },
+    {
+      "id": "tomorrow-dcss-1-math-join-equation",
+      "grade": "1",
+      "before": "Five children are painting. One joins them. Choose the matching expression: 5 + 1 or 5 − 1.",
+      "after": "Five children are painting. One joins them. Which math expression matches the story: 5 + 1 or 5 − 1?",
+      "answerBefore": "5 + 1.",
+      "answerAfter": "5 + 1."
+    },
+    {
+      "id": "tomorrow-dcss-1-math-story-error",
+      "grade": "1",
+      "before": "Tia has 4 shells and finds 2. She says she has 2 shells now. Explain her mistake.",
+      "after": "Tia has 4 shells and finds 2 more. She says she has 2 now. Is she right? How many does she have? How do you know?",
+      "answerBefore": "She subtracted instead of adding. She now has 6 shells.",
+      "answerAfter": "No. She added 2 shells to her 4: 4 + 2 = 6 shells."
+    },
+    {
+      "id": "tomorrow-dcss-1-literacy-vowel-repair",
+      "grade": "1",
+      "before": "The word is “hop.” A reader says “hope.” Say the word correctly and explain the vowel sound.",
+      "after": "The word is “hop,” but someone reads it as “hope.” How do you say “hop”? How is its vowel sound different?",
+      "answerBefore": "hop has the short /ŏ/ sound. It is not the long-o sound in hope.",
+      "answerAfter": "hop has the short /ŏ/ sound. It is not the long-o sound in hope."
+    },
+    {
+      "id": "tomorrow-dcss-1-literacy-events-middle",
+      "grade": "1",
+      "before": "Jay gets paper, draws a cat, then hangs the picture. What happened next after getting paper?",
+      "after": "Jay gets paper, draws a cat, then hangs the picture. What did Jay do right after getting paper?",
+      "answerBefore": "Jay drew a cat.",
+      "answerAfter": "Jay drew a cat."
+    },
+    {
+      "id": "tomorrow-dcss-1-literacy-retell-sequence",
+      "grade": "1",
+      "before": "Bo opens a box, takes out a toy, then plays. Retell using first, next, and last.",
+      "after": "Bo opens a box, takes out a toy, then plays. Tell the story using first, next, and last.",
+      "answerBefore": "First Bo opens the box. Next he takes out a toy. Last he plays.",
+      "answerAfter": "First Bo opens the box. Next he takes out a toy. Last he plays."
+    },
+    {
+      "id": "tomorrow-dcss-1-literacy-retell-fix",
+      "grade": "1",
+      "before": "Zed packs a bag, walks to class, then unpacks. I said he unpacked first. Correct my retelling.",
+      "after": "Zed packs a bag, walks to class, then unpacks. I said he unpacked first. Is that right? Tell me what really happened in order.",
+      "answerBefore": "First Zed packs a bag, next he walks to class, and last he unpacks.",
+      "answerAfter": "No. First Zed packs a bag, next he walks to class, and last he unpacks."
+    },
+    {
+      "id": "tomorrow-1-science-sort",
+      "grade": "1",
+      "before": "Should water go in a “plants only” group? Explain.",
+      "after": "Do only plants need water? How do you know?",
+      "answerBefore": "No. Both plants and animals need water.",
+      "answerAfter": "No. Both plants and animals need water."
+    },
+    {
+      "id": "tomorrow-dcss-2-math-addition-strategies",
+      "grade": "2",
+      "before": "For 7 + 8, Jo starts with 7 + 7. Finish Jo’s strategy and explain why it works.",
+      "after": "To work out 7 + 8, Jo starts with 7 + 7. What should Jo do next? Why does that work?",
+      "answerBefore": "7 + 7 = 14, then add 1 to get 15 because 8 is one more than 7.",
+      "answerAfter": "7 + 7 = 14, then add 1 to get 15 because 8 is one more than 7."
+    },
+    {
+      "id": "tomorrow-dcss-2-math-count-up",
+      "grade": "2",
+      "before": "Find 14 − 9 by counting up from 9. Explain.",
+      "after": "What is 14 − 9? Count up from 9 and tell how you got your answer.",
+      "answerBefore": "5. From 9 to 10 is 1, and from 10 to 14 is 4; 1 + 4 = 5.",
+      "answerAfter": "5. From 9 to 10 is 1, and from 10 to 14 is 4; 1 + 4 = 5."
+    },
+    {
+      "id": "tomorrow-dcss-2-literacy-compound-finish",
+      "grade": "2",
+      "before": "Complete the compound word for a brush used on teeth: tooth___.",
+      "after": "What do we call a brush for your teeth? Finish the compound word: tooth___.",
+      "answerBefore": "toothbrush.",
+      "answerAfter": "toothbrush."
+    },
+    {
+      "id": "tomorrow-dcss-2-literacy-compound-explain",
+      "grade": "2",
+      "before": "A classmate split “snowman” into “sno” and “wman.” Explain a better split and use the word.",
+      "after": "A classmate splits “snowman” into “sno” and “wman.” Which two whole words should they use instead? Why? Say a sentence with “snowman.”",
+      "answerBefore": "snow + man = snowman. “We made a snowman.” or “The snowman is tall.”",
+      "answerAfter": "Snow and man are both whole words: snow + man = snowman. “We made a snowman.” or “The snowman is tall.”"
+    },
+    {
+      "id": "tomorrow-2-social-studies-limited",
+      "grade": "2",
+      "before": "There are three swings and six children waiting. Suggest a way everyone can have a turn.",
+      "after": "There are three swings and six children waiting. How could everyone get a turn?",
+      "answerBefore": "Take turns, or give everyone equal time on a swing.",
+      "answerAfter": "Take turns, or give everyone equal time on a swing."
+    },
+    {
+      "id": "tomorrow-2-social-studies-roles",
+      "grade": "2",
+      "before": "How are a mayor’s area of responsibility and a governor’s different?",
+      "after": "How is the area a mayor leads different from the area a governor leads?",
+      "answerBefore": "A mayor leads a city; a governor leads a state.",
+      "answerAfter": "A mayor leads a city; a governor leads a state."
+    },
+    {
+      "id": "tomorrow-2-science-claim",
+      "grade": "2",
+      "before": "A friend says the Sun must be the biggest star because it looks biggest. What is missing from that reasoning?",
+      "after": "A friend says the Sun must be the biggest star because it looks biggest. What else should your friend think about? Why?",
+      "answerBefore": "Distance matters. The Sun looks large because it is close; other stars can be larger but much farther away.",
+      "answerAfter": "Distance matters. The Sun looks large because it is close; other stars can be larger but much farther away."
+    },
+    {
+      "id": "tomorrow-dcss-3-math-round-two-places",
+      "grade": "3",
+      "before": "Round 351 to the nearest ten and nearest hundred. Explain why the rounded numbers differ.",
+      "after": "Round 351 to the nearest ten and nearest hundred. Why do you get different answers?",
+      "answerBefore": "350 and 400. Rounding to tens and hundreds uses different neighboring multiples.",
+      "answerAfter": "350 and 400. The nearest ten is 350, but the nearest hundred is 400."
+    },
+    {
+      "id": "tomorrow-dcss-3-math-add-explain",
+      "grade": "3",
+      "before": "Find 268 + 157. Explain one regrouping step.",
+      "after": "What is 268 + 157? Tell how you regrouped in one part of the addition.",
+      "answerBefore": "425. Regroup 15 ones as 1 ten and 5 ones, or 12 tens as 1 hundred and 2 tens.",
+      "answerAfter": "425. Regroup 15 ones as 1 ten and 5 ones, or 12 tens as 1 hundred and 2 tens."
+    },
+    {
+      "id": "tomorrow-dcss-3-math-subtract-error",
+      "grade": "3",
+      "before": "Sam says 402 − 185 = 383. Is Sam correct? Solve and explain how to check.",
+      "after": "Sam says 402 − 185 = 383. Is Sam right? Work it out and tell how you can check your answer.",
+      "answerBefore": "No. 402 − 185 = 217. Check: 217 + 185 = 402.",
+      "answerAfter": "No. 402 − 185 = 217. Check: 217 + 185 = 402."
+    },
+    {
+      "id": "tomorrow-dcss-3-literacy-transition-write",
+      "grade": "3",
+      "before": "Explain making a paper drawing in three steps. Use first, then, and finally.",
+      "after": "Tell how to draw a picture in three steps. Use first, then, and finally.",
+      "answerBefore": "First, get paper. Then, draw a cat. Finally, color it. Or: First, draw a flower. Then, add leaves. Finally, sign your name.",
+      "answerAfter": "First, get paper. Then, draw a cat. Finally, color it. Or: First, draw a flower. Then, add leaves. Finally, sign your name."
+    },
+    {
+      "id": "tomorrow-dcss-3-literacy-transition-cause",
+      "grade": "3",
+      "before": "The team practiced every day. Their passing improved. Connect these ideas with “as a result” and explain the relationship.",
+      "after": "The team practiced every day. Their passing improved. Join these ideas using “as a result.” How are the two ideas connected?",
+      "answerBefore": "The team practiced every day; as a result, their passing improved. The phrase links the practice to its stated result.",
+      "answerAfter": "The team practiced every day; as a result, their passing improved. The phrase links the practice to its stated result."
+    },
+    {
+      "id": "tomorrow-3-science-evidence",
+      "grade": "3",
+      "before": "Two rocks are both gray. Is color alone enough to conclude all their properties are alike? Explain.",
+      "after": "Two rocks are both gray. Does that mean all their other properties are the same? Why or why not?",
+      "answerBefore": "No. They may differ in texture or hardness; compare more than one property.",
+      "answerAfter": "No. They may differ in texture or hardness; compare more than one property."
+    },
+    {
+      "id": "tomorrow-dcss-4-math-place-zero",
+      "grade": "4",
+      "before": "A number has 3 ten-thousands, 0 thousands, 6 hundreds, 2 tens, and 4 ones. Write it in base-ten numerals.",
+      "after": "A number has 3 ten-thousands, 0 thousands, 6 hundreds, 2 tens, and 4 ones. How do you write that number?",
+      "answerBefore": "30,624.",
+      "answerAfter": "30,624."
+    },
+    {
+      "id": "tomorrow-dcss-4-math-expanded-error",
+      "grade": "4",
+      "before": "A student expands 72,305 as 70,000 + 2,000 + 30 + 5. Explain and correct the error.",
+      "after": "A student writes 72,305 as 70,000 + 2,000 + 30 + 5. Which part needs to change? Why? Write the expanded form correctly.",
+      "answerBefore": "The 3 is in the hundreds place, not tens. The correct form is 70,000 + 2,000 + 300 + 5.",
+      "answerAfter": "The 3 is in the hundreds place, not tens. The correct form is 70,000 + 2,000 + 300 + 5."
+    },
+    {
+      "id": "tomorrow-dcss-4-math-add-error-check",
+      "grade": "4",
+      "before": "For 1,586 + 2,247, a student reports 3,733. Find the correct sum and explain a place-value check.",
+      "after": "A student adds 1,586 + 2,247 and gets 3,733. What is the sum? How can you use place value to check it?",
+      "answerBefore": "3,833. The tens total includes the ten regrouped from 6 + 7 ones; 8 + 4 + 1 = 13 tens.",
+      "answerAfter": "3,833. The tens total includes the ten regrouped from 6 + 7 ones; 8 + 4 + 1 = 13 tens."
+    },
+    {
+      "id": "tomorrow-dcss-4-literacy-cause-evidence",
+      "grade": "4",
+      "before": "A ball hit the stacked cups. The cups fell, and water spilled. Explain the chain of events using evidence from these sentences.",
+      "after": "A ball hit the stacked cups. The cups fell, and water spilled. Using what the story tells you, how did one event cause the next?",
+      "answerBefore": "The ball hit the cups, causing them to fall; their falling caused the water to spill.",
+      "answerAfter": "The ball hit the cups, causing them to fall; their falling caused the water to spill."
+    },
+    {
+      "id": "tomorrow-dcss-4-literacy-main-revise",
+      "grade": "4",
+      "before": "The library lends books, offers story time, and hosts reading clubs. Is “The library only lends books” a good main idea? Explain and improve it.",
+      "after": "The library lends books, offers story time, and hosts reading clubs. Does “The library only lends books” give the main idea? Why or why not? How would you say it better?",
+      "answerBefore": "No; “only” leaves out the other activities. Better: the library offers several ways to read and enjoy books.",
+      "answerAfter": "No; “only” leaves out the other activities. Better: the library offers several ways to read and enjoy books."
+    },
+    {
+      "id": "tomorrow-dcss-4-literacy-main-build",
+      "grade": "4",
+      "before": "A class labels supply bins, assigns shelf spaces, and returns tools after use. Write a main-idea sentence supported by all three details.",
+      "after": "A class labels supply bins, assigns shelf spaces, and returns tools after use. What main-idea sentence fits all three details?",
+      "answerBefore": "The class keeps its supplies organized. Or: The class has a system for storing and returning supplies.",
+      "answerAfter": "The class keeps its supplies organized. Or: The class has a system for storing and returning supplies."
+    },
+    {
+      "id": "tomorrow-4-social-studies-cause",
+      "grade": "4",
+      "before": "Explain how Britain’s war debt contributed to conflict with the colonists.",
+      "after": "How did the money Britain owed after the war lead to trouble with the colonists?",
+      "answerBefore": "Britain needed money after the French and Indian War and taxed the colonies to help pay the debt, increasing conflict over taxation.",
+      "answerAfter": "Britain needed money after the French and Indian War and taxed the colonies to help pay the debt, increasing conflict over taxation."
+    },
+    {
+      "id": "tomorrow-4-science-record",
+      "grade": "4",
+      "before": "To compare weather across days, should a weather log include the date of each observation?",
+      "after": "When you keep a weather log to compare different days, should you write the date with each observation?",
+      "answerBefore": "Yes.",
+      "answerAfter": "Yes."
+    },
+    {
+      "id": "tomorrow-4-science-clouds",
+      "grade": "4",
+      "before": "Cloud cover changes from clear to partly cloudy to fully cloudy. What trend do these observations show?",
+      "after": "The sky goes from clear to partly cloudy to fully cloudy. What pattern do you notice in the cloud cover?",
+      "answerBefore": "Cloud cover increases.",
+      "answerAfter": "Cloud cover increases."
+    },
+    {
+      "id": "tomorrow-dcss-5-math-volume-error",
+      "grade": "5",
+      "before": "For a 4 by 3 by 2 prism, Jo adds 4 + 3 + 2 and says its volume is 9. Explain why this does not count the cubes correctly.",
+      "after": "For a 4 by 3 by 2 prism, Jo adds 4 + 3 + 2 and gets a volume of 9. Why doesn’t adding the lengths count the cubes? How would you find the volume?",
+      "answerBefore": "Each layer has 4 × 3 = 12 cubes, and there are 2 layers. The volume is 24 cubic units; adding the edge lengths does not count the cubes.",
+      "answerAfter": "Each layer has 4 × 3 = 12 cubes, and there are 2 layers. The volume is 24 cubic units; adding the edge lengths does not count the cubes."
+    },
+    {
+      "id": "tomorrow-dcss-5-math-multiply-error",
+      "grade": "5",
+      "before": "A student writes 42 × 13 = 42 × 10 + 42 × 2. What is wrong? Find the correct product.",
+      "after": "A student writes 42 × 13 = 42 × 10 + 42 × 2. Which part needs to change, and why? What is 42 × 13?",
+      "answerBefore": "13 = 10 + 3, not 10 + 2. The correct product is 420 + 126 = 546.",
+      "answerAfter": "13 = 10 + 3, not 10 + 2. The correct product is 420 + 126 = 546."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-setting-evidence",
+      "grade": "5",
+      "before": "“At dawn, Jo waited beside the school gate.” Identify the setting details.",
+      "after": "“At dawn, Jo waited beside the school gate.” When and where does this happen?",
+      "answerBefore": "Time: dawn. Place: beside the school gate.",
+      "answerAfter": "Time: dawn. Place: beside the school gate."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-character-action",
+      "grade": "5",
+      "before": "“Even after missing three shots, Maya kept practicing.” What does this action suggest about Maya? Cite evidence.",
+      "after": "“Even after missing three shots, Maya kept practicing.” What does this tell you about Maya? Which words help you know?",
+      "answerBefore": "She is persistent or determined; she keeps practicing after missing three shots.",
+      "answerAfter": "She is persistent or determined; she keeps practicing after missing three shots."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-theme-help",
+      "grade": "5",
+      "before": "Sam tried alone and struggled. After asking for help, Sam succeeded. What possible theme does this suggest?",
+      "after": "Sam tried alone and struggled. After asking for help, Sam succeeded. What theme, or lesson about life, could this story teach?",
+      "answerBefore": "Asking for help can help us succeed. Or: We do not have to solve every problem alone.",
+      "answerAfter": "Asking for help can help us succeed. Or: We do not have to solve every problem alone."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-theme-evidence",
+      "grade": "5",
+      "before": "Rae hid every mistake. After a friend shared a mistake, Rae admitted one and learned from it. Explain a possible theme using Rae’s change.",
+      "after": "Rae hid every mistake. After a friend shared a mistake, Rae admitted one and learned from it. What theme fits this story? How does Rae’s change help show it?",
+      "answerBefore": "Being honest about mistakes can help us learn. Rae changes from hiding mistakes to admitting one and learning from it.",
+      "answerAfter": "Being honest about mistakes can help us learn. Rae changes from hiding mistakes to admitting one and learning from it."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-theme-sharing",
+      "grade": "5",
+      "before": "Dee kept all the supplies and could not finish alone. Later, Dee shared and the group finished together. Suggest a supported theme.",
+      "after": "Dee kept all the supplies and could not finish alone. Later, Dee shared and the group finished together. What theme fits what happened?",
+      "answerBefore": "Sharing and working together can help people succeed. Or: We can accomplish more together than alone.",
+      "answerAfter": "Sharing and working together can help people succeed. Or: We can accomplish more together than alone."
+    },
+    {
+      "id": "tomorrow-dcss-5-literacy-theme-reject",
+      "grade": "5",
+      "before": "Jo mocked a beginner, then struggled with a new skill and became kinder. Does “Winning is everything” fit Jo’s change? Explain a better theme.",
+      "after": "Jo mocked a beginner, then struggled with a new skill and became kinder. Does “Winning is everything” fit this story? What theme fits better, and why?",
+      "answerBefore": "No. A better theme is that experiencing difficulty can help us understand and treat others kindly; Jo changes from mocking to kindness.",
+      "answerAfter": "No. A better theme is that experiencing difficulty can help us understand and treat others kindly; Jo changes from mocking to kindness."
+    },
+    {
+      "id": "tomorrow-5-science-claim",
+      "grade": "5",
+      "before": "A student says erosion only breaks rocks apart. Explain what needs correcting.",
+      "after": "A student says erosion only breaks rocks apart. Is that right? How are weathering and erosion different?",
+      "answerBefore": "Weathering breaks rocks apart. Erosion moves weathered material from one place to another.",
+      "answerAfter": "No. Weathering breaks rocks apart. Erosion moves weathered material from one place to another."
+    }
+  ],
+  "validation": {
+    "content": "Both content validators passed with no errors; no near duplicates; all grades retain 30/30 board coverage.",
+    "preservation": "All grade, subject, difficulty, standards, source, timing, alignment, eligibility and provenance fields unchanged. 42 question texts and 6 accompanying answers changed, plus derived fingerprints.",
+    "gameplay": "All six actual K–5 complete-game browser tests passed (7.6s), including 30 unique questions per grade, no unavailable tiles, source cutoff and eligibility, answer reveal, USED state, reset, grade change, refresh/localStorage, no console errors, and no scrolling at 1920×1080."
+  }
+}

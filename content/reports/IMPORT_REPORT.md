@@ -16,44 +16,65 @@ Primary source: [DCSS FY27 Pacing Guide](https://docs.google.com/spreadsheets/d/
 
 | Grade | Drafts | Approved |
 |---|---:|---:|
-| K | 18 | 0 |
-| 1 | 18 | 0 |
-| 2 | 18 | 0 |
-| 3 | 18 | 0 |
-| 4 | 18 | 0 |
-| 5 | 18 | 0 |
+| K | 36 | 0 |
+| 1 | 31 | 0 |
+| 2 | 36 | 0 |
+| 3 | 36 | 0 |
+| 4 | 36 | 0 |
+| 5 | 36 | 0 |
 
 | Subject | Drafts |
 |---|---:|
-| Literacy | 36 |
-| Math | 36 |
-| Science | 18 |
-| Social Studies | 18 |
+| Literacy | 72 |
+| Math | 72 |
+| Science | 36 |
+| Social Studies | 31 |
 
 | Difficulty | Drafts |
 |---|---:|
-| 1 point(s) | 36 |
-| 2 point(s) | 36 |
-| 3 point(s) | 36 |
+| 1 point(s) | 70 |
+| 2 point(s) | 70 |
+| 3 point(s) | 71 |
 
-**Total: 108 drafts, 0 teacher-approved questions.** Review reuses eligible questions from these subjects; it adds no duplicate records.
+**Total: 211 drafts, 0 teacher-approved questions in source JSON.** Review reuses eligible questions from these subjects; it adds no duplicate records.
 
 Questions are original practice examples for an explicit source skill, not purported extracts from a textbook. Every draft has a literal supporting quote, document URL, section, character offset, main-guide record ID, timing and unit/session/standard metadata where supported. Standards missing from the primary sheet are left null unless the linked evidence explicitly supplies them; `standardSource` distinguishes the sources. Null standards are paired with source-supported sessions.
 
-All 108 drafts require teacher review of accuracy, scope and difficulty. **35 questions use a teacher-check rubric or classroom materials.** `teacherSetup` identifies maps, observations, samples or other necessary materials. The app displays these preparation instructions. A teacher-check answer is intentionally a rubric, not a fabricated universal answer. Review worksheet: [question-review.csv](question-review.csv).
+All 211 drafts require teacher review of accuracy, scope and difficulty. **33 questions use a teacher-check rubric or classroom materials.** `teacherSetup` identifies maps, observations, samples or other necessary materials. The app displays these preparation instructions. A teacher-check answer is intentionally a rubric, not a fabricated universal answer. Review worksheet: [question-review.csv](question-review.csv).
 
 ## Coverage and limits
 
-**No grade yet supports a full 30-tile game.** Each has 18 distinct drafts, and Recent Content is smaller. Approving drafts does not fix these coverage gaps. The engine disables unsupported/exhausted tiles and shares used IDs across Review and subject categories.
+Source-file decisions: 0 approved / 211 pending / 0 rejected. Browser-local decisions are separate. The new material metadata and replacement wording invalidate old fingerprints; those questions require re-review.
 
-| Grade | Recent drafts | All taught drafts | Current approved |
+Coverage policy: **30 eligible unique questions minimum per grade/range; target at least 60 approved per grade for class-to-class variation.** This is not a generation cap. Each category/difficulty needs two opportunities, and Review shares the subject pools. A sufficient total alone does not guarantee every tile is supported. Accuracy takes priority over quotas.
+
+**Source drafts are not classroom-approved.** First grade has 31 active records after five quality withdrawals; other grades have 36. Normal gameplay now excludes external classroom materials even after approval: self-contained totals are K 36, grade 1 31, grade 2 34, grade 3 30, grade 4 30, grade 5 31. Kindergarten can fill a 30-tile board after balanced approval; grades 1–5 have category/difficulty gaps. First grade lacks five Social Studies tiles; those slots remain unfilled. Launch reserves unique IDs to prevent Review overlap. See the material audit report for replacements and unresolved dependencies.
+
+| Grade | Recent self-contained drafts | All taught self-contained drafts | Current approved |
 |---|---:|---:|---:|
-| K | 12 | 18 | 0 |
-| 1 | 15 | 18 | 0 |
-| 2 | 6 | 18 | 0 |
-| 3 | 6 | 18 | 0 |
-| 4 | 9 | 18 | 0 |
-| 5 | 12 | 18 | 0 |
+| K | 24 | 36 | 0 |
+| 1 | 30 | 31 | 0 |
+| 2 | 12 | 34 | 0 |
+| 3 | 6 | 30 | 0 |
+| 4 | 18 | 30 | 0 |
+| 5 | 19 | 31 | 0 |
+
+| Grade | Range | Eligible approved | Short of 30 | Short of 60 | Extra drafts needed for 60 even if all approved |
+|---|---|---:|---:|---:|---:|
+| K | Recent Content | 0 | 30 | 60 | 36 |
+| K | Everything Taught So Far | 0 | 30 | 60 | 24 |
+| 1 | Recent Content | 0 | 30 | 60 | 30 |
+| 1 | Everything Taught So Far | 0 | 30 | 60 | 29 |
+| 2 | Recent Content | 0 | 30 | 60 | 48 |
+| 2 | Everything Taught So Far | 0 | 30 | 60 | 26 |
+| 3 | Recent Content | 0 | 30 | 60 | 54 |
+| 3 | Everything Taught So Far | 0 | 30 | 60 | 30 |
+| 4 | Recent Content | 0 | 30 | 60 | 42 |
+| 4 | Everything Taught So Far | 0 | 30 | 60 | 30 |
+| 5 | Recent Content | 0 | 30 | 60 | 41 |
+| 5 | Everything Taught So Far | 0 | 30 | 60 | 29 |
+
+Approval counts here reflect source JSON only; teacher decisions stored in a browser are shown in Question Review. No current draft was automatically approved.
 
 The complete **grade × category × difficulty × range** matrix is in [validation.json](validation.json). `alignedWeeks` records explicitly reviewed recurring instruction while `weekIntroduced` remains the first mapped week. Recent Content checks aligned weeks; both modes exclude future introduction dates and future aligned weeks. Undated records never enter date filters.
 
@@ -70,7 +91,7 @@ The complete **grade × category × difficulty × range** matrix is in [validati
 
 ## Validation
 
-- Every one of the 755 curriculum records and 108 questions passed structural/provenance/date validation.
+- Every one of the 755 curriculum records and 211 questions passed structural/provenance/date validation.
 - Zero duplicate IDs, duplicate question texts within a grade, remaining near-duplicate candidates, missing answers, missing required metadata, future questions, or overlength prompts/answers.
 - Near-duplicate screening compares normalized text within a grade/subject, replacing numeric literals, at similarity ≥ 0.84. Three initial candidates were rewritten and rechecked. This is a screening heuristic, not proof of semantic uniqueness.
 - K/1 prompts include teacher-read metadata and stay within the 30-word screening limit. Prompts are ≤240 characters and answers ≤300; all generated questions also receive actual browser layout checks.
@@ -80,4 +101,4 @@ Browser/build results are recorded in [../../VERIFICATION.md](../../VERIFICATION
 
 ## Recommended next step
 
-Review the draft worksheet and resolve the two current math pacing conflicts. Confirm which additional linked lesson sections can supply the missing categories, then expand to sufficient unique questions per grade/range before classroom use. For reviewed questions, set `reviewStatus` to `approved` in `src/data/questions.json`; leave all others pending. No account or approval dashboard is needed. Regenerating from the draft source intentionally resets approval to pending.
+Use Home → Teacher tools → Question Review to review the current drafts. Resolve the two current math pacing conflicts, then expand from supported evidence toward at least 60 approved unique questions per grade with balanced category/difficulty coverage. Report evidence shortages; never invent content to fill a board. Review decisions stay local to the browser; changed source records invalidate previous local decisions.
