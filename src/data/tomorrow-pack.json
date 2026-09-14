@@ -229,8 +229,8 @@
     "grade": "K",
     "subject": "Math",
     "difficulty": 3,
-    "question": "A toy is above a shelf. Jo says the toy is below the shelf. Is Jo right? Where is the toy?",
-    "answer": "No. The toy is above the shelf.",
+    "question": "A cup is below a shelf. A toy is above the same shelf. Is the toy above or below the cup?",
+    "answer": "Above the cup.",
     "standard": "K.GSR.8.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
     "weekIntroduced": "2026-08-10",
@@ -267,7 +267,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "117dcdfa8cb0767004b0a8abb063a1beae156635ea37820a48a5151f5f4ca78d"
+    "auditFingerprint": "7ed3ef7c212b38ef722e18836a804ed13bd762c9bcf3d21a750eb4d97bd69844"
   },
   {
     "id": "tomorrow-dcss-K-math-length-name",
@@ -364,8 +364,8 @@
     "grade": "K",
     "subject": "Math",
     "difficulty": 3,
-    "question": "Two ribbons start together. The green one reaches farther. Which is shorter? Tell why.",
-    "answer": "The other ribbon is shorter because it does not reach as far from the same starting point.",
+    "question": "A red ribbon and a blue ribbon start at the same spot. The red one stops first. Which ribbon is longer?",
+    "answer": "The blue ribbon. Both start at the same spot, and the red one stops first.",
     "standard": "K.GSR.8.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P12",
     "weekIntroduced": "2026-08-17",
@@ -402,7 +402,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "968b28203d22213d9e03e0233ade0dee52db55c5ec84e3db0f51b6bf592163b1"
+    "auditFingerprint": "5ecff30d9d7524a0cb1d264faf37720e7232c876d0373e79b144e4ba60c1be7b"
   },
   {
     "id": "tomorrow-dcss-K-literacy-letter-m",
@@ -581,7 +581,7 @@
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 2,
-    "question": "Choose the word “you” from these words: that · you · it",
+    "question": "Find the word “you”: that · you · it",
     "answer": "you.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
@@ -617,7 +617,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "452fb6d5c8258bb7007bd7ace7810f72927e1b8bab210b6e2b288f05576e25ba"
+    "auditFingerprint": "6c28e257e2123c83926bfe0f693de5a43c4e5fddad46769bb16b91d7765d98da"
   },
   {
     "id": "tomorrow-dcss-K-literacy-word-sentence",
@@ -882,7 +882,7 @@
     "grade": "1",
     "subject": "Math",
     "difficulty": 2,
-    "question": "A box holds 10 crayons. It has 6. How many more will fill it?",
+    "question": "A box holds 10 crayons. There are 6 in it now. How many more crayons will fill the box?",
     "answer": "4 crayons.",
     "standard": "1.NR.2.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
@@ -918,7 +918,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "58110076911bd4b0288c8b81e45e886a47907411fe0e8bece94fc853dd5c02c3"
+    "auditFingerprint": "cc1025750bb4d132bc8a5ebdc6a039c668dd8d8af8d09bec910f9e6185b17fa6"
   },
   {
     "id": "tomorrow-dcss-1-math-compare-counters",
@@ -1011,8 +1011,8 @@
     "grade": "1",
     "subject": "Math",
     "difficulty": 3,
-    "question": "There are 9 apples. We eat 2. How many are left? How do you know?",
-    "answer": "7 apples. Count back two from nine: 8, 7. Or subtract: 9 − 2 = 7.",
+    "question": "There are 9 apples. We eat 2. Then we eat 3 more. How many are left?",
+    "answer": "4 apples. 9 − 2 = 7, then 7 − 3 = 4.",
     "standard": "1.NR.2.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
     "weekIntroduced": "2026-09-07",
@@ -1047,7 +1047,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "f16c14ea64514b18fc8a276307b7e5cb49999ed886530c053f52493452d21a6a"
+    "auditFingerprint": "90a506dc7ac0c8445e80402ffa0116774dda68e6f2930b1066d96532ad960720"
   },
   {
     "id": "tomorrow-dcss-1-math-join-drawing",
@@ -1097,7 +1097,7 @@
     "grade": "1",
     "subject": "Math",
     "difficulty": 2,
-    "question": "Five children are painting. One joins them. Which math expression matches the story: 5 + 1 or 5 − 1?",
+    "question": "Five children are painting. One more joins them. Which matches the story: 5 + 1 or 5 − 1?",
     "answer": "5 + 1.",
     "standard": "1.NR.2.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
@@ -1133,15 +1133,15 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "1ed32733f35b7421ad9d5b35c77254238ed04e32a2dd389cf85620868aa39766"
+    "auditFingerprint": "0429c5a85d9063c1ab18792f2b734ae3df59e8d30a64ba384890dd41c54299c7"
   },
   {
     "id": "tomorrow-dcss-1-math-story-error",
     "grade": "1",
     "subject": "Math",
     "difficulty": 3,
-    "question": "Tia has 4 shells and finds 2 more. She says she has 2 now. Is she right? How many does she have? How do you know?",
-    "answer": "No. She added 2 shells to her 4: 4 + 2 = 6 shells.",
+    "question": "Tia has 4 shells and finds 2 more. Max has 5 shells. Who has more shells now?",
+    "answer": "Tia. She has 4 + 2 = 6 shells, and Max has 5.",
     "standard": "1.NR.2.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
     "weekIntroduced": "2026-09-07",
@@ -1176,14 +1176,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "f722ffa8eb82d2ddb5c7a50a6a74c3def892da159d9cd1bd97f641642798a5bb"
+    "auditFingerprint": "00131513ba6ba96bb48dc9d5f7c78c3d86fa734ba183648e98104ca59483a39f"
   },
   {
     "id": "tomorrow-dcss-1-literacy-short-u",
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which word has the middle sound /ŭ/: sun or sit?",
+    "question": "Which word has /ŭ/ in the middle: sun or sit?",
     "answer": "sun.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -1219,14 +1219,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "0737a5da3516e55fa5902341a6b38aaa97fb465fe3430c5866dd5b0f3661fda0"
+    "auditFingerprint": "f3f164ef0ea1b75d310d8298fd950b5aca20ead68d1a59c014bb5083a8d94b7f"
   },
   {
     "id": "tomorrow-dcss-1-literacy-vowel-identify",
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 2,
-    "question": "Say “bed”. Which vowel makes its middle sound?",
+    "question": "Say “bed.” What vowel do you hear in the middle?",
     "answer": "e, making the short /ĕ/ sound.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -1262,15 +1262,15 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "3abc094f1a109a768b14d2ab781410c409014968f4e97376f365a12f88424c0d"
+    "auditFingerprint": "d28ce8386a29e4d3c5a47766f47e0e5bc7464696ae4b8561639ff29336fcc72e"
   },
   {
     "id": "tomorrow-dcss-1-literacy-vowel-repair",
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "The word is “hop,” but someone reads it as “hope.” How do you say “hop”? How is its vowel sound different?",
-    "answer": "hop has the short /ŏ/ sound. It is not the long-o sound in hope.",
+    "question": "Someone read “hop” as “hope.” What sound in the middle did they say wrong?",
+    "answer": "The o sound — hop has a short o sound, not the long o sound like in hope.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
     "weekIntroduced": "2026-09-07",
@@ -1305,7 +1305,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "7116774854cc1ad0e40d72d358463bc1939df5223cc19136e84a9a6a015943ef"
+    "auditFingerprint": "65123cf9c1cc5a50eda061049ee6899bd64327d510077215dca722a6127f4a5c"
   },
   {
     "id": "tomorrow-dcss-1-literacy-events-first",
@@ -1527,8 +1527,8 @@
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "Zed packs a bag, walks to class, then unpacks. I said he unpacked first. Is that right? Tell me what really happened in order.",
-    "answer": "No. First Zed packs a bag, next he walks to class, and last he unpacks.",
+    "question": "Zed’s steps are mixed up: unpack, walk to class, pack a bag. Tell them in order using first, next, and last.",
+    "answer": "First Zed packs a bag, next he walks to class, and last he unpacks.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
     "weekIntroduced": "2026-09-07",
@@ -1563,7 +1563,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "eb54a4627ecd1fa205e1fb0f923f03a6b3f7993a948804704cc2faf5aca4accb"
+    "auditFingerprint": "e8cb0b665d333b34bb800985e25ff77f7f5d7c31749210b78594e286d9b21254"
   },
   {
     "id": "tomorrow-dcss-2-math-doubles",
@@ -4696,7 +4696,7 @@
     "grade": "K",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "A classmate is speaking. Should you listen or shout over them?",
+    "question": "A classmate is talking. Should you listen, or talk at the same time?",
     "answer": "Listen.",
     "standard": "SSKCG1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
@@ -4732,7 +4732,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "c32bbb190bc0dd0b5669baa60fa922ab1203440aad8bf438391b474ab319491d"
+    "auditFingerprint": "2589444758d466f2c617ded9d6daa891b8c1286785ca63430a8218e97ad20891"
   },
   {
     "id": "tomorrow-K-social-studies-turn",
@@ -4868,8 +4868,8 @@
     "grade": "K",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "Two children want the same toy. What could they do to be fair? Why would that help?",
-    "answer": "Take turns or share so both children get a chance.",
+    "question": "Two children want the same toy. Name two fair things they could do.",
+    "answer": "Take turns, or share the toy.",
     "standard": "SSKCG1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
     "weekIntroduced": "2026-08-10",
@@ -4904,14 +4904,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "e0f41fb989c6b9a94f6442d1c7fffe511fa0081d09eaf514f44acb8c5ec7624f"
+    "auditFingerprint": "4589d066ead74bec57d76ba89f062a73b98d9c55f1de622e945901dc39d9c1b0"
   },
   {
     "id": "tomorrow-K-social-studies-reason",
     "grade": "K",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "Why should we listen when another person is speaking?",
+    "question": "Why should we listen when someone else is talking?",
     "answer": "Listening shows respect or helps us understand the speaker.",
     "standard": "SSKCG1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
@@ -4947,7 +4947,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "032dd519a948b92d878c31c540a5268ce1b5cf8eadf66457da38add9f5f876de"
+    "auditFingerprint": "fa6847130b91bee25c0e81d44f2f048e83f67e73b7aab08fe1f51b55d943117a"
   },
   {
     "id": "tomorrow-1-social-studies-georgia",
@@ -5107,7 +5107,7 @@
     "grade": "1",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "Put these places in order from smaller to larger: nation, city, state.",
+    "question": "Put these places in order from smallest to biggest: nation, city, state.",
     "answer": "City, state, nation.",
     "standard": "SS1G2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
@@ -5151,7 +5151,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "563a0cf4e2ae90fa732f54856d948b025dacb35146c98e538912f43adcaea0e6"
+    "auditFingerprint": "bfb1f951e53dda781083af9045790deae0e26928747db49ff900d284b3799e7d"
   },
   {
     "id": "tomorrow-1-science-water",
@@ -5287,7 +5287,7 @@
     "grade": "1",
     "subject": "Science",
     "difficulty": 2,
-    "question": "A plant has air, water and nutrients. Which other basic need is missing?",
+    "question": "A plant has air, water, and nutrients. What else does it need?",
     "answer": "Light.",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -5323,14 +5323,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "66b97d7e3c6eb58ad29c7eea2a12caa524b44939ab612f0a22534116e105513a"
+    "auditFingerprint": "d2b68a2aa757c9d10bfea908d59bec04726f3a812883d26e6962fbc069fd3443"
   },
   {
     "id": "tomorrow-1-science-sort",
     "grade": "1",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Do only plants need water? How do you know?",
+    "question": "Which one do both plants and animals need: water, light, or shelter?",
     "answer": "No. Both plants and animals need water.",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -5366,14 +5366,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "8306a6448f8a1d3b121c65b920039d49fcc9ace5d45c6104a560e737c7362d6f"
+    "auditFingerprint": "4de3c76d3c52f88bc14a180d256335643e4326c46e0bf6b8b2cc6b22b441fbc0"
   },
   {
     "id": "tomorrow-1-science-compare",
     "grade": "1",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Animals need food and shelter. Name two plant needs that are different from those.",
+    "question": "Animals need food and shelter. What two things do plants need instead?",
     "answer": "Light and nutrients.",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -5409,7 +5409,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "eb2a84e7e96e2bc123808b67abc5cc943b43cdee3e294434c5beeb6c84932349"
+    "auditFingerprint": "42aaf8ad8090ab63f5428faf466fd287655b91fe63368eddcb8fa84f57864d75"
   },
   {
     "id": "tomorrow-2-social-studies-mayor",
@@ -7484,7 +7484,7 @@
     "grade": "K",
     "subject": "Science",
     "difficulty": 1,
-    "question": "After the Sun sets, does the sky usually get darker or lighter?",
+    "question": "When the Sun goes down, does the sky get darker or lighter?",
     "answer": "Darker.",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -7528,7 +7528,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "075b94e94905fc85bbe758c078e724d7235f1df71e9d1f6093a006f20daf9613"
+    "auditFingerprint": "429913ed12344b4dc8230b892800eeecae2b30e7b21badfeb865b56d6797b299"
   },
   {
     "id": "tomorrow-K-science-first",
@@ -7586,7 +7586,7 @@
     "grade": "K",
     "subject": "Science",
     "difficulty": 2,
-    "question": "At sunrise, does daytime begin or end?",
+    "question": "At sunrise, does daytime start or end?",
     "answer": "Daytime begins.",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -7630,14 +7630,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "30a0226911f5b3acc7fcac23872ec1b0bd933643d2011405a698731860d49a00"
+    "auditFingerprint": "50efd6433507d37a6eb925369b2396a157fae995bc214a82cbb8f210f13327ba"
   },
   {
     "id": "tomorrow-K-science-compare",
     "grade": "K",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Tell one way the sky looks different in daytime and nighttime.",
+    "question": "What is one way the day sky and the night sky look different?",
     "answer": "The sky is bright during the day and dark at night.",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -7681,14 +7681,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "e165958dc113cb3e3ccc2abe3e4ddcfd18ee51f37483aab01bbfb15b8bf87828"
+    "auditFingerprint": "34bd0f6095a3d0ed3e3efd99cad7d4f626d98035262c02527fcf2bf853e31b04"
   },
   {
     "id": "tomorrow-K-science-cycle",
     "grade": "K",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Does nighttime last forever? Tell what comes next.",
+    "question": "Does nighttime last forever? What comes after night?",
     "answer": "No. Daytime comes next; day and night repeat.",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -7732,7 +7732,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "c01ca9468c3c770afeb892640f811dc21d9147fccec20ef4d5aaaef7a6da8634"
+    "auditFingerprint": "8f16cf6d7b43e397a3d44a2a3b77eb53e0a34438d4c8d3d3604563d202d2f2b5"
   },
   {
     "id": "tomorrow-2-science-sun-star",
@@ -8045,7 +8045,7 @@
     "grade": "1",
     "subject": "Social Studies",
     "difficulty": 2,
-    "question": "An address ends with “Memphis, Tennessee.” What is the city, and what is the state?",
+    "question": "In “Memphis, Tennessee,” which word is the city? Which is the state?",
     "answer": "The city is Memphis. The state is Tennessee.",
     "standard": "SS1G2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
@@ -8089,14 +8089,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "7621ed05adb87fe0505d2242385528e48f3e7394a97b3910cb88e8e7a83ac8e8"
+    "auditFingerprint": "1181e47f3af84ac67ba4281bd4c34786f6de8684f453eece54f0181b85ca2179"
   },
   {
     "id": "tomorrow-1-social-studies-address-compare",
     "grade": "1",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "Two addresses end with “Atlanta, Georgia” and “Savannah, Georgia.” What is the same, and what is different?",
+    "question": "Atlanta, Georgia. Savannah, Georgia. Is the city or the state the same?",
     "answer": "The state is the same: Georgia. The cities are different: Atlanta and Savannah.",
     "standard": "SS1G2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
@@ -8140,7 +8140,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "9ad754483723f379a11c214d6a9d47112e2486fd49023c32c58a03a9e5bc7687"
+    "auditFingerprint": "85155a8ded62274ca4bc3ebcd9c28d864d65fb3ef615bd9403f8fbf7b44d77a6"
   },
   {
     "id": "tomorrow-3-social-studies-opposite-direction",

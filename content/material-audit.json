@@ -282,8 +282,8 @@
     "auditReason": "Explicit preparation instruction: Point above a visible table while reading.",
     "resolution": "replaced",
     "replacement": {
-      "question": "A toy is above a shelf. Jo says it is below the shelf. Correct Jo.",
-      "answer": "The toy is above the shelf, not below it."
+      "question": "A cup is below a shelf. A toy is above the same shelf. Is the toy above or below the cup?",
+      "answer": "Above the cup."
     },
     "gap": ""
   },
@@ -428,8 +428,8 @@
     "auditReason": "Explicit preparation instruction: Show two strips of different lengths.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Two ribbons start together. The green one reaches farther. Which is shorter? Tell why.",
-      "answer": "The other ribbon is shorter because it does not reach as far from the same starting point."
+      "question": "A red ribbon and a blue ribbon start at the same spot. The red one stops first. Which ribbon is longer?",
+      "answer": "The blue ribbon. Both start at the same spot, and the red one stops first."
     },
     "gap": ""
   },
@@ -478,7 +478,7 @@
     "auditReason": "Explicit preparation instruction: Display unequal strips aligned at one end.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Both strips start here: A: ━━━━━ B: ━━━. Do their other ends reach the same place?",
+      "question": "Both strips start at the same spot. A: ━━━━━ B: ━━━. Do they end at the same spot?",
       "answer": "No. A reaches farther."
     },
     "gap": ""
@@ -528,7 +528,7 @@
     "auditReason": "Explicit preparation instruction: Provide two ribbons of clearly different lengths; show which side is left.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Ribbon A is shorter than ribbon B. Which ribbon would you choose for the longer ribbon?",
+      "question": "Ribbon A is shorter than ribbon B. Which ribbon is longer?",
       "answer": "Ribbon B."
     },
     "gap": ""
@@ -578,7 +578,7 @@
     "auditReason": "Explicit preparation instruction: Lay two unequal strips with their starting ends offset.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Two strips start in different places. What should we line up to compare their lengths fairly?",
+      "question": "Two strips start in different places. What should we line up to see which is longer?",
       "answer": "Line up one end of each strip, then compare where the other ends reach."
     },
     "gap": ""
@@ -765,7 +765,7 @@
       "grade": "K",
       "subject": "Literacy",
       "difficulty": 2,
-      "question": "Listen to “moon.” Say just its first sound.",
+      "question": "Say “moon.” What sound do you hear first?",
       "answer": "/m/.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
@@ -934,7 +934,7 @@
     "auditReason": "Explicit preparation instruction: Display the five listed sight words: in, is, you, that, it.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Choose the word “you” from these words: that · you · it",
+      "question": "Find the word “you”: that · you · it",
       "answer": "you."
     },
     "gap": ""
@@ -989,7 +989,7 @@
       "grade": "K",
       "subject": "Literacy",
       "difficulty": 1,
-      "question": "Which word do you hear: “is” or “that”? Point to “is.”",
+      "question": "Point to the word “is”: is · that",
       "answer": "is.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
@@ -1158,7 +1158,7 @@
     "auditReason": "Explicit preparation instruction: Have the class’s day-sky observations available.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Example sky notes: day—cloud; night—star. What was recorded in the day sky?",
+      "question": "Sam saw a cloud in the day and a star at night. What did Sam see in the day sky?",
       "answer": "A cloud."
     },
     "gap": ""
@@ -1206,7 +1206,7 @@
     "auditReason": "Explicit preparation instruction: Select a sky picture from the taught lesson with an agreed classification.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Example notes: a cloud was seen only in the day. Choose its group for these notes: day, night, or both.",
+      "question": "Sam saw a cloud only in the day. Does it go in the day group, the night group, or both?",
       "answer": "Day."
     },
     "gap": ""
@@ -1254,7 +1254,7 @@
     "auditReason": "Explicit preparation instruction: Display one day-sky and one night-sky picture from the lesson.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Example sky notes: day—cloud; night—moon. Tell one difference between these records.",
+      "question": "Sam saw a cloud in the day and the moon at night. What is one difference?",
       "answer": "A cloud is recorded for day; the moon is recorded for night. These example records do not show everything in the sky."
     },
     "gap": ""
@@ -1302,7 +1302,7 @@
     "auditReason": "Explicit preparation instruction: Point to an object recorded in both columns of the taught sky chart.",
     "resolution": "replaced",
     "replacement": {
-      "question": "An example records the moon in daytime and at night. Which group fits these records: day, night, or both?",
+      "question": "Sam saw the moon in the day and at night. Which group is that: day, night, or both?",
       "answer": "Both."
     },
     "gap": ""
@@ -1350,7 +1350,7 @@
     "auditReason": "Explicit preparation instruction: Use a taught sky-object card and the class observation chart.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Example: a star was recorded only at night. Someone labeled that record “day only.” How should the label change?",
+      "question": "Sam saw a star only at night. The label says “day only.” What should the label say?",
       "answer": "Change the label to night only for this record."
     },
     "gap": ""
@@ -1398,7 +1398,7 @@
     "auditReason": "Explicit preparation instruction: Provide a taught sky-object card with recorded day and night observations.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Example: a cloud was recorded by day and by night. Explain why these records belong in “both.”",
+      "question": "Sam saw a cloud in the day and at night. Why does it go in the “both” group?",
       "answer": "There is a daytime record and a nighttime record of the cloud."
     },
     "gap": ""
@@ -1445,7 +1445,7 @@
     "auditReason": "Depends on classroom/learner-specific context or drawing materials not supplied in the prompt.",
     "resolution": "replaced",
     "replacement": {
-      "question": "Our pretend class rule says, “Take turns.” What should children do?",
+      "question": "The class rule says, “Take turns.” What should children do?",
       "answer": "Take turns."
     },
     "gap": ""
@@ -1492,7 +1492,7 @@
     "auditReason": "Depends on classroom/learner-specific context or drawing materials not supplied in the prompt.",
     "resolution": "replaced",
     "replacement": {
-      "question": "A pretend class rule is “Speak kindly.” Give an example of kind words.",
+      "question": "The class rule is “Speak kindly.” What is something kind you can say?",
       "answer": "Teacher checks: a kind phrase, such as “Please join us” or “Thank you.”"
     },
     "gap": ""
@@ -1539,7 +1539,7 @@
     "auditReason": "Depends on classroom/learner-specific context or drawing materials not supplied in the prompt.",
     "resolution": "replaced",
     "replacement": {
-      "question": "A pretend class takes turns so everyone can speak. Why does taking turns help?",
+      "question": "A class takes turns talking. Why does taking turns help?",
       "answer": "It gives everyone a chance to speak."
     },
     "gap": ""
@@ -1550,7 +1550,7 @@
       "grade": "K",
       "subject": "Social Studies",
       "difficulty": 1,
-      "question": "A classmate is speaking. Which helps: listen or shout over them?",
+      "question": "A classmate is talking. Should you listen, or talk at the same time?",
       "answer": "Listen.",
       "standard": "SSKCG1",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
@@ -1638,8 +1638,8 @@
       "grade": "K",
       "subject": "Social Studies",
       "difficulty": 3,
-      "question": "Two children want the same classroom toy. Suggest a fair plan and tell why it helps.",
-      "answer": "Teacher checks: proposes sharing or taking turns and explains how the plan respects both children.",
+      "question": "Two children want the same toy. Name two fair things they could do.",
+      "answer": "Teacher checks: names two fair ideas, such as taking turns and sharing.",
       "standard": "SSKCG1",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q11",
       "weekIntroduced": "2026-08-10",
@@ -1682,7 +1682,7 @@
       "grade": "1",
       "subject": "Math",
       "difficulty": 1,
-      "question": "Three birds sit on a branch. Two more join. How many birds now?",
+      "question": "Three birds sit on a branch. Two more join them. How many birds are there now?",
       "answer": "5 birds.",
       "standard": "1.NR.2.2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
@@ -1902,8 +1902,8 @@
       "grade": "1",
       "subject": "Math",
       "difficulty": 3,
-      "question": "There are 9 apples. We eat 2. How many remain? Tell how you know.",
-      "answer": "7 apples. Accept a correct explanation, such as counting back two from nine.",
+      "question": "There are 9 apples. We eat 2. Then we eat 3 more. How many are left?",
+      "answer": "4 apples. 9 − 2 = 7, then 7 − 3 = 4.",
       "standard": "1.NR.2.2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
       "weekIntroduced": "2026-09-07",
@@ -1993,7 +1993,7 @@
       "grade": "1",
       "subject": "Math",
       "difficulty": 1,
-      "question": "All 6 crackers are eaten. How many crackers remain?",
+      "question": "There were 6 crackers. We ate all of them. How many crackers are left?",
       "answer": "0 crackers.",
       "standard": "1.NR.2.2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
@@ -2037,7 +2037,7 @@
       "grade": "1",
       "subject": "Math",
       "difficulty": 2,
-      "question": "Five children are painting. One joins them. Choose the matching expression: 5 + 1 or 5 − 1.",
+      "question": "Five children are painting. One more joins them. Which matches the story: 5 + 1 or 5 − 1?",
       "answer": "5 + 1.",
       "standard": "1.NR.2.2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
@@ -2081,7 +2081,7 @@
       "grade": "1",
       "subject": "Math",
       "difficulty": 2,
-      "question": "There were 9 beads. Some fell. Now 6 remain. How many fell?",
+      "question": "There were 9 beads. Some fell. Now 6 are left. How many fell?",
       "answer": "3 beads.",
       "standard": "1.NR.2.2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
@@ -2125,8 +2125,8 @@
       "grade": "1",
       "subject": "Math",
       "difficulty": 3,
-      "question": "Tia has 4 shells and finds 2. She says she has 2 shells now. Explain her mistake.",
-      "answer": "She subtracted instead of adding. She now has 6 shells.",
+      "question": "Tia has 4 shells and finds 2 more. Max has 5 shells. Who has more shells now?",
+      "answer": "Tia. She has 4 + 2 = 6 shells, and Max has 5.",
       "standard": "1.NR.2.2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
       "weekIntroduced": "2026-09-07",
@@ -2169,8 +2169,8 @@
       "grade": "1",
       "subject": "Math",
       "difficulty": 3,
-      "question": "Tell a joining story for 3 + 4. Give its answer.",
-      "answer": "Teacher checks: a story joining groups of 3 and 4, with a total of 7.",
+      "question": "Make up an adding story for 3 + 4.",
+      "answer": "Teacher checks: a story where a group of 3 and a group of 4 join together.",
       "standard": "1.NR.2.2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=N17",
       "weekIntroduced": "2026-09-07",
@@ -2213,7 +2213,7 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 1,
-      "question": "Which word has the middle sound /ŭ/: sun or sit?",
+      "question": "Which word has /ŭ/ in the middle: sun or sit?",
       "answer": "sun.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -2257,7 +2257,7 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 2,
-      "question": "Say “bed”. Which vowel makes its middle sound?",
+      "question": "Say “bed.” What vowel do you hear in the middle?",
       "answer": "e, making the short /ĕ/ sound.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -2301,7 +2301,7 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 3,
-      "question": "Listen: /s/ /ŭ/ /n/. Blend the sounds. Then change /s/ to /f/.",
+      "question": "Put these sounds together: /s/ /ŭ/ /n/. Now change /s/ to /f/. What are the two words?",
       "answer": "sun; fun.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -2389,7 +2389,7 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 2,
-      "question": "Which pair shares a middle vowel sound: pin and pig, or pin and pot?",
+      "question": "Which two words have the same middle sound: pin and pig, or pin and pot?",
       "answer": "pin and pig share short /ĭ/.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -2433,8 +2433,8 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 3,
-      "question": "The word is “hop.” A reader says “hope.” Say the word correctly and explain the vowel sound.",
-      "answer": "hop has the short /ŏ/ sound. It is not the long-o sound in hope.",
+      "question": "Someone read “hop” as “hope.” What sound in the middle did they say wrong?",
+      "answer": "The o sound — hop has a short o sound, not the long o sound like in hope.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
       "weekIntroduced": "2026-09-07",
@@ -2521,7 +2521,7 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 2,
-      "question": "Jay gets paper, draws a cat, then hangs the picture. What happened next after getting paper?",
+      "question": "Jay gets paper, draws a cat, then hangs the picture. What did Jay do right after getting paper?",
       "answer": "Jay drew a cat.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -2565,7 +2565,7 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 3,
-      "question": "Bo opens a box, takes out a toy, then plays. Retell using first, next, and last.",
+      "question": "Bo opens a box, takes out a toy, then plays. Tell the story using first, next, and last.",
       "answer": "First Bo opens the box. Next he takes out a toy. Last he plays.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -2697,7 +2697,7 @@
       "grade": "1",
       "subject": "Literacy",
       "difficulty": 3,
-      "question": "Zed packs a bag, walks to class, then unpacks. I said he unpacked first. Correct my retelling.",
+      "question": "Zed’s steps are mixed up: unpack, walk to class, pack a bag. Tell them in order using first, next, and last.",
       "answer": "First Zed packs a bag, next he walks to class, and last he unpacks.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -2785,7 +2785,7 @@
       "grade": "1",
       "subject": "Science",
       "difficulty": 2,
-      "question": "Name two needs that plants and animals share.",
+      "question": "Name two things that both plants and animals need.",
       "answer": "Air and water.",
       "standard": "S1L1.b",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -2829,7 +2829,7 @@
       "grade": "1",
       "subject": "Science",
       "difficulty": 3,
-      "question": "Our plant list is air, water, light, nutrients. Our animal list is air, water, food, shelter. Which needs appear only on the animal list?",
+      "question": "Plants need air, water, light, and nutrients. Animals need air, water, food, and shelter. What do animals need that plants don’t?",
       "answer": "Food and shelter.",
       "standard": "S1L1.b",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -2873,7 +2873,7 @@
       "grade": "1",
       "subject": "Science",
       "difficulty": 1,
-      "question": "Which is on our animal-needs list: shelter or crayons?",
+      "question": "Which does an animal need: shelter or crayons?",
       "answer": "Shelter.",
       "standard": "S1L1.b",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -2917,7 +2917,7 @@
       "grade": "1",
       "subject": "Science",
       "difficulty": 2,
-      "question": "Our plant list says air, water, light, nutrients. Which word did I leave out: air, light, nutrients?",
+      "question": "Plants need air, water, light, and nutrients. Which one is missing here: air, light, nutrients?",
       "answer": "Water.",
       "standard": "S1L1.b",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -2961,7 +2961,7 @@
       "grade": "1",
       "subject": "Science",
       "difficulty": 3,
-      "question": "A student puts water in the “plants only” group. Explain how to fix the group.",
+      "question": "Someone put water in the “plants only” group. Where should water go instead?",
       "answer": "Water belongs in the shared-needs group because plants and animals both need water.",
       "standard": "S1L1.b",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -3099,7 +3099,7 @@
       "grade": "1",
       "subject": "Social Studies",
       "difficulty": 3,
-      "question": "Put these in order from smaller to larger: nation, city, state.",
+      "question": "Put these places in order from smallest to biggest: nation, city, state.",
       "answer": "City, state, nation.",
       "standard": "SS1G2",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",

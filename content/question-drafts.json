@@ -151,7 +151,7 @@
       [
         "m-listen",
         2,
-        "Listen to “moon.” Say just its first sound.",
+        "Say “moon.” What sound do you hear first?",
         "/m/."
       ],
       [
@@ -195,7 +195,7 @@
       [
         "sight-is",
         1,
-        "Which word do you hear: “is” or “that”? Point to “is.”",
+        "Point to the word “is”: is · that",
         "is."
       ],
       [
@@ -299,7 +299,7 @@
       [
         "citizen-choice",
         1,
-        "A classmate is speaking. Which helps: listen or shout over them?",
+        "A classmate is talking. Should you listen, or talk at the same time?",
         "Listen."
       ],
       [
@@ -311,8 +311,8 @@
       [
         "citizen-together",
         3,
-        "Two children want the same classroom toy. Suggest a fair plan and tell why it helps.",
-        "Teacher checks: proposes sharing or taking turns and explains how the plan respects both children."
+        "Two children want the same toy. Name two fair things they could do.",
+        "Teacher checks: names two fair ideas, such as taking turns and sharing."
       ]
     ]
   },
@@ -330,7 +330,7 @@
       [
         "birds-join",
         1,
-        "Three birds sit on a branch. Two more join. How many birds now?",
+        "Three birds sit on a branch. Two more join them. How many birds are there now?",
         "5 birds."
       ],
       [
@@ -360,8 +360,8 @@
       [
         "explain-subtraction",
         3,
-        "There are 9 apples. We eat 2. How many remain? Tell how you know.",
-        "7 apples. Accept a correct explanation, such as counting back two from nine."
+        "There are 9 apples. We eat 2. Then we eat 3 more. How many are left?",
+        "4 apples. 9 − 2 = 7, then 7 − 3 = 4."
       ],
       [
         "join-drawing",
@@ -372,32 +372,32 @@
       [
         "take-away-zero",
         1,
-        "All 6 crackers are eaten. How many crackers remain?",
+        "There were 6 crackers. We ate all of them. How many crackers are left?",
         "0 crackers."
       ],
       [
         "join-equation",
         2,
-        "Five children are painting. One joins them. Choose the matching expression: 5 + 1 or 5 − 1.",
+        "Five children are painting. One more joins them. Which matches the story: 5 + 1 or 5 − 1?",
         "5 + 1."
       ],
       [
         "story-missing",
         2,
-        "There were 9 beads. Some fell. Now 6 remain. How many fell?",
+        "There were 9 beads. Some fell. Now 6 are left. How many fell?",
         "3 beads."
       ],
       [
         "story-error",
         3,
-        "Tia has 4 shells and finds 2. She says she has 2 shells now. Explain her mistake.",
-        "She subtracted instead of adding. She now has 6 shells."
+        "Tia has 4 shells and finds 2 more. Max has 5 shells. Who has more shells now?",
+        "Tia. She has 4 + 2 = 6 shells, and Max has 5."
       ],
       [
         "story-create",
         3,
-        "Tell a joining story for 3 + 4. Give its answer.",
-        "Teacher checks: a story joining groups of 3 and 4, with a total of 7."
+        "Make up an adding story for 3 + 4.",
+        "Teacher checks: a story where a group of 3 and a group of 4 join together."
       ]
     ]
   },
@@ -415,19 +415,19 @@
       [
         "short-u",
         1,
-        "Which word has the middle sound /ŭ/: sun or sit?",
+        "Which word has /ŭ/ in the middle: sun or sit?",
         "sun."
       ],
       [
         "vowel-identify",
         2,
-        "Say “bed”. Which vowel makes its middle sound?",
+        "Say “bed.” What vowel do you hear in the middle?",
         "e, making the short /ĕ/ sound."
       ],
       [
         "blend-sun",
         3,
-        "Listen: /s/ /ŭ/ /n/. Blend the sounds. Then change /s/ to /f/.",
+        "Put these sounds together: /s/ /ŭ/ /n/. Now change /s/ to /f/. What are the two words?",
         "sun; fun."
       ],
       [
@@ -439,14 +439,14 @@
       [
         "vowel-sort",
         2,
-        "Which pair shares a middle vowel sound: pin and pig, or pin and pot?",
+        "Which two words have the same middle sound: pin and pig, or pin and pot?",
         "pin and pig share short /ĭ/."
       ],
       [
         "vowel-repair",
         3,
-        "The word is “hop.” A reader says “hope.” Say the word correctly and explain the vowel sound.",
-        "hop has the short /ŏ/ sound. It is not the long-o sound in hope."
+        "Someone read “hop” as “hope.” What sound in the middle did they say wrong?",
+        "The o sound — hop has a short o sound, not the long o sound like in hope."
       ]
     ]
   },
@@ -470,13 +470,13 @@
       [
         "events-middle",
         2,
-        "Jay gets paper, draws a cat, then hangs the picture. What happened next after getting paper?",
+        "Jay gets paper, draws a cat, then hangs the picture. What did Jay do right after getting paper?",
         "Jay drew a cat."
       ],
       [
         "retell-sequence",
         3,
-        "Bo opens a box, takes out a toy, then plays. Retell using first, next, and last.",
+        "Bo opens a box, takes out a toy, then plays. Tell the story using first, next, and last.",
         "First Bo opens the box. Next he takes out a toy. Last he plays."
       ],
       [
@@ -494,7 +494,7 @@
       [
         "retell-fix",
         3,
-        "Zed packs a bag, walks to class, then unpacks. I said he unpacked first. Correct my retelling.",
+        "Zed’s steps are mixed up: unpack, walk to class, pack a bag. Tell them in order using first, next, and last.",
         "First Zed packs a bag, next he walks to class, and last he unpacks."
       ]
     ]
@@ -519,31 +519,31 @@
       [
         "shared-needs",
         2,
-        "Name two needs that plants and animals share.",
+        "Name two things that both plants and animals need.",
         "Air and water."
       ],
       [
         "needs-compare",
         3,
-        "Our plant list is air, water, light, nutrients. Our animal list is air, water, food, shelter. Which needs appear only on the animal list?",
+        "Plants need air, water, light, and nutrients. Animals need air, water, food, and shelter. What do animals need that plants don’t?",
         "Food and shelter."
       ],
       [
         "animal-shelter",
         1,
-        "Which is on our animal-needs list: shelter or crayons?",
+        "Which does an animal need: shelter or crayons?",
         "Shelter."
       ],
       [
         "plant-list",
         2,
-        "Our plant list says air, water, light, nutrients. Which word did I leave out: air, light, nutrients?",
+        "Plants need air, water, light, and nutrients. Which one is missing here: air, light, nutrients?",
         "Water."
       ],
       [
         "needs-sort-check",
         3,
-        "A student puts water in the “plants only” group. Explain how to fix the group.",
+        "Someone put water in the “plants only” group. Where should water go instead?",
         "Water belongs in the shared-needs group because plants and animals both need water."
       ]
     ]
@@ -574,7 +574,7 @@
       [
         "location-nest",
         3,
-        "Put these in order from smaller to larger: nation, city, state.",
+        "Put these places in order from smallest to biggest: nation, city, state.",
         "City, state, nation."
       ],
       [

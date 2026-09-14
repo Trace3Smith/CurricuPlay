@@ -7,12 +7,12 @@ Automated checks plus assistant editorial review authorized for this pack; not h
 - **Literacy, 1 pt:** What letter is this? M → **M (em).**
 - **Math, 1 pt:** The ball is above the box. Is it below the box? → **No. It is above the box.**
 - **Science, 1 pt:** The Sun is up and the sky is bright. Is it daytime or nighttime? → **Daytime.**
-- **Social Studies, 1 pt:** A classmate is speaking. Should you listen or shout over them? → **Listen.**
+- **Social Studies, 1 pt:** A classmate is talking. Should you listen, or talk at the same time? → **Listen.**
 - **Math, 3 pt:** Put one hand beside your head and one above it. → **One hand is beside your head; the other is above it.**
 
 ## Grade 1
 
-- **Literacy, 1 pt:** Which word has the middle sound /ŭ/: sun or sit? → **sun.**
+- **Literacy, 1 pt:** Which word has /ŭ/ in the middle: sun or sit? → **sun.**
 - **Math, 1 pt:** Three birds sit on a branch. Two more join them. How many birds are there now? → **5 birds.**
 - **Science, 1 pt:** Which does a plant need to live: water or a toy? → **Water.**
 - **Social Studies, 1 pt:** Is Georgia a city or a state? → **A state.**
