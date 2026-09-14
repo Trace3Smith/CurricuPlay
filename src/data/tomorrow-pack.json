@@ -1656,7 +1656,7 @@
     "grade": "2",
     "subject": "Math",
     "difficulty": 3,
-    "question": "Find 9 + 7. Explain how making a ten helps.",
+    "question": "How can making a ten help you solve 9 + 7?",
     "answer": "16. Move 1 from 7 to 9: 10 + 6 = 16.",
     "standard": "2.NR.2.1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
@@ -1692,7 +1692,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "f9e6626573d5351caaaf1048d96165f768aeb5eb07ba8d3a11511353b76f5759"
+    "auditFingerprint": "d11bdb5fcbf523ec31da7787f320a846cca0d132343921482479d92a812d4172"
   },
   {
     "id": "tomorrow-dcss-2-math-addition-zero",
@@ -1785,7 +1785,7 @@
     "grade": "2",
     "subject": "Math",
     "difficulty": 3,
-    "question": "To work out 7 + 8, Jo starts with 7 + 7. What should Jo do next? Why does that work?",
+    "question": "Jo solves 7 + 8 by starting with 7 + 7. What should Jo do next?",
     "answer": "7 + 7 = 14, then add 1 to get 15 because 8 is one more than 7.",
     "standard": "2.NR.2.1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O12",
@@ -1821,7 +1821,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "172bae50cbc4902396094aebb48964ec6c60bf205b467d12df0780d2f0347b2d"
+    "auditFingerprint": "22202b941348d3ae3b3bfe3ad68405f2aad6ead19360729fe93592f7690381ae"
   },
   {
     "id": "tomorrow-dcss-2-math-subtract-ten",
@@ -1914,7 +1914,7 @@
     "grade": "2",
     "subject": "Math",
     "difficulty": 3,
-    "question": "What is 14 − 9? Count up from 9 and tell how you got your answer.",
+    "question": "Solve 14 − 9 by counting up from 9. What steps did you count?",
     "answer": "5. From 9 to 10 is 1, and from 10 to 14 is 4; 1 + 4 = 5.",
     "standard": "2.NR.2.3",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=O13",
@@ -1950,7 +1950,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "7f61595274537fb6f6db44a0042f8446a16a96d95a1b7b879d78d4dfe56dd819"
+    "auditFingerprint": "03d43714a05248b8bdd4667ba7d2d8920ce17b5c4e3c550a390f3d44d2c385b1"
   },
   {
     "id": "tomorrow-dcss-2-literacy-context-tiny",
@@ -2043,8 +2043,8 @@
     "grade": "2",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "The path was narrow; only one child could walk along it at a time. What does “narrow” mean? Which clue helps?",
-    "answer": "Not wide. The clue is that only one child could walk along it at a time.",
+    "question": "The path was narrow. Only one child could walk on it at a time. Which words help you know what “narrow” means?",
+    "answer": "“Only one child could walk on it at a time.” Narrow means not wide.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
     "weekIntroduced": "2026-08-31",
@@ -2079,7 +2079,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "a4892028a0733b0fe5059d20224ca3e440e16e04e677b7951df7f06638e6424d"
+    "auditFingerprint": "f219883d5940dcbc9031c0add085477065f8a04e5bb92b1503ff7b99c186c671"
   },
   {
     "id": "tomorrow-dcss-2-literacy-compound-parts",
@@ -2215,7 +2215,7 @@
     "grade": "2",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which word joins two words: bathtub or cat?",
+    "question": "Which is a compound word: bathtub or cat?",
     "answer": "bathtub joins bath and tub.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
@@ -2251,14 +2251,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "ba0aa8a56ad560115cb873165b5e1f2c4d6de324ab51db31afca78be1debf1bd"
+    "auditFingerprint": "b2b465ab25050f8c6fa14feab6ca0958e37a6370ba45b8170dc51b34c06dfb3d"
   },
   {
     "id": "tomorrow-dcss-2-literacy-compound-finish",
     "grade": "2",
     "subject": "Literacy",
     "difficulty": 2,
-    "question": "What do we call a brush for your teeth? Finish the compound word: tooth___.",
+    "question": "A brush for your teeth is called a tooth___. What is the whole word?",
     "answer": "toothbrush.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
@@ -2294,15 +2294,15 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "9f34400a0e47b6c45385b4357c43d471f202387f52f9c1bd3cc736fc96afef7c"
+    "auditFingerprint": "8348e4200d89d1778473ed65d4c4d3a493e8b583a56d29acb13af736b42a4315"
   },
   {
     "id": "tomorrow-dcss-2-literacy-compound-explain",
     "grade": "2",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "A classmate splits “snowman” into “sno” and “wman.” Which two whole words should they use instead? Why? Say a sentence with “snowman.”",
-    "answer": "Snow and man are both whole words: snow + man = snowman. “We made a snowman.” or “The snowman is tall.”",
+    "question": "A classmate splits “snowman” into “sno” and “wman.” Explain the right way to split it.",
+    "answer": "Snow and man are both whole words: snow + man = snowman.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
     "weekIntroduced": "2026-08-10",
@@ -2337,7 +2337,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "7dcc99f6fcd1e9275f182d5fc29a38d5283a2f9ece9939a75d6acb394017867d"
+    "auditFingerprint": "72b365609405f12799a1927f205ca41ab17d04a32a8709bce90a3d4467709726"
   },
   {
     "id": "tomorrow-dcss-3-math-round-ten",
@@ -5620,7 +5620,7 @@
     "grade": "2",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "How is the area a mayor leads different from the area a governor leads?",
+    "question": "A mayor and a governor both lead places. How are their places different?",
     "answer": "A mayor leads a city; a governor leads a state.",
     "standard": "SSIPS",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
@@ -5664,14 +5664,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "9a31e28fa6fbedbbfc76a280ec893337ef1e2470e7d5c3b7a7b4574e2701ac1a"
+    "auditFingerprint": "6673c6198b651286eaba703e82f1e6265c3ef12d334c2476ed43409888a60df4"
   },
   {
     "id": "tomorrow-2-social-studies-choice",
     "grade": "2",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "You have time for one game before dinner. Why must you choose instead of playing every game?",
+    "question": "You only have time for one game before dinner. Why do you have to pick just one?",
     "answer": "Time is limited. Choosing one game means giving up the others for now.",
     "standard": "SSIPS",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
@@ -5715,7 +5715,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "fc6eefbf2451e5af137e7fe25486180cc2641d381045da739bad4ebc5561b0a8"
+    "auditFingerprint": "2ede78bc3d698bb837faf417e3fa23f9716c314989c731cbde4e08617346cb81"
   },
   {
     "id": "tomorrow-3-social-studies-river",
@@ -7943,7 +7943,7 @@
     "grade": "2",
     "subject": "Science",
     "difficulty": 3,
-    "question": "A friend says the Sun must be the biggest star because it looks biggest. What else should your friend think about? Why?",
+    "question": "A friend says the Sun is the biggest star because it looks the biggest. What is your friend forgetting?",
     "answer": "Distance matters. The Sun looks large because it is close; other stars can be larger but much farther away.",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
@@ -7987,15 +7987,15 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "d74e07f42d60fdbe6a235526aab54fc8fb79715d526eda89fffc71f0476cf5ca"
+    "auditFingerprint": "8cd74e3364470492596a1960f01ab969f22d5c1d94047ea603f6e419af95b9ba"
   },
   {
     "id": "tomorrow-2-science-appearance",
     "grade": "2",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Two stars look equally bright. Does that prove they are the same distance away? Explain.",
-    "answer": "No. Stars can have different actual brightness, so equal apparent brightness alone does not establish equal distance.",
+    "question": "Two stars look just as bright. What can you tell about how far away they are?",
+    "answer": "You can’t tell that they are the same distance away. Some stars really are brighter than others, so a brighter star that is farther away can look as bright as a dimmer star that is closer.",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
     "weekIntroduced": "2026-09-07",
@@ -8038,7 +8038,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "fe578ed2fd4da63ececf33af30f7ae9c5fddfeaef91546c50f73e1ee024d621d"
+    "auditFingerprint": "c7c688f4dbadde4cefcae3f5323b856c035575b35b1c395cf3cf7a23b34f0f1a"
   },
   {
     "id": "tomorrow-1-social-studies-memphis-address",

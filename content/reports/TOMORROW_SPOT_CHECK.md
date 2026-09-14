@@ -24,7 +24,7 @@ Automated checks plus assistant editorial review authorized for this pack; not h
 - **Math, 1 pt:** Double 6. What number do you get? → **12.**
 - **Science, 1 pt:** Is the Sun a star? → **Yes.**
 - **Social Studies, 1 pt:** Who leads a city: a mayor or a governor? → **A mayor.**
-- **Math, 3 pt:** Find 9 + 7. Explain how making a ten helps. → **16. Move 1 from 7 to 9: 10 + 6 = 16.**
+- **Math, 3 pt:** How can making a ten help you solve 9 + 7? → **16. Move 1 from 7 to 9: 10 + 6 = 16.**
 
 ## Grade 3
 

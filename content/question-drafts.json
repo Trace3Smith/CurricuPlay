@@ -626,7 +626,7 @@
       [
         "make-ten",
         3,
-        "Find 9 + 7. Explain how making a ten helps.",
+        "How can making a ten help you solve 9 + 7?",
         "16. Move 1 from 7 to 9: 10 + 6 = 16."
       ],
       [
@@ -644,7 +644,7 @@
       [
         "addition-strategies",
         3,
-        "For 7 + 8, Jo starts with 7 + 7. Finish Jo’s strategy and explain why it works.",
+        "Jo solves 7 + 8 by starting with 7 + 7. What should Jo do next?",
         "7 + 7 = 14, then add 1 to get 15 because 8 is one more than 7."
       ]
     ]
@@ -675,13 +675,13 @@
       [
         "count-up",
         3,
-        "Find 14 − 9 by counting up from 9. Explain.",
+        "Solve 14 − 9 by counting up from 9. What steps did you count?",
         "5. From 9 to 10 is 1, and from 10 to 14 is 4; 1 + 4 = 5."
       ],
       [
         "subtract-all",
         1,
-        "There are 11 counters. Remove all 11. How many remain?",
+        "There are 11 counters. You take away all 11. How many are left?",
         "0 counters."
       ],
       [
@@ -693,8 +693,8 @@
       [
         "subtract-choice",
         3,
-        "To solve 18 − 16, would you count back 16 or count up from 16? Explain an efficient choice.",
-        "Counting up from 16 takes only two steps: 17, 18. The difference is 2. Accept another correct explained strategy."
+        "What is the faster way to solve 18 − 16: count back 16, or count up from 16?",
+        "Count up from 16. It takes only two steps: 17, 18. The difference is 2."
       ]
     ]
   },
@@ -724,8 +724,8 @@
       [
         "context-evidence",
         3,
-        "The path was narrow; only one child could walk along it at a time. What does “narrow” mean? Which clue helps?",
-        "Not wide. The clue is that only one child could walk along it at a time."
+        "The path was narrow. Only one child could walk on it at a time. Which words help you know what “narrow” means?",
+        "“Only one child could walk on it at a time.” Narrow means not wide."
       ],
       [
         "context-damp",
@@ -736,14 +736,14 @@
       [
         "context-contrast",
         2,
-        "Unlike the noisy hall, the room was silent. What does “silent” mean?",
+        "The hall was noisy, but the room was silent. What does “silent” mean?",
         "Quiet; without sound."
       ],
       [
         "context-fix",
         3,
-        "“The fragile cup broke when it fell.” A reader says fragile means hard to break. Use the sentence to correct the reader.",
-        "Fragile means easily broken; the cup broke when it fell."
+        "“The fragile cup broke when it fell.” Someone thinks “fragile” means hard to break. Which words show they are wrong?",
+        "“broke when it fell.” Fragile means easily broken."
       ]
     ]
   },
@@ -779,20 +779,20 @@
       [
         "compound-select",
         1,
-        "Which word joins two words: bathtub or cat?",
+        "Which is a compound word: bathtub or cat?",
         "bathtub joins bath and tub."
       ],
       [
         "compound-finish",
         2,
-        "Complete the compound word for a brush used on teeth: tooth___.",
+        "A brush for your teeth is called a tooth___. What is the whole word?",
         "toothbrush."
       ],
       [
         "compound-explain",
         3,
-        "A classmate split “snowman” into “sno” and “wman.” Explain a better split and use the word.",
-        "Split it into snow and man, two words. Teacher checks a meaningful sentence using snowman."
+        "A classmate splits “snowman” into “sno” and “wman.” Explain the right way to split it.",
+        "Split it into snow and man, two whole words."
       ]
     ]
   },
@@ -831,13 +831,13 @@
       [
         "sky-chart-label",
         1,
-        "Our chart tracks the moon at 7 p.m. and 8 p.m. Which sky object is being observed?",
+        "A chart shows where the moon was at 7 p.m. and 8 p.m. Which sky object is on the chart?",
         "The moon."
       ],
       [
         "sky-order-notes",
         2,
-        "A sky-object chart has entries at 8 a.m., noon, and 4 p.m. Which two entries compare the start and end of that observation period?",
+        "A sky chart has notes at 8 a.m., noon, and 4 p.m. Which two times are the first and the last?",
         "8 a.m. and 4 p.m."
       ],
       [
@@ -876,8 +876,8 @@
       [
         "scarcity-class",
         3,
-        "Our class needs 8 glue sticks but has 5. Suggest a way to share them and explain your choice.",
-        "Teacher checks: a workable sharing plan and an explanation of how it addresses limited supplies."
+        "A class needs 8 glue sticks but only has 5. How could the class share them fairly?",
+        "Teacher checks: a workable plan for sharing 5 glue sticks among the students who need 8."
       ],
       [
         "government-match",
