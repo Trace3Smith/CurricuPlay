@@ -6766,7 +6766,7 @@
     "grade": "5",
     "subject": "Math",
     "difficulty": 2,
-    "question": "A rectangular prism has 4 layers of 6 unit cubes. What is its volume?",
+    "question": "A rectangular prism has 4 layers, with 6 unit cubes in each layer. What is its volume?",
     "answer": "24 cubic units.",
     "standard": "5.GSR.8.4",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",

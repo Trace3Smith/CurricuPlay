@@ -1,0 +1,429 @@
+[
+  {
+    "id": "tpl-K-math-length-name",
+    "parentQuestionId": "dcss-K-math-length-name",
+    "question": "Which line is longer? A: {barA} B: {barB}",
+    "answer": "{longerLetter}.",
+    "params": {
+      "a": {
+        "min": 2,
+        "max": 8,
+        "meaning": "segments in line A"
+      },
+      "b": {
+        "min": 2,
+        "max": 8,
+        "meaning": "segments in line B"
+      }
+    },
+    "constraints": [
+      "a and b differ by at least 2 segments",
+      "the longer line is at least 1.5 times the shorter, so the difference stays obvious at a glance (keeps it a 1-point item)",
+      "either letter can be the longer line"
+    ],
+    "rangeLimit": {
+      "summary": "No counting involved; only a visual longer/shorter comparison of two lines.",
+      "document": "linked-k-math.json",
+      "quote": "I can identify which of two objects is longer or shorter."
+    },
+    "stratifyBy": "longerLetter",
+    "variantCap": 20,
+    "reviewSampleSize": 5,
+    "distinctBy": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "tpl-K-math-position-describe",
+    "parentQuestionId": "dcss-K-math-position-describe",
+    "question": "{Article} {object} is {word} {article} {reference}. What word tells where the {object} is?",
+    "answer": "{Word}.",
+    "params": {
+      "word": {
+        "list": [
+          "above",
+          "below",
+          "beside",
+          "in front of",
+          "behind",
+          "next to"
+        ],
+        "meaning": "the taught positional words only"
+      },
+      "scene": {
+        "meaning": "object/reference pairs where the position makes physical sense; one list per word",
+        "byWord": {
+          "above": [
+            [
+              "kite",
+              "house"
+            ],
+            [
+              "lamp",
+              "table"
+            ],
+            [
+              "clock",
+              "door"
+            ],
+            [
+              "balloon",
+              "tree"
+            ]
+          ],
+          "below": [
+            [
+              "ball",
+              "table"
+            ],
+            [
+              "cat",
+              "chair"
+            ],
+            [
+              "rug",
+              "desk"
+            ],
+            [
+              "shoe",
+              "bed"
+            ]
+          ],
+          "beside": [
+            [
+              "dog",
+              "doghouse"
+            ],
+            [
+              "cup",
+              "plate"
+            ],
+            [
+              "block",
+              "crayon box"
+            ],
+            [
+              "duck",
+              "pond"
+            ]
+          ],
+          "in front of": [
+            [
+              "car",
+              "house"
+            ],
+            [
+              "dog",
+              "door"
+            ],
+            [
+              "ball",
+              "box"
+            ],
+            [
+              "bike",
+              "tree"
+            ]
+          ],
+          "behind": [
+            [
+              "tree",
+              "house"
+            ],
+            [
+              "cat",
+              "curtain"
+            ],
+            [
+              "toy",
+              "box"
+            ],
+            [
+              "dog",
+              "fence"
+            ]
+          ],
+          "next to": [
+            [
+              "book",
+              "lamp"
+            ],
+            [
+              "bike",
+              "tree"
+            ],
+            [
+              "frog",
+              "rock"
+            ],
+            [
+              "bear",
+              "chair"
+            ]
+          ]
+        }
+      }
+    },
+    "constraints": [
+      "exactly one taught positional word in the prompt (no second clue that would change difficulty)",
+      "beside and next to mean the same thing, so the answer accepts both"
+    ],
+    "rangeLimit": {
+      "summary": "Positional words limited to the six named in the K Unit 1 success criterion.",
+      "document": "linked-k-math.json",
+      "quote": "positions using words like above, below, beside, in front of, behind, next to"
+    },
+    "stratifyBy": "word",
+    "variantCap": 20,
+    "reviewSampleSize": 5
+  },
+  {
+    "id": "tpl-1-math-join",
+    "parentQuestionId": "dcss-1-math-birds-join",
+    "question": "{A} {animals} {place}. {B} more join them. How many {animals} are there now?",
+    "answer": "{total} {animals}.",
+    "params": {
+      "a": {
+        "min": 2,
+        "max": 8,
+        "meaning": "starting group, read aloud as a number word"
+      },
+      "b": {
+        "min": 2,
+        "max": 8,
+        "meaning": "joining group, read aloud as a number word"
+      },
+      "scene": {
+        "meaning": "plural noun and what the group is doing",
+        "list": [
+          [
+            "birds",
+            "sit on a branch"
+          ],
+          [
+            "ducks",
+            "swim in a pond"
+          ],
+          [
+            "frogs",
+            "sit on a log"
+          ],
+          [
+            "bees",
+            "buzz around a flower"
+          ],
+          [
+            "cats",
+            "nap on a rug"
+          ],
+          [
+            "ants",
+            "walk on a leaf"
+          ],
+          [
+            "fish",
+            "swim in a tank"
+          ],
+          [
+            "children",
+            "play at the park"
+          ]
+        ]
+      }
+    },
+    "constraints": [
+      "a + b is 10 or less",
+      "a and b are at least 2 so every verb and noun stays plural"
+    ],
+    "rangeLimit": {
+      "summary": "Word problems within 10.",
+      "document": "support-1.json",
+      "quote": "I can solve word problems to 10."
+    },
+    "stratifyBy": "animals",
+    "variantCap": 20,
+    "reviewSampleSize": 5,
+    "distinctBy": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "tpl-2-math-make-ten",
+    "parentQuestionId": "dcss-2-math-make-ten",
+    "question": "How can making a ten help you solve {x} + {y}?",
+    "answer": "{total}. Move {move} from {small} to {big}: 10 + {rest} = {total}.",
+    "params": {
+      "big": {
+        "list": [
+          8,
+          9
+        ],
+        "meaning": "the addend that gets made into 10"
+      },
+      "small": {
+        "min": 4,
+        "max": 9,
+        "meaning": "the addend that gives some away"
+      },
+      "order": {
+        "list": [
+          "big first",
+          "small first"
+        ]
+      }
+    },
+    "constraints": [
+      "the sum is 12-17, so making a ten is actually needed (crosses ten)",
+      "small is at least 4, so it isn't close to simple counting on (3-point level)",
+      "no doubles (8 + 8, 9 + 9): those use the doubles strategy instead",
+      "8 + 9 is written as moving from 8 to 9, the same as 9 + 8",
+      "each number pair appears once in either order, and never as a swap of the parent's 9 + 7"
+    ],
+    "rangeLimit": {
+      "summary": "Addition within 20; make a ten is a taught strategy.",
+      "document": "support-5.json",
+      "quote": "I can use strategies to solve addition problems within 20."
+    },
+    "stratifyBy": "order",
+    "variantCap": 11,
+    "reviewSampleSize": 5,
+    "uniqueBy": [
+      "big",
+      "small"
+    ]
+  },
+  {
+    "id": "tpl-3-math-add-context",
+    "parentQuestionId": "dcss-3-math-add-context",
+    "question": "{sentence}",
+    "answer": "{total} {unit}.",
+    "params": {
+      "a": {
+        "min": 111,
+        "max": 899,
+        "meaning": "first three-digit addend"
+      },
+      "b": {
+        "min": 111,
+        "max": 899,
+        "meaning": "second three-digit addend"
+      },
+      "context": {
+        "meaning": "story sentence with {a} and {b}, and the unit named in the answer",
+        "list": [
+          [
+            "One class collects {a} cans and another collects {b}. How many cans do they collect altogether?",
+            "cans"
+          ],
+          [
+            "One farm picks {a} apples and another picks {b}. How many apples do they pick altogether?",
+            "apples"
+          ],
+          [
+            "One library lends {a} books and another lends {b}. How many books do they lend altogether?",
+            "books"
+          ],
+          [
+            "One store sells {a} pencils and another sells {b}. How many pencils do they sell altogether?",
+            "pencils"
+          ]
+        ]
+      }
+    },
+    "constraints": [
+      "exactly one regroup, in the ones or the tens (the 2-point level; the 3-point add-explain item regroups twice)",
+      "the sum is 999 or less",
+      "no zero digits in either addend (zeros make the columns easier)",
+      "a and b are different"
+    ],
+    "rangeLimit": {
+      "summary": "Three-digit addition within 1,000.",
+      "document": "support-10.json",
+      "quote": "I can add and subtract within 1,000 fluently (3.PAR.2.1)"
+    },
+    "stratifyBy": [
+      "unit",
+      "regroupColumn"
+    ],
+    "variantCap": 20,
+    "reviewSampleSize": 5,
+    "distinctBy": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "tpl-4-math-expanded-form",
+    "parentQuestionId": "dcss-4-math-expanded-form",
+    "question": "Write {n} in expanded form.",
+    "answer": "{terms}.",
+    "params": {
+      "n": {
+        "min": 10000,
+        "max": 99999,
+        "meaning": "five-digit number, written with a comma"
+      },
+      "zeroPlace": {
+        "list": [
+          "thousands",
+          "hundreds",
+          "tens",
+          "ones"
+        ],
+        "meaning": "where the single zero digit sits"
+      }
+    },
+    "constraints": [
+      "exactly one zero digit, never in the ten-thousands place (the zero term being left out is what makes this 2 points)",
+      "all other digits are 1-9",
+      "five digits, like the parent (six digits is within the taught range, but would change difficulty)"
+    ],
+    "rangeLimit": {
+      "summary": "Reading and writing numbers to the hundred thousands in expanded form.",
+      "document": "support-15.json",
+      "quote": "I can read and write multi-digit numbers to the hundred thousands place using base 10 numerals and expanded form"
+    },
+    "stratifyBy": "zeroPlace",
+    "variantCap": 20,
+    "reviewSampleSize": 5
+  },
+  {
+    "id": "tpl-5-math-volume-layers",
+    "parentQuestionId": "dcss-5-math-volume-layers",
+    "question": "A rectangular prism has {layers} layers, with {perLayer} unit cubes in each layer. What is its volume?",
+    "answer": "{volume} cubic units.",
+    "params": {
+      "layers": {
+        "min": 2,
+        "max": 6
+      },
+      "perLayer": {
+        "list": [
+          4,
+          6,
+          8,
+          9,
+          12
+        ],
+        "meaning": "cubes in each layer; each can form a rectangle with both sides at least 2"
+      }
+    },
+    "constraints": [
+      "perLayer is never 10 (times ten is easier) and never prime (a 1-by-n layer isn't a normal prism layer)",
+      "the volume is 12-72, around the parent's scale (24)"
+    ],
+    "rangeLimit": {
+      "summary": "No numeric range in the source; limits stay near the parent's scale.",
+      "document": "support-20.json",
+      "quote": "I can find the volume of a rectangular prism by counting cubes or using a formula."
+    },
+    "stratifyBy": "layers",
+    "variantCap": 20,
+    "reviewSampleSize": 5,
+    "distinctBy": [
+      "perLayer"
+    ]
+  }
+]

@@ -1543,7 +1543,7 @@
       [
         "volume-layers",
         2,
-        "A rectangular prism has 4 layers of 6 unit cubes. What is its volume?",
+        "A rectangular prism has 4 layers, with 6 unit cubes in each layer. What is its volume?",
         "24 cubic units."
       ],
       [
