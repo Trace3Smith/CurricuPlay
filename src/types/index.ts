@@ -13,6 +13,7 @@ export interface Question {
   reviewStatus?: 'pending' | 'approved' | 'needs-edit' | 'rejected'; reviewNote?: string; teacherSetup?: string;
   requiresExternalClassroomMaterial: boolean; materialReviewNote?: string;
   questionType?: string; choices?: string[]; teacherRead?: boolean; reviewQuestion?: boolean;
+  templateId?: string; templateParentId?: string; templateFingerprint?: string; templateParams?: Record<string, unknown>;
 }
 export interface SourceEvidence {
   document: string; sourceUrl: string; sourceTitle: string; section: string;

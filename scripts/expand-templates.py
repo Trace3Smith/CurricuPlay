@@ -1,6 +1,6 @@
 """Offline, deterministic expansion of pilot question templates into static variants. No network or AI calls.
-Reads content/templates/pilot-templates.json; writes content/templates/pilot-variants.json and
-content/reports/TEMPLATE_PILOT.md. Staging only: nothing in src/data, the ingest, or the game reads these files.
+Reads content/templates/pilot-templates.json and template-approvals.json; writes content/templates/pilot-variants.json
+and content/reports/TEMPLATE_PILOT.md. Staging output: the ingest merges variants only when run with --with-templates.
 Each variant's answer, difficulty invariant, and taught range are re-derived by parsing the rendered text,
 independently of the values the generator chose."""
 import json,re,hashlib,random,sys
@@ -154,11 +154,13 @@ KINDS={'tpl-K-math-length-name':(gen_length,ver_length),'tpl-K-math-position-des
  'tpl-5-math-volume-layers':(gen_volume,ver_volume)}
 
 def main():
- templates=read('content/templates/pilot-templates.json');bank=read('src/data/questions.json');byid={q['id']:q for q in bank}
+ # Parents and comparisons come from the fixed bank only, even if an ingest has already merged variants into it.
+ templates=read('content/templates/pilot-templates.json');bank=[q for q in read('src/data/questions.json') if not q.get('templateId')];byid={q['id']:q for q in bank}
+ approvals=read('content/templates/template-approvals.json')
  code_hash=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
  errors=[];variants=[];report=[]
  for t in templates:
-  gen,ver=KINDS[t['id']];parent=byid[t['parentQuestionId']];ident=t['id']
+  gen,ver=KINDS[t['id']];parent=byid[t['parentQuestionId']];ident=t['id'];first_error=len(errors)
   # Template approval is tied to this fingerprint: editing the template or this script invalidates it.
   fingerprint=hashlib.sha256((json.dumps(t,sort_keys=True,ensure_ascii=False)+code_hash).encode()).hexdigest()
   if parent['subject']!='Math' or parent['requiresExternalClassroomMaterial'] or parent.get('teacherSetup'):errors.append(f'{ident}: parent is not a self-contained Math question')
@@ -206,17 +208,29 @@ def main():
    v.update(id=vid,question=question,answer=answer,templateId=ident,templateParentId=parent['id'],templateFingerprint=fingerprint,templateParams=params,
     reviewStatus='pending',reviewNote='Template variant. Approval comes from the template sample review and automated checks; not yet approved.')
    variants.append(v);rows.append(v)
-  report.append((t,parent,pool_size,rows,near,fingerprint))
+  # Per-template approval: a recorded sample review covers every variant, but only for this exact fingerprint,
+  # only if the reviewed sample variants still exist, and only when every automated check passed.
+  sample=[v['id'] for v in spread(rows,t['reviewSampleSize'])];rec=approvals.get(ident);ids={v['id'] for v in rows}
+  if not rec:approval='pending: no template approval recorded'
+  elif rec.get('status')!='approved':approval=f'pending: approval record status is {rec.get("status")!r}'
+  elif rec.get('templateFingerprint')!=fingerprint:approval='pending: approval is stale (template or expansion script changed since review)'
+  elif len(rec.get('sampleVariantIds',[]))<t['reviewSampleSize'] or not set(rec['sampleVariantIds'])<=ids:approval='pending: reviewed sample is incomplete or no longer generated'
+  elif len(errors)>first_error:approval='pending: automated checks failed'
+  else:
+   approval=f'approved: {rec["reviewedBy"]}, {rec["reviewedOn"]}'
+   for v in rows:v.update(reviewStatus='approved',approvalBasis='template-sample-review',
+    reviewNote=f'Approved through template sample review ({rec["reviewedBy"]}, {rec["reviewedOn"]}): {len(rec["sampleVariantIds"])} sampled variants plus automated checks.')
+  report.append((t,parent,pool_size,rows,near,fingerprint,sample,approval))
  write('content/templates/pilot-variants.json',variants)
- lines=['# Template pilot: generated variants','','Staging output only. Not read by the app, the ingest, or the Tomorrow Pack build. All variants are pending.','',
-  f'Automated check errors: {len(errors)}','']
- for t,parent,pool,rows,near,fingerprint in report:
+ lines=['# Template pilot: generated variants','','Staging output. The ingest merges these variants only when run with --with-templates.','',
+  f'Automated check errors: {len(errors)}','','To approve a template, add an entry to content/templates/template-approvals.json with its full fingerprint and the sample variant IDs listed below.','']
+ for t,parent,pool,rows,near,fingerprint,sample,approval in report:
   lines+=[f'## {t["id"]}','',f'- Parent ({parent["grade"]}, {parent["difficulty"]} pt, {parent["standard"]}): {parent["question"]} → **{parent["answer"]}**',
    f'- Valid combinations: {pool}; variants written: {len(rows)}',f'- Range source ({t["rangeLimit"]["document"]}): "{t["rangeLimit"]["quote"]}"',
-   f'- Near-duplicates of other bank questions: {len(near)}',f'- Fingerprint: `{fingerprint[:12]}`','','**Review sample:**','']
+   f'- Near-duplicates of other bank questions: {len(near)}',f'- Approval: {approval}',f'- Fingerprint: `{fingerprint}`',f'- Sample variant IDs: {", ".join(sample)}','','**Review sample:**','']
   lines+=[f'{n}. {v["question"]} → **{v["answer"]}**' for n,v in enumerate(spread(rows,t['reviewSampleSize']),1)]
   lines+=['','<details><summary>All variants</summary>','']+[f'- `{v["id"]}` {v["question"]} → {v["answer"]}' for v in rows]+['','</details>','']
  (ROOT/'content/reports/TEMPLATE_PILOT.md').write_text('\n'.join(lines))
- print(json.dumps({'templates':len(templates),'variants':len(variants),'byTemplate':{t['id']:[pool,len(rows),len(near)] for t,_,pool,rows,near,_ in report},'errors':errors},indent=1,ensure_ascii=False))
+ print(json.dumps({'templates':len(templates),'variants':len(variants),'byTemplate':{t['id']:{'combinations':pool,'variants':len(rows),'nearDuplicates':len(near),'approval':approval} for t,_,pool,rows,near,_,_,approval in report},'errors':errors},indent=1,ensure_ascii=False))
  sys.exit(bool(errors))
 if __name__=='__main__':main()

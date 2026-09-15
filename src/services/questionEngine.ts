@@ -23,21 +23,27 @@ export function validateQuestions(data: unknown): { questions: Question[]; error
   return { questions: errors.length ? [] : questions, errors };
 }
 export const bank = validateQuestions(rawQuestions);
+// Template variants and their parent question are one family: a board may use at most one of them,
+// and coverage counts the family once however many variants it has.
+export const familyOf = (q: Question) => q.templateParentId ?? q.id;
 export function createQuestionEngine(questions: Question[], usedIds: string[] = []) {
   const used = new Set(usedIds);
   const getQuestions = (f: Filters) => questions.filter(q => q.requiresExternalClassroomMaterial === false && (q.reviewStatus === 'approved' || (q.reviewStatus === undefined && !q.evidence)) && q.grade === f.grade && (!f.difficulty || q.difficulty === f.difficulty) &&
     inRange(q.weekIntroduced, 'all', f.asOf) && (q.alignedWeeks ?? [q.weekIntroduced]).some(week => inRange(week, f.range, f.asOf)) && (f.unused === false || !used.has(q.id)) &&
     (!f.subject || (f.subject === 'Review' ? q.reviewQuestion === true || q.weekIntroduced < recentStart(f.asOf) : q.subject === f.subject)));
-  // Match reusable question IDs to requested slots without double-counting shared pools.
-  // Augmenting paths let a flexible Review slot yield a scarce question to a subject slot.
+  const shuffle = <T,>(items: T[]) => {
+    for (let i = items.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [items[i], items[j]] = [items[j], items[i]]; }
+    return items;
+  };
+  // Match question families to requested slots without double-counting shared pools.
+  // Augmenting paths let a flexible Review slot yield a scarce family to a subject slot.
   function planQuestions(slots: { id: string; filters: Filters }[], randomize = false) {
-    const pools = slots.map(slot => {
-      const pool = getQuestions(slot.filters).map(q => q.id);
-      if (randomize) for (let i = pool.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]];
-      }
-      return pool;
+    const members = slots.map(slot => {
+      const byFamily = new Map<string, string[]>();
+      getQuestions(slot.filters).forEach(q => byFamily.set(familyOf(q), [...(byFamily.get(familyOf(q)) ?? []), q.id]));
+      return byFamily;
     });
+    const pools = members.map(byFamily => { const pool = [...byFamily.keys()]; return randomize ? shuffle(pool) : pool; });
     const owners = new Map<string, number>();
     function match(index: number, seen: Set<string>): boolean {
       for (const id of pools[index]) {
@@ -50,7 +56,10 @@ export function createQuestionEngine(questions: Question[], usedIds: string[] = 
     }
     slots.forEach((_, index) => match(index, new Set()));
     const assignments: Record<string, string> = {};
-    owners.forEach((index, id) => { assignments[slots[index].id] = id; });
+    owners.forEach((index, family) => {
+      const ids = members[index].get(family)!;
+      assignments[slots[index].id] = randomize ? ids[Math.floor(Math.random() * ids.length)] : ids[0];
+    });
     return { assignments, matched: owners.size, complete: owners.size === slots.length };
   }
   return {

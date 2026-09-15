@@ -38,7 +38,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 4,
       "b": 2,
@@ -86,7 +86,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 2,
       "b": 6,
@@ -134,7 +134,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 8,
       "b": 2,
@@ -182,7 +182,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 3,
       "b": 6,
@@ -230,7 +230,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 6,
       "b": 2,
@@ -278,7 +278,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 4,
       "b": 8,
@@ -326,7 +326,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 7,
       "b": 2,
@@ -374,7 +374,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 3,
       "b": 8,
@@ -422,7 +422,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 5,
       "b": 3,
@@ -470,7 +470,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 4,
       "b": 6,
@@ -518,7 +518,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 7,
       "b": 3,
@@ -566,7 +566,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 5,
       "b": 8,
@@ -614,7 +614,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 6,
       "b": 3,
@@ -662,7 +662,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 2,
       "b": 5,
@@ -710,7 +710,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 5,
       "b": 2,
@@ -758,7 +758,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 2,
       "b": 8,
@@ -806,7 +806,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 7,
       "b": 4,
@@ -854,7 +854,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 3,
       "b": 7,
@@ -902,7 +902,7 @@
     "answer": "A.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 6,
       "b": 4,
@@ -950,7 +950,7 @@
     "answer": "B.",
     "templateId": "tpl-K-math-length-name",
     "templateParentId": "dcss-K-math-length-name",
-    "templateFingerprint": "34157725875a516f970b277f8605943d86d6e78cea1e59bf6c7604a0051df9e1",
+    "templateFingerprint": "97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68",
     "templateParams": {
       "a": 2,
       "b": 4,
@@ -998,7 +998,7 @@
     "answer": "Above.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "above",
       "object": "kite",
@@ -1046,7 +1046,7 @@
     "answer": "Behind.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "behind",
       "object": "toy",
@@ -1094,7 +1094,7 @@
     "answer": "Below.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "below",
       "object": "cat",
@@ -1142,7 +1142,7 @@
     "answer": "Beside (next to is also correct).",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "beside",
       "object": "dog",
@@ -1190,7 +1190,7 @@
     "answer": "In front of.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "in front of",
       "object": "dog",
@@ -1238,7 +1238,7 @@
     "answer": "Next to (beside is also correct).",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "next to",
       "object": "book",
@@ -1286,7 +1286,7 @@
     "answer": "Above.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "above",
       "object": "lamp",
@@ -1334,7 +1334,7 @@
     "answer": "Behind.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "behind",
       "object": "dog",
@@ -1382,7 +1382,7 @@
     "answer": "Below.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "below",
       "object": "rug",
@@ -1430,7 +1430,7 @@
     "answer": "Beside (next to is also correct).",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "beside",
       "object": "cup",
@@ -1478,7 +1478,7 @@
     "answer": "In front of.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "in front of",
       "object": "ball",
@@ -1526,7 +1526,7 @@
     "answer": "Next to (beside is also correct).",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "next to",
       "object": "bike",
@@ -1574,7 +1574,7 @@
     "answer": "Above.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "above",
       "object": "clock",
@@ -1622,7 +1622,7 @@
     "answer": "Behind.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "behind",
       "object": "cat",
@@ -1670,7 +1670,7 @@
     "answer": "Below.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "below",
       "object": "shoe",
@@ -1718,7 +1718,7 @@
     "answer": "Beside (next to is also correct).",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "beside",
       "object": "block",
@@ -1766,7 +1766,7 @@
     "answer": "In front of.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "in front of",
       "object": "car",
@@ -1814,7 +1814,7 @@
     "answer": "Next to (beside is also correct).",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "next to",
       "object": "frog",
@@ -1862,7 +1862,7 @@
     "answer": "Above.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "above",
       "object": "balloon",
@@ -1910,7 +1910,7 @@
     "answer": "Behind.",
     "templateId": "tpl-K-math-position-describe",
     "templateParentId": "dcss-K-math-position-describe",
-    "templateFingerprint": "d1205d46b32d076c9a2aeacc8bf69c44d494eefce8fb58b056b2906856b0a6f8",
+    "templateFingerprint": "3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b",
     "templateParams": {
       "word": "behind",
       "object": "tree",
@@ -1956,7 +1956,7 @@
     "answer": "10 ants.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 6,
       "b": 4,
@@ -2002,7 +2002,7 @@
     "answer": "7 bees.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 5,
       "b": 2,
@@ -2048,7 +2048,7 @@
     "answer": "10 birds.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 8,
       "b": 2,
@@ -2094,7 +2094,7 @@
     "answer": "8 cats.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 2,
       "b": 6,
@@ -2140,7 +2140,7 @@
     "answer": "9 children.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 2,
       "b": 7,
@@ -2186,7 +2186,7 @@
     "answer": "10 ducks.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 5,
       "b": 5,
@@ -2232,7 +2232,7 @@
     "answer": "7 fish.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 4,
       "b": 3,
@@ -2278,7 +2278,7 @@
     "answer": "7 frogs.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 3,
       "b": 4,
@@ -2324,7 +2324,7 @@
     "answer": "8 ants.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 6,
       "b": 2,
@@ -2370,7 +2370,7 @@
     "answer": "9 bees.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 5,
       "b": 4,
@@ -2416,7 +2416,7 @@
     "answer": "6 birds.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 4,
       "b": 2,
@@ -2462,7 +2462,7 @@
     "answer": "10 cats.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 4,
       "b": 6,
@@ -2508,7 +2508,7 @@
     "answer": "10 children.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 7,
       "b": 3,
@@ -2554,7 +2554,7 @@
     "answer": "5 ducks.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 3,
       "b": 2,
@@ -2600,7 +2600,7 @@
     "answer": "6 fish.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 2,
       "b": 4,
@@ -2646,7 +2646,7 @@
     "answer": "4 frogs.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 2,
       "b": 2,
@@ -2692,7 +2692,7 @@
     "answer": "9 ants.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 6,
       "b": 3,
@@ -2738,7 +2738,7 @@
     "answer": "9 bees.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 7,
       "b": 2,
@@ -2784,7 +2784,7 @@
     "answer": "8 birds.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 4,
       "b": 4,
@@ -2830,7 +2830,7 @@
     "answer": "6 cats.",
     "templateId": "tpl-1-math-join",
     "templateParentId": "dcss-1-math-birds-join",
-    "templateFingerprint": "2506e9d5c79f78eb7c94c2d5ee58de78fa386d19bf963f88bd2ca32e437881a1",
+    "templateFingerprint": "747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40",
     "templateParams": {
       "a": 3,
       "b": 3,
@@ -2876,7 +2876,7 @@
     "answer": "13. Move 2 from 5 to 8: 10 + 3 = 13.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 8,
       "small": 5,
@@ -2922,7 +2922,7 @@
     "answer": "12. Move 2 from 4 to 8: 10 + 2 = 12.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 8,
       "small": 4,
@@ -2968,7 +2968,7 @@
     "answer": "15. Move 1 from 6 to 9: 10 + 5 = 15.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 9,
       "small": 6,
@@ -3014,7 +3014,7 @@
     "answer": "17. Move 1 from 8 to 9: 10 + 7 = 17.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 9,
       "small": 8,
@@ -3060,7 +3060,7 @@
     "answer": "14. Move 1 from 5 to 9: 10 + 4 = 14.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 9,
       "small": 5,
@@ -3106,7 +3106,7 @@
     "answer": "13. Move 1 from 4 to 9: 10 + 3 = 13.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 9,
       "small": 4,
@@ -3152,7 +3152,7 @@
     "answer": "15. Move 2 from 7 to 8: 10 + 5 = 15.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 8,
       "small": 7,
@@ -3198,7 +3198,7 @@
     "answer": "14. Move 2 from 6 to 8: 10 + 4 = 14.",
     "templateId": "tpl-2-math-make-ten",
     "templateParentId": "dcss-2-math-make-ten",
-    "templateFingerprint": "36b840a675206cd127bf0d23372546a50e5e7596152a2570aed17c873d1b30c2",
+    "templateFingerprint": "c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d",
     "templateParams": {
       "big": 8,
       "small": 6,
@@ -3244,7 +3244,7 @@
     "answer": "681 apples.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 538,
       "b": 143,
@@ -3291,7 +3291,7 @@
     "answer": "568 apples.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 375,
       "b": 193,
@@ -3338,7 +3338,7 @@
     "answer": "297 books.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 139,
       "b": 158,
@@ -3385,7 +3385,7 @@
     "answer": "737 books.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 176,
       "b": 561,
@@ -3432,7 +3432,7 @@
     "answer": "961 cans.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 227,
       "b": 734,
@@ -3479,7 +3479,7 @@
     "answer": "768 cans.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 296,
       "b": 472,
@@ -3526,7 +3526,7 @@
     "answer": "866 pencils.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 537,
       "b": 329,
@@ -3573,7 +3573,7 @@
     "answer": "886 pencils.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 491,
       "b": 395,
@@ -3620,7 +3620,7 @@
     "answer": "966 apples.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 728,
       "b": 238,
@@ -3667,7 +3667,7 @@
     "answer": "738 apples.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 542,
       "b": 196,
@@ -3714,7 +3714,7 @@
     "answer": "893 books.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 439,
       "b": 454,
@@ -3761,7 +3761,7 @@
     "answer": "905 books.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 133,
       "b": 772,
@@ -3808,7 +3808,7 @@
     "answer": "791 cans.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 132,
       "b": 659,
@@ -3855,7 +3855,7 @@
     "answer": "906 cans.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 154,
       "b": 752,
@@ -3902,7 +3902,7 @@
     "answer": "981 pencils.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 669,
       "b": 312,
@@ -3949,7 +3949,7 @@
     "answer": "749 pencils.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 376,
       "b": 373,
@@ -3996,7 +3996,7 @@
     "answer": "971 apples.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 515,
       "b": 456,
@@ -4043,7 +4043,7 @@
     "answer": "768 apples.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 385,
       "b": 383,
@@ -4090,7 +4090,7 @@
     "answer": "741 books.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 125,
       "b": 616,
@@ -4137,7 +4137,7 @@
     "answer": "416 books.",
     "templateId": "tpl-3-math-add-context",
     "templateParentId": "dcss-3-math-add-context",
-    "templateFingerprint": "133fd57bcba264acc6e83ce75e8dc387227bdaee0a0965247883737e50db731d",
+    "templateFingerprint": "3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78",
     "templateParams": {
       "a": 133,
       "b": 283,
@@ -4184,7 +4184,7 @@
     "answer": "60,000 + 3,000 + 60 + 4.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 63064,
       "zeroPlace": "hundreds"
@@ -4229,7 +4229,7 @@
     "answer": "80,000 + 7,000 + 800 + 70.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 87870,
       "zeroPlace": "ones"
@@ -4274,7 +4274,7 @@
     "answer": "30,000 + 4,000 + 700 + 6.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 34706,
       "zeroPlace": "tens"
@@ -4319,7 +4319,7 @@
     "answer": "30,000 + 100 + 50 + 5.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 30155,
       "zeroPlace": "thousands"
@@ -4364,7 +4364,7 @@
     "answer": "50,000 + 9,000 + 90 + 1.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 59091,
       "zeroPlace": "hundreds"
@@ -4409,7 +4409,7 @@
     "answer": "70,000 + 5,000 + 100 + 80.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 75180,
       "zeroPlace": "ones"
@@ -4454,7 +4454,7 @@
     "answer": "20,000 + 1,000 + 700 + 1.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 21701,
       "zeroPlace": "tens"
@@ -4499,7 +4499,7 @@
     "answer": "30,000 + 500 + 50 + 4.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 30554,
       "zeroPlace": "thousands"
@@ -4544,7 +4544,7 @@
     "answer": "80,000 + 8,000 + 20 + 2.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 88022,
       "zeroPlace": "hundreds"
@@ -4589,7 +4589,7 @@
     "answer": "60,000 + 1,000 + 100 + 90.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 61190,
       "zeroPlace": "ones"
@@ -4634,7 +4634,7 @@
     "answer": "40,000 + 9,000 + 500 + 1.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 49501,
       "zeroPlace": "tens"
@@ -4679,7 +4679,7 @@
     "answer": "70,000 + 100 + 70 + 2.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 70172,
       "zeroPlace": "thousands"
@@ -4724,7 +4724,7 @@
     "answer": "60,000 + 6,000 + 70 + 4.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 66074,
       "zeroPlace": "hundreds"
@@ -4769,7 +4769,7 @@
     "answer": "20,000 + 6,000 + 100 + 20.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 26120,
       "zeroPlace": "ones"
@@ -4814,7 +4814,7 @@
     "answer": "20,000 + 9,000 + 700 + 8.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 29708,
       "zeroPlace": "tens"
@@ -4859,7 +4859,7 @@
     "answer": "80,000 + 500 + 10 + 5.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 80515,
       "zeroPlace": "thousands"
@@ -4904,7 +4904,7 @@
     "answer": "60,000 + 6,000 + 40 + 5.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 66045,
       "zeroPlace": "hundreds"
@@ -4949,7 +4949,7 @@
     "answer": "10,000 + 1,000 + 800 + 10.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 11810,
       "zeroPlace": "ones"
@@ -4994,7 +4994,7 @@
     "answer": "30,000 + 9,000 + 300 + 8.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 39308,
       "zeroPlace": "tens"
@@ -5039,7 +5039,7 @@
     "answer": "50,000 + 200 + 40 + 5.",
     "templateId": "tpl-4-math-expanded-form",
     "templateParentId": "dcss-4-math-expanded-form",
-    "templateFingerprint": "95d004b2b9bf2508bd4db6bc276b4ec97df90577a6e41df96462592d6cfb1902",
+    "templateFingerprint": "40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193",
     "templateParams": {
       "n": 50245,
       "zeroPlace": "thousands"
@@ -5084,7 +5084,7 @@
     "answer": "18 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 2,
       "perLayer": 9
@@ -5129,7 +5129,7 @@
     "answer": "24 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 3,
       "perLayer": 8
@@ -5174,7 +5174,7 @@
     "answer": "16 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 4,
       "perLayer": 4
@@ -5219,7 +5219,7 @@
     "answer": "60 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 5,
       "perLayer": 12
@@ -5264,7 +5264,7 @@
     "answer": "36 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 6,
       "perLayer": 6
@@ -5309,7 +5309,7 @@
     "answer": "12 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 2,
       "perLayer": 6
@@ -5354,7 +5354,7 @@
     "answer": "12 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 3,
       "perLayer": 4
@@ -5399,7 +5399,7 @@
     "answer": "32 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 4,
       "perLayer": 8
@@ -5444,7 +5444,7 @@
     "answer": "40 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 5,
       "perLayer": 8
@@ -5489,7 +5489,7 @@
     "answer": "24 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 6,
       "perLayer": 4
@@ -5534,7 +5534,7 @@
     "answer": "16 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 2,
       "perLayer": 8
@@ -5579,7 +5579,7 @@
     "answer": "27 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 3,
       "perLayer": 9
@@ -5624,7 +5624,7 @@
     "answer": "48 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 4,
       "perLayer": 12
@@ -5669,7 +5669,7 @@
     "answer": "45 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 5,
       "perLayer": 9
@@ -5714,7 +5714,7 @@
     "answer": "72 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 6,
       "perLayer": 12
@@ -5759,7 +5759,7 @@
     "answer": "24 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 2,
       "perLayer": 12
@@ -5804,7 +5804,7 @@
     "answer": "36 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 3,
       "perLayer": 12
@@ -5849,7 +5849,7 @@
     "answer": "36 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 4,
       "perLayer": 9
@@ -5894,7 +5894,7 @@
     "answer": "20 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 5,
       "perLayer": 4
@@ -5939,7 +5939,7 @@
     "answer": "48 cubic units.",
     "templateId": "tpl-5-math-volume-layers",
     "templateParentId": "dcss-5-math-volume-layers",
-    "templateFingerprint": "0403c8a24f2bee3e4ae6300ac3a86e039e0c0ba0012decf783557172ad0faa82",
+    "templateFingerprint": "856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755",
     "templateParams": {
       "layers": 6,
       "perLayer": 8

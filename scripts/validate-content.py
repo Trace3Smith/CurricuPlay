@@ -11,6 +11,7 @@ def valid_date(s):
  try:return isinstance(s,str) and date.fromisoformat(s).isoformat()==s
  except (ValueError,TypeError):return False
 def nonempty(x):return isinstance(x,str) and bool(x.strip())
+def family(q):return q.get('templateParentId') or q['id']
 records=read('src/data/curriculum.json');questions=read('src/data/questions.json');source=read('content/sources/pacing-guide-cells.json')
 audits=read('content/material-audit.json')
 errors=[];warnings=[]
@@ -49,6 +50,10 @@ for grade in ['K','1','2','3','4','5']:
  check(weeks==set(range(1,37)),f'{grade}: incomplete instructional weeks')
 ids=[q['id'] for q in questions];check(len(ids)==len(set(ids)),'Duplicate question IDs')
 withdrawn=read('content/withdrawn-questions.json')
+# Template variants (merged only by ingest --with-templates) must match their current template and approval.
+templates={t['id']:t for t in read('content/templates/pilot-templates.json')};approvals=read('content/templates/template-approvals.json')
+script_hash=hashlib.sha256((ROOT/'scripts/expand-templates.py').read_bytes()).hexdigest()
+def template_fingerprint(t):return hashlib.sha256((json.dumps(t,sort_keys=True,ensure_ascii=False)+script_hash).encode()).hexdigest()  # same formula as expand-templates.py
 check(not set(ids)&set(withdrawn),'Withdrawn content must not appear in the active bank')
 normalized={};near=[];long=[];teacher=[]
 def norm(s):return re.sub(r'\s+',' ',s.casefold()).strip()
@@ -58,9 +63,9 @@ for q in questions:
   check(nonempty(q.get(key)),f'{ident}: missing {key}')
  check(q['grade'] in ['K','1','2','3','4','5'] and q['subject'] in ['Literacy','Math','Science','Social Studies'],f'{ident}: invalid classification')
  check(type(q.get('requiresExternalClassroomMaterial')) is bool,f'{ident}: missing material audit boolean')
- audit=audits.get(ident,{})
+ audit=audits.get(q.get('templateParentId') or ident,{})  # template variants share their parent's materials audit
  check(audit.get('requiresExternalClassroomMaterial')==q.get('requiresExternalClassroomMaterial'),f'{ident}: material flag differs from audit')
- if audit.get('replacement'):
+ if audit.get('replacement') and not q.get('templateId'):
   check(q['question']==audit['replacement']['question'] and q['answer']==audit['replacement']['answer'] and not q.get('teacherSetup'),f'{ident}: replacement differs from reviewed ingestion input')
  check(not q.get('teacherSetup') or q['requiresExternalClassroomMaterial'],f'{ident}: preparation-dependent content marked playable')
  check(q['difficulty'] in [1,2,3],f'{ident}: invalid difficulty')
@@ -78,6 +83,12 @@ for q in questions:
   check(valid_date(w) and q['weekIntroduced']<=w<=AS_OF,f'{ident}: future aligned week')
   r=lookup.get(cid,{})
   check(r.get('weekOf')==w and r.get('grade')==q['grade'] and r.get('subject')==q['subject'],f'{ident}: invalid aligned mapping')
+ if q.get('templateId'):
+  template=templates.get(q['templateId']);approval=approvals.get(q['templateId'],{})
+  check(bool(template) and template['parentQuestionId']==q['templateParentId'],f'{ident}: unknown template or parent')
+  check(bool(template) and q['templateFingerprint']==template_fingerprint(template),f'{ident}: variant is stale; re-run expand-templates.py')
+  if q['reviewStatus']=='approved':
+   check(approval.get('status')=='approved' and approval.get('templateFingerprint')==q['templateFingerprint'] and set(approval.get('sampleVariantIds',[]))<=set(ids),f'{ident}: approved variant lacks a current template approval')
  ev=q.get('evidence',{})
  for key in ['document','sourceUrl','sourceTitle','section','quote','timingBasis']:check(nonempty(ev.get(key)),f'{ident}: missing evidence {key}')
  d=read('content/sources/'+ev['document']);offset=ev['characterOffset']
@@ -93,7 +104,8 @@ for q in questions:
  if q['questionType']=='teacher-check' or q.get('teacherSetup'):teacher.append(ident)
 for i,a in enumerate(questions):
  for b in questions[i+1:]:
-  if a['grade']!=b['grade'] or a['subject']!=b['subject']:continue
+  # Variants of one template differ only in their numbers or objects by design; compare across families only.
+  if a['grade']!=b['grade'] or a['subject']!=b['subject'] or family(a)==family(b):continue
   aa=re.sub(r'\d+','#',norm(a['question']));bb=re.sub(r'\d+','#',norm(b['question']))
   if SequenceMatcher(None,aa,bb).ratio()>=.84:near.append([a['id'],b['id']])
 check(not long,'Smart Board length limits exceeded: '+', '.join(long))
@@ -112,8 +124,9 @@ grade_coverage=[]
 for grade in ['K','1','2','3','4','5']:
  for name,start in [('Recent Content','2026-08-31'),('Everything Taught So Far','2026-08-03')]:
   eligible=[q for q in questions if q['requiresExternalClassroomMaterial'] is False and q['grade']==grade and q['weekIntroduced']<=AS_OF and any(start<=w<=AS_OF for w in q['alignedWeeks'])]
-  drafts=len({q['id'] for q in eligible})
-  approved=len({q['id'] for q in eligible if q['reviewStatus']=='approved'})
+  # A template and all its variants are one family and count once toward coverage.
+  drafts=len({family(q) for q in eligible})
+  approved=len({family(q) for q in eligible if q['reviewStatus']=='approved'})
   grade_coverage.append({'grade':grade,'range':name,'eligibleGeneratedUnique':drafts,'eligibleApprovedUnique':approved,
    'approvedShortfallForFullGame':max(0,30-approved),'approvedShortfallForVariationTarget':max(0,60-approved),
    'additionalDraftsNeededEvenIfAllApprovedForFullGame':max(0,30-drafts),

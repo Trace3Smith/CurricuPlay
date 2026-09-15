@@ -1,8 +1,10 @@
 # Template pilot: generated variants
 
-Staging output only. Not read by the app, the ingest, or the Tomorrow Pack build. All variants are pending.
+Staging output. The ingest merges these variants only when run with --with-templates.
 
 Automated check errors: 0
+
+To approve a template, add an entry to content/templates/template-approvals.json with its full fingerprint and the sample variant IDs listed below.
 
 ## tpl-K-math-length-name
 
@@ -10,7 +12,9 @@ Automated check errors: 0
 - Valid combinations: 25; variants written: 20
 - Range source (linked-k-math.json): "I can identify which of two objects is longer or shorter."
 - Near-duplicates of other bank questions: 0
-- Fingerprint: `34157725875a`
+- Approval: pending: no template approval recorded
+- Fingerprint: `97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68`
+- Sample variant IDs: dcss-K-math-length-name-v01, dcss-K-math-length-name-v06, dcss-K-math-length-name-v11, dcss-K-math-length-name-v15, dcss-K-math-length-name-v20
 
 **Review sample:**
 
@@ -51,7 +55,9 @@ Automated check errors: 0
 - Valid combinations: 24; variants written: 20
 - Range source (linked-k-math.json): "positions using words like above, below, beside, in front of, behind, next to"
 - Near-duplicates of other bank questions: 0
-- Fingerprint: `d1205d46b32d`
+- Approval: pending: no template approval recorded
+- Fingerprint: `3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b`
+- Sample variant IDs: dcss-K-math-position-describe-v01, dcss-K-math-position-describe-v06, dcss-K-math-position-describe-v11, dcss-K-math-position-describe-v15, dcss-K-math-position-describe-v20
 
 **Review sample:**
 
@@ -92,7 +98,9 @@ Automated check errors: 0
 - Valid combinations: 223; variants written: 20
 - Range source (support-1.json): "I can solve word problems to 10."
 - Near-duplicates of other bank questions: 0
-- Fingerprint: `2506e9d5c79f`
+- Approval: pending: no template approval recorded
+- Fingerprint: `747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40`
+- Sample variant IDs: dcss-1-math-birds-join-v01, dcss-1-math-birds-join-v06, dcss-1-math-birds-join-v11, dcss-1-math-birds-join-v15, dcss-1-math-birds-join-v20
 
 **Review sample:**
 
@@ -133,7 +141,9 @@ Automated check errors: 0
 - Valid combinations: 8; variants written: 8
 - Range source (support-5.json): "I can use strategies to solve addition problems within 20."
 - Near-duplicates of other bank questions: 0
-- Fingerprint: `36b840a67520`
+- Approval: pending: no template approval recorded
+- Fingerprint: `c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d`
+- Sample variant IDs: dcss-2-math-make-ten-v01, dcss-2-math-make-ten-v03, dcss-2-math-make-ten-v05, dcss-2-math-make-ten-v06, dcss-2-math-make-ten-v08
 
 **Review sample:**
 
@@ -162,7 +172,9 @@ Automated check errors: 0
 - Valid combinations: 181119; variants written: 20
 - Range source (support-10.json): "I can add and subtract within 1,000 fluently (3.PAR.2.1)"
 - Near-duplicates of other bank questions: 0
-- Fingerprint: `133fd57bcba2`
+- Approval: pending: no template approval recorded
+- Fingerprint: `3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78`
+- Sample variant IDs: dcss-3-math-add-context-v01, dcss-3-math-add-context-v06, dcss-3-math-add-context-v11, dcss-3-math-add-context-v15, dcss-3-math-add-context-v20
 
 **Review sample:**
 
@@ -203,7 +215,9 @@ Automated check errors: 0
 - Valid combinations: 26243; variants written: 20
 - Range source (support-15.json): "I can read and write multi-digit numbers to the hundred thousands place using base 10 numerals and expanded form"
 - Near-duplicates of other bank questions: 0
-- Fingerprint: `95d004b2b9bf`
+- Approval: pending: no template approval recorded
+- Fingerprint: `40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193`
+- Sample variant IDs: dcss-4-math-expanded-form-v01, dcss-4-math-expanded-form-v06, dcss-4-math-expanded-form-v11, dcss-4-math-expanded-form-v15, dcss-4-math-expanded-form-v20
 
 **Review sample:**
 
@@ -244,7 +258,9 @@ Automated check errors: 0
 - Valid combinations: 23; variants written: 20
 - Range source (support-20.json): "I can find the volume of a rectangular prism by counting cubes or using a formula."
 - Near-duplicates of other bank questions: 0
-- Fingerprint: `0403c8a24f2b`
+- Approval: pending: no template approval recorded
+- Fingerprint: `856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755`
+- Sample variant IDs: dcss-5-math-volume-layers-v01, dcss-5-math-volume-layers-v06, dcss-5-math-volume-layers-v11, dcss-5-math-volume-layers-v15, dcss-5-math-volume-layers-v20
 
 **Review sample:**
 

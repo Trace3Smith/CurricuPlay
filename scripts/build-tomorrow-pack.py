@@ -11,6 +11,8 @@ def write(p,v):(ROOT/p).write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n
 CUTOFF='2026-09-13'; PACK='DCSS Tomorrow Classroom Pack - 2026-09-14'
 cs=read('content/tomorrow/candidates.json');curr={r['id']:r for r in read('src/data/curriculum.json')};errors=[]
 retained=[c for c in cs if c['decision']=='retained'];ids=set();norms=set();near=[]
+# Template variants share their parent's family: one tile at most, and no duplicate comparisons among them.
+def family(q):return q.get('templateParentId') or q['id']
 def check(ok,msg):
  if not ok:errors.append(msg)
 for c in cs:
@@ -34,20 +36,23 @@ for c in cs:
  key=(c['grade'],re.sub(r'\s+',' ',c['question'].lower()).strip());check(key not in norms,ident+': duplicate wording');norms.add(key)
 for i,a in enumerate(retained):
  for b in retained[i+1:]:
-  if a['grade']!=b['grade']:continue
+  # Variants of one template differ only in their numbers or objects by design; compare across families only.
+  if a['grade']!=b['grade'] or family(a)==family(b):continue
   norm=lambda q:re.sub(r'\d+','#',re.sub(r'\s+',' ',q.lower()))
   ratio=SequenceMatcher(None,norm(a['question']),norm(b['question'])).ratio()
   if ratio>=.80:near.append({'ids':[a['id'],b['id']],'similarity':round(ratio,3)})
 check(not near,'Unresolved near-duplicate candidates')
 # Maximum bipartite assignment mirrors the shared engine; Review cannot double-count.
+# Matching is by family (template variants share their parent's), so a template covers one tile at most.
 def plan(qs):
  slots=[(s,d,i) for s in ['Literacy','Math','Science','Social Studies','Review'] for d in [1,2,3] for i in [0,1]];owners={}
  def match(n,seen):
   s,d,_=slots[n]
   for q in qs:
-   if q['difficulty']!=d or (s!='Review' and q['subject']!=s) or q['id'] in seen:continue
-   seen.add(q['id']);prev=owners.get(q['id'])
-   if prev is None or match(prev,seen):owners[q['id']]=n;return True
+   f=family(q)
+   if q['difficulty']!=d or (s!='Review' and q['subject']!=s) or f in seen:continue
+   seen.add(f);prev=owners.get(f)
+   if prev is None or match(prev,seen):owners[f]=n;return True
   return False
  for n in range(30):match(n,set())
  return len(owners),[{'subject':s,'difficulty':d,'missing':sum(n not in owners.values() for n,x in enumerate(slots) if x[:2]==(s,d))} for s in ['Literacy','Math','Science','Social Studies','Review'] for d in [1,2,3] if any(n not in owners.values() for n,x in enumerate(slots) if x[:2]==(s,d))]

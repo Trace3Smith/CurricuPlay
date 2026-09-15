@@ -1,5 +1,5 @@
 """Offline, deterministic import. No network or AI calls; the workbook owns timing."""
-import json, re, hashlib
+import json, re, hashlib, sys
 from pathlib import Path
 from datetime import date
 ROOT=Path(__file__).resolve().parents[1]
@@ -124,6 +124,19 @@ def main():
   if q['id'] in withdrawn:
    assert withdrawn[q['id']]['question']==q, 'Withdrawn snapshot is stale'
  questions=[q for q in questions if q['id'] not in withdrawn]
+ if '--with-templates' in sys.argv:
+  # Opt-in: merge staged template variants. Each inherits its parent's curriculum mapping, evidence and materials
+  # audit, so a variant whose parent was withdrawn, needs materials, or has since been remapped is refused.
+  inherited=['grade','subject','difficulty','standard','standardSource','weekIntroduced','source','curriculumId','curriculumIds','sourceUrl',
+   'unit','session','evidence','alignedWeeks','teacherRead','reviewQuestion','requiresExternalClassroomMaterial','questionType']
+  parents={q['id']:q for q in questions}
+  for v in read(ROOT/'content/templates/pilot-variants.json'):
+   parent=parents.get(v['templateParentId'])
+   assert parent, f'Template variant {v["id"]}: parent missing or withdrawn'
+   assert audits[parent['id']]['requiresExternalClassroomMaterial'] is False and not parent.get('teacherSetup'), f'Template variant {v["id"]}: parent is not self-contained'
+   stale=[k for k in inherited if v.get(k)!=parent.get(k)]
+   assert not stale, f'Template variant {v["id"]} is stale ({", ".join(stale)} differ from parent); re-run expand-templates.py'
+   questions.append(v)
  assert len({q['id'] for q in questions})==len(questions)
  write(ROOT/'src/data/replacementQuestionIds.json',[key for key,audit in audits.items() if audit['resolution']=='replaced'])
  write(ROOT/'src/data/curriculum.json',records);write(ROOT/'src/data/questions.json',questions)
