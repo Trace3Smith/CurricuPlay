@@ -184,8 +184,8 @@
     "grade": "K",
     "subject": "Math",
     "difficulty": 2,
-    "question": "A bear is behind a chair. What word tells where the bear is?",
-    "answer": "Behind.",
+    "question": "A bear is behind a chair. Where is the chair?",
+    "answer": "In front of the bear.",
     "standard": "K.GSR.8.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
     "weekIntroduced": "2026-08-10",
@@ -222,7 +222,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "8c50219b8ec84c5a1f0e35625c6bc9057375d0ba7203fd4b5a8e59225e032671"
+    "auditFingerprint": "f23a6c22d40f06247c0d7dd1bf4f869eaaf77f759ace0c57f0d6f25565d23a0d"
   },
   {
     "id": "tomorrow-dcss-K-math-position-correct",
@@ -1957,7 +1957,7 @@
     "grade": "2",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "The tiny box was so small it fit in my hand. What does “tiny” mean?",
+    "question": "The tiny box fit in the palm of my hand. What does “tiny” mean?",
     "answer": "Very small.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
@@ -1993,7 +1993,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "215a4f744ba86868ea50260f60d86b27975f14b72ea90531135a8b8bab09f991"
+    "auditFingerprint": "8d53490d5fdaf460ec8cde3341bc94df105872be0fcce82a91f936fe3b57677c"
   },
   {
     "id": "tomorrow-dcss-2-literacy-context-weary",
@@ -3763,8 +3763,8 @@
     "grade": "4",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "“We mend torn books and replace broken covers.” Choose a title: Caring for Books or Making Lunch.",
-    "answer": "Caring for Books.",
+    "question": "“We mend torn books and replace broken covers.” Choose a title: Caring for Books or Fixing Covers.",
+    "answer": "Caring for Books. Fixing covers is only one detail.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
     "weekIntroduced": "2026-08-31",
@@ -3799,15 +3799,15 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "b5089493fae04a3bf83685f14b39c6c75f29ce16a55274c5b670d98f18dca1a5"
+    "auditFingerprint": "1d560334fa512d9153686af0631a3516be140a06caf38d6a558f3ae1557b7162"
   },
   {
     "id": "tomorrow-dcss-4-literacy-main-unrelated",
     "grade": "4",
     "subject": "Literacy",
     "difficulty": 2,
-    "question": "A paragraph explains how students care for a garden. Which detail fits: students water seedlings, or the bus is yellow?",
-    "answer": "Students water seedlings.",
+    "question": "A paragraph explains how students care for a garden. Which detail belongs: students water the seedlings, or the garden has a wooden fence?",
+    "answer": "Students water the seedlings. The fence is about the garden, not about caring for it.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
     "weekIntroduced": "2026-08-31",
@@ -3842,7 +3842,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "3a18d1a2d0cfa39b638ed7d4a437c73270c308f98b0d486662a6364181ad3420"
+    "auditFingerprint": "8da3c6a5c8dc4e3e970af683858e0d3c8c147f89e94faeca814d7ba503c8ecd1"
   },
   {
     "id": "tomorrow-dcss-4-literacy-main-build",
@@ -4021,8 +4021,8 @@
     "grade": "5",
     "subject": "Math",
     "difficulty": 1,
-    "question": "A prism’s volume is counted using unit cubes. Which label fits its volume: units or cubic units?",
-    "answer": "Cubic units.",
+    "question": "Jo counts the cubes that fill a prism and gets 24. Which label fits: 24 units or 24 cubic units?",
+    "answer": "24 cubic units.",
     "standard": "5.GSR.8.4",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
     "weekIntroduced": "2026-08-24",
@@ -4057,7 +4057,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "da1e53d40247b0519c1160e705274177bb94f5219c31a375fa001356a6dc70b9"
+    "auditFingerprint": "dd1a28d4c6d1fa78c944ce7eea373afa1c4bc56687be5143dfbdfe8bed75410d"
   },
   {
     "id": "tomorrow-dcss-5-math-volume-compare",
@@ -6200,7 +6200,7 @@
     "grade": "4",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "What was a colonist who remained loyal to the British king called?",
+    "question": "What was a colonist who stayed on the British king’s side called?",
     "answer": "A Loyalist.",
     "standard": "SS4H1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
@@ -6244,7 +6244,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "738421a50ec1a524d4d8c703878edf68677f2ab65ec8072df3658e8a845656f3"
+    "auditFingerprint": "fd27a36fe676b4d83223687e11b5fd941770f0b38ad3a90c8155d1531adcb9fd"
   },
   {
     "id": "tomorrow-4-social-studies-tax",

@@ -20,7 +20,7 @@ Automated checks plus assistant editorial review authorized for this pack; not h
 
 ## Grade 2
 
-- **Literacy, 1 pt:** The tiny box was so small it fit in my hand. What does “tiny” mean? → **Very small.**
+- **Literacy, 1 pt:** The tiny box fit in the palm of my hand. What does “tiny” mean? → **Very small.**
 - **Math, 1 pt:** Double 6. What number do you get? → **12.**
 - **Science, 1 pt:** Is the Sun a star? → **Yes.**
 - **Social Studies, 1 pt:** Who leads a city: a mayor or a governor? → **A mayor.**

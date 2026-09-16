@@ -29,13 +29,14 @@ def gen_length(t):
    if hi-lo>=2 and hi>=1.5*lo:
     out.append(({'a':a,'b':b,'longerLetter':'A' if a>b else 'B'},f'Which line is longer? A: {bar(a)} B: {bar(b)}','A.' if a>b else 'B.'))
  return out
+# The prompt states one position and asks for the reverse, so the answer word is never in the question.
+OPPOSITE={'above':'below','below':'above','in front of':'behind','behind':'in front of'}
 def gen_position(t):
  out=[]
  for w in t['params']['word']['list']:
   for obj,ref in t['params']['scene']['byWord'][w]:
-   q=f'{article(obj).capitalize()} {obj} is {w} {article(ref)} {ref}. What word tells where the {obj} is?'
-   a={'beside':'Beside (next to is also correct).','next to':'Next to (beside is also correct).'}.get(w,w.capitalize()+'.')
-   out.append(({'word':w,'object':obj,'reference':ref},q,a))
+   q=f'{article(obj).capitalize()} {obj} is {w} {article(ref)} {ref}. Where is the {ref}?'
+   out.append(({'word':w,'object':obj,'reference':ref},q,f'{OPPOSITE[w].capitalize()} the {obj}.'))
  return out
 def gen_join(t):
  p=t['params'];out=[]
@@ -97,14 +98,14 @@ def ver_length(q,a):
  if hi-lo<2 or hi<1.5*lo:e.append('difference not obvious enough for 1 point')
  if a!=('A.' if x>y else 'B.'):e.append('wrong answer')
  return e
-TAUGHT=['above','below','beside','in front of','behind','next to']
 def ver_position(q,a):
- m=re.fullmatch(r'(A|An) ([a-z ]+?) is (above|below|beside|in front of|behind|next to) (a|an) ([a-z ]+)\. What word tells where the \2 is\?',q)
+ m=re.fullmatch(r'(A|An) ([a-z ]+?) is (above|below|in front of|behind) (a|an) ([a-z ]+)\. Where is the \5\?',q)
  if not m:return ['unexpected wording or untaught positional word']
  e=[]
  if m[1].lower()!=article(m[2]) or m[4]!=article(m[5]):e.append('wrong article')
  if len(re.findall(r'\b(?:above|below|beside|in front of|behind|next to)\b',q))!=1:e.append('more than one positional word')
- if not a.startswith(m[3].capitalize()):e.append('answer does not match the positional word')
+ if a!=f'{OPPOSITE[m[3]].capitalize()} the {m[2]}.':e.append('answer is not the opposite position of the stated one')
+ if re.search(r'\b'+re.escape(a.split()[0].lower())+r'\b',q,re.I):e.append('answer word appears in the question')
  return e
 def ver_join(q,a):
  m=re.fullmatch(r'([A-Z][a-z]+) ([a-z]+) [a-z ]+\. ([A-Z][a-z]+) more join them\. How many \2 are there now\?',q)

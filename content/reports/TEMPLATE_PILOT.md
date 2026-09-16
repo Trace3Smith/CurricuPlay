@@ -13,7 +13,7 @@ To approve a template, add an entry to content/templates/template-approvals.json
 - Range source (linked-k-math.json): "I can identify which of two objects is longer or shorter."
 - Near-duplicates of other bank questions: 0
 - Approval: pending: no template approval recorded
-- Fingerprint: `97452a8b3cce4165f3f7f6fc389f5bbde25069f393e7d6d1ee393e7aa4bd3a68`
+- Fingerprint: `8030675cbfa525d30ca3ef9ecad91a98c599efa14b03a2f789dd71975bf4d391`
 - Sample variant IDs: dcss-K-math-length-name-v01, dcss-K-math-length-name-v06, dcss-K-math-length-name-v11, dcss-K-math-length-name-v15, dcss-K-math-length-name-v20
 
 **Review sample:**
@@ -51,44 +51,40 @@ To approve a template, add an entry to content/templates/template-approvals.json
 
 ## tpl-K-math-position-describe
 
-- Parent (K, 2 pt, K.GSR.8.2): A bear is behind a chair. What word tells where the bear is? → **Behind.**
-- Valid combinations: 24; variants written: 20
+- Parent (K, 2 pt, K.GSR.8.2): A bear is behind a chair. Where is the chair? → **In front of the bear.**
+- Valid combinations: 16; variants written: 16
 - Range source (linked-k-math.json): "positions using words like above, below, beside, in front of, behind, next to"
 - Near-duplicates of other bank questions: 0
 - Approval: pending: no template approval recorded
-- Fingerprint: `3688d6e05087e31aa6a188b7eac2f822ffcead98de234ff50d63e330fd5f508b`
-- Sample variant IDs: dcss-K-math-position-describe-v01, dcss-K-math-position-describe-v06, dcss-K-math-position-describe-v11, dcss-K-math-position-describe-v15, dcss-K-math-position-describe-v20
+- Fingerprint: `6091aa31bdda8b6624b523095c62efe980d824e56d4c82aac1548375792499cd`
+- Sample variant IDs: dcss-K-math-position-describe-v01, dcss-K-math-position-describe-v05, dcss-K-math-position-describe-v09, dcss-K-math-position-describe-v12, dcss-K-math-position-describe-v16
 
 **Review sample:**
 
-1. A kite is above a house. What word tells where the kite is? → **Above.**
-2. A book is next to a lamp. What word tells where the book is? → **Next to (beside is also correct).**
-3. A ball is in front of a box. What word tells where the ball is? → **In front of.**
-4. A shoe is below a bed. What word tells where the shoe is? → **Below.**
-5. A tree is behind a house. What word tells where the tree is? → **Behind.**
+1. A kite is above a house. Where is the house? → **Below the kite.**
+2. A lamp is above a table. Where is the table? → **Below the lamp.**
+3. A clock is above a door. Where is the door? → **Below the clock.**
+4. A ball is in front of a box. Where is the box? → **Behind the ball.**
+5. A bike is in front of a tree. Where is the tree? → **Behind the bike.**
 
 <details><summary>All variants</summary>
 
-- `dcss-K-math-position-describe-v01` A kite is above a house. What word tells where the kite is? → Above.
-- `dcss-K-math-position-describe-v02` A toy is behind a box. What word tells where the toy is? → Behind.
-- `dcss-K-math-position-describe-v03` A cat is below a chair. What word tells where the cat is? → Below.
-- `dcss-K-math-position-describe-v04` A dog is beside a doghouse. What word tells where the dog is? → Beside (next to is also correct).
-- `dcss-K-math-position-describe-v05` A dog is in front of a door. What word tells where the dog is? → In front of.
-- `dcss-K-math-position-describe-v06` A book is next to a lamp. What word tells where the book is? → Next to (beside is also correct).
-- `dcss-K-math-position-describe-v07` A lamp is above a table. What word tells where the lamp is? → Above.
-- `dcss-K-math-position-describe-v08` A dog is behind a fence. What word tells where the dog is? → Behind.
-- `dcss-K-math-position-describe-v09` A rug is below a desk. What word tells where the rug is? → Below.
-- `dcss-K-math-position-describe-v10` A cup is beside a plate. What word tells where the cup is? → Beside (next to is also correct).
-- `dcss-K-math-position-describe-v11` A ball is in front of a box. What word tells where the ball is? → In front of.
-- `dcss-K-math-position-describe-v12` A bike is next to a tree. What word tells where the bike is? → Next to (beside is also correct).
-- `dcss-K-math-position-describe-v13` A clock is above a door. What word tells where the clock is? → Above.
-- `dcss-K-math-position-describe-v14` A cat is behind a curtain. What word tells where the cat is? → Behind.
-- `dcss-K-math-position-describe-v15` A shoe is below a bed. What word tells where the shoe is? → Below.
-- `dcss-K-math-position-describe-v16` A block is beside a crayon box. What word tells where the block is? → Beside (next to is also correct).
-- `dcss-K-math-position-describe-v17` A car is in front of a house. What word tells where the car is? → In front of.
-- `dcss-K-math-position-describe-v18` A frog is next to a rock. What word tells where the frog is? → Next to (beside is also correct).
-- `dcss-K-math-position-describe-v19` A balloon is above a tree. What word tells where the balloon is? → Above.
-- `dcss-K-math-position-describe-v20` A tree is behind a house. What word tells where the tree is? → Behind.
+- `dcss-K-math-position-describe-v01` A kite is above a house. Where is the house? → Below the kite.
+- `dcss-K-math-position-describe-v02` A cat is behind a curtain. Where is the curtain? → In front of the cat.
+- `dcss-K-math-position-describe-v03` A cat is below a chair. Where is the chair? → Above the cat.
+- `dcss-K-math-position-describe-v04` A car is in front of a house. Where is the house? → Behind the car.
+- `dcss-K-math-position-describe-v05` A lamp is above a table. Where is the table? → Below the lamp.
+- `dcss-K-math-position-describe-v06` A toy is behind a box. Where is the box? → In front of the toy.
+- `dcss-K-math-position-describe-v07` A rug is below a desk. Where is the desk? → Above the rug.
+- `dcss-K-math-position-describe-v08` A dog is in front of a door. Where is the door? → Behind the dog.
+- `dcss-K-math-position-describe-v09` A clock is above a door. Where is the door? → Below the clock.
+- `dcss-K-math-position-describe-v10` A tree is behind a house. Where is the house? → In front of the tree.
+- `dcss-K-math-position-describe-v11` A shoe is below a bed. Where is the bed? → Above the shoe.
+- `dcss-K-math-position-describe-v12` A ball is in front of a box. Where is the box? → Behind the ball.
+- `dcss-K-math-position-describe-v13` A balloon is above a tree. Where is the tree? → Below the balloon.
+- `dcss-K-math-position-describe-v14` A dog is behind a fence. Where is the fence? → In front of the dog.
+- `dcss-K-math-position-describe-v15` A ball is below a table. Where is the table? → Above the ball.
+- `dcss-K-math-position-describe-v16` A bike is in front of a tree. Where is the tree? → Behind the bike.
 
 </details>
 
@@ -99,7 +95,7 @@ To approve a template, add an entry to content/templates/template-approvals.json
 - Range source (support-1.json): "I can solve word problems to 10."
 - Near-duplicates of other bank questions: 0
 - Approval: pending: no template approval recorded
-- Fingerprint: `747c0793ab4fc9c8d3a724fcb6432897ef04c65540ccd956e4208e72e0617c40`
+- Fingerprint: `3d3bc33520f98c9460b80d39d4bf3a1554eb6a5a03bddea3ffcd25ca54998020`
 - Sample variant IDs: dcss-1-math-birds-join-v01, dcss-1-math-birds-join-v06, dcss-1-math-birds-join-v11, dcss-1-math-birds-join-v15, dcss-1-math-birds-join-v20
 
 **Review sample:**
@@ -142,7 +138,7 @@ To approve a template, add an entry to content/templates/template-approvals.json
 - Range source (support-5.json): "I can use strategies to solve addition problems within 20."
 - Near-duplicates of other bank questions: 0
 - Approval: pending: no template approval recorded
-- Fingerprint: `c18f41d3b59edbff61d6edef64e89aa5d67bb86d1903dc6669b5d291bd818c3d`
+- Fingerprint: `8faf7c2620be564191fc8e9bf1c56535819ce016c84d80eeaef21714db60f8ad`
 - Sample variant IDs: dcss-2-math-make-ten-v01, dcss-2-math-make-ten-v03, dcss-2-math-make-ten-v05, dcss-2-math-make-ten-v06, dcss-2-math-make-ten-v08
 
 **Review sample:**
@@ -173,7 +169,7 @@ To approve a template, add an entry to content/templates/template-approvals.json
 - Range source (support-10.json): "I can add and subtract within 1,000 fluently (3.PAR.2.1)"
 - Near-duplicates of other bank questions: 0
 - Approval: pending: no template approval recorded
-- Fingerprint: `3334bebd5323e8a6f6b0cc4eb4438ec18738bbcb4229be585035a5595dfa1a78`
+- Fingerprint: `04142a1967e198502b991df7b993f2c758e5e58986b5d9d5b31820439cd0ea0f`
 - Sample variant IDs: dcss-3-math-add-context-v01, dcss-3-math-add-context-v06, dcss-3-math-add-context-v11, dcss-3-math-add-context-v15, dcss-3-math-add-context-v20
 
 **Review sample:**
@@ -216,7 +212,7 @@ To approve a template, add an entry to content/templates/template-approvals.json
 - Range source (support-15.json): "I can read and write multi-digit numbers to the hundred thousands place using base 10 numerals and expanded form"
 - Near-duplicates of other bank questions: 0
 - Approval: pending: no template approval recorded
-- Fingerprint: `40be510e32634708b4281c26adab65fcc34599aa850010be48d05e6fe89d1193`
+- Fingerprint: `f4837aada4a196e33d11e7b8b9a9cb6656b0d44f7a6afb7ad8cc702ce7317f91`
 - Sample variant IDs: dcss-4-math-expanded-form-v01, dcss-4-math-expanded-form-v06, dcss-4-math-expanded-form-v11, dcss-4-math-expanded-form-v15, dcss-4-math-expanded-form-v20
 
 **Review sample:**
@@ -259,7 +255,7 @@ To approve a template, add an entry to content/templates/template-approvals.json
 - Range source (support-20.json): "I can find the volume of a rectangular prism by counting cubes or using a formula."
 - Near-duplicates of other bank questions: 0
 - Approval: pending: no template approval recorded
-- Fingerprint: `856f7004a72852498d7a55827f95877036d687c694a7af1073ee2ee88af8e755`
+- Fingerprint: `b7e57b430cea27f988363781eed7b89a1dfee2b04d7dacdf4fabcb9231bc9682`
 - Sample variant IDs: dcss-5-math-volume-layers-v01, dcss-5-math-volume-layers-v06, dcss-5-math-volume-layers-v11, dcss-5-math-volume-layers-v15, dcss-5-math-volume-layers-v20
 
 **Review sample:**

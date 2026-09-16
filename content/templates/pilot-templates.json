@@ -37,19 +37,17 @@
   {
     "id": "tpl-K-math-position-describe",
     "parentQuestionId": "dcss-K-math-position-describe",
-    "question": "{Article} {object} is {word} {article} {reference}. What word tells where the {object} is?",
-    "answer": "{Word}.",
+    "question": "{Article} {object} is {word} {article} {reference}. Where is the {reference}?",
+    "answer": "{Opposite} the {object}.",
     "params": {
       "word": {
         "list": [
           "above",
           "below",
-          "beside",
           "in front of",
-          "behind",
-          "next to"
+          "behind"
         ],
-        "meaning": "the taught positional words only"
+        "meaning": "taught positional words that have an opposite; beside/next to are symmetric and cannot be flipped"
       },
       "scene": {
         "meaning": "object/reference pairs where the position makes physical sense; one list per word",
@@ -90,24 +88,6 @@
               "bed"
             ]
           ],
-          "beside": [
-            [
-              "dog",
-              "doghouse"
-            ],
-            [
-              "cup",
-              "plate"
-            ],
-            [
-              "block",
-              "crayon box"
-            ],
-            [
-              "duck",
-              "pond"
-            ]
-          ],
           "in front of": [
             [
               "car",
@@ -143,31 +123,14 @@
               "dog",
               "fence"
             ]
-          ],
-          "next to": [
-            [
-              "book",
-              "lamp"
-            ],
-            [
-              "bike",
-              "tree"
-            ],
-            [
-              "frog",
-              "rock"
-            ],
-            [
-              "bear",
-              "chair"
-            ]
           ]
         }
       }
     },
     "constraints": [
       "exactly one taught positional word in the prompt (no second clue that would change difficulty)",
-      "beside and next to mean the same thing, so the answer accepts both"
+      "the question asks where the reference object is, so the answer word is the opposite of the stated one and never appears in the prompt",
+      "only words with a clear opposite are used: above/below and in front of/behind"
     ],
     "rangeLimit": {
       "summary": "Positional words limited to the six named in the K Unit 1 success criterion.",

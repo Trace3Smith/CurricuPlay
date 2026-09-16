@@ -712,7 +712,7 @@
       [
         "context-tiny",
         1,
-        "The tiny box was so small it fit in my hand. What does “tiny” mean?",
+        "The tiny box fit in the palm of my hand. What does “tiny” mean?",
         "Very small."
       ],
       [
@@ -730,7 +730,7 @@
       [
         "context-damp",
         1,
-        "The damp towel was still a little wet. Does “damp” mean wet or dry?",
+        "The towel was still damp, so I hung it up to finish drying. Does “damp” mean a little wet or completely dry?",
         "A little wet."
       ],
       [
@@ -1396,14 +1396,14 @@
       [
         "main-title",
         1,
-        "“We mend torn books and replace broken covers.” Choose a title: Caring for Books or Making Lunch.",
-        "Caring for Books."
+        "“We mend torn books and replace broken covers.” Choose a title: Caring for Books or Fixing Covers.",
+        "Caring for Books. Fixing covers is only one detail."
       ],
       [
         "main-unrelated",
         2,
-        "A paragraph explains how students care for a garden. Which detail fits: students water seedlings, or the bus is yellow?",
-        "Students water seedlings."
+        "A paragraph explains how students care for a garden. Which detail belongs: students water the seedlings, or the garden has a wooden fence?",
+        "Students water the seedlings. The fence is about the garden, not about caring for it."
       ],
       [
         "main-build",
@@ -1555,8 +1555,8 @@
       [
         "volume-unit",
         1,
-        "A prism’s volume is counted using unit cubes. Which label fits its volume: units or cubic units?",
-        "Cubic units."
+        "Jo counts the cubes that fill a prism and gets 24. Which label fits: 24 units or 24 cubic units?",
+        "24 cubic units."
       ],
       [
         "volume-compare",

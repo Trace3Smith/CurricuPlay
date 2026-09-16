@@ -232,8 +232,8 @@
     "auditReason": "Explicit preparation instruction: Place a toy bear beside, behind, or in front of a chair; make the position clear.",
     "resolution": "replaced",
     "replacement": {
-      "question": "A bear is behind a chair. What word tells where the bear is?",
-      "answer": "Behind."
+      "question": "A bear is behind a chair. Where is the chair?",
+      "answer": "In front of the bear."
     },
     "gap": ""
   },
@@ -1445,8 +1445,8 @@
     "auditReason": "Depends on classroom/learner-specific context or drawing materials not supplied in the prompt.",
     "resolution": "replaced",
     "replacement": {
-      "question": "The class rule says, “Take turns.” What should children do?",
-      "answer": "Take turns."
+      "question": "The class rule says, “Take turns.” Ben grabs the ball from Ana. Did Ben follow the rule?",
+      "answer": "No. He should wait and take his turn."
     },
     "gap": ""
   },
@@ -3815,7 +3815,7 @@
       "grade": "2",
       "subject": "Literacy",
       "difficulty": 1,
-      "question": "The tiny box was so small it fit in my hand. What does “tiny” mean?",
+      "question": "The tiny box fit in the palm of my hand. What does “tiny” mean?",
       "answer": "Very small.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
@@ -3947,7 +3947,7 @@
       "grade": "2",
       "subject": "Literacy",
       "difficulty": 1,
-      "question": "The damp towel was still a little wet. Does “damp” mean wet or dry?",
+      "question": "The towel was still damp, so I hung it up to finish drying. Does “damp” mean a little wet or completely dry?",
       "answer": "A little wet.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit?usp=drive_link",
@@ -7419,8 +7419,8 @@
       "grade": "4",
       "subject": "Literacy",
       "difficulty": 1,
-      "question": "“We mend torn books and replace broken covers.” Choose a title: Caring for Books or Making Lunch.",
-      "answer": "Caring for Books.",
+      "question": "“We mend torn books and replace broken covers.” Choose a title: Caring for Books or Fixing Covers.",
+      "answer": "Caring for Books. Fixing covers is only one detail.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
       "weekIntroduced": "2026-08-31",
@@ -7463,8 +7463,8 @@
       "grade": "4",
       "subject": "Literacy",
       "difficulty": 2,
-      "question": "A paragraph explains how students care for a garden. Which detail fits: students water seedlings, or the bus is yellow?",
-      "answer": "Students water seedlings.",
+      "question": "A paragraph explains how students care for a garden. Which detail belongs: students water the seedlings, or the garden has a wooden fence?",
+      "answer": "Students water the seedlings. The fence is about the garden, not about caring for it.",
       "standard": null,
       "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
       "weekIntroduced": "2026-08-31",
@@ -8253,8 +8253,8 @@
       "grade": "5",
       "subject": "Math",
       "difficulty": 1,
-      "question": "A prism’s volume is counted using unit cubes. Which label fits its volume: units or cubic units?",
-      "answer": "Cubic units.",
+      "question": "Jo counts the cubes that fill a prism and gets 24. Which label fits: 24 units or 24 cubic units?",
+      "answer": "24 cubic units.",
       "standard": "5.GSR.8.4",
       "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
       "weekIntroduced": "2026-08-24",
