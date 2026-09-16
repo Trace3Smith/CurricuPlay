@@ -2559,7 +2559,7 @@
     "grade": "3",
     "subject": "Math",
     "difficulty": 3,
-    "question": "What is 268 + 157? Tell how you regrouped in one part of the addition.",
+    "question": "What is 268 + 157? Tell about one place where you regrouped.",
     "answer": "425. Regroup 15 ones as 1 ten and 5 ones, or 12 tens as 1 hundred and 2 tens.",
     "standard": "3.NR.1.1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N12",
@@ -2595,7 +2595,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "c15b027e5f937dd8697ea40b59d9340623d73b138f474f60ac60e725d275545d"
+    "auditFingerprint": "c1dce879fe364fdf1325098548ec5ea87aedd03bdb7a8399f25c6e99bec521f4"
   },
   {
     "id": "tomorrow-dcss-3-math-add-place-parts",
@@ -2688,7 +2688,7 @@
     "grade": "3",
     "subject": "Math",
     "difficulty": 3,
-    "question": "Sam says 402 − 185 = 383. Is Sam right? Work it out and tell how you can check your answer.",
+    "question": "Sam says 402 − 185 = 383. Is Sam right? How can you check?",
     "answer": "No. 402 − 185 = 217. Check: 217 + 185 = 402.",
     "standard": "3.PAR.2.1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=N13",
@@ -2724,7 +2724,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "f12a9d563d1531d5c78f8155d78dd6b6df074a82f230ca18cdefe0a3b13ad6e9"
+    "auditFingerprint": "a55e69f76b9bc0c778ca0a3a882d6418e96710d460cc3405ce68780a9239b92d"
   },
   {
     "id": "tomorrow-dcss-3-literacy-story-wanted",
@@ -2946,7 +2946,7 @@
     "grade": "3",
     "subject": "Literacy",
     "difficulty": 2,
-    "question": "The path was flooded. ___, we took another route. Use “as a result” or “first”.",
+    "question": "The path was flooded. ___, we took another route. Which fits the blank: “as a result” or “first”?",
     "answer": "As a result.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
@@ -2982,7 +2982,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "7ae4726e359021a57d0da6d229e5d42c9d34f0587ee748fd597ba939f640f314"
+    "auditFingerprint": "485f089d1cb8850936c51b8999367cf624edda348bc54e855047a677f0a9922f"
   },
   {
     "id": "tomorrow-dcss-3-literacy-transition-write",
@@ -3075,7 +3075,7 @@
     "grade": "3",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "The team practiced every day. Their passing improved. Join these ideas using “as a result.” How are the two ideas connected?",
+    "question": "The team practiced every day. Their passing improved. Join these ideas using “as a result.” How does “as a result” connect them?",
     "answer": "The team practiced every day; as a result, their passing improved. The phrase links the practice to its stated result.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
@@ -3111,7 +3111,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "b907281ae4bbb134057f38ba5b94239d032daca724cdcd0393f60274a7da6d4f"
+    "auditFingerprint": "148bc7382eb89551e811fec8598b288951971f4efcd56a2e5c6b934d6696d96f"
   },
   {
     "id": "tomorrow-dcss-4-math-digit-value",
@@ -5773,7 +5773,7 @@
     "grade": "3",
     "subject": "Social Studies",
     "difficulty": 2,
-    "question": "Name the two major U.S. mountain ranges studied in this unit.",
+    "question": "Name two major mountain ranges in the United States.",
     "answer": "The Appalachian Mountains and the Rocky Mountains.",
     "standard": "SS3G1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
@@ -5817,7 +5817,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "2817c8e5538412f96749d9ca5a7d9c9c7b583fbc3ba053f9ad36bcbd2dcd4d33"
+    "auditFingerprint": "20613e242bb2e239cc0106b830b58f7af7d4c11465b803b51b0ef4cc1871543b"
   },
   {
     "id": "tomorrow-3-social-studies-classify",
@@ -5918,7 +5918,7 @@
     "grade": "3",
     "subject": "Science",
     "difficulty": 1,
-    "question": "A rock feels smooth. Is “smooth” describing its color or texture?",
+    "question": "A rock feels smooth. Does “smooth” describe its color or its texture?",
     "answer": "Texture.",
     "standard": "S3E1a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
@@ -5954,7 +5954,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "a7b685a54e9c00086356c1f08e5d866a139b872bbdf24bc2d8af58ba8cd743d3"
+    "auditFingerprint": "cdbf6e7e30ae3fae2ae2655a0d2c05b984090f36af9e3b979aba209bd4bb75d2"
   },
   {
     "id": "tomorrow-3-science-scratch",
@@ -6106,8 +6106,8 @@
     "grade": "3",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Two rocks are both gray. Does that mean all their other properties are the same? Why or why not?",
-    "answer": "No. They may differ in texture or hardness; compare more than one property.",
+    "question": "Two rocks are both gray. What does that tell you about their other properties?",
+    "answer": "Only that they share a color. They may still differ in texture or hardness, so compare more than one property.",
     "standard": "S3E1a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
     "weekIntroduced": "2026-08-10",
@@ -6142,7 +6142,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "b88c8307653a6216a566d0aaeeac084791dd350f29448fa472d256b8f14a5335"
+    "auditFingerprint": "a2622398d3a10b59c8e32912a0046125384b9f53e8c1ccf1ee1b3824369b7181"
   },
   {
     "id": "tomorrow-4-social-studies-independence",

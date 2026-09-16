@@ -989,13 +989,13 @@
       [
         "subtract-regroup",
         2,
-        "Take 118 away from 432. What remains?",
+        "Take 118 away from 432. What is left?",
         "314."
       ],
       [
         "subtract-error",
         3,
-        "Sam says 402 − 185 = 383. Is Sam correct? Solve and explain how to check.",
+        "Sam says 402 − 185 = 383. Is Sam right? How can you check?",
         "No. 402 − 185 = 217. Check: 217 + 185 = 402."
       ],
       [
@@ -1081,13 +1081,13 @@
       [
         "transition-result",
         2,
-        "The path was flooded. ___, we took another route. Use “as a result” or “first”.",
+        "The path was flooded. ___, we took another route. Which fits the blank: “as a result” or “first”?",
         "As a result."
       ],
       [
         "transition-write",
         3,
-        "Explain making a paper drawing in three steps. Use first, then, and finally.",
+        "Tell how to draw a picture in three steps. Use first, then, and finally.",
         "Teacher checks: three logically ordered steps, with first, then, and finally used appropriately."
       ],
       [
@@ -1105,7 +1105,7 @@
       [
         "transition-cause",
         3,
-        "The team practiced every day. Their passing improved. Connect these ideas with “as a result” and explain the relationship.",
+        "The team practiced every day. Their passing improved. Join these ideas using “as a result.” How does “as a result” connect them?",
         "The team practiced every day; as a result, their passing improved. The phrase links the practice to its stated result."
       ]
     ]
@@ -1150,7 +1150,7 @@
       [
         "rock-compare-notes",
         2,
-        "Notes say sample A is gray and shiny; B is gray and dull. Name one similarity and one difference.",
+        "Rock A is gray and shiny. Rock B is gray and dull. Name one way they are alike and one way they are different.",
         "Both are gray. A is shiny while B is dull."
       ],
       [
