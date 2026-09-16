@@ -3935,7 +3935,7 @@
     "grade": "5",
     "subject": "Math",
     "difficulty": 2,
-    "question": "A rectangular prism has 4 layers of 6 unit cubes. What is its volume?",
+    "question": "A rectangular prism has 4 layers, with 6 unit cubes in each layer. What is its volume?",
     "answer": "24 cubic units.",
     "standard": "5.GSR.8.4",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
@@ -3971,14 +3971,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "a3e160b5d6aa571409f212cee7564ab48d18085a8234b8e296235d395a1bfa42"
+    "auditFingerprint": "ce1df5d1cc4810a997b8353fa25824ec463aa990e5e3b10c5fa01adbd86b9730"
   },
   {
     "id": "tomorrow-dcss-5-math-volume-dimensions",
     "grade": "5",
     "subject": "Math",
     "difficulty": 3,
-    "question": "A rectangular prism is 5 units long, 3 units wide, and 2 units high. Find its volume and explain.",
+    "question": "A rectangular prism is 5 units long, 3 units wide, and 2 units high. What is its volume, and how did you find it?",
     "answer": "30 cubic units: 5 × 3 × 2 = 30. Each of two layers has 15 unit cubes.",
     "standard": "5.GSR.8.4",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
@@ -4014,7 +4014,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "d834b163ccb43e0c40e49ceed763eb19a92c3d0a797e73af2ab147bf91bd14d9"
+    "auditFingerprint": "0edf74122c6704b0869e154fd0bfdc108a2b342a10dbe5eda8ba5b1ca1b2899d"
   },
   {
     "id": "tomorrow-dcss-5-math-volume-unit",
@@ -4107,7 +4107,7 @@
     "grade": "5",
     "subject": "Math",
     "difficulty": 3,
-    "question": "For a 4 by 3 by 2 prism, Jo adds 4 + 3 + 2 and gets a volume of 9. Why doesn’t adding the lengths count the cubes? How would you find the volume?",
+    "question": "A prism is 4 by 3 by 2. Jo adds 4 + 3 + 2 and says the volume is 9. What is the volume, and why is adding wrong?",
     "answer": "Each layer has 4 × 3 = 12 cubes, and there are 2 layers. The volume is 24 cubic units; adding the edge lengths does not count the cubes.",
     "standard": "5.GSR.8.4",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N12",
@@ -4143,7 +4143,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "9394f99d6294950cb9973557729e094b1f3d5a9d5d3efb4c2470b22e97a6a655"
+    "auditFingerprint": "61e8d2cec83fdddfe99fba4a0b0d4cf11cff59bd6a672969a25b34bc85362739"
   },
   {
     "id": "tomorrow-dcss-5-math-multiply-ten",
@@ -4236,7 +4236,7 @@
     "grade": "5",
     "subject": "Math",
     "difficulty": 3,
-    "question": "A student writes 42 × 13 = 42 × 10 + 42 × 2. Which part needs to change, and why? What is 42 × 13?",
+    "question": "A student writes 42 × 13 = 42 × 10 + 42 × 2. Which part is wrong, and what is 42 × 13?",
     "answer": "13 = 10 + 3, not 10 + 2. The correct product is 420 + 126 = 546.",
     "standard": "5.NR.2.1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=N15",
@@ -4272,7 +4272,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "bac3ebcd192079db6f946c4cb30c216e9b4abbf84ce0d9623f0e3ab2467ac3a5"
+    "auditFingerprint": "ed584812dec5d333ceb7fe5efb5075e4d3da5338b36e432150433b306b27e6f5"
   },
   {
     "id": "tomorrow-dcss-5-literacy-setting-evidence",
@@ -7158,7 +7158,7 @@
     "grade": "5",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "Name one freedom listed as a right of citizens.",
+    "question": "Name one freedom that citizens have as a right.",
     "answer": "Freedom of speech or freedom of religion.",
     "standard": "SS5CG1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=P12",
@@ -7206,7 +7206,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "7577b01f6bfba35dd3075f9038cb9d647b657e306ef68c1876ea8f58cad83fa8"
+    "auditFingerprint": "a54a74e9911336b7d2806325ad80130ca34e778fb29cb44472517d603b010c99"
   },
   {
     "id": "tomorrow-5-social-studies-difference",

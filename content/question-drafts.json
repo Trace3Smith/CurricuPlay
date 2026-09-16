@@ -1549,7 +1549,7 @@
       [
         "volume-dimensions",
         3,
-        "A rectangular prism is 5 units long, 3 units wide, and 2 units high. Find its volume and explain.",
+        "A rectangular prism is 5 units long, 3 units wide, and 2 units high. What is its volume, and how did you find it?",
         "30 cubic units: 5 × 3 × 2 = 30. Each of two layers has 15 unit cubes."
       ],
       [
@@ -1567,7 +1567,7 @@
       [
         "volume-error",
         3,
-        "For a 4 by 3 by 2 prism, Jo adds 4 + 3 + 2 and says its volume is 9. Explain why this does not count the cubes correctly.",
+        "A prism is 4 by 3 by 2. Jo adds 4 + 3 + 2 and says the volume is 9. What is the volume, and why is adding wrong?",
         "Each layer has 4 × 3 = 12 cubes, and there are 2 layers. The volume is 24 cubic units; adding the edge lengths does not count the cubes."
       ]
     ]
@@ -1598,25 +1598,25 @@
       [
         "multiply-error",
         3,
-        "A student writes 42 × 13 = 42 × 10 + 42 × 2. What is wrong? Find the correct product.",
+        "A student writes 42 × 13 = 42 × 10 + 42 × 2. Which part is wrong, and what is 42 × 13?",
         "13 = 10 + 3, not 10 + 2. The correct product is 420 + 126 = 546."
       ],
       [
         "multiply-hundred",
         1,
-        "Complete the product: 21 × 100.",
+        "Multiply 21 by 100. What is the product?",
         "2,100."
       ],
       [
         "multiply-area-parts",
         2,
-        "To compute 36 × 12, the first partial product is 360. What is the other partial product and the total?",
+        "For 36 × 12, one partial product is 360. What is the other partial product, and what is the total?",
         "72; total 432."
       ],
       [
         "multiply-estimate-check",
         3,
-        "Someone says 48 × 21 = 148. Explain why that is too small, then calculate the product.",
+        "Someone says 48 × 21 = 148. Why is that too small, and what is the correct product?",
         "Even 48 × 20 is 960, so 148 is too small. 960 + 48 = 1,008."
       ]
     ]
@@ -1635,13 +1635,13 @@
       [
         "setting-evidence",
         1,
-        "“At dawn, Jo waited beside the school gate.” Identify the setting details.",
+        "“At dawn, Jo waited beside the school gate.” When and where does this happen?",
         "Time: dawn. Place: beside the school gate."
       ],
       [
         "character-action",
         2,
-        "“Even after missing three shots, Maya kept practicing.” What does this action suggest about Maya? Cite evidence.",
+        "“Even after missing three shots, Maya kept practicing.” What does this tell you about Maya? Which words help you know?",
         "She is persistent or determined; she keeps practicing after missing three shots."
       ],
       [
@@ -1698,13 +1698,13 @@
       [
         "theme-help",
         2,
-        "Sam tried alone and struggled. After asking for help, Sam succeeded. What possible theme does this suggest?",
+        "Sam tried alone and struggled. After asking for help, Sam succeeded. What theme, or lesson about life, could this story teach?",
         "Asking for help can help us succeed. Accept another theme supported by the events."
       ],
       [
         "theme-evidence",
         3,
-        "Rae hid every mistake. After a friend shared a mistake, Rae admitted one and learned from it. Explain a possible theme using Rae’s change.",
+        "Rae hid every mistake. After a friend shared a mistake, Rae admitted one and learned from it. What theme fits this story? How does Rae’s change help show it?",
         "Being honest about mistakes can help us learn. Rae changes from hiding mistakes to admitting one and learning from it."
       ],
       [
@@ -1716,13 +1716,13 @@
       [
         "theme-sharing",
         2,
-        "Dee kept all the supplies and could not finish alone. Later, Dee shared and the group finished together. Suggest a supported theme.",
+        "Dee kept all the supplies and could not finish alone. Later, Dee shared and the group finished together. What theme fits what happened?",
         "Sharing and working together can help people succeed. Accept another theme supported by the events."
       ],
       [
         "theme-reject",
         3,
-        "Jo mocked a beginner, then struggled with a new skill and became kinder. Does “Winning is everything” fit Jo’s change? Explain a better theme.",
+        "Jo mocked a beginner, then struggled with a new skill and became kinder. Does “Winning is everything” fit this story? What theme fits better, and why?",
         "No. A better theme is that experiencing difficulty can help us understand and treat others kindly; Jo changes from mocking to kindness."
       ]
     ]
@@ -1741,7 +1741,7 @@
       [
         "earth-processes",
         1,
-        "Name one Earth-surface process from our lesson.",
+        "Name one process that changes Earth’s surface.",
         "Weathering, erosion, or deposition."
       ],
       [
@@ -1768,7 +1768,7 @@
       [
         "earth-evidence-select",
         2,
-        "We want to compare the surface before and after our taught investigation. Which is more useful: two labeled surface pictures or the class attendance list?",
+        "You want to compare the surface before and after an investigation. Which is more useful: two labeled surface pictures or the class attendance list?",
         "The two labeled surface pictures."
       ],
       [
