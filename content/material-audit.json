@@ -182,8 +182,8 @@
     "auditReason": "Explicit preparation instruction: Display an empty basket or its picture.",
     "resolution": "replaced",
     "replacement": {
-      "question": "A toy is inside a basket. Is the toy in the basket or outside it?",
-      "answer": "In the basket."
+      "question": "A toy is inside a basket. Is the toy outside the basket?",
+      "answer": "No. It is inside the basket."
     },
     "gap": ""
   },

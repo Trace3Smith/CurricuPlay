@@ -139,8 +139,8 @@
     "grade": "K",
     "subject": "Math",
     "difficulty": 1,
-    "question": "A toy is inside a basket. Is the toy in the basket or outside it?",
-    "answer": "In the basket.",
+    "question": "A toy is inside a basket. Is the toy outside the basket?",
+    "answer": "No. It is inside the basket.",
     "standard": "K.GSR.8.2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=P11",
     "weekIntroduced": "2026-08-10",
@@ -177,7 +177,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "a7753ccf4c8b611f512466b494d0bfcfdf2ef5f41a3393c03ba43b6c589a1ac7"
+    "auditFingerprint": "22d428151b6a96c396f8817aa0bf020a9776116868c945275b157137f8f952a0"
   },
   {
     "id": "tomorrow-dcss-K-math-position-describe",
@@ -5331,7 +5331,7 @@
     "subject": "Science",
     "difficulty": 3,
     "question": "Which one do both plants and animals need: water, light, or shelter?",
-    "answer": "No. Both plants and animals need water.",
+    "answer": "Water. Both plants and animals need water.",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
     "weekIntroduced": "2026-08-31",
@@ -5366,7 +5366,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "4de3c76d3c52f88bc14a180d256335643e4326c46e0bf6b8b2cc6b22b441fbc0"
+    "auditFingerprint": "a77f111ae608e9d7826019b2c78554cd6f8e5e8fa8acda33ca299e0ccec9c2f8"
   },
   {
     "id": "tomorrow-1-science-compare",
@@ -7790,8 +7790,8 @@
     "grade": "2",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which describes a star’s brightness: bright or round?",
-    "answer": "Bright.",
+    "question": "Which word tells how much light a star gives off: brightness or shape?",
+    "answer": "Brightness.",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
     "weekIntroduced": "2026-09-07",
@@ -7834,7 +7834,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "935eb054bf5b959d643b50d94b68cacca459804c35ad60eea083317fa84bbe79"
+    "auditFingerprint": "f0f1e16c1c10c4c8845da42673a4d517081f0db13e524bc5bcec5c85ef80ce99"
   },
   {
     "id": "tomorrow-2-science-distance",
