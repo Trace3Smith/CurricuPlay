@@ -4385,7 +4385,7 @@
     "grade": "5",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "“I can’t wait!” Ari whispered, bouncing in his seat. How do the words and actions work together to reveal his feelings?",
+    "question": "“I can’t wait!” Ari exclaimed, bouncing in his seat. How do the words and actions work together to reveal his feelings?",
     "answer": "Both suggest excitement or eagerness: “I can’t wait” and bouncing in his seat support that inference.",
     "standard": "5.T.T.1.a",
     "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
@@ -4431,7 +4431,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "6b7b79fc4612786d0d40081ce3f15e4bdcc4708c82cb60c9e10270c7b84f86ec"
+    "auditFingerprint": "6e67400a02c836a00df63dece958b36e712c87b48c1700fcb3585d2f854952fd"
   },
   {
     "id": "tomorrow-dcss-5-literacy-character-change",
