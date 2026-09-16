@@ -1255,13 +1255,13 @@
       [
         "place-zero",
         2,
-        "A number has 3 ten-thousands, 0 thousands, 6 hundreds, 2 tens, and 4 ones. Write it in base-ten numerals.",
+        "A number has 3 ten-thousands, 0 thousands, 6 hundreds, 2 tens, and 4 ones. How do you write that number?",
         "30,624."
       ],
       [
         "expanded-error",
         3,
-        "A student expands 72,305 as 70,000 + 2,000 + 30 + 5. Explain and correct the error.",
+        "A student writes 72,305 as 70,000 + 2,000 + 30 + 5. Which part is wrong, and what should it be?",
         "The 3 is in the hundreds place, not tens. The correct form is 70,000 + 2,000 + 300 + 5."
       ]
     ]
@@ -1304,13 +1304,13 @@
       [
         "add-three-groups",
         2,
-        "A drive collects 425 cans on Monday, 316 on Tuesday, and 208 on Wednesday. Find the total.",
+        "A food drive collects 425 cans on Monday, 316 on Tuesday, and 208 on Wednesday. What is the total?",
         "949 cans."
       ],
       [
         "add-error-check",
         3,
-        "For 1,586 + 2,247, a student reports 3,733. Find the correct sum and explain a place-value check.",
+        "A student adds 1,586 + 2,247 and gets 3,733. What is the correct sum, and where did the mistake happen?",
         "3,833. The tens total includes the ten regrouped from 6 + 7 ones; 8 + 4 + 1 = 13 tens."
       ]
     ]
@@ -1341,7 +1341,7 @@
       [
         "cause-evidence",
         3,
-        "A ball hit the stacked cups. The cups fell, and water spilled. Explain the chain of events using evidence from these sentences.",
+        "A ball hit the stacked cups. The cups fell, and water spilled. How did each event cause the next one?",
         "The ball hit the cups, causing them to fall; their falling caused the water to spill."
       ],
       [
@@ -1353,7 +1353,7 @@
       [
         "cause-two",
         2,
-        "“The bag tore because it was old and too full.” Give both stated causes of the tear.",
+        "“The bag tore because it was old and too full.” What two causes does the sentence give?",
         "The bag was old and too full."
       ],
       [
@@ -1390,7 +1390,7 @@
       [
         "main-revise",
         3,
-        "The library lends books, offers story time, and hosts reading clubs. Is “The library only lends books” a good main idea? Explain and improve it.",
+        "The library lends books, offers story time, and hosts reading clubs. Is “The library only lends books” a good main idea? How would you say it better?",
         "No; “only” leaves out the other activities. Better: the library offers several ways to read and enjoy books."
       ],
       [
@@ -1408,7 +1408,7 @@
       [
         "main-build",
         3,
-        "A class labels supply bins, assigns shelf spaces, and returns tools after use. Write a main-idea sentence supported by all three details.",
+        "A class labels supply bins, assigns shelf spaces, and returns tools after use. What main-idea sentence fits all three details?",
         "The class keeps its supplies organized. Accept another main idea that covers all three details."
       ]
     ]
@@ -1427,19 +1427,19 @@
       [
         "weather-read",
         1,
-        "Our chart says Monday: sunny; Tuesday: cloudy. What weather was recorded Tuesday?",
+        "A weather chart says Monday: sunny; Tuesday: cloudy. What weather was recorded on Tuesday?",
         "Cloudy."
       ],
       [
         "weather-compare",
         2,
-        "Cloud-cover notes: Monday clear, Tuesday partly cloudy, Wednesday fully cloudy. Describe the change.",
+        "A cloud chart shows Monday clear, Tuesday partly cloudy, and Wednesday fully cloudy. How did the cloud cover change?",
         "The recorded cloud cover increased from clear to partly cloudy to fully cloudy."
       ],
       [
         "weather-limits",
         3,
-        "One day was rainy. Is that enough data to show a repeating weekly weather pattern? Explain.",
+        "One day was rainy. Is that enough to show a weekly weather pattern? Why or why not?",
         "No. One observation cannot show repetition; collect observations across more days and weeks."
       ],
       [
@@ -1451,13 +1451,13 @@
       [
         "weather-data-gap",
         2,
-        "A chart has weather entries for Monday and Wednesday. Which missing weekday entry would complete that three-day record?",
+        "A chart has weather entries for Monday and Wednesday. Which day is missing from that three-day record?",
         "Tuesday."
       ],
       [
         "weather-comparison-fair",
         3,
-        "One cloud chart records noon each day; another records different times. Which makes a clearer same-time comparison across days? Explain.",
+        "One cloud chart records the sky at noon every day. Another records it at different times. Which chart is better for comparing days? Why?",
         "The noon chart keeps observation time consistent, making changes across days easier to compare."
       ]
     ],

@@ -3333,7 +3333,7 @@
     "grade": "4",
     "subject": "Math",
     "difficulty": 3,
-    "question": "A student writes 72,305 as 70,000 + 2,000 + 30 + 5. Which part needs to change? Why? Write the expanded form correctly.",
+    "question": "A student writes 72,305 as 70,000 + 2,000 + 30 + 5. Which part is wrong, and what should it be?",
     "answer": "The 3 is in the hundreds place, not tens. The correct form is 70,000 + 2,000 + 300 + 5.",
     "standard": "4.NR.1.1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M13",
@@ -3369,7 +3369,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "5eefa1b1f60b45b7bc4359917638f2dc31f7df4d347c0a5b23c1cdc999d99165"
+    "auditFingerprint": "e55b63fb9f6eb3202e6626d441acf5173972f1939a92d19012b11dbde6ebc08f"
   },
   {
     "id": "tomorrow-dcss-4-math-add-thousands",
@@ -3462,7 +3462,7 @@
     "grade": "4",
     "subject": "Math",
     "difficulty": 3,
-    "question": "A student adds 1,586 + 2,247 and gets 3,733. What is the sum? How can you use place value to check it?",
+    "question": "A student adds 1,586 + 2,247 and gets 3,733. What is the correct sum, and where did the mistake happen?",
     "answer": "3,833. The tens total includes the ten regrouped from 6 + 7 ones; 8 + 4 + 1 = 13 tens.",
     "standard": "4.NR.2.1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=M18",
@@ -3498,7 +3498,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "d673e20d846c8279bca26b50f6eca940693522104352f890dc07b7d7c487846b"
+    "auditFingerprint": "2e256ada740f34f658539256ede5d5e110f60ee1037aa728c0c9ad7702b23733"
   },
   {
     "id": "tomorrow-dcss-4-literacy-cause-rain",
@@ -3591,7 +3591,7 @@
     "grade": "4",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "A ball hit the stacked cups. The cups fell, and water spilled. Using what the story tells you, how did one event cause the next?",
+    "question": "A ball hit the stacked cups. The cups fell, and water spilled. How did each event cause the next one?",
     "answer": "The ball hit the cups, causing them to fall; their falling caused the water to spill.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
@@ -3627,7 +3627,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "6bd319dbe96ce54bd2ed8ff0b5ad8316d524822fec6b5aded1ebe9c38d7ec084"
+    "auditFingerprint": "8398e9f27a6909f1d4c77ca300bb14e530280b8e97530f5e8ec91f0338a496b3"
   },
   {
     "id": "tomorrow-dcss-4-literacy-main-topic",
@@ -3720,7 +3720,7 @@
     "grade": "4",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "The library lends books, offers story time, and hosts reading clubs. Does “The library only lends books” give the main idea? Why or why not? How would you say it better?",
+    "question": "The library lends books, offers story time, and hosts reading clubs. Is “The library only lends books” a good main idea? How would you say it better?",
     "answer": "No; “only” leaves out the other activities. Better: the library offers several ways to read and enjoy books.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit?usp=sharing",
@@ -3756,7 +3756,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "74ecaf7d922030f80bfb56754d57015908b63962a117ac56acf0c4cbb0f17300"
+    "auditFingerprint": "e9ca05654acd197063c3d4fbffa4bc09c2bb0aee0095f95aba898892aa581055"
   },
   {
     "id": "tomorrow-dcss-4-literacy-main-title",
@@ -6251,7 +6251,7 @@
     "grade": "4",
     "subject": "Social Studies",
     "difficulty": 2,
-    "question": "Why did colonists object to taxation without representation?",
+    "question": "Why did colonists protest taxation without representation?",
     "answer": "They were taxed but had no vote in British Parliament.",
     "standard": "SS4H1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
@@ -6295,7 +6295,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "7ecee020a6a82ea3f5f8d8fcef842eb95f5950f5052a1b4cf17cfbfc040ee6af"
+    "auditFingerprint": "30995cf4d1292bb2c91dae65791910f94b1ca968f835edf81677112368deb490"
   },
   {
     "id": "tomorrow-4-social-studies-washington",
@@ -6404,7 +6404,7 @@
     "grade": "4",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "How did the money Britain owed after the war lead to trouble with the colonists?",
+    "question": "After the French and Indian War, Britain owed a lot of money. How did that lead to trouble with the colonists?",
     "answer": "Britain needed money after the French and Indian War and taxed the colonies to help pay the debt, increasing conflict over taxation.",
     "standard": "SS4H1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=O15",
@@ -6448,14 +6448,14 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "db7e709ddd9d53ad562381e645439fbb1efe918a788d667b831ad55eba13266f"
+    "auditFingerprint": "6abd009e65dd5740d6da1dd195892cfa4cc00905f566439b2e6154a7164dd4f9"
   },
   {
     "id": "tomorrow-4-science-record",
     "grade": "4",
     "subject": "Science",
     "difficulty": 1,
-    "question": "When you keep a weather log to compare different days, should you write the date with each observation?",
+    "question": "You keep a weather log to compare different days. Should you write the date with each observation?",
     "answer": "Yes.",
     "standard": "S4E4.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
@@ -6497,7 +6497,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "73a7fffd78757f2fd6fb777648bf74a2b184d2df8876465550164be68ab56b22"
+    "auditFingerprint": "3227ed8a3659264f0cfe30523d31daa742ac2b7c89b07cfccee3101a80475464"
   },
   {
     "id": "tomorrow-4-science-temperature",
@@ -6700,7 +6700,7 @@
     "grade": "4",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Why compare cloud observations taken at the same time each day?",
+    "question": "Why should you compare cloud observations taken at the same time each day?",
     "answer": "Keeping the time consistent makes changes across days easier to compare fairly.",
     "standard": "S4E4.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
@@ -6742,7 +6742,7 @@
     "packId": "dcss-tomorrow-2026-09-14",
     "packName": "DCSS Tomorrow Classroom Pack - 2026-09-14",
     "approvalBasis": "automated-editorial",
-    "auditFingerprint": "4612e5a4ffac55020224ebd4061e85bd72878ced05f3ae9a206e3fc6a564ed08"
+    "auditFingerprint": "fb48bfe88d65b69b482f9bfc9913d0394fff4c508bd46d2ca46e4491d0dee555"
   },
   {
     "id": "tomorrow-5-science-weathering",
