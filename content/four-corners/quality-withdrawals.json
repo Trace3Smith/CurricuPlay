@@ -1,0 +1,327 @@
+[
+  {
+    "question": {
+      "id": "fc-tomorrow-dcss-K-literacy-word-in",
+      "grade": "K",
+      "subject": "Literacy",
+      "difficulty": 1,
+      "question": "Find the word “in”.",
+      "answer": "in",
+      "standard": null,
+      "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "weekIntroduced": "2026-08-31",
+      "source": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+      "curriculumId": "dcss-fy27-K-literacy-r16",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+      "unit": "U1",
+      "session": "Sessions 18–22",
+      "evidence": {
+        "document": "linked-k-literacy.json",
+        "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+        "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+        "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+        "quote": "Weekly Sight Words:  in, is, you, that, it",
+        "characterOffset": 7995,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-31"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-K-literacy-r16"
+      ],
+      "questionType": "four-corners",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "approved",
+      "reviewNote": "Adapted from the validated classroom pack; four options and a single answer editorially checked. No new instructional topic.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Audited for self-contained gameplay. Teacher reading is allowed.",
+      "originId": "tomorrow-dcss-K-literacy-word-in",
+      "packId": "four-corners-mvp",
+      "packName": "Four Corners • September 2026",
+      "approvalBasis": "automated-editorial",
+      "choices": [
+        "in",
+        "is",
+        "it",
+        "on"
+      ],
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    "reason": "Printed target duplicates the answer. This assesses identical-word matching, not recognition of a spoken word. Reading all choices aloud collapses that distinction further. No replacement or comprehension alignment invented."
+  },
+  {
+    "question": {
+      "id": "fc-tomorrow-dcss-K-literacy-word-you",
+      "grade": "K",
+      "subject": "Literacy",
+      "difficulty": 2,
+      "question": "Find the word “you”.",
+      "answer": "you",
+      "standard": null,
+      "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "weekIntroduced": "2026-08-31",
+      "source": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+      "curriculumId": "dcss-fy27-K-literacy-r16",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+      "unit": "U1",
+      "session": "Sessions 18–22",
+      "evidence": {
+        "document": "linked-k-literacy.json",
+        "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+        "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+        "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+        "quote": "Weekly Sight Words:  in, is, you, that, it",
+        "characterOffset": 7995,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-31"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-K-literacy-r16"
+      ],
+      "questionType": "four-corners",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "approved",
+      "reviewNote": "Adapted from the validated classroom pack; four options and a single answer editorially checked. No new instructional topic.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Self-contained replacement; all example data is displayed in the prompt. Re-review before approval.",
+      "originId": "tomorrow-dcss-K-literacy-word-you",
+      "packId": "four-corners-mvp",
+      "packName": "Four Corners • September 2026",
+      "approvalBasis": "automated-editorial",
+      "choices": [
+        "that",
+        "you",
+        "it",
+        "your"
+      ],
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    "reason": "Printed target duplicates the answer. This assesses identical-word matching, not recognition of a spoken word. Reading all choices aloud collapses that distinction further. No replacement or comprehension alignment invented."
+  },
+  {
+    "question": {
+      "id": "fc-tomorrow-dcss-1-literacy-vowel-identify",
+      "grade": "1",
+      "subject": "Literacy",
+      "difficulty": 2,
+      "question": "Say “bed.” Which vowel is in the middle?",
+      "answer": "e",
+      "standard": null,
+      "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "weekIntroduced": "2026-09-07",
+      "source": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+      "curriculumId": "dcss-fy27-1-literacy-r17",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=K17",
+      "unit": "U1",
+      "session": "Sessions 22–25",
+      "evidence": {
+        "document": "linked-1-literacy.json",
+        "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+        "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+        "section": "Sep 7–11, Unit 1 Sessions 22–25",
+        "quote": "I can read words with short vowels.",
+        "characterOffset": 11985,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-09-07"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-1-literacy-r17"
+      ],
+      "questionType": "four-corners",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "approved",
+      "reviewNote": "Adapted from the validated classroom pack; four options and a single answer editorially checked. No new instructional topic.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Audited for self-contained gameplay. Teacher reading is allowed.",
+      "originId": "tomorrow-dcss-1-literacy-vowel-identify",
+      "packId": "four-corners-mvp",
+      "packName": "Four Corners • September 2026",
+      "approvalBasis": "automated-editorial",
+      "choices": [
+        "a",
+        "i",
+        "e",
+        "u"
+      ],
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    "reason": "Printed “bed” reveals the middle letter; letter-name choices are not vowel-sound choices. The originating item asks for a heard vowel. Withheld rather than silently changing it to spelling or another vowel-matching item already in the bank."
+  },
+  {
+    "question": {
+      "id": "fc-expanded-K-find-is",
+      "grade": "K",
+      "subject": "Literacy",
+      "difficulty": 1,
+      "question": "Find the word “is”.",
+      "answer": "is",
+      "standard": null,
+      "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "weekIntroduced": "2026-08-31",
+      "source": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+      "curriculumId": "dcss-fy27-K-literacy-r16",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+      "unit": "U1",
+      "session": "Sessions 18–22",
+      "evidence": {
+        "document": "linked-k-literacy.json",
+        "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+        "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+        "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+        "quote": "Weekly Sight Words:  in, is, you, that, it",
+        "characterOffset": 7995,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-31"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-K-literacy-r16"
+      ],
+      "questionType": "four-corners",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "approved",
+      "reviewNote": "Source-backed Four Corners adaptation; self-contained prompt and four plausible choices editorially reviewed.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Audited for self-contained gameplay. Teacher reading is allowed.",
+      "originId": "tomorrow-dcss-K-literacy-letter-m",
+      "packId": "four-corners-expanded",
+      "packName": "Four Corners expanded classroom pool",
+      "approvalBasis": "automated-editorial",
+      "choices": [
+        "in",
+        "it",
+        "is",
+        "if"
+      ],
+      "correctIndex": 2,
+      "adaptation": {
+        "kind": "conversion",
+        "sourceQuestionId": "tomorrow-dcss-K-literacy-sight-is"
+      }
+    },
+    "reason": "Printed target duplicates the answer. This assesses identical-word matching, not recognition of a spoken word. Reading all choices aloud collapses that distinction further. No replacement or comprehension alignment invented."
+  },
+  {
+    "question": {
+      "id": "fc-expanded-K-find-that",
+      "grade": "K",
+      "subject": "Literacy",
+      "difficulty": 3,
+      "question": "Find the word “that”.",
+      "answer": "that",
+      "standard": null,
+      "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "weekIntroduced": "2026-08-31",
+      "source": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+      "curriculumId": "dcss-fy27-K-literacy-r16",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+      "unit": "U1",
+      "session": "Sessions 18–22",
+      "evidence": {
+        "document": "linked-k-literacy.json",
+        "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+        "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+        "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+        "quote": "Weekly Sight Words:  in, is, you, that, it",
+        "characterOffset": 7995,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-31"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-K-literacy-r16"
+      ],
+      "questionType": "four-corners",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "approved",
+      "reviewNote": "Source-backed Four Corners adaptation; self-contained prompt and four plausible choices editorially reviewed.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Audited for self-contained gameplay. Teacher reading is allowed.",
+      "originId": "tomorrow-dcss-K-literacy-sight-two",
+      "packId": "four-corners-expanded",
+      "packName": "Four Corners expanded classroom pool",
+      "approvalBasis": "automated-editorial",
+      "choices": [
+        "this",
+        "that",
+        "then",
+        "the"
+      ],
+      "correctIndex": 1,
+      "adaptation": {
+        "kind": "source-exercise"
+      }
+    },
+    "reason": "Printed target duplicates the answer. This assesses identical-word matching, not recognition of a spoken word. Reading all choices aloud collapses that distinction further. No replacement or comprehension alignment invented."
+  },
+  {
+    "question": {
+      "id": "fc-expanded-K-find-it",
+      "grade": "K",
+      "subject": "Literacy",
+      "difficulty": 3,
+      "question": "Find the word “it”.",
+      "answer": "it",
+      "standard": null,
+      "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+      "weekIntroduced": "2026-08-31",
+      "source": "DCSS Tomorrow Classroom Pack - 2026-09-14",
+      "curriculumId": "dcss-fy27-K-literacy-r16",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K16",
+      "unit": "U1",
+      "session": "Sessions 18–22",
+      "evidence": {
+        "document": "linked-k-literacy.json",
+        "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+        "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+        "section": "Aug 31–Sep 4, Unit 1 Sessions 18–22",
+        "quote": "Weekly Sight Words:  in, is, you, that, it",
+        "characterOffset": 7995,
+        "timingBasis": "Main pacing-guide subject row and linked document section agree for this skill/date. Only the quoted skill is used; extra linked standards are not added to the main mapping."
+      },
+      "alignedWeeks": [
+        "2026-08-31"
+      ],
+      "curriculumIds": [
+        "dcss-fy27-K-literacy-r16"
+      ],
+      "questionType": "four-corners",
+      "teacherRead": true,
+      "reviewQuestion": true,
+      "reviewStatus": "approved",
+      "reviewNote": "Source-backed Four Corners adaptation; self-contained prompt and four plausible choices editorially reviewed.",
+      "requiresExternalClassroomMaterial": false,
+      "materialReviewNote": "Audited for self-contained gameplay. Teacher reading is allowed.",
+      "originId": "tomorrow-dcss-K-literacy-word-sentence",
+      "packId": "four-corners-expanded",
+      "packName": "Four Corners expanded classroom pool",
+      "approvalBasis": "automated-editorial",
+      "choices": [
+        "in",
+        "is",
+        "at",
+        "it"
+      ],
+      "correctIndex": 3,
+      "adaptation": {
+        "kind": "source-exercise"
+      }
+    },
+    "reason": "Printed target duplicates the answer. This assesses identical-word matching, not recognition of a spoken word. Reading all choices aloud collapses that distinction further. No replacement or comprehension alignment invented."
+  }
+]
