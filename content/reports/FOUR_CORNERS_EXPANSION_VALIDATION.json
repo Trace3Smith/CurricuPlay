@@ -1,0 +1,190 @@
+{
+  "cutoff": "2026-09-13",
+  "total": 264,
+  "new": 177,
+  "newConversions": 57,
+  "newSourceExercises": 120,
+  "visuals": 10,
+  "originalItemsUnchanged": false,
+  "qualityAudit": {
+    "clarified": 264,
+    "withdrawn": 6
+  },
+  "qualityAuditOriginalDispositions": {
+    "preserved": 230,
+    "revised": 34,
+    "withdrawn": 6
+  },
+  "itemsWithExplanation": 264,
+  "unreviewedChanges": 0,
+  "answerPositions": {
+    "A": 67,
+    "B": 66,
+    "C": 65,
+    "D": 66
+  },
+  "newAnswerPositionLongestRun": 3,
+  "newPositionCycleMatchFraction": 0.254,
+  "grades": [
+    {
+      "grade": "K",
+      "subjects": {
+        "Science": 10,
+        "Social Studies": 15,
+        "Literacy": 15
+      },
+      "total": 40
+    },
+    {
+      "grade": "1",
+      "subjects": {
+        "Science": 15,
+        "Social Studies": 12,
+        "Literacy": 17
+      },
+      "total": 44
+    },
+    {
+      "grade": "2",
+      "subjects": {
+        "Science": 12,
+        "Social Studies": 15,
+        "Literacy": 18
+      },
+      "total": 45
+    },
+    {
+      "grade": "3",
+      "subjects": {
+        "Science": 12,
+        "Social Studies": 12,
+        "Literacy": 21
+      },
+      "total": 45
+    },
+    {
+      "grade": "4",
+      "subjects": {
+        "Science": 15,
+        "Social Studies": 15,
+        "Literacy": 15
+      },
+      "total": 45
+    },
+    {
+      "grade": "5",
+      "subjects": {
+        "Science": 12,
+        "Social Studies": 15,
+        "Literacy": 18
+      },
+      "total": 45
+    }
+  ],
+  "nearDuplicateCandidates": [
+    {
+      "ids": [
+        "fc-tomorrow-dcss-K-literacy-letter-sound",
+        "fc-expanded-K-b-sound"
+      ],
+      "similarity": 0.861,
+      "questions": [
+        "Which word starts with the /m/ sound?",
+        "Which word starts with the same sound as “ball”?"
+      ]
+    },
+    {
+      "ids": [
+        "fc-tomorrow-dcss-1-literacy-short-u",
+        "fc-expanded-1-hop-hope"
+      ],
+      "similarity": 0.737,
+      "questions": [
+        "Which word has the short u sound in the middle?",
+        "Which word has a short o sound?"
+      ]
+    },
+    {
+      "ids": [
+        "fc-tomorrow-dcss-2-literacy-compound-parts",
+        "fc-expanded-2-compound-snow"
+      ],
+      "similarity": 0.725,
+      "questions": [
+        "Which two whole words make “raincoat”?",
+        "Which two whole words form “snowman”?"
+      ]
+    },
+    {
+      "ids": [
+        "fc-tomorrow-3-social-studies-river",
+        "fc-tomorrow-3-social-studies-ranges"
+      ],
+      "similarity": 0.723,
+      "questions": [
+        "Which is a river in the United States?",
+        "Which pair names two mountain ranges in the United States?"
+      ]
+    },
+    {
+      "ids": [
+        "fc-expanded-1-short-a",
+        "fc-expanded-1-same-vowel"
+      ],
+      "similarity": 0.766,
+      "questions": [
+        "Which word has the same middle sound as “map”?",
+        "Which pair of words has the same middle vowel sound?"
+      ]
+    },
+    {
+      "ids": [
+        "fc-expanded-1-short-a",
+        "fc-expanded-1-short-e"
+      ],
+      "similarity": 0.847,
+      "questions": [
+        "Which word has the same middle sound as “map”?",
+        "Which word has the same vowel sound as “pet”?"
+      ]
+    },
+    {
+      "ids": [
+        "fc-expanded-1-same-vowel",
+        "fc-expanded-1-short-e"
+      ],
+      "similarity": 0.753,
+      "questions": [
+        "Which pair of words has the same middle vowel sound?",
+        "Which word has the same vowel sound as “pet”?"
+      ]
+    },
+    {
+      "ids": [
+        "fc-expanded-1-sandwich-order",
+        "fc-expanded-1-bag-order"
+      ],
+      "similarity": 0.756,
+      "questions": [
+        "Which order makes sense for making a sandwich?",
+        "Which order makes sense before school?"
+      ]
+    }
+  ],
+  "repeatedChoiceSets": [
+    [
+      "fc-tomorrow-1-social-studies-georgia",
+      "fc-tomorrow-1-social-studies-atlanta"
+    ],
+    [
+      "fc-tomorrow-5-science-weathering",
+      "fc-tomorrow-5-science-deposition"
+    ],
+    [
+      "fc-expanded-3-compass-route",
+      "fc-expanded-3-compass-map"
+    ]
+  ],
+  "editorialReview": "See FOUR_CORNERS_QUALITY_AUDIT.md for semantic, one-answer, age, source-scope and distractor review. Similarity candidates are not automatically treated as duplicates.",
+  "errors": []
+}

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import QuestionReview from './components/QuestionReview';
+import FourCorners from './games/four-corners/FourCorners';
 import { readReviews, REVIEW_KEY } from './services/questionReview';
 import { grades, type GameState, type Grade } from './types';
 import { classroomQuestions, classroomBank, PACK_NAME } from './services/classroomPack';
@@ -10,6 +11,8 @@ import { categories, tiles, isBoardEligible } from './games/jeopardy/board';
 const gradeLabel = (g: Grade) => g === 'K' ? 'Kindergarten' : `${g}${g === '1' ? 'st' : g === '2' ? 'nd' : g === '3' ? 'rd' : 'th'} Grade`;
 export default function App() {
   const [state, setState] = useState(loadState);
+  const [fourCorners, setFourCorners] = useState(location.hash === '#four-corners');
+  useEffect(() => { const sync = () => setFourCorners(location.hash === '#four-corners'); window.addEventListener('hashchange', sync); return () => window.removeEventListener('hashchange', sync); }, []);
   const [reviewing, setReviewing] = useState(location.hash === '#review');
   const [reviews, setReviews] = useState(readReviews);
   const questions = useMemo(() => classroomQuestions(reviews.decisions, state.contentSource), [reviews.decisions, state.contentSource]);
@@ -50,6 +53,7 @@ export default function App() {
     catch { setFullscreenError('Use your browser’s full-screen control (usually F11).'); }
   }
   const active = state.screen === 'board' || state.screen === 'question';
+  if (fourCorners) return <FourCorners onHome={() => { location.hash = ''; setFourCorners(false); update({ screen: 'home' }); }} />;
   if (reviewing) return <QuestionReview questions={bank.questions} decisions={reviews.decisions} storageError={reviews.error} initialGrade={location.hash === '#review' ? '1' : undefined} onStartTrial={(grade, range, asOf) => startGame(grade, range, asOf, 'drafts')} onSaved={decisions => setReviews({ decisions, error: '' })} onClose={() => { setReviewing(false); location.hash = ''; }} />;
   return <div className={`app ${active ? 'playing' : ''}`}>
     <header><button className="wordmark" onClick={() => update({ screen: 'home' })} aria-label="CurricuPlay home">CURRICU<span>PLAY</span><i /></button>
@@ -67,7 +71,8 @@ export default function App() {
           <span className="card-art" aria-hidden="true">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span><span className="card-bottom"><strong>JEOPARDY</strong><span className="play-tag">{state.selectedGame ? 'CONTINUE' : 'PLAY'} ↗</span></span>
           <span className="card-description">Pick a category. Take on a challenge.</span>
         </button>
-        {['FOUR CORNERS', 'BINGO', 'TRIVIA'].map((name, i) => <div className="game-card soon" key={name}><span className="future-art" aria-hidden="true">{['↗', '◎', '?'][i]}</span><strong>{name}</strong><span className="coming">COMING SOON</span></div>)}
+        <button className="game-card live" onClick={() => { location.hash = '#four-corners'; setFourCorners(true); }}><span className="fc-home-art" aria-hidden="true">{['A', 'B', 'C', 'D'].map(letter => <b key={letter}>{letter}</b>)}</span><span className="card-bottom"><strong>FOUR CORNERS</strong><span className="play-tag">PLAY ↗</span></span><span className="card-description">Think. Move. Everyone stays in.</span></button>
+        {['BINGO', 'TRIVIA'].map((name, i) => <div className="game-card soon" key={name}><span className="future-art" aria-hidden="true">{['◎', '?'][i]}</span><strong>{name}</strong><span className="coming">COMING SOON</span></div>)}
       </div>
       <button className="review-entry" onClick={() => setReviewing(true)}>Teacher tools · Question Review</button>
       <div className="home-note">Made for shared screens & curious minds.<span>Grades K–5 · Teacher-led play</span></div>

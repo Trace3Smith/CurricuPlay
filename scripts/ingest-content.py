@@ -31,7 +31,10 @@ def normalize_date(v):
 def slug(s):return s.lower().replace(' ','-')
 def references(s):
  # Literal tokens only. Do not expand H1 to SS3H1, repair code typos, or assign meanings.
- return list(dict.fromkeys(re.findall(r'(?<![\w.])(?:[K1-5]\.(?:NR|PAR|GSR|MDR|MP)[\d.\w-]*|SS[K1-5A-Z][\w.]*|S[K1-5][A-Z][\w.]*|(?:H|G|E|CG)\d[a-z]?)(?!\w)',s)))
+ # Georgia ELA codes are grade.DOMAIN.STRAND.number[.letter] (5.T.T.1.a, 5.L.GC.2, K.F.P.1): two
+ # alpha segments after the grade, which is what separates them from the three-part math codes
+ # (1.NR.1.1). Matched literally like every other family; no meaning is assigned to a strand.
+ return list(dict.fromkeys(re.findall(r'(?<![\w.])(?:[K1-5]\.[A-Z]{1,2}\.[A-Z]{1,2}\.\d+(?:\.[a-z])?|[K1-5]\.(?:NR|PAR|GSR|MDR|MP)[\d.\w-]*|SS[K1-5A-Z][\w.]*|S[K1-5][A-Z][\w.]*|(?:H|G|E|CG)\d[a-z]?)(?!\w)',s)))
 def main():
  book=read(SOURCE/'pacing-guide-cells.json');records=[];issues=[];tab_report=[]
  for tab in book['sheets']:
