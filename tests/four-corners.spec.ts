@@ -9,6 +9,8 @@ async function setup(page: Page, grade = 'K') {
   await page.clock.setFixedTime(new Date('2026-09-17T12:00:00'));
   await page.goto('/'); await page.getByRole('button', { name: /FOUR CORNERS/ }).click();
   await page.getByRole('button', { name: labels[grade], exact: true }).click();
+  // These regressions exercise the preserved whole-class mode; Team Mode is now the default.
+  await page.getByRole('button', { name: 'Classic Mode', exact: true }).click();
 }
 async function fits(page: Page) {
   expect(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight && document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -153,7 +155,7 @@ test('Until-stop ends early, persists, resets, and supports a small single-subje
   await setup(page); await page.getByRole('button', { name: 'Science', exact: true }).click();
   await page.getByRole('button', { name: 'Play Until I Stop', exact: true }).click(); await page.getByRole('button', { name: /^Start Game/ }).click();
   for (let i = 0; i < 3; i++) { await page.getByRole('button', { name: 'Reveal Answer' }).click(); await page.getByRole('button', { name: 'Next Question' }).click(); }
-  await page.getByRole('button', { name: 'End Game', exact: true }).click(); await expect(page.getByRole('heading', { name: 'Game ended.' })).toBeVisible();
+  await page.getByRole('button', { name: 'End Game', exact: true }).click(); await page.getByRole('dialog').getByRole('button', { name: 'End Game', exact: true }).click(); await expect(page.getByRole('heading', { name: 'Game ended.' })).toBeVisible();
   await expect(page.getByText("You've used every available question in this content pool.", { exact: true })).toHaveCount(0);
   await page.reload(); await expect(page.getByRole('heading', { name: 'Game ended.' })).toBeVisible();
   await page.getByRole('button', { name: 'Play Again' }).click(); await expect(page.getByText('Round 1', { exact: true })).toBeVisible();
