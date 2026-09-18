@@ -4,7 +4,7 @@
     "grade": "K",
     "subject": "Science",
     "difficulty": 1,
-    "question": "When the Sun is up and the sky is bright, what time is it?",
+    "question": "The Sun is up and the sky is bright. Which time of day is it?",
     "answer": "Daytime",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -56,7 +56,7 @@
       "Just before sunrise"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Daytime is the part of the day when the Sun is up and lights the sky."
   },
   {
     "id": "fc-tomorrow-K-science-dark",
@@ -112,17 +112,17 @@
       "It gets brighter.",
       "It gets darker.",
       "It stays just as bright.",
-      "It becomes fully dark all at once."
+      "It goes dark all at once."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "The sky gets darker little by little as the Sun goes down."
   },
   {
     "id": "fc-tomorrow-K-science-first",
     "grade": "K",
     "subject": "Science",
     "difficulty": 2,
-    "question": "Which happens at the start of daytime?",
+    "question": "Which one happens at the start of the day?",
     "answer": "Sunrise",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -174,14 +174,14 @@
       "Late afternoon"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Sunrise is when the Sun comes up and daytime begins."
   },
   {
     "id": "fc-tomorrow-K-science-compare",
     "grade": "K",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Which describes the sky on a clear night?",
+    "question": "What does the sky look like on a clear night?",
     "answer": "Dark, with stars visible",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -233,14 +233,14 @@
       "Dark, with stars visible"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "At night the Sun is down, so the sky is dark and we can see stars."
   },
   {
     "id": "fc-tomorrow-K-science-cycle",
     "grade": "K",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Which pattern repeats?",
+    "question": "Which pattern repeats over and over?",
     "answer": "Day, night, day, night",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -292,7 +292,7 @@
       "Day, night, night, night"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Day and night take turns, and that pattern repeats every day."
   },
   {
     "id": "fc-tomorrow-K-social-studies-listen",
@@ -343,7 +343,7 @@
       "Call out a question."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Listening quietly lets you hear your classmate’s whole idea."
   },
   {
     "id": "fc-tomorrow-K-social-studies-turn",
@@ -394,7 +394,7 @@
       "Keep it all day."
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Waiting your turn is fair, because everyone gets a chance."
   },
   {
     "id": "fc-tomorrow-K-social-studies-kind",
@@ -445,7 +445,7 @@
       "“Would you like to play?”"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Inviting someone to play welcomes them into the group."
   },
   {
     "id": "fc-tomorrow-K-social-studies-repair",
@@ -496,7 +496,7 @@
       "Hide the fallen blocks."
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Saying sorry and helping rebuild fixes the problem you caused."
   },
   {
     "id": "fc-tomorrow-K-social-studies-reason",
@@ -543,18 +543,18 @@
     "choices": [
       "To get every turn",
       "To understand their idea",
-      "To finish their words for them",
+      "To say their words for them",
       "To make them stop talking"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "We listen so we can understand what the other person means."
   },
   {
     "id": "fc-tomorrow-dcss-K-literacy-letter-match",
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 2,
-    "question": "Which small letter matches M?",
+    "question": "Which lowercase letter matches M?",
     "answer": "m",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
@@ -597,7 +597,7 @@
       "w"
     ],
     "correctIndex": 2,
-    "explanation": "",
+    "explanation": "Capital M and lowercase m are two forms of one letter.",
     "delivery": "look-at-print"
   },
   {
@@ -648,14 +648,14 @@
       "Moon"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Moon begins with /m/. Sun begins with /s/, top with /t/, fish with /f/."
   },
   {
     "id": "fc-tomorrow-dcss-K-literacy-sight-complete",
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 2,
-    "question": "Which word fits? The cat ___ wet.",
+    "question": "Which word finishes the sentence? The cat ___ wet.",
     "answer": "is",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
@@ -698,7 +698,7 @@
       "that"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "“The cat is wet” tells one complete thought."
   },
   {
     "id": "fc-tomorrow-1-science-water",
@@ -744,12 +744,12 @@
     "originId": "tomorrow-1-science-water",
     "choices": [
       "More dry soil",
-      "A larger pot with no water",
+      "A bigger pot",
       "A dark cover",
       "Water"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Dry soil means the plant needs water, one of its basic needs."
   },
   {
     "id": "fc-tomorrow-1-science-shelter",
@@ -800,7 +800,7 @@
       "Food"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "A nest is a safe place to live, so it meets the need for shelter."
   },
   {
     "id": "fc-tomorrow-1-science-shared",
@@ -851,7 +851,7 @@
       "Sunlight and flowerpots"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Plants and animals both need air and water to stay alive."
   },
   {
     "id": "fc-tomorrow-1-science-sunlight",
@@ -899,10 +899,10 @@
       "More darkness",
       "A nest",
       "Light",
-      "A shaded box with a lid"
+      "A box with a lid"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Plants need light along with air, water, and nutrients."
   },
   {
     "id": "fc-tomorrow-1-science-compare",
@@ -953,7 +953,7 @@
       "Air, water, food, shelter"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Animals need air, water, food, and shelter. Light and nutrients are plant needs."
   },
   {
     "id": "fc-tomorrow-1-social-studies-georgia",
@@ -1012,7 +1012,7 @@
       "A continent"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Georgia is one of the fifty states that make up the United States."
   },
   {
     "id": "fc-tomorrow-1-social-studies-atlanta",
@@ -1071,7 +1071,7 @@
       "A continent"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Atlanta is a city, and it sits inside the state of Georgia."
   },
   {
     "id": "fc-tomorrow-1-social-studies-order",
@@ -1130,7 +1130,7 @@
       "City, nation, state"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "A city fits inside a state, and a state fits inside a nation."
   },
   {
     "id": "fc-tomorrow-1-social-studies-memphis-address",
@@ -1189,14 +1189,14 @@
       "Memphis"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "In an address the city comes first, so Memphis is the city."
   },
   {
     "id": "fc-tomorrow-1-social-studies-address-compare",
     "grade": "1",
     "subject": "Social Studies",
     "difficulty": 3,
-    "question": "Atlanta, Georgia. Savannah, Georgia. What is the same?",
+    "question": "Atlanta, Georgia and Savannah, Georgia — what is the same in both?",
     "answer": "The state",
     "standard": "SS1G2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
@@ -1244,18 +1244,18 @@
     "choices": [
       "The state",
       "The city",
-      "Both the city and state",
-      "Neither the city nor state"
+      "Both the city and the state",
+      "Neither the city nor the state"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Both addresses name Georgia, so the two cities are in the same state."
   },
   {
     "id": "fc-tomorrow-dcss-1-literacy-short-u",
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which word has the short /ŭ/ sound in the middle?",
+    "question": "Which word has the short u sound in the middle?",
     "answer": "Sun",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -1298,7 +1298,7 @@
       "Sat"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Sun has the short u sound in the middle: /s/ /u/ /n/."
   },
   {
     "id": "fc-tomorrow-dcss-1-literacy-events-first",
@@ -1348,7 +1348,7 @@
       "She picks up a book."
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Picking up the book is the first thing Mia does."
   },
   {
     "id": "fc-tomorrow-dcss-1-literacy-events-middle",
@@ -1398,7 +1398,7 @@
       "Jay puts the paper away."
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Drawing the cat comes next, right after Jay gets the paper."
   },
   {
     "id": "fc-tomorrow-dcss-1-literacy-events-last",
@@ -1448,7 +1448,7 @@
       "Liv fills the cup."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Putting the cup away is the last step Liv takes."
   },
   {
     "id": "fc-tomorrow-2-science-sun-star",
@@ -1507,7 +1507,7 @@
       "A comet"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "The Sun is a star. It looks different only because it is so close to us."
   },
   {
     "id": "fc-tomorrow-2-science-attributes",
@@ -1566,7 +1566,7 @@
       "Brightness"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Brightness tells how much light a star seems to give off."
   },
   {
     "id": "fc-tomorrow-2-science-distance",
@@ -1622,10 +1622,10 @@
       "It is much closer to Earth.",
       "It is the only star that shines.",
       "It is larger than every other star.",
-      "It is closer to every other star than to Earth."
+      "Other stars are much closer to Earth."
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "The Sun looks huge because it is far closer to Earth than any other star."
   },
   {
     "id": "fc-tomorrow-2-science-different",
@@ -1684,7 +1684,7 @@
       "The Sun is the only large star."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Stars come in many sizes, and some are much bigger than the Sun."
   },
   {
     "id": "fc-tomorrow-2-science-appearance",
@@ -1740,10 +1740,10 @@
       "They must be the same distance away.",
       "Both must be close to Earth.",
       "They may be at different distances.",
-      "Both must be farther away than all dim stars."
+      "Both must be farther away than dim stars."
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Brightness depends on distance and on the star itself, so distances can differ."
   },
   {
     "id": "fc-tomorrow-2-social-studies-mayor",
@@ -1802,7 +1802,7 @@
       "A mayor"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "A mayor is the leader of a city government."
   },
   {
     "id": "fc-tomorrow-2-social-studies-president",
@@ -1861,7 +1861,7 @@
       "A city council member"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "The President leads the nation and works at the White House."
   },
   {
     "id": "fc-tomorrow-2-social-studies-governor",
@@ -1920,7 +1920,7 @@
       "A school district"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "A governor leads the government of a state."
   },
   {
     "id": "fc-tomorrow-2-social-studies-limited",
@@ -1979,7 +1979,7 @@
       "Give one child two swings."
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "There are fewer swings than children, so equal turns keep it fair."
   },
   {
     "id": "fc-tomorrow-2-social-studies-choice",
@@ -2034,11 +2034,11 @@
     "choices": [
       "All games take the same time.",
       "You can finish every game at once.",
-      "Choosing creates more time.",
+      "Choosing gives you extra time.",
       "Your time is limited."
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Time is limited, so picking one game means giving up the others."
   },
   {
     "id": "fc-tomorrow-dcss-2-literacy-context-tiny",
@@ -2088,7 +2088,7 @@
       "Very empty"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "A box that fits in your palm must be very small."
   },
   {
     "id": "fc-tomorrow-dcss-2-literacy-context-weary",
@@ -2138,7 +2138,7 @@
       "Surprised"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Walking all day and needing a rest are the clues for weary."
   },
   {
     "id": "fc-tomorrow-dcss-2-literacy-context-evidence",
@@ -2188,7 +2188,7 @@
       "Not straight"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Only one child fits at a time, so the path is not wide."
   },
   {
     "id": "fc-tomorrow-dcss-2-literacy-compound-parts",
@@ -2238,7 +2238,7 @@
       "Rain + coat"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Raincoat is rain + coat: a coat that keeps the rain off you."
   },
   {
     "id": "fc-tomorrow-dcss-2-literacy-compound-select",
@@ -2288,7 +2288,7 @@
       "Cloudy"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Bathtub joins two whole words, bath and tub. Kitten is only one word."
   },
   {
     "id": "fc-tomorrow-3-science-color",
@@ -2339,7 +2339,7 @@
       "Hard"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Gray names a color. Rough, smooth, and hard describe other properties."
   },
   {
     "id": "fc-tomorrow-3-science-texture",
@@ -2390,7 +2390,7 @@
       "Hardness"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Texture is how a rock’s surface feels when you touch it."
   },
   {
     "id": "fc-tomorrow-3-science-scratch",
@@ -2449,7 +2449,7 @@
       "The mineral making the scratch"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "The harder mineral leaves the scratch; the softer one gets scratched."
   },
   {
     "id": "fc-tomorrow-3-science-observations",
@@ -2500,7 +2500,7 @@
       "Size and hardness"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Brown names the color and rough describes the texture."
   },
   {
     "id": "fc-tomorrow-3-science-evidence",
@@ -2551,7 +2551,7 @@
       "They are the same kind of rock."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "A shared color is all you can conclude. Other properties still need testing."
   },
   {
     "id": "fc-tomorrow-3-social-studies-river",
@@ -2610,7 +2610,7 @@
       "Great Plains"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "The Mississippi is a river. The other three are landforms."
   },
   {
     "id": "fc-tomorrow-3-social-studies-ranges",
@@ -2669,7 +2669,7 @@
       "Appalachian and Rocky"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "The Appalachians and the Rockies are mountain ranges."
   },
   {
     "id": "fc-tomorrow-3-social-studies-classify",
@@ -2728,7 +2728,7 @@
       "Hudson and Appalachian"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "The Ohio and the Hudson are both rivers."
   },
   {
     "id": "fc-tomorrow-3-social-studies-opposite-direction",
@@ -2787,7 +2787,7 @@
       "Northeast"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "North and south point in opposite directions on a compass."
   },
   {
     "id": "fc-tomorrow-3-social-studies-intermediate-direction",
@@ -2846,7 +2846,7 @@
       "Northeast"
     ],
     "correctIndex": 2,
-    "explanation": "",
+    "explanation": "Southwest sits between south and west on the compass rose.",
     "visual": {
       "src": "/four-corners/compass.svg",
       "alt": "Compass rose with north at the top, east at the right, south at the bottom, and west at the left.",
@@ -2901,7 +2901,7 @@
       "To fly her kite"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "The story says Lia wanted to fly her kite. That is the Wanted step."
   },
   {
     "id": "fc-tomorrow-dcss-3-literacy-story-problem",
@@ -2951,7 +2951,7 @@
       "He bought new paper."
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Sharpening the pencil is the So — the step that solved the problem."
   },
   {
     "id": "fc-tomorrow-dcss-3-literacy-summary-five",
@@ -3001,7 +3001,7 @@
       "Nia moved because she lost her book."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "A good summary keeps the want, the problem, and how it was solved."
   },
   {
     "id": "fc-tomorrow-dcss-3-literacy-summary-somebody",
@@ -3051,7 +3051,7 @@
       "Ava’s friend"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Ava is the Somebody — the person the story follows."
   },
   {
     "id": "fc-tomorrow-dcss-3-literacy-transition-result",
@@ -3101,14 +3101,14 @@
       "As a result"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "“As a result” signals that the flood caused the change of route."
   },
   {
     "id": "fc-tomorrow-4-science-record",
     "grade": "4",
     "subject": "Science",
     "difficulty": 1,
-    "question": "You keep a weather log for many days. What tells you which day each observation came from?",
+    "question": "You keep a weather log for many days. What tells you which day each observation belongs to?",
     "answer": "The date",
     "standard": "S4E4.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
@@ -3158,7 +3158,7 @@
       "The wind description"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "The date ties each observation to the day it was made."
   },
   {
     "id": "fc-tomorrow-4-science-temperature",
@@ -3215,7 +3215,7 @@
       "The log does not tell us."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "70°F is warmer than 62°F, so the afternoon was the warmer reading."
   },
   {
     "id": "fc-tomorrow-4-science-clouds",
@@ -3272,14 +3272,14 @@
       "The clouds disappear."
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Clear to partly cloudy to fully cloudy means the cloud cover increased."
   },
   {
     "id": "fc-tomorrow-4-science-measure",
     "grade": "4",
     "subject": "Science",
     "difficulty": 2,
-    "question": "You record temperatures several times today. What helps you compare when they changed?",
+    "question": "You record temperatures several times today. What helps you tell when each change happened?",
     "answer": "The time of each reading",
     "standard": "S4E4.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
@@ -3329,14 +3329,14 @@
       "The time of each reading"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Recording the time with each reading shows when the changes happened."
   },
   {
     "id": "fc-tomorrow-4-science-limits",
     "grade": "4",
     "subject": "Science",
     "difficulty": 3,
-    "question": "It rained on one Monday. Which conclusion is supported?",
+    "question": "It rained on one Monday. Which conclusion does that evidence support?",
     "answer": "It rained on that Monday.",
     "standard": "S4E4.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
@@ -3386,7 +3386,7 @@
       "Next Monday will be rainy."
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "One day of data supports a claim only about that day."
   },
   {
     "id": "fc-tomorrow-4-social-studies-independence",
@@ -3445,7 +3445,7 @@
       "Becoming a colony of that country"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Independence means being free from another country’s control."
   },
   {
     "id": "fc-tomorrow-4-social-studies-loyalist",
@@ -3504,7 +3504,7 @@
       "An independence supporter"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Loyalists stayed loyal to the British king; Patriots wanted independence."
   },
   {
     "id": "fc-tomorrow-4-social-studies-tax",
@@ -3563,7 +3563,7 @@
       "They were taxed without a vote in Parliament."
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "The colonies had no representatives in Parliament, yet Parliament taxed them."
   },
   {
     "id": "fc-tomorrow-4-social-studies-washington",
@@ -3622,7 +3622,7 @@
       "A British naval officer"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Washington commanded the Continental Army through the Revolution."
   },
   {
     "id": "fc-tomorrow-4-social-studies-cause",
@@ -3681,7 +3681,7 @@
       "Britain immediately gave the colonies independence."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Britain taxed the colonies to pay its war debt, and the colonies objected."
   },
   {
     "id": "fc-tomorrow-dcss-4-literacy-cause-rain",
@@ -3731,7 +3731,7 @@
       "The water drying up"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "The rain is the cause; the bucket filling is the effect."
   },
   {
     "id": "fc-tomorrow-dcss-4-literacy-effect-missed",
@@ -3781,7 +3781,7 @@
       "Leo walked."
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Missing the bus is the cause, and walking is the effect."
   },
   {
     "id": "fc-tomorrow-dcss-4-literacy-main-topic",
@@ -3831,7 +3831,7 @@
       "The rules for sharing supplies"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Every detail is about poems, so the poem work is the main idea."
   },
   {
     "id": "fc-tomorrow-dcss-4-literacy-main-detail",
@@ -3881,7 +3881,7 @@
       "The park has a walking path."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Picking up litter is an example of keeping the park clean."
   },
   {
     "id": "fc-tomorrow-dcss-4-literacy-main-revise",
@@ -3931,7 +3931,7 @@
       "The library mainly repairs damaged books."
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Lending, story time, and clubs are all ways to enjoy books."
   },
   {
     "id": "fc-tomorrow-5-science-weathering",
@@ -3998,7 +3998,7 @@
       "Weathering"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Weathering is the breaking down of rock into smaller pieces."
   },
   {
     "id": "fc-tomorrow-5-science-erosion",
@@ -4065,7 +4065,7 @@
       "Condensation"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Erosion moves the broken pieces away from where they formed."
   },
   {
     "id": "fc-tomorrow-5-science-deposition",
@@ -4132,7 +4132,7 @@
       "Evaporation"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Deposition is when moving water slows and drops what it carried."
   },
   {
     "id": "fc-tomorrow-5-science-compare",
@@ -4199,7 +4199,7 @@
       "Erosion, then deposition"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "The rock breaks first (weathering), then the water moves it (erosion)."
   },
   {
     "id": "fc-tomorrow-5-science-sequence",
@@ -4207,7 +4207,7 @@
     "subject": "Science",
     "difficulty": 3,
     "question": "A rock breaks apart. Water moves the pieces, then drops them downstream. Which sequence matches?",
-    "answer": "Weathering → erosion → deposition",
+    "answer": "Weathering, then erosion, then deposition",
     "standard": "S5E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
     "weekIntroduced": "2026-08-10",
@@ -4260,13 +4260,13 @@
     "approvalBasis": "automated-editorial",
     "originId": "tomorrow-5-science-sequence",
     "choices": [
-      "Erosion → deposition → weathering",
-      "Deposition → weathering → erosion",
-      "Weathering → deposition → erosion",
-      "Weathering → erosion → deposition"
+      "Erosion, then deposition, then weathering",
+      "Deposition, then weathering, then erosion",
+      "Weathering, then deposition, then erosion",
+      "Weathering, then erosion, then deposition"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Rock breaks, water carries the pieces, then water drops them downstream."
   },
   {
     "id": "fc-tomorrow-5-social-studies-responsibility",
@@ -4329,7 +4329,7 @@
       "Having rights protected"
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Obeying laws is a duty citizens owe. The other three are rights."
   },
   {
     "id": "fc-tomorrow-5-social-studies-speech",
@@ -4392,7 +4392,7 @@
       "Respecting other people’s rights"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Freedom of religion is a right. The other three are responsibilities."
   },
   {
     "id": "fc-tomorrow-5-social-studies-difference",
@@ -4455,7 +4455,7 @@
       "Both mean a job you are paid to do."
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Rights are freedoms you hold; responsibilities are duties you carry out."
   },
   {
     "id": "fc-tomorrow-5-social-studies-respect",
@@ -4518,7 +4518,7 @@
       "To protect everyone’s freedoms"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "Rights only hold up when everyone respects everyone else’s rights."
   },
   {
     "id": "fc-tomorrow-5-social-studies-participate",
@@ -4581,14 +4581,14 @@
       "They give up their right to speak about issues."
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Voting lets citizens pick the representatives who make the decisions."
   },
   {
     "id": "fc-tomorrow-dcss-5-literacy-setting-evidence",
     "grade": "5",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "“At dawn, Jo waited beside the school gate.” Which gives the time and place?",
+    "question": "“At dawn, Jo waited beside the school gate.” Which choice gives the time and the place?",
     "answer": "Dawn; beside the school gate",
     "standard": "5.T.T.1.a",
     "standardSource": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit?usp=drive_link",
@@ -4641,7 +4641,7 @@
       "Night; beside the school gate"
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "“At dawn” gives the time and “beside the school gate” gives the place."
   },
   {
     "id": "fc-tomorrow-dcss-5-literacy-character-action",
@@ -4701,7 +4701,7 @@
       "Jealousy"
     ],
     "correctIndex": 2,
-    "explanation": ""
+    "explanation": "Keeping on after three missed shots is what determination looks like."
   },
   {
     "id": "fc-tomorrow-dcss-5-literacy-dialogue-inference",
@@ -4761,7 +4761,7 @@
       "Excited"
     ],
     "correctIndex": 3,
-    "explanation": ""
+    "explanation": "The words and the bouncing both point to excitement."
   },
   {
     "id": "fc-tomorrow-dcss-5-literacy-character-change",
@@ -4811,7 +4811,7 @@
       "Lee decided friends never need help."
     ],
     "correctIndex": 0,
-    "explanation": ""
+    "explanation": "Lee moved from refusing help to asking for it."
   },
   {
     "id": "fc-tomorrow-dcss-5-literacy-theme-evidence",
@@ -4861,14 +4861,14 @@
       "Learning means always being right."
     ],
     "correctIndex": 1,
-    "explanation": ""
+    "explanation": "Rae learned only after being honest about a mistake."
   },
   {
     "id": "fc-expanded-K-sky-observation",
     "grade": "K",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Look at the two sky pictures. What appears in both?",
+    "question": "Look at the two sky pictures. What do you see in both?",
     "answer": "A cloud",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -4927,14 +4927,15 @@
       "src": "/four-corners/day-night.svg",
       "alt": "Day picture: Sun and a cloud. Night picture: crescent Moon, stars, and a cloud.",
       "kind": "illustration"
-    }
+    },
+    "explanation": "A cloud is in both pictures. The Sun is only in the day picture."
   },
   {
     "id": "fc-expanded-K-sky-record",
     "grade": "K",
     "subject": "Science",
     "difficulty": 1,
-    "question": "A sky note says: “Night: Moon and stars.” What was seen with the Moon?",
+    "question": "A sky notebook says, “At night I saw the Moon and stars.” What was seen with the Moon?",
     "answer": "Stars",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q16",
@@ -4981,7 +4982,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-K-science-sky-name"
-    }
+    },
+    "explanation": "The note says the Moon and the stars were both seen that night."
   },
   {
     "id": "fc-expanded-K-dusk-name",
@@ -5034,7 +5036,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Dusk is the time between day and night, when the sky is growing dark."
   },
   {
     "id": "fc-expanded-K-dawn-change",
@@ -5087,14 +5090,15 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Dawn is when the Sun comes back and nighttime ends."
   },
   {
     "id": "fc-expanded-K-sky-model",
     "grade": "K",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which would help you show how the sky changes through a whole day?",
+    "question": "Which one would show how the sky changes through a whole day?",
     "answer": "Pictures in time order",
     "standard": "SKE1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=Q17",
@@ -5140,7 +5144,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Pictures in time order show how the sky changes from dawn to night."
   },
   {
     "id": "fc-expanded-K-honesty",
@@ -5193,7 +5198,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Being honest means telling what really happened, even about a mistake."
   },
   {
     "id": "fc-expanded-K-found-item",
@@ -5246,7 +5252,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Giving a lost jacket to the teacher helps it get back to its owner."
   },
   {
     "id": "fc-expanded-K-shared-cleanup",
@@ -5292,14 +5299,15 @@
     "originId": "tomorrow-K-social-studies-listen",
     "choices": [
       "Put the crayons back.",
-      "Break the ones you dislike.",
+      "Break the ones you do not like.",
       "Take them all home.",
       "Leave them on the floor."
     ],
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Putting shared supplies away keeps them ready for the next person."
   },
   {
     "id": "fc-expanded-K-safe-rule",
@@ -5352,7 +5360,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "We walk in the hallway so people do not bump into each other and get hurt."
   },
   {
     "id": "fc-expanded-K-asking",
@@ -5405,7 +5414,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Asking first shows respect for things that belong to someone else."
   },
   {
     "id": "fc-expanded-K-gratitude",
@@ -5458,7 +5468,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Thank you” tells someone you noticed their help."
   },
   {
     "id": "fc-expanded-K-disagree",
@@ -5511,7 +5522,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "You can like different things and still be kind friends."
   },
   {
     "id": "fc-expanded-K-responsibility",
@@ -5564,7 +5576,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Keeping a promise means doing the job you said you would do."
   },
   {
     "id": "fc-expanded-K-rule-follow",
@@ -5617,7 +5630,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The rule asks you to raise your hand and wait to be called on."
   },
   {
     "id": "fc-expanded-K-group-job",
@@ -5670,14 +5684,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "When everyone does a part, the group finishes the job together."
   },
   {
     "id": "fc-expanded-K-letter-name",
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which letter is named “em”?",
+    "question": "Which printed letter is named “em”?",
     "answer": "M",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
@@ -5724,14 +5739,15 @@
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-K-literacy-letter-m"
     },
-    "delivery": "look-at-print"
+    "delivery": "look-at-print",
+    "explanation": "The letter M is said “em.” A letter’s name and its sound are different."
   },
   {
     "id": "fc-expanded-K-t-sound",
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which word starts with the /t/ sound?",
+    "question": "Which of these words begins with the /t/ sound?",
     "answer": "Top",
     "standard": null,
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K11",
@@ -5776,14 +5792,15 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Top begins with /t/. Bed begins with /b/, sun with /s/, and map with /m/."
   },
   {
     "id": "fc-expanded-K-s-match",
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which lowercase letter matches S?",
+    "question": "The capital letter is S. Which one is its lowercase letter?",
     "answer": "s",
     "standard": null,
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K12",
@@ -5829,7 +5846,8 @@
     "adaptation": {
       "kind": "source-exercise"
     },
-    "delivery": "look-at-print"
+    "delivery": "look-at-print",
+    "explanation": "Capital S and lowercase s are the same letter written two ways."
   },
   {
     "id": "fc-expanded-K-b-sound",
@@ -5881,14 +5899,15 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Bat and ball both begin with the /b/ sound."
   },
   {
     "id": "fc-expanded-K-a-match",
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which pair shows the same letter?",
+    "question": "Which pair shows the same letter in uppercase and lowercase?",
     "answer": "A and a",
     "standard": null,
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K11",
@@ -5934,7 +5953,8 @@
     "adaptation": {
       "kind": "source-exercise"
     },
-    "delivery": "look-at-print"
+    "delivery": "look-at-print",
+    "explanation": "A and a are the uppercase and lowercase forms of one letter."
   },
   {
     "id": "fc-expanded-K-detail-color",
@@ -5986,7 +6006,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The sentence says the hat is red. That detail answers the question."
   },
   {
     "id": "fc-expanded-K-detail-place",
@@ -6038,7 +6059,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The sentence tells exactly where the dog sleeps: under a tree."
   },
   {
     "id": "fc-expanded-K-detail-object",
@@ -6090,14 +6112,15 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The sentence says a book goes into the bag."
   },
   {
     "id": "fc-expanded-K-action-word",
     "grade": "K",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which word tells an action?",
+    "question": "Which word is an action word?",
     "answer": "Jump",
     "standard": null,
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=743834464&range=K11",
@@ -6142,7 +6165,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Jump is something you can do. Desk, hat, and tree are things."
   },
   {
     "id": "fc-expanded-K-detail-sound",
@@ -6194,7 +6218,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The first sentence says the bell rings, so the bell makes the sound."
   },
   {
     "id": "fc-expanded-K-detail-who",
@@ -6246,7 +6271,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The sentence names the rabbit as the one eating the carrot."
   },
   {
     "id": "fc-expanded-K-detail-weather",
@@ -6298,7 +6324,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The words “it is raining” tell you the weather is rainy."
   },
   {
     "id": "fc-expanded-1-plant-root",
@@ -6356,14 +6383,15 @@
       "src": "/four-corners/plant.svg",
       "alt": "A flowering plant with a soil line: branching roots below, an upright stem, leaves along the stem, and a flower at the top.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "Roots grow down into the soil and hold the plant in place."
   },
   {
     "id": "fc-expanded-1-plant-leaf",
     "grade": "1",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which plant part is the flat green part marked by the arrow?",
+    "question": "Which plant part does the arrow point to?",
     "answer": "A leaf",
     "standard": "S1L1.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O17",
@@ -6414,7 +6442,8 @@
       "src": "/four-corners/plant-leaf.svg",
       "alt": "An arrow points to a broad green part growing from the side of a plant’s upright stalk.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "The arrow points to a leaf, the flat green part growing from the stem."
   },
   {
     "id": "fc-expanded-1-plant-stem",
@@ -6472,7 +6501,8 @@
       "src": "/four-corners/plant.svg",
       "alt": "A flowering plant with roots below soil and a single upright stalk connecting to side leaves and a flower at the top.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "The stem is the stalk that joins the roots below to the leaves above."
   },
   {
     "id": "fc-expanded-1-plant-flower",
@@ -6525,14 +6555,15 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The flower is the part with the colorful petals."
   },
   {
     "id": "fc-expanded-1-plant-model",
     "grade": "1",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which list contains only parts of a flowering plant?",
+    "question": "Which list names only parts of a plant?",
     "answer": "Roots, stem, leaves, flower",
     "standard": "S1L1.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O17",
@@ -6578,14 +6609,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Roots, stem, leaves, and flower are plant parts. Soil, water, and pots are not."
   },
   {
     "id": "fc-expanded-1-plant-air",
     "grade": "1",
     "subject": "Science",
     "difficulty": 1,
-    "question": "A plant has water, light, and nutrients. Which basic need is missing from this list?",
+    "question": "A plant has water, light, and nutrients. Which basic need is missing?",
     "answer": "Air",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -6631,14 +6663,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Plants need air too. Shelter and prepared food are animal needs."
   },
   {
     "id": "fc-expanded-1-animal-food",
     "grade": "1",
     "subject": "Science",
     "difficulty": 1,
-    "question": "A rabbit has water, air, and a safe shelter. What other basic need must be met?",
+    "question": "A rabbit has water, air, and a safe shelter. What is the rabbit missing?",
     "answer": "Food",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -6684,14 +6717,15 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Animals need food as well as air, water, and shelter."
   },
   {
     "id": "fc-expanded-1-needs-observation",
     "grade": "1",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which observation shows that a pet’s need for water is being met?",
+    "question": "Which one shows that a pet’s need for water is being met?",
     "answer": "The pet drinks from a clean bowl.",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -6737,14 +6771,15 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Drinking from a clean bowl is the pet meeting its need for water."
   },
   {
     "id": "fc-expanded-1-plant-nutrients",
     "grade": "1",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which is a plant need, along with air, water, and light?",
+    "question": "Plants need air, water, and light. What else do plants need?",
     "answer": "Nutrients",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -6782,7 +6817,7 @@
     "approvalBasis": "automated-editorial",
     "originId": "tomorrow-1-science-water",
     "choices": [
-      "Prepared food",
+      "Crayons",
       "Darkness",
       "Shelter",
       "Nutrients"
@@ -6790,14 +6825,15 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Plants also need nutrients, which they take in from the soil."
   },
   {
     "id": "fc-expanded-1-needs-compare",
     "grade": "1",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which is on an animal’s basic-needs list but not a plant’s basic-needs list?",
+    "question": "Which basic need do animals have but plants do not?",
     "answer": "Shelter",
     "standard": "S1L1.b",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=O16",
@@ -6844,7 +6880,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-1-science-compare"
-    }
+    },
+    "explanation": "Shelter is on the animal list only. Air and water are on both lists."
   },
   {
     "id": "fc-expanded-1-continent",
@@ -6905,14 +6942,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A continent is the largest of these. It holds many nations."
   },
   {
     "id": "fc-expanded-1-county",
     "grade": "1",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "In the order city → county → state, what comes between city and state?",
+    "question": "Douglasville is a city in Georgia. It sits inside a larger place called Douglas. What kind of place is Douglas?",
     "answer": "County",
     "standard": "SS1G2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
@@ -6966,7 +7004,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Douglas is a county. A county holds cities like Douglasville and is part of a state."
   },
   {
     "id": "fc-expanded-1-nation",
@@ -7027,14 +7066,15 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Nation” and “country” mean the same thing."
   },
   {
     "id": "fc-expanded-1-same-city-state",
     "grade": "1",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "Two people are in the same city. How can they also be in a state?",
+    "question": "How can a person be in a city and a state at the same time?",
     "answer": "A city is inside a state.",
     "standard": "SS1G2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P12",
@@ -7081,7 +7121,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-1-social-studies-nested"
-    }
+    },
+    "explanation": "Every city sits inside a state, so you are in both at once."
   },
   {
     "id": "fc-expanded-1-liberty",
@@ -7134,14 +7175,15 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Liberty means freedom — being able to make your own choices."
   },
   {
     "id": "fc-expanded-1-brotherhood",
     "grade": "1",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "In a patriotic song, “brotherhood” means caring about others. Which action shows it?",
+    "question": "In a patriotic song, “brotherhood” means caring about others. Which action shows brotherhood?",
     "answer": "Working together kindly",
     "standard": "SS1CG2",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1505558175&range=P11",
@@ -7187,7 +7229,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Working together kindly is how people show they care about others."
   },
   {
     "id": "fc-expanded-1-patriotic-pride",
@@ -7232,7 +7275,7 @@
     "approvalBasis": "automated-editorial",
     "originId": "tomorrow-1-social-studies-georgia",
     "choices": [
-      "Wanting everyone to have the same favorite song",
+      "Wanting everyone to like the same song",
       "Thinking no other place matters",
       "Feeling glad to belong and wanting to help",
       "Never learning about your country"
@@ -7240,14 +7283,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Pride means feeling glad about your country and wanting to help it."
   },
   {
     "id": "fc-expanded-1-blend",
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Put these sounds together: /s/ /ŭ/ /n/. What word do they make?",
+    "question": "Put these sounds together: /s/ /u/ /n/. What word do they make?",
     "answer": "Sun",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -7293,7 +7337,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-1-literacy-blend-sun"
-    }
+    },
+    "explanation": "Blending /s/ /u/ /n/ together makes the word sun."
   },
   {
     "id": "fc-expanded-1-short-a",
@@ -7346,14 +7391,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-1-literacy-short-a-read"
-    }
+    },
+    "explanation": "Map and bag both have the short a sound in the middle."
   },
   {
     "id": "fc-expanded-1-same-vowel",
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which pair has the same middle vowel sound?",
+    "question": "Which pair of words has the same middle vowel sound?",
     "answer": "Pin and pig",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -7399,7 +7445,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-1-literacy-vowel-sort"
-    }
+    },
+    "explanation": "Pin and pig both have the short i sound in the middle."
   },
   {
     "id": "fc-expanded-1-hop-hope",
@@ -7452,7 +7499,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-1-literacy-vowel-repair"
-    }
+    },
+    "explanation": "Hop has the short o sound. Home, rope, and hope have the long o sound."
   },
   {
     "id": "fc-expanded-1-toy-next",
@@ -7505,7 +7553,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-1-literacy-retell-sequence"
-    }
+    },
+    "explanation": "Taking out the toy happens after opening the box and before playing."
   },
   {
     "id": "fc-expanded-1-sandwich-order",
@@ -7558,7 +7607,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-1-literacy-events-order"
-    }
+    },
+    "explanation": "You need bread first, then the filling, and you eat the sandwich last."
   },
   {
     "id": "fc-expanded-1-bag-order",
@@ -7611,7 +7661,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-1-literacy-retell-fix"
-    }
+    },
+    "explanation": "You pack at home, walk to class, and unpack once you get there."
   },
   {
     "id": "fc-expanded-1-short-e",
@@ -7663,14 +7714,15 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Pet and hen both have the short e sound."
   },
   {
     "id": "fc-expanded-1-ending-sequence",
     "grade": "1",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "A child plants a seed, waters it, and later sees a sprout. Which word introduces the final event?",
+    "question": "A child plants a seed, waters it, and later sees a sprout. Which order word tells about the last event?",
     "answer": "Last",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
@@ -7715,7 +7767,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Last” points to the final event. First, before, and earlier point backward."
   },
   {
     "id": "fc-expanded-1-missing-event",
@@ -7767,7 +7820,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "You need water in the cup before you can drink it."
   },
   {
     "id": "fc-expanded-1-story-retell",
@@ -7819,7 +7873,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A good retelling keeps the same events in the same order."
   },
   {
     "id": "fc-expanded-1-sound-change",
@@ -7872,7 +7927,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-1-literacy-blend-sun"
-    }
+    },
+    "explanation": "Change /m/ to /t/ at the front of map and you get tap."
   },
   {
     "id": "fc-expanded-1-sequence-before",
@@ -7924,7 +7980,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Shoes go on after socks and just before the laces get tied."
   },
   {
     "id": "fc-expanded-2-sky-shift",
@@ -7932,7 +7989,7 @@
     "subject": "Science",
     "difficulty": 1,
     "question": "At 7 p.m., a star is beside a tree. At 8 p.m., it is above the tree. What changed?",
-    "answer": "Its apparent position",
+    "answer": "Where it appears in the sky",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
     "weekIntroduced": "2026-09-07",
@@ -7970,7 +8027,7 @@
     "originId": "tomorrow-2-science-sun-star",
     "choices": [
       "The star’s name",
-      "Its apparent position",
+      "Where it appears in the sky",
       "The kind of tree",
       "The number of stars"
     ],
@@ -7978,14 +8035,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-2-science-sky-evidence"
-    }
+    },
+    "explanation": "Earth turns, so the star appears in a new place an hour later."
   },
   {
     "id": "fc-expanded-2-sky-reference",
     "grade": "2",
     "subject": "Science",
     "difficulty": 2,
-    "question": "Why compare the Moon with the same tree in two observations?",
+    "question": "Why should you compare the Moon to the same tree each time you look?",
     "answer": "The tree gives a fixed place for comparison.",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
@@ -8039,14 +8097,15 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The tree stays put, so it gives you a fixed marker to compare against."
   },
   {
     "id": "fc-expanded-2-sky-time",
     "grade": "2",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which note best helps compare a star’s position later?",
+    "question": "Which note would best help you compare a star’s position later?",
     "answer": "“8 p.m.: above the roof.”",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
@@ -8100,15 +8159,16 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A note with both the time and the place lets you compare it later."
   },
   {
     "id": "fc-expanded-2-sky-ask",
     "grade": "2",
     "subject": "Science",
     "difficulty": 1,
-    "question": "You want to compare how bright two stars look. What should you record?",
-    "answer": "How much light each appears to give off",
+    "question": "You want to compare the brightness of two stars. What should you record?",
+    "answer": "How much light each one seems to give off",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
     "weekIntroduced": "2026-09-07",
@@ -8154,21 +8214,22 @@
     "originId": "tomorrow-2-science-attributes",
     "choices": [
       "When each first becomes visible",
-      "How much light each appears to give off",
+      "How much light each one seems to give off",
       "Where each appears above the trees",
       "How far apart they appear"
     ],
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Brightness is how much light a star seems to give off from Earth."
   },
   {
     "id": "fc-expanded-2-observation-not-guess",
     "grade": "2",
     "subject": "Science",
     "difficulty": 3,
-    "question": "Which sentence reports only what was observed?",
+    "question": "Which sentence tells only what someone actually saw?",
     "answer": "“I see a bright point above the roof.”",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
@@ -8222,14 +8283,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Seeing a bright point is what was observed. The other three are guesses."
   },
   {
     "id": "fc-expanded-2-sky-model-size",
     "grade": "2",
     "subject": "Science",
     "difficulty": 2,
-    "question": "In this side-view model, both balls are the same real size. Which would look larger to the person?",
+    "question": "In this picture, both balls are really the same size. Which one looks larger?",
     "answer": "The closer ball",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
@@ -8277,7 +8339,7 @@
     "choices": [
       "The closer ball",
       "The farther ball",
-      "Neither can be compared.",
+      "Neither one can be compared.",
       "Both must look equally large."
     ],
     "correctIndex": 0,
@@ -8288,14 +8350,15 @@
       "src": "/four-corners/distance.svg",
       "alt": "A viewer at the left and two identical balls: one nearby and one much farther away. The diagram marks both balls as the same real size.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "The closer ball looks bigger. Distance changes how large something looks."
   },
   {
     "id": "fc-expanded-2-star-size-question",
     "grade": "2",
     "subject": "Science",
     "difficulty": 2,
-    "question": "Which question asks about a star’s size rather than how it looks from Earth?",
+    "question": "Which question asks about a star’s real size instead of how it looks from Earth?",
     "answer": "How big is the star itself?",
     "standard": "S2E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=P17",
@@ -8349,7 +8412,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "That question asks about the star itself, not about how it looks to us."
   },
   {
     "id": "fc-expanded-2-rule-purpose",
@@ -8403,7 +8467,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-2-social-studies-rules-purpose"
-    }
+    },
+    "explanation": "Rules help people share space and get along with one another."
   },
   {
     "id": "fc-expanded-2-scarcity-meaning",
@@ -8464,7 +8529,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Scarcity means there is not enough of something for everyone who wants it."
   },
   {
     "id": "fc-expanded-2-tradeoff",
@@ -8525,7 +8591,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Choosing the book means giving up the puzzle. That is the trade-off."
   },
   {
     "id": "fc-expanded-2-need-want",
@@ -8578,7 +8645,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "You must drink water to live. The other three are wants."
   },
   {
     "id": "fc-expanded-2-good",
@@ -8631,7 +8699,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A good is an object you can hold, like a loaf of bread."
   },
   {
     "id": "fc-expanded-2-service",
@@ -8684,14 +8753,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A service is work someone does for you, like repairing a bicycle."
   },
   {
     "id": "fc-expanded-2-mayor-governor",
     "grade": "2",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "Which comparison is correct?",
+    "question": "Which sentence about a mayor and a governor is correct?",
     "answer": "A mayor leads a city; a governor leads a state.",
     "standard": "SSIPS",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
@@ -8738,7 +8808,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-2-social-studies-roles"
-    }
+    },
+    "explanation": "Mayors lead cities and governors lead states."
   },
   {
     "id": "fc-expanded-2-safe-community",
@@ -8799,7 +8870,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The signal tells drivers to stop so people can cross safely."
   },
   {
     "id": "fc-expanded-2-scarcity-money",
@@ -8854,20 +8926,21 @@
     "choices": [
       "Choose which game to buy.",
       "Buy every game it likes.",
-      "Pay after spending the same money twice.",
+      "Spend the same money twice.",
       "Pretend the prices do not matter."
     ],
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The money is limited, so the class has to pick just one game."
   },
   {
     "id": "fc-expanded-2-resource-limits",
     "grade": "2",
     "subject": "Social Studies",
     "difficulty": 2,
-    "question": "Which situation shows that space is limited?",
+    "question": "Which sentence shows that space is limited?",
     "answer": "The garden has room for one more plant.",
     "standard": "SSIPS",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=2136013513&range=Q11",
@@ -8921,7 +8994,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Room for only one more plant shows the garden’s space is running out."
   },
   {
     "id": "fc-expanded-2-compound-build",
@@ -8974,7 +9048,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-2-literacy-compound-build"
-    }
+    },
+    "explanation": "Sun + light makes sunlight, the light that comes from the Sun."
   },
   {
     "id": "fc-expanded-2-compound-ground",
@@ -9027,7 +9102,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-2-literacy-compound-use"
-    }
+    },
+    "explanation": "Playground joins play and ground: the ground where children play."
   },
   {
     "id": "fc-expanded-2-compound-tooth",
@@ -9080,7 +9156,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-2-literacy-compound-finish"
-    }
+    },
+    "explanation": "Tooth + brush makes toothbrush."
   },
   {
     "id": "fc-expanded-2-compound-snow",
@@ -9133,7 +9210,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-2-literacy-compound-explain"
-    }
+    },
+    "explanation": "Snowman joins two whole words, snow and man."
   },
   {
     "id": "fc-expanded-2-context-damp",
@@ -9185,7 +9263,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "You hang something up to dry it, so damp means a little wet."
   },
   {
     "id": "fc-expanded-2-context-sturdy",
@@ -9237,7 +9316,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Holding a heavy box without bending is the clue that sturdy means strong."
   },
   {
     "id": "fc-expanded-2-context-gather",
@@ -9289,7 +9369,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Putting scattered crayons into a box means bringing them together."
   },
   {
     "id": "fc-expanded-2-context-whisper",
@@ -9341,7 +9422,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Instead of shouting” is the clue: whispering is speaking very quietly."
   },
   {
     "id": "fc-expanded-2-context-frigid",
@@ -9393,7 +9475,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Pulling coats tight is the clue that frigid means very cold."
   },
   {
     "id": "fc-expanded-2-context-delighted",
@@ -9445,7 +9528,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Cheering over a prize is the clue that delighted means very happy."
   },
   {
     "id": "fc-expanded-2-context-hollow",
@@ -9497,7 +9581,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Empty space inside” is the clue for what hollow means."
   },
   {
     "id": "fc-expanded-2-context-clue",
@@ -9549,7 +9634,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Hiding from visitors is the behavior that shows timid means shy."
   },
   {
     "id": "fc-expanded-2-context-stroll",
@@ -9601,7 +9687,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Walking slowly and enjoying” tells you strolled means an easy pace."
   },
   {
     "id": "fc-expanded-3-rock-luster",
@@ -9655,7 +9742,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-science-rock-properties"
-    }
+    },
+    "explanation": "Luster describes how light reflects off a mineral’s surface."
   },
   {
     "id": "fc-expanded-3-rock-sort",
@@ -9709,7 +9797,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-science-rock-sort"
-    }
+    },
+    "explanation": "Sorting the red rocks together uses color and nothing else."
   },
   {
     "id": "fc-expanded-3-rock-compare",
@@ -9762,7 +9851,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Both are brown, so the color matches. Smooth and rough differ in texture."
   },
   {
     "id": "fc-expanded-3-rock-tool",
@@ -9816,14 +9906,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-3-science-test"
-    }
+    },
+    "explanation": "The harder mineral scratches the softer one, so scratching compares hardness."
   },
   {
     "id": "fc-expanded-3-rock-observation",
     "grade": "3",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Which note describes an observable property of a rock?",
+    "question": "Which note describes a property you can observe?",
     "answer": "“Its surface feels rough.”",
     "standard": "S3E1a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
@@ -9870,7 +9961,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-science-rock-trait-name"
-    }
+    },
+    "explanation": "How a surface feels can be observed. Lucky and best are opinions."
   },
   {
     "id": "fc-expanded-3-rock-same-luster",
@@ -9924,14 +10016,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-science-rock-compare-notes"
-    }
+    },
+    "explanation": "Their colors differ, but both are shiny, so they share luster."
   },
   {
     "id": "fc-expanded-3-rock-fair-test",
     "grade": "3",
     "subject": "Science",
     "difficulty": 1,
-    "question": "When comparing two rocks’ colors, why view both under the same light?",
+    "question": "Why should you view two rocks under the same light when comparing color?",
     "answer": "Different light can change how colors look.",
     "standard": "S3E1a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=O11",
@@ -9972,12 +10065,13 @@
       "The same light makes every rock shine equally.",
       "Different light can change how colors look.",
       "Different light always changes the rocks’ actual color.",
-      "The same light removes differences between rock colors."
+      "The same light hides color differences."
     ],
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Different light can make the same rock look like a different color."
   },
   {
     "id": "fc-expanded-3-map-equator",
@@ -10036,7 +10130,8 @@
       "src": "/four-corners/globe.svg",
       "alt": "Globe diagram: North Pole at the top, South Pole at the bottom, a highlighted horizontal circle halfway between them, and a curved vertical line from pole to pole.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "The equator circles Earth halfway between the two poles."
   },
   {
     "id": "fc-expanded-3-map-meridian",
@@ -10090,7 +10185,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-social-studies-map-meridian"
-    }
+    },
+    "explanation": "The prime meridian runs pole to pole and marks 0° longitude."
   },
   {
     "id": "fc-expanded-3-map-latitude",
@@ -10144,14 +10240,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-social-studies-map-lines"
-    }
+    },
+    "explanation": "Latitude lines run east and west, marking how far north or south a place is."
   },
   {
     "id": "fc-expanded-3-map-longitude",
     "grade": "3",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "What do lines of longitude help describe?",
+    "question": "What does a line of longitude tell you about a place?",
     "answer": "How far east or west a place is",
     "standard": null,
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P16",
@@ -10198,14 +10295,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-social-studies-map-longitude-find"
-    }
+    },
+    "explanation": "Longitude lines run north and south, marking how far east or west a place is."
   },
   {
     "id": "fc-expanded-3-compass-route",
     "grade": "3",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "You face west, turn right a quarter turn, then turn around. Which direction do you face?",
+    "question": "You face west, make a quarter turn to your right, then turn all the way around. Which direction are you facing?",
     "answer": "South",
     "standard": null,
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P12",
@@ -10252,14 +10350,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-3-social-studies-direction-turn"
-    }
+    },
+    "explanation": "West, a quarter turn right to north, then a half turn leaves you facing south."
   },
   {
     "id": "fc-expanded-3-compass-map",
     "grade": "3",
     "subject": "Social Studies",
     "difficulty": 1,
-    "question": "North is up on this map. The pond is right of the trail. In which direction is the pond from the trail?",
+    "question": "On this map, north is up and the pond is to the right of the trail. In which direction is the pond?",
     "answer": "East",
     "standard": null,
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=30645779&range=P12",
@@ -10318,7 +10417,8 @@
       "src": "/four-corners/trail-map.svg",
       "alt": "A simple park map with a north arrow pointing up, a trail on the left, and a pond directly to its right.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "When north is up on a map, the right-hand side is east."
   },
   {
     "id": "fc-expanded-3-physical-map",
@@ -10379,7 +10479,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Physical maps show natural features such as mountains, rivers, and coasts."
   },
   {
     "id": "fc-expanded-3-story-ending",
@@ -10432,14 +10533,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-literacy-summary-then"
-    }
+    },
+    "explanation": "Painting the tree is the last event, the Then of the summary."
   },
   {
     "id": "fc-expanded-3-summary-fix",
     "grade": "3",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "A baker had no flour, borrowed some, and baked bread. Which sentence would be inaccurate in a summary?",
+    "question": "A baker had no flour, borrowed some, and baked bread. Which sentence would NOT be true in a summary?",
     "answer": "The baker gave up without baking.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
@@ -10485,14 +10587,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-literacy-summary-fix"
-    }
+    },
+    "explanation": "The baker borrowed flour and baked, so “gave up” does not match the story."
   },
   {
     "id": "fc-expanded-3-transition-first",
     "grade": "3",
     "subject": "Literacy",
     "difficulty": 1,
-    "question": "Which word usually introduces the first step in directions?",
+    "question": "Which word signals the beginning of a set of directions?",
     "answer": "First",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
@@ -10538,7 +10641,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-3-literacy-transition-first"
-    }
+    },
+    "explanation": "“First” tells the reader where to begin."
   },
   {
     "id": "fc-expanded-3-transition-ending",
@@ -10591,7 +10695,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-3-literacy-transition-ending"
-    }
+    },
+    "explanation": "“Finally” signals the last step in a set of directions."
   },
   {
     "id": "fc-expanded-3-transition-next",
@@ -10644,7 +10749,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-3-literacy-transition-next"
-    }
+    },
+    "explanation": "“Then” connects one step to the step that follows it."
   },
   {
     "id": "fc-expanded-3-transition-cause",
@@ -10697,14 +10803,15 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-3-literacy-transition-cause"
-    }
+    },
+    "explanation": "“As a result” links what happened first to what it caused."
   },
   {
     "id": "fc-expanded-3-summary-important",
     "grade": "3",
     "subject": "Literacy",
     "difficulty": 3,
-    "question": "A runner in a red shirt wanted to finish a race. She rested after a fall, then finished. Which detail is least important to a brief summary?",
+    "question": "A runner in a red shirt wanted to finish a race. She rested after a fall, then finished. Which detail is least important in a short summary?",
     "answer": "The shirt was red.",
     "standard": null,
     "standardSource": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit?usp=sharing",
@@ -10749,7 +10856,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The shirt’s color does not affect the goal, the problem, or the ending."
   },
   {
     "id": "fc-expanded-3-story-problem-new",
@@ -10801,7 +10909,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The empty can is what stops him, so that is the problem."
   },
   {
     "id": "fc-expanded-3-story-solution-new",
@@ -10853,7 +10962,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Taking the side path is the So — how the hikers got past the branch."
   },
   {
     "id": "fc-expanded-3-story-goal-infer",
@@ -10905,7 +11015,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Trying every key shows the goal was to get the music room open."
   },
   {
     "id": "fc-expanded-3-summary-cause",
@@ -10957,7 +11068,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The summary keeps the real events: wind freed it and the child caught it."
   },
   {
     "id": "fc-expanded-3-summary-passage",
@@ -11009,7 +11121,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The story says the long twig was too heavy, so a lighter one was chosen."
   },
   {
     "id": "fc-expanded-3-sequence-meaning",
@@ -11061,7 +11174,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Then” tells the reader which step comes next."
   },
   {
     "id": "fc-expanded-3-result-infer",
@@ -11113,7 +11227,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "“Therefore” shows the rain stopping is why the game could begin."
   },
   {
     "id": "fc-expanded-3-story-detail",
@@ -11165,7 +11280,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The grapes hung too high to reach, and that is the fox’s problem."
   },
   {
     "id": "fc-expanded-3-sequence-summary",
@@ -11217,7 +11333,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Painting comes after the plan and before the families visit."
   },
   {
     "id": "fc-expanded-4-weather-reading",
@@ -11277,7 +11394,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-4-science-weather-read"
-    }
+    },
+    "explanation": "The log lists cloudy beside Tuesday."
   },
   {
     "id": "fc-expanded-4-weather-gap",
@@ -11337,7 +11455,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-4-science-weather-data-gap"
-    }
+    },
+    "explanation": "Tuesday falls between Monday and Wednesday, and it is not in the log."
   },
   {
     "id": "fc-expanded-4-weather-fair",
@@ -11389,7 +11508,7 @@
     "originId": "tomorrow-4-science-record",
     "choices": [
       "Observe at a different time every day.",
-      "Use a different description for the same sky each day.",
+      "Change how you describe the sky each day.",
       "Observe at noon from the same place daily.",
       "Record only days with many clouds."
     ],
@@ -11397,7 +11516,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-4-science-fair"
-    }
+    },
+    "explanation": "Same time and same place each day keeps the comparison fair."
   },
   {
     "id": "fc-expanded-4-weather-claim",
@@ -11456,14 +11576,15 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Two rainy days and one clear day together show the weather changed."
   },
   {
     "id": "fc-expanded-4-weather-units",
     "grade": "4",
     "subject": "Science",
     "difficulty": 2,
-    "question": "A temperature log says “68” with no unit. What missing information tells how to read this temperature?",
+    "question": "A temperature log says “68” with no unit. What information is missing?",
     "answer": "Whether the reading is °F or °C",
     "standard": "S4E4.a",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1486831259&range=N13",
@@ -11515,7 +11636,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Without the unit you cannot tell whether 68 means °F or °C."
   },
   {
     "id": "fc-expanded-4-weather-repeat",
@@ -11574,7 +11696,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Clear, cloudy, clear, cloudy — the two conditions alternate."
   },
   {
     "id": "fc-expanded-4-weather-evidence",
@@ -11633,7 +11756,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A week of records can answer a question about those same days."
   },
   {
     "id": "fc-expanded-4-weather-honest",
@@ -11692,7 +11816,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Marking a gap as missing keeps the record honest about what was seen."
   },
   {
     "id": "fc-expanded-4-weather-moon",
@@ -11756,7 +11881,8 @@
       "src": "/four-corners/moon-record.svg",
       "alt": "Three observation sketches in time order: a thin lit crescent, a half-lit circle, then a mostly lit circle.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "Each sketch shows more of the Moon’s face lit than the one before it."
   },
   {
     "id": "fc-expanded-4-weather-observation",
@@ -11815,7 +11941,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "An observation reports what already happened; a prediction looks ahead."
   },
   {
     "id": "fc-expanded-4-colony",
@@ -11868,7 +11995,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A colony is land settled and ruled by a faraway country."
   },
   {
     "id": "fc-expanded-4-patriot",
@@ -11922,7 +12050,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-4-social-studies-compare"
-    }
+    },
+    "explanation": "Patriots wanted the colonies to break free from British rule."
   },
   {
     "id": "fc-expanded-4-delegate",
@@ -11975,7 +12104,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A delegate is sent by a group to speak and decide on its behalf."
   },
   {
     "id": "fc-expanded-4-declaration-purpose",
@@ -12028,7 +12158,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The Declaration told Britain and the world that the colonies were free states."
   },
   {
     "id": "fc-expanded-4-jefferson",
@@ -12081,7 +12212,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Thomas Jefferson wrote the first draft of the Declaration."
   },
   {
     "id": "fc-expanded-4-franklin",
@@ -12134,7 +12266,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Franklin was the diplomat who won French support for the colonies."
   },
   {
     "id": "fc-expanded-4-king",
@@ -12187,7 +12320,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "King George III ruled Britain during the American Revolution."
   },
   {
     "id": "fc-expanded-4-yorktown",
@@ -12240,7 +12374,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Cornwallis surrendered at Yorktown in 1781, ending the major fighting."
   },
   {
     "id": "fc-expanded-4-treaty",
@@ -12293,7 +12428,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "In the 1783 Treaty of Paris, Britain recognized United States independence."
   },
   {
     "id": "fc-expanded-4-intolerable",
@@ -12346,7 +12482,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The Intolerable Acts punished Massachusetts for the Boston Tea Party."
   },
   {
     "id": "fc-expanded-4-cause-chain",
@@ -12399,7 +12536,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-4-literacy-cause-evidence"
-    }
+    },
+    "explanation": "The ball knocked the cups over, and the falling cups spilled the water."
   },
   {
     "id": "fc-expanded-4-effect-bell",
@@ -12452,7 +12590,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-4-literacy-effect-text"
-    }
+    },
+    "explanation": "The bell is the cause; lining up is the effect."
   },
   {
     "id": "fc-expanded-4-cause-two",
@@ -12505,7 +12644,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-4-literacy-cause-two"
-    }
+    },
+    "explanation": "The sentence names two causes: the bag was old and it was too full."
   },
   {
     "id": "fc-expanded-4-evidence-envelope",
@@ -12558,7 +12698,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-4-literacy-cause-unsupported"
-    }
+    },
+    "explanation": "The sentence reports only the smile. Anything more would be a guess."
   },
   {
     "id": "fc-expanded-4-main-title",
@@ -12611,7 +12752,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-4-literacy-main-title"
-    }
+    },
+    "explanation": "Mending pages and replacing covers are both ways of caring for books."
   },
   {
     "id": "fc-expanded-4-main-belong",
@@ -12664,7 +12806,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-4-literacy-main-unrelated"
-    }
+    },
+    "explanation": "Watering the seedlings is care for the garden. The rest only describe it."
   },
   {
     "id": "fc-expanded-4-main-organize",
@@ -12717,7 +12860,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-4-literacy-main-build"
-    }
+    },
+    "explanation": "Labeling, assigning spaces, and returning tools all keep supplies organized."
   },
   {
     "id": "fc-expanded-4-main-many",
@@ -12769,7 +12913,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "All three sentences build one idea: bees move the pollen plants need."
   },
   {
     "id": "fc-expanded-4-detail-support",
@@ -12821,7 +12966,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The snow is the cause of the delay; the message is a later effect."
   },
   {
     "id": "fc-expanded-4-main-too-narrow",
@@ -12873,14 +13019,15 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Only “several outdoor activities” covers paths, playground, and tables."
   },
   {
     "id": "fc-expanded-5-surface-record",
     "grade": "5",
     "subject": "Science",
     "difficulty": 1,
-    "question": "Before: one large rock. After: smaller pieces in the same place. What change is directly shown?",
+    "question": "Before: one large rock. After: smaller pieces in the same spot. What change is shown?",
     "answer": "The rock broke into pieces.",
     "standard": "S5E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
@@ -12935,7 +13082,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-5-science-earth-observation"
-    }
+    },
+    "explanation": "The pieces stayed put, so only breaking is shown — not movement."
   },
   {
     "id": "fc-expanded-5-surface-evidence",
@@ -12997,7 +13145,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-5-science-earth-evidence-select"
-    }
+    },
+    "explanation": "Photos from the same spot before and after let you see what changed."
   },
   {
     "id": "fc-expanded-5-erosion-evidence",
@@ -13066,7 +13215,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Erosion is material on the move, like soil washing down a slope."
   },
   {
     "id": "fc-expanded-5-deposition-evidence",
@@ -13135,7 +13285,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Deposition happens where water slows and drops the material it carried."
   },
   {
     "id": "fc-expanded-5-surface-diagram",
@@ -13209,14 +13360,15 @@
       "src": "/four-corners/silt-fence.svg",
       "alt": "Model: muddy water flows downhill to a mesh fence; soil collects on the uphill side while clearer water passes through.",
       "kind": "diagram"
-    }
+    },
+    "explanation": "The fence catches soil, so less of it travels farther downhill."
   },
   {
     "id": "fc-expanded-5-surface-location",
     "grade": "5",
     "subject": "Science",
     "difficulty": 1,
-    "question": "A rock cracks, but all its pieces stay in place. Which process has occurred without erosion being shown?",
+    "question": "A rock cracks, but all its pieces stay in place. Which process has happened?",
     "answer": "Weathering",
     "standard": "S5E1",
     "standardSource": "https://docs.google.com/spreadsheets/d/1NHE1-x6b21bcd2f5hEEcm4EZEAv66rty6_paTaPi1yo/edit#gid=1755617722&range=O10",
@@ -13278,7 +13430,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Breaking with no movement is weathering. Erosion would carry the pieces off."
   },
   {
     "id": "fc-expanded-5-surface-claim",
@@ -13347,7 +13500,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Watching the stream drop sand there links the stream to the pile directly."
   },
   {
     "id": "fc-expanded-5-goods",
@@ -13400,7 +13554,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A backpack is a physical item. The other three are services."
   },
   {
     "id": "fc-expanded-5-services",
@@ -13453,7 +13608,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Repairing bicycles is work done for others, which makes it a service."
   },
   {
     "id": "fc-expanded-5-producer",
@@ -13506,7 +13662,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A producer makes the goods or provides the services that others buy."
   },
   {
     "id": "fc-expanded-5-consumer",
@@ -13559,7 +13716,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A consumer is someone who buys and uses goods and services."
   },
   {
     "id": "fc-expanded-5-entrepreneur",
@@ -13612,7 +13770,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "An entrepreneur starts a business and accepts the risk of losing money."
   },
   {
     "id": "fc-expanded-5-tradeoff",
@@ -13665,7 +13824,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "A trade-off is what you give up when you choose one option over another."
   },
   {
     "id": "fc-expanded-5-community-contributions",
@@ -13723,7 +13883,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-5-social-studies-community-cooperation"
-    }
+    },
+    "explanation": "The town supplies the space and the store supplies the furniture."
   },
   {
     "id": "fc-expanded-5-taxes-services",
@@ -13776,7 +13937,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Tax money pays for services such as roads, parks, and fire departments."
   },
   {
     "id": "fc-expanded-5-government-rules",
@@ -13829,7 +13991,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Rules set fair terms, which protects buyers and businesses alike."
   },
   {
     "id": "fc-expanded-5-shared-path",
@@ -13887,7 +14050,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-5-social-studies-citizen-impact"
-    }
+    },
+    "explanation": "Clearing the path is a shared responsibility that keeps it usable."
   },
   {
     "id": "fc-expanded-5-dialogue",
@@ -13950,7 +14114,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-5-literacy-narrative-dialogue"
-    }
+    },
+    "explanation": "Dialogue is the spoken words inside the quotation marks."
   },
   {
     "id": "fc-expanded-5-setting-action",
@@ -14013,7 +14178,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-5-literacy-narrative-setting-effect"
-    }
+    },
+    "explanation": "A dark hallway explains why the switch has to be found by touch."
   },
   {
     "id": "fc-expanded-5-dialogue-contrast",
@@ -14076,7 +14242,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "dcss-5-literacy-narrative-contrast"
-    }
+    },
+    "explanation": "The tight grip contradicts the calm words, hinting at hidden worry."
   },
   {
     "id": "fc-expanded-5-theme-help",
@@ -14129,7 +14296,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-5-literacy-theme-help"
-    }
+    },
+    "explanation": "The swimmer improved only after asking for advice."
   },
   {
     "id": "fc-expanded-5-change-puzzle",
@@ -14182,7 +14350,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-5-literacy-change-end"
-    }
+    },
+    "explanation": "Quitting turned into trying again, which shows growing persistence."
   },
   {
     "id": "fc-expanded-5-theme-sharing",
@@ -14235,7 +14404,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-5-literacy-theme-sharing"
-    }
+    },
+    "explanation": "The work got done once the supplies were shared with the group."
   },
   {
     "id": "fc-expanded-5-theme-empathy",
@@ -14288,7 +14458,8 @@
     "adaptation": {
       "kind": "conversion",
       "sourceQuestionId": "tomorrow-dcss-5-literacy-theme-reject"
-    }
+    },
+    "explanation": "Struggling at a new sport taught the player how beginners feel."
   },
   {
     "id": "fc-expanded-5-character-generous",
@@ -14350,7 +14521,8 @@
     "correctIndex": 0,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Saving the last brush for someone else shows consideration."
   },
   {
     "id": "fc-expanded-5-setting-evidence-new",
@@ -14412,7 +14584,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Wind rattling the tent tells you the campsite is windy."
   },
   {
     "id": "fc-expanded-5-feelings-action",
@@ -14474,7 +14647,8 @@
     "correctIndex": 2,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Shaking knees show nerves; stepping forward shows willingness to try."
   },
   {
     "id": "fc-expanded-5-character-evidence",
@@ -14536,7 +14710,8 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Returning borrowed tools when promised is evidence of responsibility."
   },
   {
     "id": "fc-expanded-5-theme-patience",
@@ -14588,7 +14763,8 @@
     "correctIndex": 1,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "The buds opened only after steady watering and waiting."
   },
   {
     "id": "fc-expanded-5-plot-cause",
@@ -14650,6 +14826,7 @@
     "correctIndex": 3,
     "adaptation": {
       "kind": "source-exercise"
-    }
+    },
+    "explanation": "Leaving the shed unlocked let the wind and the rain reach the bike."
   }
 ]

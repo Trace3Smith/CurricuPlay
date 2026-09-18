@@ -7,10 +7,15 @@
   "visuals": 10,
   "originalItemsUnchanged": false,
   "qualityAudit": {
+    "clarified": 264,
+    "withdrawn": 6
+  },
+  "qualityAuditOriginalDispositions": {
     "preserved": 230,
     "revised": 34,
     "withdrawn": 6
   },
+  "itemsWithExplanation": 264,
   "unreviewedChanges": 0,
   "answerPositions": {
     "A": 67,
@@ -79,28 +84,6 @@
   "nearDuplicateCandidates": [
     {
       "ids": [
-        "fc-tomorrow-dcss-K-literacy-letter-match",
-        "fc-expanded-K-s-match"
-      ],
-      "similarity": 0.767,
-      "questions": [
-        "Which small letter matches M?",
-        "Which lowercase letter matches S?"
-      ]
-    },
-    {
-      "ids": [
-        "fc-tomorrow-dcss-K-literacy-letter-sound",
-        "fc-expanded-K-t-sound"
-      ],
-      "similarity": 0.971,
-      "questions": [
-        "Which word starts with the /m/ sound?",
-        "Which word starts with the /t/ sound?"
-      ]
-    },
-    {
-      "ids": [
         "fc-tomorrow-dcss-K-literacy-letter-sound",
         "fc-expanded-K-b-sound"
       ],
@@ -115,9 +98,9 @@
         "fc-tomorrow-dcss-1-literacy-short-u",
         "fc-expanded-1-hop-hope"
       ],
-      "similarity": 0.73,
+      "similarity": 0.737,
       "questions": [
-        "Which word has the short /ŭ/ sound in the middle?",
+        "Which word has the short u sound in the middle?",
         "Which word has a short o sound?"
       ]
     },
@@ -145,24 +128,13 @@
     },
     {
       "ids": [
-        "fc-expanded-K-t-sound",
-        "fc-expanded-K-b-sound"
-      ],
-      "similarity": 0.835,
-      "questions": [
-        "Which word starts with the /t/ sound?",
-        "Which word starts with the same sound as “ball”?"
-      ]
-    },
-    {
-      "ids": [
         "fc-expanded-1-short-a",
         "fc-expanded-1-same-vowel"
       ],
-      "similarity": 0.776,
+      "similarity": 0.766,
       "questions": [
         "Which word has the same middle sound as “map”?",
-        "Which pair has the same middle vowel sound?"
+        "Which pair of words has the same middle vowel sound?"
       ]
     },
     {
@@ -181,9 +153,9 @@
         "fc-expanded-1-same-vowel",
         "fc-expanded-1-short-e"
       ],
-      "similarity": 0.762,
+      "similarity": 0.753,
       "questions": [
-        "Which pair has the same middle vowel sound?",
+        "Which pair of words has the same middle vowel sound?",
         "Which word has the same vowel sound as “pet”?"
       ]
     },
@@ -196,17 +168,6 @@
       "questions": [
         "Which order makes sense for making a sandwich?",
         "Which order makes sense before school?"
-      ]
-    },
-    {
-      "ids": [
-        "fc-expanded-3-map-latitude",
-        "fc-expanded-3-map-longitude"
-      ],
-      "similarity": 0.937,
-      "questions": [
-        "What do lines of latitude help describe?",
-        "What do lines of longitude help describe?"
       ]
     }
   ],

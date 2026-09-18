@@ -245,3 +245,50 @@ test('Quality audit separates printed letter matching and rejects withdrawn reco
   await expect(page.getByRole('button', { name: /^Start Game/ })).toBeVisible();
   await expect(page.locator('.fc-game')).toHaveCount(0);
 });
+
+test('Printed-letter rounds label corners with shapes; every other question keeps A/B/C/D', async ({ page }) => {
+  const tokens = ['●', '▲', '■', '◆'];
+  const printItems = pack.filter(q => 'delivery' in q && q.delivery === 'look-at-print');
+  // The whole point of the scheme is that it covers exactly the letter-content questions.
+  expect(printItems).toHaveLength(4);
+  for (const q of printItems) expect(q.grade).toBe('K');
+  for (const q of pack) {
+    const letters = q.choices.every(c => /^[A-Za-z]$/.test(c.trim()) || /^[A-Za-z] and [A-Za-z]$/.test(c.trim()));
+    expect(letters).toBe('delivery' in q && q.delivery === 'look-at-print');
+  }
+  await setup(page, 'K');
+  const kIds = pack.filter(q => q.grade === 'K').map(q => q.id);
+  for (const q of printItems) {
+    const ids = [q.id, ...kIds.filter(id => id !== q.id)].slice(0, 15);
+    const state = { version: 1, screen: 'play', grade: 'K', mix: 'Mixed Academic', rounds: 15, currentRound: 0, questionIds: ids, usedQuestionIds: [q.id], revealed: false };
+    await page.evaluate(({ key, state }) => localStorage.setItem(key, JSON.stringify(state)), { key, state });
+    await page.reload();
+    await expect(page.locator('.fc-game h1')).toHaveText(q.question);
+    await expect(page.locator('.fc-choice-print')).toHaveCount(4);
+    // No bare letter label survives on these rounds: the corner reads as a worded sign.
+    await expect(page.locator('.fc-choice > b:not(.fc-corner)')).toHaveCount(0);
+    for (let i = 0; i < 4; i++) {
+      const tile = page.locator('.fc-choice').nth(i);
+      await expect(tile.locator('b.fc-corner')).toHaveText(`${tokens[i]}Corner ${'ABCD'[i]}`);
+      await expect(tile.locator('i.fc-token')).toHaveAttribute('aria-hidden', 'true');
+      await expect(tile.locator('span.fc-letter')).toHaveText(q.choices[i]);
+    }
+    await fits(page);
+    await page.getByRole('button', { name: 'Reveal Answer', exact: true }).click();
+    await expect(page.locator('.fc-correct')).toHaveCount(1);
+    await expect(page.locator('.fc-correct > span')).toHaveText(q.answer);
+    await expect(page.locator('.fc-controls p')).toContainText(`Correct answer: ${tokens[q.correctIndex]} corner ${'ABCD'[q.correctIndex]}`);
+    await fits(page);
+    await page.screenshot({ path: `test-results/four-corners-print-${q.id}.png` });
+  }
+  // A neighbouring K literacy question with word choices is untouched.
+  const plain = pack.find(q => q.grade === 'K' && q.subject === 'Literacy' && !('delivery' in q && q.delivery === 'look-at-print'))!;
+  const ids = [plain.id, ...kIds.filter(id => id !== plain.id)].slice(0, 15);
+  await page.evaluate(({ key, state }) => localStorage.setItem(key, JSON.stringify(state)), { key, state: { version: 1, screen: 'play', grade: 'K', mix: 'Mixed Academic', rounds: 15, currentRound: 0, questionIds: ids, usedQuestionIds: [plain.id], revealed: false } });
+  await page.reload();
+  await expect(page.locator('.fc-choice-print')).toHaveCount(0);
+  await expect(page.locator('.fc-choice > b')).toHaveText(['A', 'B', 'C', 'D']);
+  await page.getByRole('button', { name: 'Reveal Answer', exact: true }).click();
+  await expect(page.locator('.fc-controls p')).toContainText(`Correct answer: ${'ABCD'[plain.correctIndex]} —`);
+  await fits(page);
+});

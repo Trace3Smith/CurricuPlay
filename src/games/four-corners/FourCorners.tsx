@@ -3,6 +3,12 @@ import { grades } from '../../types';
 import { bank, buildQueue, eligible, freshState, gradeLabel, loadState, mixes, roundOptions, saveState, subjectLabel, validSession, type CornerState } from './engine';
 import './four-corners.css';
 
+// Printed-letter rounds label the corners with shapes instead of letters. On those questions the
+// choices are themselves letters, and a five-year-old cannot reliably tell the letter naming the
+// corner from the letter being asked about. Every other question keeps plain A/B/C/D.
+const CORNER_TOKENS = ['\u25cf', '\u25b2', '\u25a0', '\u25c6'];
+const isPrintRound = (delivery?: string) => delivery === 'look-at-print';
+
 export default function FourCorners({ onHome }: { onHome: () => void }) {
   const [state, setState] = useState(loadState);
   const [saved, setSaved] = useState(true);
@@ -57,8 +63,10 @@ export default function FourCorners({ onHome }: { onHome: () => void }) {
     {active && <main className="fc-game">
       <div className="fc-meta"><span>{gradeLabel(state.grade)} · {subjectLabel(question.subject)}</span><span>Round {state.currentRound + 1}{state.rounds !== 'all' && ` of ${state.rounds}`}</span></div>
       <div className="fc-prompt"><div>{question.delivery === 'look-at-print' ? <p className="fc-read">LOOK AT THE PRINTED LETTERS · TEACHER READS THE QUESTION ONLY</p> : question.teacherRead && <p className="fc-read">TEACHER READS QUESTION ALOUD</p>}<h1 ref={title} tabIndex={-1}>{question.question}</h1></div>{question.visual && <img src={question.visual.src} alt={question.visual.alt} />}</div>
-      <div className="fc-answers">{question.choices.map((choice, index) => <div key={index} className={`fc-choice ${state.revealed && index === question.correctIndex ? 'fc-correct' : ''}`}><b>{'ABCD'[index]}</b><span>{choice}</span>{state.revealed && index === question.correctIndex && <strong className="fc-check">✓ Correct</strong>}</div>)}</div>
-      <footer className="fc-controls"><p aria-live="polite">{state.revealed ? `Correct answer: ${'ABCD'[question.correctIndex]}${question.explanation ? ` — ${question.explanation}` : ''}` : 'Choose A, B, C, or D. Everyone stays in the game.'}</p>{state.revealed ? <button className="primary" onClick={next}>{state.rounds !== 'all' && state.currentRound === state.questionIds.length - 1 ? 'Finish Game' : 'Next Question'}</button> : <button className="primary" onClick={() => update({ revealed: true })}>Reveal Answer</button>}</footer>
+      <div className="fc-answers">{question.choices.map((choice, index) => <div key={index} className={`fc-choice ${isPrintRound(question.delivery) ? 'fc-choice-print' : ''} ${state.revealed && index === question.correctIndex ? 'fc-correct' : ''}`}>{isPrintRound(question.delivery)
+        ? <b className="fc-corner"><i className="fc-token" aria-hidden="true">{CORNER_TOKENS[index]}</i>Corner {'ABCD'[index]}</b>
+        : <b>{'ABCD'[index]}</b>}<span className={isPrintRound(question.delivery) ? 'fc-letter' : undefined}>{choice}</span>{state.revealed && index === question.correctIndex && <strong className="fc-check">✓ Correct</strong>}</div>)}</div>
+      <footer className="fc-controls"><p aria-live="polite">{state.revealed ? <>{'Correct answer: '}{isPrintRound(question.delivery) && <i className="fc-token fc-token-inline" aria-hidden="true">{CORNER_TOKENS[question.correctIndex]}</i>}{isPrintRound(question.delivery) ? ` corner ${'ABCD'[question.correctIndex]}` : 'ABCD'[question.correctIndex]}{question.explanation ? ` — ${question.explanation}` : ''}</> : 'Choose A, B, C, or D. Everyone stays in the game.'}</p>{state.revealed ? <button className="primary" onClick={next}>{state.rounds !== 'all' && state.currentRound === state.questionIds.length - 1 ? 'Finish Game' : 'Next Question'}</button> : <button className="primary" onClick={() => update({ revealed: true })}>Reveal Answer</button>}</footer>
     </main>}
     {state.screen === 'complete' && <main className="fc-complete"><div className="eyebrow">FOUR CORNERS</div><h1 ref={title} tabIndex={-1}>{state.endedEarly ? 'Game ended.' : state.rounds === 'all' ? 'Every question explored!' : `All ${state.rounds} rounds complete!`}</h1><p>{state.rounds === 'all' && !state.endedEarly ? "You've used every available question in this content pool." : 'Everyone played. Everyone learned.'}</p><button className="primary" onClick={start}>Play Again</button><button onClick={() => update({ screen: 'setup' })}>Change Setup</button></main>}
     <dialog ref={dialog} onCancel={() => setConfirm(null)} aria-labelledby="fc-confirm"><h2 id="fc-confirm">{confirm === 'reset' ? 'Reset this game?' : 'Change grade?'}</h2><p>{confirm === 'reset' ? 'Start a new shuffled game with these settings.' : 'Return to setup and choose a grade. This round’s progress will be cleared.'}</p><div className="dialog-actions"><button onClick={() => setConfirm(null)}>Cancel</button><button className="primary" onClick={() => { if (confirm === 'reset') start(); else setState({ ...freshState(), grade: state.grade, mix: state.mix, rounds: state.rounds }); setConfirm(null); }}>{confirm === 'reset' ? 'Reset Game' : 'Change Grade'}</button></div></dialog>

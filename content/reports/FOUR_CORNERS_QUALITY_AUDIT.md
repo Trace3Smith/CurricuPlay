@@ -1,6 +1,6 @@
 # Four Corners question-and-choice quality audit — September 17, 2026
 
-This report supersedes the earlier 270-question expansion readiness and editorial reports. The active bank has **264 questions: 230 records preserved exactly, 34 revised, and six withdrawn**. No replacement questions were generated to conceal the resulting coverage loss. Jeopardy content and behavior were not changed by this audit. Nothing was pushed or deployed.
+This report supersedes the earlier 270-question expansion readiness and editorial reports. A later writing-and-clarity pass is recorded separately in [FOUR_CORNERS_CLARITY_PASS.md](FOUR_CORNERS_CLARITY_PASS.md); it reworded 65 items and added 264 reveal-line explanations without changing any key, position, count, or citation, and it is the reason ledger records now read `disposition: "clarified"` with the audit verdict kept in `qualityDisposition`. The active bank has **264 questions: 230 records preserved exactly, 34 revised, and six withdrawn**. No replacement questions were generated to conceal the resulting coverage loss. Jeopardy content and behavior were not changed by this audit. Nothing was pushed or deployed.
 
 ## What each task actually assesses
 
@@ -18,7 +18,7 @@ All 270 original prompt-and-choice sets were reviewed together for a single task
 
 Eight grade-3 globe/direction items inherited SS3G1 landform alignment; nine grade-5 economics/community-business items inherited SS5CG1 citizenship alignment. These inappropriate codes were removed **only from Four Corners**. Existing dated pacing rows still control eligibility, and existing district lesson excerpts support the concepts. The documented unit title supplies the lesson reference. No replacement standard code is asserted. This explicitly distinguishes dated topic evidence from verified standard-level alignment.
 
-Similarity checks flag 12 prompt pairs and three repeated unordered choice sets. Different taught letter/sound targets remain distinct skills/examples; latitude versus longitude and separate event sequences are not duplicate answers. Repeated choice sets for real place categories, Earth processes, and cardinal directions are intentional: the prompts ask different concepts or spatial reasoning. They were reviewed rather than altered just to evade a similarity threshold. Automated checks cannot prove semantic correctness; the item audit records the editorial decisions.
+Similarity checks flagged 12 prompt pairs and three repeated unordered choice sets at the time of this audit; the later clarity pass reduced the prompt pairs to eight without adding any. Different taught letter/sound targets remain distinct skills/examples; latitude versus longitude and separate event sequences are not duplicate answers. Repeated choice sets for real place categories, Earth processes, and cardinal directions are intentional: the prompts ask different concepts or spatial reasoning. They were reviewed rather than altered just to evade a similarity threshold. Automated checks cannot prove semantic correctness; the item audit records the editorial decisions.
 
 ## Current coverage
 

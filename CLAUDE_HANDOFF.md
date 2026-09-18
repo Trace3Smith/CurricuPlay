@@ -30,7 +30,10 @@ Counts assume no local teacher vetoes. All grades support 10 questions per subje
 - K sentence completion now cites the existing complete-thought sentence goal. It is not proof of writing mastery.
 - Eight grade-3 globe/direction and nine grade-5 economics/community items had mismatched inherited standard codes. Those codes are now null; existing district lesson/unit references support topics and pacing rows control dates. No replacement code was invented. Standard-specific alignment remains unasserted for these items.
 - Shortages against 15 per subject: K Science 5; grade 1 Social Studies 3; grade 2 Science 3; grade 3 Science 3 and Social Studies 3; grade 5 Science 3. Quality takes priority over quota. No future content should fill these gaps.
-- Similarity candidates and repeated choice sets were editorially reviewed; see the report. Automated structural checks cannot prove semantic correctness or curriculum mastery. Source snapshots are not blanket approval for everything in a document.
+- Similarity candidates and repeated choice sets were editorially reviewed; see the report. The clarity pass cut prompt-similarity candidates from 12 pairs to eight and added none; the three repeated choice sets are unchanged and intentional. Automated structural checks cannot prove semantic correctness or curriculum mastery. Source snapshots are not blanket approval for everything in a document.
+- All 264 active items now carry a one-sentence `explanation`, rendered on the reveal line. These are editorial reveal lines restating the prompt, choices, or cited skill; they are **not** separately teacher-approved curriculum text and assert no standard or evidence of their own.
+- No standard-code check runs against the Four Corners bank. `scripts/validate-four-corners.py` verifies the pacing row and evidence quote but never reads `standard`. `scripts/build-tomorrow-pack.py` line 25 is the only standard-vs-pacing check in the repo and covers the Jeopardy pack only. Porting it to Four Corners is deferred pending a reviewed exemption list.
+- The FY27 workbook records Literacy as program/session references, not codes: **0 of 222 Literacy pacing rows carry any standard code, and no Georgia ELA-format code appears in any of the 15 workbook tabs.** `references()` in `ingest-content.py` now recognises the ELA code shape, but no code can be recovered from this source; those items stay session-anchored.
 - Eligibility deliberately stays capped at **2026-09-13**, via shared `PACK_CUTOFF`. Do not silently advance it or change shared Jeopardy timing.
 
 ## Exact paths and authority
@@ -40,7 +43,7 @@ All paths below are relative to the repository root above.
 ### Runtime and review authority
 
 - `src/data/four-corners.json`: authoritative active, curated Four Corners runtime bank; not safe to overwrite from old authoring scripts.
-- `content/four-corners/quality-audit.json`: authoritative per-item editorial disposition and complete before/after record. Validator requires active after-states to match the runtime bank. Review both together for any authorized future edits; do not simply regenerate this ledger to bless arbitrary changes.
+- `content/four-corners/quality-audit.json`: authoritative per-item editorial disposition and complete before/after record. Records touched by the September 17 clarity pass read `disposition: "clarified"`, keep the audit's verdict in `qualityDisposition`, and carry `clarityNotes`. Validator requires active after-states to match the runtime bank. Review both together for any authorized future edits; do not simply regenerate this ledger to bless arbitrary changes.
 - `content/four-corners/quality-withdrawals.json`: withdrawn full records and reasons; do not reintroduce them.
 - `content/four-corners/pre-quality-audit.json`: immutable historical 270-item snapshot.
 - `content/four-corners/mvp-baseline.json`: immutable historical 90-item snapshot; necessary audited changes supersede its old preservation claim.
@@ -70,12 +73,15 @@ Local authored assets: `public/four-corners/compass.svg`, `day-night.svg`, `dist
 
 - `scripts/validate-four-corners.py`: validates bank/ledger, structure, evidence, date cutoff, assets, duplicates and similarity candidates; generates `content/reports/FOUR_CORNERS_EXPANSION_VALIDATION.json`. It does not generate questions.
 - `scripts/validate-content.py`: shared content validator; generates `content/reports/validation.json`.
+- `scripts/report-citations.py`: read-only citation-coverage inventory across all three banks; generates `content/reports/CITATION_COVERAGE.json` and `.md` (`npm run content:citations`). Reports only — it enforces nothing and never reads or writes question content.
 - `scripts/ingest-content.py`: existing curriculum/draft importer; writes `src/data/curriculum.json`, `src/data/questions.json`, `src/data/replacementQuestionIds.json` and source reports.
 - `scripts/expand-templates.py`: existing draft template generator; writes `content/templates/pilot-variants.json` and template report. Not a Four Corners generator.
 - `scripts/build-tomorrow-pack.py`: existing classroom pack builder; writes `src/data/tomorrow-pack.json` and Tomorrow reports, including the locally edited spot-check report. **Do not run as a handoff validation step.**
 - `scripts/report-content.py`: existing shared reporting script.
 - There is **no checked-in, supported Four Corners generation script**. Earlier authoring used ad hoc session scripts; the reviewed bank and full audit snapshots are the durable artifacts. Do not attempt a blind regeneration or claim reproducible authoring from the existing shared generators. Runtime never generates new questions.
-- `content/reports/FOUR_CORNERS_QUALITY_AUDIT.md`: current editorial/readiness report. Earlier `FOUR_CORNERS_READINESS.md`, `FOUR_CORNERS_EXPANDED_READINESS.md`, and `FOUR_CORNERS_EXPANSION_REVIEW.md` are marked historical/superseded.
+- `content/reports/FOUR_CORNERS_QUALITY_AUDIT.md`: current editorial/readiness report.
+- `content/reports/FOUR_CORNERS_CLARITY_PASS.md`: September 17 writing-and-clarity pass — 65 reworded items, 264 reveal-line explanations, no key/position/count/citation change.
+- `content/reports/CITATION_COVERAGE.md` / `.json`: generated standard-code provenance inventory. Current state: 0 of 655 items missing a pacing citation; 247 carry no workbook-verified standard code. Earlier `FOUR_CORNERS_READINESS.md`, `FOUR_CORNERS_EXPANDED_READINESS.md`, and `FOUR_CORNERS_EXPANSION_REVIEW.md` are marked historical/superseded.
 - `dist/`, `test-results/`, `playwright-report/`, `node_modules/`, and `*.tsbuildinfo` are generated/ignored, not handoff source.
 
 ## Validation, tests, build, and preview

@@ -62,6 +62,8 @@ report = {
     'newSourceExercises': sum(q.get('adaptation', {}).get('kind') == 'source-exercise' for q in new),
     'visuals': sum('visual' in q for q in questions), 'originalItemsUnchanged': questions[:len(baseline)] == baseline,
     'qualityAudit': dict(collections.Counter(r['disposition'] for r in audit)),
+    'qualityAuditOriginalDispositions': dict(collections.Counter(r.get('qualityDisposition', r['disposition']) for r in audit)),
+    'itemsWithExplanation': sum(bool(q.get('explanation')) for q in questions),
     'unreviewedChanges': 0 if [r['after'] for r in audit if r['after'] is not None] == questions else 1,
     'answerPositions': dict(collections.Counter('ABCD'[q['correctIndex']] for q in questions)),
     'newAnswerPositionLongestRun': longest,
