@@ -1,6 +1,6 @@
 # ClassThread Increment 1 — Teacher Foundation
 
-Implemented on `classthread-foundation` and manually approved on September 27, 2026. The approved closure includes the Four Corners Continue-card fix and authorization to commit/push this branch after verification. No merge, production deployment, or remote migration is authorized; Increment 2 has not begun.
+Implemented on `classthread-foundation` and manually approved on September 27, 2026. The Increment 1 checkpoint is `befca0442a3ee7313fe6cdad948ee0b64d251888`. The user subsequently configured the ClassThread Development Supabase project, applied the migration, and confirmed a successful live Google OAuth and persisted teacher-workflow smoke test. No merge to main or production deployment was performed; Increment 2 has not begun.
 
 ## What is implemented
 
@@ -59,9 +59,17 @@ Education context is deliberately represented by validated labels here, not a fa
 
 All seven tables have row-level security. Anonymous access is revoked. Membership and app identity are established by an authenticated, idempotent bootstrap function with a fixed search path. Users cannot grant themselves memberships or rewrite ownership/context columns. Composite foreign keys prevent references across workspaces or selected school years. Database triggers enforce assignment dates and increment revisions. The schema contains no Games/session, resource, curriculum, lesson, evaluation, Action, or learner tables.
 
-The migration has been applied and exercised locally in PostgreSQL via PGlite under `authenticated` and `anon` roles. It has **not** been applied to Supabase. Hosted Auth/PostgREST and real Google/email delivery still need a configured development project and a live smoke test.
+The migration has been applied and exercised locally in PostgreSQL via PGlite under `authenticated` and `anon` roles. The user also confirmed that it was successfully applied to the real ClassThread Development Supabase project. Do not reapply the initial migration to that configured project.
+
+## Live development verification
+
+The user confirmed a successful smoke test at **http://localhost:5173** against the real development Supabase backend: Google sign-in, teacher profile, school year creation, Teaching Assignment creation, My Classroom, Work Queue creation/completion, browser refresh persistence, sign-out, and sign-in again with the records restored correctly. The local fixture is therefore no longer the only tested backend path.
+
+This records the user's live verification separately from the automated fixture and mocked-provider tests. Email-code delivery and a Vercel-hosted deployment were not part of the reported smoke test. See the [review record](INCREMENT_1_REVIEW.md#live-development-smoke-test) for the verified workflow. No credentials or environment-file contents are recorded here; `.env.local` remains ignored and untracked by Git.
 
 ## Configure a development Supabase project manually
+
+The existing ClassThread Development project has completed the migration and Google OAuth setup above. These instructions remain a reference for a new environment; they do not require resetting the verified project.
 
 1. Use a separate development Supabase project. Run the migration in its SQL editor as the project database owner, or use your normal Supabase migration process. Run it once; do not paste it repeatedly over existing tables. Keep `public` exposed to the Data API; keep `private` unexposed. Do not disable RLS.
 2. Enable the Email auth provider and account creation. Keep anonymous sign-ins disabled. Configure the **Confirm signup** and **Magic Link** email templates to display the OTP: `<p>Your ClassThread sign-in code is <strong>{{ .Token }}</strong>.</p>`. This app accepts a code typed into the original sign-in page; it does not consume magic-link fragments. Configure a verified SMTP sender and suitable provider rate limits for real teacher testing. See [Supabase passwordless email](https://supabase.com/docs/guides/auth/auth-email-passwordless) and [email templates](https://supabase.com/docs/guides/auth/auth-email-templates).
@@ -133,6 +141,6 @@ The snapshot is a local safeguard, not a cross-device backup. Download it before
 
 See `INCREMENT_1_REVIEW.md` for the final test/build results and exact changed-file manifest.
 
-The suite checks real SQL row isolation and constraints, application ownership/validation, auth-provider transport and cookies, assignment switching, persisted UI workflows, legacy exports, route recovery, and the original gameplay/assessment/layout regressions. Provider transport tests use mocked HTTP responses; the development fixture uses local PostgreSQL and explicit test identities. Neither substitutes for a live configured Supabase/Google/SMTP smoke test.
+The suite checks real SQL row isolation and constraints, application ownership/validation, auth-provider transport and cookies, assignment switching, persisted UI workflows, legacy exports, route recovery, and the original gameplay/assessment/layout regressions. Provider transport tests use mocked HTTP responses; the development fixture uses local PostgreSQL and explicit test identities. Separately, the user confirmed the live Supabase/Google OAuth workflow described above. That live result does not extend to email-code delivery or a production deployment.
 
 Existing question/content coverage limitations remain as before. This increment does not generate questions, change approvals, modify curriculum evidence, or expand a game bank. Future resources and private teacher libraries should continue to belong to the teacher's personal workspace; adding an institutional reference must never transfer ownership. Future parent/student authorization requires separate explicit relationships and policies, not broader workspace access.

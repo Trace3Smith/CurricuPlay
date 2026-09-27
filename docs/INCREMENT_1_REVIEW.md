@@ -1,6 +1,6 @@
 # Increment 1 review — 2026-09-27
 
-ClassThread Teacher Foundation passed manual review on `classthread-foundation`. On September 27 the teacher confirmed My Classroom, assignment/work persistence, completion, and recovery of both Games, and authorized committing/pushing this branch after the Four Corners card correction and verification. No merge, production deployment, or remote migration was performed. Increment 2 has not begun.
+ClassThread Teacher Foundation passed manual review on `classthread-foundation`. On September 27 the teacher confirmed My Classroom, assignment/work persistence, completion, and recovery of both Games, and authorized committing/pushing this branch after the Four Corners card correction and verification. The existing checkpoint is `befca0442a3ee7313fe6cdad948ee0b64d251888`. The user subsequently applied the migration to the development Supabase project and confirmed the live verification recorded below. No merge to main or production deployment was performed. Increment 2 has not begun.
 
 ## Result
 
@@ -25,6 +25,8 @@ Games remain browser-local. Original localStorage formats/keys, question banks, 
 | TypeScript | `npm run typecheck` passed; includes server/shared/API, fixture infrastructure, and new tests |
 | Production build | `npm run build` passed |
 | Compiled browser smoke | Direct routes, unconfigured auth boundary, Jeopardy, Four Corners, ClassThread return, refresh, exact assessment history, and 1920×1080 bounds passed; no browser exceptions |
+| Live development Supabase + Google OAuth | **Passed, user verified** at `http://localhost:5173`; migration applied and real records restored after refresh and sign-out/sign-in |
+| Environment-file exclusion | `.env.local` is ignored by `.gitignore`'s `.env.*` rule and is not tracked by Git; its contents were not read for this documentation update |
 | Browser bundle boundary | No Supabase SDK, server-auth implementation, PGlite, or fixture-session markers in either emitted JavaScript bundle |
 | Dependency tree | `npm ls --depth=0` passed |
 | Whitespace | `git diff --check` passed |
@@ -35,17 +37,30 @@ The actual SQL migration was tested in local PGlite PostgreSQL under authenticat
 
 The production output separates the ClassThread entry (~376 kB JS / 117 kB gzip) from the existing Games/question-bank chunk (~2.153 MB JS / 174 kB gzip). Screenshots are in ignored `test-results/`, including `classthread-my-classroom.png`, `classthread-mobile.png`, `production-jeopardy.png`, and `production-four-corners.png`, and `games-continue-1920.png`. The compiled smoke screenshots are from the initial Increment 1 review; the card/layout checks and full suite were rerun for closure.
 
+## Live development smoke test
+
+The user configured the real **ClassThread Development** Supabase project and confirmed that the Increment 1 migration applied successfully. Google OAuth worked through the local ClassThread app at **http://localhost:5173**. The user verified:
+
+- Google sign-in and teacher profile.
+- School year creation and Teaching Assignment creation.
+- My Classroom displaying real persisted records.
+- Work Queue creation and completion.
+- Records surviving browser refresh.
+- Sign-out, sign-in again, and correct restoration of the saved records.
+
+This is a successful live Supabase-backed smoke test reported by the user, in addition to the automated local-database and mocked-auth checks. The fixture is no longer the only tested backend path. Email-code delivery and a Vercel-hosted deployment were not included in this reported workflow. No credentials, keys, OAuth secrets, or environment-file contents are included in this record.
+
 ## Remaining warnings and configuration
 
 - Build succeeds with the preserved large Games chunk warning, ignored React Router `use client` directives, and Zod comment-annotation warnings. The last two are dependency bundling warnings; TypeScript reports no errors.
-- No Supabase credentials are configured. Real Google OAuth, SMTP delivery, hosted PostgREST, and hosted cookie/callback behavior were not exercised. The migration was not applied remotely. Follow the [manual Supabase steps](INCREMENT_1.md#configure-a-development-supabase-project-manually) before real-account testing.
+- Development Supabase migration, live Google OAuth, and persisted teacher workflow verification have passed as reported above. Email-code/SMTP delivery has not been reported as verified. The [manual Supabase steps](INCREMENT_1.md#configure-a-development-supabase-project-manually) remain a reference for new environments.
 - No Vercel settings were changed. The repo includes the deployment adapter/rewrite configuration, but hosted verification awaits explicit deployment approval. See [future Vercel configuration](INCREMENT_1.md#vercel-configuration-when-a-later-deployment-is-authorized).
 - Existing content/approval/coverage limitations remain. This increment does not add classroom questions, expand grades, infer curriculum, or migrate assessments to the cloud.
 - Games backups are local/downloadable; there is no automatic sync or restore UI. Teacher account deletion, organization memberships, and institutional/student authorization are outside this increment.
 
 ## Local review
 
-Both development servers were started for review. The normal app is on port 5173; teacher sign-in there explicitly reports missing provider configuration until `.env.local` is filled in. Games work immediately.
+The normal app on port 5173 has been configured against the real ClassThread Development Supabase project. Google sign-in and the persisted teacher workflow at this origin passed the user's live smoke test. Games remain browser-local.
 
 | Area | URL |
 | --- | --- |
@@ -54,7 +69,7 @@ Both development servers were started for review. The normal app is on port 5173
 | Jeopardy | http://localhost:5173/games/jeopardy |
 | Four Corners | http://localhost:5173/games/four-corners |
 
-To review the complete persisted teacher workflow now, open **http://127.0.0.1:5174/sign-in**, use an `example.test` email and code **123456**. This explicitly labeled fixture uses local PostgreSQL/RLS and has no Google connection or real email. Its data is separate from the port-5173 browser origin. See [fixture details](INCREMENT_1.md#local-review-without-provider-credentials).
+The optional fixture remains available via `npm run dev:fixture` at **http://127.0.0.1:5174/sign-in**, using an `example.test` email and code **123456**. This explicitly labeled fixture uses local PostgreSQL/RLS and has no Google connection or real email. Its data is separate from the verified live development backend and the port-5173 browser origin. See [fixture details](INCREMENT_1.md#local-review-without-provider-credentials).
 
 ## Exact file manifest
 
