@@ -2,6 +2,7 @@ import type { IncomingMessage, ServerResponse } from 'node:http';
 import { z } from 'zod';
 import { assignmentInput, assignmentWithinYear, contextInput, emailInput, idSchema, profileInput, verifyEmailInput, workInput, workStatusInput, yearInput } from '../shared/contracts/foundation';
 import { AppError, type RequestPorts } from './ports';
+import { resourceService } from './resources/service';
 
 export interface ApiOptions {
   origin: string;
@@ -14,20 +15,23 @@ function json(res: ServerResponse, status: number, value: unknown) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   res.end(JSON.stringify(value));
 }
-async function body(req: IncomingMessage) {
+async function body(req: IncomingMessage, limit = 32768) {
   if (!req.headers['content-type']?.startsWith('application/json')) throw new AppError(415, 'Send JSON data.');
   // Vercel can provide an already-parsed body; the local Node adapter streams it.
   const parsed = (req as IncomingMessage & { body?: unknown }).body;
   if (parsed !== undefined) {
     const serialized = typeof parsed === 'string' ? parsed : JSON.stringify(parsed);
-    if (Buffer.byteLength(serialized) > 32768) throw new AppError(413, 'This request is too large.');
+    if (Buffer.byteLength(serialized) > limit) throw new AppError(413, 'This request is too large.');
     try { return JSON.parse(serialized) as unknown; } catch { throw new AppError(400, 'Invalid JSON.'); }
   }
-  let raw = '';
+  const chunks: Buffer[] = []; let size = 0;
   for await (const chunk of req) {
-    raw += chunk.toString();
-    if (Buffer.byteLength(raw) > 32768) throw new AppError(413, 'This request is too large.');
+    const bytes = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk);
+    size += bytes.length;
+    if (size > limit) throw new AppError(413, 'This request is too large.');
+    chunks.push(bytes);
   }
+  const raw = Buffer.concat(chunks).toString('utf8');
   try { return JSON.parse(raw || '{}') as unknown; } catch { throw new AppError(400, 'Invalid JSON.'); }
 }
 
@@ -48,7 +52,8 @@ export function createApiHandler(options: ApiOptions) {
         if (route === '/api/session' && method === 'GET') return json(res, 200, { configured: false, authenticated: false, fixture: false });
         throw new AppError(503, 'ClassThread sign-in is not configured yet. Games remain available in this browser.');
       }
-      const { auth, repository } = options.ports(req, res);
+      const ports = options.ports(req, res);
+      const { auth, repository } = ports;
       if (route === '/api/session' && method === 'GET') {
         const user = await auth.currentUser();
         return json(res, 200, { configured: true, authenticated: !!user, fixture: !!options.fixture, ...(user ? { email: user.email } : {}) });
@@ -83,6 +88,34 @@ export function createApiHandler(options: ApiOptions) {
       if (!identity) throw new AppError(401, 'Please sign in to access your classroom.');
       await repository.bootstrap();
       const data = await repository.read(identity);
+      if (route === '/api/resources' || route.startsWith('/api/resources/')) {
+        const service = resourceService(ports, data);
+        const parts = route.slice('/api/resources'.length).split('/').filter(Boolean);
+        const id = parts.length ? idSchema.parse(parts[0]) : undefined;
+        if (!id && method === 'GET') return json(res, 200, await service.list());
+        if (!id && method === 'POST') return json(res, 201, { id: await service.create(await body(req, 2900000)) });
+        if (id && parts.length === 1 && method === 'GET') return json(res, 200, await service.detail(id));
+        if (id && parts.length === 1 && method === 'PATCH') return json(res, 200, { id: await service.edit(id, await body(req)) });
+        if (id && parts[1] === 'versions' && parts.length === 2 && method === 'POST') return json(res, 201, { id: await service.addVersion(id, await body(req, 2900000)) });
+        if (id && parts[1] === 'versions' && parts.length === 4 && method === 'GET') {
+          const versionId = idSchema.parse(parts[2]);
+          if (parts[3] === 'preview') return json(res, 200, await service.preview(id, versionId));
+          if (parts[3] === 'download') {
+            const { record, bytes } = await service.download(id, versionId);
+            res.setHeader('Content-Type', 'application/octet-stream');
+            res.setHeader('Content-Disposition', `attachment; filename="curriculum-original"; filename*=UTF-8''${encodeURIComponent(record.fileName!).replace(/'/g, '%27')}`);
+            res.setHeader('Content-Security-Policy', "default-src 'none'; sandbox");
+            res.end(Buffer.from(bytes)); return;
+          }
+        }
+        if (id && parts[1] === 'curriculum' && parts.length === 2 && method === 'POST') return json(res, 201, { id: await service.propose(id, await body(req)) });
+        if (id && parts[1] === 'curriculum' && parts.length === 4 && method === 'POST') {
+          const curriculumId = idSchema.parse(parts[2]);
+          if (parts[3] === 'review') { await service.review(id, curriculumId, await body(req, 200000)); return json(res, 200, { ok: true }); }
+          if (parts[3] === 'activate') return json(res, 201, { id: await service.activate(id, curriculumId, await body(req)) });
+        }
+        throw new AppError(404, 'Resource route not found.');
+      }
       if (route === '/api/foundation' && method === 'GET') return json(res, 200, data);
       if (route === '/api/profile' && method === 'PATCH') {
         await repository.updateProfile(data.user.id, profileInput.parse(await body(req)));

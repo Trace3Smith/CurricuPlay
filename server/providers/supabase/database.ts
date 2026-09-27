@@ -18,7 +18,14 @@ export interface Database {
       work_items: Table<WorkRow>;
     };
     Views: Record<string, never>;
-    Functions: { bootstrap_teacher: { Args: Record<string, never>; Returns: undefined } };
+    Functions: {
+      bootstrap_teacher: { Args: Record<string, never>; Returns: undefined };
+      resource_library: { Args: { p_resource_id?: string | null }; Returns: unknown };
+      save_resource: { Args: Record<string, unknown>; Returns: unknown };
+      propose_curriculum: { Args: Record<string, unknown>; Returns: unknown };
+      review_curriculum: { Args: Record<string, unknown>; Returns: unknown };
+      activate_curriculum: { Args: Record<string, unknown>; Returns: unknown };
+    };
     Enums: Record<string, never>;
     CompositeTypes: Record<string, never>;
   };

@@ -4,6 +4,7 @@ import { parseCookie, stringifySetCookie } from 'cookie';
 import { AppError, type AuthIdentity, type FoundationRepository, type RequestPorts } from '../../server/ports';
 import { assignmentFromRow, assignmentToRow, profileFromRow, workFromRow, yearFromRow } from '../../server/providers/supabase/mapping';
 import type { AssignmentRow, ProfileRow, UserRow, WorkRow, WorkspaceRow, YearRow } from '../../server/providers/supabase/database';
+import { resourceRepository, resourceDatabaseError } from '../../server/providers/supabase/resources';
 import type { FixtureDatabase } from './database';
 
 export function fixturePorts(database: FixtureDatabase) {
@@ -48,6 +49,22 @@ export function fixturePorts(database: FixtureDatabase) {
     };
     return {
       repository,
+      resources: resourceRepository(async (name, args) => {
+        try {
+          const values = name === 'resource_library' ? [args.p_resource_id] : [JSON.stringify(args.p)];
+          if (!user) throw new AppError(401, 'Please sign in.');
+          const rows = await database.asUser(user.subject, tx => tx.query<{ value: unknown }>(`select public.${name}($1) as value`, values));
+          return rows.rows[0].value;
+        } catch (error) { if (error instanceof AppError) throw error; resourceDatabaseError(error as { code?: string }); throw error; }
+      }),
+      originals: {
+        async put(key, bytes) { await query('insert into storage.objects(bucket_id,name,fixture_bytes) values($1,$2,$3)', ['classthread-resources', key, bytes]); },
+        async read(key) {
+          const rows = await query<{ fixture_bytes: Uint8Array }>('select fixture_bytes from storage.objects where bucket_id=$1 and name=$2', ['classthread-resources',key]);
+          if (!rows.length) throw new AppError(404, 'Original unavailable.');
+          return rows[0].fixture_bytes;
+        },
+      },
       auth: {
         async currentUser() { return user; },
         async sendEmailCode() { /* Explicit local fixture: no external email. */ },
