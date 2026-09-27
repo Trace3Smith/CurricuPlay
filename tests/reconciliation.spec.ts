@@ -42,10 +42,10 @@ test('wording, evidence, alignment, difficulty, timing and prior local edits can
 
 test('attention queue, live counts, rejection filter and refresh use actual saved decisions without rewriting them', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   const stored = JSON.stringify({ version: 1, decisions: saved });
   await page.evaluate(value => localStorage.setItem('curricuplay.reviews.v1', value), stored);
-  await page.goto('/#review'); await page.reload();
+  await page.goto('/games/review'); await page.reload();
   await expect(page.getByLabel('Changes since human review')).toHaveValue('attention');
   await expect(page.getByLabel('Jump to a draft').locator('option')).toHaveCount(1);
   const summary = page.getByRole('region', { name: 'Previous human decisions' });

@@ -15,7 +15,7 @@ async function inject(page: Page, questions = fixture) {
   await page.route('**/src/data/questions.json*', route => route.fulfill({ contentType: 'application/javascript', body: `export default ${JSON.stringify(questions)}` }));
 }
 async function start(page: Page, grade = 'K') {
-  await page.goto('/');
+  await page.goto('/games');
   await page.getByRole('button', { name: /JEOPARDY/ }).click();
   await page.getByRole('button', { name: grade === 'K' ? 'Kindergarten' : `${grade}${grade === '1' ? 'st' : grade === '2' ? 'nd' : grade === '3' ? 'rd' : 'th'} Grade`, exact: true }).click();
   await page.getByRole('button', { name: 'Start Game' }).click();
@@ -83,7 +83,7 @@ for (const grade of grades) test(`Grade ${grade}: complete game, no repeats, rev
   expect(errors).toEqual([]);
 });
 test('Unmodified app clearly reports missing source content and prevents starting', async ({ page }) => {
-  await inject(page, []); await page.goto('/'); await expect(page.getByText(/No approved local questions/)).toBeVisible(); await noOverflow(page);
+  await inject(page, []); await page.goto('/games'); await expect(page.getByText(/No approved local questions/)).toBeVisible(); await noOverflow(page);
   await page.screenshot({ path: 'test-results/home.png' });
   await page.getByRole('button', { name: /JEOPARDY/ }).click();
   for (const grade of ['Kindergarten', '1st Grade', '2nd Grade', '3rd Grade', '4th Grade', '5th Grade']) {
@@ -93,7 +93,7 @@ test('Unmodified app clearly reports missing source content and prevents startin
 test('Ranges, future exclusion, empty pools and exhausted overlapping Review pool', async ({ page }) => {
   const q = fixture[0];
   await inject(page, [{ ...q, id: 'old', weekIntroduced: '2026-08-17' }, { ...q, id: 'recent' }, { ...q, id: 'future', weekIntroduced: '2026-09-14' }]);
-  await page.goto('/'); await page.getByRole('button', { name: /JEOPARDY/ }).click();
+  await page.goto('/games'); await page.getByRole('button', { name: /JEOPARDY/ }).click();
   await expect(page.getByText('1 approved questions available')).toBeVisible();
   await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
   await expect(page.getByText('2 approved questions available')).toBeVisible();
@@ -109,7 +109,7 @@ test('Ranges, future exclusion, empty pools and exhausted overlapping Review poo
   await expect(page.getByText(/All available challenges completed/)).toBeVisible();
 });
 test('Engine random selection, filters, tracking and invalid-bank rejection', async ({ page }) => {
-  await inject(page); await page.goto('/');
+  await inject(page); await page.goto('/games');
   const results = await page.evaluate(async (questions) => {
     // @ts-expect-error Vite serves TypeScript modules in browser
     const { createQuestionEngine, validateQuestions } = await import('/src/services/questionEngine.ts');
@@ -124,7 +124,7 @@ test('Engine random selection, filters, tracking and invalid-bank rejection', as
 });
 test('Corrupt storage and storage unavailability fail gracefully', async ({ page }) => {
   await page.addInitScript(() => { localStorage.setItem('curricuplay.game.v1', '{broken'); });
-  await page.goto('/'); await expect(page.locator('h1')).toContainText('Ready to play.');
+  await page.goto('/games'); await expect(page.locator('h1')).toContainText('Ready to play.');
   await page.addInitScript(() => { Storage.prototype.setItem = () => { throw new Error('blocked'); }; });
   await page.reload(); await expect(page.getByRole('alert')).toContainText('Progress cannot be saved');
 });

@@ -6,7 +6,7 @@ const countdown = (page: Page) => page.getByRole('timer', { name: 'Movement coun
 async function setup(page: Page, seconds = '10') {
   await page.clock.install({ time: new Date('2026-09-18T09:00:00') });
   await page.clock.pauseAt(new Date('2026-09-18T10:00:00'));
-  await page.goto('/#four-corners');
+  await page.goto('/games/four-corners');
   await expect(page.getByLabel('Movement timer duration')).toHaveValue('10');
   await expect(page.getByLabel('Movement timer duration').locator('option')).toHaveText(['Off', '10 seconds', '15 seconds', '20 seconds']);
   await page.getByLabel('Movement timer duration').selectOption(seconds);

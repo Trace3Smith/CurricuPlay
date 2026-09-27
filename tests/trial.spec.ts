@@ -10,7 +10,7 @@ test('Kindergarten review leads to a reserved 30-tile trial, with Review first a
   page.on('pageerror', e => errors.push(e.message));
   page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/#review');
+  await page.goto('/games/review');
   await expect(page.getByLabel('Grade', { exact: true })).toHaveValue('1');
   await expect(page.getByLabel('Jump to a draft').locator('option')).toHaveCount(31);
   await page.getByLabel('Grade', { exact: true }).selectOption('K');
@@ -65,7 +65,7 @@ test('Kindergarten review leads to a reserved 30-tile trial, with Review first a
 
 test('Planner handles exactly 30, shortages, shared pools, and excluded review states/dates', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   const result = await page.evaluate(async qs => {
     // @ts-expect-error Vite module
     const { createQuestionEngine } = await import('/src/services/questionEngine.ts');
@@ -87,7 +87,7 @@ test('Planner handles exactly 30, shortages, shared pools, and excluded review s
 
 test('A withdrawn approval invalidates a reserved saved trial instead of exposing an unavailable tile', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   await page.evaluate(async qs => {
     // @ts-expect-error Vite module
     const review = await import('/src/services/questionReview.ts');
@@ -102,20 +102,20 @@ test('A withdrawn approval invalidates a reserved saved trial instead of exposin
     const removed = selected.find(q => q.id === assignments['Science-0'])!;
     review.writeReview(removed, 'rejected', removed.question, removed.answer);
   }, questions);
-  await page.reload();
+  await page.goto('/games/jeopardy');
   await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
   await expect(page.locator('.tile')).toHaveCount(0);
 });
 
 test('First grade cannot launch a full board after quality withdrawals, even with all active drafts approved', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   await page.evaluate(async qs => {
     // @ts-expect-error Vite module
     const review = await import('/src/services/questionReview.ts');
     qs.filter(q => q.grade === '1').forEach(q => review.writeReview(q, 'approved', q.question, q.answer));
   }, questions);
-  await page.goto('/#review'); await page.reload();
+  await page.goto('/games/review'); await page.reload();
   await expect(page.getByRole('region', { name: 'Classroom trial readiness' })).toContainText('31 eligible approved questions · 25/30 tiles covered');
   await expect(page.getByRole('button', { name: 'Start 30-tile classroom trial' })).toBeDisabled();
   await page.getByLabel('Changes since human review').selectOption('');

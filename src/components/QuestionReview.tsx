@@ -34,7 +34,7 @@ export default function QuestionReview({ questions, decisions, storageError, onS
     window.addEventListener('beforeunload', warn); return () => window.removeEventListener('beforeunload', warn);
   }, [dirty]);
   return <div className="app review-app">
-    <header><div className="wordmark">CURRICU<span>PLAY</span></div><button onClick={() => { if (mayLeave()) onClose(); }}>Home</button></header>
+    <header><div className="wordmark">CLASS<span>THREAD</span></div><button onClick={() => { if (mayLeave()) onClose(); }}>Home</button></header>
     <main className="review-screen">
       <div className="eyebrow">TEACHER TOOLS · INTERNAL CONTENT REVIEW</div><h1>Question Review</h1>
       <p>Review accuracy, evidence, timing, and reading level before approving. A playable question must contain everything needed to answer it; edits must not introduce external references. Decisions and edits stay in this browser. Future content stays excluded from gameplay.</p>

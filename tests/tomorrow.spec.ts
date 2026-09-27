@@ -10,7 +10,7 @@ for (const row of report.grades) test(`Tomorrow pack ${row.grade}: actual releas
   test.setTimeout(60000);
   const errors:string[]=[];page.on('pageerror', e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
   await page.clock.setFixedTime(new Date('2026-09-14T12:00:00'));
-  await page.goto('/');await page.getByRole('button',{name:/JEOPARDY/}).click();
+  await page.goto('/games');await page.getByRole('button',{name:/JEOPARDY/}).click();
   await page.getByRole('button',{name:labels[row.grade],exact:true}).click();
   await expect(page.getByText(/DCSS Tomorrow Classroom Pack - 2026-09-14/)).toBeVisible();
   await expect(page.getByText(`${row.classroomAccepted} approved questions available`)).toBeVisible();
@@ -50,7 +50,7 @@ for (const row of report.grades) test(`Tomorrow pack ${row.grade}: actual releas
 });
 
 test('Release keeps source cutoffs, teacher vetoes and the draft pipeline separate',async({page})=>{
- await page.clock.setFixedTime(new Date('2026-09-14T12:00:00'));await page.goto('/');
+ await page.clock.setFixedTime(new Date('2026-09-14T12:00:00'));await page.goto('/games');
  const result=await page.evaluate(async()=>{
   // @ts-expect-error Vite module
   const {classroomQuestions}=await import('/src/services/classroomPack.ts');
@@ -65,12 +65,12 @@ test('Release keeps source cutoffs, teacher vetoes and the draft pipeline separa
 });
 
 for(const grade of ['1','3']) test(`Tomorrow pack ${grade}: every retained question fits and reveals while complete launch remains blocked`,async({page})=>{
- test.setTimeout(60000);await page.clock.setFixedTime(new Date('2026-09-14T12:00:00'));await page.goto('/');
+ test.setTimeout(60000);await page.clock.setFixedTime(new Date('2026-09-14T12:00:00'));await page.goto('/games');
  const qs=pack.filter(q=>q.grade===grade);
  // Test-only single-question resume fixtures verify layout; this is NOT a full-game pass.
  for(const q of qs){
   await page.evaluate(q=>{const tileId=`${q.subject}-${q.difficulty-1}`;localStorage.setItem('curricuplay.game.v1',JSON.stringify({version:1,screen:'question',selectedGame:'jeopardy',grade:q.grade,range:'all',asOf:'2026-09-13',contentSource:'classroom',usedQuestionIds:[q.id],usedTiles:[tileId],current:{questionId:q.id,tileId,category:q.subject,revealed:false}}));},q);
-  await page.reload();await expect(page.getByRole('heading',{name:q.question,exact:true})).toBeVisible();await fits(page);
+  await page.goto('/games/jeopardy');await expect(page.getByRole('heading',{name:q.question,exact:true})).toBeVisible();await fits(page);
   await page.getByRole('button',{name:'Reveal Answer'}).click();await expect(page.locator('.answer p')).toHaveText(q.answer);await fits(page);
  }
 });

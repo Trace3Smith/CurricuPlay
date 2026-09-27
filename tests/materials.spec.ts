@@ -6,7 +6,7 @@ import questions from '../src/data/questions.json' with { type: 'json' };
 
 test('All excluded records are reviewable and filterable, but approval never makes them playable', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/#review');
+  await page.goto('/games/review');
   await page.getByLabel('Grade', { exact: true }).selectOption('');
   await page.getByLabel('Gameplay materials').selectOption('external');
   const excluded = questions.filter(q => q.requiresExternalClassroomMaterial);
@@ -29,7 +29,7 @@ test('All excluded records are reviewable and filterable, but approval never mak
 
 test('Shared engine requires an explicit false flag and preserves teacher-read eligibility', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   const result = await page.evaluate(async qs => {
     // @ts-expect-error Vite module
     const { createQuestionEngine, validateQuestions } = await import('/src/services/questionEngine.ts');

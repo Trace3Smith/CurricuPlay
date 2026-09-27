@@ -7,7 +7,7 @@ const teamName = (number: number, count = 6) => count === 6 ? colorNames[number 
 const labels: Record<string, string> = { K: 'Kindergarten', '1': '1st Grade', '2': '2nd Grade', '3': '3rd Grade', '4': '4th Grade', '5': '5th Grade' };
 async function setup(page: Page, grade = 'K', count = 6) {
   await page.clock.setFixedTime(new Date('2026-09-17T12:00:00'));
-  await page.goto('/#four-corners');
+  await page.goto('/games/four-corners');
   await expect(page.getByRole('button', { name: 'Team Mode · Recommended for PE' })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByRole('button', { name: 'Play Until I Stop', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByLabel('Team count')).toHaveValue('6');
@@ -145,7 +145,7 @@ test('History survives a new browser context, stays immutable, and reports a dyn
   const context = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
   await context.addInitScript(({ key, history }) => localStorage.setItem(key, history), { key: historyKey, history });
   const fresh = await context.newPage();
-  await fresh.goto('/#four-corners');
+  await fresh.goto('/games/four-corners');
   await fresh.getByRole('button', { name: 'Session History', exact: true }).click();
   await fresh.locator('.assessment-history-list button').first().click();
   await expect(fresh.getByTestId('response-attempts')).toHaveText('6');
@@ -171,6 +171,8 @@ test('History storage failure leaves the completed report recoverable; corrupt h
   await expect(page.getByRole('button', { name: 'Play Again', exact: true })).toBeDisabled();
   await expect(page.getByRole('heading', { name: 'Session Report', exact: true })).toBeVisible();
   await page.reload();
+  // Route modules load independently of the document; wait for actual recovery.
+  await expect(page.getByRole('heading', { name: 'Session Report', exact: true })).toBeVisible();
   await expect(page.getByRole('alert')).toHaveCount(0);
   expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key)!).sessions.length, historyKey)).toBe(1);
   await page.getByRole('button', { name: 'Play Again', exact: true }).click();

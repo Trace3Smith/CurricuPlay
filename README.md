@@ -1,8 +1,10 @@
-# CURRICUPLAY
+# ClassThread
 
-**This week’s content. Ready to play.**
+Teacher Foundation: authenticated teacher profiles, personal workspaces, school years, Teaching Assignments, and a persisted Work Queue, alongside the existing Jeopardy and Four Corners games. React + Vite + TypeScript with a small server API and Supabase PostgreSQL/Auth adapter.
 
-React + Vite + TypeScript, client-side classroom games. Jeopardy consumes the shared local question engine. No accounts, database, live generation or student submissions.
+Start with the [Increment 1 setup guide](docs/INCREMENT_1.md) and [review report](docs/INCREMENT_1_REVIEW.md). The teacher dashboard needs the documented development Supabase configuration; an explicit local database/auth fixture is also available. Games remain browser-local under `/games`, with no account requirement.
+
+The sections below document the preserved Games/content pipeline. Their historical content counts describe earlier content passes; this increment did not regenerate the banks.
 
 ## Current content status
 
@@ -12,7 +14,7 @@ The DCSS FY27 pacing guide has been imported: **755 subject-row records** (737 d
 
 ## Run
 
-Node.js 22.12+ is required; tested with Node 24. Python 3 is used only for offline content scripts.
+Node.js 24.x is required and tested. Python 3 is used only for offline content scripts.
 
 ```bash
 cd /home/trace3smith/curricuplay/CurricuPlay
@@ -27,7 +29,7 @@ npm run build
 npm run preview -- --port 4173 --strictPort
 ```
 
-The production preview is http://localhost:4173, a separate storage origin. `dist/` can be hosted by a static web server; do not open its HTML as a filesystem URL. There is no service worker for offline reloads without a running server.
+The production preview is http://localhost:4173, a separate storage origin. Games in `dist/` can be hosted by a static web server; the teacher features also require the API adapter; do not open its HTML as a filesystem URL. There is no service worker for offline reloads without a running server.
 
 ## Self-contained gameplay rule
 
@@ -57,7 +59,7 @@ Open **Home → Teacher tools · Question Review**. Filter by grade, subject, po
 
 Edit Question and Answer if needed, then choose **Edit & Approve**. For unchanged wording choose **Approve**; otherwise choose **Needs Review**, or **Reject**. Every decision saves the displayed wording locally. Approve enables the question for gameplay within the normal date/range filters. Needs Review and Reject exclude it. Navigation warns before discarding unsaved edits; approval requires nonblank text within Smart Board length limits. K–1 prompts over 30 words display a reading-level warning. The screen shows approved/generated/60-target progress for every grade and overall approval, pending, needs-review, and rejected counts. No drafts are automatically approved.
 
-Reviews use `curricuplay.reviews.v1`, separately from game progress. Reset Game and Change Grade retain reviews. Refresh retains saved decisions and edits; it does not retain unsaved text or review filters. Clearing browser data removes reviews. Reviews do not sync to another browser, device, or URL/port. There is no export or publication step yet, so review in the same browser and URL used for class. Source JSON stays unchanged.
+Reviews use `curricuplay.reviews.v1`, separately from game progress. Reset Game and Change Grade retain reviews. Refresh retains saved decisions and edits; it does not retain unsaved text or review filters. Clearing browser data removes reviews. Reviews do not sync to another browser, device, or URL/port. The ClassThread Games/Manage pages can export a versioned browser backup. Review in the same browser and URL used for class; there is no automatic upload or cross-device Games sync. Source JSON stays unchanged.
 
 **Import writes generated questions as pending.** Edit draft inputs before regeneration, not just generated output. Local reviews remain valid when the source record is unchanged, or through the narrow material-audit metadata exception described above. Changes to wording, alignment, subject, difficulty, timing, evidence, or other metadata cannot inherit approval. A rejected record remains rejected even if a replacement requires attention. Approval never changes dates, source evidence, or unresolved curriculum mappings. The review screen is an internal teacher tool, not an access-controlled account area.
 

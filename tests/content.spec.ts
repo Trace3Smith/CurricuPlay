@@ -7,7 +7,7 @@ import curriculum from '../src/data/curriculum.json' with { type: 'json' };
 
 test('Generated content is pending approval and cannot silently become classroom content', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   await expect(page.getByText('211 generated questions await teacher review.', { exact: false })).toBeVisible();
   await page.getByRole('button', { name: /JEOPARDY/ }).click();
   await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
@@ -26,7 +26,7 @@ test('Every self-contained question renders and reveals at 1920 × 1080 without 
    const gradeQuestions = questions.filter(q => q.grade === grade && !q.requiresExternalClassroomMaterial);
    for (let offset = 0; offset < gradeQuestions.length; offset += 18) {
     batch = gradeQuestions.slice(offset, offset + 18);
-    await page.goto('/'); await page.evaluate(() => localStorage.clear()); await page.reload();
+    await page.goto('/games'); await page.evaluate(() => localStorage.clear()); await page.reload();
     await page.getByRole('button', { name: /JEOPARDY/ }).click();
     await page.getByRole('button', { name: grade === 'K' ? 'Kindergarten' : `${grade}${grade==='1'?'st':grade==='2'?'nd':grade==='3'?'rd':'th'} Grade`, exact: true }).click();
     await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
@@ -69,7 +69,7 @@ test('Every self-contained question renders and reveals at 1920 × 1080 without 
 
 test('Real curriculum filters exclude future and undated entries; recurring weeks preserve introduction', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   const result=await page.evaluate(async (qs)=>{
     // @ts-expect-error Vite module
     const {getCurriculum}=await import('/src/services/curriculumService.ts');
@@ -92,7 +92,7 @@ test('Real curriculum filters exclude future and undated entries; recurring week
 test('Refresh cannot restore a question whose approval has been withdrawn', async ({ page }) => {
   const q=questions[0];
   await page.addInitScript((q)=>localStorage.setItem('curricuplay.game.v1',JSON.stringify({version:1,screen:'question',selectedGame:'jeopardy',grade:q.grade,range:'all',asOf:'2026-09-13',usedQuestionIds:[q.id],usedTiles:['Math-0'],current:{questionId:q.id,tileId:'Math-0',category:'Math',revealed:true}})),q);
-  await page.goto('/');
+  await page.goto('/games/jeopardy');
   await expect(page.getByText(q.question,{exact:true})).toHaveCount(0);
   await expect(page.getByRole('button',{name:'Reveal Answer'})).toHaveCount(0);
 });
@@ -102,7 +102,7 @@ test('Material-safe real drafts support a Kindergarten full board; other grades 
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
   await page.route('**/src/data/questions.json*', route => route.fulfill({ contentType: 'application/javascript', body: `export default ${JSON.stringify(questions.map(q => ({ ...q, reviewStatus: 'approved' })))}` }));
   for (const grade of ['K', '1', '2', '3', '4', '5']) {
-    await page.goto('/'); await page.evaluate(() => localStorage.clear()); await page.reload();
+    await page.goto('/games'); await page.evaluate(() => localStorage.clear()); await page.reload();
     await page.getByRole('button', { name: /JEOPARDY/ }).click();
     await page.getByRole('button', { name: grade === 'K' ? 'Kindergarten' : `${grade}${grade==='1'?'st':grade==='2'?'nd':grade==='3'?'rd':'th'} Grade`, exact: true }).click();
     await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import QuestionReview from './components/QuestionReview';
 import FourCorners from './games/four-corners/FourCorners';
+import { isTeamMode, loadState as loadFourCornersState } from './games/four-corners/engine';
 import { readReviews, REVIEW_KEY } from './services/questionReview';
 import { grades, type GameState, type Grade } from './types';
 import { classroomQuestions, classroomBank, PACK_NAME } from './services/classroomPack';
@@ -9,11 +10,13 @@ import { localDate } from './services/curriculumService';
 import { loadState, saveState } from './utils/storage';
 import { categories, tiles, isBoardEligible } from './games/jeopardy/board';
 const gradeLabel = (g: Grade) => g === 'K' ? 'Kindergarten' : `${g}${g === '1' ? 'st' : g === '2' ? 'nd' : g === '3' ? 'rd' : 'th'} Grade`;
-export default function App() {
+export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBackup, preservationNotice }: { gamePath: string; reviewDirect: boolean; onNavigate: (path: string, reviewAll?: boolean) => void; onExit: () => void; onBackup: () => void; preservationNotice: string }) {
   const [state, setState] = useState(loadState);
-  const [fourCorners, setFourCorners] = useState(location.hash === '#four-corners');
-  useEffect(() => { const sync = () => setFourCorners(location.hash === '#four-corners'); window.addEventListener('hashchange', sync); return () => window.removeEventListener('hashchange', sync); }, []);
-  const [reviewing, setReviewing] = useState(location.hash === '#review');
+  // Route presentation does not rewrite a saved game's progress or allocation.
+  const screen = gamePath === '/games' || gamePath === '/games/' ? 'home'
+    : state.screen === 'home' ? (state.selectedGame === 'jeopardy' ? (state.current ? 'question' : 'board') : 'setup') : state.screen;
+  const fourCorners = gamePath === '/games/four-corners';
+  const reviewing = gamePath === '/games/review';
   const [reviews, setReviews] = useState(readReviews);
   const questions = useMemo(() => classroomQuestions(reviews.decisions, state.contentSource), [reviews.decisions, state.contentSource]);
   useEffect(() => { const sync = (e: StorageEvent) => { if (e.key === REVIEW_KEY || e.key === null) setReviews(readReviews()); }; window.addEventListener('storage', sync); return () => window.removeEventListener('storage', sync); }, []);
@@ -23,7 +26,7 @@ export default function App() {
   const dialog = useRef<HTMLDialogElement>(null);
   const title = useRef<HTMLHeadingElement>(null);
   useEffect(() => { setSaved(saveState(state)); }, [state]);
-  useEffect(() => { title.current?.focus(); }, [state.screen]);
+  useEffect(() => { title.current?.focus(); }, [screen]);
   useEffect(() => { if (confirm) dialog.current?.showModal(); else dialog.current?.close(); }, [confirm]);
   const engine = useMemo(() => createQuestionEngine(questions, state.usedQuestionIds), [questions, state.usedQuestionIds]);
   const filters = { grade: state.grade, range: state.range, asOf: state.asOf };
@@ -33,7 +36,7 @@ export default function App() {
     const planned = createQuestionEngine(classroomQuestions(reviews.decisions, contentSource)).planQuestions(tiles.map(t => ({ id: t.id, filters: { grade, range, asOf, subject: t.category, difficulty: t.difficulty } })), true);
     if (!planned.complete) return;
     setState(s => ({ ...s, grade, range, asOf, contentSource, screen: 'board', selectedGame: 'jeopardy', assignments: planned.assignments, current: null, usedTiles: [], usedQuestionIds: [] }));
-    setReviewing(false); location.hash = '';
+    onNavigate('/games/jeopardy');
   }
   const blockedBoard = state.assignments !== undefined && !isBoardEligible(state.assignments, questions, filters);
   const current = questions.find(q => q.id === state.current?.questionId);
@@ -52,33 +55,37 @@ export default function App() {
     try { if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen(); }
     catch { setFullscreenError('Use your browser’s full-screen control (usually F11).'); }
   }
-  const active = state.screen === 'board' || state.screen === 'question';
-  if (fourCorners) return <FourCorners onHome={() => { location.hash = ''; setFourCorners(false); update({ screen: 'home' }); }} />;
-  if (reviewing) return <QuestionReview questions={bank.questions} decisions={reviews.decisions} storageError={reviews.error} initialGrade={location.hash === '#review' ? '1' : undefined} onStartTrial={(grade, range, asOf) => startGame(grade, range, asOf, 'drafts')} onSaved={decisions => setReviews({ decisions, error: '' })} onClose={() => { setReviewing(false); location.hash = ''; }} />;
+  const active = screen === 'board' || screen === 'question';
+  if (fourCorners) return <FourCorners onClassroom={onExit} onHome={() => { onNavigate('/games'); update({ screen: 'home' }); }} />;
+  if (reviewing) return <QuestionReview questions={bank.questions} decisions={reviews.decisions} storageError={reviews.error} initialGrade={reviewDirect ? '1' : undefined} onStartTrial={(grade, range, asOf) => startGame(grade, range, asOf, 'drafts')} onSaved={decisions => setReviews({ decisions, error: '' })} onClose={() => onNavigate('/games')} />;
+  // Read through the game's recovery rules each time the landing renders; never save here.
+  const cornerState = screen === 'home' ? loadFourCornersState() : null;
+  const resumableCorners = cornerState?.screen === 'play' ? cornerState : null;
   return <div className={`app ${active ? 'playing' : ''}`}>
-    <header><button className="wordmark" onClick={() => update({ screen: 'home' })} aria-label="CurricuPlay home">CURRICU<span>PLAY</span><i /></button>
-      <div className="header-actions">{active && <><span className="grade-pill">{gradeLabel(state.grade)}</span><button onClick={() => setConfirm('grade')}>Change Grade</button><button disabled={blockedBoard && !plan.complete} onClick={() => setConfirm('reset')}>Reset Game</button></>}
-        {!active && <a href="#review" onClick={() => { location.hash = '#review'; setReviewing(true); }}>Question Review</a>}{state.screen !== 'home' && <button onClick={() => update({ screen: 'home' })}>Home</button>}<button onClick={fullscreen}>Full Screen</button></div>
+    <header><button className="wordmark" onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }} aria-label="ClassThread Games home">CLASS<span>THREAD</span><i /></button>
+      <div className="header-actions"><button onClick={onExit}>My Classroom</button>{active && <><span className="grade-pill">{gradeLabel(state.grade)}</span><button onClick={() => setConfirm('grade')}>Change Grade</button><button disabled={blockedBoard && !plan.complete} onClick={() => setConfirm('reset')}>Reset Game</button></>}
+        {!active && <a href="/games/review" onClick={event => { event.preventDefault(); onNavigate('/games/review'); }}>Question Review</a>}{screen !== 'home' && <button onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }}>Home</button>}<button onClick={fullscreen}>Full Screen</button></div>
     </header>
     {!saved && <div role="alert" className="warning">Progress cannot be saved in this browser. Keep this tab open during class.</div>}
     {fullscreenError && <div role="status" className="warning">{fullscreenError}</div>}
-    {state.screen === 'home' && <main className="home">
+    {screen === 'home' && <main className="home">
       <div className="eyebrow">BIG IDEAS. SHARED DISCOVERIES.</div>
       <h1 ref={title} tabIndex={-1}>This week’s content.<br /><span>Ready to play.</span></h1>
       <p className="intro">Your curriculum. Your classroom. A new way to play.</p>
       <div className="game-cards">
-        <button className="game-card live" onClick={() => update({ screen: state.selectedGame === 'jeopardy' ? (state.current ? 'question' : 'board') : 'setup' })}>
+        <button className="game-card live" onClick={() => { update({ screen: state.selectedGame === 'jeopardy' ? (state.current ? 'question' : 'board') : 'setup' }); onNavigate('/games/jeopardy'); }}>
           <span className="card-art" aria-hidden="true">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span><span className="card-bottom"><strong>JEOPARDY</strong><span className="play-tag">{state.selectedGame ? 'CONTINUE' : 'PLAY'} ↗</span></span>
           <span className="card-description">Pick a category. Take on a challenge.</span>
         </button>
-        <button className="game-card live" onClick={() => { location.hash = '#four-corners'; setFourCorners(true); }}><span className="fc-home-art" aria-hidden="true">{['A', 'B', 'C', 'D'].map(letter => <b key={letter}>{letter}</b>)}</span><span className="card-bottom"><strong>FOUR CORNERS</strong><span className="play-tag">PLAY ↗</span></span><span className="card-description">Think. Move. Everyone stays in.</span></button>
+        <button className="game-card live" onClick={() => onNavigate('/games/four-corners')}><span className="fc-home-art" aria-hidden="true">{['A', 'B', 'C', 'D'].map(letter => <b key={letter}>{letter}</b>)}</span><span className="card-bottom"><strong>FOUR CORNERS</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableCorners ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableCorners ? `${gradeLabel(resumableCorners.grade)} · ${isTeamMode(resumableCorners) ? 'Team Mode' : 'Classic'}` : 'Think. Move. Everyone stays in.'}</span></button>
         {['BINGO', 'TRIVIA'].map((name, i) => <div className="game-card soon" key={name}><span className="future-art" aria-hidden="true">{['◎', '?'][i]}</span><strong>{name}</strong><span className="coming">COMING SOON</span></div>)}
       </div>
-      <button className="review-entry" onClick={() => setReviewing(true)}>Teacher tools · Question Review</button>
+      <button className="review-entry" onClick={() => onNavigate('/games/review', true)}>Teacher tools · Question Review</button>
+      <button className="review-entry" onClick={onBackup}>Export browser Games data</button>{preservationNotice && <p role="status" className="content-notice">{preservationNotice}</p>}
       <div className="home-note">Made for shared screens & curious minds.<span>Grades K–5 · Teacher-led play</span></div>
       {(!bank.questions.length || questions.every(q => q.reviewStatus !== 'approved')) && <p className="content-notice" role="status">{bank.errors.length ? `Question bank needs correction: ${bank.errors.join(' ')}` : bank.questions.length ? `${bank.questions.length} generated questions await teacher review. The pacing guide is imported; use Question Review to approve questions and enable play.` : 'No approved local questions are available. Add reviewed curriculum-backed questions to enable play.'}</p>}
     </main>}
-    {state.screen === 'setup' && <main className="setup">
+    {screen === 'setup' && <main className="setup">
       <div className="eyebrow">JEOPARDY / QUICK SETUP</div>{state.contentSource !== 'drafts' && classroomBank.questions.length > 0 && <p className="hint">{PACK_NAME} · Content taught through September 13 · Automated checks + editorial review</p>}<h1 ref={title} tabIndex={-1}>Let’s get your class playing.</h1>
       <fieldset><legend>1 <span>Select grade</span></legend><div className="grade-options">{grades.map(g => <button key={g} aria-pressed={state.grade === g} onClick={() => update({ grade: g })}>{gradeLabel(g)}</button>)}</div></fieldset>
       <fieldset><legend>2 <span>Choose your content</span></legend><div className="range-options"><button aria-pressed={state.range === 'recent'} onClick={() => update({ range: 'recent' })}><strong>RECENT CONTENT</strong><span>This instructional week + the previous week</span></button><button aria-pressed={state.range === 'all'} onClick={() => update({ range: 'all' })}><strong>EVERYTHING TAUGHT SO FAR</strong><span>All available content through the selected date</span></button></div></fieldset>
@@ -89,7 +96,7 @@ export default function App() {
       <p className="hint">Students answer aloud, on paper, or with classroom response tools. You lead the game.</p>
     </main>}
     {active && blockedBoard && <p className="content-notice" role="alert">This board needs a new eligibility check because approval or curriculum data changed. Go Home to Question Review, or reset if a complete approved board is available.</p>}
-    {state.screen === 'board' && !blockedBoard && <main className="board-screen">
+    {screen === 'board' && !blockedBoard && <main className="board-screen">
       <div className="board-heading"><div><div className="eyebrow">JEOPARDY</div><h1 ref={title} tabIndex={-1}>Choose your challenge.</h1></div><p>{state.range === 'recent' ? 'Recent content' : 'Everything taught so far'} · Through {state.asOf}<br /><strong>{state.usedTiles.length} / 30 tiles played</strong></p></div>
       <div className="board">{categories.map(category => <section className="board-column" key={category} aria-label={category}><h2>{category.toUpperCase()}</h2>{tiles.filter(t => t.category === category).map(tile => {
         const used = state.usedTiles.includes(tile.id), count = state.assignments ? engine.getQuestions({ ...filters, subject: category, difficulty: tile.difficulty }).filter(q => q.id === state.assignments?.[tile.id]).length : engine.getAvailableQuestionCount({ ...filters, subject: category, difficulty: tile.difficulty });
@@ -97,7 +104,7 @@ export default function App() {
       })}</section>)}</div>
       <footer>{state.usedTiles.length === 30 || !tiles.some(t => !state.usedTiles.includes(t.id) && engine.getAvailableQuestionCount({ ...filters, subject: t.category, difficulty: t.difficulty })) ? 'All available challenges completed. Reset for a new class or change your selection.' : 'Choose a tile · Answer together · Reveal & discuss'}<span>Review uses marked review questions or earlier content.</span></footer>
     </main>}
-    {state.screen === 'question' && !blockedBoard && current && <main className="question-screen">
+    {screen === 'question' && !blockedBoard && current && <main className="question-screen">
       <div className="question-meta"><span>{state.current?.category.toUpperCase()}{state.current?.category === 'Review' ? ` · ${current.subject.toUpperCase()}` : ''}</span><span className="points">{current.difficulty} {current.difficulty === 1 ? 'POINT' : 'POINTS'}</span></div>
       <div className="read-note">{state.grade === 'K' ? 'TEACHER READS QUESTION ALOUD' : state.grade === '1' ? 'TEACHER MAY READ QUESTION ALOUD' : current.teacherRead ? 'TEACHER READS QUESTION ALOUD' : 'THINK IT THROUGH. SHARE YOUR ANSWER.'}</div>
       {current.teacherSetup && <p className="teacher-setup">Teacher preparation: {current.teacherSetup}</p>}

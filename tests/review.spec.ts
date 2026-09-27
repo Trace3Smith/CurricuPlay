@@ -6,7 +6,7 @@ import questions from '../src/data/questions.json' with { type: 'json' };
 
 test.beforeEach(async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-09-13T12:00:00'));
-  await page.goto('/');
+  await page.goto('/games');
   await page.getByRole('button', { name: 'Teacher tools · Question Review' }).click();
 });
 
@@ -54,6 +54,8 @@ test('Filters, rejection, unsaved edits, and empty answers are handled', async (
   await page.getByLabel('Review status').selectOption('approved');
   await expect(page.getByText('No matching questions', { exact: true })).toBeVisible();
   await page.reload();
+  // Real routing restores /games/review after refresh; return through Games.
+  await page.getByRole('button', { name: 'Home', exact: true }).click();
   await page.getByRole('button', { name: 'Teacher tools · Question Review' }).click();
   await page.getByLabel('Review status').selectOption('rejected');
   await expect(page.getByLabel('Answer', { exact: true })).toHaveValue('');

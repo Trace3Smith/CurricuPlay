@@ -1,5 +1,5 @@
 {
-  "name": "curricuplay",
+  "name": "classthread",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -11,17 +11,30 @@
     "content:import": "python3 scripts/ingest-content.py",
     "content:validate": "python3 scripts/validate-content.py",
     "content:tomorrow": "python3 scripts/build-tomorrow-pack.py",
-    "content:citations": "python3 scripts/report-citations.py"
+    "content:citations": "python3 scripts/report-citations.py",
+    "typecheck": "tsc --noEmit",
+    "dev:fixture": "tsx tests/fixtures/start-server.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "cookie": "^2.0.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.18.4",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^26.6.3",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
+    "tsx": "^4.23.15",
     "typescript": "~5.9.2",
-    "vite": "^7.1.0",
-    "@playwright/test": "^1.55.0"
+    "vite": "^7.1.0"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }

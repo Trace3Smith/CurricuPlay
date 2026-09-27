@@ -7,7 +7,7 @@ const key = 'curricuplay.four-corners.v1';
 const labels: Record<string, string> = { K: 'Kindergarten', '1': '1st Grade', '2': '2nd Grade', '3': '3rd Grade', '4': '4th Grade', '5': '5th Grade' };
 async function setup(page: Page, grade = 'K') {
   await page.clock.setFixedTime(new Date('2026-09-17T12:00:00'));
-  await page.goto('/'); await page.getByRole('button', { name: /FOUR CORNERS/ }).click();
+  await page.goto('/games'); await page.getByRole('button', { name: /FOUR CORNERS/ }).click();
   await page.getByRole('button', { name: labels[grade], exact: true }).click();
   // These regressions exercise the preserved whole-class mode; Team Mode is now the default.
   await page.getByRole('button', { name: 'Classic Mode', exact: true }).click();
@@ -197,7 +197,7 @@ test('Four Corners invalid saved sessions fail safely; teacher veto and storage 
   await page.getByRole('button', { name: '1st Grade', exact: true }).click(); await expect(page.getByRole('alert')).toContainText('Progress cannot be saved');
 });
 test('Four Corners leaves an active Jeopardy game intact and fullscreen works', async ({ page }) => {
-  await page.clock.setFixedTime(new Date('2026-09-17T12:00:00')); await page.goto('/');
+  await page.clock.setFixedTime(new Date('2026-09-17T12:00:00')); await page.goto('/games');
   await page.getByRole('button', { name: /JEOPARDY/ }).click(); await page.getByRole('button', { name: /^Start Game/ }).click();
   await page.locator('.tile:not([disabled])').first().click(); await page.getByRole('button', { name: 'Reveal Answer' }).click();
   const before = await page.evaluate(() => JSON.parse(localStorage.getItem('curricuplay.game.v1')!));

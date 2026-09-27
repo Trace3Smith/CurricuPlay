@@ -1,1 +1,34 @@
-{"compilerOptions":{"target":"ES2022","lib":["ES2022","DOM","DOM.Iterable"],"module":"ESNext","moduleResolution":"bundler","resolveJsonModule":true,"allowImportingTsExtensions":true,"isolatedModules":true,"noEmit":true,"jsx":"react-jsx","strict":true,"skipLibCheck":true},"include":["src"]}
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src",
+    "shared",
+    "server",
+    "api",
+    "vite.config.ts",
+    "tests/fixtures/*.ts",
+    "tests/foundation*.spec.ts",
+    "tests/auth-provider.spec.ts",
+    "tests/legacy-preservation.spec.ts"
+  ]
+}
