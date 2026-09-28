@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useFoundation } from '../../app/FoundationProvider';
 import WorkQueue from '../work/WorkQueue';
 import ActiveCurriculum from '../resources/ActiveCurriculum';
+import UpcomingLessons from '../lessons/UpcomingLessons';
 
 export default function MyClassroom() {
   const { data } = useFoundation();
@@ -18,6 +19,7 @@ export default function MyClassroom() {
       <section className="ct-panel ct-schedule"><span className="ct-eyebrow">WHERE I NEED TO BE</span><h2>Your schedule</h2><p className="ct-preserve-lines">{assignment?.schedule || 'No schedule recorded for this context yet.'}</p>{assignment?.school && <span className="ct-small">{assignment.school}</span>}<p className="ct-small">Assignment schedule notes · Calendar integration comes later.</p></section>
     </div>
     <ActiveCurriculum />
+    <UpcomingLessons />
     <WorkQueue />
     <div className="ct-bottom-row"><div><h2>Ready for a change of pace?</h2><p>Your classroom games are right where you need them.</p></div><Link className="ct-button ct-secondary" to="/games">Open Games →</Link></div>
   </>;

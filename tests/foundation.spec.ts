@@ -151,7 +151,9 @@ test('Sign-out clears teacher records without clearing Games and another account
 
 test('All shell routes exist, future areas are labeled, and the dashboard fits a phone', async ({ page }) => {
   await signIn(page);
-  for (const name of ['Plan','Teach','Assess','Create','Evidence','Calendar']) {
+  await page.getByRole('link', { name: 'Plan', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Your lessons', exact: true })).toBeVisible();
+  for (const name of ['Teach','Assess','Create','Evidence','Calendar']) {
     await page.getByRole('link', { name, exact: true }).click();
     await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
     await expect(page.getByText('This part of ClassThread is planned for a later increment.', { exact: false })).toBeVisible();

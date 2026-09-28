@@ -25,6 +25,11 @@ export interface Database {
       propose_curriculum: { Args: Record<string, unknown>; Returns: unknown };
       review_curriculum: { Args: Record<string, unknown>; Returns: unknown };
       activate_curriculum: { Args: Record<string, unknown>; Returns: unknown };
+      lesson_library: { Args: Record<string, never>; Returns: unknown };
+      save_lesson: { Args: Record<string, unknown>; Returns: unknown };
+      schedule_lesson: { Args: Record<string, unknown>; Returns: unknown };
+      mark_lesson_taught: { Args: Record<string, unknown>; Returns: unknown };
+      reflect_on_lesson: { Args: Record<string, unknown>; Returns: unknown };
     };
     Enums: Record<string, never>;
     CompositeTypes: Record<string, never>;

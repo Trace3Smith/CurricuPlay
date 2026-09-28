@@ -1,5 +1,6 @@
 import type { AssignmentInput, ContextInput, FoundationData, ProfileInput, WorkInput, WorkStatusInput, YearInput } from '../shared/contracts/foundation';
 import type { ResourcePorts } from './resources/ports';
+import type { LessonRepository } from './lessons/ports';
 
 /** Provider subjects stay behind this boundary; API callers receive the application user ID. */
 export interface AuthIdentity { subject: string; email: string }
@@ -21,7 +22,7 @@ export interface FoundationRepository {
   createWork(workspaceId: string, userId: string, value: WorkInput): Promise<void>;
   updateWork(workspaceId: string, id: string, value: WorkStatusInput): Promise<void>;
 }
-export interface RequestPorts extends ResourcePorts { auth: AuthPort; repository: FoundationRepository }
+export interface RequestPorts extends ResourcePorts { auth: AuthPort; repository: FoundationRepository; lessons: LessonRepository }
 export class AppError extends Error {
   constructor(public status: number, message: string) { super(message); }
 }

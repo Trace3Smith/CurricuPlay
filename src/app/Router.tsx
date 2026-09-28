@@ -9,6 +9,7 @@ import WorkQueue from '../modules/work/WorkQueue';
 import GamesEntry from './GamesEntry';
 import Resources from '../modules/resources/Resources';
 import ResourceDetail from '../modules/resources/ResourceDetail';
+import Plan from '../modules/lessons/Plan';
 
 function Protected() {
   const { loading, session, data, error } = useFoundation();
@@ -39,7 +40,11 @@ export default function ClassThreadRouter() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/resources/:resourceId" element={<ResourceDetail />} />
         <Route path="/resources/:resourceId/review/:curriculumId" element={<ResourceDetail />} />
-        {['Plan', 'Teach', 'Assess', 'Create', 'Evidence', 'Calendar'].map(name => <Route key={name} path={`/${name.toLowerCase()}`} element={<FutureArea name={name} />} />)}
+        <Route path="/plan" element={<Plan />} />
+        <Route path="/plan/new" element={<Plan />} />
+        <Route path="/plan/:lessonId" element={<Plan />} />
+        <Route path="/plan/:lessonId/revise" element={<Plan />} />
+        {['Teach', 'Assess', 'Create', 'Evidence', 'Calendar'].map(name => <Route key={name} path={`/${name.toLowerCase()}`} element={<FutureArea name={name} />} />)}
       </Route>
       <Route path="*" element={<div className="ct-future"><h1>That page isn’t here.</h1><Link to="/classroom">Go to My Classroom</Link></div>} />
     </Route>

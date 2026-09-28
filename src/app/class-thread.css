@@ -187,3 +187,32 @@ html[data-surface="classroom"] body{margin:0;background:#f5f6f2;color:#20392f;fo
 .ct-activation>p{margin-top:10px}
 .ct-active-curriculum a{display:inline-block;font-size:13px;margin-top:12px}
 @media(max-width:900px){.ct-resource-filters{grid-template-columns:1fr}.ct-assertion{grid-template-columns:1fr}.ct-mapping{grid-template-columns:1fr 2fr}.ct-resource-list>li{flex-direction:column}.ct-purpose-grid{grid-template-columns:1fr}}
+
+/* Lessons are confined to the ClassThread surface; no game or storage changes. */
+.ct-lesson-toolbar{align-items:center;margin-bottom:22px;font-size:13px}
+.ct-lesson-editor>fieldset{margin:0 0 24px}
+.ct-lesson-editor legend{font-size:18px;font-weight:650;padding:0 8px}
+.ct-lesson-editor .ct-small{margin:14px 0}
+.ct-lesson-editor h2{margin-top:18px}
+.ct-section-editor summary{font-size:18px;font-weight:650}
+.ct-section-editor summary>span{float:right}
+.ct-resource-attachments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-height:360px;overflow:auto}
+.ct-resource-attachments label{font-size:13px}
+.ct-lesson-nodes{margin-top:18px}
+.ct-curriculum-choice{padding:16px 0;border-bottom:1px solid var(--ct-border)}
+.ct-lesson-nodes[open]{max-height:420px;overflow:auto}
+.ct-lesson-section,.ct-memory-entry,.ct-lesson-use{padding:20px 0;border-top:1px solid var(--ct-border);overflow-wrap:anywhere;scroll-margin-top:20px}
+.ct-lesson-section>h3,.ct-memory-entry>h3{margin-bottom:8px}
+.ct-lesson-use>p{margin:8px 0 16px}
+.ct-mark-taught{display:flex;gap:16px;align-items:end;margin-top:18px;flex-wrap:wrap}
+.ct-mark-taught label{max-width:240px;font-size:13px}
+.ct-reflection-text{padding:15px;background:#f3f6ef;border-radius:8px;margin:16px 0}
+.ct-reflection-text>div{margin-top:12px}
+.ct-reflection-text h3{font-size:14px;margin-bottom:4px}
+.ct-version-list{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+.ct-version-list a{border:1px solid var(--ct-border);padding:8px 12px;border-radius:7px;font-size:13px}
+.ct-version-list .ct-current-version{background:#e5ede0;border-color:#72966b;font-weight:650}
+.ct-lesson-editor .ct-review-limits p{margin:8px 0}
+.ct-lesson-use fieldset{margin-top:15px}
+.ct-panel form>fieldset>.ct-button{margin-top:18px}
+@media(max-width:900px){.ct-resource-attachments{grid-template-columns:1fr}.ct-page-heading:has(.ct-inline-actions){align-items:flex-start;flex-direction:column}.ct-lesson-editor .ct-inline-actions{gap:14px;align-items:center}}

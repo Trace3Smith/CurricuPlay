@@ -6,6 +6,7 @@ import { assignmentFromRow, assignmentToRow, profileFromRow, workFromRow, yearFr
 import type { AssignmentRow, ProfileRow, UserRow, WorkRow, WorkspaceRow, YearRow } from '../../server/providers/supabase/database';
 import { resourceRepository, resourceDatabaseError } from '../../server/providers/supabase/resources';
 import type { FixtureDatabase } from './database';
+import { lessonRepository, lessonDatabaseError } from '../../server/providers/supabase/lessons';
 
 export function fixturePorts(database: FixtureDatabase) {
   const sessions = new Map<string, AuthIdentity>();
@@ -49,6 +50,15 @@ export function fixturePorts(database: FixtureDatabase) {
     };
     return {
       repository,
+      lessons: lessonRepository(async (name, args) => {
+        if (!user) throw new AppError(401, 'Please sign in.');
+        try {
+          const rows = await database.asUser(user.subject, tx => tx.query<{ value: unknown }>(
+            name === 'lesson_library' ? 'select public.lesson_library() as value' : `select public.${name}($1) as value`,
+            name === 'lesson_library' ? [] : [JSON.stringify(args.p)]));
+          return rows.rows[0].value;
+        } catch (error) { lessonDatabaseError(error as { code?: string }); throw error; }
+      }),
       resources: resourceRepository(async (name, args) => {
         try {
           const values = name === 'resource_library' ? [args.p_resource_id] : [JSON.stringify(args.p)];

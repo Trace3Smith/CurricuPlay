@@ -35,6 +35,10 @@ export async function fixtureDatabase(directory?: string) {
   `);
   const resources = await db.query<{ present: string | null }>("select to_regclass('public.resources')::text as present");
   if (!resources.rows[0].present) await db.exec(await readFile(new URL('../../supabase/migrations/202609270001_resources_curriculum.sql', import.meta.url), 'utf8'));
+  const lessons = await db.query<{ present: string | null }>("select to_regclass('public.lessons')::text as present");
+  if (!lessons.rows[0].present) await db.exec(await readFile(new URL('../../supabase/migrations/202609270002_lessons_memory.sql', import.meta.url), 'utf8'));
+  // Idempotent function-only correction also upgrades existing local fixture databases.
+  await db.exec(await readFile(new URL('../../supabase/migrations/202609270003_lesson_memory_identity.sql', import.meta.url), 'utf8'));
   async function identity(email: string) {
     const result = await db.query<{ id: string }>('insert into auth.users(id,email) values($1,$2) on conflict(email) do update set email = excluded.email returning id', [randomUUID(), email]);
     return result.rows[0].id;

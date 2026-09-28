@@ -4,6 +4,8 @@ Teacher Foundation: authenticated teacher profiles, personal workspaces, school 
 
 Start with the [Increment 1 setup guide](docs/INCREMENT_1.md) and [review report](docs/INCREMENT_1_REVIEW.md). The teacher dashboard needs the documented development Supabase configuration; an explicit local database/auth fixture is also available. Games remain browser-local under `/games`, with no account requirement.
 
+The approved [Resources and Curriculum workflow](docs/INCREMENT_2.md) is preserved. [Increment 3 — Lessons + Teaching Memory](docs/INCREMENT_3.md) adds manual lesson planning, immutable saved versions, scheduling, taught records, reflections and reuse history. It passed the user's final live ClassThread Development Supabase review, including both Increment 3 migrations, reflection feedback, and independent Teaching Memory for reusable copies. The [final review report](docs/INCREMENT_3_REVIEW.md) lists validation results and changed files; the setup guide documents migration order for another database.
+
 The sections below document the preserved Games/content pipeline. Their historical content counts describe earlier content passes; this increment did not regenerate the banks.
 
 ## Current content status

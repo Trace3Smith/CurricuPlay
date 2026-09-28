@@ -30,6 +30,7 @@
     "tests/foundation*.spec.ts",
     "tests/auth-provider.spec.ts",
     "tests/legacy-preservation.spec.ts",
-    "tests/resources*.spec.ts"
+    "tests/resources*.spec.ts",
+    "tests/lessons*.spec.ts"
   ]
 }

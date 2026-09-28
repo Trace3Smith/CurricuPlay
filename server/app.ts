@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { assignmentInput, assignmentWithinYear, contextInput, emailInput, idSchema, profileInput, verifyEmailInput, workInput, workStatusInput, yearInput } from '../shared/contracts/foundation';
 import { AppError, type RequestPorts } from './ports';
 import { resourceService } from './resources/service';
+import { lessonService } from './lessons/service';
 
 export interface ApiOptions {
   origin: string;
@@ -88,6 +89,20 @@ export function createApiHandler(options: ApiOptions) {
       if (!identity) throw new AppError(401, 'Please sign in to access your classroom.');
       await repository.bootstrap();
       const data = await repository.read(identity);
+      if (route === '/api/lessons' || route.startsWith('/api/lessons/')) {
+        const service = lessonService(ports.lessons);
+        const parts = route.slice('/api/lessons'.length).split('/').filter(Boolean);
+        if (!parts.length && method === 'GET') return json(res, 200, await service.list());
+        if (!parts.length && method === 'POST') return json(res, 201, await service.save(null, await body(req, 600000)));
+        if (parts.length === 1 && parts[0] === 'schedule' && method === 'POST') return json(res, 201, { id: await service.schedule(await body(req)) });
+        if (parts.length === 2 && method === 'POST') {
+          const id = idSchema.parse(parts[0]);
+          if (parts[1] === 'versions') return json(res, 201, await service.save(id, await body(req, 600000)));
+          if (parts[1] === 'taught') return json(res, 201, { id: await service.markTaught(id, await body(req)) });
+          if (parts[1] === 'reflection') return json(res, 200, { id: await service.reflect(id, await body(req)) });
+        }
+        throw new AppError(404, 'Lesson route not found.');
+      }
       if (route === '/api/resources' || route.startsWith('/api/resources/')) {
         const service = resourceService(ports, data);
         const parts = route.slice('/api/resources'.length).split('/').filter(Boolean);
