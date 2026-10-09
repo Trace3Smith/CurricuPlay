@@ -1,7 +1,10 @@
+import objectPictures from '../../data/spelling-bee-pictures.json' with { type: 'json' };
+import { isEvidence, type CurriculumEvidence } from '../../curriculum/eligibility';
 import { grades, type Grade } from '../../types';
 import raw from '../../data/spelling-bee.json' with { type: 'json' };
 
 export const pictures = {
+  ...objectPictures,
   sun: { src: '/spelling-bee/sun.svg', alt: 'A bright round object with rays in the daytime sky.' },
   cat: { src: '/spelling-bee/cat.svg', alt: 'A small pet with pointed ears, whiskers, and a curled tail.' },
   plant: { src: '/four-corners/plant.svg', alt: 'A flowering living thing with roots, a stem, and green leaves.' },
@@ -16,7 +19,9 @@ export const pictures = {
 export type PictureRef = keyof typeof pictures;
 export interface WordEntry {
   id: string; grade: Grade; word: string; clue: string; skill: string;
-  picture: PictureRef | null; source: string; kind: 'sample' | 'teacher'; reviewStatus: 'approved' | 'pending';
+  picture: PictureRef | null; source: string; kind: 'sample' | 'teacher' | 'curriculum'; reviewStatus: 'approved' | 'pending';
+  activity?: 'initial' | 'spelling'; curriculum?: CurriculumEvidence; evidenceId?: string;
+  complexity?: 'foundation' | 'academic';
 }
 export interface WordList { id: string; name: string; entries: WordEntry[] }
 export function isWord(value: unknown): value is WordEntry {
@@ -24,8 +29,12 @@ export function isWord(value: unknown): value is WordEntry {
   const w = value as WordEntry;
   const text = (v: unknown, max: number) => typeof v === 'string' && !!v.trim() && v.length <= max;
   return text(w.id, 100) && grades.includes(w.grade) && typeof w.word === 'string' && /^[a-z]{1,16}$/.test(w.word) &&
-    text(w.clue, 180) && text(w.skill, 80) && text(w.source, 160) && ['sample', 'teacher'].includes(w.kind) &&
-    ['approved', 'pending'].includes(w.reviewStatus) && (w.picture === null || (typeof w.picture === 'string' && Object.hasOwn(pictures, w.picture)));
+    text(w.clue, 180) && text(w.skill, 80) && text(w.source, 160) && ['sample', 'teacher', 'curriculum'].includes(w.kind) &&
+    ['approved', 'pending'].includes(w.reviewStatus) &&
+    (w.activity === undefined || ['initial', 'spelling'].includes(w.activity)) &&
+    (w.activity !== 'initial' || (w.grade === 'K' && !!w.picture)) &&
+    (w.complexity === undefined || ['foundation', 'academic'].includes(w.complexity)) &&
+    (w.curriculum === undefined ? w.kind !== 'curriculum' : isEvidence(w.curriculum) && w.curriculum.grade === w.grade && w.kind === 'curriculum') && (w.picture === null || (typeof w.picture === 'string' && Object.hasOwn(pictures, w.picture)));
 }
 export function validateWords(value: unknown): { entries: WordEntry[]; errors: string[] } {
   if (!Array.isArray(value) || value.length > 200) return { entries: [], errors: ['Use a list of at most 200 words.'] };
@@ -79,4 +88,12 @@ export function nextHintIndex(word: string, difficulty: Difficulty, extraLetters
     else { if (run.length > best.length) best = run; run = []; }
   }
   return best.length ? best[Math.floor((best.length - 1) / 2)] : undefined;
+}
+
+export const answerFor = (word: WordEntry): string => word.activity === 'initial' ? word.word[0] : word.word;
+/** Academic vocabulary gets an extra internal anchor, not just length-based support. */
+export function startingHints(word: WordEntry, difficulty: Difficulty): number[] {
+  if (word.activity === 'initial' || difficulty !== 'missing' || word.complexity !== 'academic') return [];
+  const index = nextHintIndex(word.word, difficulty);
+  return index === undefined ? [] : [index];
 }

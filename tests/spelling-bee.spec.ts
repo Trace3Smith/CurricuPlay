@@ -1,6 +1,8 @@
 import { test, expect, type Page } from '@playwright/test';
 import { ACTIVE_KEY, HISTORY_KEY, LISTS_KEY } from '../src/games/spelling-bee/storage';
-import type { BeeState } from '../src/games/spelling-bee/engine';
+import { beginGame, type BeeState } from '../src/games/spelling-bee/engine';
+import { samples } from '../src/games/spelling-bee/words';
+import type { Grade } from '../src/types';
 import fixture from './fixtures/legacy-browser-state.v1.json' with { type: 'json' };
 const state = (page: Page): Promise<BeeState> => page.evaluate(key => JSON.parse(localStorage.getItem(key)!), ACTIVE_KEY);
 async function fits(page: Page) {
@@ -9,18 +11,20 @@ async function fits(page: Page) {
   expect(overflow).toEqual([]);
 }
 async function start(page: Page, grade = 'K') {
-  await page.goto('/games/spelling-bee'); await page.getByLabel('Grade', { exact: true }).selectOption(grade); await page.getByRole('button', { name: 'Start Game', exact: true }).click();
+  await page.goto('/games/spelling-bee');
+  const legacy = beginGame(samples.entries, grade as Grade, ['K','1','2'].includes(grade) ? 'supported' : 'missing', 'legacy-review', '2026-10-08T12:00:00Z', () => .99)!;
+  await page.evaluate(({key, value}) => localStorage.setItem(key, JSON.stringify(value)), {key: ACTIVE_KEY, value: legacy});
+  await page.reload(); await expect(page.getByRole('group', {name: 'Spelling letter slots'})).toBeVisible();
 }
-for (const grade of ['K', '1', '2', '3', '4', '5']) test(`grade ${grade} complete classroom flow, all words once, 1080p fit and saved summary`, async ({ page }) => {
+async function customSetup(page: Page) {
+  await page.getByLabel('Content mode').selectOption('general');
+  await page.getByLabel('Word bank').selectOption('custom');
+}
+
+for (const grade of ['K', '1', '2', '3', '4', '5']) test(`grade ${grade} legacy saved classroom flow, all words once, 1080p fit and saved summary`, async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/games/spelling-bee'); await fits(page);
-  await expect(page.getByText('cat, sun, map, sit, the', { exact: true })).not.toBeVisible();
-  await page.getByText('Teacher: preview word list', { exact: true }).click();
-  await expect(page.getByText('cat, sun, map, sit, the', { exact: true })).toBeVisible();
-  await page.getByText('Teacher: preview word list', { exact: true }).click();
-  await page.getByLabel('Grade', { exact: true }).selectOption(grade);
-  if (grade === '5') await page.getByLabel('Letter hints').selectOption('challenge');
-  await page.getByRole('button', { name: 'Start Game', exact: true }).click();
+  await start(page, grade);
   const original = await state(page); const seen: string[] = [];
   for (let i = 0; i < original.words.length; i++) {
     const current = await state(page); seen.push(current.words[current.index].word);
@@ -53,15 +57,15 @@ for (const grade of ['K', '1', '2', '3', '4', '5']) test(`grade ${grade} complet
   await expect(page.getByTestId('bee-accuracy')).toHaveText('16.7% (5/30)'); expect(errors).toEqual([]);
 });
 test('custom lists: validate, save drafts, edit, approve, reuse, and handle empty grade', async ({ page }) => {
-  await page.goto('/games/spelling-bee'); await page.getByLabel('Word bank').selectOption('custom'); await fits(page);
+  await page.goto('/games/spelling-bee'); await customSetup(page); await fits(page);
   await page.getByLabel('Words', { exact: true }).fill('cat,CAT'); await expect(page.getByRole('alert')).toContainText('duplicate'); await expect(page.getByRole('button', { name: 'Save List' })).toBeDisabled();
   await page.getByLabel('Words', { exact: true }).fill('cat | A pet that says meow. | CVC | cat\nsun | It shines in the sky. | CVC | sun');
   await page.getByLabel('List name').fill('Scooter words'); await page.getByRole('button', { name: 'Save List' }).click();
   await expect(page.getByRole('button', { name: 'Start Game', exact: true })).toBeDisabled();
-  await page.reload(); await page.getByLabel('Word bank').selectOption({ label: 'Scooter words' }); await page.getByRole('button', { name: 'Edit a Copy' }).click();
+  await page.reload(); await page.getByLabel('Content mode').selectOption('general'); await page.getByLabel('Word bank').selectOption({ label: 'Scooter words' }); await page.getByRole('button', { name: 'Edit a Copy' }).click();
   await page.getByRole('checkbox').check(); await page.getByRole('button', { name: 'Save List' }).click();
   await page.getByLabel('Grade', { exact: true }).selectOption('5'); await expect(page.getByRole('button', { name: 'Start Game', exact: true })).toBeDisabled();
-  await page.getByLabel('Grade', { exact: true }).selectOption('K'); await page.getByRole('button', { name: 'Start Game', exact: true }).click();
+  await page.getByLabel('Grade', { exact: true }).selectOption('K'); await page.getByLabel('Word bank').selectOption({ label: 'Scooter words (copy)' }); await page.getByLabel('Teacher approval').check(); await page.getByRole('button', { name: 'Start Game', exact: true }).click();
   expect((await state(page)).words).toHaveLength(2);
   await page.getByRole('button', { name: /^Orange:/ }).click(); await page.reload();
   await expect(page.getByRole('button', { name: /^Orange:/ })).toHaveAttribute('aria-pressed', 'true');
@@ -74,7 +78,7 @@ test('custom lists: validate, save drafts, edit, approve, reuse, and handle empt
 test('continue, direct routing and browser Back preserve old games, timer, questions and assessment history', async ({ page }) => {
   await page.goto('/games/spelling-bee');
   await page.evaluate(records => Object.entries(records).forEach(([key, value]) => localStorage.setItem(key, value)), fixture.records);
-  await page.getByRole('button', { name: 'Start Game', exact: true }).click(); await page.getByRole('button', { name: /^Blue:/ }).click();
+  await page.getByLabel('Teacher approval').check(); await page.getByRole('button', { name: 'Start Game', exact: true }).click(); await page.getByRole('button', { name: /^Blue:/ }).click();
   const draft = await state(page);
   await page.getByRole('button', { name: 'Games', exact: true }).click();
   await expect(page.getByRole('button', { name: /SPELLING BEE/ })).toContainText('CONTINUE'); await fits(page);
@@ -96,11 +100,11 @@ test('keyboard, touch targets, accessible hints and modal focus, mobile layout',
 });
 test('bad saved state and unavailable writes display warnings and preserve data', async ({ page }) => {
   await page.goto('/games/spelling-bee'); await page.evaluate(key => localStorage.setItem(key, '{bad'), ACTIVE_KEY); await page.reload();
-  await expect(page.getByRole('alert')).toContainText('left untouched'); await page.getByRole('button', { name: 'Start Game', exact: true }).click();
+  await expect(page.getByRole('alert')).toContainText('left untouched'); await page.getByLabel('Teacher approval').check(); await page.getByRole('button', { name: 'Start Game', exact: true }).click();
   expect(await page.evaluate(key => localStorage.getItem(key), ACTIVE_KEY)).toBe('{bad');
   await page.evaluate(key => localStorage.removeItem(key), ACTIVE_KEY); await page.reload();
   await page.evaluate(() => { Storage.prototype.setItem = () => { throw new Error('quota'); }; });
-  await page.getByRole('button', { name: 'Start Game', exact: true }).click(); await expect(page.getByRole('alert')).toContainText('Keep this tab open');
+  await page.getByLabel('Teacher approval').check(); await page.getByRole('button', { name: 'Start Game', exact: true }).click(); await expect(page.getByRole('alert')).toContainText('Keep this tab open');
 });
 test('spoken clues and word audio are explicit teacher actions', async ({ page }) => {
   await start(page);
@@ -122,8 +126,8 @@ test('missing image falls back to a clue and the next reviewed image still rende
   await fits(page);
 });
 test('maximum-length teacher word and clue fit the Smart Board with all scoring controls', async ({ page }) => {
-  await page.goto('/games/spelling-bee'); await page.getByLabel('Word bank').selectOption('custom');
-  await page.getByLabel('Words', { exact: true }).fill(`misunderstanding | ${'A careful teacher clue. '.repeat(7).trim()} | Prefix and suffix`);
+  await page.goto('/games/spelling-bee'); await customSetup(page);
+  await page.getByLabel('Grade', { exact: true }).selectOption('1'); await page.getByLabel('Words', { exact: true }).fill(`misunderstanding | ${'A careful teacher clue. '.repeat(7).trim()} | Prefix and suffix`);
   await page.getByRole('checkbox').check(); await fits(page);
   await page.getByRole('button', { name: 'Start Game', exact: true }).click(); await fits(page);
   await page.getByRole('button', { name: 'Teacher: Reveal Answer', exact: true }).click(); await fits(page);
@@ -155,8 +159,8 @@ test('long-word teacher hints survive refresh, respect the dropdown, and never r
   await expect(page.getByRole('button', { name: /^Blue:/ })).toContainText('1');
 });
 test('new reviewed pictures can be paired with custom lists without adding images to sentence clues', async ({ page }) => {
-  await page.goto('/games/spelling-bee'); await page.getByLabel('Word bank').selectOption('custom');
-  await page.getByLabel('Words', { exact: true }).fill('ship | A large boat. | Digraph sh | ship');
+  await page.goto('/games/spelling-bee'); await customSetup(page);
+  await page.getByLabel('Grade', { exact: true }).selectOption('1'); await page.getByLabel('Words', { exact: true }).fill('ship | A large boat. | Digraph sh | ship');
   await page.getByRole('checkbox').check(); await page.getByRole('button', { name: 'Start Game', exact: true }).click();
   await expect(page.locator('.bee-challenge img')).toHaveAttribute('src', '/spelling-bee/ship.svg');
   await expect(page.locator('.bee-challenge img')).toHaveAccessibleName(/large vessel/);

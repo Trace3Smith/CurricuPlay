@@ -1,0 +1,67 @@
+{
+  "cutoff": "2026-10-09",
+  "timezone": "America/New_York",
+  "approval": "Editorial review complete; teacher must approve suitability at setup. Schedule does not prove completion or mastery.",
+  "grades": [
+    {
+      "grade": "K",
+      "eligible": 32,
+      "current": 0,
+      "earlier": 32,
+      "sourceListed": 0,
+      "skillPractice": 32,
+      "general": 32,
+      "excluded": 1
+    },
+    {
+      "grade": "1",
+      "eligible": 42,
+      "current": 12,
+      "earlier": 30,
+      "sourceListed": 12,
+      "skillPractice": 30,
+      "general": 45,
+      "excluded": 0
+    },
+    {
+      "grade": "2",
+      "eligible": 40,
+      "current": 12,
+      "earlier": 28,
+      "sourceListed": 18,
+      "skillPractice": 22,
+      "general": 44,
+      "excluded": 0
+    },
+    {
+      "grade": "3",
+      "eligible": 40,
+      "current": 13,
+      "earlier": 27,
+      "sourceListed": 28,
+      "skillPractice": 12,
+      "general": 44,
+      "excluded": 0
+    },
+    {
+      "grade": "4",
+      "eligible": 40,
+      "current": 20,
+      "earlier": 20,
+      "sourceListed": 0,
+      "skillPractice": 40,
+      "general": 44,
+      "excluded": 0
+    },
+    {
+      "grade": "5",
+      "eligible": 41,
+      "current": 12,
+      "earlier": 29,
+      "sourceListed": 3,
+      "skillPractice": 38,
+      "general": 45,
+      "excluded": 2
+    }
+  ]
+}

@@ -1,0 +1,904 @@
+[
+  {
+    "id": "k-m",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-1.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning letter M and its sound",
+    "source": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Weekly catalog: 2026-08-03 through 2026-08-07; Beginning letter M and its sound",
+    "unit": "Unit 1: Trying New Things",
+    "earliestEligible": "2026-08-07",
+    "periods": [
+      {
+        "start": "2026-08-03",
+        "end": "2026-08-07"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Object names are ClassThread practice, not district-assigned words. Unit 1 explicitly introduces this letter. Teacher says object name; child supplies only its first letter."
+  },
+  {
+    "id": "k-t",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-1.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning letter T and its sound",
+    "source": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Beginning letter T and its sound",
+    "unit": "Unit 1: Trying New Things",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Object names are ClassThread practice, not district-assigned words. Unit 1 explicitly introduces this letter. Teacher says object name; child supplies only its first letter."
+  },
+  {
+    "id": "k-a",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-1.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning letter A and its sound",
+    "source": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Beginning letter A and its sound",
+    "unit": "Unit 1: Trying New Things",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Object names are ClassThread practice, not district-assigned words. Unit 1 explicitly introduces this letter. Teacher says object name; child supplies only its first letter."
+  },
+  {
+    "id": "k-s",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-1.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning letter S and its sound",
+    "source": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Weekly catalog: 2026-08-17 through 2026-08-21; Beginning letter S and its sound",
+    "unit": "Unit 1: Trying New Things",
+    "earliestEligible": "2026-08-21",
+    "periods": [
+      {
+        "start": "2026-08-17",
+        "end": "2026-08-21"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Object names are ClassThread practice, not district-assigned words. Unit 1 explicitly introduces this letter. Teacher says object name; child supplies only its first letter."
+  },
+  {
+    "id": "k-b",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-1.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning letter B and its sound",
+    "source": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Weekly catalog: 2026-08-24 through 2026-08-28; Beginning letter B and its sound",
+    "unit": "Unit 1: Trying New Things",
+    "earliestEligible": "2026-08-28",
+    "periods": [
+      {
+        "start": "2026-08-24",
+        "end": "2026-08-28"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Object names are ClassThread practice, not district-assigned words. Unit 1 explicitly introduces this letter. Teacher says object name; child supplies only its first letter."
+  },
+  {
+    "id": "k-i",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-1.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning letter I and its sound",
+    "source": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Weekly catalog: 2026-08-24 through 2026-08-28; Beginning letter I and its sound",
+    "unit": "Unit 1: Trying New Things",
+    "earliestEligible": "2026-08-28",
+    "periods": [
+      {
+        "start": "2026-08-24",
+        "end": "2026-08-28"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Object names are ClassThread practice, not district-assigned words. Unit 1 explicitly introduces this letter. Teacher says object name; child supplies only its first letter."
+  },
+  {
+    "id": "k-unit2-conflict",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-1.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning C sound",
+    "source": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Weekly catalog: 2026-09-21 through 2026-09-25; Beginning C sound",
+    "unit": "Unit 2: Color in Art",
+    "earliestEligible": null,
+    "periods": [
+      {
+        "start": "2026-09-21",
+        "end": "2026-09-25"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "conflicting",
+    "review": "approved",
+    "note": "Weekly catalog and workbook place Unit 2 in September; document unit overview starts October 19. Excluded until dates are clarified."
+  },
+  {
+    "id": "1-super-early",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-2.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: and, see, the, to",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Weekly catalog: 2026-08-03 through 2026-08-07; Super Words: and, see, the, to",
+    "unit": "Unit 1: Working Together",
+    "earliestEligible": "2026-08-07",
+    "periods": [
+      {
+        "start": "2026-08-03",
+        "end": "2026-08-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "1-super-aug",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-2.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: but, her, not, of",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Super Words: but, her, not, of",
+    "unit": "Unit 1: Working Together",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "1-cvc",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-2.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Short a and short i",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Short a and short i",
+    "unit": "Unit 1: Working Together",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "1-digraph",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-2.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Beginning digraphs sh, th, ch, wh",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Weekly catalog: 2026-09-21 through 2026-09-25; Beginning digraphs sh, th, ch, wh",
+    "unit": "Unit 2: Art All Around Us",
+    "earliestEligible": "2026-09-25",
+    "periods": [
+      {
+        "start": "2026-09-21",
+        "end": "2026-09-25"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "1-end-digraph",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-2.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending digraphs sh, th, ck",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Weekly catalog: 2026-09-28 through 2026-10-02; Ending digraphs sh, th, ck",
+    "unit": "Unit 2: Art All Around Us",
+    "earliestEligible": "2026-10-02",
+    "periods": [
+      {
+        "start": "2026-09-28",
+        "end": "2026-10-02"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "1-current-direct",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-2.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: from, have, look, or",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Super Words: from, have, look, or",
+    "unit": "Unit 2: Art All Around Us",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "1-current-practice",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-2.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending ch, ng and tch",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Ending ch, ng and tch",
+    "unit": "Unit 2: Art All Around Us",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "2-early-direct",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words and community vocabulary",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Weekly catalog: 2026-08-03 through 2026-08-07; High-frequency words and community vocabulary",
+    "unit": "Unit 1: Working Together",
+    "earliestEligible": "2026-08-07",
+    "periods": [
+      {
+        "start": "2026-08-03",
+        "end": "2026-08-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "2-earlier-skills",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Beginning and ending digraphs",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Weekly catalog: 2026-08-17 through 2026-08-21; Beginning and ending digraphs",
+    "unit": "Unit 1: Working Together",
+    "earliestEligible": "2026-08-21",
+    "periods": [
+      {
+        "start": "2026-08-17",
+        "end": "2026-08-21"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "2-final-e",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Final e: a_e, i_e, o_e, u_e",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Weekly catalog: 2026-09-21 through 2026-09-25; Final e: a_e, i_e, o_e, u_e",
+    "unit": "Unit 2: Inspiration and Painting",
+    "earliestEligible": "2026-09-25",
+    "periods": [
+      {
+        "start": "2026-09-21",
+        "end": "2026-09-25"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "2-previous-direct",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words: come, large, once, some",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Weekly catalog: 2026-09-28 through 2026-10-02; High-frequency words: come, large, once, some",
+    "unit": "Unit 2: Inspiration and Painting",
+    "earliestEligible": "2026-10-02",
+    "periods": [
+      {
+        "start": "2026-09-28",
+        "end": "2026-10-02"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "2-current-direct",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words: could, have, through, would",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; High-frequency words: could, have, through, would",
+    "unit": "Unit 2: Inspiration and Painting",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "2-current-practice",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Three-letter blends str, spl, spr, scr, shr, thr",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Three-letter blends str, spl, spr, scr, shr, thr",
+    "unit": "Unit 2: Inspiration and Painting",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-tradition",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Vocabulary notebook: Traditional, Myth, Fable, Folktale",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog: 2026-08-03 through 2026-08-07; Vocabulary notebook: Traditional, Myth, Fable, Folktale",
+    "unit": "Unit 1: Spinning Stories",
+    "earliestEligible": "2026-08-07",
+    "periods": [
+      {
+        "start": "2026-08-03",
+        "end": "2026-08-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-word-parts",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Vocabulary notebook: recount, moral, synonym, antonym, prefix, suffix",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Vocabulary notebook: recount, moral, synonym, antonym, prefix, suffix",
+    "unit": "Unit 1: Spinning Stories",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-narrative",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Vocabulary notebook: plot, motivation, consequences, dialogue",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog: 2026-08-24 through 2026-08-28; Vocabulary notebook: plot, motivation, consequences, dialogue",
+    "unit": "Unit 1: Spinning Stories",
+    "earliestEligible": "2026-08-28",
+    "periods": [
+      {
+        "start": "2026-08-24",
+        "end": "2026-08-28"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-geography",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
+    "grade": "3",
+    "subject": "Social Studies",
+    "target": "Equator, latitude and longitude",
+    "source": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog: 2026-08-31 through 2026-09-04; Equator, latitude and longitude",
+    "unit": "United States Geography",
+    "earliestEligible": "2026-09-04",
+    "periods": [
+      {
+        "start": "2026-08-31",
+        "end": "2026-09-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-science",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Science",
+    "target": "Physical characteristics: hardness, color, luster, streak",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Physical characteristics: hardness, color, luster, streak",
+    "unit": "Rocks, Soils and Fossils",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-information",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Vocabulary notebook: Fact and Opinion",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog: 2026-09-14 through 2026-09-18; Vocabulary notebook: Fact and Opinion",
+    "unit": "Unit 2: Into the Deep",
+    "earliestEligible": "2026-09-18",
+    "periods": [
+      {
+        "start": "2026-09-14",
+        "end": "2026-09-18"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-features",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Text features, figurative language and main idea",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Text features, figurative language and main idea",
+    "unit": "Unit 2: Into the Deep",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "3-current-listed",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Precise language example: Sad to Disappointed",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Precise language example: Sad to Disappointed",
+    "unit": "Unit 2: Into the Deep",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "4-early",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Evidence, topic, sequence and context clues",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Weekly catalog: 2026-08-03 through 2026-08-07; Evidence, topic, sequence and context clues",
+    "unit": "Unit 1: Keystone Species",
+    "earliestEligible": "2026-08-07",
+    "periods": [
+      {
+        "start": "2026-08-03",
+        "end": "2026-08-07"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "4-story",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Plot events and narrative structure",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Weekly catalog: 2026-09-21 through 2026-09-25; Plot events and narrative structure",
+    "unit": "Unit 2: Storytellers",
+    "earliestEligible": "2026-09-25",
+    "periods": [
+      {
+        "start": "2026-09-21",
+        "end": "2026-09-25"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "4-science",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-10.json",
+    "grade": "4",
+    "subject": "Science",
+    "target": "Earth and Moon movement, seasons, and models",
+    "source": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "Weekly catalog: 2026-09-21 through 2026-09-25; Earth and Moon movement, seasons, and models",
+    "unit": "Unit 2: Stars, Planets, and Moon",
+    "earliestEligible": "2026-09-25",
+    "periods": [
+      {
+        "start": "2026-09-21",
+        "end": "2026-09-25"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "4-parts",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Word parts pre-, post-, mid-",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Word parts pre-, post-, mid-",
+    "unit": "Unit 2: Storytellers",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "4-civics",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-11.json",
+    "grade": "4",
+    "subject": "Social Studies",
+    "target": "Representative democracy and the right to govern",
+    "source": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Representative democracy and the right to govern",
+    "unit": "Unit 3: Challenges of a New Nation",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-literacy",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-6.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Narrative techniques, characters, setting, plot and theme",
+    "source": "5th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Narrative techniques, characters, setting, plot and theme",
+    "unit": "Unit 1: Unlocking Confidence",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-earth",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Science",
+    "target": "Weathering, erosion and deposition",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly catalog: 2026-08-10 through 2026-08-14; Weathering, erosion and deposition",
+    "unit": "Unit 1: Earth Science",
+    "earliestEligible": "2026-08-14",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-14"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-earth-practice",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Science",
+    "target": "Surface features and landforms",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly catalog: 2026-08-17 through 2026-08-21; Surface features and landforms",
+    "unit": "Unit 1: Earth Science",
+    "earliestEligible": "2026-08-21",
+    "periods": [
+      {
+        "start": "2026-08-17",
+        "end": "2026-08-21"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-civics",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-12.json",
+    "grade": "5",
+    "subject": "Social Studies",
+    "target": "Rights, responsibilities, due process and constitution",
+    "source": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog: 2026-08-31 through 2026-09-04; Rights, responsibilities, due process and constitution",
+    "unit": "Unit 2: Citizenship, Business, and Government",
+    "earliestEligible": "2026-09-04",
+    "periods": [
+      {
+        "start": "2026-08-31",
+        "end": "2026-09-04"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-physical",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Science",
+    "target": "Physical changes and states of water",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly catalog: 2026-09-28 through 2026-10-02; Physical changes and states of water",
+    "unit": "Unit 2: Physical and Chemical Changes",
+    "earliestEligible": "2026-10-02",
+    "periods": [
+      {
+        "start": "2026-09-28",
+        "end": "2026-10-02"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-current-literacy",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-6.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Facts, details, nonfiction and information from multiple sources",
+    "source": "5th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; Facts, details, nonfiction and information from multiple sources",
+    "unit": "Unit 2: From Earth to Mars",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-current-social",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-12.json",
+    "grade": "5",
+    "subject": "Social Studies",
+    "target": "The Cattle Trails",
+    "source": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog: 2026-10-05 through 2026-10-09; The Cattle Trails",
+    "unit": "Unit 3: The Changing Nation",
+    "earliestEligible": "2026-10-09",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-10-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  },
+  {
+    "id": "5-future-electricity",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Science",
+    "target": "Electricity and magnetism",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly catalog: 2026-11-09 through 2026-11-13; Electricity and magnetism",
+    "unit": "Unit 3: Energy Transfer",
+    "earliestEligible": "2026-11-13",
+    "periods": [
+      {
+        "start": "2026-11-09",
+        "end": "2026-11-13"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Weekly timing checked against FY27 workbook. Eligible at week end; schedule is not proof of classroom completion. Original ClassThread clues; teacher review required."
+  }
+]

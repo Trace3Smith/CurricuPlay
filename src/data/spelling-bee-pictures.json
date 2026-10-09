@@ -1,0 +1,170 @@
+{
+  "apple": {
+    "src": "/spelling-bee/objects/apple.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "ant": {
+    "src": "/spelling-bee/objects/ant.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "ax": {
+    "src": "/spelling-bee/objects/ax.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "ball": {
+    "src": "/spelling-bee/objects/ball.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "bat": {
+    "src": "/spelling-bee/objects/bat.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "bed": {
+    "src": "/spelling-bee/objects/bed.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "bell": {
+    "src": "/spelling-bee/objects/bell.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "bus": {
+    "src": "/spelling-bee/objects/bus.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "bag": {
+    "src": "/spelling-bee/objects/bag.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "boat": {
+    "src": "/spelling-bee/objects/boat.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "book": {
+    "src": "/spelling-bee/objects/book.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "moon": {
+    "src": "/spelling-bee/objects/moon.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "mug": {
+    "src": "/spelling-bee/objects/mug.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "mitten": {
+    "src": "/spelling-bee/objects/mitten.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "mouse": {
+    "src": "/spelling-bee/objects/mouse.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "magnet": {
+    "src": "/spelling-bee/objects/magnet.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "mushroom": {
+    "src": "/spelling-bee/objects/mushroom.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "tent": {
+    "src": "/spelling-bee/objects/tent.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "top": {
+    "src": "/spelling-bee/objects/top.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "turtle": {
+    "src": "/spelling-bee/objects/turtle.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "tomato": {
+    "src": "/spelling-bee/objects/tomato.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "tiger": {
+    "src": "/spelling-bee/objects/tiger.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "towel": {
+    "src": "/spelling-bee/objects/towel.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "sock": {
+    "src": "/spelling-bee/objects/sock.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "soap": {
+    "src": "/spelling-bee/objects/soap.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "seal": {
+    "src": "/spelling-bee/objects/seal.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "sandwich": {
+    "src": "/spelling-bee/objects/sandwich.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "spoon": {
+    "src": "/spelling-bee/objects/spoon.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "suitcase": {
+    "src": "/spelling-bee/objects/suitcase.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "igloo": {
+    "src": "/spelling-bee/objects/igloo.svg",
+    "alt": "One object. Choose Say Word to hear its name."
+  },
+  "fish": {
+    "src": "/spelling-bee/objects/fish.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "duck": {
+    "src": "/spelling-bee/objects/duck.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "rock": {
+    "src": "/spelling-bee/objects/rock.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "ring": {
+    "src": "/spelling-bee/objects/ring.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "wing": {
+    "src": "/spelling-bee/objects/wing.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "hat": {
+    "src": "/spelling-bee/objects/hat.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "pan": {
+    "src": "/spelling-bee/objects/pan.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "bike": {
+    "src": "/spelling-bee/objects/bike.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "kite": {
+    "src": "/spelling-bee/objects/kite.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "rope": {
+    "src": "/spelling-bee/objects/rope.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "cube": {
+    "src": "/spelling-bee/objects/cube.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  },
+  "shrub": {
+    "src": "/spelling-bee/objects/shrub.svg",
+    "alt": "A simple illustration supporting the spoken or written clue."
+  }
+}

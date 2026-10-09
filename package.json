@@ -14,7 +14,8 @@
     "content:citations": "python3 scripts/report-citations.py",
     "typecheck": "tsc --noEmit",
     "dev:fixture": "tsx tests/fixtures/start-server.ts",
-    "content:validate:spelling-bee": "python3 scripts/validate-spelling-bee.py"
+    "content:validate:spelling-bee": "python3 scripts/validate-spelling-bee.py",
+    "content:validate:spelling-bee:pacing": "python3 scripts/validate-spelling-bee-pacing.py"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
