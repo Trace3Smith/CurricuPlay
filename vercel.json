@@ -2,6 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/((?!api/|assets/|four-corners/).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|assets/|four-corners/|spelling-bee/).*)", "destination": "/index.html" }
   ]
 }

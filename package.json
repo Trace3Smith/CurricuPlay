@@ -13,7 +13,8 @@
     "content:tomorrow": "python3 scripts/build-tomorrow-pack.py",
     "content:citations": "python3 scripts/report-citations.py",
     "typecheck": "tsc --noEmit",
-    "dev:fixture": "tsx tests/fixtures/start-server.ts"
+    "dev:fixture": "tsx tests/fixtures/start-server.ts",
+    "content:validate:spelling-bee": "python3 scripts/validate-spelling-bee.py"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

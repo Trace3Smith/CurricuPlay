@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import QuestionReview from './components/QuestionReview';
 import FourCorners from './games/four-corners/FourCorners';
+import { readActive as readSpellingBee } from './games/spelling-bee/storage';
 import { isTeamMode, loadState as loadFourCornersState } from './games/four-corners/engine';
 import { readReviews, REVIEW_KEY } from './services/questionReview';
 import { grades, type GameState, type Grade } from './types';
@@ -60,6 +61,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   if (reviewing) return <QuestionReview questions={bank.questions} decisions={reviews.decisions} storageError={reviews.error} initialGrade={reviewDirect ? '1' : undefined} onStartTrial={(grade, range, asOf) => startGame(grade, range, asOf, 'drafts')} onSaved={decisions => setReviews({ decisions, error: '' })} onClose={() => onNavigate('/games')} />;
   // Read through the game's recovery rules each time the landing renders; never save here.
   const cornerState = screen === 'home' ? loadFourCornersState() : null;
+  const resumableBee = screen === 'home' && readSpellingBee().state?.screen === 'play';
   const resumableCorners = cornerState?.screen === 'play' ? cornerState : null;
   return <div className={`app ${active ? 'playing' : ''}`}>
     <header><button className="wordmark" onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }} aria-label="ClassThread Games home">CLASS<span>THREAD</span><i /></button>
@@ -78,7 +80,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
           <span className="card-description">Pick a category. Take on a challenge.</span>
         </button>
         <button className="game-card live" onClick={() => onNavigate('/games/four-corners')}><span className="fc-home-art" aria-hidden="true">{['A', 'B', 'C', 'D'].map(letter => <b key={letter}>{letter}</b>)}</span><span className="card-bottom"><strong>FOUR CORNERS</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableCorners ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableCorners ? `${gradeLabel(resumableCorners.grade)} · ${isTeamMode(resumableCorners) ? 'Team Mode' : 'Classic'}` : 'Think. Move. Everyone stays in.'}</span></button>
-        {['BINGO', 'TRIVIA'].map((name, i) => <div className="game-card soon" key={name}><span className="future-art" aria-hidden="true">{['◎', '?'][i]}</span><strong>{name}</strong><span className="coming">COMING SOON</span></div>)}
+        <button className="game-card live" onClick={() => onNavigate('/games/spelling-bee')}><span className="bee-home-art" aria-hidden="true">A B C</span><span className="card-bottom"><strong>SPELLING BEE</strong><span className="play-tag">{resumableBee ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">Collect letters. Build words. Play together.</span></button>
       </div>
       <button className="review-entry" onClick={() => onNavigate('/games/review', true)}>Teacher tools · Question Review</button>
       <button className="review-entry" onClick={onBackup}>Export browser Games data</button>{preservationNotice && <p role="status" className="content-notice">{preservationNotice}</p>}
