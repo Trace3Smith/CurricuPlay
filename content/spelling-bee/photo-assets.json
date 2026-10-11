@@ -1,0 +1,359 @@
+{
+  "generator": "OpenAI image_gen.imagegen (built-in tool)",
+  "created": "2026-10-10",
+  "review": "Generated images visually reviewed for object recognition, pairing, plain backgrounds, and absence of written answers. These are generated images, not district-provided photographs.",
+  "assets": [
+    {
+      "name": "apple",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one red apple with a short stem. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/apple.webp",
+      "originalBytes": 2104962,
+      "bytes": 105680,
+      "sourceSha256": "3c356aab3aa8fdd36ee3bb0287332f636ad63571cf907c6fc661202df2e4e1cc"
+    },
+    {
+      "name": "ant",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one realistic black ant in a macro side view, six legs, two antennae and three body sections clearly visible. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/ant.webp",
+      "originalBytes": 1834748,
+      "bytes": 55634,
+      "sourceSha256": "728f909f9af612f0fba3f68147290ae83e40a29ab89e87dbcee45f231b0159e2"
+    },
+    {
+      "name": "ax",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one familiar wood-handled axe with a broad metal chopping head, lying flat. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/ax.webp",
+      "originalBytes": 2056395,
+      "bytes": 67116,
+      "sourceSha256": "2c1fe3b5a6cfb38cb8a73f9e0301cef7c87bbec34568033d9ff5ba53308bda4c"
+    },
+    {
+      "name": "ball",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one round red rubber playground ball, simple unbranded. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/ball.webp",
+      "originalBytes": 2148698,
+      "bytes": 103016,
+      "sourceSha256": "a7794142946c9f17634137b54cffb183941b84d254e4729e354736457fd6c24d"
+    },
+    {
+      "name": "bat",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one wooden baseball bat, fully visible diagonally. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/bat.webp",
+      "originalBytes": 1801312,
+      "bytes": 42532,
+      "sourceSha256": "52229f279cfcb76faaa24f5baf670d3dbebe6b67956758250df0f764a663c6d6"
+    },
+    {
+      "name": "bed",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one simple child's bed with a pillow and quilt, no toys or other furniture. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/bed.webp",
+      "originalBytes": 1858887,
+      "bytes": 69958,
+      "sourceSha256": "f2a3d9d8e1450ab7fea341c31008d4645e2807a6646132783fe5df9cdf70c9e3"
+    },
+    {
+      "name": "bell",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one brass handbell with a wooden handle. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/bell.webp",
+      "originalBytes": 1418533,
+      "bytes": 38028,
+      "sourceSha256": "dc2d0089ad76a6e11ceecc21dd6aba53486d9973fd43cb3fc84b9fefd3fad840"
+    },
+    {
+      "name": "bus",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter picture for five-year-olds. Subject: one yellow school bus, three-quarter view, blank panels without any lettering. Realistic photograph, large centered single object, whole object fully visible against a plain off-white background, soft bright light, accurate materials and proportions. Immediately recognizable. No decorations, no text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/bus.webp",
+      "originalBytes": 1923905,
+      "bytes": 85540,
+      "sourceSha256": "8222af78a5070cb9d182984156ac16be09a614693889bcb0fda529df9fe08caa"
+    },
+    {
+      "name": "sandwich",
+      "prompt": "Photorealistic single bread sandwich with visible lettuce, tomato and cheese fillings on plain off-white background; no text, letters, labels or watermark.",
+      "path": "public/spelling-bee/photos/sandwich.webp",
+      "originalBytes": 2163494,
+      "bytes": 133894,
+      "sourceSha256": "7419d3c9411da756f4021976a4305cb454887d3a62c5523dd1085f2f438b6bd5"
+    },
+    {
+      "name": "bag",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one plain brown paper lunch bag, upright with open top and folded sides; no handles or contents. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/bag.webp",
+      "originalBytes": 2064406,
+      "bytes": 71110,
+      "sourceSha256": "9344593c862c2041144f5a677c1a65badb6fcf8b8afffe8c788b1790c4b045de"
+    },
+    {
+      "name": "boat",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one small wooden rowboat, whole hull and two oars visible, three-quarter view, no people. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/boat.webp",
+      "originalBytes": 2087116,
+      "bytes": 86050,
+      "sourceSha256": "da7c0e6d319899c251608fab483d1e57fa3e01cf77b2a5a8f6a1c25e126a8ffd"
+    },
+    {
+      "name": "book",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one closed hardback book with a plain blue cover and visible white page edges, no writing. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/book.webp",
+      "originalBytes": 1989129,
+      "bytes": 63096,
+      "sourceSha256": "cc811206724ec00424627156f933ed10b55ac97f56fa85ce4b2fe6b9bad0cad6"
+    },
+    {
+      "name": "moon",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: Earth's full moon alone against a plain dark night sky, recognizable gray craters and round outline. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/moon.webp",
+      "originalBytes": 1728770,
+      "bytes": 58386,
+      "sourceSha256": "2f0a7c49ecae07efacc44911c60df962d9501ed0710fd35ecc32a3d4c0dfee0f"
+    },
+    {
+      "name": "mug",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one plain ceramic mug with one large handle, side view. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/mug.webp",
+      "originalBytes": 1604508,
+      "bytes": 14756,
+      "sourceSha256": "e0b9b46f25905453d328831b5331153dcd798f70ef233e38eab0c8ad5d4f5406"
+    },
+    {
+      "name": "mitten",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one red knitted winter mitten with one thumb, no separate fingers, lying flat. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/mitten.webp",
+      "originalBytes": 2307285,
+      "bytes": 126018,
+      "sourceSha256": "f2ddb95cc7fe30910aac79ed816d14ff445a24d96d132c6609c4d25ad61783be"
+    },
+    {
+      "name": "mouse",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one small gray house mouse with big round ears, pointed nose, whiskers, and a long thin tail; whole body visible. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/mouse.webp",
+      "originalBytes": 1855079,
+      "bytes": 54252,
+      "sourceSha256": "4d9bb3c563c8e363214bb0f0bc75de1cccc2cba7462cdc5e77d5b4179366f6a5"
+    },
+    {
+      "name": "magnet",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one red horseshoe magnet with unpainted metallic ends; no letters or markings. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/magnet.webp",
+      "originalBytes": 1859031,
+      "bytes": 57494,
+      "sourceSha256": "d71288e5541d84c5e06d2af930e6eb5549a573cf5fa7eb9abb7d5e308baeaf38"
+    },
+    {
+      "name": "mushroom",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one familiar white button mushroom, cap and short thick stem clearly visible, whole object. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/mushroom.webp",
+      "originalBytes": 1949435,
+      "bytes": 72048,
+      "sourceSha256": "9e697d6db4e00f67553db23df75b122db9cd705126d5a0a325092ddc2b38ea18"
+    },
+    {
+      "name": "shrimp",
+      "prompt": "Use case: photorealistic-natural. Classroom vocabulary picture for young children. Subject: one anatomically believable whole shrimp in side view, gently curved segmented body, intact head with two eyes and long antennae, fine legs underneath, distinct fan-shaped tail; natural pale gray-pink shell, not peeled or fried. Realistic photograph, large centered single subject, whole subject fully visible against a plain uncluttered off-white background (dark sky for moon), soft bright light, accurate textures. Immediately recognizable. No props, text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/shrimp.webp",
+      "originalBytes": 1979852,
+      "bytes": 89180,
+      "sourceSha256": "ab7333f3b1f76afddc1ae1ab272b14977027757ec5efe78c97b8b936b24af512"
+    },
+    {
+      "name": "tent",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one small green camping tent, pitched with triangular open doorway, no equipment or people. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/tent.webp",
+      "originalBytes": 2012850,
+      "bytes": 72384,
+      "sourceSha256": "655d1ec570aa108bed9270595c2c2b6fe63721d884875763f06145af72584b12"
+    },
+    {
+      "name": "top",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one traditional colorful wooden spinning top, pointed bottom and graspable stem at top, upright three-quarter view. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/top.webp",
+      "originalBytes": 1909458,
+      "bytes": 65624,
+      "sourceSha256": "a8a10d8369ce29df99ca50d49c94d93bc5e6c9564d27c492d9cabcf2c3d81138"
+    },
+    {
+      "name": "turtle",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one small freshwater turtle, whole domed shell, four legs, head and short tail clearly visible. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/turtle.webp",
+      "originalBytes": 2116105,
+      "bytes": 99052,
+      "sourceSha256": "33c723d859798d7369e8b824fe4d5df82081929fabc4009366d7de034d121eb9"
+    },
+    {
+      "name": "tomato",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one round ripe red tomato with green star-shaped stem. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/tomato.webp",
+      "originalBytes": 1946558,
+      "bytes": 65478,
+      "sourceSha256": "dfa4299a7561a9bb262de7bc6ca955390f6914b86e6c96180f3ccf6eac36bc76"
+    },
+    {
+      "name": "tiger",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one real tiger standing, whole body including tail and four legs visible, clear orange fur with black stripes, no other animals. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/tiger.webp",
+      "originalBytes": 2478346,
+      "bytes": 149242,
+      "sourceSha256": "b220100e60c16af1e4dd40490c2dffa67afe50ea0936ea0cae2e0154582e5743"
+    },
+    {
+      "name": "towel",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one fluffy blue bath towel, partly folded so its large rectangular shape and soft terry texture are clear. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/towel.webp",
+      "originalBytes": 2832335,
+      "bytes": 213284,
+      "sourceSha256": "70d50c1e7a558922e2d4d92158a9bb6cf0b6c4f2dd599fec81a048bafd5f9150"
+    },
+    {
+      "name": "sock",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one striped cotton sock lying flat, clear heel and toe and open cuff. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/sock.webp",
+      "originalBytes": 2590654,
+      "bytes": 149846,
+      "sourceSha256": "477130f2d50b8dd1396802eabb7994d87695a7dbac13f6f2530c5cff785aa694"
+    },
+    {
+      "name": "soap",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one plain bar of soap with a few small soap bubbles on it, no lettering. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/soap.webp",
+      "originalBytes": 1712632,
+      "bytes": 25712,
+      "sourceSha256": "b692c6bf45c1ee58d4e5e9cded61e13e29665e5942bbb3a4b5bb7cde9ccad786"
+    },
+    {
+      "name": "seal",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one harbor seal resting on its belly, rounded spotted body, short front flippers, whiskered face and no external ear flaps; clearly a seal, not a sea lion. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/seal.webp",
+      "originalBytes": 2179476,
+      "bytes": 95958,
+      "sourceSha256": "81168f30ecf1211a6d9152d443644f846f3bac83a1d50ca1919248eda8c55c44"
+    },
+    {
+      "name": "spoon",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one ordinary stainless steel eating spoon, whole handle and oval bowl visible diagonally. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/spoon.webp",
+      "originalBytes": 1644497,
+      "bytes": 24662,
+      "sourceSha256": "b42685822942eff228fcaea6cf353376479c530b99ac659a724ffda49a6d81bb"
+    },
+    {
+      "name": "suitcase",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one small wheeled travel suitcase with telescoping handle, plain unbranded. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/suitcase.webp",
+      "originalBytes": 1991693,
+      "bytes": 63274,
+      "sourceSha256": "3428d8cf7e479d70a7d74655d4777f4c309c6944e63e0cb5ca25ca772c271804"
+    },
+    {
+      "name": "igloo",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one dome-shaped igloo built from distinct white snow blocks, small arched entrance, sitting on plain snow with empty pale background. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/igloo.webp",
+      "originalBytes": 2380004,
+      "bytes": 159064,
+      "sourceSha256": "c7dc311a915cb5e3219ef3df620868536be4af93543c5e7a85cc9a20e97285b1",
+      "editPromptFile": "content/spelling-bee/igloo-edit.md"
+    },
+    {
+      "name": "map",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one physical folded paper map showing a winding blue river, green land and simple roads, absolutely no text or symbols resembling letters, three-quarter view on white tabletop. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/map.webp",
+      "originalBytes": 2228358,
+      "bytes": 111940,
+      "sourceSha256": "cb674a7b4e180f2205b25f54233f85e668757d35a9e80e135a3fc7820143fe9a"
+    },
+    {
+      "name": "sun",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one bright round sun in a clear pale-blue sky, unmistakable solar disk with warm glow, no clouds or other objects. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/sun.webp",
+      "originalBytes": 1577881,
+      "bytes": 15230,
+      "sourceSha256": "1e7103faa2c91682ec46260ea27c7f646e93a72c3b6ae2485216ae111330afb4"
+    },
+    {
+      "name": "cat",
+      "prompt": "Use case: photorealistic-natural. Classroom beginning-letter photograph for five-year-olds. Subject: one friendly domestic orange tabby cat sitting, whole body visible including whiskers, ears, paws and tail. Realistic photo, large centered single subject, whole subject visible against plain uncluttered off-white background except sun/igloo's natural backdrop. Bright soft light, accurate textures and proportions. Easy to recognize. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/cat.webp",
+      "originalBytes": 2078167,
+      "bytes": 84574,
+      "sourceSha256": "3800d961036d05cb25b7449ba71ece0ab6e3e748d2fb5680782054431d385be6"
+    },
+    {
+      "name": "mat",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one rectangular coir doormat with a dark rubber border, no writing, three-quarter overhead view. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/mat.webp",
+      "originalBytes": 2743980,
+      "bytes": 194384,
+      "sourceSha256": "2f3bcb371ad3c0df67908e6f3591a72535dabaf228a3dfa50d19f7b9c21a7ba3"
+    },
+    {
+      "name": "pin",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one ordinary steel sewing pin with a round red head, diagonally positioned, close-up of entire object. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/pin.webp",
+      "originalBytes": 1682393,
+      "bytes": 19874,
+      "sourceSha256": "f1c9bf23ab3a8c50ee6bb2e5a1d092810c40a98ba2ea31020ba26e08039934f9"
+    },
+    {
+      "name": "cap",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one plain blue baseball cap with a curved brim, no logo. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/cap.webp",
+      "originalBytes": 2433542,
+      "bytes": 123580,
+      "sourceSha256": "0bf7b3ec876740fab61cf18752a0f17cd55433472a312255185e0e3c5738c88e"
+    },
+    {
+      "name": "can",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one unlabeled metal food can with an open top showing corn kernels, ribbed sides, no lid or utensils. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/can.webp",
+      "originalBytes": 2013034,
+      "bytes": 78910,
+      "sourceSha256": "0d1f69516348610c5dd314a372a35edc0ed25c97a5bea846d325e78132f422b7"
+    },
+    {
+      "name": "patch",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one blue denim fabric patch sewn onto a larger lighter denim surface, clearly visible stitching around its square edges; tightly framed. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/patch.webp",
+      "originalBytes": 3731106,
+      "bytes": 399464,
+      "sourceSha256": "8a809fb2ddeef7fd4a7ba3b00d044f9e4c65629cf938a50f0be9366e226f7bca"
+    },
+    {
+      "name": "string",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one ball of thin cotton string with a loose length trailing out across the white surface. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/string.webp",
+      "originalBytes": 2025239,
+      "bytes": 75780,
+      "sourceSha256": "ee63d3522fa0d605411b9725c5f2cbea08f32c0bfae05d2014369784ad6314b5"
+    },
+    {
+      "name": "strip",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one long narrow strip of red paper, slightly curved, whole strip visible. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/strip.webp",
+      "originalBytes": 1658762,
+      "bytes": 14410,
+      "sourceSha256": "ae141e2bdeca1ed4bb27f10091200d6e272218f3fa286979b2baad7ffcc53294"
+    },
+    {
+      "name": "sprig",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one small fresh mint sprig with a single short stem and several green leaves, no pot or other foliage. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/sprig.webp",
+      "originalBytes": 1919340,
+      "bytes": 74328,
+      "sourceSha256": "5d7db7fb39c76c79fdb49a6f029b901bd0adfbe5f4e41b0c9f630727389c04de"
+    },
+    {
+      "name": "scrap",
+      "prompt": "Use case: photorealistic-natural. Clear classroom vocabulary photograph for first and second graders. Subject: one small irregular leftover scrap of blue cloth with frayed edges, lying flat. Large centered object on a plain off-white background, realistic accurate material, bright soft light, whole subject visible. No text, letters, labels, watermarks, people or unrelated props. Square composition.",
+      "path": "public/spelling-bee/photos/scrap.webp",
+      "originalBytes": 2675787,
+      "bytes": 176132,
+      "sourceSha256": "a0f9313d19c1abacf533a0cb6ce1bf1e0fe723645a7a85ef8ffa058bd2a9f4fd"
+    }
+  ],
+  "optimization": {
+    "format": "WebP",
+    "maxDimension": 1024,
+    "quality": 88,
+    "encoder": "ffmpeg libwebp",
+    "artwork": "Only igloo was edited; other approved artwork preserved."
+  }
+}

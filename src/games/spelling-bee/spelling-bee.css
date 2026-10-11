@@ -3,3 +3,44 @@
 @media(max-width:550px){.bee-scoreboard{grid-template-columns:repeat(2,minmax(0,1fr))}.bee-actions>span{width:100%;text-align:center}.bee-tools,.bee-actions{gap:8px}.bee-tools button,.bee-actions button{flex:1}.bee-round span{font-size:14px}.bee-panel ol{font-size:17px}}
 .bee-field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.bee-field-row input{min-height:52px;color-scheme:dark}.bee-small-button{align-self:flex-start;font-size:14px;min-height:36px;padding:6px 12px}.bee-setup .bee-panel{gap:11px;padding:20px}.bee-setup{gap:14px;margin:18px auto}.bee-setup p{font-size:17px}.bee-setup .bee-muted{font-size:14px}.bee-setup label{font-size:17px;gap:5px}.bee-setup .bee-check{font-size:15px}.bee-bank-preview{max-height:250px;overflow:auto}.bee-bank-preview article{border-top:1px solid #52617e;padding:12px 0}.bee-bank-preview img{width:74px;height:74px;object-fit:contain}.bee-bank-preview p{font-size:14px}.bee-letter-choices{display:flex;justify-content:center;gap:25px}.bee-letter-choices span{font-size:32px;color:#fff;border:2px solid #8499b7;padding:3px 20px;border-radius:8px}.bee-play:has(.bee-letter-choices) .bee-challenge img{width:260px;height:215px}.bee-play:has(.bee-letter-choices){gap:12px}.bee-round>span{font-size:16px;max-width:650px}.bee-setup .bee-actions .primary{min-height:55px;font-size:20px}.bee-bank-preview a{color:#a9e9ff}
 @media(max-width:650px){.bee-field-row{grid-template-columns:1fr}.bee-round>span{max-width:100%}.bee-setup .bee-panel{padding:14px}}
+/* Round time is shared by every team. All controls remain in normal document flow. */
+.bee-timer{border:2px solid #84eee0;border-radius:16px;background:#162b45;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.bee-clock{display:flex;align-items:center;justify-content:space-between;gap:12px}.bee-clock [role=timer]{font-size:64px;font-weight:850;line-height:1;font-variant-numeric:tabular-nums;color:#ffdf87}.bee-clock strong{font-size:17px;max-width:150px}.bee-time-up{border-color:#ffdf87;background:#44391c}.bee-timer-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}.bee-timer-controls button{padding:8px;font-size:15px;min-height:48px}.bee-timer-controls label{font-size:14px;flex-direction:row;align-items:center;gap:5px}.bee-timer-controls select{padding:8px;min-height:48px;width:auto;flex:1;min-width:0}.bee-timer-note{font-size:12px;color:#c5d3e8}.bee-slots>.bee-punctuation{width:28px;border:0;background:transparent;flex-shrink:0}.bee-challenge img{background:#f9f8f5;border-radius:14px}
+@media(min-width:1100px){
+ .bee-app:has(.bee-play){padding-bottom:8px}.bee-app:has(.bee-play) header{height:64px}
+ .bee-play,.bee-play:has(.bee-letter-choices){display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:10px;padding:12px 0}
+ .bee-round,.bee-tools,.bee-hint-help,.bee-scoring,.bee-play>.bee-actions{grid-column:1/-1}
+ .bee-timer{grid-column:2;grid-row:2/4}
+ .bee-challenge{grid-column:1;grid-row:2;min-height:210px;gap:24px}.bee-challenge img,.bee-play:has(.bee-letter-choices) .bee-challenge img{width:250px;height:210px}
+ .bee-challenge>div{min-width:0}.bee-clue{font-size:clamp(25px,2vw,38px)}.bee-challenge .bee-muted{font-size:14px;margin-top:8px}
+ .bee-slots{grid-column:1;grid-row:3;min-height:84px;gap:7px}.bee-slots>span{width:70px;height:82px;font-size:54px}.bee-long>span{width:50px;font-size:42px}.bee-slots>.bee-punctuation{width:22px}
+ .bee-round h1{font-size:25px}.bee-tools{gap:10px}.bee-tools button,.bee-tools select{min-height:48px;padding:9px 14px}
+ .bee-scoreboard :is(button,article){min-height:112px;padding:8px}.bee-scoreboard strong{font-size:34px}.bee-scoring>p{font-size:16px;margin-bottom:6px}
+ .bee-play>.bee-actions .primary{min-height:52px;padding:10px 22px;font-size:20px}.bee-hint-help{font-size:14px}.bee-letter-choices span{font-size:25px;padding:0 18px}
+}
+/* 1920×1080 at 125–150% scaling presents approximately 1536×864 / 1280×720 CSS pixels. */
+@media(min-width:1100px) and (max-height:850px){
+ .bee-app:has(.bee-play) header{height:56px}.bee-play,.bee-play:has(.bee-letter-choices){gap:6px;padding:6px 0;grid-template-columns:minmax(0,1fr) 370px}
+ .bee-round{gap:12px}.bee-round h1{font-size:22px}.bee-round>span{font-size:13px;max-width:500px}.bee-round button{min-height:44px;padding:7px 14px}
+ .bee-timer{padding:8px;gap:6px}.bee-clock [role=timer]{font-size:52px}.bee-clock strong{font-size:14px}.bee-timer-controls{gap:6px}.bee-timer-controls button,.bee-timer-controls select{min-height:44px;font-size:14px}.bee-timer-note{font-size:11px}
+ .bee-challenge{min-height:158px;gap:16px}.bee-challenge img,.bee-play:has(.bee-letter-choices) .bee-challenge img{width:174px;height:158px}.bee-clue{font-size:26px}.bee-challenge .bee-muted{font-size:12px;margin-top:4px}
+ .bee-slots{min-height:66px;gap:5px}.bee-slots>span{height:64px;width:51px;font-size:42px}.bee-long>span{width:36px;font-size:30px}.bee-slots>.bee-punctuation{width:16px}
+ .bee-tools{gap:7px}.bee-tools button,.bee-tools select{font-size:14px;min-height:44px;padding:7px 10px}.bee-tools label{font-size:14px}.bee-hint-help{font-size:12px}.bee-letter-choices span{font-size:21px}
+ .bee-scoring>p{font-size:14px;margin-bottom:4px}.bee-scoreboard button{min-height:92px;font-size:18px;padding:5px}.bee-scoreboard strong{font-size:29px}.bee-scoreboard small{font-size:13px}
+ .bee-play>.bee-actions{gap:8px;font-size:13px}.bee-play>.bee-actions button,.bee-play>.bee-actions .primary{min-height:44px;font-size:16px;padding:8px 16px}
+}
+@media(max-width:1099px){.bee-timer{width:100%;max-width:620px;align-self:center}.bee-clock strong{max-width:none}.bee-slots{gap:3px}.bee-long>span{min-width:0;width:min(5vw,50px);font-size:clamp(16px,4vw,38px)}.bee-slots>.bee-punctuation{width:14px}.bee-tools label{max-width:100%}.bee-tools select{min-width:0}.bee-round h1{font-size:24px}}
+.bee-timer-controls label{flex-direction:column;align-items:stretch;gap:2px}.bee-timer-controls select{width:100%;flex:none}
+@media(min-width:1100px) and (min-height:851px){.bee-challenge{min-height:270px}.bee-challenge img,.bee-play:has(.bee-letter-choices) .bee-challenge img{width:300px;height:270px}}
+/* Kindergarten is untimed: give its single object the former timer space. */
+@media(min-width:1100px){
+ .bee-play.bee-kindergarten{grid-template-columns:460px minmax(0,1fr)}
+ .bee-kindergarten .bee-challenge{display:contents}
+ .bee-play.bee-kindergarten .bee-challenge img{grid-column:1;grid-row:2/4;justify-self:center;width:440px;height:400px}
+ .bee-kindergarten .bee-challenge>div{grid-column:2;grid-row:2;align-self:end;text-align:center}
+ .bee-kindergarten .bee-slots{grid-column:2;grid-row:3;align-self:start}
+}
+@media(min-width:1100px) and (max-height:950px){
+ .bee-play.bee-kindergarten{grid-template-columns:330px minmax(0,1fr)}
+ .bee-play.bee-kindergarten .bee-challenge img{width:310px;height:280px}
+}

@@ -4,23 +4,21 @@ import { grades, type Grade } from '../../types';
 import raw from '../../data/spelling-bee.json' with { type: 'json' };
 
 export const pictures = {
-  ...objectPictures,
-  sun: { src: '/spelling-bee/sun.svg', alt: 'A bright round object with rays in the daytime sky.' },
-  cat: { src: '/spelling-bee/cat.svg', alt: 'A small pet with pointed ears, whiskers, and a curled tail.' },
   plant: { src: '/four-corners/plant.svg', alt: 'A flowering living thing with roots, a stem, and green leaves.' },
   leaf: { src: '/four-corners/plant-leaf.svg', alt: 'An arrow points to a flat green part growing from a stem.' },
   sit: { src: '/spelling-bee/sit.svg', alt: 'A child rests on a chair with knees bent and feet on the floor.' },
-  map: { src: '/spelling-bee/map.svg', alt: 'A folded drawing shows a river, roads, trees, and a route between two places.' },
   ship: { src: '/spelling-bee/ship.svg', alt: 'A large vessel with several decks and rows of windows travels across the water.' },
   cake: { src: '/spelling-bee/cake.svg', alt: 'A round birthday treat with frosting and lit candles on a plate.' },
   night: { src: '/spelling-bee/night.svg', alt: 'A crescent moon and stars shine in a dark sky above quiet houses.' },
   rain: { src: '/spelling-bee/rain.svg', alt: 'Many drops of water fall from gray clouds into a puddle.' },
+  ...objectPictures,
 } as const;
 export type PictureRef = keyof typeof pictures;
 export interface WordEntry {
   id: string; grade: Grade; word: string; clue: string; skill: string;
   picture: PictureRef | null; source: string; kind: 'sample' | 'teacher' | 'curriculum'; reviewStatus: 'approved' | 'pending';
   activity?: 'initial' | 'spelling'; curriculum?: CurriculumEvidence; evidenceId?: string;
+  displayWord?: string; // Validated punctuation-only presentation; word remains the canonical answer.
   complexity?: 'foundation' | 'academic';
 }
 export interface WordList { id: string; name: string; entries: WordEntry[] }
@@ -29,6 +27,7 @@ export function isWord(value: unknown): value is WordEntry {
   const w = value as WordEntry;
   const text = (v: unknown, max: number) => typeof v === 'string' && !!v.trim() && v.length <= max;
   return text(w.id, 100) && grades.includes(w.grade) && typeof w.word === 'string' && /^[a-z]{1,16}$/.test(w.word) &&
+    (w.displayWord === undefined || (typeof w.displayWord === 'string' && /^[a-z]+(?:-[a-z]+)+$/.test(w.displayWord) && w.displayWord.replaceAll('-', '') === w.word && w.displayWord.length <= 31)) &&
     text(w.clue, 180) && text(w.skill, 80) && text(w.source, 160) && ['sample', 'teacher', 'curriculum'].includes(w.kind) &&
     ['approved', 'pending'].includes(w.reviewStatus) &&
     (w.activity === undefined || ['initial', 'spelling'].includes(w.activity)) &&
@@ -57,7 +56,7 @@ export function parseWords(input: string, grade: Grade, approved: boolean): Retu
     const parts = line.split('|').map(p => p.trim());
     if (parts.length > 5) formatErrors.push(`Row ${i + 1}: use at most five fields.`);
     const [word, clue, skill, picture, source] = parts;
-    return { id: `custom-${grade}-${i + 1}`, grade, word: word.toLowerCase(),
+    return { id: `custom-${grade}-${i + 1}`, grade, word: word.toLowerCase().replaceAll('-', ''), ...(word.includes('-') ? { displayWord: word.toLowerCase() } : {}),
       clue: clue || 'Listen to the word. Teacher: say the word from your prepared list, or choose Say Word.',
       skill: skill || 'Teacher-selected spelling', picture: picture || null,
       source: source || 'Teacher-provided practice; curriculum alignment not verified', kind: 'teacher', reviewStatus: approved ? 'approved' : 'pending' };
@@ -96,4 +95,13 @@ export function startingHints(word: WordEntry, difficulty: Difficulty): number[]
   if (word.activity === 'initial' || difficulty !== 'missing' || word.complexity !== 'academic') return [];
   const index = nextHintIndex(word.word, difficulty);
   return index === undefined ? [] : [index];
+}
+
+/** Historical entries also receive the requested NON-FICTION presentation. */
+export const displayedWord = (w: WordEntry): string => w.displayWord ?? (w.word === 'nonfiction' ? 'non-fiction' : w.word);
+export function displayedSlots(w: WordEntry, difficulty: Difficulty, extraLetters: readonly number[] = [], revealed = false): string[] {
+  const answer = answerFor(w), slots = revealed ? [...answer.toUpperCase()] : letterSlots(answer, difficulty, extraLetters);
+  if (w.activity === 'initial') return slots;
+  let letter = 0;
+  return [...displayedWord(w)].map(c => c === '-' ? '-' : slots[letter++]);
 }

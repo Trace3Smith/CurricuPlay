@@ -12,6 +12,7 @@ evidence={e['id']:e for e in json.loads((ROOT/'content/spelling-bee/evidence.jso
 pictures=json.loads((ROOT/'src/data/spelling-bee-pictures.json').read_text())
 pictures.update({name:dict(src=f'/spelling-bee/{name}.svg') for name in ['cat','sun','sit','map','ship','cake','night','rain']})
 pictures.update(plant=dict(src='/four-corners/plant.svg'),leaf=dict(src='/four-corners/plant-leaf.svg'))
+pictures.update(json.loads((ROOT/'src/data/spelling-bee-pictures.json').read_text()))
 errors=[]
 for collection in [bank,general]:
     seen=set()
@@ -20,6 +21,7 @@ for collection in [bank,general]:
             if not ok:errors.append(w['id']+': '+msg)
         check(w['id'] not in seen,'duplicate ID');seen.add(w['id'])
         check(bool(re.fullmatch('[a-z]{1,16}',w['word'])),'invalid word')
+        if 'displayWord' in w: check(bool(re.fullmatch('[a-z]+(?:-[a-z]+)+',w['displayWord'])) and w['displayWord'].replace('-','')==w['word'],'invalid display punctuation')
         check(0<len(w['clue'])<=180,'invalid clue')
         check(not re.search(r'\b'+w['word']+r'\b',w['clue'],re.I),'clue leaks word')
         check(w['picture'] is None or w['picture'] in pictures,'missing reviewed picture')
@@ -44,6 +46,13 @@ for collection in [bank,general]:
 for name,info in pictures.items():
     path=ROOT/'public'/info['src'].lstrip('/')
     if not path.is_file():errors.append('Missing image '+name);continue
+    if path.suffix=='.webp':
+        raw=path.read_bytes()
+        if raw[:4]!=b'RIFF' or raw[8:12]!=b'WEBP': errors.append(f'Invalid WebP: {path}')
+        continue
+    if path.suffix=='.png':
+        if path.read_bytes()[:8]!=b'\x89PNG\r\n\x1a\n':errors.append('Invalid PNG '+name)
+        continue
     for node in ET.parse(path).iter():
         if node.tag.endswith(('script','foreignObject')) or any(k.lower().startswith('on') for k in node.attrib):errors.append('Active image '+name)
         if '/objects/' in info['src'] and node.tag.endswith('text'):errors.append('Letter or name in initial-sound image '+name)

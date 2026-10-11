@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { INITIAL_CUTOFF, eligible, selectCurriculum, schoolDate, currentPeriod, type CurriculumSelection } from '../src/curriculum/eligibility';
 import { curriculumBank, generalBank, selectBank } from '../src/games/spelling-bee/bank';
 import { answerFor, pictures, isWord, letterSlots, startingHints } from '../src/games/spelling-bee/words';
-import { beginGame, committed, commitResults, currentWord, exhausted, extendGame, finishGame, isBeeState, letterChoices, nextWord, remaining, repeatCycle, revealAnotherLetter, toggleTeam, type StartOptions } from '../src/games/spelling-bee/engine';
+import { controlTimer, type BeeState, beginGame, committed, commitResults as timedCommit, currentWord, exhausted, extendGame, finishGame, isBeeState, letterChoices, nextWord, remaining, repeatCycle, revealAnotherLetter, toggleTeam as timedToggle, type StartOptions } from '../src/games/spelling-bee/engine';
 import { readActive, saveActive, readHistory, saveHistory } from '../src/games/spelling-bee/storage';
 import { summarizeSession } from '../src/assessment/engine';
 import type { Grade } from '../src/types';
@@ -55,7 +55,7 @@ test('catalog is reviewed, uniquely identified, expanded and has explicit proven
 test('Kindergarten uses multiple concrete objects per eligible initial, never a full-word default', () => {
   const s=start(config('K'));
   expect(s.words).toHaveLength(32); expect(new Set(s.words.map(w=>w.word)).size).toBe(32);
-  for(const w of s.words) {expect(w.activity).toBe('initial'); expect(answerFor(w)).toHaveLength(1); expect(w.picture).toBeTruthy(); expect(pictures[w.picture!].src).toMatch(/\.svg$/); expect(w.clue).not.toContain(w.word); expect(letterSlots(answerFor(w),'supported')).toEqual(['_']); expect(letterChoices(w,3)).toContain(answerFor(w).toUpperCase()); expect(new Set(letterChoices(w,3)).size).toBe(3);}
+  for(const w of s.words) {expect(w.activity).toBe('initial'); expect(answerFor(w)).toHaveLength(1); expect(w.picture).toBeTruthy(); expect(pictures[w.picture!].src).toMatch(/\.webp$/); expect(w.clue).not.toContain(w.word); expect(letterSlots(answerFor(w),'supported')).toEqual(['_']); expect(letterChoices(w,3)).toContain(answerFor(w).toUpperCase()); expect(new Set(letterChoices(w,3)).size).toBe(3);}
   expect(revealAnotherLetter(s)).toBe(s);
   const committedState=commitResults(s,now);expect(committedState.session.questions[0].prompt).toMatch(/^[A-Z] — Beginning sound:/);
 });
@@ -114,3 +114,7 @@ test('paced persistence rejects corrupt cycles, snapshots and future metadata wi
   for(const bad of [{...s,flow:{...s.flow,cycle:0}},{...s,flow:{...s.flow,order:[s.flow!.order[0],s.flow!.order[0]]}},{...s,index:999},{...s,flow:{...s.flow,offset:10}},{...s,words:s.words.map(w=>({...w,curriculum:{...w.curriculum!,timing:'unknown'}}))},{...s,correctTeamIds:['team-1']}])expect(isBeeState(bad)).toBe(false);
   const memory=store();memory.setItem('curricuplay.game.v1','unchanged');expect(saveActive(s,memory)).toBe('');expect(readActive(memory).state).toEqual(s);expect(memory.getItem('curricuplay.game.v1')).toBe('unchanged');
 });
+
+// Preserve the original scoring/regression scenarios using the explicit teacher early-end workflow.
+function commitResults(s: BeeState, now: string) { return timedCommit(controlTimer(s, 'end', Date.parse(now)), now); }
+function toggleTeam(s: BeeState, id: string) { return timedToggle(controlTimer(s, 'end'), id); }

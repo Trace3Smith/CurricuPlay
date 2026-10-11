@@ -2,6 +2,16 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/((?!api/|assets/|four-corners/|spelling-bee/).*)", "destination": "/index.html" }
+    {
+      "source": "/((?!api/|assets/|four-corners/|spelling-bee/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/spelling-bee/photos/:name.png",
+      "destination": "/spelling-bee/photos/:name.webp",
+      "permanent": true
+    }
   ]
 }

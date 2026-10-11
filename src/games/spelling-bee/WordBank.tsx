@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { grades, type Grade } from '../../types';
 import { INITIAL_CUTOFF, currentPeriod, schoolDate, type ContentMode, type CurriculumSelection } from '../../curriculum/eligibility';
-import { difficulties, parseWords, pictures, type Difficulty, type WordEntry } from './words';
+import { difficulties, displayedWord, parseWords, pictures, type Difficulty, type WordEntry } from './words';
 import { selectBank } from './bank';
 import { readLists, saveList } from './storage';
 import type { StartOptions } from './engine';
@@ -68,21 +68,21 @@ export default function WordBank({ onStart, fixed, onCancel }: {
       {custom && selection === 'custom' ? <>
         <h2>Your word list</h2><label>List name<input aria-label="List name" maxLength={60} value={name} onChange={e => setName(e.target.value)} /></label>
         <label>Words<textarea aria-label="Words" aria-describedby="bee-format" value={input} maxLength={60000} onChange={e => { setInput(e.target.value); resetReview(); }} placeholder={'cat | A pet that says meow. | CVC short a | cat\nsun | It shines in the sky. | CVC short u | sun'} /></label>
-        <p id="bee-format" className="bee-muted">Paste words separated by lines or commas. For clues: word | clue | skill | picture ID | source. Use 1–16 English letters; up to 200 words. Kindergarten beginning-letter prompts need a matching picture.</p>
+        <p id="bee-format" className="bee-muted">Paste words separated by lines or commas. For clues: word | clue | skill | picture ID | source. Use 1–16 English letters, with optional hyphens; up to 200 words. Kindergarten beginning-letter prompts need a matching picture.</p>
         <details><summary>Available picture IDs</summary><p className="bee-muted">{Object.keys(pictures).join(', ')}</p></details>
         <button disabled={!name.trim() || !parsed.entries.length || !!errors.length || !!savedLists.error} onClick={save}>Save List</button>
         {!!errors.length && <p role="alert">{errors.slice(0, 2).join(' ')}</p>}
       </> : <>
         <h2>Teacher preparation</h2>
         <p>{beginning ? 'Show the object and choose Say Word. Students identify its beginning letter. The full object name stays off the live board until you reveal the answer.' : 'Read the clue or choose Say Word. Teams write the word or build it with letter tiles. Adjust hints as needed.'}</p>
-        <p>Mark correct teams, then Commit Results. Reveal the answer when you choose. Scores reflect team responses only.</p>
+        <p>{grade === 'K' ? 'Mark correct teams and Commit Results whenever you are ready. Each correct team earns one point.' : 'Choose a round duration (default 5:00), then Start Timer. After time expires, mark correct teams and Commit Results. Use Teacher: End Round Early if needed.'} Reveal the answer when you choose. Scores reflect team responses only.</p>
         <p className="bee-muted">Source-listed means the term appears in district instructional material, not necessarily an assigned spelling list. Skill practice uses ClassThread-authored examples and clues. General practice is not verified against pacing.</p>
         <details className="bee-preview"><summary>Teacher: preview prompts and evidence</summary>
-          <div className="bee-bank-preview">{words.slice(previewPage * 5, previewPage * 5 + 5).map(w => <article key={w.id}><strong>{w.word.toUpperCase()}{w.activity === 'initial' ? ` → ${w.word[0].toUpperCase()}` : ''}</strong> · {w.grade !== grade ? `Prior-Grade Review (${w.grade}) · ` : ''}{w.curriculum?.category ?? 'general practice'}<p>{w.clue}</p>{w.curriculum && <p><a href={w.curriculum.sourceUrl} target="_blank" rel="noreferrer">{w.curriculum.source}</a> · {w.curriculum.unit} · eligible {w.curriculum.earliestEligible}<br />{w.curriculum.target}</p>}{w.picture && <img src={pictures[w.picture].src} alt={`Teacher preview: ${w.word}`} />}</article>)}</div>
+          <div className="bee-bank-preview">{words.slice(previewPage * 5, previewPage * 5 + 5).map(w => <article key={w.id}><strong>{displayedWord(w).toUpperCase()}{w.activity === 'initial' ? ` → ${w.word[0].toUpperCase()}` : ''}</strong> · {w.grade !== grade ? `Prior-Grade Review (${w.grade}) · ` : ''}{w.curriculum?.category ?? 'general practice'}<p>{w.clue}</p>{w.curriculum && <p><a href={w.curriculum.sourceUrl} target="_blank" rel="noreferrer">{w.curriculum.source}</a> · {w.curriculum.unit} · eligible {w.curriculum.earliestEligible}<br />{w.curriculum.target}</p>}{w.picture && <img src={pictures[w.picture].src} alt={`Teacher preview: ${w.word}`} />}</article>)}</div>
           <div className="bee-actions"><button disabled={!previewPage} onClick={() => setPreviewPage(p => p - 1)}>Previous prompts</button><button disabled={(previewPage + 1) * 5 >= words.length} onClick={() => setPreviewPage(p => p + 1)}>More prompts</button></div>
         </details>
         <details className="bee-preview"><summary>Optional PE directions</summary><p>Set up six scooter lanes. One rider per team collects one letter per trip; teams build the answer at their station. Rotate riders at your signal.</p></details>
-        {custom && <button onClick={() => { const list = savedLists.lists.find(l => l.id === selection); if (!list) return; setName(`${list.name.slice(0, 50)} (copy)`); setInput(list.entries.filter(w => w.grade === grade).map(w => [w.word, w.clue, w.skill, w.picture || '', w.source].join(' | ')).join('\n')); resetReview(); setSelection('custom'); }}>Edit a Copy</button>}
+        {custom && <button onClick={() => { const list = savedLists.lists.find(l => l.id === selection); if (!list) return; setName(`${list.name.slice(0, 50)} (copy)`); setInput(list.entries.filter(w => w.grade === grade).map(w => [displayedWord(w), w.clue, w.skill, w.picture || '', w.source].join(' | ')).join('\n')); resetReview(); setSelection('custom'); }}>Edit a Copy</button>}
       </>}
       {!ready.length && <p role="status">No approved prompts for this selection. Try Current + Review, an earlier period, or explicit General Practice. Future and uncertain content will not be added.</p>}
       {grade === 'K' && mode !== 'general' && <p className="bee-muted">Kindergarten Unit 2 dates conflict between the overview and weekly calendar. Those letters are excluded. Unit 1 picture practice remains available as review.</p>}

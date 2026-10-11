@@ -1,3 +1,4 @@
+import { freshTimer, endTimer } from './timer';
 import { isBeeState, type BeeState } from './engine';
 import { validateWords, type WordList } from './words';
 export const ACTIVE_KEY = 'classthread.spelling-bee.active.v1';
@@ -11,7 +12,11 @@ export function readActive(store: Store = localStorage): { state: BeeState | nul
     if (!raw) return { state: null, error: '' };
     const value = JSON.parse(raw);
     if (!isBeeState(value)) throw Error();
-    return { state: value, error: '' };
+    // Kindergarten ignores any historical timer without altering its saved responses.
+    if (value.grade === 'K') return { state: value, error: '' };
+    // Preserve historical reports verbatim; only active, untimed games gain a timer.
+    const timer = value.timer ?? (value.correctTeamIds.length || value.revealed || value.session.questions.length > (value.flow?.offset ?? 0) + value.index ? endTimer(freshTimer(), Date.now()) : freshTimer());
+    return { state: value.screen === 'play' ? { ...value, timer } : value, error: '' };
   } catch { return { state: null, error: message }; }
 }
 export function readLists(store: Store = localStorage): { lists: WordList[]; error: string } {

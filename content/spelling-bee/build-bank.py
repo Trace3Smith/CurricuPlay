@@ -38,13 +38,13 @@ sit|Rest on a chair with your feet on the floor.|sit
 hat|You wear this on your head.
 mat|Wipe your feet on this by the door.
 pan|Use this to cook food on a stove.
-bag|Carry your books in this.|bag
-pin|A small sharp fastener.
+bag|A container you can carry to hold your things.|bag
+pin|A tiny sewing tool with a round head and a sharp point.
 cap|A soft hat with a brim.
 can|A metal container for food.''')
 group('1-digraph','1',2,'09-21','Unit 2: Art All Around Us','Beginning digraphs sh, th, ch, wh','skill-practice','''ship|A large boat that carries people or cargo.|ship
-shop|A place where people buy things.
-chin|The part of your face below your mouth.
+shop|We buy things at a store. Another word for a store starts with sh.
+chin|Touch the part of your face just below your mouth.
 chop|Cut something into pieces.
 thin|The opposite of thick.
 this|___ is my book, right here.''')
@@ -53,7 +53,7 @@ wish|Something you hope will happen.
 back|The part of your body behind your chest.
 rock|A hard piece of stone.
 duck|A bird that swims and quacks.
-path|A narrow track you can walk along.''')
+path|A narrow trail that people walk on.''')
 group('1-current-direct','1',2,'10-05','Unit 2: Art All Around Us','Super Words: from, have, look, or','source-listed','''from|This letter came ___ my friend.
 have|I ___ two hands.
 look|Use your eyes to ___ at the picture.
@@ -61,11 +61,11 @@ or|Would you like milk ___ water?''')
 group('1-current-practice','1',2,'10-05','Unit 2: Art All Around Us','Ending ch, ng and tch','skill-practice','''song|Words and music that people sing.
 ring|A small band worn on a finger.
 long|The opposite of short.
-king|A male ruler who may wear a crown.
+king|A queen and a ___ may rule a kingdom.
 wing|A bird uses this to fly.
 catch|Grab a ball that someone throws to you.
-match|Two things that look the same are a ___.
-patch|A piece of cloth used to cover a hole.''')
+match|These socks look alike. They are a perfect ___.
+patch|A piece of cloth sewn over a hole in clothing.''')
 group('2-early-direct','2',3,'08-03','Unit 1: Working Together','High-frequency words and community vocabulary','source-listed','''do|What should we ___ next?
 that|___ is your bag over there.
 the|Please open ___ window.
@@ -78,7 +78,7 @@ volunteer|Someone who offers to help without being paid.||academic
 belong|To be part of a group.''')
 group('2-earlier-skills','2',3,'08-17','Unit 1: Working Together','Beginning and ending digraphs','skill-practice','''ship|A large boat for people or cargo.|ship
 chop|Cut into smaller pieces.
-shop|A place where people buy things.
+shop|We buy things at a store. Another word for a store starts with sh.
 fish|An animal with fins that lives in water.
 wish|Something you hope will happen.
 math|The subject in which we work with numbers.''')
@@ -99,13 +99,13 @@ have|We ___ enough crayons for everyone.
 through|We walked ___ the tunnel and out the other side.
 would|I ___ like a glass of water, please.''')
 group('2-current-practice','2',3,'10-05','Unit 2: Inspiration and Painting','Three-letter blends str, spl, spr, scr, shr, thr','skill-practice','''string|A thin cord used to tie things.
-strip|A long, narrow piece of paper.
+strip|A long, narrow piece of paper, like the one shown.
 splash|Water sprays out when you jump into a puddle.
 split|Divide into two parts.
-sprig|A small stem with leaves on it.
-scrap|A small leftover piece of material.
+sprig|A small stem with a few leaves, like this piece of mint.
+scrap|A small leftover piece of cloth after cutting.
 shrub|A woody plant smaller than a tree.
-shrimp|A small sea animal with a curved body and many legs.''')
+shrimp|Look at this sea animal. It has a curved shell, long feelers, tiny legs, and a fan-shaped tail.''')
 group('3-tradition','3',4,'08-03','Unit 1: Spinning Stories','Vocabulary notebook: Traditional, Myth, Fable, Folktale','source-listed','''traditional|Passed down from one generation to the next.
 myth|An old story that may explain nature using gods or heroes.
 fable|A short story, often with animals, that teaches a lesson.
@@ -233,6 +233,7 @@ insulator|A material that resists the flow of electric current.''')
 picture_ids=set(json.loads((ROOT/'src/data/spelling-bee-pictures.json').read_text()))
 for word in bank:
     if word['word'] in picture_ids: word['picture']=word['word']
+    if word['word']=='nonfiction': word['displayWord']='non-fiction'
 # Expanded general practice is a separately labeled option, never selected by pacing modes.
 # Preserve all original sample illustrations/clues, supplement with editorial practice copies.
 legacy=json.loads((ROOT/'src/data/spelling-bee.json').read_text())

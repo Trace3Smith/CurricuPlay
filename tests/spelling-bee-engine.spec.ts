@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { beginGame, committed, commitResults, finishGame, isBeeState, nextWord, reveal, revealAnotherLetter, toggleTeam } from '../src/games/spelling-bee/engine';
+import { controlTimer, type BeeState, beginGame, committed, commitResults as timedCommit, finishGame, isBeeState, nextWord, reveal, revealAnotherLetter, toggleTeam as timedToggle } from '../src/games/spelling-bee/engine';
 import { letterSlots, nextHintIndex, parseWords, samples, validateWords } from '../src/games/spelling-bee/words';
 import { ACTIVE_KEY, HISTORY_KEY, LISTS_KEY, readActive, readHistory, readLists, saveActive, saveHistory, saveList } from '../src/games/spelling-bee/storage';
 import { summarizeSession } from '../src/assessment/engine';
@@ -125,3 +125,7 @@ test('extra hints persist, do not affect scores, reset per word, and accept old 
   expect(advanced.extraLetters).toEqual([]); expect(advanced.revealed).toBe(false); expect(isBeeState(advanced)).toBe(true);
   const ended = finishGame(s, time); expect(revealAnotherLetter(ended)).toBe(ended);
 });
+
+// Preserve the original scoring/regression scenarios using the explicit teacher early-end workflow.
+function commitResults(s: BeeState, now: string) { return timedCommit(controlTimer(s, 'end', Date.parse(now)), now); }
+function toggleTeam(s: BeeState, id: string) { return timedToggle(controlTimer(s, 'end'), id); }

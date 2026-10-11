@@ -9,6 +9,7 @@ async function start(page: Page, grade: string, mode = 'mixed') {
   await page.goto('/games/spelling-bee');
   await page.getByLabel('Grade',{exact:true}).selectOption(grade);
   await page.getByLabel('Content mode').selectOption(mode);
+  if(grade==='K') await expect(page.locator('.bee-setup')).not.toContainText(/Start Timer|round duration|time expires|End Round Early/);
   await page.getByLabel('Teacher approval').check();
   await fit(page);
   await page.getByRole('button',{name:'Start Game',exact:true}).click();
@@ -37,10 +38,10 @@ for (const grade of ['K','2','5']) test(`paced grade ${grade}: complete cycle, p
       expect(await page.evaluate(()=>(window as unknown as {spoken:string[]}).spoken)).toEqual([word.word]);
     }
     await page.getByRole('button',{name:'Teacher: Reveal Answer',exact:true}).click();
-    await expect(page.getByRole('group',{name:`Answer: ${grade==='K'?word.word[0].toUpperCase():word.word.toUpperCase()}`,exact:true})).toBeVisible();
-    await page.getByRole('button',{name:/^Orange:/}).click();
-    await page.getByRole('button',{name:/^Blue:/}).click();
-    await page.getByRole('button',{name:'Commit Results',exact:true}).click();
+    await expect(page.getByRole('group',{name:`Answer: ${grade==='K'?word.word[0].toUpperCase():word.word.toUpperCase().replace(/^NONFICTION$/, 'NON-FICTION')}`,exact:true})).toBeVisible();
+    await endRound(page); await page.getByRole('button',{name:/^Orange:/}).click();
+    await endRound(page); await page.getByRole('button',{name:/^Blue:/}).click();
+    await endRound(page); await page.getByRole('button',{name:'Commit Results',exact:true}).click();
     if(i===0) {await page.screenshot({path:`test-results/pacing-grade-${grade}-play.png`});await page.reload();await expect(page.getByRole('button',{name:/^Orange:/})).toContainText('1');}
     if(i<initial.flow!.order.length-1)await page.getByRole('button',{name:'Next Word',exact:true}).click();
   }
@@ -66,7 +67,7 @@ test('teacher setup gates uncertainty, changes dates, distinguishes source prove
 });
 test('exhausted bank adds only explicitly approved prompts and keeps scores, cutoff and browser recovery',async({page})=>{
   await start(page,'2','current');
-  for(let i=0;i<12;i++){await page.getByRole('button',{name:/^Purple:/}).click();await page.getByRole('button',{name:'Commit Results',exact:true}).click();if(i<11)await page.getByRole('button',{name:'Next Word',exact:true}).click();}
+  for(let i=0;i<12;i++){await endRound(page); await page.getByRole('button',{name:/^Purple:/}).click();await endRound(page); await page.getByRole('button',{name:'Commit Results',exact:true}).click();if(i<11)await page.getByRole('button',{name:'Next Word',exact:true}).click();}
   await page.getByRole('button',{name:'Choose More Eligible Content'}).click();
   await expect(page.getByLabel('Instructional cutoff')).toBeDisabled();await expect(page.getByLabel('Instructional cutoff')).toHaveValue('2026-10-09');
   await page.getByLabel('Teacher approval').check();await page.getByRole('button',{name:'Add Reviewed Prompts'}).click();
@@ -87,10 +88,12 @@ test('final prompt remains hidden after commit and can be explicitly revealed at
   await page.getByLabel('Words',{exact:true}).fill('cat | A pet that says meow. | beginning sound | cat');
   await page.getByLabel('Kindergarten activity').selectOption('spelling');await expect(page.getByRole('heading',{name:'Collect letters. Build a word.'})).toBeVisible();
   await page.getByLabel('Kindergarten activity').selectOption('initial');await page.getByLabel('Teacher approval').check();
-  await page.getByRole('button',{name:'Start Game',exact:true}).click();await page.getByRole('button',{name:/^Orange:/}).click();await page.getByRole('button',{name:'Commit Results',exact:true}).click();
+  await page.getByRole('button',{name:'Start Game',exact:true}).click();await endRound(page); await page.getByRole('button',{name:/^Orange:/}).click();await endRound(page); await page.getByRole('button',{name:'Commit Results',exact:true}).click();
   await expect(page.getByRole('heading',{name:'All prompts in this cycle are committed'})).toBeVisible();
   await expect(page.locator('.bee-summary')).not.toContainText(/\bcat\b/i);expect((await saved(page)).revealed).toBe(false);
   await page.getByRole('button',{name:'Teacher: Reveal Answer'}).click();await expect(page.getByTestId('bee-last-answer')).toHaveText('C — cat');await fit(page);
   await page.reload();await expect(page.getByTestId('bee-last-answer')).toHaveText('C — cat');
   await page.getByRole('button',{name:'Finish Game'}).click();await expect(page.getByText('C · cat · beginning sound · 1/6 teams correct',{exact:true})).toBeVisible();
 });
+
+async function endRound(page: Page) { const button = page.getByRole('button', { name: 'Teacher: End Round Early', exact: true }); if (await button.count() && await button.isEnabled()) await button.click(); }
