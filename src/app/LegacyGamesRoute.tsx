@@ -18,8 +18,8 @@ export default function LegacyGamesRoute() {
   if (!['/games', '/games/', '/games/jeopardy', '/games/four-corners', '/games/spelling-bee', '/games/review'].includes(route.pathname)) return <Navigate to="/games" replace />;
   async function backup() {
     try {
-      // Prefer the captured raw values if automatic backup was blocked.
-      await downloadBrowserState(preserved.warning && preserved.archive ? preserved.archive : captureBrowserExport(localStorage, location.origin));
+      // Prefer the pre-mount legacy values if automatic backup was blocked; Spelling Bee is always read now.
+      await downloadBrowserState(captureBrowserExport(localStorage, location.origin, preserved.warning ? preserved.archive : undefined));
       setExportNotice('Games backup downloaded, including Spelling Bee. Nothing was uploaded.');
     } catch { setExportNotice('Backup could not be downloaded. Keep your browser data intact.'); }
   }

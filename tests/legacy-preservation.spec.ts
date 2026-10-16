@@ -110,3 +110,23 @@ test('Games export download includes Spelling Bee records and fingerprints witho
   await expect(page.getByText('Games backup downloaded, including Spelling Bee. Nothing was uploaded.')).toBeVisible();
   expect(await page.evaluate(() => JSON.stringify(Object.entries(localStorage).sort()))).toBe(before);
 });
+
+test('When the preservation write fails, the download keeps pre-mount legacy values and adds current Spelling Bee records', async ({ page }) => {
+  await page.goto('/games');
+  await page.evaluate(records => { localStorage.clear(); for (const [key, value] of Object.entries(records)) localStorage.setItem(key, value); }, { ...fixture.records, ...bee });
+  await page.addInitScript(key => {
+    const setItem = Storage.prototype.setItem;
+    Storage.prototype.setItem = function (name: string, value: string) { if (name === key) throw new Error('quota'); return setItem.call(this, name, value); };
+  }, backupKey);
+  await page.reload();
+  await expect(page.getByText('could not save a preservation backup')).toBeVisible();
+  expect(await page.evaluate(key => localStorage.getItem(key), backupKey)).toBeNull();
+  // Simulate a legacy component overwriting its record after mount; the export must keep the pre-mount value.
+  await page.evaluate(() => localStorage.setItem('curricuplay.game.v1', 'written after mount'));
+  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export browser Games data' }).click()]);
+  const archive = JSON.parse(await readFile((await download.path())!, 'utf8'));
+  expect(archive.version).toBe(2);
+  expect(Object.keys(archive.records)).toEqual([...exportKeys]);
+  expect(archive.records).toEqual({ ...fixture.records, ...bee });
+  for (const key of exportKeys) expect(archive.checksums[key]).toBe(sha256(archive.records[key]));
+});

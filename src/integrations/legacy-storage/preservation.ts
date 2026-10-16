@@ -35,12 +35,15 @@ export function captureBrowserState(storage: StorageReader, origin: string, now 
   };
 }
 
-/** Current Games data for download; the stored preservation snapshot stays version 1. */
-export function captureBrowserExport(storage: StorageReader, origin: string, now = new Date()): BrowserExport {
+/**
+ * Current Games data for download; the stored preservation snapshot stays version 1.
+ * Pass a pre-mount capture as `legacy` to keep its 5 raw values over what legacy components wrote since.
+ */
+export function captureBrowserExport(storage: StorageReader, origin: string, legacy?: BrowserArchive, now = new Date()): BrowserExport {
   return {
     format: 'classthread-browser-archive', version: 2,
     capturedAt: now.toISOString(), sourceOrigin: origin,
-    records: Object.fromEntries(exportKeys.map(key => [key, storage.getItem(key)])) as BrowserExport['records'],
+    records: Object.fromEntries(exportKeys.map(key => [key, legacy && key in legacy.records ? legacy.records[key as typeof legacyKeys[number]] : storage.getItem(key)])) as BrowserExport['records'],
   };
 }
 
