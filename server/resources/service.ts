@@ -1,9 +1,9 @@
 import { createHash, randomUUID } from 'node:crypto';
-import type { FoundationData } from '../../shared/contracts/foundation';
-import { MAX_SOURCE_BYTES, activationInput, addVersionInput, proposalInput, resourceCreateInput, resourceEditInput, reviewInput, type OriginalInput, type ResourceMetadata, type ResourceVersion } from '../../shared/contracts/resources';
-import { AppError } from '../ports';
-import type { OriginalRecord, ResourcePorts } from './ports';
-import { preview, readTabular, tabularAdapter } from '../ingestion/tabular';
+import type { FoundationData } from '../../shared/contracts/foundation.js';
+import { MAX_SOURCE_BYTES, activationInput, addVersionInput, proposalInput, resourceCreateInput, resourceEditInput, reviewInput, type OriginalInput, type ResourceMetadata, type ResourceVersion } from '../../shared/contracts/resources.js';
+import { AppError } from '../ports.js';
+import type { OriginalRecord, ResourcePorts } from './ports.js';
+import { preview, readTabular, tabularAdapter } from '../ingestion/tabular.js';
 
 export function resourceService(ports: ResourcePorts, context: FoundationData) {
   const { resources, originals } = ports;

@@ -2,11 +2,11 @@ import { createServerClient } from '@supabase/ssr';
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { parseCookie, stringifySetCookie } from 'cookie';
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { AppError, type AuthIdentity, type FoundationRepository, type RequestPorts } from '../../ports';
-import type { Database } from './database';
-import { assignmentFromRow, assignmentToRow, profileFromRow, workFromRow, yearFromRow } from './mapping';
-import { supabaseResourcePorts } from './resources';
-import { supabaseLessonRepository } from './lessons';
+import { AppError, type AuthIdentity, type FoundationRepository, type RequestPorts } from '../../ports.js';
+import type { Database } from './database.js';
+import { assignmentFromRow, assignmentToRow, profileFromRow, workFromRow, yearFromRow } from './mapping.js';
+import { supabaseResourcePorts } from './resources.js';
+import { supabaseLessonRepository } from './lessons.js';
 
 export interface SupabaseConfig { url: string; publishableKey: string; origin: string }
 function databaseError(error: { code?: string } | null) {

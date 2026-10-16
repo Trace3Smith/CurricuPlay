@@ -1,9 +1,9 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { z } from 'zod';
-import { assignmentInput, assignmentWithinYear, contextInput, emailInput, idSchema, profileInput, verifyEmailInput, workInput, workStatusInput, yearInput } from '../shared/contracts/foundation';
-import { AppError, type RequestPorts } from './ports';
-import { resourceService } from './resources/service';
-import { lessonService } from './lessons/service';
+import { assignmentInput, assignmentWithinYear, contextInput, emailInput, idSchema, profileInput, verifyEmailInput, workInput, workStatusInput, yearInput } from '../shared/contracts/foundation.js';
+import { AppError, type RequestPorts } from './ports.js';
+import { resourceService } from './resources/service.js';
+import { lessonService } from './lessons/service.js';
 
 export interface ApiOptions {
   origin: string;

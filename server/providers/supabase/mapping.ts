@@ -1,5 +1,5 @@
-import type { AssignmentInput, SchoolYear, TeacherProfile, TeachingAssignment, WorkItem } from '../../../shared/contracts/foundation';
-import type { AssignmentRow, ProfileRow, WorkRow, YearRow } from './database';
+import type { AssignmentInput, SchoolYear, TeacherProfile, TeachingAssignment, WorkItem } from '../../../shared/contracts/foundation.js';
+import type { AssignmentRow, ProfileRow, WorkRow, YearRow } from './database.js';
 export const profileFromRow = (row: ProfileRow): TeacherProfile => ({ userId: row.user_id, workspaceId: row.workspace_id, displayName: row.display_name, timezone: row.timezone, selectedSchoolYearId: row.selected_school_year_id, selectedAssignmentId: row.selected_assignment_id, revision: row.revision });
 export const yearFromRow = (row: YearRow): SchoolYear => ({ id: row.id, workspaceId: row.workspace_id, name: row.name, startsOn: row.starts_on, endsOn: row.ends_on });
 export const assignmentFromRow = (row: AssignmentRow): TeachingAssignment => ({ id: row.id, workspaceId: row.workspace_id, schoolYearId: row.school_year_id, title: row.title, jurisdiction: row.jurisdiction, district: row.district, school: row.school, subject: row.subject, course: row.course, grades: row.grades, teachingRole: row.teaching_role, schedule: row.schedule, startsOn: row.starts_on, endsOn: row.ends_on, isActive: row.is_active, createdAt: row.created_at });

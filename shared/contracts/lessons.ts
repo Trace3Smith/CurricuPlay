@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { idSchema, type TeachingAssignment } from './foundation';
+import { idSchema, type TeachingAssignment } from './foundation.js';
 
 /** Ordered, optional sections. Namespaced kinds allow future Role Packs without changing the core. */
 export const lessonSectionGroups = [

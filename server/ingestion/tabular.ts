@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { isSafeResourceUrl, curriculumFields, type ColumnMapping, type CurriculumProposal, type GridPreview, type CurriculumNode } from '../../shared/contracts/resources';
-import { AppError } from '../ports';
+import { isSafeResourceUrl, curriculumFields, type ColumnMapping, type CurriculumProposal, type GridPreview, type CurriculumNode } from '../../shared/contracts/resources.js';
+import { AppError } from '../ports.js';
 
 export interface SourceCell { text: string; url?: string }
 export interface SourceSheet { name: string; hidden: boolean; rows: Map<number, Map<string, SourceCell>> }

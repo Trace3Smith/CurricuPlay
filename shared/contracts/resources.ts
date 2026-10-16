@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { idSchema } from './foundation';
+import { idSchema } from './foundation.js';
 
 const label = (max: number) => z.string().trim().min(1).max(max);
 export const MAX_SOURCE_BYTES = 2 * 1024 * 1024;

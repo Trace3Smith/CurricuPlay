@@ -1,5 +1,5 @@
-import { createApiHandler } from './app';
-import { createSupabasePorts } from './providers/supabase';
+import { createApiHandler } from './app.js';
+import { createSupabasePorts } from './providers/supabase/index.js';
 
 export function configuredApi(env: Record<string, string | undefined>) {
   const origin = env.CLASSTHREAD_ORIGIN ?? 'http://localhost:5173';

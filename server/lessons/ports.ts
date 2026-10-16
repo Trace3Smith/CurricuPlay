@@ -1,4 +1,4 @@
-import type { LessonLibrary, LessonSaveInput, ReflectionInput, ScheduleLessonInput } from '../../shared/contracts/lessons';
+import type { LessonLibrary, LessonSaveInput, ReflectionInput, ScheduleLessonInput } from '../../shared/contracts/lessons.js';
 
 export interface LessonRepository {
   read(): Promise<LessonLibrary>;

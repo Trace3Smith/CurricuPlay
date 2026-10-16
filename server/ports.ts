@@ -1,6 +1,6 @@
-import type { AssignmentInput, ContextInput, FoundationData, ProfileInput, WorkInput, WorkStatusInput, YearInput } from '../shared/contracts/foundation';
-import type { ResourcePorts } from './resources/ports';
-import type { LessonRepository } from './lessons/ports';
+import type { AssignmentInput, ContextInput, FoundationData, ProfileInput, WorkInput, WorkStatusInput, YearInput } from '../shared/contracts/foundation.js';
+import type { ResourcePorts } from './resources/ports.js';
+import type { LessonRepository } from './lessons/ports.js';
 
 /** Provider subjects stay behind this boundary; API callers receive the application user ID. */
 export interface AuthIdentity { subject: string; email: string }

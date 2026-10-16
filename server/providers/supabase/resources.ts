@@ -1,8 +1,8 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
-import type { Database } from './database';
-import { AppError } from '../../ports';
-import type { ResourcePorts, ResourceRepository } from '../../resources/ports';
-import type { ResourceLibrary } from '../../../shared/contracts/resources';
+import type { Database } from './database.js';
+import { AppError } from '../../ports.js';
+import type { ResourcePorts, ResourceRepository } from '../../resources/ports.js';
+import type { ResourceLibrary } from '../../../shared/contracts/resources.js';
 
 export type ResourceRpc = 'resource_library' | 'save_resource' | 'propose_curriculum' | 'review_curriculum' | 'activate_curriculum';
 export type ResourceTransport = (name: ResourceRpc, args: Record<string, unknown>) => Promise<unknown>;

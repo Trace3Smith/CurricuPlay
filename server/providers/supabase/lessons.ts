@@ -1,8 +1,8 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
-import type { Database } from './database';
-import type { LessonRepository } from '../../lessons/ports';
-import type { LessonLibrary } from '../../../shared/contracts/lessons';
-import { AppError } from '../../ports';
+import type { Database } from './database.js';
+import type { LessonRepository } from '../../lessons/ports.js';
+import type { LessonLibrary } from '../../../shared/contracts/lessons.js';
+import { AppError } from '../../ports.js';
 
 export type LessonRpc = 'lesson_library' | 'save_lesson' | 'schedule_lesson' | 'mark_lesson_taught' | 'reflect_on_lesson';
 export type LessonTransport = (name: LessonRpc, args: Record<string, unknown>) => Promise<unknown>;

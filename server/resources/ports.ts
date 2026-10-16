@@ -1,4 +1,4 @@
-import type { ActivationInput, CurriculumProposal, ProposalInput, ResourceLibrary, ResourceMetadata, ResourceVersion, ReviewInput } from '../../shared/contracts/resources';
+import type { ActivationInput, CurriculumProposal, ProposalInput, ResourceLibrary, ResourceMetadata, ResourceVersion, ReviewInput } from '../../shared/contracts/resources.js';
 
 export type OriginalRecord = Omit<ResourceVersion, 'resourceId' | 'number' | 'createdAt' | 'metadata'>;
 export interface ResourceRepository {

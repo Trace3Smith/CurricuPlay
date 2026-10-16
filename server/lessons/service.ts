@@ -1,6 +1,6 @@
-import { lessonSaveInput, reflectionInput, scheduleLessonInput, taughtInput } from '../../shared/contracts/lessons';
-import type { LessonRepository } from './ports';
-import { AppError } from '../ports';
+import { lessonSaveInput, reflectionInput, scheduleLessonInput, taughtInput } from '../../shared/contracts/lessons.js';
+import type { LessonRepository } from './ports.js';
+import { AppError } from '../ports.js';
 
 /** SQL performs workspace, exact-reference, date and concurrency checks atomically for every caller. */
 export function lessonService(repository: LessonRepository) {
