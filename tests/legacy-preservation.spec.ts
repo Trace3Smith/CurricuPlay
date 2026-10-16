@@ -1,7 +1,19 @@
 import { test, expect } from '@playwright/test';
+import { readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import fixture from './fixtures/legacy-browser-state.v1.json' with { type: 'json' };
-import { backupKey, captureBrowserState, legacyKeys, preserveBrowserState } from '../src/integrations/legacy-storage/preservation';
+import { backupKey, captureBrowserExport, captureBrowserState, exportKeys, legacyKeys, preserveBrowserState, withChecksums } from '../src/integrations/legacy-storage/preservation';
+import { ACTIVE_KEY, HISTORY_KEY, LISTS_KEY } from '../src/games/spelling-bee/storage';
+import { beginGame } from '../src/games/spelling-bee/engine';
+import { samples } from '../src/games/spelling-bee/words';
 import { isGameSession, summarizeSession } from '../src/assessment/engine';
+
+const sha256 = (value: string | null) => value === null ? null : createHash('sha256').update(value).digest('hex');
+const bee = {
+  [ACTIVE_KEY]: JSON.stringify(beginGame(samples.entries, '2', 'supported', 'backup-test', '2026-10-08T12:00:00Z', () => .5)),
+  [LISTS_KEY]: JSON.stringify({ version: 1, lists: [{ id: 'list-1', name: 'Week 6', entries: samples.entries }] }),
+  [HISTORY_KEY]: '{corrupt spelling history',
+};
 
 function storage(entries: Record<string, string> = {}) {
   const data = new Map(Object.entries(entries));
@@ -42,4 +54,59 @@ test('Versioned compatibility fixture preserves scored history independently of 
   expect(isGameSession(active.session)).toBe(true);
   expect(active.correctTeamIds).toEqual(['team-2']);
   expect(summarizeSession(active.session).teams.map(team => team.score)).toEqual([1, 0]);
+});
+
+test('Version 2 export copies all 8 allowlisted records verbatim with SHA-256 fingerprints', async () => {
+  const original = { ...fixture.records, 'curricuplay.game.v1': '{corrupt but recoverable', ...bee, 'auth-token': 'never export' };
+  const store = storage(original);
+  const writes: string[] = [];
+  const spy = { getItem: store.getItem, setItem: (key: string) => { writes.push(key); } };
+  const archive = captureBrowserExport(spy, 'https://example.test');
+  expect(archive.format).toBe('classthread-browser-archive');
+  expect(archive.version).toBe(2);
+  expect(Object.keys(archive.records)).toEqual([...exportKeys]);
+  expect(exportKeys).toHaveLength(8);
+  for (const key of exportKeys) expect(archive.records[key]).toBe(original[key]);
+  const file = await withChecksums(archive);
+  expect(Object.keys(file.checksums)).toEqual([...exportKeys]);
+  for (const key of exportKeys) expect(file.checksums[key]).toBe(sha256(original[key]));
+  expect(JSON.stringify(file)).not.toContain('never export');
+  expect(JSON.stringify(file)).not.toContain('auth-token');
+  expect(writes).toEqual([]);
+  for (const [key, value] of Object.entries(original)) expect(store.getItem(key)).toBe(value);
+});
+
+test('Stored snapshot stays version 1 with 5 keys and still downloads with its 5 fingerprints', async () => {
+  const store = storage({ ...fixture.records, ...bee });
+  preserveBrowserState(store, 'https://example.test');
+  const stored = JSON.parse(store.getItem(backupKey)!);
+  expect(stored.version).toBe(1);
+  expect(Object.keys(stored.records)).toEqual([...legacyKeys]);
+  expect(JSON.stringify(stored)).not.toContain('spelling-bee');
+  const file = await withChecksums(stored);
+  expect(file.version).toBe(1);
+  expect(file.records).toEqual(stored.records);
+  expect(Object.keys(file.checksums)).toEqual([...legacyKeys]);
+  for (const key of legacyKeys) expect(file.checksums[key]).toBe(sha256(stored.records[key]));
+});
+
+test('Games export download includes Spelling Bee records and fingerprints without changing storage', async ({ page }) => {
+  await page.goto('/games');
+  await page.evaluate(records => { for (const [key, value] of Object.entries(records)) localStorage.setItem(key, value); localStorage.setItem('auth-token', 'never-export-me'); }, bee);
+  await page.reload();
+  // The legacy Games app saves its own state on mount; snapshot only after that settles.
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('curricuplay.game.v1'))).not.toBeNull();
+  const before = await page.evaluate(() => JSON.stringify(Object.entries(localStorage).sort()));
+  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export browser Games data' }).click()]);
+  const text = await readFile((await download.path())!, 'utf8');
+  const archive = JSON.parse(text);
+  expect(archive.version).toBe(2);
+  expect(Object.keys(archive.records)).toEqual([...exportKeys]);
+  for (const [key, value] of Object.entries(bee)) {
+    expect(archive.records[key]).toBe(value);
+    expect(archive.checksums[key]).toBe(sha256(value));
+  }
+  expect(text).not.toContain('never-export-me');
+  await expect(page.getByText('Games backup downloaded, including Spelling Bee. Nothing was uploaded.')).toBeVisible();
+  expect(await page.evaluate(() => JSON.stringify(Object.entries(localStorage).sort()))).toBe(before);
 });

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import App from '../App';
 import SpellingBee from '../games/spelling-bee/SpellingBee';
-import { captureBrowserState, downloadBrowserState, preserveBrowserState } from '../integrations/legacy-storage/preservation';
+import { captureBrowserExport, downloadBrowserState, preserveBrowserState } from '../integrations/legacy-storage/preservation';
 import '../styles.css';
 
 export default function LegacyGamesRoute() {
@@ -19,8 +19,8 @@ export default function LegacyGamesRoute() {
   async function backup() {
     try {
       // Prefer the captured raw values if automatic backup was blocked.
-      await downloadBrowserState(preserved.warning && preserved.archive ? preserved.archive : captureBrowserState(localStorage, location.origin));
-      setExportNotice('Games backup downloaded. Nothing was uploaded.');
+      await downloadBrowserState(preserved.warning && preserved.archive ? preserved.archive : captureBrowserExport(localStorage, location.origin));
+      setExportNotice('Games backup downloaded, including Spelling Bee. Nothing was uploaded.');
     } catch { setExportNotice('Backup could not be downloaded. Keep your browser data intact.'); }
   }
   if (route.pathname === '/games/spelling-bee') return <SpellingBee onHome={() => navigate('/games')} onClassroom={() => navigate('/classroom')} />;

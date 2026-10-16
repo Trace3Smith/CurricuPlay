@@ -35,8 +35,8 @@ test('Versioned browser export downloads raw Games records with checksums and ex
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export browser Games data' }).click()]);
   const text = await readFile((await download.path())!, 'utf8');
   const archive = JSON.parse(text);
-  expect(archive.format).toBe('classthread-browser-archive'); expect(archive.version).toBe(1);
-  expect(archive.records).toEqual(raw);
+  expect(archive.format).toBe('classthread-browser-archive'); expect(archive.version).toBe(2);
+  expect(archive.records).toEqual({ ...raw, 'classthread.spelling-bee.active.v1': null, 'classthread.spelling-bee.lists.v1': null, 'classthread.spelling-bee.history.v1': null });
   for (const [key, value] of Object.entries(raw)) expect(archive.checksums[key]).toBe(value === null ? null : createHash('sha256').update(value).digest('hex'));
   expect(text).not.toContain('never-export-me');
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('classthread.legacy-backup.v1')!).records)).toEqual(fixture.records);

@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react';
 import { useFoundation } from '../../app/FoundationProvider';
-import { backupKey, captureBrowserState, downloadBrowserState, type BrowserArchive } from '../../integrations/legacy-storage/preservation';
+import { backupKey, captureBrowserExport, downloadBrowserState, type BrowserArchive } from '../../integrations/legacy-storage/preservation';
 
 export default function Manage() {
   const { data, busy, mutate } = useFoundation();
@@ -24,8 +24,8 @@ export default function Manage() {
     try {
       const saved = original ? localStorage.getItem(backupKey) : null;
       if (original && !saved) { setExportMessage('No pre-ClassThread browser snapshot was needed on this device. You can export the current Games data.'); return; }
-      await downloadBrowserState(saved ? JSON.parse(saved) as BrowserArchive : captureBrowserState(localStorage, location.origin));
-      setExportMessage('Browser backup downloaded. It has not been uploaded to your account.');
+      await downloadBrowserState(saved ? JSON.parse(saved) as BrowserArchive : captureBrowserExport(localStorage, location.origin));
+      setExportMessage(original ? 'Browser backup downloaded. It has not been uploaded to your account.' : 'Browser backup downloaded, including Spelling Bee. It has not been uploaded to your account.');
     } catch { setExportMessage('The backup could not be downloaded. Keep this browser’s data intact and try again.'); }
   }
   return <>

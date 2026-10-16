@@ -1,4 +1,6 @@
-/** These are the only browser records eligible for a Games export. Never include auth data. */
+import { ACTIVE_KEY, HISTORY_KEY, LISTS_KEY } from '../../games/spelling-bee/storage';
+
+/** The pre-ClassThread records kept in the one-time preservation snapshot. Never include auth data. */
 export const legacyKeys = [
   'curricuplay.game.v1',
   'curricuplay.reviews.v1',
@@ -6,6 +8,8 @@ export const legacyKeys = [
   'curricuplay.four-corners.timer.v1',
   'curricuplay.sessions.v1',
 ] as const;
+/** These are the only browser records eligible for a Games export. Never include auth data. */
+export const exportKeys = [...legacyKeys, ACTIVE_KEY, LISTS_KEY, HISTORY_KEY] as const;
 export const backupKey = 'classthread.legacy-backup.v1';
 type StorageReader = Pick<Storage, 'getItem'>;
 export interface BrowserArchive {
@@ -15,12 +19,28 @@ export interface BrowserArchive {
   sourceOrigin: string;
   records: Record<typeof legacyKeys[number], string | null>;
 }
+export interface BrowserExport {
+  format: 'classthread-browser-archive';
+  version: 2;
+  capturedAt: string;
+  sourceOrigin: string;
+  records: Record<typeof exportKeys[number], string | null>;
+}
 
 export function captureBrowserState(storage: StorageReader, origin: string, now = new Date()): BrowserArchive {
   return {
     format: 'classthread-browser-archive', version: 1,
     capturedAt: now.toISOString(), sourceOrigin: origin,
     records: Object.fromEntries(legacyKeys.map(key => [key, storage.getItem(key)])) as BrowserArchive['records'],
+  };
+}
+
+/** Current Games data for download; the stored preservation snapshot stays version 1. */
+export function captureBrowserExport(storage: StorageReader, origin: string, now = new Date()): BrowserExport {
+  return {
+    format: 'classthread-browser-archive', version: 2,
+    capturedAt: now.toISOString(), sourceOrigin: origin,
+    records: Object.fromEntries(exportKeys.map(key => [key, storage.getItem(key)])) as BrowserExport['records'],
   };
 }
 
@@ -38,14 +58,20 @@ export function preserveBrowserState(storage: Pick<Storage, 'getItem' | 'setItem
   }
 }
 
-export async function downloadBrowserState(archive: BrowserArchive) {
-  const checksums = Object.fromEntries(await Promise.all(legacyKeys.map(async key => {
-    const raw = archive.records[key];
+/** Fingerprints every record the archive holds, so stored version-1 snapshots keep their 5 checksums. */
+export async function withChecksums<T extends BrowserArchive | BrowserExport>(archive: T) {
+  const records: Record<string, string | null> = archive.records;
+  const checksums: Record<string, string | null> = Object.fromEntries(await Promise.all(Object.keys(records).map(async key => {
+    const raw = records[key];
     if (raw === null) return [key, null];
     const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
     return [key, Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('')];
   })));
-  const blob = new Blob([JSON.stringify({ ...archive, checksums }, null, 2)], { type: 'application/json' });
+  return { ...archive, checksums };
+}
+
+export async function downloadBrowserState(archive: BrowserArchive | BrowserExport) {
+  const blob = new Blob([JSON.stringify(await withChecksums(archive), null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
