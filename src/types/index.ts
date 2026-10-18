@@ -3,7 +3,10 @@ export type Grade = typeof grades[number];
 export const subjects = ['Literacy', 'Math', 'Science', 'Social Studies'] as const;
 export type Subject = typeof subjects[number];
 export type Category = Subject | 'Review';
+/** Legacy week ranges, kept so saved boards and the review trial keep their original eligibility. */
 export type ContentRange = 'recent' | 'all';
+/** Rolling one-month pacing (src/curriculum/pacing.ts). */
+export type PacedRange = 'current' | 'review' | 'mixed';
 export interface Question {
   packId?: string; packName?: string; originId?: string; approvalBasis?: string; verificationEvidence?: Partial<SourceEvidence>;
   id: string; grade: Grade; subject: Subject; difficulty: 1 | 2 | 3;
@@ -13,6 +16,7 @@ export interface Question {
   reviewStatus?: 'pending' | 'approved' | 'needs-edit' | 'rejected'; reviewNote?: string; teacherSetup?: string;
   requiresExternalClassroomMaterial: boolean; materialReviewNote?: string;
   questionType?: string; choices?: string[]; teacherRead?: boolean; reviewQuestion?: boolean;
+  taughtOn?: string; // Exact taught day, when evidence records one; otherwise the Friday of the latest aligned week.
   templateId?: string; templateParentId?: string; templateFingerprint?: string; templateParams?: Record<string, unknown>;
 }
 export interface SourceEvidence {
@@ -28,10 +32,10 @@ export interface CurriculumEntry {
   generationStatus: 'needs_additional_source_material' | 'needs_timing_review' | 'partially_supported';
   needsAdditionalSourceMaterial: boolean; reason: string; supportingEvidence: SourceEvidence[];
 }
-export interface Filters { grade: Grade; subject?: Category; difficulty?: number; range: ContentRange; asOf: string; unused?: boolean }
+export interface Filters { grade: Grade; subject?: Category; difficulty?: number; range: ContentRange | PacedRange; asOf: string; unused?: boolean }
 export interface GameState {
   version: 1; screen: 'home' | 'setup' | 'board' | 'question'; selectedGame: 'jeopardy' | null;
-  grade: Grade; range: ContentRange; asOf: string; usedQuestionIds: string[]; usedTiles: string[];
+  grade: Grade; range: ContentRange | 'mixed'; asOf: string; usedQuestionIds: string[]; usedTiles: string[];
   contentSource?: 'classroom' | 'drafts';
   assignments?: Record<string, string>;
   current: { questionId: string; tileId: string; category: Category; revealed: boolean } | null;

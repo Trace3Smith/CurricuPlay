@@ -23,7 +23,6 @@ test('Teacher edits and approves locally, refreshes, and withdraws approval; a s
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.getByRole('button', { name: 'Home', exact: true }).click();
   await page.getByRole('button', { name: /JEOPARDY/ }).click();
-  await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
   await expect(page.getByText('1 approved questions available')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
   await page.reload();

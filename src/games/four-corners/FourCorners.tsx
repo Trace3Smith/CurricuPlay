@@ -9,7 +9,10 @@ import SessionHistory from '../../assessment/SessionHistory';
 import { summarizeSession } from '../../assessment/engine';
 import { saveCompletedSession } from '../../assessment/storage';
 import { grades } from '../../types';
-import { bank, buildQueue, beginGame, advanceRound, finishEarly, isTeamMode, toggleCorrectTeam, eligible, freshState, gradeLabel, loadState, mixes, roundOptions, saveState, subjectLabel, validSession, type CornerState } from './engine';
+import { bank, buildQueue, beginGame, advanceRound, finishEarly, isTeamMode, toggleCorrectTeam, eligible, freshState, gradeLabel, loadState, mixes, roundOptions, saveState, subjectLabel, validSession, contentLabels, type CornerState } from './engine';
+import { schoolDate } from '../../curriculum/eligibility';
+import { currentWindow, shortDate } from '../../curriculum/pacing';
+import type { PacedRange } from '../../types';
 import './four-corners.css';
 
 // Printed-letter rounds label the corners with shapes instead of letters. On those questions the
@@ -32,11 +35,14 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
   useEffect(() => { title.current?.focus(); }, [state.screen, state.currentRound]);
   useEffect(() => { if (confirm) dialog.current?.showModal(); else dialog.current?.close(); }, [confirm]);
   useEffect(() => {
-    const check = () => setState(s => s.screen !== 'setup' && !validSession(s) ? { ...freshState(), grade: s.grade, mix: s.mix, rounds: s.rounds, mode: s.mode ?? 'classic', teamCount: s.teamCount ?? 6, movementDuration: movementDuration(s.movementDuration) } : s);
+    const check = () => setState(s => s.screen !== 'setup' && !validSession(s) ? { ...freshState(), grade: s.grade, mix: s.mix, rounds: s.rounds, mode: s.mode ?? 'classic', teamCount: s.teamCount ?? 6, movementDuration: movementDuration(s.movementDuration), content: s.content ?? 'mixed' } : s);
     window.addEventListener('storage', check); window.addEventListener('focus', check);
     return () => { window.removeEventListener('storage', check); window.removeEventListener('focus', check); };
   }, []);
-  const pool = eligible(state.grade, state.mix);
+  const content = state.content ?? 'mixed', asOf = state.asOf ?? schoolDate();
+  const pool = eligible(state.grade, state.mix, content, asOf);
+  const currentCount = eligible(state.grade, state.mix, 'current', asOf).length;
+  const pacingWindow = currentWindow(asOf);
   const required = state.rounds === 'all' ? 1 : state.rounds;
   const question = bank.find(q => q.id === state.questionIds[state.currentRound]);
   const active = state.screen === 'play' && question;
@@ -47,10 +53,10 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
   const assessment = displaySession ? summarizeSession(displaySession) : null;
   function update(patch: Partial<CornerState>) { setState(s => ({ ...s, ...patch })); }
   function start() {
-    const available = eligible(state.grade, state.mix);
+    const available = eligible(state.grade, state.mix, content, asOf);
     const questionIds = buildQueue(available, state.rounds === 'all' ? available.length : state.rounds);
     if (!questionIds.length) return;
-    setState(beginGame(state, questionIds, crypto.randomUUID(), new Date().toISOString()));
+    setState(beginGame({ ...state, content, asOf }, questionIds, crypto.randomUUID(), new Date().toISOString()));
     setHistoryError('');
   }
   function next() { setState(s => advanceRound(s, new Date().toISOString())); }
@@ -64,7 +70,7 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
         if (error) { setHistoryError(error); setConfirm(null); return; }
       }
       if (confirm === 'reset') start();
-      else setState({ ...freshState(), grade: state.grade, mix: state.mix, rounds: state.rounds, mode: state.mode ?? 'classic', teamCount: state.teamCount ?? 6, movementDuration: movementDuration(state.movementDuration) });
+      else setState({ ...freshState(), grade: state.grade, mix: state.mix, rounds: state.rounds, mode: state.mode ?? 'classic', teamCount: state.teamCount ?? 6, movementDuration: movementDuration(state.movementDuration), content, asOf });
     }
     setConfirm(null);
   }
@@ -85,8 +91,11 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
       <fieldset className="fc-mode"><legend>Game mode</legend><div className="fc-mode-options"><button aria-pressed={teamMode} onClick={() => update({ mode: 'team', rounds: 'all', teamCount: state.teamCount ?? 6 })}>Team Mode · Recommended for PE</button><button aria-pressed={!teamMode} onClick={() => update({ mode: 'classic', rounds: 15 })}>Classic Mode</button>{teamMode && <label>Teams <select aria-label="Team count" value={state.teamCount ?? 6} onChange={e => update({ teamCount: Number(e.target.value) })}>{Array.from({ length: 12 }, (_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}</select></label>}{teamMode && <label>Movement timer <select aria-label="Movement timer duration" value={timerSeconds} onChange={e => update({ movementDuration: Number(e.target.value) as MovementDuration })}>{movementDurations.map(seconds => <option key={seconds} value={seconds}>{seconds === 0 ? 'Off' : `${seconds} seconds`}</option>)}</select></label>}</div><p>{teamMode ? 'One runner per team. Answer independently—no team discussion. Correct = 1 point. Teacher rotates runners; no names stored.' : 'Whole-class movement. No team scoring required.'}</p></fieldset>
       <fieldset><legend>1 <span>Select grade</span></legend><div className="grade-options">{grades.map(g => <button key={g} aria-pressed={state.grade === g} onClick={() => update({ grade: g })}>{gradeLabel(g)}</button>)}</div></fieldset>
       <fieldset><legend>2 <span>Select question mix</span></legend><div className="fc-mixes">{mixes.map(mix => <button key={mix} aria-pressed={state.mix === mix} onClick={() => update({ mix })}>{mix}</button>)}</div></fieldset>
-      <fieldset><legend>3 <span>Select rounds</span></legend><div className="fc-rounds">{roundOptions.map(rounds => <button key={rounds} disabled={pool.length < (rounds === 'all' ? 1 : rounds)} aria-pressed={state.rounds === rounds} onClick={() => update({ rounds })}>{rounds === 'all' ? 'Play Until I Stop' : `${rounds} rounds`}{rounds !== 'all' && pool.length < rounds && <small>Needs {rounds - pool.length} more questions</small>}</button>)}</div></fieldset>
-      <div className="setup-bottom"><p><strong>{pool.length} eligible unique questions</strong><br />Content taught through September 13, 2026.</p><button className="primary" disabled={pool.length < required} onClick={start}>Start Game →</button></div>
+      <fieldset><legend>3 <span>Select content</span></legend><div className="fc-mixes">{(Object.keys(contentLabels) as PacedRange[]).map(c => <button key={c} aria-pressed={content === c} onClick={() => update({ content: c })}>{contentLabels[c]}</button>)}</div>
+        <p className="pacing-note" data-testid="fc-pacing-window">{pacingWindow ? <>Current = taught {shortDate(pacingWindow.start)} – {shortDate(pacingWindow.end)}. Review = taught before {shortDate(pacingWindow.start)}.</> : 'Choose a valid date.'} Week-only evidence counts as taught on that week’s Friday.</p>
+        {!currentCount && <p className="content-notice" role="status">No Current questions yet for {gradeLabel(state.grade)} on this date.{content !== 'current' ? ' Review questions are available.' : ' Choose Review or Current + Review.'}</p>}</fieldset>
+      <fieldset><legend>4 <span>Select rounds</span></legend><div className="fc-rounds">{roundOptions.map(rounds => <button key={rounds} disabled={pool.length < (rounds === 'all' ? 1 : rounds)} aria-pressed={state.rounds === rounds} onClick={() => update({ rounds })}>{rounds === 'all' ? 'Play Until I Stop' : `${rounds} rounds`}{rounds !== 'all' && pool.length < rounds && <small>Needs {rounds - pool.length} more questions</small>}</button>)}</div></fieldset>
+      <div className="setup-bottom"><label>Teaching date <input aria-label="Teaching date" type="date" max={schoolDate()} value={asOf} onChange={e => { if (e.target.value && e.target.value <= schoolDate()) update({ asOf: e.target.value }); }} /></label><p><strong>{pool.length} eligible unique questions</strong><br />{contentLabels[content]} · Content taught after this date is always excluded.</p><button className="primary" disabled={pool.length < required} onClick={start}>Start Game →</button></div>
       {pool.length < required && <p className="content-notice" role="status">{state.mix} has {pool.length} supported questions for {gradeLabel(state.grade)}; {required} {required === 1 ? 'is' : 'are'} needed. {state.mix !== 'Mixed Academic' ? 'Choose Mixed Academic for a balanced game.' : 'Select an available round count.'}</p>}
     </main>}
     {active && teamMode && <div className="fc-scoreboard" aria-label="Live scoreboard">{assessment?.teams.map(t => <span key={t.id} data-testid={`score-${t.id}`}><TeamName team={t} /> <b>{t.score + ((state.correctTeamIds ?? []).includes(t.id) ? 1 : 0)}</b></span>)}<small>{state.revealed ? 'Round marks pending Next Question' : 'LOOK → THINK → RUN → REVEAL → SCORE → ROTATE → NEXT'}</small></div>}

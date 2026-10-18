@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { grades, subjects, type Question, type Grade, type ContentRange } from '../types';
 import { approvalError, effectiveQuestion, compareReview, reconciliationSummary, changeLabels, writeReview, type Decisions, type ReviewStatus } from '../services/questionReview';
-import { localDate } from '../services/curriculumService';
+import { schoolDate } from '../curriculum/eligibility';
 import { createQuestionEngine } from '../services/questionEngine';
 import { tiles } from '../games/jeopardy/board';
 import curriculum from '../data/curriculum.json';
@@ -14,7 +14,7 @@ export default function QuestionReview({ questions, decisions, storageError, onS
   const [filters, setFilters] = useState({ grade: initialGrade ?? '', subject: '', difficulty: '', status: '', materials: '', changes: initialGrade ? 'attention' : '' });
   const [advance, setAdvance] = useState(false);
   const [range, setRange] = useState<ContentRange>('all');
-  const [asOf, setAsOf] = useState(localDate);
+  const [asOf, setAsOf] = useState(schoolDate);
   const [index, setIndex] = useState(0);
   const [dirty, setDirty] = useState(false);
   const [message, setMessage] = useState('');
@@ -54,7 +54,7 @@ export default function QuestionReview({ questions, decisions, storageError, onS
       </section>
       {filters.grade && <section className="content-notice" aria-label="Classroom trial readiness">
         <strong>{label(filters.grade)} classroom trial — {trialCount} eligible approved questions · {plan.matched}/30 tiles covered</strong>
-        <div className="review-filters"><label>Trial content range<select aria-label="Trial content range" value={range} onChange={e => setRange(e.target.value as ContentRange)}><option value="all">Everything Taught So Far</option><option value="recent">Recent Content</option></select></label><label>Trial content through<input aria-label="Trial content through" type="date" value={asOf} max={localDate()} onChange={e => { if (e.target.value && e.target.value <= localDate()) setAsOf(e.target.value); }} /></label></div>
+        <div className="review-filters"><label>Trial content range<select aria-label="Trial content range" value={range} onChange={e => setRange(e.target.value as ContentRange)}><option value="all">Everything Taught So Far</option><option value="recent">Recent Content</option></select></label><label>Trial content through<input aria-label="Trial content through" type="date" value={asOf} max={schoolDate()} onChange={e => { if (e.target.value && e.target.value <= schoolDate()) setAsOf(e.target.value); }} /></label></div>
         <p>{plan.complete ? 'All 30 tiles have distinct eligible questions. Review tiles cannot use another tile’s reserved question.' : 'Approve more questions across the missing category/point pools. A total of 30 approvals alone is not enough.'}</p>
         {!plan.complete && <p>{[...new Set(tiles.filter(t => !plan.assignments[t.id]).map(t => `${t.category} ${t.difficulty}-point`))].join(' · ')}</p>}
         <button className="primary" disabled={!plan.complete || dirty || !!storageError} onClick={() => onStartTrial(trialFilters.grade, range, asOf)}>Start 30-tile classroom trial</button>
@@ -80,7 +80,7 @@ function ReviewCard({ question: q, original, comparison, onDirty, onDecision }: 
   const dirty = question !== q.question || answer !== q.answer;
   const rows = curriculum.filter(r => (original.curriculumIds ?? [original.curriculumId]).includes(r.id));
   const invalid = approvalError(question, answer);
-  const future = q.weekIntroduced > localDate();
+  const future = q.weekIntroduced > schoolDate();
   return <article className="review-card">
     <div className="review-card-heading"><h2>{label(q.grade)} · {q.subject} · {q.difficulty} {q.difficulty === 1 ? 'point' : 'points'}</h2><strong>{statuses[q.reviewStatus ?? 'pending']}{dirty ? ' · Unsaved edits' : ''}</strong></div>
     <p className="content-notice">{changeLabels[comparison.kind]}{comparison.changedFields.length > 0 && <span> · Compared fields: {comparison.changedFields.join(', ')}</span>}</p>

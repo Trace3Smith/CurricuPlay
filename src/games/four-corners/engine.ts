@@ -1,12 +1,13 @@
 import { movementDuration, type MovementDuration } from './movementTimer';
 import { createCornerTeams } from './teams';
 import { commitQuestion, createSession, endSession, isGameSession, type GameSession, type AssessmentQuestionSnapshot } from '../../assessment/engine';
-import raw from '../../data/four-corners.json';
-import { grades, type Grade, type Question } from '../../types';
-import { createQuestionEngine, validateQuestions } from '../../services/questionEngine';
-import { classroomQuestions, PACK_CUTOFF } from '../../services/classroomPack';
+import raw from '../../data/four-corners.json' with { type: 'json' };
+import { grades, type Grade, type PacedRange, type Question } from '../../types';
+import { createQuestionEngine, isPaced, validateQuestions } from '../../services/questionEngine';
+import { classroomQuestions } from '../../services/classroomPack';
 import { readReviews } from '../../services/questionReview';
-import { localDate } from '../../services/curriculumService';
+import { validDate } from '../../services/curriculumService';
+import { schoolDate } from '../../curriculum/eligibility';
 
 export const mixes = ['Mixed Academic', 'Science', 'Social Studies', 'Reading / ELA'] as const;
 export type Mix = typeof mixes[number];
@@ -27,11 +28,12 @@ export const bank: CornerQuestion[] = validated.errors.length ? [] : validated.q
 }) as CornerQuestion[];
 export const subjectLabel = (subject: string) => subject === 'Literacy' ? 'Reading / ELA' : subject;
 export const gradeLabel = (g: Grade) => g === 'K' ? 'Kindergarten' : `${g}${g === '1' ? 'st' : g === '2' ? 'nd' : g === '3' ? 'rd' : 'th'} Grade`;
-export function eligible(grade: Grade, mix: Mix, asOf = localDate()): CornerQuestion[] {
+export const contentLabels: Record<PacedRange, string> = { current: 'Current', review: 'Review', mixed: 'Current + Review' };
+/** Approved, unvetoed questions taught by the teaching date, filtered to Current, Review, or both. */
+export function eligible(grade: Grade, mix: Mix, content: PacedRange = 'mixed', asOf = schoolDate()): CornerQuestion[] {
   const decisions = readReviews().decisions;
   const parents = new Set(classroomQuestions(decisions).filter(q => q.reviewStatus === 'approved').map(q => q.id));
-  const cutoff = asOf < PACK_CUTOFF ? asOf : PACK_CUTOFF;
-  return createQuestionEngine(bank.filter(q => parents.has(q.originId!) && ![q.id, q.adaptation?.sourceQuestionId].some(id => id && ['rejected', 'needs-edit'].includes(decisions[id]?.status)) && (q.alignedWeeks ?? []).every(w => w <= cutoff))).getQuestions({ grade, range: 'all', asOf: cutoff, unused: false }).filter(q => mix === 'Mixed Academic' || subjectLabel(q.subject) === mix) as CornerQuestion[];
+  return createQuestionEngine(bank.filter(q => parents.has(q.originId!) && ![q.id, q.adaptation?.sourceQuestionId].some(id => id && ['rejected', 'needs-edit'].includes(decisions[id]?.status)))).getQuestions({ grade, range: content, asOf, unused: false }).filter(q => mix === 'Mixed Academic' || subjectLabel(q.subject) === mix) as CornerQuestion[];
 }
 function shuffle<T>(items: T[], random: () => number): T[] {
   const result = [...items];
@@ -64,10 +66,11 @@ export interface CornerState {
   currentRound: number; questionIds: string[]; usedQuestionIds: string[]; revealed: boolean;
   movementDuration?: MovementDuration;
   mode?: 'team' | 'classic'; teamCount?: number; session?: GameSession; correctTeamIds?: string[];
+  content?: PacedRange; asOf?: string; // Absent in games saved before rolling pacing: Current + Review as of today.
 }
-export const freshState = (): CornerState => ({ version: 1, screen: 'setup', grade: 'K', mix: 'Mixed Academic', rounds: 'all', mode: 'team', teamCount: 6, movementDuration: 10, currentRound: 0, questionIds: [], usedQuestionIds: [], revealed: false });
+export const freshState = (): CornerState => ({ version: 1, screen: 'setup', grade: 'K', mix: 'Mixed Academic', rounds: 'all', mode: 'team', teamCount: 6, movementDuration: 10, content: 'mixed', asOf: schoolDate(), currentRound: 0, questionIds: [], usedQuestionIds: [], revealed: false });
 export function validSession(s: CornerState): boolean {
-  const ids = new Set(eligible(s.grade, s.mix).map(q => q.id));
+  const ids = new Set(eligible(s.grade, s.mix, s.content ?? 'mixed', s.asOf ?? schoolDate()).map(q => q.id));
   const count = s.questionIds.length;
   const countValid = s.rounds === 'all' ? count > 0 && count === ids.size : count === s.rounds;
   const earlyValid = s.endedEarly === undefined || s.endedEarly === false || (s.endedEarly === true && s.screen === 'complete');
@@ -76,8 +79,10 @@ export function validSession(s: CornerState): boolean {
 export function loadState(): CornerState {
   try {
     const s = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-    if (!s || s.version !== 1 || !grades.includes(s.grade) || !mixes.includes(s.mix) || !roundOptions.includes(s.rounds) || !['setup', 'play', 'complete'].includes(s.screen) || typeof s.revealed !== 'boolean' || !Array.isArray(s.questionIds) || !Array.isArray(s.usedQuestionIds)) return freshState();
-    if (s.screen === 'setup' || !validSession(s)) return { ...freshState(), grade: s.grade, mix: s.mix, rounds: s.rounds, mode: s.mode === 'team' ? 'team' : 'classic', teamCount: validTeamCount(s.teamCount) ? s.teamCount : 6, movementDuration: movementDuration(s.movementDuration) };
+    if (!s || s.version !== 1 || !grades.includes(s.grade) || !mixes.includes(s.mix) || !roundOptions.includes(s.rounds) || !['setup', 'play', 'complete'].includes(s.screen) || typeof s.revealed !== 'boolean' || !Array.isArray(s.questionIds) || !Array.isArray(s.usedQuestionIds) ||
+      (s.content !== undefined && !isPaced(s.content)) || (s.asOf !== undefined && !validDate(s.asOf))) return freshState();
+    // Setup always starts from today; a game in progress keeps its own teaching date.
+    if (s.screen === 'setup' || !validSession(s)) return { ...freshState(), grade: s.grade, mix: s.mix, rounds: s.rounds, mode: s.mode === 'team' ? 'team' : 'classic', teamCount: validTeamCount(s.teamCount) ? s.teamCount : 6, movementDuration: movementDuration(s.movementDuration), content: s.content ?? 'mixed' };
     return s;
   } catch { return freshState(); }
 }
