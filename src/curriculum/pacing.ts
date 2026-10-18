@@ -45,6 +45,17 @@ export function taughtDate(e: CurriculumEvidence | undefined): string | null {
   return friday > eligibleOn ? friday : eligibleOn;
 }
 
+/**
+ * Taught date for week-scheduled content: the exact day when one is recorded, otherwise the Friday
+ * of the latest listed week, so content spanning several weeks is never shown before all of it is taught.
+ */
+export function weeksTaughtDate(weeks: readonly string[], exactDay?: string): string | null {
+  if (!weeks.length || !weeks.every(validSchoolDate)) return null;
+  const last = [...weeks].sort().at(-1)!;
+  if (exactDay !== undefined) return validSchoolDate(exactDay) && exactDay >= last ? exactDay : null;
+  return fridayOf(last);
+}
+
 /** Hidden (null) before the taught date; Current for one calendar month; Review afterwards. */
 export function pacingStatus(taught: string | null, today: string): PacingStatus | null {
   if (!taught || !validSchoolDate(today) || today < taught) return null;

@@ -5,12 +5,18 @@ import { readActive as readSpellingBee } from './games/spelling-bee/storage';
 import { readActive as readBingo } from './games/state-lingo-bingo/storage';
 import { isTeamMode, loadState as loadFourCornersState } from './games/four-corners/engine';
 import { readReviews, REVIEW_KEY } from './services/questionReview';
-import { grades, type GameState, type Grade } from './types';
+import { grades, type Filters, type GameState, type Grade } from './types';
 import { classroomQuestions, classroomBank, PACK_NAME } from './services/classroomPack';
-import { bank, createQuestionEngine } from './services/questionEngine';
-import { localDate } from './services/curriculumService';
+import { bank, createQuestionEngine, isPaced, questionStatus } from './services/questionEngine';
+import { schoolDate } from './curriculum/eligibility';
+import { currentWindow, shortDate } from './curriculum/pacing';
 import { loadState, saveState } from './utils/storage';
 import { categories, tiles, isBoardEligible } from './games/jeopardy/board';
+// Current + Review boards fill each subject from Current first, then Review. Saved legacy boards keep their range.
+const boardSlots = (base: Pick<Filters, 'grade' | 'range' | 'asOf' | 'unused'>) => tiles.map(t => ({ id: t.id,
+  ...(isPaced(base.range) && t.category !== 'Review'
+    ? { filters: { ...base, range: 'current' as const, subject: t.category, difficulty: t.difficulty }, fallback: { ...base, range: 'review' as const, subject: t.category, difficulty: t.difficulty } }
+    : { filters: { ...base, subject: t.category, difficulty: t.difficulty } }) }));
 const gradeLabel = (g: Grade) => g === 'K' ? 'Kindergarten' : `${g}${g === '1' ? 'st' : g === '2' ? 'nd' : g === '3' ? 'rd' : 'th'} Grade`;
 export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBackup, preservationNotice }: { gamePath: string; reviewDirect: boolean; onNavigate: (path: string, reviewAll?: boolean) => void; onExit: () => void; onBackup: () => void; preservationNotice: string }) {
   const [state, setState] = useState(loadState);
@@ -33,9 +39,15 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   const engine = useMemo(() => createQuestionEngine(questions, state.usedQuestionIds), [questions, state.usedQuestionIds]);
   const filters = { grade: state.grade, range: state.range, asOf: state.asOf };
   const available = engine.getAvailableQuestionCount(filters);
-  const plan = engine.planQuestions(tiles.map(t => ({ id: t.id, filters: { ...filters, subject: t.category, difficulty: t.difficulty, unused: false } })));
+  const plan = engine.planQuestions(boardSlots({ ...filters, unused: false }));
+  const currentCount = isPaced(state.range) ? engine.getAvailableQuestionCount({ ...filters, range: 'current', unused: false }) : 0;
+  const pacingWindow = currentWindow(state.asOf);
+  const reviewTag = (questionId?: string, category?: string) => {
+    const q = questionId && category !== 'Review' && isPaced(state.range) ? questions.find(q => q.id === questionId) : undefined;
+    return !!q && questionStatus(q, state.asOf) === 'review';
+  };
   function startGame(grade = state.grade, range = state.range, asOf = state.asOf, contentSource = state.contentSource) {
-    const planned = createQuestionEngine(classroomQuestions(reviews.decisions, contentSource)).planQuestions(tiles.map(t => ({ id: t.id, filters: { grade, range, asOf, subject: t.category, difficulty: t.difficulty } })), true);
+    const planned = createQuestionEngine(classroomQuestions(reviews.decisions, contentSource)).planQuestions(boardSlots({ grade, range, asOf }), true);
     if (!planned.complete) return;
     setState(s => ({ ...s, grade, range, asOf, contentSource, screen: 'board', selectedGame: 'jeopardy', assignments: planned.assignments, current: null, usedTiles: [], usedQuestionIds: [] }));
     onNavigate('/games/jeopardy');
@@ -44,7 +56,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   const current = questions.find(q => q.id === state.current?.questionId);
   useEffect(() => { if (state.current && !engine.getQuestions({ grade: state.grade, range: state.range, asOf: state.asOf, unused: false }).some(q => q.id === state.current?.questionId)) setState(s => ({ ...s, current: null, screen: s.screen === 'question' ? 'board' : s.screen })); }, [engine, state.current, state.grade, state.range, state.asOf]);
   function update(patch: Partial<GameState>) { setState(s => ({ ...s, ...patch })); }
-  function fresh(screen: GameState['screen']) { if (screen === 'board' && state.assignments) { startGame(); return; } update({ screen, assignments: undefined, selectedGame: screen === 'setup' ? null : 'jeopardy', current: null, usedTiles: [], usedQuestionIds: [] }); }
+  function fresh(screen: GameState['screen']) { if (screen === 'board' && state.assignments) { startGame(); return; } update({ screen, assignments: undefined, selectedGame: screen === 'setup' ? null : 'jeopardy', current: null, usedTiles: [], usedQuestionIds: [], ...(screen === 'setup' ? { range: 'mixed' as const } : {}) }); }
   function choose(tile: typeof tiles[number]) {
     if (blockedBoard || state.usedTiles.includes(tile.id)) return;
     const tileFilters = { ...filters, subject: tile.category, difficulty: tile.difficulty };
@@ -92,26 +104,28 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
       {(!bank.questions.length || questions.every(q => q.reviewStatus !== 'approved')) && <p className="content-notice" role="status">{bank.errors.length ? `Question bank needs correction: ${bank.errors.join(' ')}` : bank.questions.length ? `${bank.questions.length} generated questions await teacher review. The pacing guide is imported; use Question Review to approve questions and enable play.` : 'No approved local questions are available. Add reviewed curriculum-backed questions to enable play.'}</p>}
     </main>}
     {screen === 'setup' && <main className="setup">
-      <div className="eyebrow">JEOPARDY / QUICK SETUP</div>{state.contentSource !== 'drafts' && classroomBank.questions.length > 0 && <p className="hint">{PACK_NAME} · Content taught through September 13 · Automated checks + editorial review</p>}<h1 ref={title} tabIndex={-1}>Let’s get your class playing.</h1>
+      <div className="eyebrow">JEOPARDY / QUICK SETUP</div>{state.contentSource !== 'drafts' && classroomBank.questions.length > 0 && <p className="hint">{PACK_NAME} · Automated checks + editorial review</p>}<h1 ref={title} tabIndex={-1}>Let’s get your class playing.</h1>
       <fieldset><legend>1 <span>Select grade</span></legend><div className="grade-options">{grades.map(g => <button key={g} aria-pressed={state.grade === g} onClick={() => update({ grade: g })}>{gradeLabel(g)}</button>)}</div></fieldset>
-      <fieldset><legend>2 <span>Choose your content</span></legend><div className="range-options"><button aria-pressed={state.range === 'recent'} onClick={() => update({ range: 'recent' })}><strong>RECENT CONTENT</strong><span>This instructional week + the previous week</span></button><button aria-pressed={state.range === 'all'} onClick={() => update({ range: 'all' })}><strong>EVERYTHING TAUGHT SO FAR</strong><span>All available content through the selected date</span></button></div></fieldset>
-      <div className="setup-bottom"><label>Content through <input aria-label="Content through" type="date" max={localDate()} value={state.asOf} onChange={e => { if (e.target.value && e.target.value <= localDate()) update({ asOf: e.target.value }); }} /></label><p>Future content is always excluded.<br /><strong>{available} approved questions available</strong></p><button className="primary" disabled={!plan.complete} onClick={() => startGame()}>Start Game →</button></div>
-      {!!available && !plan.complete && <p className="content-notice" role="status">Classroom game not ready: {plan.matched}/30 tiles can be filled with unique approved questions. {state.contentSource !== 'drafts' && classroomBank.questions.length ? 'Additional supported content is needed in the missing pools; try Everything Taught So Far if Recent Content is selected.' : 'Review more questions or change the content range.'}</p>}
-      {!available && <div className="content-notice" role="status">No questions available for this selection. {bank.questions.length ? questions.every(q => q.reviewStatus !== 'approved') ? 'Generated questions are awaiting teacher review and approval in the local bank.' : 'Try another grade, date, or Everything Taught So Far.' : 'Add reviewed local questions to enable play.'}</div>}
+      <fieldset><legend>2 <span>Current + Review</span></legend><p className="pacing-note" data-testid="jeopardy-pacing-window">{pacingWindow ? <>Current = taught {shortDate(pacingWindow.start)} – {shortDate(pacingWindow.end)}. Review = taught before {shortDate(pacingWindow.start)}.</> : 'Choose a valid date.'} Subject columns use Current questions first, then Review; tiles from Review are tagged. The Review column uses Review questions and taught questions marked for review. Week-only evidence counts as taught on that week’s Friday.</p>
+        {!!available && !currentCount && <p className="content-notice" role="status">No Current questions yet for {gradeLabel(state.grade)} on this date. The board will use Review questions.</p>}</fieldset>
+      <div className="setup-bottom"><label>Teaching date <input aria-label="Teaching date" type="date" max={schoolDate()} value={state.asOf} onChange={e => { if (e.target.value && e.target.value <= schoolDate()) update({ asOf: e.target.value }); }} /></label><p>Content taught after this date is always excluded.<br /><strong>{available} approved questions available · {currentCount} Current · {available - currentCount} Review</strong></p><button className="primary" disabled={!plan.complete} onClick={() => startGame(state.grade, 'mixed')}>Start Game →</button></div>
+      {!!available && !plan.complete && <p className="content-notice" role="status">Classroom game not ready: {plan.matched}/30 tiles can be filled with unique approved questions. {state.contentSource !== 'drafts' && classroomBank.questions.length ? 'Additional supported content is needed in the missing pools.' : 'Review more questions or change the content range.'}</p>}
+      {!available && <div className="content-notice" role="status">No questions available for this selection. {bank.questions.length ? questions.every(q => q.reviewStatus !== 'approved') ? 'Generated questions are awaiting teacher review and approval in the local bank.' : 'Try another grade or teaching date.' : 'Add reviewed local questions to enable play.'}</div>}
       {!plan.complete && classroomBank.questions.length > 0 && <p className="content-notice">{plan.matched}/30 tiles supported. Missing pools: {[...new Set(tiles.filter(t => !plan.assignments[t.id]).map(t => `${t.category} ${t.difficulty}-point`))].join(' · ')}. Unsupported slots remain unfilled.</p>}
       <p className="hint">Students answer aloud, on paper, or with classroom response tools. You lead the game.</p>
     </main>}
     {active && blockedBoard && <p className="content-notice" role="alert">This board needs a new eligibility check because approval or curriculum data changed. Go Home to Question Review, or reset if a complete approved board is available.</p>}
     {screen === 'board' && !blockedBoard && <main className="board-screen">
-      <div className="board-heading"><div><div className="eyebrow">JEOPARDY</div><h1 ref={title} tabIndex={-1}>Choose your challenge.</h1></div><p>{state.range === 'recent' ? 'Recent content' : 'Everything taught so far'} · Through {state.asOf}<br /><strong>{state.usedTiles.length} / 30 tiles played</strong></p></div>
+      <div className="board-heading"><div><div className="eyebrow">JEOPARDY</div><h1 ref={title} tabIndex={-1}>Choose your challenge.</h1></div><p>{state.range === 'mixed' ? `Current + Review · Teaching date ${state.asOf}` : `${state.range === 'recent' ? 'Recent content' : 'Everything taught so far'} · Through ${state.asOf}`}<br /><strong>{state.usedTiles.length} / 30 tiles played</strong></p></div>
       <div className="board">{categories.map(category => <section className="board-column" key={category} aria-label={category}><h2>{category.toUpperCase()}</h2>{tiles.filter(t => t.category === category).map(tile => {
         const used = state.usedTiles.includes(tile.id), count = state.assignments ? engine.getQuestions({ ...filters, subject: category, difficulty: tile.difficulty }).filter(q => q.id === state.assignments?.[tile.id]).length : engine.getAvailableQuestionCount({ ...filters, subject: category, difficulty: tile.difficulty });
-        return <button className={`tile ${used ? 'used' : ''}`} key={tile.id} disabled={used || !count} aria-label={`${category} ${tile.difficulty} ${tile.difficulty === 1 ? 'point' : 'points'} opportunity ${Number(tile.id.slice(-1)) + 1}${used ? ' used' : !count ? ' no questions available' : ''}`} onClick={() => choose(tile)}>{used ? <span>✓ USED</span> : !count ? <span>NO QUESTIONS<br />AVAILABLE</span> : <><strong>{tile.difficulty}</strong><span>{tile.difficulty === 1 ? 'POINT' : 'POINTS'}</span></>}</button>;
+        const fromReview = reviewTag(state.assignments?.[tile.id], category);
+        return <button className={`tile ${used ? 'used' : ''}`} key={tile.id} disabled={used || !count} aria-label={`${category} ${tile.difficulty} ${tile.difficulty === 1 ? 'point' : 'points'} opportunity ${Number(tile.id.slice(-1)) + 1}${fromReview ? ' Review' : ''}${used ? ' used' : !count ? ' no questions available' : ''}`} onClick={() => choose(tile)}>{used ? <span>✓ USED</span> : !count ? <span>NO QUESTIONS<br />AVAILABLE</span> : <><strong>{tile.difficulty}</strong><span>{tile.difficulty === 1 ? 'POINT' : 'POINTS'}</span></>}{fromReview && !used && <small className="tile-review-tag">Review</small>}</button>;
       })}</section>)}</div>
-      <footer>{state.usedTiles.length === 30 || !tiles.some(t => !state.usedTiles.includes(t.id) && engine.getAvailableQuestionCount({ ...filters, subject: t.category, difficulty: t.difficulty })) ? 'All available challenges completed. Reset for a new class or change your selection.' : 'Choose a tile · Answer together · Reveal & discuss'}<span>Review uses marked review questions or earlier content.</span></footer>
+      <footer>{state.usedTiles.length === 30 || !tiles.some(t => !state.usedTiles.includes(t.id) && engine.getAvailableQuestionCount({ ...filters, subject: t.category, difficulty: t.difficulty })) ? 'All available challenges completed. Reset for a new class or change your selection.' : 'Choose a tile · Answer together · Reveal & discuss'}<span>{state.range === 'mixed' ? 'Subjects use Current first, then Review (tagged). The Review column uses Review and taught review-marked questions.' : 'Review uses marked review questions or earlier content.'}</span></footer>
     </main>}
     {screen === 'question' && !blockedBoard && current && <main className="question-screen">
-      <div className="question-meta"><span>{state.current?.category.toUpperCase()}{state.current?.category === 'Review' ? ` · ${current.subject.toUpperCase()}` : ''}</span><span className="points">{current.difficulty} {current.difficulty === 1 ? 'POINT' : 'POINTS'}</span></div>
+      <div className="question-meta"><span>{state.current?.category.toUpperCase()}{state.current?.category === 'Review' ? ` · ${current.subject.toUpperCase()}` : reviewTag(current.id, state.current?.category) ? ' · REVIEW' : ''}</span><span className="points">{current.difficulty} {current.difficulty === 1 ? 'POINT' : 'POINTS'}</span></div>
       <div className="read-note">{state.grade === 'K' ? 'TEACHER READS QUESTION ALOUD' : state.grade === '1' ? 'TEACHER MAY READ QUESTION ALOUD' : current.teacherRead ? 'TEACHER READS QUESTION ALOUD' : 'THINK IT THROUGH. SHARE YOUR ANSWER.'}</div>
       {current.teacherSetup && <p className="teacher-setup">Teacher preparation: {current.teacherSetup}</p>}
       <div className={`question-content ${current.question.length > 180 ? 'long' : ''}`}><h1 ref={title} tabIndex={-1}>{current.question}</h1>{!state.current?.revealed && current.choices && <div className="choices">{current.choices.map((c, i) => <div key={i}><b>{String.fromCharCode(65 + i)}</b> {c}</div>)}</div>}

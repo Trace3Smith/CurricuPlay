@@ -90,23 +90,36 @@ test('Unmodified app clearly reports missing source content and prevents startin
     await page.getByRole('button', { name: grade, exact: true }).click(); await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
   }
 });
-test('Ranges, future exclusion, empty pools and exhausted overlapping Review pool', async ({ page }) => {
+test('Current + Review counts, teaching date, and future exclusion', async ({ page }) => {
+  const q = fixture[0];
+  await page.clock.setFixedTime(new Date('2026-10-20T16:00:00Z'));
+  await page.route('**/src/data/questions.json*', route => route.fulfill({ contentType: 'application/javascript', body: `export default ${JSON.stringify([{ ...q, id: 'review', weekIntroduced: '2026-08-17' }, { ...q, id: 'current', weekIntroduced: '2026-09-21' }, { ...q, id: 'future', weekIntroduced: '2026-10-26' }])}` }));
+  await page.goto('/games'); await page.getByRole('button', { name: /JEOPARDY/ }).click();
+  await expect(page.getByLabel('Teaching date')).toHaveValue('2026-10-20');
+  await expect(page.getByText('2 approved questions available · 1 Current · 1 Review')).toBeVisible();
+  await expect(page.getByTestId('jeopardy-pacing-window')).toContainText('Current = taught Sept 21 – Oct 20. Review = taught before Sept 21.');
+  await expect(page.getByRole('button', { name: /RECENT CONTENT|EVERYTHING TAUGHT/ })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
+  await page.getByLabel('Teaching date').fill('2026-09-24');
+  await expect(page.getByText('1 approved questions available · 0 Current · 1 Review')).toBeVisible();
+  await expect(page.getByText('No Current questions yet for Kindergarten on this date. The board will use Review questions.')).toBeVisible();
+  await page.getByLabel('Teaching date').fill('2026-08-20');
+  await expect(page.getByText(/No questions available for this selection/)).toBeVisible();
+});
+test('A legacy saved Recent Content game keeps its range, recovers, and exhausts its overlapping Review pool', async ({ page }) => {
   const q = fixture[0];
   await inject(page, [{ ...q, id: 'old', weekIntroduced: '2026-08-17' }, { ...q, id: 'recent' }, { ...q, id: 'future', weekIntroduced: '2026-09-14' }]);
-  await page.goto('/games'); await page.getByRole('button', { name: /JEOPARDY/ }).click();
-  await expect(page.getByText('1 approved questions available')).toBeVisible();
-  await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
-  await expect(page.getByText('2 approved questions available')).toBeVisible();
-  await page.getByRole('button', { name: /RECENT CONTENT/ }).click();
-  await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
-  // Exercise exhausted-pool recovery in a legacy saved partial game.
-  await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('curricuplay.game.v1')!); localStorage.setItem('curricuplay.game.v1', JSON.stringify({ ...s, screen: 'board', selectedGame: 'jeopardy' })); });
-  await page.reload();
+  const legacy = { version: 1, screen: 'board', selectedGame: 'jeopardy', grade: 'K', range: 'recent', asOf: '2026-09-13', usedQuestionIds: [], usedTiles: [], current: null };
+  await page.addInitScript(s => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem('curricuplay.game.v1', s); sessionStorage.setItem('seeded', '1'); } }, JSON.stringify(legacy));
+  await page.goto('/games/jeopardy');
+  await expect(page.getByText(/Recent content · Through 2026-09-13/)).toBeVisible();
   await expect(page.getByRole('button', { name: /Math.*no questions available/ }).first()).toBeDisabled();
   await page.getByRole('button', { name: 'Literacy 1 point opportunity 1', exact: true }).click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('curricuplay.game.v1')!).current.questionId)).toBe('recent');
   await page.getByRole('button', { name: 'Reveal Answer' }).click(); await page.getByRole('button', { name: 'Back to Board' }).click();
   await expect(page.getByRole('button', { name: /Review.*no questions available/ })).toHaveCount(6);
   await expect(page.getByText(/All available challenges completed/)).toBeVisible();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('curricuplay.game.v1')!).range)).toBe('recent');
 });
 test('Engine random selection, filters, tracking and invalid-bank rejection', async ({ page }) => {
   await inject(page); await page.goto('/games');

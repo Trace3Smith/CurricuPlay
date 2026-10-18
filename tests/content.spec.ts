@@ -29,7 +29,6 @@ test('Every self-contained question renders and reveals at 1920 × 1080 without 
     await page.goto('/games'); await page.evaluate(() => localStorage.clear()); await page.reload();
     await page.getByRole('button', { name: /JEOPARDY/ }).click();
     await page.getByRole('button', { name: grade === 'K' ? 'Kindergarten' : `${grade}${grade==='1'?'st':grade==='2'?'nd':grade==='3'?'rd':'th'} Grade`, exact: true }).click();
-    await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
     await expect(page.getByText(`${batch.length} approved questions available`)).toBeVisible();
     await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled();
     // Legacy partial-board fixture is only for rendering every draft, never a classroom launch.
@@ -105,7 +104,6 @@ test('Material-safe real drafts support a Kindergarten full board; other grades 
     await page.goto('/games'); await page.evaluate(() => localStorage.clear()); await page.reload();
     await page.getByRole('button', { name: /JEOPARDY/ }).click();
     await page.getByRole('button', { name: grade === 'K' ? 'Kindergarten' : `${grade}${grade==='1'?'st':grade==='2'?'nd':grade==='3'?'rd':'th'} Grade`, exact: true }).click();
-    await page.getByRole('button', { name: /EVERYTHING TAUGHT SO FAR/ }).click();
     const eligible = questions.filter(q => q.grade === grade && !q.requiresExternalClassroomMaterial).length;
     await expect(page.getByText(`${eligible} approved questions available`)).toBeVisible();
     if (grade !== 'K') { await expect(page.getByRole('button', { name: 'Start Game' })).toBeDisabled(); continue; }

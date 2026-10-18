@@ -1,5 +1,6 @@
-import data from '../data/curriculum.json';
+import data from '../data/curriculum.json' with { type: 'json' };
 import type { CurriculumEntry, ContentRange, Grade } from '../types';
+import { schoolDate } from '../curriculum/eligibility';
 export function localDate(date = new Date()): string {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
@@ -12,7 +13,7 @@ export function recentStart(asOf: string) {
   return localDate(date);
 }
 export function inRange(week: string, range: ContentRange, asOf: string): boolean {
-  const cutoff = asOf < localDate() ? asOf : localDate();
+  const today = schoolDate(), cutoff = asOf < today ? asOf : today;
   return validDate(week) && week <= cutoff && (range === 'all' || week >= recentStart(cutoff));
 }
 export function getCurriculum(grade: Grade, range: ContentRange, asOf: string) {

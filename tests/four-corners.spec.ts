@@ -174,7 +174,7 @@ test('Four Corners queue redistributes scarce subjects, supports single subjects
     const scarce = pool.filter((q: any) => q.subject !== 'Science' || q.id === pool[0].id);
     const ids = e.buildQueue(scarce, 10, () => 0.42);
     const qs = ids.map((id: string) => pool.find((q: any) => q.id === id));
-    return { beforeSchool: e.eligible('K', 'Mixed Academic', '2026-07-01').length, ids, counts: ['Science', 'Social Studies', 'Literacy'].map(s => qs.filter((q: any) => q.subject === s).length), short: e.buildQueue(pool, 100), single: e.buildQueue(pool.filter((q: any) => q.subject === 'Science'), 5).length };
+    return { beforeSchool: e.eligible('K', 'Mixed Academic', 'mixed', '2026-07-01').length, ids, counts: ['Science', 'Social Studies', 'Literacy'].map(s => qs.filter((q: any) => q.subject === s).length), short: e.buildQueue(pool, 100), single: e.buildQueue(pool.filter((q: any) => q.subject === 'Science'), 5).length };
   });
   expect(result.beforeSchool).toBe(0); expect(new Set(result.ids).size).toBe(10); expect(result.counts[0]).toBe(1); expect(result.counts.slice(1).sort()).toEqual([4, 5]); expect(result.short).toEqual([]); expect(result.single).toBe(5);
 });
