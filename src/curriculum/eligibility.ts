@@ -1,8 +1,10 @@
 import { grades, type Grade } from '../types';
 
+/** Fixed default from before rolling pacing; kept for tests and historical comparisons. */
 export const INITIAL_CUTOFF = '2026-10-09';
 export const SCHOOL_TIMEZONE = 'America/New_York';
-export const contentModes = ['current', 'previous', 'mixed', 'general'] as const;
+/** 'previous' is the legacy week-based mode; it stays valid so older saved games keep loading. */
+export const contentModes = ['current', 'previous', 'review', 'mixed', 'general'] as const;
 export type ContentMode = typeof contentModes[number];
 export interface InstructionPeriod { start: string; end: string }
 /** A schedule is evidence of planned instruction, never completion or mastery. */
@@ -56,7 +58,7 @@ export function classification(e: CurriculumEvidence, selection: CurriculumSelec
   const period = currentPeriod(selection.cutoff)!;
   return e.periods.some(p => p.start <= period.end && p.end >= period.start && p.start <= selection.cutoff) ? 'current' : 'earlier';
 }
-/** Deterministic, balanced round-robin selection; games may shuffle its result. */
+/** Legacy week-based selection (current week vs. earlier weeks); rolling pacing lives in ./pacing. */
 export function selectCurriculum<T extends { id: string; grade: Grade; curriculum?: CurriculumEvidence }>(items: readonly T[], s: CurriculumSelection): T[] {
   if (!validSchoolDate(s.cutoff) || !grades.includes(s.grade) || !contentModes.includes(s.mode)) return [];
   if (s.mode === 'general') return items.filter(w => w.grade === s.grade && (!w.curriculum || w.curriculum.category === 'general'));

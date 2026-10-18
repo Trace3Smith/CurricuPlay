@@ -31,10 +31,10 @@ test('dates and school timezone are deterministic and future dates are explicit'
   expect(selectBank(config('5','mixed','2026-11-13')).some(w=>w.word==='conductor')).toBe(true);
   expect(selectBank(config('2','mixed','invalid'))).toEqual([]);
 });
-test('all four modes distinguish current, earlier, review and unaligned general practice', () => {
-  const current=selectBank(config('2','current')), earlier=selectBank(config('2','previous')), mixed=selectBank(config()), general=selectBank(config('2','general'));
-  expect(current).toHaveLength(12); expect(earlier).toHaveLength(28); expect(mixed).toHaveLength(40);
-  expect(new Set([...current,...earlier].map(w=>w.id)).size).toBe(40);
+test('rolling modes distinguish current, review and unaligned general practice; legacy previous still selects', () => {
+  const current=selectBank(config('2','current')), review=selectBank(config('2','review')), earlier=selectBank(config('2','previous')), mixed=selectBank(config()), general=selectBank(config('2','general'));
+  expect(current).toHaveLength(24); expect(review).toHaveLength(16); expect(mixed).toHaveLength(40); expect(earlier).toHaveLength(28);
+  expect(new Set([...current,...review].map(w=>w.id)).size).toBe(40);
   expect(general.every(w=>!w.curriculum)).toBe(true);
   expect(selectBank(config('K','current'))).toEqual([]);
   const prior={...config('5'),priorGrade:true};
@@ -105,8 +105,8 @@ test('exhaustion allows explicitly reviewed additions at original cutoff and rej
   expect(repeatCycle(s).flow!.cycle).toBe(2);
   expect(extendGame(s,selectBank(config('2','mixed','2026-11-13')),options(config('2','mixed','2026-11-13')),now)).toBe(s);
   const expanded=extendGame(s,selectBank(config()),options(),now,()=>.99);
-  expect(expanded.words).toHaveLength(40);expect(expanded.index).toBe(12);expect(remaining(expanded)).toBe(28);expect(isBeeState(expanded)).toBe(true);
-  expect(summarizeSession(expanded.session).teams[1].score).toBe(12);
+  expect(expanded.words).toHaveLength(40);expect(expanded.index).toBe(24);expect(remaining(expanded)).toBe(16);expect(isBeeState(expanded)).toBe(true);
+  expect(summarizeSession(expanded.session).teams[1].score).toBe(24);
   expect(committed(expanded)).toBe(false);
 });
 test('paced persistence rejects corrupt cycles, snapshots and future metadata without touching old records', () => {

@@ -1,13 +1,18 @@
 import raw from '../../data/spelling-bee-pacing.json' with { type: 'json' };
 import general from '../../data/spelling-bee-general.json' with { type: 'json' };
 import { selectCurriculum, type CurriculumSelection } from '../../curriculum/eligibility';
+import { selectPaced } from '../../curriculum/pacing';
 import { isWord, type WordEntry } from './words';
 
 // Fail closed on malformed bundled content; the validator reports the offending row.
 export const curriculumBank: WordEntry[] = (raw as unknown[]).every(isWord) ? raw as WordEntry[] : [];
 export const generalBank: WordEntry[] = (general as unknown[]).every(isWord) ? general as WordEntry[] : [];
 export function selectBank(selection: CurriculumSelection): WordEntry[] {
-  const selected = selectCurriculum(selection.mode === 'general' ? generalBank : curriculumBank, selection);
+  const { grade, cutoff, mode, priorGrade } = selection;
+  // Rolling one-month pacing; the week-based 'previous' mode remains for older saved setups.
+  const selected = mode === 'current' || mode === 'review' || mode === 'mixed'
+    ? selectPaced(curriculumBank, { grade, today: cutoff, mode, priorGrade })
+    : selectCurriculum(mode === 'general' ? generalBank : curriculumBank, selection);
   // The same spelling appearing in two grades is one prompt, favor current-grade evidence.
   const unique = new Map<string, WordEntry>();
   for (const word of selected) {

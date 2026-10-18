@@ -2,6 +2,7 @@ import { freshTimer, isRoundTimer, timerFinished, advanceTimer, endTimer, startT
 import { commitQuestion, createSession, endSession, isGameSession, type GameSession } from '../../assessment/engine';
 import { createCornerTeams } from '../four-corners/teams';
 import { eligible, classification, contentModes, validSchoolDate, type CurriculumSelection } from '../../curriculum/eligibility';
+import { newestFirst, pacedKind, type PacedSelection } from '../../curriculum/pacing';
 import { answerFor, isWord, startingHints, difficulties, nextHintIndex, validateWords, type Difficulty, type WordEntry } from './words';
 import { grades, type Grade } from '../../types';
 
@@ -92,15 +93,20 @@ function permitted(w: WordEntry, s: CurriculumSelection, allowGeneral: boolean):
   if (w.grade !== s.grade && !(rank >= 2 && s.priorGrade && grades.indexOf(w.grade) === rank - 1)) return false;
   return w.reviewStatus === 'approved' && (w.curriculum ? eligible(w.curriculum, s.cutoff) : allowGeneral && w.grade === s.grade);
 }
+const paced = (s: CurriculumSelection): PacedSelection | null =>
+  s.mode === 'current' || s.mode === 'review' || s.mode === 'mixed' ? { grade: s.grade, today: s.cutoff, mode: s.mode, priorGrade: s.priorGrade } : null;
 function beginPacedGame(words: WordEntry[], grade: Grade, difficulty: Difficulty, id: string, now: string, random: () => number, options: StartOptions): BeeState | null {
-  const sel = options.selection;
+  const sel = options.selection, rolling = paced(sel);
+  const kind = (w: WordEntry) => rolling ? pacedKind(w.curriculum, rolling) : classification(w.curriculum!, sel);
   if (!options.reviewed || !validSelection(sel) || sel.grade !== grade || !difficulties.includes(difficulty) || ![0, 2, 3].includes(options.choices) || typeof options.untilStop !== 'boolean' || validateWords(words).errors.length || !words.length ||
       words.some(w => !permitted(w, sel, sel.mode === 'general') || (w.curriculum && sel.mode === 'general') ||
-        (sel.mode === 'current' && classification(w.curriculum!, sel) !== 'current') ||
+        // Rolling modes never admit items taught after the chosen date.
+        (rolling && !kind(w)) || (sel.mode === 'current' && kind(w) !== 'current') || (sel.mode === 'review' && kind(w) !== 'review') ||
         (sel.mode === 'previous' && classification(w.curriculum!, sel) !== 'earlier'))) return null;
   const pool = structuredClone(words);
-  // Shuffle within strata and interleave them, keeping Current + Review balanced.
-  const groups = sel.mode === 'mixed' ? ['current', 'earlier', 'prior-grade'].map(kind => shuffle(pool.filter(w => w.curriculum && classification(w.curriculum, sel) === kind), random)) : [shuffle(pool, random)];
+  // Current plays newest-taught first (random within a day); Current + Review interleaves strata.
+  const current = newestFirst(shuffle(pool.filter(w => kind(w) === 'current'), random));
+  const groups = sel.mode === 'mixed' ? [current, ...['review', 'prior-grade'].map(k => shuffle(pool.filter(w => kind(w) === k), random))] : sel.mode === 'current' ? [current] : [shuffle(pool, random)];
   const order = Array.from({ length: Math.max(...groups.map(g => g.length)) }, (_, i) => groups.flatMap(g => g[i] ? [g[i].id] : [])).flat();
   const s: BeeState = { version: 2, screen: 'play', grade, difficulty, words: pool, index: 0, revealed: false, correctTeamIds: [], ...(grade === 'K' ? {} : { timer: freshTimer() }),
     flow: { selection: { ...sel }, untilStop: options.untilStop, cycle: 1, order, offset: 0, generalApproved: sel.mode === 'general', choices: options.choices },
