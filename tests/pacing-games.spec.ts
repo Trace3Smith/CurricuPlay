@@ -5,8 +5,8 @@ import { bank as cornerBank, eligible, mixes } from '../src/games/four-corners/e
 import { tiles } from '../src/games/jeopardy/board';
 import { grades, subjects, type Filters, type PacedRange, type Question } from '../src/types';
 import type { Decisions } from '../src/services/questionReview';
+import { planningAhead, PLANNING_AHEAD } from '../src/curriculum/pacing';
 
-const FAR_FUTURE = '2099-12-31'; // Lifts the "never after today" clamp so every calendar day can be checked.
 function days(from: string, to: string) { const out: string[] = []; for (let d = from; d <= to; d = new Date(Date.parse(d) + 864e5).toISOString().slice(0, 10)) out.push(d); return out; }
 const year = days('2026-08-01', '2027-06-30');
 const veto = (ids: string[], status: 'rejected' | 'needs-edit' | 'pending'): Decisions => Object.fromEntries(ids.map(id => [id, { status, original: '{}', question: '', answer: '', reviewedAt: '' }]));
@@ -17,7 +17,7 @@ const slots = (grade: Filters['grade'], asOf: string) => tiles.map(t => ({ id: t
 test('no question is Current or Review before its taught date on any day of the school year, in either game', () => {
   const violations: string[] = [];
   for (const q of [...classroomBank.questions, ...cornerBank]) for (const date of year) {
-    const status = questionStatus(q, date, FAR_FUTURE), taught = questionTaughtDate(q);
+    const status = questionStatus(q, date), taught = questionTaughtDate(q);
     if (!taught || (status && taught > date) || (!status && taught <= date)) violations.push(`${q.id} ${date} ${status}`);
   }
   expect(violations).toEqual([]);
@@ -44,16 +44,23 @@ test('Sept 20 boundary: Current through Oct 19, Review from Oct 20; weekly items
   const base = classroomBank.questions[0];
   const exact: Question = { ...base, weekIntroduced: '2026-09-14', alignedWeeks: undefined, taughtOn: '2026-09-20' };
   expect(questionTaughtDate(exact)).toBe('2026-09-20');
-  expect(questionStatus(exact, '2026-09-19', FAR_FUTURE)).toBeNull();
-  expect(questionStatus(exact, '2026-09-20', FAR_FUTURE)).toBe('current');
-  expect(questionStatus(exact, '2026-10-19', FAR_FUTURE)).toBe('current');
-  expect(questionStatus(exact, '2026-10-20', FAR_FUTURE)).toBe('review');
+  expect(questionStatus(exact, '2026-09-19')).toBeNull();
+  expect(questionStatus(exact, '2026-09-20')).toBe('current');
+  expect(questionStatus(exact, '2026-10-19')).toBe('current');
+  expect(questionStatus(exact, '2026-10-20')).toBe('review');
   const weekly: Question = { ...base, weekIntroduced: '2026-09-14', alignedWeeks: undefined, taughtOn: undefined };
   expect(questionTaughtDate(weekly)).toBe('2026-09-18');
   // A question aligned to several weeks counts as taught at the end of its latest aligned week.
   expect(questionTaughtDate({ ...weekly, weekIntroduced: '2026-08-10', alignedWeeks: ['2026-08-10', '2026-09-07'] })).toBe('2026-09-11');
-  // Never later than today in America/New_York, even if a later teaching date is requested.
-  expect(questionStatus(weekly, '2026-10-19', '2026-09-17')).toBeNull();
+  // Planning ahead: a later teaching date includes content not taught yet, still never past that date.
+  const later: Question = { ...weekly, id: 'later', grade: 'K', reviewStatus: 'approved', weekIntroduced: '2026-11-09' };
+  const engine = createQuestionEngine([later]);
+  expect(engine.getQuestions({ grade: 'K', range: 'mixed', asOf: '2026-11-12', unused: false })).toEqual([]);
+  expect(engine.getQuestions({ grade: 'K', range: 'current', asOf: '2026-11-13', unused: false }).map(q => q.id)).toEqual(['later']);
+  expect(planningAhead('2026-10-19', '2026-10-18')).toBe(true);
+  expect(planningAhead('2026-10-18', '2026-10-18')).toBe(false);
+  expect(planningAhead('not-a-date', '2026-10-18')).toBe(false);
+  expect(PLANNING_AHEAD).toBe('Planning ahead: this includes content not taught yet.');
 });
 
 test('Jeopardy boards stay complete when Current is empty and prefer Current where it exists', () => {
@@ -104,6 +111,11 @@ test('Jeopardy board on a date with no Current questions is complete, tagged Rev
   await expect(page.getByLabel('Teaching date')).toHaveValue('2026-10-18');
   await expect(page.getByText('No Current questions yet for 3rd Grade on this date. The board will use Review questions.')).toBeVisible();
   await expect(page.getByTestId('jeopardy-pacing-window')).toContainText('Current = taught Sept 19 – Oct 18');
+  await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
+  await page.getByLabel('Teaching date').fill('2026-11-20');
+  await expect(page.getByTestId('planning-ahead')).toHaveText('Planning ahead: this includes content not taught yet.');
+  await page.getByLabel('Teaching date').fill('2026-10-18');
+  await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
   await page.getByRole('button', { name: 'Start Game' }).click();
   await expect(page.locator('.tile:not([disabled])')).toHaveCount(30);
   for (const subject of subjects) await expect(page.getByRole('region', { name: subject, exact: true }).locator('.tile-review-tag')).toHaveCount(6);
@@ -134,6 +146,12 @@ test('Four Corners offers Current, Review, and Current + Review with the teachin
   for (const label of ['Current', 'Review', 'Current + Review']) await expect(page.getByRole('button', { name: label, exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Current + Review', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByTestId('fc-pacing-window')).toContainText('Current = taught Sept 19 – Oct 18');
+  await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
+  await page.getByLabel('Teaching date').fill('2026-11-20');
+  await expect(page.getByTestId('planning-ahead')).toHaveText('Planning ahead: this includes content not taught yet.');
+  await expect(page.getByTestId('fc-pacing-window')).toContainText('Current = taught Oct 21 – Nov 20');
+  await page.getByLabel('Teaching date').fill('2026-10-18');
+  await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
   await page.getByRole('button', { name: 'Current', exact: true }).click();
   await expect(page.getByText('0 eligible unique questions')).toBeVisible();
   await expect(page.getByText('No Current questions yet for Kindergarten on this date. Choose Review or Current + Review.')).toBeVisible();

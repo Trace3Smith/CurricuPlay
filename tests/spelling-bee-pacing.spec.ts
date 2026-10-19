@@ -111,8 +111,13 @@ test('date defaults to today in America/New_York and explains the Current window
   await page.clock.setSystemTime(new Date('2026-10-18T02:30:00Z'));
   await page.goto('/games/spelling-bee');await expect(page.getByLabel('Teaching date')).toHaveValue('2026-10-17');
   await expect(page.getByTestId('bee-pacing-window')).toContainText('Current = taught Sept 18 – Oct 17 (newest first). Review = taught before Sept 18.');
+  await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
   await page.getByLabel('Teaching date').fill('2026-10-19');await expect(page.getByTestId('bee-pacing-window')).toContainText('Current = taught Sept 20 – Oct 19');
+  await expect(page.getByTestId('planning-ahead')).toHaveText('Planning ahead: this includes content not taught yet.');
+  await page.getByLabel('Grade',{exact:true}).selectOption('5');await page.getByLabel('Content mode').selectOption('current');await page.getByLabel('Teaching date').fill('2026-11-13');
+  await page.getByText('Teacher: preview prompts and evidence',{exact:true}).click();await expect(page.locator('.bee-bank-preview')).toContainText('CONDUCTOR');
   await page.getByRole('button',{name:'Use today in America/New_York'}).click();await expect(page.getByLabel('Teaching date')).toHaveValue('2026-10-17');
+  await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
 });
 test('date defaults to the real current day when the clock is not pinned',async({page})=>{
   await page.goto('/games/spelling-bee');

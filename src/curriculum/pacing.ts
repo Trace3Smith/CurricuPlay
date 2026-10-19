@@ -1,5 +1,5 @@
 import { grades, type Grade } from '../types';
-import { isEvidence, validSchoolDate, type CurriculumEvidence } from './eligibility';
+import { isEvidence, schoolDate, validSchoolDate, type CurriculumEvidence } from './eligibility';
 
 /**
  * Rolling one-month pacing shared by every game. Dates are school-calendar days (YYYY-MM-DD);
@@ -69,6 +69,10 @@ export function currentWindow(today: string): { start: string; end: string } | n
   while (addMonths(start, 1) <= today) start = addDays(start, 1);
   return { start, end: today };
 }
+
+/** Teachers may plan with a later date; every game says so whenever the date is after today. */
+export const PLANNING_AHEAD = 'Planning ahead: this includes content not taught yet.';
+export const planningAhead = (date: string, today = schoolDate()) => validSchoolDate(date) && date > today;
 
 const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 export function shortDate(date: string): string {
