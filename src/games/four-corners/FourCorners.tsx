@@ -11,7 +11,7 @@ import { saveCompletedSession } from '../../assessment/storage';
 import { grades } from '../../types';
 import { bank, buildQueue, beginGame, advanceRound, finishEarly, isTeamMode, toggleCorrectTeam, eligible, freshState, gradeLabel, loadState, mixes, roundOptions, saveState, subjectLabel, validSession, contentLabels, type CornerState } from './engine';
 import { schoolDate } from '../../curriculum/eligibility';
-import { currentWindow, shortDate } from '../../curriculum/pacing';
+import { currentWindow, planningAhead, PLANNING_AHEAD, shortDate } from '../../curriculum/pacing';
 import type { PacedRange } from '../../types';
 import './four-corners.css';
 
@@ -93,9 +93,10 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
       <fieldset><legend>2 <span>Select question mix</span></legend><div className="fc-mixes">{mixes.map(mix => <button key={mix} aria-pressed={state.mix === mix} onClick={() => update({ mix })}>{mix}</button>)}</div></fieldset>
       <fieldset><legend>3 <span>Select content</span></legend><div className="fc-mixes">{(Object.keys(contentLabels) as PacedRange[]).map(c => <button key={c} aria-pressed={content === c} onClick={() => update({ content: c })}>{contentLabels[c]}</button>)}</div>
         <p className="pacing-note" data-testid="fc-pacing-window">{pacingWindow ? <>Current = taught {shortDate(pacingWindow.start)} – {shortDate(pacingWindow.end)}. Review = taught before {shortDate(pacingWindow.start)}.</> : 'Choose a valid date.'} Week-only evidence counts as taught on that week’s Friday.</p>
+        {planningAhead(asOf) && <p className="content-notice" role="status" data-testid="planning-ahead">{PLANNING_AHEAD}</p>}
         {!currentCount && <p className="content-notice" role="status">No Current questions yet for {gradeLabel(state.grade)} on this date.{content !== 'current' ? ' Review questions are available.' : ' Choose Review or Current + Review.'}</p>}</fieldset>
       <fieldset><legend>4 <span>Select rounds</span></legend><div className="fc-rounds">{roundOptions.map(rounds => <button key={rounds} disabled={pool.length < (rounds === 'all' ? 1 : rounds)} aria-pressed={state.rounds === rounds} onClick={() => update({ rounds })}>{rounds === 'all' ? 'Play Until I Stop' : `${rounds} rounds`}{rounds !== 'all' && pool.length < rounds && <small>Needs {rounds - pool.length} more questions</small>}</button>)}</div></fieldset>
-      <div className="setup-bottom"><label>Teaching date <input aria-label="Teaching date" type="date" max={schoolDate()} value={asOf} onChange={e => { if (e.target.value && e.target.value <= schoolDate()) update({ asOf: e.target.value }); }} /></label><p><strong>{pool.length} eligible unique questions</strong><br />{contentLabels[content]} · Content taught after this date is always excluded.</p><button className="primary" disabled={pool.length < required} onClick={start}>Start Game →</button></div>
+      <div className="setup-bottom"><label>Teaching date <input aria-label="Teaching date" type="date" value={asOf} onChange={e => { if (e.target.value) update({ asOf: e.target.value }); }} /></label><p><strong>{pool.length} eligible unique questions</strong><br />{contentLabels[content]} · Content taught after this date is always excluded.</p><button className="primary" disabled={pool.length < required} onClick={start}>Start Game →</button></div>
       {pool.length < required && <p className="content-notice" role="status">{state.mix} has {pool.length} supported questions for {gradeLabel(state.grade)}; {required} {required === 1 ? 'is' : 'are'} needed. {state.mix !== 'Mixed Academic' ? 'Choose Mixed Academic for a balanced game.' : 'Select an available round count.'}</p>}
     </main>}
     {active && teamMode && <div className="fc-scoreboard" aria-label="Live scoreboard">{assessment?.teams.map(t => <span key={t.id} data-testid={`score-${t.id}`}><TeamName team={t} /> <b>{t.score + ((state.correctTeamIds ?? []).includes(t.id) ? 1 : 0)}</b></span>)}<small>{state.revealed ? 'Round marks pending Next Question' : 'LOOK → THINK → RUN → REVEAL → SCORE → ROTATE → NEXT'}</small></div>}

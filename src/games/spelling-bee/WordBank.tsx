@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { grades, type Grade } from '../../types';
 import { schoolDate, validSchoolDate, type ContentMode, type CurriculumSelection } from '../../curriculum/eligibility';
-import { currentWindow, pacingStatus, shortDate, taughtDate } from '../../curriculum/pacing';
+import { currentWindow, pacingStatus, planningAhead, PLANNING_AHEAD, shortDate, taughtDate } from '../../curriculum/pacing';
 import { difficulties, displayedWord, parseWords, pictures, type Difficulty, type WordEntry } from './words';
 import { selectBank } from './bank';
 import { readLists, saveList } from './storage';
@@ -56,6 +56,7 @@ export default function WordBank({ onStart, fixed, onCancel }: {
         <label>Teaching date<input aria-label="Teaching date" type="date" disabled={!!fixed} value={cutoff} onChange={e => { setCutoff(e.target.value); resetReview(); }} /></label>
       </div>
       {!fixed && <button className="bee-small-button" onClick={() => { setCutoff(schoolDate()); resetReview(); }}>Use today in America/New_York</button>}
+      {planningAhead(cutoff) && <p role="status" data-testid="planning-ahead">{PLANNING_AHEAD}</p>}
       <label>Content mode<select aria-label="Content mode" value={mode} onChange={e => { setMode(e.target.value as ContentMode); resetReview(); }}>{Object.entries(modeNames).map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>
       {mode !== 'general' ? <p className="bee-muted" data-testid="bee-pacing-window">{range ? <>Current = taught {shortDate(range.start)} – {shortDate(range.end)} (newest first). Review = taught before {shortDate(range.start)}.</> : 'Choose a valid date.'} Week-only evidence counts as taught on that week’s Friday. Scheduled instruction, not confirmed completion; later items stay hidden.</p> : <label>Word bank<select aria-label="Word bank" value={selection} onChange={e => { setSelection(e.target.value); resetReview(); }}><option value="sample">Sample practice · not district vocabulary</option><option value="custom">Enter or paste a new list</option>{savedLists.lists.map(l => <option value={l.id} key={l.id}>{l.name}</option>)}</select></label>}
       {mode === 'mixed' && Number(grade) >= 2 && <label className="bee-check"><input type="checkbox" checked={priorGrade} onChange={e => { setPriorGrade(e.target.checked); resetReview(); }} />Include Prior-Grade Review (one grade earlier, same date)</label>}

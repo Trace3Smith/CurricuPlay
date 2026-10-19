@@ -1,7 +1,6 @@
 import rawQuestions from '../data/questions.json' with { type: 'json' };
 import { grades, subjects, type Filters, type PacedRange, type Question } from '../types';
 import { inRange, recentStart, validDate } from './curriculumService';
-import { schoolDate } from '../curriculum/eligibility';
 import { pacingStatus, weeksTaughtDate } from '../curriculum/pacing';
 export function validateQuestions(data: unknown): { questions: Question[]; errors: string[] } {
   const errors: string[] = [], questions: Question[] = [], ids = new Set<string>();
@@ -31,20 +30,17 @@ export const bank = validateQuestions(rawQuestions);
 export const familyOf = (q: Question) => q.templateParentId ?? q.id;
 export const isPaced = (range: Filters['range']): range is PacedRange => range === 'current' || range === 'review' || range === 'mixed';
 export const questionTaughtDate = (q: Question) => weeksTaughtDate(q.alignedWeeks ?? [q.weekIntroduced], q.taughtOn);
-/** Current/Review on the teaching date, never later than today in the school's timezone; null while untaught. */
-export function questionStatus(q: Question, asOf: string, today = schoolDate()) {
-  return pacingStatus(questionTaughtDate(q), asOf < today ? asOf : today);
-}
+/** Current/Review on the teaching date (which may be later than today when planning ahead); null while untaught. */
+export const questionStatus = (q: Question, asOf: string) => pacingStatus(questionTaughtDate(q), asOf);
 export function createQuestionEngine(questions: Question[], usedIds: string[] = []) {
   const used = new Set(usedIds);
   const getQuestions = (f: Filters) => {
-    const today = schoolDate();
     return questions.filter(q => {
       if (q.requiresExternalClassroomMaterial !== false || !(q.reviewStatus === 'approved' || (q.reviewStatus === undefined && !q.evidence)) || q.grade !== f.grade ||
         (f.difficulty && q.difficulty !== f.difficulty) || (f.unused !== false && used.has(q.id))) return false;
       if (isPaced(f.range)) {
         // A Review category draws on the Review pool plus already-taught questions marked for review.
-        const status = questionStatus(q, f.asOf, today);
+        const status = questionStatus(q, f.asOf);
         return !!status && (f.range === 'mixed' || status === f.range) &&
           (!f.subject || (f.subject === 'Review' ? status === 'review' || q.reviewQuestion === true : q.subject === f.subject));
       }

@@ -105,6 +105,13 @@ test('Current + Review counts, teaching date, and future exclusion', async ({ pa
   await expect(page.getByText('No Current questions yet for Kindergarten on this date. The board will use Review questions.')).toBeVisible();
   await page.getByLabel('Teaching date').fill('2026-08-20');
   await expect(page.getByText(/No questions available for this selection/)).toBeVisible();
+  await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
+  // Planning ahead: a later date includes content not taught yet and says so.
+  await page.getByLabel('Teaching date').fill('2026-11-02');
+  await expect(page.getByTestId('planning-ahead')).toHaveText('Planning ahead: this includes content not taught yet.');
+  await expect(page.getByText('3 approved questions available · 1 Current · 2 Review')).toBeVisible();
+  await page.getByLabel('Teaching date').fill('2026-10-29');
+  await expect(page.getByText('2 approved questions available · 0 Current · 2 Review')).toBeVisible();
 });
 test('A legacy saved Recent Content game keeps its range, recovers, and exhausts its overlapping Review pool', async ({ page }) => {
   const q = fixture[0];
