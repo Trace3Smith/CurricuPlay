@@ -1,6 +1,7 @@
 import TeamName from './TeamName';
 import { useState } from 'react';
 import { formatAccuracy, summarizeSession, type GameSession } from './engine';
+import { gameName } from './gameNames';
 import './assessment.css';
 
 /** Shared presentation: subjects and teams come from the session, never a fixed curriculum list. */
@@ -16,7 +17,7 @@ export default function AssessmentView({ session, live = false }: { session: Gam
   const insights = data.questions.filter(q => q.attempts > 0).sort((a, b) => a.percentage! - b.percentage!);
   return <section className="assessment-view">
     <h1>{live ? 'Live Assessment' : 'Session Report'}</h1>
-    <p className="assessment-context">{session.grade === 'K' ? 'Kindergarten' : `Grade ${session.grade}`} · {session.gameType === 'four-corners' ? 'Four Corners' : session.gameType} · {session.teams.length ? `${session.teams.length} teams` : 'Classic Mode'}</p>
+    <p className="assessment-context">{session.grade === 'K' ? 'Kindergarten' : `Grade ${session.grade}`} · {gameName(session.gameType)} · {session.teams.length ? `${session.teams.length} teams` : 'Classic Mode'}</p>
     <div className="assessment-metrics">
       <div><span>Overall class accuracy</span><strong data-testid="overall-accuracy">{formatAccuracy(data.overall)}</strong></div>
       <div><span>Questions completed</span><strong data-testid="completed-questions">{data.completedQuestions}</strong></div>

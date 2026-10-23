@@ -1,0 +1,410 @@
+{
+  "source": {
+    "capitals": "Each capital was checked against a page on that state's official government website (the URL on each state). Wikipedia and unofficial lists were not used.",
+    "regions": "U.S. Census Bureau regions: https://www2.census.gov/geo/docs/maps-data/maps/reg_div.txt",
+    "accessed": "2026-10-23"
+  },
+  "kind": "general-practice",
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "fips": "01",
+      "capital": "Montgomery",
+      "region": "South",
+      "source": "https://ahc.alabama.gov/AlabamaStateCapitolHistoryFacts.aspx"
+    },
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "fips": "02",
+      "capital": "Juneau",
+      "region": "West",
+      "source": "https://alaska.gov/kids/student.htm"
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "fips": "04",
+      "capital": "Phoenix",
+      "region": "West",
+      "source": "https://www.azleg.gov/location/"
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "fips": "05",
+      "capital": "Little Rock",
+      "region": "South",
+      "source": "https://www.sos.arkansas.gov/education/state-capitol-tour-information/"
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "fips": "06",
+      "capital": "Sacramento",
+      "region": "West",
+      "source": "https://capitolmuseum.ca.gov/about-the-capitol/"
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "fips": "08",
+      "capital": "Denver",
+      "region": "West",
+      "source": "https://capitol.colorado.gov/"
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "fips": "09",
+      "capital": "Hartford",
+      "region": "Northeast",
+      "source": "https://portal.ct.gov/about/state-symbols/the-state-capitol"
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "fips": "10",
+      "capital": "Dover",
+      "region": "South",
+      "source": "https://archives.delaware.gov/delaware-historical-markers/dover-35/"
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "fips": "12",
+      "capital": "Tallahassee",
+      "region": "South",
+      "source": "https://m.flsenate.gov/directions"
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "fips": "13",
+      "capital": "Atlanta",
+      "region": "South",
+      "source": "https://gba.georgia.gov/locations/georgia-state-capitol"
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "fips": "15",
+      "capital": "Honolulu",
+      "region": "West",
+      "source": "https://lrb.hawaii.gov/par/at-the-capitol/"
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "fips": "16",
+      "capital": "Boise",
+      "region": "West",
+      "source": "https://idaho.gov/"
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "fips": "17",
+      "capital": "Springfield",
+      "region": "Midwest",
+      "source": "https://www.ilsos.gov/departments/archives/online-exhibits/100-documents/1837-perm-capital-spfld.html"
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "fips": "18",
+      "capital": "Indianapolis",
+      "region": "Midwest",
+      "source": "https://www.in.gov/history/state-historical-markers/find-a-marker/state-capitol/"
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "fips": "19",
+      "capital": "Des Moines",
+      "region": "Midwest",
+      "source": "https://governor.iowa.gov/locations/iowa-state-capitol"
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "fips": "20",
+      "capital": "Topeka",
+      "region": "Midwest",
+      "source": "https://library.ks.gov/about-us/visit"
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "fips": "21",
+      "capital": "Frankfort",
+      "region": "South",
+      "source": "https://capitolmove.ky.gov/Pages/index.aspx"
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "fips": "22",
+      "capital": "Baton Rouge",
+      "region": "South",
+      "source": "https://crt.la.gov/tourism/welcome-centers/state-capitol/index"
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "fips": "23",
+      "capital": "Augusta",
+      "region": "Northeast",
+      "source": "https://legislature.maine.gov/lio/directions-to-the-state-house/9081"
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "fips": "24",
+      "capital": "Annapolis",
+      "region": "South",
+      "source": "https://msa.maryland.gov/msa/mdstatehouse/html/annapolis_capital.html"
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "fips": "25",
+      "capital": "Boston",
+      "region": "Northeast",
+      "source": "https://www.mass.gov/locations/massachusetts-state-house"
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "fips": "26",
+      "capital": "Lansing",
+      "region": "Midwest",
+      "source": "https://www.michigan.gov/en/About-Michigan/State-Facts-and-Symbols"
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "fips": "27",
+      "capital": "Saint Paul",
+      "region": "Midwest",
+      "source": "https://mn.gov/admin/government/buildings-grounds/building-management/buildings/statecapitol.jsp"
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "fips": "28",
+      "capital": "Jackson",
+      "region": "South",
+      "source": "https://www.legislature.ms.gov/about-the-capitol/"
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "fips": "29",
+      "capital": "Jefferson City",
+      "region": "Midwest",
+      "source": "https://capitol.mo.gov/about-the-capitol/"
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "fips": "30",
+      "capital": "Helena",
+      "region": "West",
+      "source": "https://mhs.mt.gov/education/capitol/Capitol-History"
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "fips": "31",
+      "capital": "Lincoln",
+      "region": "Midwest",
+      "source": "https://capitol.nebraska.gov/building/history/location/"
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "fips": "32",
+      "capital": "Carson City",
+      "region": "West",
+      "source": "https://www.gov.nv.gov/constituent-services/contacting-the-governor/"
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "fips": "33",
+      "capital": "Concord",
+      "region": "Northeast",
+      "source": "https://www.nh.gov/almanac/fast-facts"
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "fips": "34",
+      "capital": "Trenton",
+      "region": "Northeast",
+      "source": "https://www.nj.gov/nj/gov/njgov/statehouse.shtml"
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "fips": "35",
+      "capital": "Santa Fe",
+      "region": "West",
+      "source": "https://www.sos.nm.gov/about-new-mexico/state-capitol/"
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "fips": "36",
+      "capital": "Albany",
+      "region": "Northeast",
+      "source": "https://empirestateplaza.ny.gov/capitol"
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "fips": "37",
+      "capital": "Raleigh",
+      "region": "South",
+      "source": "https://historicsites.nc.gov/all-sites/north-carolina-state-capitol"
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "fips": "38",
+      "capital": "Bismarck",
+      "region": "Midwest",
+      "source": "https://www.history.nd.gov/pdf/ArchivesSubjectGuide-BismarckCapitol.pdf"
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "fips": "39",
+      "capital": "Columbus",
+      "region": "Midwest",
+      "source": "https://ohiohouse.gov/about/history"
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "fips": "40",
+      "capital": "Oklahoma City",
+      "region": "South",
+      "source": "https://oksenate.gov/sites/default/files/2022-05/os73.pdf"
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "fips": "41",
+      "capital": "Salem",
+      "region": "West",
+      "source": "https://sos.oregon.gov/blue-book/government/pages/capital.aspx"
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "fips": "42",
+      "capital": "Harrisburg",
+      "region": "Northeast",
+      "source": "https://www.pa.gov/agencies/dgs/the-capitol-complex"
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "fips": "44",
+      "capital": "Providence",
+      "region": "Northeast",
+      "source": "https://www.sos.ri.gov/divisions/civics-and-education/ri-state-house"
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "fips": "45",
+      "capital": "Columbia",
+      "region": "South",
+      "source": "https://www.scstatehouse.gov/studentpage/Explore/history.shtml"
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "fips": "46",
+      "capital": "Pierre",
+      "region": "Midwest",
+      "source": "https://www.sd.gov/bhra?id=cs_kb_article_view&sysparm_article=KB0044719"
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "fips": "47",
+      "capital": "Nashville",
+      "region": "South",
+      "source": "https://sos.tn.gov/civics/guides/state-capitol"
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "fips": "48",
+      "capital": "Austin",
+      "region": "South",
+      "source": "https://tspb.texas.gov/prop/tc/tc-history/history/index.html"
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "fips": "49",
+      "capital": "Salt Lake City",
+      "region": "West",
+      "source": "https://www.utah.gov/about/quick-facts.html"
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "fips": "50",
+      "capital": "Montpelier",
+      "region": "Northeast",
+      "source": "https://statehouse.vermont.gov/welcome-vermont-state-house"
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "fips": "51",
+      "capital": "Richmond",
+      "region": "South",
+      "source": "https://vga.virginia.gov/visit/about-capitol/three-capital-cities/"
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "fips": "53",
+      "capital": "Olympia",
+      "region": "West",
+      "source": "https://leg.wa.gov/learn-and-participate/educational-resources/state-symbols/capitol-building/"
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "fips": "54",
+      "capital": "Charleston",
+      "region": "South",
+      "source": "https://www.wvlegislature.gov/educational/citizens/guide.cfm"
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "fips": "55",
+      "capital": "Madison",
+      "region": "Midwest",
+      "source": "https://legis.wisconsin.gov/about/visit"
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "fips": "56",
+      "capital": "Cheyenne",
+      "region": "West",
+      "source": "https://www.wyoleg.gov/citizenEngagement/CapitolSquare"
+    }
+  ]
+}

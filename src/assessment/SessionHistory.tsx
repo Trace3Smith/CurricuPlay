@@ -2,6 +2,7 @@ import { useState } from 'react';
 import AssessmentView from './AssessmentView';
 import { formatAccuracy, summarizeSession, type GameSession } from './engine';
 import { readHistory } from './storage';
+import { gameName } from './gameNames';
 export default function SessionHistory({ presentSession = s => s }: { presentSession?: (session: GameSession) => GameSession }) {
   const [history] = useState(readHistory);
   const [selected, setSelected] = useState<GameSession | null>(null);
@@ -13,7 +14,7 @@ export default function SessionHistory({ presentSession = s => s }: { presentSes
     {!history.error && !history.sessions.length && <p>No completed sessions yet.</p>}
     <div className="assessment-history-list">{history.sessions.slice(page * 5, page * 5 + 5).map(session => {
       const report = summarizeSession(session);
-      return <button key={session.id} onClick={() => setSelected(session)}>{session.grade === 'K' ? 'Kindergarten' : `Grade ${session.grade}`} · {session.gameType === 'four-corners' ? 'Four Corners' : session.gameType} · {new Date(session.startedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}<small>{session.teams.length ? `${session.teams.length} teams` : 'Classic Mode'} · {report.completedQuestions} questions · {formatAccuracy(report.overall)} class accuracy</small></button>;
+      return <button key={session.id} onClick={() => setSelected(session)}>{session.grade === 'K' ? 'Kindergarten' : `Grade ${session.grade}`} · {gameName(session.gameType)} · {new Date(session.startedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}<small>{session.teams.length ? `${session.teams.length} teams` : 'Classic Mode'} · {report.completedQuestions} questions · {formatAccuracy(report.overall)} class accuracy</small></button>;
     })}</div>
     {pages > 1 && <div className="assessment-paging"><button disabled={page === 0} onClick={() => setPage(page - 1)}>Previous</button><span>Page {page + 1} of {pages}</span><button disabled={page === pages - 1} onClick={() => setPage(page + 1)}>Next Page</button></div>}
   </section>;

@@ -1,4 +1,5 @@
 import { ACTIVE_KEY, HISTORY_KEY, LISTS_KEY } from '../../games/spelling-bee/storage';
+import { BINGO_ACTIVE_KEY } from '../../games/state-lingo-bingo/keys';
 
 /** The pre-ClassThread records kept in the one-time preservation snapshot. Never include auth data. */
 export const legacyKeys = [
@@ -9,7 +10,7 @@ export const legacyKeys = [
   'curricuplay.sessions.v1',
 ] as const;
 /** These are the only browser records eligible for a Games export. Never include auth data. */
-export const exportKeys = [...legacyKeys, ACTIVE_KEY, LISTS_KEY, HISTORY_KEY] as const;
+export const exportKeys = [...legacyKeys, ACTIVE_KEY, LISTS_KEY, HISTORY_KEY, BINGO_ACTIVE_KEY] as const;
 export const backupKey = 'classthread.legacy-backup.v1';
 type StorageReader = Pick<Storage, 'getItem'>;
 export interface BrowserArchive {

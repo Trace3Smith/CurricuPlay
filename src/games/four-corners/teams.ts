@@ -1,6 +1,6 @@
 import type { AssessmentTeam, GameSession } from '../../assessment/engine';
 
-const colors = [
+export const teamColors = [
   { name: 'Orange', accent: '#fb923c' },
   { name: 'Purple', accent: '#c084fc' },
   { name: 'Green', accent: '#4ade80' },
@@ -9,7 +9,7 @@ const colors = [
   { name: 'Blue', accent: '#60a5fa' },
 ];
 export function createCornerTeams(count: number): AssessmentTeam[] {
-  return Array.from({ length: count }, (_, i) => ({ id: `team-${i + 1}`, ...(count === 6 ? colors[i] : { name: `Team ${i + 1}` }) }));
+  return Array.from({ length: count }, (_, i) => ({ id: `team-${i + 1}`, ...(count === 6 ? teamColors[i] : { name: `Team ${i + 1}` }) }));
 }
 /** Display old default names consistently without rewriting historical responses or IDs. */
 export function presentCornerSession(session: GameSession): GameSession {
