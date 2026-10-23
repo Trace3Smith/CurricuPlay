@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
-import { beginGame, boardLayout, freshSettings, judge, setTarget, stateByCode, type BingoState, type Settings } from '../src/games/state-lingo-bingo/engine';
+import { beginGame, boardLayout, freshSettings, judge, setTarget, stateByCode, states, type BingoState, type Settings } from '../src/games/state-lingo-bingo/engine';
 import { BINGO_ACTIVE_KEY } from '../src/games/state-lingo-bingo/keys';
 
 const key = BINGO_ACTIVE_KEY;
@@ -31,6 +31,12 @@ async function fits(page: Page) {
     return r.top < 0 || r.left < 0 || r.bottom > innerHeight + 0.5 || r.right > innerWidth + 0.5 || n.scrollWidth > n.clientWidth + 1 || n.scrollHeight > n.clientHeight + 1;
   }).map(n => `${n.className}: ${n.textContent?.slice(0, 30)}`));
   expect(over).toEqual([]);
+  // Every line of every square's name stays inside the square (a clipped name is unreadable).
+  const clipped = await page.locator('.slb-square .slb-name').evaluateAll(nodes => nodes.filter(n => {
+    const sq = n.parentElement!.getBoundingClientRect(), range = document.createRange(); range.selectNodeContents(n);
+    return [...range.getClientRects()].some(l => l.left < sq.left - .5 || l.right > sq.right + .5 || l.top < sq.top - .5 || l.bottom > sq.bottom + .5);
+  }).map(n => n.textContent));
+  expect(clipped).toEqual([]);
 }
 
 test('Full play-through: setup with custom names, targets, wrong tile, bingo, undo, refresh recovery, end and records', async ({ page }) => {
@@ -170,6 +176,37 @@ test('Board layout for every team count from 2 to 10 at 1920×1080, 1536×864 an
   // 4×4 cards for 3rd grade at the smallest size.
   await inject(page, { grade: '3', size: 4, teamCount: 10 });
   await fits(page);
+});
+
+test('Every state name fits its square at one size per card, with a compact empty target bar', async ({ page }) => {
+  // 10 teams on 5×5 cards, rebuilt so all 50 states appear (the longest names on team 1).
+  const start = Date.now() - 60_000;
+  let s = beginGame({ ...freshSettings('5'), teamCount: 10 }, 'all-states', new Date(start).toISOString(), seeded())!;
+  const codes = [...states].sort((a, b) => b.name.length - a.name.length).map(x => x.code);
+  s.teams!.forEach((t, ti) => { s.cards![t.id] = s.cards![t.id].map((c, i) => c === null ? null : codes[(ti * 24 + (i > 12 ? i - 1 : i)) % 50]); });
+  s = setTarget(s, 'team-1', s.cards!['team-1'][0]!, new Date(start + 1000).toISOString());
+  for (const [width, height] of sizes) {
+    await page.setViewportSize({ width, height });
+    await page.goto('/games');
+    await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
+    await page.goto('/games/state-lingo-bingo');
+    await expect(page.locator('.slb-card[style*="--card-font"]')).toHaveCount(10);
+    await fits(page);
+    const cards = await page.locator('.slb-card').evaluateAll(cards => cards.map(card => {
+      const names = [...card.querySelectorAll<HTMLElement>('.slb-square:not(.slb-free) .slb-name')];
+      return { base: parseFloat((card as HTMLElement).style.getPropertyValue('--card-font')),
+        sizes: names.map(n => ({ long: n.classList.contains('slb-long'), size: parseFloat(getComputedStyle(n).fontSize) })) };
+    }));
+    const floor = height / 100;
+    for (const card of cards) {
+      expect(card.base).toBeGreaterThanOrEqual(floor - 0.01);
+      for (const n of card.sizes) expect(n.size).toBeCloseTo(card.base * (n.long ? 0.9 : 1), 1);
+    }
+    expect(new Set(cards.flatMap(c => c.sizes.length))).toEqual(new Set([24]));
+    const [empty, set] = await Promise.all(['target-team-2', 'target-team-1'].map(id => page.getByTestId(id).evaluate(e => e.getBoundingClientRect().height)));
+    expect(empty).toBeLessThan(set / 2);
+    if (width === 1920) await page.screenshot({ path: 'test-results/slb-all-states-1920.png' });
+  }
 });
 
 test('Target pop-up never blocks controls and appears without animation under reduced motion', async ({ page }) => {

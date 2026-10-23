@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 import AssessmentDialog from '../../assessment/AssessmentDialog';
 import AssessmentView from '../../assessment/AssessmentView';
 import TeamName from '../../assessment/TeamName';
@@ -32,12 +32,58 @@ function StateArt({ code, mode }: { code: string; mode: SquareMode }) {
   const [x, y, w, h] = shapeFor(code).bbox, pad = Math.max(w, h) * 0.08;
   return <svg className={`slb-art ${mode === 'outline' ? 'slb-solo' : ''}`} viewBox={`${x - pad} ${y - pad} ${w + pad * 2} ${h + pad * 2}`} aria-hidden="true" focusable="false"><use className="slb-shape" href={`#slb-${code}`} /></svg>;
 }
+// The longest words get a soft hyphen; it shows only if the word doesn't fit on one line.
+const breaks: Record<string, string> = {
+  Massachusetts: 'Massa­chusetts', Pennsylvania: 'Pennsyl­vania', Connecticut: 'Connecti­cut', Washington: 'Washing­ton',
+  Mississippi: 'Missis­sippi', Hampshire: 'Hamp­shire',
+};
+const squareText = (name: string) => name.split(' ').map(w => breaks[w] ?? w).join(' ');
+const longName = (name: string) => name.split(' ').some(w => w.length >= 9);
+const LONG_SCALE = 0.9, LINE = 1.1, FLOOR_VH = 1;
+
+// Width of text in em, measured in the font this browser actually renders (fonts differ by computer).
+const widths = new Map<string, number>();
+let ruler: HTMLSpanElement | null = null;
+function emWidth(text: string, family: string, spacing: number): number {
+  const key = `${family}|${spacing}|${text}`;
+  if (!widths.has(key)) {
+    ruler ??= Object.assign(document.body.appendChild(document.createElement('span')), { ariaHidden: 'true' });
+    Object.assign(ruler.style, { position: 'fixed', left: '-10000px', top: '-10000px', visibility: 'hidden', pointerEvents: 'none', whiteSpace: 'nowrap', fontSize: '100px', fontWeight: '700', fontFamily: family, letterSpacing: `${spacing}em` });
+    ruler.textContent = text;
+    widths.set(key, ruler.getBoundingClientRect().width / 100);
+  }
+  return widths.get(key)!;
+}
+/** One font size per card: the largest at which every name on it fits its square, never below the floor. */
+function fitCards(board: HTMLElement) {
+  for (const card of board.querySelectorAll<HTMLElement>('.slb-card')) {
+    const names = [...card.querySelectorAll<HTMLElement>('.slb-square:not(.slb-free) .slb-name')];
+    const square = names[0]?.parentElement;
+    if (!square) { card.style.removeProperty('--card-font'); continue; }
+    const family = getComputedStyle(names[0]).fontFamily;
+    const w = square.clientWidth * 0.96 - 2, h = square.clientHeight * 0.92;
+    let size = Math.min(0.225 * square.clientWidth, 0.27 * square.clientHeight);
+    for (const el of names) {
+      const name = el.dataset.name!, long = el.classList.contains('slb-long'), scale = long ? LONG_SCALE : 1, spacing = long ? -0.03 : -0.01;
+      let lines = 0;
+      for (const word of name.split(' ')) {
+        const whole = emWidth(word, family, spacing) * scale;
+        const pieces = breaks[word]?.split('­');
+        const split = pieces ? Math.max(emWidth(`${pieces[0]}-`, family, spacing), emWidth(pieces[1], family, spacing)) * scale : Infinity;
+        size = Math.min(size, w / Math.min(whole, split));
+        lines += pieces && w / whole < size ? 2 : 1;
+      }
+      size = Math.min(size, h / (lines * LINE * scale));
+    }
+    card.style.setProperty('--card-font', `${Math.max(size, innerHeight * FLOOR_VH / 100).toFixed(2)}px`);
+  }
+}
 /** Names sit over a faint outline; map-only modes show the shape or location with no name. */
-function StateFace({ code, mode }: { code: string; mode: SquareMode }) {
+function StateFace({ code, mode, square = false }: { code: string; mode: SquareMode; square?: boolean }) {
   const name = stateByCode.get(code)!.name, words = name.split(' ');
-  // Text scales to the longest word and the line count, so short names fill the square and long ones still fit.
-  const fit = { '--len': Math.max(5, ...words.map(w => w.length)), '--lines': words.length } as CSSProperties;
-  return <><StateArt code={code} mode={mode} />{mode === 'names' && <span className="slb-name" style={fit}>{name}</span>}</>;
+  // Card squares share one size set by the square; the target and pop-up fit their single name.
+  const fit = square ? undefined : { '--len': Math.max(5, ...words.map(w => w.length)), '--lines': words.length } as CSSProperties;
+  return <><StateArt code={code} mode={mode} />{mode === 'names' && <span className={`slb-name ${square && longName(name) ? 'slb-long' : ''}`} style={fit} data-name={square ? name : undefined}>{square ? squareText(name) : name}</span>}</>;
 }
 /** Event times never go backwards, so a clock change cannot invalidate a saved game. */
 function stamp(s: BingoState): string {
@@ -61,6 +107,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const [panel, setPanel] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const title = useRef<HTMLHeadingElement>(null);
+  const board = useRef<HTMLElement>(null);
   // An unreadable save is never overwritten until the teacher discards it.
   useEffect(() => { if (!loadError) setSaveError(saveActive(state)); }, [state, loadError]);
   const session = useMemo(() => state.screen === 'setup' ? null : buildSession(state), [state]);
@@ -69,6 +116,17 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   useEffect(() => { if (confirm) dialog.current?.showModal(); else dialog.current?.close(); }, [confirm]);
   useEffect(() => { if (!popup) return; const t = setTimeout(() => setPopup(null), 3000); return () => clearTimeout(t); }, [popup]);
   useEffect(() => { if (!flash) return; const t = setTimeout(() => setFlash(null), 2600); return () => clearTimeout(t); }, [flash]);
+  // Refit names whenever a card's squares change size (screen size, a target appearing or clearing).
+  useLayoutEffect(() => {
+    const b = board.current;
+    if (!b) return;
+    const run = () => fitCards(b);
+    run();
+    const observer = new ResizeObserver(run);
+    b.querySelectorAll('.slb-card').forEach(card => observer.observe(card));
+    void document.fonts?.ready.then(run);
+    return () => observer.disconnect();
+  }, [state.screen, state.sessionId, state.settings.squareMode]);
 
   const settings = state.settings;
   function updateSettings(patch: Partial<Settings>) { setState(s => s.screen === 'setup' ? { ...s, settings: { ...s.settings, ...patch } } : s); }
@@ -161,7 +219,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     </main>}
 
     {playing && <>
-      <main className="slb-board" aria-label="Bingo cards" style={{ '--cols': cols, '--rows': rows } as CSSProperties}>
+      <main ref={board} className="slb-board" aria-label="Bingo cards" style={{ '--cols': cols, '--rows': rows } as CSSProperties}>
         {teams.map((team, index) => {
           const p = progress(state, team.id), card = state.cards![team.id], isSelected = team.id === selected;
           // A short last row is centered: each section spans two of the doubled grid columns.
@@ -170,12 +228,12 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
             <button className="slb-team-head" aria-pressed={isSelected} onClick={() => select(team.id)}>
               <TeamName team={team} /><span className="slb-stats"><b data-testid={`points-${team.id}`}>{p.score}</b> pts · {p.lines} {p.lines === 1 ? 'bingo' : 'bingos'}{p.blackout ? ' · BLACKOUT' : ''}</span>
             </button>
-            <div className="slb-target" data-testid={`target-${team.id}`}>{p.target ? <><small>TARGET</small><span className="slb-target-face"><StateFace code={p.target} mode={settings.squareMode} /></span></> : <small>{p.blackout ? 'Card complete!' : 'Choose a target'}</small>}</div>
+            <div className={`slb-target ${p.target ? '' : 'slb-target-empty'}`} data-testid={`target-${team.id}`}>{p.target ? <><small>TARGET</small><span className="slb-target-face"><StateFace code={p.target} mode={settings.squareMode} /></span></> : <small>{p.blackout ? 'Card complete!' : 'Choose a target'}</small>}</div>
             <div className="slb-card" style={{ '--size': settings.size } as CSSProperties}>{card.map((code, i) => code === null
               ? <div key={i} className="slb-square slb-free"><span className="slb-name">FREE</span></div>
               : <button key={i} className={`slb-square ${p.marked.has(code) ? 'slb-marked' : ''} ${p.target === code ? 'slb-current' : ''}`} disabled={p.marked.has(code)}
                   aria-label={`${team.name}: ${stateByCode.get(code)!.name}${p.marked.has(code) ? ', marked' : p.target === code ? ', current target' : ''}`}
-                  onClick={() => isSelected ? target(team.id, code) : select(team.id)}><StateFace code={code} mode={settings.squareMode} />{p.marked.has(code) && <i className="slb-check" aria-hidden="true">✓</i>}</button>)}</div>
+                  onClick={() => isSelected ? target(team.id, code) : select(team.id)}><StateFace code={code} mode={settings.squareMode} square />{p.marked.has(code) && <i className="slb-check" aria-hidden="true">✓</i>}</button>)}</div>
             {flash?.team === team.id && <div key={flash.key} className="slb-flash" role="status">{flash.text}</div>}
           </section>;
         })}

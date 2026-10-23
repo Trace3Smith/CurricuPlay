@@ -8,22 +8,28 @@
 .slb-names{grid-column:1/-1}.slb-names .slb-inputs{grid-template-columns:repeat(5,minmax(0,1fr))}.slb-names label{flex-direction:column;align-items:stretch;gap:6px}
 .slb-hint{color:#b6c5db;font-size:15px;margin-top:8px}.slb-setup ul.content-notice{margin:6px 0 16px;padding-left:40px}.slb-setup .setup-bottom{margin-top:8px}
 
-.slb-playing{height:100dvh;display:flex;flex-direction:column;overflow:hidden;padding:0 1.2vw}.slb-playing header{height:64px;flex-shrink:0}.slb-playing .wordmark{font-size:24px}
+.slb-playing{height:100dvh;display:flex;flex-direction:column;overflow:hidden;padding:0 .6vw}.slb-playing header{height:64px;flex-shrink:0}.slb-playing .wordmark{font-size:24px}
 .slb-playing .header-actions button{min-height:46px;padding:8px 16px}.slb-playing .warning{flex-shrink:0}
-.slb-board{flex:1;min-height:0;display:grid;grid-template-columns:repeat(calc(var(--cols) * 2),minmax(0,1fr));grid-template-rows:repeat(var(--rows),minmax(0,1fr));gap:10px;padding:8px 0}
-.slb-team{grid-column:span 2;position:relative;min-width:0;min-height:0;container-type:size;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:1.4cqh;background:#15243f;border:2px solid #3e5274;border-top:8px solid var(--accent);border-radius:14px;padding:1.6cqh 1.6cqw}
+.slb-board{flex:1;min-height:0;display:grid;grid-template-columns:repeat(calc(var(--cols) * 2),minmax(0,1fr));grid-template-rows:repeat(var(--rows),minmax(0,1fr));gap:.4vw;padding:.6vh 0}
+.slb-team{grid-column:span 2;position:relative;min-width:0;min-height:0;container-type:size;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:1cqh;background:#15243f;border:2px solid #3e5274;border-top:8px solid var(--accent);border-radius:14px;padding:1.2cqh .9cqw}
 .slb-team.slb-selected{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent),0 10px 30px #0008;background:#1b2f52}
 .slb-team-head{min-height:0;padding:0.6cqh 1cqw;border:0;background:none;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:clamp(13px,min(5.4cqw,7cqh),40px);text-align:left;border-radius:8px}
 .slb-team-head .assessment-team-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.slb-team-head .assessment-team-accent{width:.8em;height:.8em}
 .slb-team-head[aria-pressed=true]{background:#ffffff14;border:0}.slb-stats{white-space:nowrap;font-weight:600;font-size:.72em;color:#d6e2f5}.slb-stats b{color:#ffda70;font-size:1.25em}
 .slb-target{height:15cqh;display:flex;align-items:center;gap:2cqw;background:#0e1a31;border-radius:10px;padding:0 2cqw;border:2px dashed #ffffff30;min-width:0}
+/* With no target set, the bar shrinks to one short line and the squares get the space. */
+.slb-target-empty{height:auto;padding:.4cqh 2cqw;border-width:1px}.slb-target-empty small{font-size:clamp(10px,min(2.6cqw,3.6cqh),18px)}
 .slb-target small{font-size:clamp(10px,min(3.2cqw,4.4cqh),22px);letter-spacing:2px;color:#84eee0;font-weight:800;white-space:nowrap}
 .slb-target-face{position:relative;flex:1;height:100%;min-width:0;display:flex;align-items:center;justify-content:center;container-type:size}
 .slb-target-face .slb-name{position:relative;font-size:min(calc(140cqw / var(--len,13)),calc(84cqh / var(--lines,1)),62cqh);font-weight:800;color:#fff;text-align:center;line-height:1.15}
-.slb-card{display:grid;grid-template-columns:repeat(var(--size),minmax(0,1fr));grid-template-rows:repeat(var(--size),minmax(0,1fr));gap:max(3px,.8cqw);min-height:0}
+.slb-card{display:grid;grid-template-columns:repeat(var(--size),minmax(0,1fr));grid-template-rows:repeat(var(--size),minmax(0,1fr));gap:.5cqw;min-height:0}
 .slb-square{position:relative;container-type:size;min-width:0;min-height:0;padding:0;border-radius:8px;border:1px solid #4b6188;background:#203658;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#f4f7ff;font-weight:700}
-.slb-square:disabled{opacity:1;cursor:default}.slb-square .slb-name{position:relative;z-index:1;font-size:min(calc(122cqw / var(--len,13)),calc(78cqh / var(--lines,1)),32cqh);line-height:1.15;text-align:center;padding:0 3cqw;text-wrap:balance;overflow-wrap:break-word;text-shadow:0 1px 3px #000c}
-.slb-free{background:#2a3d63;border-style:dashed}.slb-free .slb-name{--len:6;color:#ffda70;letter-spacing:.1em}
+.slb-square:disabled{opacity:1;cursor:default}/* One size for every name on a card, set by fitCards() from the real font; names wrap at spaces
+   or at their marked break points. The CSS value is only the fallback before fitting. */
+.slb-square .slb-name{position:relative;z-index:1;font-size:var(--card-font,max(1vh,min(22.5cqw,27cqh)));line-height:1.1;letter-spacing:-.01em;text-align:center;padding:0 2cqw;text-wrap:balance;overflow-wrap:normal;hyphens:manual;text-shadow:0 1px 3px #000c}
+.slb-free{background:#2a3d63;border-style:dashed}/* Words of 9+ letters shrink slightly; the longest also have a marked break point. */
+.slb-square .slb-long{font-size:calc(.9 * var(--card-font,max(1vh,min(22.5cqw,27cqh))));letter-spacing:-.03em}
+.slb-free .slb-name{color:#ffda70;letter-spacing:.06em}
 .slb-marked{background:color-mix(in srgb,var(--accent) 55%,#14213c);border-color:var(--accent);color:#fff}
 .slb-check{position:absolute;right:4cqw;top:2cqh;font-style:normal;font-size:min(22cqw,34cqh);color:#fff;z-index:2;text-shadow:0 1px 4px #000}
 .slb-current{outline:max(3px,4cqw) solid var(--accent);outline-offset:-2px;background:#2f4c7c}
@@ -47,7 +53,7 @@
 .slb-results{max-width:1400px;margin:3vh auto 40px}.slb-results h1{font-size:clamp(30px,3vw,48px);margin:14px 0 22px}
 .slb-table{width:100%;border-collapse:collapse;font-size:20px}.slb-table th,.slb-table td{padding:10px 14px;text-align:left;border-bottom:1px solid #ffffff20}.slb-table th{color:#84eee0;font-size:16px;letter-spacing:1px}
 .slb-review{margin-top:24px;background:#182944;border:1px solid #52617e;border-radius:14px;padding:18px 22px}.slb-review h2{font-size:26px;margin-bottom:8px}.slb-review ul{columns:2;font-size:18px;line-height:1.7;padding-left:20px;margin:0}
-@media (max-height:800px){.slb-playing header{height:56px}.slb-controls{min-height:62px;padding:6px 12px;font-size:17px}.slb-controls .primary{min-height:50px;font-size:18px}.slb-controls button{min-height:48px;padding:8px 14px}.slb-fitness{margin:6px 0}.slb-fitness li{padding:4px 10px;font-size:15px}.slb-fitness b{width:26px;height:26px;font-size:16px}.slb-board{gap:8px;padding:6px 0}}
+@media (max-height:800px){.slb-playing header{height:56px}.slb-controls{min-height:62px;padding:6px 12px;font-size:17px}.slb-controls .primary{min-height:50px;font-size:18px}.slb-controls button{min-height:48px;padding:8px 14px}.slb-fitness{margin:6px 0}.slb-fitness li{padding:4px 10px;font-size:15px}.slb-fitness b{width:26px;height:26px;font-size:16px}.slb-board{padding:.5vh 0}}
 @media (max-width:900px){.slb-setup-grid{grid-template-columns:1fr}.slb-names .slb-inputs{grid-template-columns:repeat(2,minmax(0,1fr))}.slb-inputs{grid-template-columns:1fr}.slb-review ul{columns:1}.slb-table{font-size:15px}.slb-table th,.slb-table td{padding:6px}}
 /* Phones scroll, but every control stays reachable. */
 @media (max-width:700px){.slb-playing{height:auto;overflow:visible;padding:0 12px}.slb-playing header{height:auto}
