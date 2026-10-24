@@ -58,7 +58,13 @@ test('Card generation: no duplicate squares, free center on 5×5, only selected 
   expect(setupErrors(settings({ size: 5, regions: ['Northeast', 'Midwest'] }))).toEqual(['A 5×5 card needs at least 24 states. The selected regions have 21.']);
   expect(setupErrors(settings({ size: 4, regions: ['Northeast', 'Midwest'] }))).toEqual([]);
   expect(beginGame(settings({ size: 4, regions: ['Northeast'] }), 'x', at(0))).toBeNull();
-  expect(defaultSize('3')).toBe(4); expect(defaultSize('4')).toBe(5); expect(defaultSize('5')).toBe(5);
+  // 4×4 for 3rd grade and for 7+ teams; 5×5 for 4th and 5th with 6 or fewer.
+  for (let n = 2; n <= 10; n++) {
+    expect(defaultSize('3', n)).toBe(4);
+    expect(defaultSize('4', n)).toBe(n >= 7 ? 4 : 5);
+    expect(defaultSize('5', n)).toBe(n >= 7 ? 4 : 5);
+  }
+  expect(freshSettings('5').size).toBe(4); // default class of 8 teams
   // Each team gets its own card.
   const s = game({ teamCount: 6 });
   expect(new Set(Object.values(s.cards!).map(c => c.join())).size).toBe(6);

@@ -44,12 +44,23 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   await page.evaluate(() => localStorage.clear());
   await page.goto('/games/state-lingo-bingo');
   await expect(page.getByTestId('general-practice')).toHaveText('General Practice · Not district-paced · Available on any date');
-  await page.getByRole('button', { name: '3rd Grade' }).click();
-  await expect(page.getByRole('button', { name: '4×4' })).toHaveAttribute('aria-pressed', 'true');
+  // Card size defaults: 4×4 for 3rd grade or 7+ teams, 5×5 for 4th/5th with 6 or fewer; the teacher can override.
+  const four = page.getByRole('button', { name: '4×4' }), five = page.getByRole('button', { name: '5×5 · free center' });
   await page.getByRole('button', { name: '4th Grade' }).click();
-  await expect(page.getByRole('button', { name: '5×5 · free center' })).toHaveAttribute('aria-pressed', 'true');
-  await page.getByRole('button', { name: '3rd Grade' }).click();
+  await expect(page.getByLabel('Number of teams')).toHaveValue('8');
+  await expect(four).toHaveAttribute('aria-pressed', 'true');
+  await page.getByLabel('Number of teams').selectOption('6');
+  await expect(five).toHaveAttribute('aria-pressed', 'true');
+  await page.getByLabel('Number of teams').selectOption('7');
+  await expect(four).toHaveAttribute('aria-pressed', 'true');
+  await five.click();
+  await expect(five).toHaveAttribute('aria-pressed', 'true');
+  await page.getByRole('button', { name: '5th Grade' }).click();
+  await expect(four).toHaveAttribute('aria-pressed', 'true');
   await page.getByLabel('Number of teams').selectOption('2');
+  await expect(five).toHaveAttribute('aria-pressed', 'true');
+  await page.getByRole('button', { name: '3rd Grade' }).click();
+  await expect(four).toHaveAttribute('aria-pressed', 'true');
   // Region filter warning.
   for (const r of ['Midwest', 'South', 'West']) await page.getByRole('button', { name: new RegExp(`^${r}`) }).click();
   await expect(page.getByTestId('setup-errors')).toContainText('A 4×4 card needs at least 16 states. The selected regions have 9.');
@@ -178,35 +189,48 @@ test('Board layout for every team count from 2 to 10 at 1920×1080, 1536×864 an
   await fits(page);
 });
 
-test('Every state name fits its square at one size per card, with a compact empty target bar', async ({ page }) => {
-  // 10 teams on 5×5 cards, rebuilt so all 50 states appear (the longest names on team 1).
+test('Every state name fits its square at one size per card in the bundled board font, with a compact empty target bar', async ({ page }) => {
+  test.setTimeout(120_000);
   const start = Date.now() - 60_000;
-  let s = beginGame({ ...freshSettings('5'), teamCount: 10 }, 'all-states', new Date(start).toISOString(), seeded())!;
   const codes = [...states].sort((a, b) => b.name.length - a.name.length).map(x => x.code);
-  s.teams!.forEach((t, ti) => { s.cards![t.id] = s.cards![t.id].map((c, i) => c === null ? null : codes[(ti * 24 + (i > 12 ? i - 1 : i)) % 50]); });
-  s = setTarget(s, 'team-1', s.cards!['team-1'][0]!, new Date(start + 1000).toISOString());
-  for (const [width, height] of sizes) {
-    await page.setViewportSize({ width, height });
-    await page.goto('/games');
-    await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
-    await page.goto('/games/state-lingo-bingo');
-    await expect(page.locator('.slb-card[style*="--card-font"]')).toHaveCount(10);
-    await fits(page);
-    const cards = await page.locator('.slb-card').evaluateAll(cards => cards.map(card => {
-      const names = [...card.querySelectorAll<HTMLElement>('.slb-square:not(.slb-free) .slb-name')];
-      return { base: parseFloat((card as HTMLElement).style.getPropertyValue('--card-font')),
-        sizes: names.map(n => ({ long: n.classList.contains('slb-long'), size: parseFloat(getComputedStyle(n).fontSize) })) };
-    }));
-    const floor = height / 100;
-    for (const card of cards) {
-      expect(card.base).toBeGreaterThanOrEqual(floor - 0.01);
-      for (const n of card.sizes) expect(n.size).toBeCloseTo(card.base * (n.long ? 0.9 : 1), 1);
+  // 10 teams on the 4×4 default and on 5×5, rebuilt so all 50 states appear (the longest names on team 1).
+  for (const size of [4, 5] as const) {
+    let s = beginGame({ ...freshSettings('5'), teamCount: 10, size }, 'all-states', new Date(start).toISOString(), seeded())!;
+    const per = size === 5 ? 24 : 16;
+    s.teams!.forEach((t, ti) => { let n = 0; s.cards![t.id] = s.cards![t.id].map(c => c === null ? null : codes[(ti * per + n++) % 50]); });
+    s = setTarget(s, 'team-1', s.cards!['team-1'][0]!, new Date(start + 1000).toISOString());
+    for (const [width, height] of sizes) {
+      await page.setViewportSize({ width, height });
+      await page.goto('/games');
+      await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
+      await page.goto('/games/state-lingo-bingo');
+      await expect(page.locator('.slb-card[style*="--card-font"]')).toHaveCount(10);
+      expect(await page.evaluate(() => document.fonts.check("700 16px 'Barlow Condensed'"))).toBe(true);
+      await fits(page);
+      const cards = await page.locator('.slb-card').evaluateAll(cards => cards.map(card => {
+        const names = [...card.querySelectorAll<HTMLElement>('.slb-square:not(.slb-free) .slb-name')];
+        return { base: parseFloat((card as HTMLElement).style.getPropertyValue('--card-font')),
+          family: getComputedStyle(names[0]).fontFamily, sizes: names.map(n => parseFloat(getComputedStyle(n).fontSize)) };
+      }));
+      for (const card of cards) {
+        expect(card.family.startsWith('"Barlow Condensed"')).toBe(true);
+        expect(card.base).toBeGreaterThanOrEqual(height / 100 - 0.01);
+        // Every name on a card is exactly the card's size.
+        for (const n of card.sizes) expect(n).toBeCloseTo(card.base, 1);
+        expect(card.sizes).toHaveLength(per);
+      }
+      expect(await page.getByTestId('target-team-1').locator('.slb-name').evaluate(e => getComputedStyle(e).fontFamily)).toMatch(/^"Barlow Condensed"/);
+      const [empty, set] = await Promise.all(['target-team-2', 'target-team-1'].map(id => page.getByTestId(id).evaluate(e => e.getBoundingClientRect().height)));
+      expect(empty).toBeLessThan(set / 2);
+      if (width === 1920) await page.screenshot({ path: `test-results/slb-all-states-${size}x${size}-1920.png` });
     }
-    expect(new Set(cards.flatMap(c => c.sizes.length))).toEqual(new Set([24]));
-    const [empty, set] = await Promise.all(['target-team-2', 'target-team-1'].map(id => page.getByTestId(id).evaluate(e => e.getBoundingClientRect().height)));
-    expect(empty).toBeLessThan(set / 2);
-    if (width === 1920) await page.screenshot({ path: 'test-results/slb-all-states-1920.png' });
   }
+  // No font is fetched from anywhere but this app.
+  const fonts: string[] = [];
+  page.on('request', r => { if (r.resourceType() === 'font') fonts.push(r.url()); });
+  await page.reload();
+  await expect(page.locator('.slb-card[style*="--card-font"]')).toHaveCount(10);
+  expect(fonts.every(u => new URL(u).origin === new URL(page.url()).origin)).toBe(true);
 });
 
 test('Target pop-up never blocks controls and appears without animation under reduced motion', async ({ page }) => {
@@ -228,7 +252,7 @@ test('Target pop-up never blocks controls and appears without animation under re
 
 test('Map-only modes hide names on the board but keep them for screen readers and the teacher', async ({ page }) => {
   for (const mode of ['outline', 'location'] as const) {
-    const s = await inject(page, { teamCount: 3, squareMode: mode }, false);
+    const s = await inject(page, { teamCount: 3, size: 5, squareMode: mode }, false);
     await expect(page.locator('.slb-square .slb-name')).toHaveCount(3); // only the FREE centers
     await expect(page.locator(mode === 'location' ? '.slb-square svg.slb-location' : '.slb-square svg.slb-solo')).toHaveCount(72);
     const name = squareName(s, 'team-1', 0);

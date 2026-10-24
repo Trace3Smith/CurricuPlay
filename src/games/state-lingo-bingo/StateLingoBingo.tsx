@@ -39,7 +39,7 @@ const breaks: Record<string, string> = {
 };
 const squareText = (name: string) => name.split(' ').map(w => breaks[w] ?? w).join(' ');
 const longName = (name: string) => name.split(' ').some(w => w.length >= 9);
-const LONG_SCALE = 0.9, LINE = 1.1, FLOOR_VH = 1;
+const LINE = 1.2, FLOOR_VH = 1;
 
 // Width of text in em, measured in the font this browser actually renders (fonts differ by computer).
 const widths = new Map<string, number>();
@@ -50,7 +50,10 @@ function emWidth(text: string, family: string, spacing: number): number {
     ruler ??= Object.assign(document.body.appendChild(document.createElement('span')), { ariaHidden: 'true' });
     Object.assign(ruler.style, { position: 'fixed', left: '-10000px', top: '-10000px', visibility: 'hidden', pointerEvents: 'none', whiteSpace: 'nowrap', fontSize: '100px', fontWeight: '700', fontFamily: family, letterSpacing: `${spacing}em` });
     ruler.textContent = text;
-    widths.set(key, ruler.getBoundingClientRect().width / 100);
+    const width = ruler.getBoundingClientRect().width / 100;
+    // Only cache once the font has loaded; a fallback-font width would be wrong.
+    if (!document.fonts || document.fonts.check(`700 16px ${family}`)) widths.set(key, width);
+    return width;
   }
   return widths.get(key)!;
 }
@@ -62,18 +65,18 @@ function fitCards(board: HTMLElement) {
     if (!square) { card.style.removeProperty('--card-font'); continue; }
     const family = getComputedStyle(names[0]).fontFamily;
     const w = square.clientWidth * 0.96 - 2, h = square.clientHeight * 0.92;
-    let size = Math.min(0.225 * square.clientWidth, 0.27 * square.clientHeight);
+    let size = Math.min(0.3 * square.clientWidth, 0.3 * square.clientHeight);
     for (const el of names) {
-      const name = el.dataset.name!, long = el.classList.contains('slb-long'), scale = long ? LONG_SCALE : 1, spacing = long ? -0.03 : -0.01;
+      const name = el.dataset.name!, spacing = el.classList.contains('slb-long') ? -0.02 : 0;
       let lines = 0;
       for (const word of name.split(' ')) {
-        const whole = emWidth(word, family, spacing) * scale;
+        const whole = emWidth(word, family, spacing);
         const pieces = breaks[word]?.split('­');
-        const split = pieces ? Math.max(emWidth(`${pieces[0]}-`, family, spacing), emWidth(pieces[1], family, spacing)) * scale : Infinity;
+        const split = pieces ? Math.max(emWidth(`${pieces[0]}-`, family, spacing), emWidth(pieces[1], family, spacing)) : Infinity;
         size = Math.min(size, w / Math.min(whole, split));
         lines += pieces && w / whole < size ? 2 : 1;
       }
-      size = Math.min(size, h / (lines * LINE * scale));
+      size = Math.min(size, h / (lines * LINE));
     }
     card.style.setProperty('--card-font', `${Math.max(size, innerHeight * FLOOR_VH / 100).toFixed(2)}px`);
   }
@@ -124,7 +127,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     run();
     const observer = new ResizeObserver(run);
     b.querySelectorAll('.slb-card').forEach(card => observer.observe(card));
-    void document.fonts?.ready.then(run);
+    void document.fonts?.load(`700 16px 'Barlow Condensed'`).then(run, run);
     return () => observer.disconnect();
   }, [state.screen, state.sessionId, state.settings.squareMode]);
 
@@ -202,11 +205,11 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
       <h1 ref={title} tabIndex={-1}>Roll. Move. Dig for the capital.</h1>
       <p className="slb-practice" data-testid="general-practice">General Practice · Not district-paced · Available on any date</p>
       <div className="slb-setup-grid">
-        <fieldset><legend>1 <span>Grade</span></legend><div className="slb-options">{bingoGrades.map(g => <button key={g} aria-pressed={settings.grade === g} onClick={() => updateSettings({ grade: g, size: defaultSize(g) })}>{gradeLabel(g)}</button>)}</div></fieldset>
+        <fieldset><legend>1 <span>Grade</span></legend><div className="slb-options">{bingoGrades.map(g => <button key={g} aria-pressed={settings.grade === g} onClick={() => updateSettings({ grade: g, size: defaultSize(g, settings.teamCount) })}>{gradeLabel(g)}</button>)}</div></fieldset>
         <fieldset><legend>2 <span>Teams and card</span></legend><div className="slb-options">
-          <label>Teams <select aria-label="Number of teams" value={settings.teamCount} onChange={e => updateSettings({ teamCount: Number(e.target.value) })}>{Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => i + MIN_TEAMS).map(n => <option key={n} value={n}>{n}</option>)}</select></label>
+          <label>Teams <select aria-label="Number of teams" value={settings.teamCount} onChange={e => updateSettings({ teamCount: Number(e.target.value), size: defaultSize(settings.grade, Number(e.target.value)) })}>{Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => i + MIN_TEAMS).map(n => <option key={n} value={n}>{n}</option>)}</select></label>
           {cardSizes.map(size => <button key={size} aria-pressed={settings.size === size} onClick={() => updateSettings({ size })}>{size}×{size}{size === 5 ? ' · free center' : ''}</button>)}
-        </div><p className="slb-hint">Default: 4×4 for 3rd grade, 5×5 for 4th and 5th.</p></fieldset>
+        </div><p className="slb-hint">Default: 4×4 for 3rd grade or 7+ teams; 5×5 for 4th and 5th with 6 or fewer teams. You can change it.</p></fieldset>
         <fieldset><legend>3 <span>Regions</span></legend><div className="slb-options">{regions.map(r => <button key={r} aria-pressed={settings.regions.includes(r)} onClick={() => updateSettings({ regions: settings.regions.includes(r) ? settings.regions.filter(x => x !== r) : regions.filter(x => x === r || settings.regions.includes(x)) as Region[] })}>{r} · {pool([r]).length}</button>)}</div>
           <p className="slb-hint" data-testid="region-count">{pool(settings.regions).length} states selected · a {settings.size}×{settings.size} card needs {statesNeeded(settings.size)}.</p></fieldset>
         <fieldset><legend>4 <span>Squares show</span></legend><div className="slb-options">{squareModes.map(m => <button key={m} aria-pressed={settings.squareMode === m} onClick={() => updateSettings({ squareMode: m })}>{modeLabels[m]}</button>)}</div></fieldset>

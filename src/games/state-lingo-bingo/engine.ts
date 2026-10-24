@@ -16,7 +16,9 @@ export type CardSize = typeof cardSizes[number];
 export const squareModes = ['names', 'outline', 'location'] as const;
 export type SquareMode = typeof squareModes[number];
 export const MIN_TEAMS = 2, MAX_TEAMS = 10, NAME_LIMIT = 16, FITNESS_LIMIT = 40;
-export const defaultSize = (grade: BingoGrade): CardSize => grade === '3' ? 4 : 5;
+/** 4×4 for 3rd grade, and for any grade with 7+ teams so squares stay readable; otherwise 5×5. */
+export const LARGE_CLASS_TEAMS = 7;
+export const defaultSize = (grade: BingoGrade, teamCount: number): CardSize => grade === '3' || teamCount >= LARGE_CLASS_TEAMS ? 4 : 5;
 /** A 5×5 card has a free center, so it needs 24 states; a 4×4 card needs 16. */
 export const statesNeeded = (size: CardSize) => size === 5 ? 24 : 16;
 export const defaultFitness = ['Jog 2 laps', '10 lunges', '5 push-ups', '10 sit-ups', '25 jumping jacks', '10 squats'];
@@ -44,7 +46,7 @@ export interface BingoState {
   teams?: AssessmentTeam[]; cards?: Record<string, (string | null)[]>; events?: BingoEvent[];
 }
 export const freshSettings = (grade: BingoGrade = '3'): Settings => ({
-  grade, teamCount: 8, size: defaultSize(grade), regions: [...regions], squareMode: 'names',
+  grade, teamCount: 8, size: defaultSize(grade, 8), regions: [...regions], squareMode: 'names',
   scoring: { ...defaultScoring }, fitness: [...defaultFitness], names: Array(MAX_TEAMS).fill(''),
 });
 export const freshState = (settings = freshSettings()): BingoState => ({ version: 1, screen: 'setup', settings });
