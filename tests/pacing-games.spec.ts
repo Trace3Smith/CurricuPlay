@@ -108,7 +108,7 @@ test('Four Corners content choice splits Current and Review; Math stays excluded
 
 const pinned = (page: Page, iso = '2026-10-18T16:00:00Z') => page.clock.setSystemTime(new Date(iso));
 
-test('Jeopardy board on a date with no Current questions is complete, tagged Review, and says so plainly', async ({ page }) => {
+test('Jeopardy board on a date with no Current questions is complete, filled from Review, and says so plainly', async ({ page }) => {
   await pinned(page);
   await page.goto('/games'); await page.getByRole('button', { name: /JEOPARDY/ }).click();
   await page.getByRole('button', { name: '3rd Grade', exact: true }).click();
@@ -122,25 +122,26 @@ test('Jeopardy board on a date with no Current questions is complete, tagged Rev
   await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
   await page.getByRole('button', { name: 'Start Game' }).click();
   await expect(page.locator('.tile:not([disabled])')).toHaveCount(30);
-  for (const subject of subjects) await expect(page.getByRole('region', { name: subject, exact: true }).locator('.tile-review-tag')).toHaveCount(6);
-  await expect(page.getByRole('region', { name: 'Review', exact: true }).locator('.tile-review-tag')).toHaveCount(0);
+  for (const subject of subjects) await expect(page.getByRole('region', { name: subject, exact: true }).locator('.tile[data-from-review]')).toHaveCount(6);
+  await expect(page.getByRole('region', { name: 'Review', exact: true }).locator('.tile[data-from-review]')).toHaveCount(0);
   await expect(page.getByText(/Current \+ Review · Teaching date 2026-10-18/)).toBeVisible();
   await page.getByRole('button', { name: /^Science 1 point opportunity 1 Review$/ }).click();
-  await expect(page.locator('.question-meta')).toContainText('SCIENCE · REVIEW');
+  // Subject tiles filled from Review look like any other tile; only the Review column is labelled Review.
+  await expect(page.locator('.question-meta')).toHaveText(/^SCIENCE\s*1 POINT$/);
   await page.screenshot({ path: 'test-results/jeopardy-review-tags.png' });
 });
 
-test('Jeopardy on Sept 20 mixes Current and tagged Review tiles and keeps them after refresh', async ({ page }) => {
+test('Jeopardy on Sept 20 mixes Current and Review-filled tiles and keeps them after refresh', async ({ page }) => {
   await pinned(page, '2026-09-20T16:00:00Z');
   await page.goto('/games'); await page.getByRole('button', { name: /JEOPARDY/ }).click();
   await page.getByRole('button', { name: 'Kindergarten', exact: true }).click();
   await expect(page.getByText(/No Current questions yet/)).toHaveCount(0);
   await page.getByRole('button', { name: 'Start Game' }).click();
-  const tags = await page.locator('.tile-review-tag').count();
+  const tags = await page.locator('.tile[data-from-review]').count();
   expect(tags).toBeLessThan(24);
   await page.screenshot({ path: 'test-results/jeopardy-current-review.png' });
   await page.reload();
-  await expect(page.locator('.tile-review-tag')).toHaveCount(tags);
+  await expect(page.locator('.tile[data-from-review]')).toHaveCount(tags);
 });
 
 test('Four Corners offers Current, Review, and Current + Review with the teaching date', async ({ page }) => {
@@ -187,7 +188,7 @@ test('old saves load unchanged: a legacy Jeopardy board and a pre-pacing Four Co
   await page.getByRole('button', { name: /JEOPARDY/ }).click();
   await expect(page.getByText(/Everything taught so far · Through 2026-09-13/)).toBeVisible();
   await expect(page.locator('.tile:not([disabled])')).toHaveCount(30);
-  await expect(page.locator('.tile-review-tag')).toHaveCount(0);
+  await expect(page.locator('.tile[data-from-review]')).toHaveCount(0);
   const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('curricuplay.game.v1')!));
   expect(stored.assignments).toEqual(legacyPlan.assignments); expect(stored.range).toBe('all'); expect(stored.asOf).toBe('2026-09-13');
   await page.getByRole('button', { name: 'Math 1 point opportunity 1', exact: true }).click();
