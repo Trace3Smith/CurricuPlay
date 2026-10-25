@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 // Isolate the long-term draft workflow from the independently tested classroom pack.
-test.beforeEach(async ({ page }) => { await page.route("**/src/data/tomorrow-pack.json*", route => route.fulfill({ contentType: "application/javascript", body: "export default []" })); });
+test.beforeEach(async ({ page }) => { await page.route("**/src/data/tomorrow-pack.json*", route => route.fulfill({ contentType: "application/javascript", body: "export default []" })); await page.route("**/src/data/paced-jeopardy.json*", route => route.fulfill({ contentType: "application/javascript", body: "export default []" })); });
 
 import questions from '../src/data/questions.json' with { type: 'json' };
 import audit from '../content/material-audit.json' with { type: 'json' };

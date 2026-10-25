@@ -5,13 +5,13 @@
   "grades": [
     {
       "grade": "K",
-      "eligible": 32,
+      "eligible": 36,
       "current": 0,
-      "earlier": 32,
+      "earlier": 36,
       "sourceListed": 0,
-      "skillPractice": 32,
+      "skillPractice": 36,
       "general": 32,
-      "excluded": 1
+      "excluded": 13
     },
     {
       "grade": "1",
@@ -21,7 +21,7 @@
       "sourceListed": 12,
       "skillPractice": 30,
       "general": 45,
-      "excluded": 0
+      "excluded": 20
     },
     {
       "grade": "2",
@@ -31,7 +31,7 @@
       "sourceListed": 18,
       "skillPractice": 22,
       "general": 44,
-      "excluded": 0
+      "excluded": 20
     },
     {
       "grade": "3",
@@ -41,7 +41,7 @@
       "sourceListed": 28,
       "skillPractice": 12,
       "general": 44,
-      "excluded": 0
+      "excluded": 20
     },
     {
       "grade": "4",
@@ -51,7 +51,7 @@
       "sourceListed": 0,
       "skillPractice": 40,
       "general": 44,
-      "excluded": 0
+      "excluded": 16
     },
     {
       "grade": "5",
@@ -61,7 +61,7 @@
       "sourceListed": 3,
       "skillPractice": 38,
       "general": 45,
-      "excluded": 2
+      "excluded": 22
     }
   ]
 }

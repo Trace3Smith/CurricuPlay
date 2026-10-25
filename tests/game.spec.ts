@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 // Isolate the long-term draft workflow from the independently tested classroom pack.
-test.beforeEach(async ({ page }) => { await page.route("**/src/data/tomorrow-pack.json*", route => route.fulfill({ contentType: "application/javascript", body: "export default []" })); });
+test.beforeEach(async ({ page }) => { await page.route("**/src/data/tomorrow-pack.json*", route => route.fulfill({ contentType: "application/javascript", body: "export default []" })); await page.route("**/src/data/paced-jeopardy.json*", route => route.fulfill({ contentType: "application/javascript", body: "export default []" })); });
 
 // Synthetic software fixtures only. Not curriculum content and never included in src/data.
 const grades = ['K', '1', '2', '3', '4', '5'];

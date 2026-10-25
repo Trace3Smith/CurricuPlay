@@ -46,19 +46,23 @@ test('week-only evidence counts as taught on the Friday of its week; exact days 
   for (const patch of [{ timing: 'unknown' }, { timing: 'conflicting' }, { review: 'pending' }, { earliestEligible: null }, { category: 'general' }])
     expect(taughtDate({ ...base, ...patch } as CurriculumEvidence)).toBeNull();
   for (const w of curriculumBank.filter(w => taughtDate(w.curriculum))) {
-    expect(new Date(`${taughtDate(w.curriculum)}T12:00:00Z`).getUTCDay()).toBe(5);
+    const period = w.curriculum!.periods[0];
+    // Exact teaching days (single-day periods from lesson plans) are kept; week-only items count on Friday.
+    if (period.start === period.end) expect(taughtDate(w.curriculum)).toBe(period.start);
+    else expect(new Date(`${taughtDate(w.curriculum)}T12:00:00Z`).getUTCDay()).toBe(5);
     expect(taughtDate(w.curriculum)).toBe(w.curriculum!.earliestEligible);
   }
 });
 
 test('future, conflicting, and unapproved items never appear on any date in the school year', () => {
-  const kConflict = curriculumBank.find(w => w.curriculum?.timing === 'conflicting')!;
-  expect(kConflict.grade).toBe('K');
+  const conflicting = new Set(curriculumBank.filter(w => w.curriculum?.timing !== 'documented').map(w => w.id));
+  // The former Kindergarten Unit 2 conflict is resolved from lesson plans; the rule still holds for any future conflict.
+  expect(curriculumBank.find(w => w.id === 'pacing-K-cat')!.curriculum!.timing).toBe('documented');
   const violations: string[] = [];
   for (const date of dates('2026-08-01', '2027-06-30')) for (const grade of grades) for (const mode of ['current', 'review', 'mixed'] as const) {
     for (const w of selectBank(config(grade, mode, date, mode === 'mixed'))) {
       const taught = taughtDate(w.curriculum);
-      if (!taught || taught > date || w.id === kConflict.id || (date < '2026-11-13' && ['conductor', 'insulator'].includes(w.word))) violations.push(`${date} ${grade} ${mode} ${w.id}`);
+      if (!taught || taught > date || conflicting.has(w.id) || (date < '2026-11-13' && ['conductor', 'insulator'].includes(w.word))) violations.push(`${date} ${grade} ${mode} ${w.id}`);
     }
   }
   expect(violations).toEqual([]);

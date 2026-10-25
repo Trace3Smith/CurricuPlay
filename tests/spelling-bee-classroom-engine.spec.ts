@@ -11,9 +11,9 @@ const now = Date.parse('2026-10-09T12:00:00Z');
 const iso = (ms: number) => new Date(ms).toISOString();
 const start = () => beginGame(samples.entries, '5', 'challenge', 'timer-test', iso(now), () => .99)!;
 
-test('all 32 eligible Kindergarten prompts and the reviewed foundation objects have local generated pictures', () => {
+test('all 36 eligible Kindergarten prompts and the reviewed foundation objects have local generated pictures', () => {
  const kindergarten=selectBank({grade:'K',mode:'mixed',cutoff:'2026-10-09',priorGrade:false});
- expect(kindergarten).toHaveLength(32);expect(manifest.assets).toHaveLength(51);
+ expect(kindergarten).toHaveLength(36);expect(manifest.assets).toHaveLength(51);
  for(const w of kindergarten){
   expect(w.picture).toBe(w.word);expect(answerFor(w)).toBe(w.word[0]);
   expect(pictures[w.picture!].src).toBe(`/spelling-bee/photos/${w.word}.webp`);

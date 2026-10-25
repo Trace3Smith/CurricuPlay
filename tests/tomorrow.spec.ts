@@ -12,7 +12,7 @@ for (const row of report.grades) test(`Tomorrow pack ${row.grade}: actual releas
   await page.clock.setFixedTime(new Date('2026-09-14T12:00:00'));
   await page.goto('/games');await page.getByRole('button',{name:/JEOPARDY/}).click();
   await page.getByRole('button',{name:labels[row.grade],exact:true}).click();
-  await expect(page.getByText(/DCSS Tomorrow Classroom Pack - 2026-09-14/)).toBeVisible();
+  await expect(page.getByText(/DCSS Classroom Pack · paced to the teaching date/)).toBeVisible();
   await expect(page.getByText(`${row.classroomAccepted} approved questions available`)).toBeVisible();
   // Full release tests use the actual pack. No synthetic academic content is injected.
   if(row.status==='BLOCKED') {

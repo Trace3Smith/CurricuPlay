@@ -1,0 +1,35 @@
+{
+ "batch": "2026-10",
+ "jeopardy": 64,
+ "fourCorners": 57,
+ "spellingBeeNew": 112,
+ "spellingBeeResolved": [
+  "pacing-K-cat"
+ ],
+ "skipped": [
+  {
+   "id": "K-sb-13",
+   "reason": "held: pan: only an illustration exists; Kindergarten prompts need a photo before release."
+  },
+  {
+   "id": "K-sb-18",
+   "reason": "held: kite: only an illustration exists; Kindergarten prompts need a photo before release."
+  },
+  {
+   "id": "K-fc-9",
+   "reason": "remove"
+  },
+  {
+   "id": "4-sb-5",
+   "reason": "held: rotation is already in the Grade 4 bank (taught week of Sept 21)."
+  },
+  {
+   "id": "4-sb-6",
+   "reason": "held: revolution is already in the Grade 4 bank (taught week of Sept 21)."
+  },
+  {
+   "id": "4-sb-7",
+   "reason": "held: axis is already in the Grade 4 bank (taught week of Sept 21)."
+  }
+ ]
+}

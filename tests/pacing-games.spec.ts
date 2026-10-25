@@ -22,7 +22,11 @@ test('no question is Current or Review before its taught date on any day of the 
   }
   expect(violations).toEqual([]);
   // Taught dates are Fridays of the latest aligned week; nothing in the bundled banks is taught after Sept 11.
-  for (const q of [...classroomBank.questions, ...cornerBank]) expect(new Date(`${questionTaughtDate(q)}T12:00:00Z`).getUTCDay()).toBe(5);
+  // Week-only questions count on Friday; an exact day recorded from a lesson plan is kept.
+  for (const q of [...classroomBank.questions, ...cornerBank]) {
+    if (q.taughtOn) expect(questionTaughtDate(q)).toBe(q.taughtOn);
+    else expect(new Date(`${questionTaughtDate(q)}T12:00:00Z`).getUTCDay()).toBe(5);
+  }
 });
 
 test('engine pools for both games never include untaught questions on any day, for every grade and content choice', () => {

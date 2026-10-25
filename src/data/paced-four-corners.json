@@ -1,0 +1,2585 @@
+[
+ {
+  "id": "fc-paced-2026-10-K-which-word-starts-with-the-r-sound",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word starts with the /r/ sound?",
+  "answer": "Ring",
+  "choices": [
+   "Sun",
+   "Ring",
+   "Moon",
+   "Top"
+  ],
+  "correctIndex": 1,
+  "explanation": "Ring begins with /r/, the sound of the letter R.",
+  "standard": null,
+  "session": "Week of Oct 19–23; Monday 19; \"Introduce Letter Rr\"",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "linked-k-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Week of Oct 19–23; Monday 19; \"Introduce Letter Rr\"",
+   "quote": "Introduce Letter Rr"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-0",
+  "taughtOn": "2026-10-19"
+ },
+ {
+  "id": "fc-paced-2026-10-K-which-word-starts-with-the-d-sound",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word starts with the /d/ sound?",
+  "answer": "Dog",
+  "choices": [
+   "Cat",
+   "Ball",
+   "Dog",
+   "Sun"
+  ],
+  "correctIndex": 2,
+  "explanation": "Dog begins with /d/, the sound of the letter D.",
+  "standard": null,
+  "session": "Week of Oct 19–23; Wednesday 21; \"Introduce Letter Dd\"",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "linked-k-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Week of Oct 19–23; Wednesday 21; \"Introduce Letter Dd\"",
+   "quote": "Introduce Letter Dd"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-1",
+  "taughtOn": "2026-10-21"
+ },
+ {
+  "id": "fc-paced-2026-10-K-which-one-is-land-not-water",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "Which one is land, not water?",
+  "answer": "A hill",
+  "choices": [
+   "A lake",
+   "A hill",
+   "A river",
+   "An ocean"
+  ],
+  "correctIndex": 1,
+  "explanation": "A hill is land you can walk on; lakes, rivers, and oceans are water.",
+  "standard": "SSKG2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "linked-k-science-social.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Oct 19–23 | Unit: Maps; Monday 19",
+   "quote": "Focus Land vs Water"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-2",
+  "taughtOn": "2026-10-19"
+ },
+ {
+  "id": "fc-paced-2026-10-K-a-globe-is-a-model-of-what",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "A globe is a model of what?",
+  "answer": "The Earth",
+  "choices": [
+   "A school",
+   "The Earth",
+   "A car",
+   "A tree"
+  ],
+  "correctIndex": 1,
+  "explanation": "A globe is a round model of the whole Earth.",
+  "standard": "SSKG2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "linked-k-science-social.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Oct 19–23 | Unit: Maps; I Can",
+   "quote": "a globe is a model of the Earth"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-3"
+ },
+ {
+  "id": "fc-paced-2026-10-K-your-address-tells-your-street-city-stat",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Your address tells your street, city, state, and ___.",
+  "answer": "country",
+  "choices": [
+   "crayon",
+   "lunch",
+   "country",
+   "pet"
+  ],
+  "correctIndex": 2,
+  "explanation": "Your address tells where you live: street, city, state, and country.",
+  "standard": "SSKG2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "linked-k-science-social.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Oct 19–23 | Unit: Maps; I Can",
+   "quote": "I can recite my address with my street, city, state, and country."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-4"
+ },
+ {
+  "id": "fc-paced-2026-10-K-which-word-starts-with-the-e-sound",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word starts with the /e/ sound?",
+  "answer": "Elephant",
+  "choices": [
+   "Sun",
+   "Elephant",
+   "Moon",
+   "Bus"
+  ],
+  "correctIndex": 1,
+  "explanation": "Elephant begins with /e/, the sound of the letter E.",
+  "standard": null,
+  "session": "Week of Oct 26–30; Monday 26; \"Introduce Letter Ee\"",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "linked-k-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Week of Oct 26–30; Monday 26; \"Introduce Letter Ee\"",
+   "quote": "Introduce Letter Ee"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-5",
+  "taughtOn": "2026-10-26"
+ },
+ {
+  "id": "fc-paced-2026-10-K-which-word-starts-with-the-same-sound-as",
+  "subject": "Literacy",
+  "difficulty": 3,
+  "question": "Which word starts with the same sound as egg?",
+  "answer": "Elbow",
+  "choices": [
+   "Apple",
+   "Igloo",
+   "Elbow",
+   "Mitten"
+  ],
+  "correctIndex": 2,
+  "explanation": "Egg and elbow both begin with /e/.",
+  "standard": null,
+  "session": "Week of Oct 26–30; Tue–Thu 27–29; \"Practice & Extend Ee\"",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "linked-k-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Week of Oct 26–30; Tue–Thu 27–29; \"Practice & Extend Ee\"",
+   "quote": "Practice & Extend Ee"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-6"
+ },
+ {
+  "id": "fc-paced-2026-10-K-which-one-is-an-action-word",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which one is an action word?",
+  "answer": "jump",
+  "choices": [
+   "red",
+   "jump",
+   "dog",
+   "hat"
+  ],
+  "correctIndex": 1,
+  "explanation": "Jump is an action word because it is something you can do.",
+  "standard": null,
+  "session": "Week of Oct 26–30; I Can (grammar)",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "linked-k-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Week of Oct 26–30; I Can (grammar)",
+   "quote": "I can use action words, where words, and question words when I talk and write."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-7).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-7"
+ },
+ {
+  "id": "fc-paced-2026-10-K-which-one-is-an-earth-material",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "Which one is an Earth material?",
+  "answer": "Rock",
+  "choices": [
+   "Crayon",
+   "Shoe",
+   "Rock",
+   "Cup"
+  ],
+  "correctIndex": 2,
+  "explanation": "Rocks come from the Earth, so a rock is an Earth material.",
+  "standard": "SKE2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "linked-k-science-social.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Oct 26–30 | Unit: Earth Materials; Monday 26",
+   "quote": "Focus Earth Materials and Grouping Rocks"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item K-fc-8).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-8",
+  "taughtOn": "2026-10-26"
+ },
+ {
+  "id": "fc-paced-2026-10-1-which-word-begins-with-the-bl-blend",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word begins with the bl blend?",
+  "answer": "Block",
+  "choices": [
+   "Block",
+   "Clap",
+   "Flag",
+   "Plan"
+  ],
+  "correctIndex": 0,
+  "explanation": "Block starts with b and l blended together: /bl/.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 19–23; Monday 19; Phonics row",
+   "quote": "Beginning Blends bl-, cl-"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-0",
+  "taughtOn": "2026-10-19",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 19",
+   "section": "Foundations 10/19; Monday (session 16)",
+   "quote": "Read and write words that start with bl and cl."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-which-word-begins-with-the-fl-blend",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word begins with the fl blend?",
+  "answer": "Flag",
+  "choices": [
+   "Plan",
+   "Flag",
+   "Clap",
+   "Black"
+  ],
+  "correctIndex": 1,
+  "explanation": "Flag starts with f and l blended together: /fl/.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 19–23; Wednesday 21; Phonics row",
+   "quote": "Beginning Blends fl-, pl-"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-1",
+  "taughtOn": "2026-10-21",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 19",
+   "section": "Foundations 10/19; Wednesday (session 18) Word Bank",
+   "quote": "FL: flag • flip • flat • flower"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-which-word-ends-with-ing",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word ends with -ing?",
+  "answer": "Jumping",
+  "choices": [
+   "Jumped",
+   "Jumps",
+   "Jumping",
+   "Jump"
+  ],
+  "correctIndex": 2,
+  "explanation": "Jumping has the -ing ending added to jump.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 19–23; I Can statements (no day named)",
+   "quote": "I can read and write words with inflectional endings -ed, -ing."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-2",
+  "taughtOn": "2026-10-20",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 19",
+   "section": "Foundations 10/19; Tuesday (session 17)",
+   "quote": "Add ed and ing to a word and read it."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-which-super-word-fits-we-tag-at-recess",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which Super Word fits? “We ___ tag at recess.”",
+  "answer": "play",
+  "choices": [
+   "were",
+   "play",
+   "out",
+   "about"
+  ],
+  "correctIndex": 1,
+  "explanation": "“We play tag at recess” makes sense.",
+  "standard": "1.F.F.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 19–23; Monday 19; High-Frequency Words row",
+   "quote": "about, out, play, were"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-3",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 19",
+   "section": "Foundations 10/19; Vocabulary & Strategy row",
+   "quote": "Superwords: about, play, out, were"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-ruby-bridges-is-known-for-which-characte",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "Ruby Bridges is known for which character trait?",
+  "answer": "Courage",
+  "choices": [
+   "Courage",
+   "Laziness",
+   "Rudeness",
+   "Greed"
+  ],
+  "correctIndex": 0,
+  "explanation": "Ruby Bridges is remembered for her courage, which means being brave.",
+  "standard": "SS1H1, SS1G1d, SS1CG1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+  "evidence": {
+   "document": "support-2.json",
+   "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+   "sourceTitle": "1st Grade Pacing",
+   "section": "Oct 19 – 23, Unit 3: A Changing Country; GaDOE Inspire line",
+   "quote": "Ruby Bridges — courage and change"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-4",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 19",
+   "section": "S 10/19; Success Criteria",
+   "quote": "I can tell what kind of person she was."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-which-word-begins-with-the-st-blend",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word begins with the st blend?",
+  "answer": "Stop",
+  "choices": [
+   "Skip",
+   "Stop",
+   "Spot",
+   "Smell"
+  ],
+  "correctIndex": 1,
+  "explanation": "Stop starts with s and t blended together: /st/.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 26–30; Monday 26; Phonics row",
+   "quote": "Beginning Blends sk-, st-"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-5",
+  "taughtOn": "2026-10-26",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 26",
+   "section": "Foundations 10/26; Monday (session 21) Word Bank",
+   "quote": "Word Bank: stop, stairs, skate, skirt"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-which-word-begins-with-the-sp-blend",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word begins with the sp blend?",
+  "answer": "Spot",
+  "choices": [
+   "Smell",
+   "Skip",
+   "Spot",
+   "Stop"
+  ],
+  "correctIndex": 2,
+  "explanation": "Spot starts with s and p blended together: /sp/.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 26–30; Wednesday 28; Phonics row",
+   "quote": "Beginning Blends sm-, sp-"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-6",
+  "taughtOn": "2026-10-28",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 26",
+   "section": "Foundations 10/26; Wednesday (session 23) Word Bank",
+   "quote": "Word Bank smart, small, spoil, spot"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-which-one-is-a-compound-word",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which one is a compound word?",
+  "answer": "Sunset",
+  "choices": [
+   "Sunk",
+   "Sunset",
+   "Sunny",
+   "Suns"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sunset is made of two small words: sun and set.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 26–30; I Can statements (no day named)",
+   "quote": "I can read and write compound words."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-7).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-7",
+  "taughtOn": "2026-10-27",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 26",
+   "section": "Foundations 10/26; Tuesday (session 22)",
+   "quote": "Explain that a compound word is when two small words come together to make one big word."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-sam-and-jo-play-a-game-have-fun-which-wo",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Sam and Jo play a game. ___ have fun. Which word fits?",
+  "answer": "They",
+  "choices": [
+   "They",
+   "He",
+   "She",
+   "It"
+  ],
+  "correctIndex": 0,
+  "explanation": "They is the pronoun for two or more people, like Sam and Jo.",
+  "standard": "1.L.GC.1-2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Oct 26–30; I Can statements (no day named)",
+   "quote": "I can use pronouns."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-8).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-8",
+  "taughtOn": "2026-10-26",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 26",
+   "section": "Writing 10/26; Monday Success Criteria",
+   "quote": "Find words like he, she, it, they."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-1-who-traveled-with-lewis-and-clark",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Who traveled with Lewis and Clark?",
+  "answer": "Sacagawea",
+  "choices": [
+   "Ruby Bridges",
+   "Sacagawea",
+   "Thomas Jefferson",
+   "No one went with them"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sacagawea traveled with Lewis and Clark.",
+  "standard": "SS1H1, SS1G1, SS1CG1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+  "evidence": {
+   "document": "support-2.json",
+   "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit?usp=sharing",
+   "sourceTitle": "1st Grade Pacing",
+   "section": "Oct 26 – 30, Unit 3: A Changing Country; I Can",
+   "quote": "I can compare the lives of Thomas Jefferson, Lewis and Clark with Sacagawea, and Ruby Bridges to life today."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 1-fc-9).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-9",
+  "taughtOn": "2026-10-26",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Oct 26",
+   "section": "S 10/26; Standard row",
+   "quote": "Meriwether Lewis and William Clark with Sacagawea (exploration)"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-which-word-has-the-long-a-sound-spelled-",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word has the long a sound spelled ai?",
+  "answer": "rain",
+  "choices": [
+   "rain",
+   "ran",
+   "ride",
+   "road"
+  ],
+  "correctIndex": 0,
+  "explanation": "In rain, the letters ai spell the long a sound.",
+  "standard": null,
+  "session": "Oct 19–23, Monday 19 (Session 16), Phonics row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Oct 19–23, Monday 19 (Session 16), Phonics row",
+   "quote": "Long a: a, ai, ay; multisyllabic long a"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-0",
+  "taughtOn": "2026-10-19",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 19",
+   "section": "Phonics 10.19-10.23 / Monday (Session 16)",
+   "quote": "Read words with long a spelled a, ai, and ay."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-which-word-spells-the-long-a-sound-with-",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which word spells the long a sound with eigh?",
+  "answer": "eight",
+  "choices": [
+   "egg",
+   "each",
+   "eight",
+   "edge"
+  ],
+  "correctIndex": 2,
+  "explanation": "In eight, the letters eigh say long a, just like in weigh.",
+  "standard": null,
+  "session": "Oct 19–23, Wednesday 21 (Session 18), Phonics row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Oct 19–23, Wednesday 21 (Session 18), Phonics row",
+   "quote": "Long a: ea, eigh, ey; multisyllabic long a"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-1",
+  "taughtOn": "2026-10-21",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 19",
+   "section": "Phonics 10.19-10.23 / Wednesday (Session 18)",
+   "quote": "Read words with long a spelled ea, eigh, and ey."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-lena-gazed-at-the-painting-for-a-long-ti",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Lena gazed at the painting for a long time without looking away. What does \"gazed\" mean?",
+  "answer": "Looked steadily",
+  "choices": [
+   "Ran quickly",
+   "Looked steadily",
+   "Spoke loudly",
+   "Painted fast"
+  ],
+  "correctIndex": 1,
+  "explanation": "Looking for a long time without looking away is the clue that gazed means looked steadily.",
+  "standard": null,
+  "session": "Oct 19–23, Thursday 22 (Session 19), Vocabulary row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Oct 19–23, Thursday 22 (Session 19), Vocabulary row",
+   "quote": "muse, creative, gazed"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-2",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 19",
+   "section": "Reading 10.19-10.23 / Vocabulary & Strategy",
+   "quote": "subject, muse, gazed, personality, creative"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-what-is-a-force",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "What is a force?",
+  "answer": "A push or a pull",
+  "choices": [
+   "A kind of rock",
+   "A color of light",
+   "A type of plant",
+   "A push or a pull"
+  ],
+  "correctIndex": 3,
+  "explanation": "A force is a push or a pull that can make something move or change.",
+  "standard": "S2P2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+  "evidence": {
+   "document": "support-6.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+   "sourceTitle": "2nd Science/Social Studies Pacing Support",
+   "section": "Oct 19–23 │ Unit: Science: Forces at Work, I Can",
+   "quote": "I can explain that a force is a push or a pull."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-3",
+  "taughtOn": "2026-10-20",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 19",
+   "section": "Science 10.19-10.23 / Learning Target",
+   "quote": "explain that a force is a push or a pull."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-which-would-need-the-strongest-push-to-s",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Which would need the strongest push to slide across the floor?",
+  "answer": "A big bookcase",
+  "choices": [
+   "A small eraser",
+   "A big bookcase",
+   "A single crayon",
+   "A paper clip"
+  ],
+  "correctIndex": 1,
+  "explanation": "Bigger, heavier objects need a stronger force to move them.",
+  "standard": "S2P2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+  "evidence": {
+   "document": "support-6.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit?usp=drive_link",
+   "sourceTitle": "2nd Science/Social Studies Pacing Support",
+   "section": "Oct 19–23 │ Unit: Science: Forces at Work, I Can",
+   "quote": "I can explain how the size of an object can affect its motion and the force needed to move it."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-4",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 19",
+   "section": "Science 10.19-10.23 / Learning Target",
+   "quote": "explain how the size of an object can affect its motion and the force needed to move it."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-which-word-has-the-long-e-sound-spelled-",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word has the long e sound spelled ee?",
+  "answer": "feet",
+  "choices": [
+   "fat",
+   "feet",
+   "fit",
+   "foot"
+  ],
+  "correctIndex": 1,
+  "explanation": "In feet, the letters ee spell the long e sound.",
+  "standard": null,
+  "session": "Oct 26–30, Monday 26 (Session 21), Phonics row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Oct 26–30, Monday 26 (Session 21), Phonics row",
+   "quote": "Long e: e, ee, y; multisyllabic long e"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-5",
+  "taughtOn": "2026-10-26",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 26",
+   "section": "Phonics 10.26-10.30 / Monday (Session 21)",
+   "quote": "read and write words with long e spelled e, ee, and y."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-which-is-the-correct-way-to-add-es-to-ba",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which is the correct way to add -es to \"baby\"?",
+  "answer": "babies",
+  "choices": [
+   "babys",
+   "babyes",
+   "babbies",
+   "babies"
+  ],
+  "correctIndex": 3,
+  "explanation": "When a word ends in a consonant + y, change the y to i and add -es: babies.",
+  "standard": null,
+  "session": "Oct 26–30, Tuesday 27 (Session 22), Phonics row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Oct 26–30, Tuesday 27 (Session 22), Phonics row",
+   "quote": "Long e: e, ee, y; Long a: a, ai, ay; Inflections (y to i)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-6",
+  "taughtOn": "2026-10-27",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 26",
+   "section": "Phonics 10.26-10.30 / Tuesday (Session 22)",
+   "quote": "recognize and read words with inflectional endings and spelling changes."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-jay-admired-his-friend-s-painting-and-sa",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Jay admired his friend's painting and said, \"I really like it!\" What does \"admired\" mean?",
+  "answer": "Thought highly of",
+  "choices": [
+   "Laughed at",
+   "Forgot about",
+   "Thought highly of",
+   "Tore up"
+  ],
+  "correctIndex": 2,
+  "explanation": "Saying \"I really like it!\" is the clue that admired means thought highly of.",
+  "standard": null,
+  "session": "Oct 26–30, Monday 26 (Session 21), Vocabulary row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Oct 26–30, Monday 26 (Session 21), Vocabulary row",
+   "quote": "adored, essence, admired, revealed"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-7).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-7",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 26",
+   "section": "Reading 10.26-10.30 / Vocabulary & Strategy",
+   "quote": "adored, essence, admired, revealed"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-2-which-region-of-georgia-has-rolling-hill",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "Which region of Georgia has rolling hills?",
+  "answer": "Piedmont",
+  "choices": [
+   "Piedmont",
+   "Coastal Plain",
+   "Blue Ridge",
+   "Ridge and Valley"
+  ],
+  "correctIndex": 0,
+  "explanation": "The Piedmont has rolling hills. The Coastal Plain is flatter.",
+  "standard": "SS2G1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-16JOGbY6WN.json",
+   "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 26",
+   "section": "Social Studies, Thursday 10/29",
+   "quote": "Explain that the Piedmont has rolling hills and that the Coastal Plain is generally flatter, with broad areas of low-lying land."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-8).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-8",
+  "taughtOn": "2026-10-29"
+ },
+ {
+  "id": "fc-paced-2026-10-2-what-is-a-region",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "What is a region?",
+  "answer": "An area that shares certain characteristics",
+  "choices": [
+   "An area that shares certain characteristics",
+   "A kind of river",
+   "The capital of a state",
+   "A key on a map"
+  ],
+  "correctIndex": 0,
+  "explanation": "A region is an area that shares certain characteristics.",
+  "standard": "SS2G1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-16JOGbY6WN.json",
+   "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Oct 26",
+   "section": "Social Studies, Monday 10/26",
+   "quote": "Explain that a region is an area that shares certain characteristics."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 2-fc-9).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-9",
+  "taughtOn": "2026-10-26"
+ },
+ {
+  "id": "fc-paced-2026-10-3-opinion-our-school-needs-more-trash-cans",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Opinion: “Our school needs more trash cans.” Which sentence is evidence that supports it?",
+  "answer": "Litter is on the playground every day.",
+  "choices": [
+   "Trash cans are gray.",
+   "Litter is on the playground every day.",
+   "I like recess.",
+   "Lunch is at noon."
+  ],
+  "correctIndex": 1,
+  "explanation": "Litter on the playground every day is a reason that shows why more trash cans are needed.",
+  "standard": "3.T.T.3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Oct 19–23 (Unit 2: Into the Deep), I Can",
+   "quote": "I can utilize evidence from the text to support my opinion in writing."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-0",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Oct 19",
+   "section": "ELA 10/19, Session 22-23 Day 1, I Can",
+   "quote": "I can use evidence from texts to explain my opinion"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-3-which-part-of-an-essay-comes-first",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which part of an essay comes first?",
+  "answer": "The introduction",
+  "choices": [
+   "The introduction",
+   "The conclusion",
+   "The checklist",
+   "The evidence"
+  ],
+  "correctIndex": 0,
+  "explanation": "The introduction opens the essay and gets the reader ready.",
+  "standard": "3.T.T.3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Oct 19–23 (Unit 2: Into the Deep), Support / PEC",
+   "quote": "Utilize the Catch, Ask, Tell acronym to assist students in writing an introduction"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-1",
+  "taughtOn": "2026-10-20",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Oct 19",
+   "section": "ELA 10/19, Session 24 Day 2, structure chart",
+   "quote": "Paragraph 1: Introduction (Topic and opinion)"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-3-a-classmate-uses-a-peer-editing-checklis",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "A classmate uses a peer editing checklist on your essay. What are they doing?",
+  "answer": "Helping you fix your writing",
+  "choices": [
+   "Helping you fix your writing",
+   "Writing a new essay",
+   "Reading a different book",
+   "Drawing a picture"
+  ],
+  "correctIndex": 0,
+  "explanation": "Peer editing means classmates check each other's writing to help improve it.",
+  "standard": "3.L.GC.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Oct 19–23 (Unit 2: Into the Deep), Support / PEC",
+   "quote": "Provide students with peer editing checklist to help assist them in editing each other's writing."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-2",
+  "taughtOn": "2026-10-23",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Oct 19",
+   "section": "ELA 10/19, Session 27 Day 5, Station 1",
+   "quote": "Students exchange drafts and use the workbook checklist to identify strengths and areas for improvement."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-3-fossils-give-evidence-about-the-types-of",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "Fossils give evidence about the types of ___ that lived long ago.",
+  "answer": "Organisms",
+  "choices": [
+   "Organisms",
+   "Clouds",
+   "Magnets",
+   "Minerals"
+  ],
+  "correctIndex": 0,
+  "explanation": "Fossils come from living things, so they tell us what organisms lived long ago.",
+  "standard": "S3E2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-8.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+   "sourceTitle": "3rd Science Pacing Support",
+   "section": "3 SCI Unit 1 plan, Learning Target 6",
+   "quote": "Students will be skilled at understanding that fossils provide evidence about the types of organisms that lived long ago."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-3",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Oct 19",
+   "section": "Sci 10/19, Standard",
+   "quote": "how fossils provide evidence of past organisms"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-3-which-of-these-is-an-artifact",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "Which of these is an artifact?",
+  "answer": "A clay pot made long ago",
+  "choices": [
+   "A clay pot made long ago",
+   "A river",
+   "A mountain",
+   "A cloud"
+  ],
+  "correctIndex": 0,
+  "explanation": "An artifact is an object made or used by people; rivers, mountains, and clouds are not made by people.",
+  "standard": "SS3H1, SS3G3a",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-9.json",
+   "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+   "sourceTitle": "3rd Social Studies Pacing Support",
+   "section": "Weekly catalog, Oct 19–23 (Unit: American Indians Past and Present), GaDOE Inspire",
+   "quote": "Learning from Artifacts"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-4",
+  "taughtOn": "2026-10-19",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Oct 19",
+   "section": "SS 10/19, Daily Sequence, Mon 10/19",
+   "quote": "Artifact inquiry: archaeology terms"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-3-you-are-starting-a-research-poster-what-",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "You are starting a research poster. What should you do first?",
+  "answer": "Choose a question to research",
+  "choices": [
+   "Choose a question to research",
+   "Present to the class",
+   "Color the border",
+   "Hang it on the wall"
+  ],
+  "correctIndex": 0,
+  "explanation": "Research begins with a question you want to answer.",
+  "standard": "3.T.C.1, 3.T.T.2, 3.T.RA.1, 3.T.RA.2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Oct 26–30 (Unit 2: Into The Deep/ Unit 3: Another View), Support / PEC",
+   "quote": "If students struggle to come up with a question to research, provide students with a list of questions to choose from."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-5"
+ },
+ {
+  "id": "fc-paced-2026-10-3-mom-thinks-the-rain-is-great-for-her-gar",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Mom thinks the rain is great for her garden. Jo thinks the rain ruined her picnic. What is different?",
+  "answer": "Their perspectives",
+  "choices": [
+   "Their perspectives",
+   "The weather",
+   "The setting",
+   "The day"
+  ],
+  "correctIndex": 0,
+  "explanation": "They see the same rain in different ways, so their perspectives are different.",
+  "standard": "3.T.C.2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Oct 26–30 (Unit 2: Into The Deep/ Unit 3: Another View), I Can (Unit 3; Unit 3 Session 1 is Thu Oct 29)",
+   "quote": "I can examine different perspectives about story events."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-6",
+  "taughtOn": "2026-10-29"
+ },
+ {
+  "id": "fc-paced-2026-10-3-ella-wanted-the-new-bike-her-sister-got-",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Ella wanted the new bike her sister got. How did Ella feel?",
+  "answer": "Jealous",
+  "choices": [
+   "Jealous",
+   "Sleepy",
+   "Proud",
+   "Brave"
+  ],
+  "correctIndex": 0,
+  "explanation": "Wanting what someone else has is feeling jealous.",
+  "standard": "3.T.C.2, 3.F.P.A, 3.F.F.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Oct 26–30 (Unit 2: Into The Deep/ Unit 3: Another View), Support / PEC (Unit 3 Session 1 is Thu Oct 29)",
+   "quote": "Preteach Key Vocabulary; Bounds, Jealous, Stampede; before reading Maybe Maybe Marisol Rainey."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-7).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-7",
+  "taughtOn": "2026-10-29"
+ },
+ {
+  "id": "fc-paced-2026-10-3-scientists-find-many-fish-fossils-in-one",
+  "subject": "Science",
+  "difficulty": 3,
+  "question": "Scientists find many fish fossils in one area. What can they conclude?",
+  "answer": "Fish lived in that area long ago",
+  "choices": [
+   "Fish lived in that area long ago",
+   "Fish fossils grow inside rocks",
+   "The fish are still alive",
+   "Nothing can be learned"
+  ],
+  "correctIndex": 0,
+  "explanation": "A group of fossils from one area shows what organisms lived in that ancient environment.",
+  "standard": "S3E2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-8.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+   "sourceTitle": "3rd Science Pacing Support",
+   "section": "3 SCI Unit 1 plan, Learning Target 6 Success Criteria",
+   "quote": "Given a collection of fossils from a particular area, students can draw conclusions about the types of organisms that inhabited that ancient environment."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-8).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-8",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Oct 19",
+   "section": "Sci 10/19, Standard S3E2a",
+   "quote": "Construct an argument from observations of fossils ... the environments in which they lived."
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-3-why-did-some-american-indian-groups-live",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Why did some American Indian groups live a nomadic life, moving from place to place?",
+  "answer": "To follow the animals and plants they needed for food",
+  "choices": [
+   "To follow the animals and plants they needed for food",
+   "To live closer to big cities",
+   "Because they had no homes at all",
+   "To get away from their neighbors"
+  ],
+  "correctIndex": 0,
+  "explanation": "Groups that depended on hunting moved to follow the animals and plants they used for food.",
+  "standard": "SS3H1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1QQOJoRIXx.json",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Oct 26",
+   "section": "Social Studies 10/26, standard SS3G3a",
+   "quote": "SS3G3a: Explain why American Indian groups occupied the areas they did, with emphasis on why some developed permanent villages and others did not."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 3-fc-9).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-9"
+ },
+ {
+  "id": "fc-paced-2026-10-4-a-story-shows-a-boy-who-keeps-trying-unt",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "A story shows a boy who keeps trying until he finally learns to swim. Which is a THEME of the story?",
+  "answer": "Never give up",
+  "choices": [
+   "Swimming",
+   "Never give up",
+   "A pool",
+   "Summer"
+  ],
+  "correctIndex": 1,
+  "explanation": "A theme is the lesson; the other choices are topics or details.",
+  "standard": "4.T.C.1, 4.T.T.4, 4.F.H.4 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-5.json",
+   "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+   "sourceTitle": "4th ELA Pacing Support",
+   "section": "Oct 19–23 weekly block, Unit 2: Storytellers (Sessions 20–24)",
+   "quote": "Find the Theme (not the Topic) Video"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-0"
+ },
+ {
+  "id": "fc-paced-2026-10-4-which-sentence-makes-the-strongest-concl",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which sentence makes the strongest conclusion for a story about Ben’s first camping trip?",
+  "answer": "As the fire faded, Ben smiled and planned his next trip.",
+  "choices": [
+   "Ben packed a tent.",
+   "As the fire faded, Ben smiled and planned his next trip.",
+   "Tents come in many sizes.",
+   "The end."
+  ],
+  "correctIndex": 1,
+  "explanation": "It wraps up Ben’s experience and shows how he feels about it.",
+  "standard": "4.T.C.1, 4.T.T.4, 4.F.H.4 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-5.json",
+   "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+   "sourceTitle": "4th ELA Pacing Support",
+   "section": "Oct 19–23 weekly block, Unit 2: Storytellers (Sessions 20–24)",
+   "quote": "I can identify and explain the parts of a strong conclusion."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-1"
+ },
+ {
+  "id": "fc-paced-2026-10-4-the-northern-hemisphere-is-tilted-away-f",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "The northern hemisphere is tilted away from the Sun. What season is it there?",
+  "answer": "Winter",
+  "choices": [
+   "Summer",
+   "Winter",
+   "Spring",
+   "Fall"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tilted away, sunlight hits less directly, so it is winter.",
+  "standard": "S4E2c",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1qvmsgIDIf7U2-AuY4x6SAIExaYyFuIuuoTC0gqh52x0/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1qvmsgIDIf.json",
+   "sourceUrl": "https://docs.google.com/document/d/1qvmsgIDIf7U2-AuY4x6SAIExaYyFuIuuoTC0gqh52x0/edit",
+   "sourceTitle": "Sweetwater Grade 4 lesson plan, week of Oct 26",
+   "section": "Science 10/26, Seasons",
+   "quote": "If the northern hemisphere is tilted away from the Sun, heat is spread more indirectly, causing winter."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-2"
+ },
+ {
+  "id": "fc-paced-2026-10-4-what-causes-day-and-night-on-earth",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "What causes day and night on Earth?",
+  "answer": "Earth's rotation",
+  "choices": [
+   "Earth's rotation",
+   "Earth's revolution",
+   "The Moon's orbit",
+   "Earth's distance from the Sun"
+  ],
+  "correctIndex": 0,
+  "explanation": "Earth spins on its axis. The side facing the Sun has day.",
+  "standard": "S4E2a",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1EJsNqH9fhhg82Xp1mLQCN49qMRroLgxzgHme8cRv0Gs/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1EJsNqH9fh.json",
+   "sourceUrl": "https://docs.google.com/document/d/1EJsNqH9fhhg82Xp1mLQCN49qMRroLgxzgHme8cRv0Gs/edit",
+   "sourceTitle": "Sweetwater Grade 4 lesson plan, week of Oct 19",
+   "section": "Science 10/19, Day and Night",
+   "quote": "Explain how the rotation of Earth on its axis causes the pattern of day and night."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-3"
+ },
+ {
+  "id": "fc-paced-2026-10-4-the-first-amendment-is-part-of-which-doc",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "The First Amendment is part of which document?",
+  "answer": "The U.S. Constitution",
+  "choices": [
+   "The Declaration of Independence",
+   "The Articles of Confederation",
+   "The U.S. Constitution",
+   "A class newspaper"
+  ],
+  "correctIndex": 2,
+  "explanation": "It is the First Amendment to the U.S. Constitution.",
+  "standard": "SS4CG2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-11.json",
+   "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+   "sourceTitle": "4th Social Studies Pacing Support",
+   "section": "Unit Overview table, Unit 3: Challenges of a New Nation",
+   "quote": "SS4CG2 - Explain the importance of freedoms guaranteed by the First Amendment to the U.S. Constitution."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-4"
+ },
+ {
+  "id": "fc-paced-2026-10-4-kai-wanted-a-puppy-to-show-responsibilit",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Kai wanted a puppy. To show responsibility, he fed a neighbor's cat for a month. Then his parents said yes. Which is the best summary?",
+  "answer": "Kai earned a puppy by caring for a cat.",
+  "choices": [
+   "Kai fed a cat.",
+   "Kai earned a puppy by caring for a cat.",
+   "Puppies are better than cats.",
+   "Kai's neighbor has a cat."
+  ],
+  "correctIndex": 1,
+  "explanation": "It tells who, what he wanted, the problem, what he did, and how it ended.",
+  "standard": "4.T.SS.2, 4.T.RA.1, 4.T.T.1 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-5.json",
+   "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+   "sourceTitle": "4th ELA Pacing Support",
+   "section": "Oct 26–30 weekly block, Unit 2: Storytellers (Sessions 25–30)",
+   "quote": "Use SWBST to scaffold summarizing"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-5"
+ },
+ {
+  "id": "fc-paced-2026-10-4-what-should-a-good-summary-include",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "What should a good summary include?",
+  "answer": "The most important events",
+  "choices": [
+   "Every small detail",
+   "Only your favorite part",
+   "The most important events",
+   "Words copied from every page"
+  ],
+  "correctIndex": 2,
+  "explanation": "A summary keeps only the most important parts.",
+  "standard": "4.T.SS.2, 4.T.RA.1, 4.T.T.1 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-5.json",
+   "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+   "sourceTitle": "4th ELA Pacing Support",
+   "section": "Oct 26–30 weekly block, Unit 2: Storytellers (Sessions 25–30)",
+   "quote": "I can synthesize elements of a story to create a summary."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-6"
+ },
+ {
+  "id": "fc-paced-2026-10-4-text-1-the-library-opens-at-9-00-text-2-",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Text 1: The library opens at 9:00. Text 2: Story time starts one hour after the library opens. When does story time start?",
+  "answer": "10:00",
+  "choices": [
+   "8:00",
+   "9:00",
+   "10:00",
+   "11:00"
+  ],
+  "correctIndex": 2,
+  "explanation": "Text 1 gives 9:00 and Text 2 adds one hour, so 10:00.",
+  "standard": "4.T.SS.2, 4.T.RA.1, 4.T.T.1 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-5.json",
+   "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+   "sourceTitle": "4th ELA Pacing Support",
+   "section": "Oct 26–30 weekly block, Unit 2: Storytellers (Sessions 25–30)",
+   "quote": "I can gather evidence from multiple texts to correctly answer questions."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-7).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-7"
+ },
+ {
+  "id": "fc-paced-2026-10-4-the-constitution-keeps-power-balanced-be",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "The Constitution keeps power balanced between how many branches of government?",
+  "answer": "3",
+  "choices": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "correctIndex": 1,
+  "explanation": "The source lesson names 3 branches.",
+  "standard": "SS4CG3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-11.json",
+   "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+   "sourceTitle": "4th Social Studies Pacing Support",
+   "section": "Oct 26-30 weekly block, Unit 3: Challenges of a New Nation",
+   "quote": "How Does the Constitution Keep Power Balanced Between the 3 Branches?"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 4-fc-8).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-8"
+ },
+ {
+  "id": "fc-paced-2026-10-5-which-statement-describes-a-chemical-cha",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "Which statement describes a chemical change?",
+  "answer": "A new substance forms",
+  "choices": [
+   "Matter only changes shape",
+   "A mixture is separated",
+   "A new substance forms",
+   "Nothing about the matter changes"
+  ],
+  "correctIndex": 2,
+  "explanation": "Chemical changes create new substances with different properties.",
+  "standard": "S5P1c",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-7.json",
+   "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+   "sourceTitle": "5th Science Pacing Support",
+   "section": "Unit 2 UbD Stage 1 (Physical and Chemical Changes, Sept 21–Nov 6); applies to week 2026-10-19 per weekly pacing",
+   "quote": "Chemical changes create new substances with different properties."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-0",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "Science tab '10/19 Science' (Date(s): 10/19 - 10/23), Standard",
+   "quote": "new substance produced"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-5-a-student-wants-to-know-if-a-chemical-ch",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "A student wants to know if a chemical change happened. What should she use to decide?",
+  "answer": "Observations and evidence",
+  "choices": [
+   "A quick guess",
+   "Observations and evidence",
+   "What a friend hopes",
+   "The color of her notebook"
+  ],
+  "correctIndex": 1,
+  "explanation": "Scientists use observations and evidence to identify chemical changes.",
+  "standard": "S5P1c",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-7.json",
+   "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+   "sourceTitle": "5th Science Pacing Support",
+   "section": "Unit 2 pacing calendar, Oct 19–23: 5P1C Chemical Changes (cont.), S5P1c",
+   "quote": "I can use observations and evidence to identify chemical changes in matter."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-1",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "Science tab '10/19 Science' (Date(s): 10/19 - 10/23), Standard",
+   "quote": "determine if a chemical change occurred based on observable evidence"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-5-the-prefix-con-in-connect-and-contribute",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "The prefix con- in “connect” and “contribute” means…",
+  "answer": "with or together",
+  "choices": [
+   "with or together",
+   "not",
+   "again",
+   "before"
+  ],
+  "correctIndex": 0,
+  "explanation": "con- means with or together.",
+  "standard": "5.L.V.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1Yqz9D2HYE.json",
+   "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "ELA wk 10/19-10/23, Day 3 morphology",
+   "quote": "briskly, contributing, transport, innovation, miniaturized, automated, prefix con-, root ced, suffixes -ed/-ible/-able"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-2",
+  "taughtOn": "2026-10-21"
+ },
+ {
+  "id": "fc-paced-2026-10-5-source-a-the-library-is-open-late-on-tue",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Source A: the library is open late on Tuesdays. Source B: homework club meets at the library. Which idea uses both?",
+  "answer": "Homework club could meet late on Tuesdays.",
+  "choices": [
+   "Homework club could meet late on Tuesdays.",
+   "The library is closed every day.",
+   "Homework club meets at the park.",
+   "Source A is about sports."
+  ],
+  "correctIndex": 0,
+  "explanation": "This idea combines the late Tuesday hours from Source A with the club location from Source B.",
+  "standard": "5.T.T.3.a",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-6.json",
+   "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+   "sourceTitle": "5th ELA Pacing Support",
+   "section": "Weekly catalog Oct 19–23, Unit 2: From Earth to Mars, I Can",
+   "quote": "I can use what I learned from two or more sources to explain or support my ideas (5.T.RA.1.c)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-3",
+  "taughtOn": "2026-10-20",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "ELA tab 'wk 10/19-10/23', Day 2 Tuesday Session 24",
+   "quote": "using evidence from at least two unit texts"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-5-water-changes-from-a-solid-to-a-liquid-w",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "Water changes from a solid to a liquid. What kind of change is this?",
+  "answer": "Physical change",
+  "choices": [
+   "Physical change",
+   "Chemical change",
+   "A new substance forms",
+   "No change at all"
+  ],
+  "correctIndex": 0,
+  "explanation": "Changes between the states of water are physical changes.",
+  "standard": "S5P1b",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-19",
+  "alignedWeeks": [
+   "2026-10-19"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-7.json",
+   "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+   "sourceTitle": "5th Science Pacing Support",
+   "section": "Unit 2 UbD Stage 1 (Physical and Chemical Changes, Sept 21–Nov 6); applies to week 2026-10-26 per weekly pacing",
+   "quote": "Water can exist in different physical states, and changes between states are physical changes."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-5",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "Science tab '10/19 Science' (Date(s): 10/19 - 10/23), Retrieval Activator",
+   "quote": "melting ice"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-5-which-statement-about-physical-changes-i",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Which statement about physical changes is true?",
+  "answer": "They change form, not what matter is made of.",
+  "choices": [
+   "They always make a new substance.",
+   "They only happen to water.",
+   "They cannot be observed.",
+   "They change form, not what matter is made of."
+  ],
+  "correctIndex": 3,
+  "explanation": "Physical changes alter the form of matter but not its chemical composition.",
+  "standard": "S5P1a",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-7.json",
+   "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+   "sourceTitle": "5th Science Pacing Support",
+   "section": "Unit 2 UbD Stage 1 (Physical and Chemical Changes, Sept 21–Nov 6); applies to week 2026-10-26 per weekly pacing",
+   "quote": "Physical changes alter the form of matter but not its chemical composition."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-6",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "Tab '10/26'",
+   "quote": "Lesson\\#/Title:   | Lesson Link:  (blank)"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-5-which-is-a-first-hand-account-of-a-schoo",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which is a first-hand account of a school fire drill?",
+  "answer": "A student’s journal about her own drill",
+  "choices": [
+   "A news story by someone not there",
+   "A student’s journal about her own drill",
+   "A friend retelling what he heard",
+   "A summary written years later"
+  ],
+  "correctIndex": 1,
+  "explanation": "A first-hand account is told by someone who was part of the event.",
+  "standard": "5.T.T.2.c",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-6.json",
+   "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+   "sourceTitle": "5th ELA Pacing Support",
+   "section": "Weekly catalog Oct 26–30, Unit 3: Freedom Seekers, I Can (Unit 3: Module 1 Session 1 on Tue Oct 27)",
+   "quote": "I can compare and contrast first-hand and second-hand accounts of the same event. (5.T.T.2.c)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-7).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-7",
+  "taughtOn": "2026-10-27",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "ELA tabs end at 'wk 10/19-10/23'",
+   "quote": "(no Oct 26 ELA tab)"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-5-a-story-is-set-on-a-snowy-mountain-how-m",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "A story is set on a snowy mountain. How might the setting most affect the plot?",
+  "answer": "Characters face cold, slippery trails.",
+  "choices": [
+   "Characters swim at a sunny beach.",
+   "Nothing in the plot changes.",
+   "Characters face cold, slippery trails.",
+   "Characters stay in a hot desert."
+  ],
+  "correctIndex": 2,
+  "explanation": "A snowy mountain setting can create problems, like cold and slippery trails, that shape what happens.",
+  "standard": "5.T.T.1.b",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-6.json",
+   "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+   "sourceTitle": "5th ELA Pacing Support",
+   "section": "Weekly catalog Oct 26–30, Unit 3: Freedom Seekers, I Can (Unit 3: Module 1 Session 1 on Tue Oct 27)",
+   "quote": "I can tell how the setting, events, and characters affect the story’s plot. (5.T.T.1.b)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-8).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-8",
+  "taughtOn": "2026-10-27",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "ELA tabs end at 'wk 10/19-10/23'",
+   "quote": "(no Oct 26 ELA tab)"
+  }
+ },
+ {
+  "id": "fc-paced-2026-10-5-unit-4-studies-world-war-i-and-which-dec",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "Unit 4 studies World War I and which decade after it?",
+  "answer": "The 1920s",
+  "choices": [
+   "The 1950s",
+   "The 1970s",
+   "The 1920s",
+   "The 1990s"
+  ],
+  "correctIndex": 2,
+  "explanation": "Unit 4 is “War and Prosperity: World War I and the 1920s.”",
+  "standard": "SS5H2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-10-26",
+  "alignedWeeks": [
+   "2026-10-26"
+  ],
+  "source": "ClassThread paced content (2026-10)",
+  "packId": "classthread-paced-2026-10",
+  "packName": "ClassThread paced content (2026-10)",
+  "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-12.json",
+   "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+   "sourceTitle": "5th Social Studies Pacing Support",
+   "section": "Unit Overview row 4: War and Prosperity, October 26th - November 20th",
+   "quote": "War and Prosperity: World War I and the 1920s"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-10 review page (item 5-fc-9).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-9",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Oct 19",
+   "section": "Tab '10/26'",
+   "quote": "Lesson\\#/Title:   | Lesson Link:  (blank)"
+  }
+ }
+]

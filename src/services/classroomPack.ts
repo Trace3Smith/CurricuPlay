@@ -1,8 +1,11 @@
-import rawPack from '../data/tomorrow-pack.json' with { type: 'json' };
+import tomorrowPack from '../data/tomorrow-pack.json' with { type: 'json' };
+import pacedPack from '../data/paced-jeopardy.json' with { type: 'json' };
 import { bank, validateQuestions } from './questionEngine';
 import { effectiveQuestion, type Decisions } from './questionReview';
 import type { Question } from '../types';
-export const PACK_NAME = 'DCSS Tomorrow Classroom Pack - 2026-09-14';
+export const PACK_NAME = 'DCSS Classroom Pack · paced to the teaching date';
+// The original September pack plus teacher-approved paced batches. Every question still shows only from its taught date.
+const rawPack: unknown[] = [...tomorrowPack, ...pacedPack];
 export const classroomBank = validateQuestions(rawPack);
 // Pack acceptance is a separate, explicitly authorized release decision. It never
 // changes draft review status or writes into the teacher's local review storage.

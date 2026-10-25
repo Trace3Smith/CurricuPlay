@@ -1,7 +1,8 @@
 import { movementDuration, type MovementDuration } from './movementTimer';
 import { createCornerTeams } from './teams';
 import { commitQuestion, createSession, endSession, isGameSession, type GameSession, type AssessmentQuestionSnapshot } from '../../assessment/engine';
-import raw from '../../data/four-corners.json' with { type: 'json' };
+import baseCorners from '../../data/four-corners.json' with { type: 'json' };
+import pacedCorners from '../../data/paced-four-corners.json' with { type: 'json' };
 import { grades, type Grade, type PacedRange, type Question } from '../../types';
 import { createQuestionEngine, isPaced, validateQuestions } from '../../services/questionEngine';
 import { classroomQuestions } from '../../services/classroomPack';
@@ -21,7 +22,10 @@ export interface CornerQuestion extends Question {
   adaptation?: { kind: 'conversion' | 'source-exercise'; sourceQuestionId?: string };
   visual?: { src: string; alt: string; kind?: 'illustration' | 'diagram' | 'photo' };
 }
+const raw: unknown[] = [...baseCorners, ...pacedCorners];
 const validated = validateQuestions(raw);
+/** Teacher-approved paced batches are reviewed directly, so they have no Jeopardy parent question. */
+const standalone = (q: CornerQuestion) => !q.originId && q.approvalBasis === 'teacher-review' && q.reviewStatus === 'approved';
 export const bank: CornerQuestion[] = validated.errors.length ? [] : validated.questions.filter(q => {
   const c = q as CornerQuestion;
   return c.subject !== 'Math' && c.choices?.length === 4 && new Set(c.choices).size === 4 && Number.isInteger(c.correctIndex) && c.correctIndex >= 0 && c.correctIndex < 4 && c.choices[c.correctIndex] === c.answer && (!c.visual || (c.visual.src.startsWith('/four-corners/') && c.visual.alt.trim()));
@@ -33,7 +37,7 @@ export const contentLabels: Record<PacedRange, string> = { current: 'Current', r
 export function eligible(grade: Grade, mix: Mix, content: PacedRange = 'mixed', asOf = schoolDate()): CornerQuestion[] {
   const decisions = readReviews().decisions;
   const parents = new Set(classroomQuestions(decisions).filter(q => q.reviewStatus === 'approved').map(q => q.id));
-  return createQuestionEngine(bank.filter(q => parents.has(q.originId!) && ![q.id, q.adaptation?.sourceQuestionId].some(id => id && ['rejected', 'needs-edit'].includes(decisions[id]?.status)))).getQuestions({ grade, range: content, asOf, unused: false }).filter(q => mix === 'Mixed Academic' || subjectLabel(q.subject) === mix) as CornerQuestion[];
+  return createQuestionEngine(bank.filter(q => (parents.has(q.originId!) || standalone(q)) && ![q.id, q.adaptation?.sourceQuestionId].some(id => id && ['rejected', 'needs-edit'].includes(decisions[id]?.status)))).getQuestions({ grade, range: content, asOf, unused: false }).filter(q => mix === 'Mixed Academic' || subjectLabel(q.subject) === mix) as CornerQuestion[];
 }
 function shuffle<T>(items: T[], random: () => number): T[] {
   const result = [...items];
