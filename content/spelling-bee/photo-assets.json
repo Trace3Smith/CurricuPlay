@@ -347,6 +347,87 @@
       "originalBytes": 2675787,
       "bytes": 176132,
       "sourceSha256": "a0f9313d19c1abacf533a0cb6ce1bf1e0fe723645a7a85ef8ffa058bd2a9f4fd"
+    },
+    {
+      "name": "rabbit",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one real brown-and-white rabbit sitting, side view, long upright ears clearly visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/rabbit.webp",
+      "originalBytes": 1447120,
+      "bytes": 89668,
+      "sourceSha256": "22ebea8a11cf642cd45fa29e332c63fb2fab1209fc0030a2a8d6dceb702a06d6",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "35ec3b2c-e189-458a-bb6c-b105ab0b7db9"
+    },
+    {
+      "name": "dog",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one friendly golden-brown dog standing, full body side view, all four legs and tail visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/dog.webp",
+      "originalBytes": 1228950,
+      "bytes": 61192,
+      "sourceSha256": "10023526fcc974513303a489c0cbdf4a691e8902c4a1fed29c731a1cce0c7788",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "a837586d-ddf7-4449-965f-8a6db437235c"
+    },
+    {
+      "name": "door",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one closed wooden front door in a simple frame, straight-on front view, round metal doorknob clearly visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/door.webp",
+      "originalBytes": 1432814,
+      "bytes": 73732,
+      "sourceSha256": "c69edf80f2689cf35db93fe04ece29c9db9272c1e6f6d13da689660297a0a293",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "ffa2216f-b26d-4e20-8df3-1b4d9389119b"
+    },
+    {
+      "name": "desk",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one empty school student desk with an attached chair, three-quarter view, whole desk fully visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/desk.webp",
+      "originalBytes": 1322295,
+      "bytes": 62250,
+      "sourceSha256": "1a3a016fd7c12040d48044f891611309ec95813eadb784a24fb4c15ea2cd11b2",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "4e26bc75-f8e7-42f3-af83-4877c913e105"
+    },
+    {
+      "name": "egg",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one whole white chicken egg lying on its side, uncracked, on a plain light gray background. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/egg.webp",
+      "originalBytes": 1197168,
+      "bytes": 38820,
+      "sourceSha256": "68cb7d133951ff2cdbb9223eca86814b9674d6dd74d21d3ab6d937fdc98da619",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "800fed44-0236-4a5c-9686-904edb7861be"
+    },
+    {
+      "name": "elephant",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one gray African elephant standing, full body side view, trunk, big ears and tusks clearly visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/elephant.webp",
+      "originalBytes": 1625906,
+      "bytes": 131440,
+      "sourceSha256": "ca82e9932646883645e924aca3451d1b00560ffe08c3196dccc7af827c112855",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "774213e6-00d5-4571-9816-23dd94d02f85"
+    },
+    {
+      "name": "elbow",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: a child's arm bent at a right angle, shown from the side, with the elbow joint as the clear center of the picture; short-sleeved shirt. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/elbow.webp",
+      "originalBytes": 1465967,
+      "bytes": 75800,
+      "sourceSha256": "494723a417f97614293f288ed7375c296a05380badfce65d600323a392fb6927",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "729f68fc-036a-4232-b176-f5ed91d17168",
+      "edit": "Red arrow with white outline added afterward (no text), pointing at the elbow, because children may otherwise say \"arm\". Drawn with Pillow; sourceSha256 is the unedited original."
+    },
+    {
+      "name": "envelope",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one plain white paper envelope, back side showing the closed triangular flap, on a plain light gray background. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/envelope.webp",
+      "originalBytes": 1218414,
+      "bytes": 33474,
+      "sourceSha256": "1db0bf07022db178e075040fe1af76ce042a8d33632a760b8fe8872f08d097d7",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-23",
+      "runwayTaskId": "2da25b23-8e77-4b65-9723-a6ae19a78f62"
     }
   ],
   "optimization": {

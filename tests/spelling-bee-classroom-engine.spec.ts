@@ -13,7 +13,7 @@ const start = () => beginGame(samples.entries, '5', 'challenge', 'timer-test', i
 
 test('all 32 eligible Kindergarten prompts and the reviewed foundation objects have local generated pictures', () => {
  const kindergarten=selectBank({grade:'K',mode:'mixed',cutoff:'2026-10-09',priorGrade:false});
- expect(kindergarten).toHaveLength(32);expect(manifest.assets).toHaveLength(43);
+ expect(kindergarten).toHaveLength(32);expect(manifest.assets).toHaveLength(51);
  for(const w of kindergarten){
   expect(w.picture).toBe(w.word);expect(answerFor(w)).toBe(w.word[0]);
   expect(pictures[w.picture!].src).toBe(`/spelling-bee/photos/${w.word}.webp`);
@@ -22,6 +22,11 @@ test('all 32 eligible Kindergarten prompts and the reviewed foundation objects h
  for(const asset of manifest.assets){
   expect(asset.prompt.length).toBeGreaterThan(50);
   expect(readFileSync(asset.path).subarray(8,12).toString()).toBe('WEBP');
+ }
+ // October Kindergarten photos (R, D and E weeks); elbow carries an added arrow.
+ for(const word of ['rabbit','dog','door','desk','egg','elephant','elbow','envelope']){
+  expect(pictures[word].src).toBe(`/spelling-bee/photos/${word}.webp`);
+  expect(manifest.assets.some(a=>a.name===word&&a.path===`public/spelling-bee/photos/${word}.webp`)).toBe(true);
  }
  for(const grade of ['1','2'] as const){
   const bank=selectBank({grade,mode:'mixed',cutoff:'2026-10-09',priorGrade:false});

@@ -218,5 +218,37 @@
   "scrap": {
     "src": "/spelling-bee/photos/scrap.webp",
     "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "rabbit": {
+    "src": "/spelling-bee/photos/rabbit.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "dog": {
+    "src": "/spelling-bee/photos/dog.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "door": {
+    "src": "/spelling-bee/photos/door.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "desk": {
+    "src": "/spelling-bee/photos/desk.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "egg": {
+    "src": "/spelling-bee/photos/egg.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "elephant": {
+    "src": "/spelling-bee/photos/elephant.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "elbow": {
+    "src": "/spelling-bee/photos/elbow.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "envelope": {
+    "src": "/spelling-bee/photos/envelope.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
   }
 }
