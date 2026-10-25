@@ -25,7 +25,7 @@ test('all 32 eligible Kindergarten prompts and the reviewed foundation objects h
  }
  // October Kindergarten photos (R, D and E weeks); elbow carries an added arrow.
  for(const word of ['rabbit','dog','door','desk','egg','elephant','elbow','envelope']){
-  expect(pictures[word].src).toBe(`/spelling-bee/photos/${word}.webp`);
+  expect((pictures as Record<string,{src:string}>)[word].src).toBe(`/spelling-bee/photos/${word}.webp`);
   expect(manifest.assets.some(a=>a.name===word&&a.path===`public/spelling-bee/photos/${word}.webp`)).toBe(true);
  }
  for(const grade of ['1','2'] as const){
