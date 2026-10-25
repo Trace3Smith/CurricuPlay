@@ -8330,6 +8330,40 @@
     "activity": "initial"
   },
   {
+    "id": "pacing-K-pan",
+    "grade": "K",
+    "word": "pan",
+    "clue": "What letter does this object start with?",
+    "skill": "Beginning letter P and its sound",
+    "picture": "pan",
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-10",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "K",
+      "subject": "Literacy",
+      "target": "Beginning letter P and its sound",
+      "source": "Sweetwater Kindergarten lesson plan, week of Sept 21",
+      "sourceUrl": "https://docs.google.com/document/d/1ZNQxGuFNRfhrBCVU1qqb3854JCgor1OqPk8Zz5qKAP4/edit",
+      "locator": "Phonics, To do for the week",
+      "unit": "Phonics, To do for the week",
+      "earliestEligible": "2026-09-21",
+      "periods": [
+        {
+          "start": "2026-09-21",
+          "end": "2026-09-21"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-10 batch item K-sb-13. Object names are ClassThread practice; child supplies only the first letter."
+    },
+    "evidenceId": "paced-2026-10-K-sb-13",
+    "complexity": "foundation",
+    "activity": "initial"
+  },
+  {
     "id": "pacing-K-pin",
     "grade": "K",
     "word": "pin",
@@ -8398,36 +8432,36 @@
     "activity": "initial"
   },
   {
-    "id": "pacing-K-cap",
+    "id": "pacing-K-kite",
     "grade": "K",
-    "word": "cap",
+    "word": "kite",
     "clue": "What letter does this object start with?",
-    "skill": "Beginning letter C and its sound",
-    "picture": "cap",
+    "skill": "Beginning letter K and its sound",
+    "picture": "kite",
     "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-10",
     "kind": "curriculum",
     "reviewStatus": "approved",
     "curriculum": {
       "grade": "K",
       "subject": "Literacy",
-      "target": "Beginning letter C and its sound",
-      "source": "Sweetwater Kindergarten lesson plan, week of Sept 21",
-      "sourceUrl": "https://docs.google.com/document/d/1ZNQxGuFNRfhrBCVU1qqb3854JCgor1OqPk8Zz5qKAP4/edit",
+      "target": "Beginning letter K and its sound",
+      "source": "Sweetwater Kindergarten lesson plan, week of Oct 5",
+      "sourceUrl": "https://docs.google.com/document/d/14DOm84jeNDsdNSszaGKWOGSJ4EKnvVFxHALIlnbj6VU/edit",
       "locator": "Phonics, To do for the week",
       "unit": "Phonics, To do for the week",
-      "earliestEligible": "2026-09-23",
+      "earliestEligible": "2026-10-05",
       "periods": [
         {
-          "start": "2026-09-23",
-          "end": "2026-09-23"
+          "start": "2026-10-05",
+          "end": "2026-10-05"
         }
       ],
       "category": "skill-practice",
       "timing": "documented",
       "review": "approved",
-      "note": "Teacher-approved 2026-10 batch item K-sb-17. Object names are ClassThread practice; child supplies only the first letter."
+      "note": "Teacher-approved 2026-10 batch item K-sb-18. Object names are ClassThread practice; child supplies only the first letter."
     },
-    "evidenceId": "paced-2026-10-K-sb-17",
+    "evidenceId": "paced-2026-10-K-sb-18",
     "complexity": "foundation",
     "activity": "initial"
   },

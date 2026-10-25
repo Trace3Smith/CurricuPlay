@@ -5,11 +5,11 @@
   "grades": [
     {
       "grade": "K",
-      "eligible": 36,
-      "current": 0,
+      "eligible": 37,
+      "current": 1,
       "earlier": 36,
       "sourceListed": 0,
-      "skillPractice": 36,
+      "skillPractice": 37,
       "general": 32,
       "excluded": 13
     },

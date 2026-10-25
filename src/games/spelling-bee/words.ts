@@ -10,7 +10,6 @@ export const pictures = {
   ship: { src: '/spelling-bee/ship.svg', alt: 'A large vessel with several decks and rows of windows travels across the water.' },
   cake: { src: '/spelling-bee/cake.svg', alt: 'A round birthday treat with frosting and lit candles on a plate.' },
   night: { src: '/spelling-bee/night.svg', alt: 'A crescent moon and stars shine in a dark sky above quiet houses.' },
-  rain: { src: '/spelling-bee/rain.svg', alt: 'Many drops of water fall from gray clouds into a puddle.' },
   ...objectPictures,
 } as const;
 export type PictureRef = keyof typeof pictures;

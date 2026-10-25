@@ -124,16 +124,16 @@
     "alt": "A simple illustration supporting the spoken or written clue."
   },
   "duck": {
-    "src": "/spelling-bee/objects/duck.svg",
-    "alt": "A simple illustration supporting the spoken or written clue."
+    "src": "/spelling-bee/photos/duck.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
   },
   "rock": {
-    "src": "/spelling-bee/objects/rock.svg",
-    "alt": "A simple illustration supporting the spoken or written clue."
+    "src": "/spelling-bee/photos/rock.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
   },
   "ring": {
-    "src": "/spelling-bee/objects/ring.svg",
-    "alt": "A simple illustration supporting the spoken or written clue."
+    "src": "/spelling-bee/photos/ring.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
   },
   "wing": {
     "src": "/spelling-bee/objects/wing.svg",
@@ -144,20 +144,20 @@
     "alt": "A simple illustration supporting the spoken or written clue."
   },
   "pan": {
-    "src": "/spelling-bee/objects/pan.svg",
-    "alt": "A simple illustration supporting the spoken or written clue."
+    "src": "/spelling-bee/photos/pan.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
   },
   "bike": {
     "src": "/spelling-bee/objects/bike.svg",
     "alt": "A simple illustration supporting the spoken or written clue."
   },
   "kite": {
-    "src": "/spelling-bee/objects/kite.svg",
-    "alt": "A simple illustration supporting the spoken or written clue."
+    "src": "/spelling-bee/photos/kite.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
   },
   "rope": {
-    "src": "/spelling-bee/objects/rope.svg",
-    "alt": "A simple illustration supporting the spoken or written clue."
+    "src": "/spelling-bee/photos/rope.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
   },
   "cube": {
     "src": "/spelling-bee/objects/cube.svg",
@@ -249,6 +249,10 @@
   },
   "envelope": {
     "src": "/spelling-bee/photos/envelope.webp",
+    "alt": "Realistic object picture. Choose Say Word to hear its name."
+  },
+  "rain": {
+    "src": "/spelling-bee/photos/rain.webp",
     "alt": "Realistic object picture. Choose Say Word to hear its name."
   }
 }

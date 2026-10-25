@@ -428,6 +428,84 @@
       "sourceSha256": "1db0bf07022db178e075040fe1af76ce042a8d33632a760b8fe8872f08d097d7",
       "generator": "Runway (Nano Banana 2), generated 2026-10-23",
       "runwayTaskId": "2da25b23-8e77-4b65-9723-a6ae19a78f62"
+    },
+    {
+      "name": "duck",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one real white duck standing, full body side view, orange bill and feet clearly visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/duck.webp",
+      "originalBytes": 1220364,
+      "bytes": 39094,
+      "sourceSha256": "d8cc0ba7f425524a450f2739613521fd40f061882dc7cfed56a5c6be7f41573d",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-25",
+      "runwayTaskId": "ff5c1050-c31f-47e4-afdc-40089908207c",
+      "replaces": "cartoon illustration"
+    },
+    {
+      "name": "ring",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one plain gold finger ring, standing upright, slightly angled so the round band is clearly visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/ring.webp",
+      "originalBytes": 1103172,
+      "bytes": 22610,
+      "sourceSha256": "9130425e8dbbe53d8899ed13e71c1c59ce80df204c692fd52d1ada7bd7611b18",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-25",
+      "runwayTaskId": "e11e1794-1215-4236-960c-74f08d5c64c6",
+      "replaces": "cartoon illustration"
+    },
+    {
+      "name": "rock",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one ordinary gray rock about the size of a fist, rough natural surface. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/rock.webp",
+      "originalBytes": 1456914,
+      "bytes": 93304,
+      "sourceSha256": "e61075b25aedd7056b576d1431a9037a050d28249b7e2fd45fb9633170130153",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-25",
+      "runwayTaskId": "09e541df-0a35-4b10-8010-0607f1f0ca75",
+      "replaces": "cartoon illustration"
+    },
+    {
+      "name": "rope",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one thick tan braided rope neatly coiled in a loose circle, with one end visible. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/rope.webp",
+      "originalBytes": 1672452,
+      "bytes": 151202,
+      "sourceSha256": "7b04f4d5c090a4f03080bd479edd61ee1ac6d8e371b7efc6da059c1e55f2af63",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-25",
+      "runwayTaskId": "77d5c247-6cb6-4cab-9b6a-6bb1972fec53",
+      "replaces": "cartoon illustration"
+    },
+    {
+      "name": "rain",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: heavy rain falling, many clear raindrops and streaks against a dark gray background, with splashes on a wet surface. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/rain.webp",
+      "originalBytes": 1942112,
+      "bytes": 127226,
+      "sourceSha256": "1995a39a1bae1ba89c5c5577a35a2621e853b1137ddb78d850369c90d4c53ab3",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-25",
+      "runwayTaskId": "e5f4964a-9927-4880-8106-0f60f0483bf8",
+      "replaces": "cartoon illustration",
+      "quality": 72
+    },
+    {
+      "name": "pan",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one black frying pan with a handle, seen from a slight angle from above, empty. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/pan.webp",
+      "originalBytes": 1430996,
+      "bytes": 79296,
+      "sourceSha256": "ef2d7e33d26156ea6d026c5acfadbe32196b3322271e96bad900885fd968f6d6",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-25",
+      "runwayTaskId": "72b1cd1a-824f-4f4d-8584-b979d08bc24c",
+      "replaces": "none (word held until a photo existed)"
+    },
+    {
+      "name": "kite",
+      "prompt": "Realistic photograph for a kindergarten beginning-letter picture. Subject: one colorful diamond-shaped kite with a tail of small bows, flat and fully visible, string attached. Large centered single subject, plain background, soft bright light. No text, letters, labels, logos or watermarks. Square composition.",
+      "path": "public/spelling-bee/photos/kite.webp",
+      "originalBytes": 1350782,
+      "bytes": 51524,
+      "sourceSha256": "484d52a9efa7b3429f1233ca36c435eadbf94e2c0ccf5c53bbd61a634e2aab27",
+      "generator": "Runway (Nano Banana 2), generated 2026-10-25",
+      "runwayTaskId": "d74f331e-4f19-40f1-a5a6-d3e60bfc5634",
+      "replaces": "none (word held until a photo existed)"
     }
   ],
   "optimization": {

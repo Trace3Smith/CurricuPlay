@@ -1188,6 +1188,28 @@
     "note": "Teacher-approved 2026-10 batch item K-sb-12. Object names are ClassThread practice; child supplies only the first letter."
   },
   {
+    "id": "paced-2026-10-K-sb-13",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1ZNQxGuFNR.json",
+    "grade": "K",
+    "subject": "Literacy",
+    "target": "Beginning letter P and its sound",
+    "source": "Sweetwater Kindergarten lesson plan, week of Sept 21",
+    "sourceUrl": "https://docs.google.com/document/d/1ZNQxGuFNRfhrBCVU1qqb3854JCgor1OqPk8Zz5qKAP4/edit",
+    "locator": "Phonics, To do for the week",
+    "unit": "Phonics, To do for the week",
+    "earliestEligible": "2026-09-21",
+    "periods": [
+      {
+        "start": "2026-09-21",
+        "end": "2026-09-21"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-10 batch item K-sb-13. Object names are ClassThread practice; child supplies only the first letter."
+  },
+  {
     "id": "paced-2026-10-K-sb-14",
     "snapshot": "content/sources/lesson-plans/sweetwater-1ZNQxGuFNR.json",
     "grade": "K",
@@ -1254,26 +1276,26 @@
     "note": "Teacher-approved 2026-10 batch item K-sb-16. Object names are ClassThread practice; child supplies only the first letter."
   },
   {
-    "id": "paced-2026-10-K-sb-17",
-    "snapshot": "content/sources/lesson-plans/sweetwater-1ZNQxGuFNR.json",
+    "id": "paced-2026-10-K-sb-18",
+    "snapshot": "content/sources/lesson-plans/sweetwater-14DOm84jeN.json",
     "grade": "K",
     "subject": "Literacy",
-    "target": "Beginning letter C and its sound",
-    "source": "Sweetwater Kindergarten lesson plan, week of Sept 21",
-    "sourceUrl": "https://docs.google.com/document/d/1ZNQxGuFNRfhrBCVU1qqb3854JCgor1OqPk8Zz5qKAP4/edit",
+    "target": "Beginning letter K and its sound",
+    "source": "Sweetwater Kindergarten lesson plan, week of Oct 5",
+    "sourceUrl": "https://docs.google.com/document/d/14DOm84jeNDsdNSszaGKWOGSJ4EKnvVFxHALIlnbj6VU/edit",
     "locator": "Phonics, To do for the week",
     "unit": "Phonics, To do for the week",
-    "earliestEligible": "2026-09-23",
+    "earliestEligible": "2026-10-05",
     "periods": [
       {
-        "start": "2026-09-23",
-        "end": "2026-09-23"
+        "start": "2026-10-05",
+        "end": "2026-10-05"
       }
     ],
     "category": "skill-practice",
     "timing": "documented",
     "review": "approved",
-    "note": "Teacher-approved 2026-10 batch item K-sb-17. Object names are ClassThread practice; child supplies only the first letter."
+    "note": "Teacher-approved 2026-10 batch item K-sb-18. Object names are ClassThread practice; child supplies only the first letter."
   },
   {
     "id": "paced-2026-10-1-sb-0",

@@ -38,7 +38,7 @@ test('rolling modes distinguish current, review and unaligned general practice; 
   expect(current).toHaveLength(24); expect(review).toHaveLength(16); expect(mixed).toHaveLength(40); expect(earlier).toHaveLength(28);
   expect(new Set([...current,...review].map(w=>w.id)).size).toBe(40);
   expect(general.every(w=>!w.curriculum)).toBe(true);
-  expect(selectBank(config('K','current')).map(w=>w.word).sort()).toEqual(['can','cap','cat','pin']);
+  expect(selectBank(config('K','current')).map(w=>w.word).sort()).toEqual(['can','cat','kite','pan','pin']);
   const prior={...config('5'),priorGrade:true};
   expect(selectBank(prior).some(w=>w.grade==='4')).toBe(true);
   expect(selectBank(prior).some(w=>w.word==='conductor')).toBe(false);
@@ -46,7 +46,7 @@ test('rolling modes distinguish current, review and unaligned general practice; 
   expect(selectBank({...config('3','previous'),priorGrade:true}).every(w=>w.grade==='3')).toBe(true);
 });
 test('catalog is reviewed, uniquely identified, expanded and has explicit provenance', () => {
-  const counts=[36,42,40,40,40,41];
+  const counts=[37,42,40,40,40,41];
   for (const [i,grade] of (['K','1','2','3','4','5'] as Grade[]).entries()) {
     const bank=selectBank(config(grade)); expect(bank).toHaveLength(counts[i]); expect(new Set(bank.map(w=>w.id)).size).toBe(bank.length);
     expect(generalBank.filter(w=>w.grade===grade).length).toBeGreaterThanOrEqual(30);
@@ -56,7 +56,7 @@ test('catalog is reviewed, uniquely identified, expanded and has explicit proven
 });
 test('Kindergarten uses multiple concrete objects per eligible initial, never a full-word default', () => {
   const s=start(config('K'));
-  expect(s.words).toHaveLength(36); expect(new Set(s.words.map(w=>w.word)).size).toBe(36);
+  expect(s.words).toHaveLength(37); expect(new Set(s.words.map(w=>w.word)).size).toBe(37);
   for(const w of s.words) {expect(w.activity).toBe('initial'); expect(answerFor(w)).toHaveLength(1); expect(w.picture).toBeTruthy(); expect(pictures[w.picture!].src).toMatch(/\.webp$/); expect(w.clue).not.toContain(w.word); expect(letterSlots(answerFor(w),'supported')).toEqual(['_']); expect(letterChoices(w,3)).toContain(answerFor(w).toUpperCase()); expect(new Set(letterChoices(w,3)).size).toBe(3);}
   expect(revealAnotherLetter(s)).toBe(s);
   const committedState=commitResults(s,now);expect(committedState.session.questions[0].prompt).toMatch(/^[A-Z] — Beginning sound:/);
