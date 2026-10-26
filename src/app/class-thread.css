@@ -28,10 +28,11 @@ html[data-surface="classroom"] body{margin:0;background:var(--ds-background);col
 .ct small{font-size:12px;color:var(--ct-muted);font-weight:400}
 .ct details summary{cursor:pointer}
 
-.ct-sidebar{width:248px;flex:none;position:sticky;top:0;height:100dvh;display:flex;flex-direction:column;padding:var(--ds-space-xl) var(--ds-space-md) var(--ds-space-lg);border-right:2px solid var(--ds-surface-muted);background:var(--ds-surface);overflow-y:auto}
+.ct-sidebar{width:272px;flex:none;position:sticky;top:0;height:100dvh;display:flex;flex-direction:column;padding:var(--ds-space-xl) var(--ds-space-md) var(--ds-space-lg);border-right:2px solid var(--ds-surface-muted);background:var(--ds-surface);overflow-y:auto}
 .ct .ct-brand{display:block;padding:0 var(--ds-space-xs);text-decoration:none;line-height:0}
 .ct .ct-brand img{display:block;width:100%;max-width:216px;height:auto}
-.ct-edition{padding:0 var(--ds-space-sm);font-size:12px;font-weight:var(--ds-label-weight);letter-spacing:.06em;color:var(--ds-text-muted);margin:var(--ds-space-md) 0 var(--ds-space-lg)}
+/* Slogan: bundled headline face so its one-line width at 272px is the same on every device; it wraps only after a dot. */
+.ct-edition{display:block;padding:0 var(--ds-space-xs);font-family:var(--ds-font-headline);font-size:10.5px;font-weight:var(--ds-label-weight);line-height:1.5;letter-spacing:.03em;word-spacing:-.04em;color:var(--ds-text-muted);margin:var(--ds-space-md) 0 var(--ds-space-lg)}
 .ct-sidebar nav{display:grid;gap:var(--ds-space-xs)}
 .ct-sidebar nav a{min-height:48px;padding:0 var(--ds-space-md);display:flex;gap:14px;align-items:center;color:var(--ds-on-background);font-size:var(--ds-body-md-size);border-radius:var(--ds-rounded-pill);font-weight:600}
 .ct-sidebar nav a span{display:inline-flex;justify-content:center;width:18px;font-size:20px;line-height:1}
