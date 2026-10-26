@@ -174,3 +174,22 @@ test('Invalid email code cannot create a session', async ({ page }) => {
   await expect(page.getByRole('alert')).toContainText('invalid or expired');
   expect((await page.request.get(`${origin}/api/foundation`)).status()).toBe(401);
 });
+
+test('The setup banner hides once a school year and Teaching Assignment are selected, even without a profile name', async ({ page }) => {
+  await signIn(page);
+  const banner = page.locator('.ct-onboarding');
+  await expect(banner).toContainText('Start with your teacher profile');
+  await post(page, '/school-years', { name: '2026–27', startsOn: '2026-08-01', endsOn: '2027-07-31' });
+  const year = (await records(page)).schoolYears[0];
+  await page.request.patch(`${origin}/api/context`, { headers, data: { schoolYearId: year.id, assignmentId: null, revision: (await records(page)).profile.revision } });
+  await page.reload();
+  await expect(banner).toContainText('Create a Teaching Assignment in Manage');
+  await expect(banner).not.toContainText('Start with your teacher profile');
+  await post(page, '/assignments', { schoolYearId: year.id, title: 'Economics', jurisdiction: 'Georgia', district: 'Example district', school: 'Example high school', subject: 'Social studies', course: 'Economics', grades: ['11','12'], teachingRole: 'Teacher', schedule: 'Monday–Friday · Room 14', startsOn: year.startsOn, endsOn: year.endsOn, isActive: true });
+  const data = await records(page);
+  await page.request.patch(`${origin}/api/context`, { headers, data: { schoolYearId: year.id, assignmentId: data.assignments[0].id, revision: data.profile.revision } });
+  await page.reload();
+  expect((await records(page)).profile.displayName).toBeFalsy();
+  await expect(page.getByRole('heading', { name: 'Economics', exact: true })).toBeVisible();
+  await expect(banner).toHaveCount(0);
+});
