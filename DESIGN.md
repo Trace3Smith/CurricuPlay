@@ -1,28 +1,30 @@
 ---
 version: alpha
 name: ClassThread
-description: Classroom-display design system for ClassThread — confident indigo, magenta, and sunny yellow, built first for a Smart Board viewed across a room, second for a teacher's laptop.
+description: Classroom-display design system for ClassThread — navy, bright blue, orange, and green from the ClassThread logo, built first for a Smart Board viewed across a room, second for a teacher's laptop.
 colors:
-  primary: "#3B2FC9"
+  primary: "#1565D8"
   on-primary: "#FFFFFF"
-  primary-dark: "#2A2196"
-  secondary: "#C2185B"
-  on-secondary: "#FFFFFF"
-  highlight: "#FFC83D"
-  on-highlight: "#1A1830"
-  background: "#F6F5FB"
-  on-background: "#1A1830"
-  surface: "#FDFCFF"
-  on-surface: "#1A1830"
-  surface-muted: "#ECEAF6"
-  text-muted: "#55526B"
-  outline: "#1A1830"
-  board: "#1B1840"
+  primary-dark: "#0E4BA8"
+  brand-blue: "#1E88F0"
+  sky: "#5DB8F5"
+  secondary: "#3DB54A"
+  on-secondary: "#0B1F44"
+  highlight: "#FFB020"
+  on-highlight: "#0B1F44"
+  background: "#F4F7FC"
+  on-background: "#0B1F44"
+  surface: "#FCFDFF"
+  on-surface: "#0B1F44"
+  surface-muted: "#E6EDF7"
+  text-muted: "#52627C"
+  outline: "#0B1F44"
+  board: "#0B1F44"
   on-board: "#FFFFFF"
   success: "#1E7B3A"
   on-success: "#FFFFFF"
-  warning: "#F5B700"
-  on-warning: "#1A1830"
+  warning: "#F5A000"
+  on-warning: "#0B1F44"
   danger: "#B3261E"
   on-danger: "#FFFFFF"
 typography:
@@ -148,7 +150,13 @@ components:
 
 ClassThread is a teacher workspace and set of classroom games. It started in one elementary school but is meant for any subject, grade, school, or district, so it has its **own brand**, not a school's colors. Its main screen is a **Smart Board** viewed from across a classroom or gym, often with the lights on, and tapped by hand. Every visual decision serves that first: readable from the back row, high contrast, finger-sized controls. Teacher planning pages (My Classroom, Plan, Resources, Manage) are used mostly on a laptop and may be calmer and denser.
 
-The feel is inspired by modern product sites like Teamwork.com — heavy, confident headlines, pill-shaped buttons, clear colored status chips, generous white space, an energetic indigo-and-magenta palette. It keeps the colors **solid and saturated** instead of using soft pastel gradients, because gradients and pale tints wash out on projectors. Do not copy Teamwork's logo, wording, layouts, or exact colors.
+The palette comes from the ClassThread logo (an open book with three cheering figures): deep navy, bright blue, sky blue, orange, and green. The layout feel is inspired by modern product sites like Teamwork.com — heavy, confident headlines, pill-shaped buttons, clear colored status chips, generous white space. It keeps the colors **solid and saturated** instead of using soft pastel gradients, because gradients and pale tints wash out on projectors. Do not copy Teamwork's logo, wording, layouts, or exact colors.
+
+## Logo
+
+- Use the ClassThread logo as supplied (book with three figures, navy "Class" and blue "Thread"); never redraw or recolor it.
+- Horizontal logo in the app shell; the white-text version on navy `board` screens; the book-and-figures mark alone for favicon and app icon.
+- Keep clear space around it equal to the height of the "C". The tagline (PLAN | TEACH | ENGAGE | ASSESS | GROW) is optional and is dropped when the logo is small.
 
 ## Two display modes
 
@@ -159,11 +167,13 @@ Check both modes at 1920×1080, 1536×864 and 1280×720. On phones the page may 
 
 ## Colors
 
-- `primary` indigo is the brand anchor: primary buttons, active navigation, links, headers.
-- `secondary` magenta is the accent: one secondary call to action, small brand moments, illustrations. Use sparingly.
-- `highlight` sunny yellow is the board-screen spotlight: the single most important board action, the current target, the active item. Text on yellow is always dark (`on-highlight`).
+- `primary` blue is the brand anchor: primary buttons, active navigation, links. It is a slightly deeper shade of the logo's blue so white text on it passes contrast.
+- `brand-blue` and `sky` are the logo's exact blues: use them for the logo, illustrations, and large decorative shapes, never behind body text.
+- `on-background` deep navy (the "Class" in the logo) is the main text and heading color.
+- `secondary` green is the accent: one secondary call to action, small brand moments, illustrations. Text on green is always navy. Use sparingly.
+- `highlight` orange is the board-screen spotlight: the single most important board action, the current target, the active item. Text on orange is always navy (`on-highlight`).
 - `background` is a soft off-white with a faint cool tint, not pure white; large pure-white areas cause glare on a Smart Board. Use `surface` for cards on top of it.
-- `board` deep indigo-navy is the background for game screens, with white text and yellow highlights.
+- `board` deep navy is the background for game screens, with white text and orange highlights.
 - Status chips: `success` green, `warning` amber, `danger` red. Always include the word ("Correct", "At risk"), never color alone.
 
 **Team colors are not part of this palette.** Games keep their existing team presets (Orange, Purple, Green, Yellow, Red, Blue; Pink, Aqua, White, Tan for teams 7–10). Some team colors resemble brand colors; that's fine because a team's name always appears with its color, for colorblind students and projector color shift. Brand colors are never used to mean a team.
@@ -194,10 +204,10 @@ Buttons and chips are pills (`rounded.pill`). Cards and boards use `rounded.lg`.
 
 ## Components
 
-- **Buttons:** at least 56px tall in teacher mode, 88px on board screens. One primary (indigo), accent (magenta), or board (yellow) button per view; everything else secondary.
+- **Buttons:** at least 56px tall in teacher mode, 88px on board screens. One primary (blue), accent (green), or board (orange) button per view; everything else secondary.
 - **Cards:** `surface`, `rounded.lg`, 24px padding, 2px border on board-adjacent views.
 - **Status chips:** pill, bold label, solid fill, always worded.
-- **Game board:** `board` indigo-navy, white text, yellow for the active/highlighted item.
+- **Game board:** `board` navy, white text, orange for the active/highlighted item.
 - **Answer concealment:** answers, written target words, and correct-option markings are never rendered before the teacher reveals them — not in image labels, visible alt text, or styling differences between options.
 - **Teacher-only content** (reports, student names beyond the current runner, private notes) never appears in board mode.
 
@@ -208,7 +218,7 @@ Short and purposeful: 150–250ms for state changes, up to ~2s for celebratory s
 ## Accessibility
 
 - Meet WCAG AA contrast at minimum; aim for AAA on board screens.
-- Visible focus rings (3px yellow outline with dark offset) on every interactive element.
+- Visible focus rings (3px orange outline with navy offset) on every interactive element.
 - Color is never the only signal.
 - Sound is optional; every audio cue (timer end) has a visible equivalent.
 

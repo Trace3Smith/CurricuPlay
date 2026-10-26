@@ -55,7 +55,7 @@ html[data-surface="classroom"] body{margin:0;background:var(--ds-background);col
 .ct .ct-lede{font-size:var(--ds-body-lg-size);line-height:var(--ds-body-lg-line);margin-top:var(--ds-space-md);max-width:670px}
 .ct-alpha{font-size:var(--ds-label-size);font-weight:var(--ds-label-weight);line-height:var(--ds-label-line);color:var(--ds-on-surface);background:var(--ds-surface-muted);border-radius:var(--ds-rounded-pill);padding:var(--ds-space-sm) var(--ds-space-md);white-space:nowrap}
 /* Teacher-mode card: surface, rounded.lg, 24px padding and the one subtle shadow DESIGN.md allows. */
-.ct-panel{background:var(--ds-surface);border:2px solid var(--ds-surface-muted);border-radius:var(--ds-rounded-lg);padding:var(--ds-space-lg);margin-bottom:var(--ds-space-lg);box-shadow:0 2px 8px #1a18300f}
+.ct-panel{background:var(--ds-surface);border:2px solid var(--ds-surface-muted);border-radius:var(--ds-rounded-lg);padding:var(--ds-space-lg);margin-bottom:var(--ds-space-lg);box-shadow:0 2px 8px #0b1f440f}
 .ct-panel>h2{margin-bottom:10px}
 .ct-panel>p{margin-bottom:20px}
 .ct-overview{display:grid;grid-template-columns:1.15fr 1fr;gap:22px;margin-bottom:24px}

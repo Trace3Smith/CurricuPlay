@@ -4,15 +4,17 @@
 @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(./fonts/plus-jakarta-sans/plus-jakarta-sans-latin-800-normal.woff2) format('woff2')}
 :root{
   /* Colors */
-  --ds-primary:#3B2FC9;--ds-on-primary:#FFFFFF;--ds-primary-dark:#2A2196;
-  --ds-secondary:#C2185B;--ds-on-secondary:#FFFFFF;
-  --ds-highlight:#FFC83D;--ds-on-highlight:#1A1830;
-  --ds-background:#F6F5FB;--ds-on-background:#1A1830;
-  --ds-surface:#FDFCFF;--ds-on-surface:#1A1830;--ds-surface-muted:#ECEAF6;--ds-text-muted:#55526B;
-  --ds-outline:#1A1830;
-  --ds-board:#1B1840;--ds-on-board:#FFFFFF;
+  --ds-primary:#1565D8;--ds-on-primary:#FFFFFF;--ds-primary-dark:#0E4BA8;
+  /* The logo's exact blues: logo, illustrations and large decorative shapes only, never behind body text. */
+  --ds-brand-blue:#1E88F0;--ds-sky:#5DB8F5;
+  --ds-secondary:#3DB54A;--ds-on-secondary:#0B1F44;
+  --ds-highlight:#FFB020;--ds-on-highlight:#0B1F44;
+  --ds-background:#F4F7FC;--ds-on-background:#0B1F44;
+  --ds-surface:#FCFDFF;--ds-on-surface:#0B1F44;--ds-surface-muted:#E6EDF7;--ds-text-muted:#52627C;
+  --ds-outline:#0B1F44;
+  --ds-board:#0B1F44;--ds-on-board:#FFFFFF;
   --ds-success:#1E7B3A;--ds-on-success:#FFFFFF;
-  --ds-warning:#F5B700;--ds-on-warning:#1A1830;
+  --ds-warning:#F5A000;--ds-on-warning:#0B1F44;
   --ds-danger:#B3261E;--ds-on-danger:#FFFFFF;
   /* Type: families, then each scale as size / weight / line height (and letter spacing where DESIGN.md sets one) */
   --ds-font-board:'Barlow Condensed',system-ui,sans-serif;
