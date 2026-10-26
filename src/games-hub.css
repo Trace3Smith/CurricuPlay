@@ -20,16 +20,17 @@
 .app.hub .home h1 span{color:var(--ds-on-board)}
 .app.hub .intro{font-size:var(--board-text);line-height:1.25;color:var(--ds-on-board)}
 .app.hub .game-cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(32 * var(--u));margin-top:calc(32 * var(--u))}
-/* Each card has a navy band that previews the game board, with the art centred in it. */
-.app.hub .game-card{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:var(--panel) auto 1fr auto;gap:0;min-height:0;padding:0 0 calc(24 * var(--u));text-align:left;color:var(--ds-on-board);background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary-dark);border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);box-shadow:none;overflow:hidden}
-.app.hub .game-card:hover:not(:disabled){background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary);border-color:var(--ds-on-board)}
+/* Bright-blue cards on the navy page so they stand out; each has a navy band that previews the game board, with the art centred in it. */
+.app.hub .game-card{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:var(--panel) auto 1fr auto;gap:0;min-height:0;padding:0 0 calc(24 * var(--u));text-align:left;color:var(--ds-on-board);background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary);border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);box-shadow:none;overflow:hidden}
+.app.hub .game-card:hover:not(:disabled){background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary-dark);border-color:var(--ds-on-board)}
 .app.hub .card-bottom{display:contents}
 .app.hub .game-card>[aria-hidden]{grid-row:1;place-self:center;margin:0}
 .app.hub .game-card strong{grid-row:2;padding:calc(20 * var(--u)) calc(24 * var(--u)) 0;font-size:calc(36 * var(--u));font-weight:700;line-height:1.1;letter-spacing:.02em;overflow-wrap:anywhere}
 .app.hub .card-description{grid-row:3;padding:calc(8 * var(--u)) calc(24 * var(--u)) 0;font-size:var(--board-text);font-weight:700;line-height:1.2;color:var(--ds-on-board)}
 .app.hub .play-tag{grid-row:4;justify-self:start;margin:calc(16 * var(--u)) calc(24 * var(--u)) 0;padding:calc(8 * var(--u)) calc(24 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-size:var(--board-text);font-weight:700;line-height:1.2}
-.app.hub .game-card[data-continue]{border-color:var(--ds-highlight)}
-.app.hub .game-card[data-continue] .play-tag{background:var(--ds-highlight);border-color:var(--ds-highlight);color:var(--ds-on-highlight)}
+/* Only the most recently opened saved game is the orange spotlight; other saved games keep the white-outlined CONTINUE. */
+.app.hub .game-card[data-spotlight]{border-color:var(--ds-highlight)}
+.app.hub .game-card[data-spotlight] .play-tag{background:var(--ds-highlight);border-color:var(--ds-highlight);color:var(--ds-on-highlight)}
 .app.hub .card-art{width:calc(150 * var(--u));gap:calc(7 * var(--u))}
 .app.hub .card-art i{height:calc(28 * var(--u));background:var(--ds-on-board)}.app.hub .card-art i:nth-child(3n+1){background:var(--ds-highlight)}.app.hub .card-art i:nth-child(5){background:var(--ds-secondary)}
 .app.hub .fc-home-art{gap:calc(8 * var(--u))}

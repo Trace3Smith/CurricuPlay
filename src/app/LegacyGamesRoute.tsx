@@ -3,6 +3,7 @@ import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import App from '../App';
 import SpellingBee from '../games/spelling-bee/SpellingBee';
 import { captureBrowserExport, downloadBrowserState, preserveBrowserState } from '../integrations/legacy-storage/preservation';
+import { gameForPath, recordOpened } from '../games/lastOpened';
 import '../styles.css';
 // Loaded on demand so the bundled map data stays out of the other games.
 const StateLingoBingo = lazy(() => import('../games/state-lingo-bingo/StateLingoBingo'));
@@ -17,6 +18,8 @@ export default function LegacyGamesRoute() {
   });
   const [exportNotice, setExportNotice] = useState('');
   useEffect(() => { document.documentElement.dataset.surface = 'games'; document.title = 'Games · ClassThread'; }, []);
+  // Remembers the game being opened so the hub can spotlight it; no game's own save is touched.
+  useEffect(() => { const game = gameForPath(route.pathname); if (game) recordOpened(game); }, [route.pathname]);
   if (!['/games', '/games/', '/games/jeopardy', '/games/four-corners', '/games/spelling-bee', '/games/state-lingo-bingo', '/games/review'].includes(route.pathname)) return <Navigate to="/games" replace />;
   async function backup() {
     try {
