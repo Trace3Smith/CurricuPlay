@@ -11,6 +11,7 @@ import { bank, createQuestionEngine, isPaced, questionStatus } from './services/
 import { currentWindow, planningAhead, PLANNING_AHEAD, shortDate } from './curriculum/pacing';
 import { loadState, saveState } from './utils/storage';
 import { categories, tiles, isBoardEligible } from './games/jeopardy/board';
+import './games-hub.css';
 // Current + Review boards fill each subject from Current first, then Review. Saved legacy boards keep their range.
 const boardSlots = (base: Pick<Filters, 'grade' | 'range' | 'asOf' | 'unused'>) => tiles.map(t => ({ id: t.id,
   ...(isPaced(base.range) && t.category !== 'Review'
@@ -77,7 +78,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   const resumableCorners = cornerState?.screen === 'play' ? cornerState : null;
   const bingoState = screen === 'home' ? readBingo().state : null;
   const resumableBingo = bingoState?.screen === 'play' ? bingoState : null;
-  return <div className={`app ${active ? 'playing' : ''}`}>
+  return <div className={`app ${active ? 'playing' : ''} ${screen === 'home' ? 'hub' : ''}`}>
     <header><button className="wordmark" onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
       <div className="header-actions"><button onClick={onExit}>My Classroom</button>{active && <><span className="grade-pill">{gradeLabel(state.grade)}</span><button onClick={() => setConfirm('grade')}>Change Grade</button><button disabled={blockedBoard && !plan.complete} onClick={() => setConfirm('reset')}>Reset Game</button></>}
         {!active && <a href="/games/review" onClick={event => { event.preventDefault(); onNavigate('/games/review'); }}>Question Review</a>}{screen !== 'home' && <button onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }}>Home</button>}<button onClick={fullscreen}>Full Screen</button></div>
@@ -89,13 +90,14 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
       <h1 ref={title} tabIndex={-1}>This week’s content.<br /><span>Ready to play.</span></h1>
       <p className="intro">Your curriculum. Your classroom. A new way to play.</p>
       <div className="game-cards">
-        <button className="game-card live" onClick={() => { update({ screen: state.selectedGame === 'jeopardy' ? (state.current ? 'question' : 'board') : 'setup' }); onNavigate('/games/jeopardy'); }}>
+        {/* data-continue only styles the resumable game's card as the board spotlight. */}
+        <button className="game-card live" data-continue={state.selectedGame ? '' : undefined} onClick={() => { update({ screen: state.selectedGame === 'jeopardy' ? (state.current ? 'question' : 'board') : 'setup' }); onNavigate('/games/jeopardy'); }}>
           <span className="card-art" aria-hidden="true">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span><span className="card-bottom"><strong>JEOPARDY</strong><span className="play-tag">{state.selectedGame ? 'CONTINUE' : 'PLAY'} ↗</span></span>
           <span className="card-description">Pick a category. Take on a challenge.</span>
         </button>
-        <button className="game-card live" onClick={() => onNavigate('/games/four-corners')}><span className="fc-home-art" aria-hidden="true">{['A', 'B', 'C', 'D'].map(letter => <b key={letter}>{letter}</b>)}</span><span className="card-bottom"><strong>FOUR CORNERS</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableCorners ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableCorners ? `${gradeLabel(resumableCorners.grade)} · ${isTeamMode(resumableCorners) ? 'Team Mode' : 'Classic'}` : 'Think. Move. Everyone stays in.'}</span></button>
-        <button className="game-card live" onClick={() => onNavigate('/games/spelling-bee')}><span className="bee-home-art" aria-hidden="true">A B C</span><span className="card-bottom"><strong>SPELLING BEE</strong><span className="play-tag">{resumableBee ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">Collect letters. Build words. Play together.</span></button>
-        <button className="game-card live" onClick={() => onNavigate('/games/state-lingo-bingo')}><span className="slb-home-art" aria-hidden="true">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span><span className="card-bottom"><strong>STATE LINGO BINGO</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableBingo ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableBingo ? `${gradeLabel(resumableBingo.settings.grade)} · ${resumableBingo.teams!.length} teams` : 'Roll. Move. Dig for the capital.'}</span></button>
+        <button className="game-card live" data-continue={resumableCorners ? '' : undefined} onClick={() => onNavigate('/games/four-corners')}><span className="fc-home-art" aria-hidden="true">{['A', 'B', 'C', 'D'].map(letter => <b key={letter}>{letter}</b>)}</span><span className="card-bottom"><strong>FOUR CORNERS</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableCorners ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableCorners ? `${gradeLabel(resumableCorners.grade)} · ${isTeamMode(resumableCorners) ? 'Team Mode' : 'Classic'}` : 'Think. Move. Everyone stays in.'}</span></button>
+        <button className="game-card live" data-continue={resumableBee ? '' : undefined} onClick={() => onNavigate('/games/spelling-bee')}><span className="bee-home-art" aria-hidden="true">A B C</span><span className="card-bottom"><strong>SPELLING BEE</strong><span className="play-tag">{resumableBee ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">Collect letters. Build words. Play together.</span></button>
+        <button className="game-card live" data-continue={resumableBingo ? '' : undefined} onClick={() => onNavigate('/games/state-lingo-bingo')}><span className="slb-home-art" aria-hidden="true">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span><span className="card-bottom"><strong>STATE LINGO BINGO</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableBingo ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableBingo ? `${gradeLabel(resumableBingo.settings.grade)} · ${resumableBingo.teams!.length} teams` : 'Roll. Move. Dig for the capital.'}</span></button>
       </div>
       <button className="review-entry" onClick={() => onNavigate('/games/review', true)}>Teacher tools · Question Review</button>
       <button className="review-entry" onClick={onBackup}>Export browser Games data</button>{preservationNotice && <p role="status" className="content-notice">{preservationNotice}</p>}

@@ -1,0 +1,47 @@
+/* Games hub (/games) in DESIGN.md board mode. Scoped to .app.hub so game screens keep their own styles until Stage 4. */
+/* --u is one 1920×1080 board pixel: sizes below are the DESIGN.md values at 1920×1080 (28px minimum text, 88px buttons),
+   scaled down with the window so the whole hub still fits a laptop, with a floor so phones stay readable. */
+:root:has(.app.hub){background:var(--ds-board);color-scheme:dark}
+.app.hub{--u:max(.6px,min(100vh / 1080,100vw / 1920));--panel:calc(140 * var(--u));--board-text:calc(28 * var(--u));
+  padding:0 calc(64 * var(--u)) calc(32 * var(--u));background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;color-scheme:dark}
+.app.hub :is(button,a):focus-visible{outline:3px solid var(--ds-highlight);outline-offset:3px;box-shadow:0 0 0 3px var(--ds-board)}
+.app.hub header{height:auto;min-height:0;padding:calc(16 * var(--u)) 0;border-bottom:2px solid var(--ds-primary-dark);gap:calc(24 * var(--u))}
+.app.hub .wordmark img{height:calc(52 * var(--u))}
+.app.hub .header-actions{gap:max(16px,calc(24 * var(--u)))}
+/* Board secondary buttons: outlined white pills; the orange board-button is reserved for a game to continue. */
+.app.hub :is(.header-actions button,.header-actions a,.review-entry){display:inline-flex;align-items:center;justify-content:center;min-height:calc(88 * var(--u));padding:0 calc(32 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;line-height:1.1;text-decoration:none}
+.app.hub :is(.header-actions button,.review-entry):hover:not(:disabled),.app.hub .header-actions a:hover{background:var(--ds-primary-dark);border-color:var(--ds-on-board)}
+/* Full-width rows, except the teacher buttons and the two notes, which share one row so the hub (with any notice) fits 1080px. */
+.app.hub .home{max-width:none;padding-top:calc(32 * var(--u));display:flex;flex-wrap:wrap;align-items:flex-end}
+.app.hub .home>*{flex:0 0 100%}
+.app.hub .home>.review-entry{flex:0 0 auto}
+.app.hub .eyebrow{font-size:var(--board-text);font-weight:700;line-height:1.2;letter-spacing:.08em;color:var(--ds-secondary)}
+.app.hub .home h1{font-family:var(--ds-font-board);font-size:calc(64 * var(--u));font-weight:700;line-height:1.05;letter-spacing:0;margin:calc(16 * var(--u)) 0}
+.app.hub .home h1 span{color:var(--ds-on-board)}
+.app.hub .intro{font-size:var(--board-text);line-height:1.25;color:var(--ds-on-board)}
+.app.hub .game-cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(32 * var(--u));margin-top:calc(32 * var(--u))}
+/* Each card has a navy band that previews the game board, with the art centred in it. */
+.app.hub .game-card{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:var(--panel) auto 1fr auto;gap:0;min-height:0;padding:0 0 calc(24 * var(--u));text-align:left;color:var(--ds-on-board);background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary-dark);border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);box-shadow:none;overflow:hidden}
+.app.hub .game-card:hover:not(:disabled){background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary);border-color:var(--ds-on-board)}
+.app.hub .card-bottom{display:contents}
+.app.hub .game-card>[aria-hidden]{grid-row:1;place-self:center;margin:0}
+.app.hub .game-card strong{grid-row:2;padding:calc(20 * var(--u)) calc(24 * var(--u)) 0;font-size:calc(36 * var(--u));font-weight:700;line-height:1.1;letter-spacing:.02em;overflow-wrap:anywhere}
+.app.hub .card-description{grid-row:3;padding:calc(8 * var(--u)) calc(24 * var(--u)) 0;font-size:var(--board-text);font-weight:700;line-height:1.2;color:var(--ds-on-board)}
+.app.hub .play-tag{grid-row:4;justify-self:start;margin:calc(16 * var(--u)) calc(24 * var(--u)) 0;padding:calc(8 * var(--u)) calc(24 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-size:var(--board-text);font-weight:700;line-height:1.2}
+.app.hub .game-card[data-continue]{border-color:var(--ds-highlight)}
+.app.hub .game-card[data-continue] .play-tag{background:var(--ds-highlight);border-color:var(--ds-highlight);color:var(--ds-on-highlight)}
+.app.hub .card-art{width:calc(150 * var(--u));gap:calc(7 * var(--u))}
+.app.hub .card-art i{height:calc(28 * var(--u));background:var(--ds-on-board)}.app.hub .card-art i:nth-child(3n+1){background:var(--ds-highlight)}.app.hub .card-art i:nth-child(5){background:var(--ds-secondary)}
+.app.hub .fc-home-art{gap:calc(8 * var(--u))}
+.app.hub .fc-home-art b{padding:calc(6 * var(--u)) calc(26 * var(--u));background:var(--ds-primary);color:var(--ds-on-primary);font-family:var(--ds-font-board);font-size:calc(36 * var(--u));line-height:1.1;border-radius:var(--ds-rounded-sm)}
+.app.hub .bee-home-art{color:var(--ds-highlight);font-family:var(--ds-font-board);font-size:calc(72 * var(--u));font-weight:700;letter-spacing:calc(8 * var(--u));line-height:1}
+.app.hub .slb-home-art{width:calc(130 * var(--u));gap:calc(7 * var(--u))}
+.app.hub .slb-home-art i{height:calc(28 * var(--u));background:var(--ds-on-board)}.app.hub .slb-home-art i:nth-child(odd){background:var(--ds-secondary)}.app.hub .slb-home-art i:nth-child(5){background:var(--ds-highlight)}
+.app.hub .review-entry{margin:calc(32 * var(--u)) max(16px,calc(24 * var(--u))) 0 0}
+.app.hub .home>.home-note{flex:1 1 auto;margin-top:calc(32 * var(--u));flex-direction:column;align-items:flex-end;text-align:right;gap:0;font-size:var(--board-text);line-height:1.2;color:var(--ds-on-board)}
+/* Notices: full-contrast text on the board with an orange edge; no tinted fills behind text. */
+.app.hub .content-notice{background:var(--ds-board);border:2px solid var(--ds-highlight);border-left-width:8px;border-radius:var(--ds-rounded-md);color:var(--ds-on-board);font-size:var(--board-text);line-height:1.25;margin-top:calc(24 * var(--u));padding:calc(16 * var(--u)) calc(24 * var(--u))}
+.app.hub .warning{background:var(--ds-warning);color:var(--ds-on-warning);font-size:var(--board-text);font-weight:700;border-radius:var(--ds-rounded-md);margin-top:calc(16 * var(--u));padding:calc(12 * var(--u)) calc(24 * var(--u))}
+@media(prefers-reduced-motion:no-preference){.app.hub :is(button,a,.play-tag){transition:background-color .15s,border-color .15s,color .15s}}
+@media(max-width:900px){.app.hub{padding:0 20px 24px}.app.hub header{height:auto;flex-wrap:wrap}.app.hub .header-actions{flex-wrap:wrap}.app.hub .game-cards{grid-template-columns:1fr 1fr}.app.hub .home>.home-note{flex-basis:100%;align-items:flex-start;text-align:left;margin-top:calc(24 * var(--u))}}
+@media(max-width:560px){.app.hub .game-cards{grid-template-columns:1fr}}

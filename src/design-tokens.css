@@ -2,6 +2,8 @@
 /* Plus Jakarta Sans Bold/ExtraBold (SIL OFL 1.1, see fonts/plus-jakarta-sans/README.md), bundled: no runtime font fetches. */
 @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(./fonts/plus-jakarta-sans/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}
 @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(./fonts/plus-jakarta-sans/plus-jakarta-sans-latin-800-normal.woff2) format('woff2')}
+/* Board face (--ds-font-board): the same bundled Barlow Condensed Bold file State Lingo Bingo uses (SIL OFL 1.1, see games/state-lingo-bingo/fonts/README.md). */
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(./games/state-lingo-bingo/fonts/barlow-condensed-latin-700-normal.woff2) format('woff2')}
 :root{
   /* Colors */
   --ds-primary:#1565D8;--ds-on-primary:#FFFFFF;--ds-primary-dark:#0E4BA8;
