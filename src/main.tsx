@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import ClassThreadRouter from './app/Router';
 import { preloadGames } from './app/GamesEntry';
+import './design-tokens.css';
 
 async function start() {
   // Direct gameplay visits need no Suspense delay or running browser clock.

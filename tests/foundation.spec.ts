@@ -88,6 +88,7 @@ test('Switching simultaneous assignments and school years never relabels histori
   await expect(page.locator('.ct-task').filter({ hasText: 'Economics follow-up' })).toContainText(first.title);
   await post(page, '/school-years', { name: '2027–28', startsOn: '2027-08-01', endsOn: '2028-07-31' });
   await page.reload(); await page.getByLabel('Active school year').selectOption({ label: '2027–28' });
+  await expect(page.getByText('School year selected.', { exact: true })).toBeVisible();
   const switched = await records(page);
   expect(switched.profile.selectedAssignmentId).toBeNull();
   expect(switched.workItems[0].assignmentId).toBe(first.id);

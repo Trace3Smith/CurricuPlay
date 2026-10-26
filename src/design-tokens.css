@@ -1,0 +1,37 @@
+/* DESIGN.md tokens as shared CSS variables. Declaring them changes nothing on screen; each surface opts in when it is restyled. */
+/* Plus Jakarta Sans Bold/ExtraBold (SIL OFL 1.1, see fonts/plus-jakarta-sans/README.md), bundled: no runtime font fetches. */
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(./fonts/plus-jakarta-sans/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(./fonts/plus-jakarta-sans/plus-jakarta-sans-latin-800-normal.woff2) format('woff2')}
+:root{
+  /* Colors */
+  --ds-primary:#3B2FC9;--ds-on-primary:#FFFFFF;--ds-primary-dark:#2A2196;
+  --ds-secondary:#C2185B;--ds-on-secondary:#FFFFFF;
+  --ds-highlight:#FFC83D;--ds-on-highlight:#1A1830;
+  --ds-background:#F6F5FB;--ds-on-background:#1A1830;
+  --ds-surface:#FDFCFF;--ds-on-surface:#1A1830;--ds-surface-muted:#ECEAF6;--ds-text-muted:#55526B;
+  --ds-outline:#1A1830;
+  --ds-board:#1B1840;--ds-on-board:#FFFFFF;
+  --ds-success:#1E7B3A;--ds-on-success:#FFFFFF;
+  --ds-warning:#F5B700;--ds-on-warning:#1A1830;
+  --ds-danger:#B3261E;--ds-on-danger:#FFFFFF;
+  /* Type: families, then each scale as size / weight / line height (and letter spacing where DESIGN.md sets one) */
+  --ds-font-board:'Barlow Condensed',system-ui,sans-serif;
+  --ds-font-headline:'Plus Jakarta Sans',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ds-font-body:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ds-board-hero-size:120px;--ds-board-hero-weight:700;--ds-board-hero-line:1;
+  --ds-board-title-size:64px;--ds-board-title-weight:700;--ds-board-title-line:1.05;
+  --ds-board-label-size:36px;--ds-board-label-weight:700;--ds-board-label-line:1.1;
+  --ds-headline-lg-size:40px;--ds-headline-lg-weight:800;--ds-headline-lg-line:1.1;--ds-headline-lg-tracking:-.02em;
+  --ds-headline-md-size:28px;--ds-headline-md-weight:800;--ds-headline-md-line:1.15;--ds-headline-md-tracking:-.01em;
+  --ds-title-size:20px;--ds-title-weight:700;--ds-title-line:1.25;
+  --ds-body-lg-size:18px;--ds-body-lg-weight:400;--ds-body-lg-line:1.5;
+  --ds-body-md-size:16px;--ds-body-md-weight:400;--ds-body-md-line:1.5;
+  --ds-label-size:14px;--ds-label-weight:700;--ds-label-line:1.2;
+  /* Spacing (8px grid) */
+  --ds-space-xs:4px;--ds-space-sm:8px;--ds-space-md:16px;--ds-space-lg:24px;--ds-space-xl:32px;--ds-space-xxl:48px;
+  /* Radius */
+  --ds-rounded-sm:8px;--ds-rounded-md:14px;--ds-rounded-lg:20px;--ds-rounded-pill:999px;
+  /* Component sizes and the shared focus ring (3px yellow with a dark offset) */
+  --ds-button-height:56px;--ds-board-button-height:88px;
+  --ds-focus-ring:3px solid var(--ds-highlight);--ds-focus-offset:3px;--ds-focus-offset-color:var(--ds-outline);
+}
