@@ -79,7 +79,7 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
     catch { setNotice('Use your browser’s full-screen control (usually F11).'); }
   }
   return <div className={`app fc-app ${active ? 'fc-playing' : ''} ${active && teamMode ? 'fc-team-playing' : ''}`}>
-    <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home">CLASS<span>THREAD</span><i /></button>
+    <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
       <div className="header-actions"><button onClick={onClassroom}>My Classroom</button>{active && <><button onClick={() => setConfirm('end')}>End Game</button>{teamMode && <button onClick={() => setPanel('live')}>Assessment</button>}</>}{!active && <button onClick={() => setPanel('history')}>Session History</button>}{state.screen !== 'setup' && <><button onClick={() => setConfirm('grade')}>Change Grade</button><button onClick={() => setConfirm('reset')}>Reset Game</button></>}<button onClick={onHome}>Home</button><button onClick={fullscreen}>Full Screen</button></div>
     </header>
     {!saved && <p role="alert" className="warning">Progress cannot be saved in this browser. Keep this tab open during class.</p>}

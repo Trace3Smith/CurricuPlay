@@ -1,0 +1,11 @@
+{
+  "name": "ClassThread",
+  "short_name": "ClassThread",
+  "icons": [
+    { "src": "/branding/favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/branding/classthread-app-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#101b38",
+  "background_color": "#ffffff",
+  "display": "browser"
+}

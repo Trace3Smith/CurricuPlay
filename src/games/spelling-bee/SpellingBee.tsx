@@ -63,7 +63,7 @@ export default function SpellingBee({ onHome, onClassroom }: { onHome: () => voi
   const scoringOpen = state ? canScore(state) : false;
   const picture = word?.picture ? pictures[word.picture] : null;
   return <div className="app bee-app">
-    <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home">CLASS<span>THREAD</span><i /></button><div className="header-actions"><button onClick={onClassroom}>My Classroom</button><button onClick={onHome}>Games</button><button onClick={() => void fullscreen()}>Full Screen</button></div></header>
+    <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button><div className="header-actions"><button onClick={onClassroom}>My Classroom</button><button onClick={onHome}>Games</button><button onClick={() => void fullscreen()}>Full Screen</button></div></header>
     {saveError && <div className="warning" role="alert">{saveError} {state && <button onClick={() => persist(state)}>Retry Saving</button>}</div>}
     {notice && <p className="bee-notice" role="status">{notice}</p>}
     {!state && !showHistory && !report && <><WordBank onStart={(words, grade, difficulty, options) => { setState(beginGame(words, grade, difficulty, crypto.randomUUID(), now(), Math.random, options)); setNotice(''); }} /><button className="bee-history-button" onClick={() => { setHistory(readHistory()); setShowHistory(true); }}>Spelling Bee History</button></>}

@@ -78,7 +78,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   const bingoState = screen === 'home' ? readBingo().state : null;
   const resumableBingo = bingoState?.screen === 'play' ? bingoState : null;
   return <div className={`app ${active ? 'playing' : ''}`}>
-    <header><button className="wordmark" onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }} aria-label="ClassThread Games home">CLASS<span>THREAD</span><i /></button>
+    <header><button className="wordmark" onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
       <div className="header-actions"><button onClick={onExit}>My Classroom</button>{active && <><span className="grade-pill">{gradeLabel(state.grade)}</span><button onClick={() => setConfirm('grade')}>Change Grade</button><button disabled={blockedBoard && !plan.complete} onClick={() => setConfirm('reset')}>Reset Game</button></>}
         {!active && <a href="/games/review" onClick={event => { event.preventDefault(); onNavigate('/games/review'); }}>Question Review</a>}{screen !== 'home' && <button onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }}>Home</button>}<button onClick={fullscreen}>Full Screen</button></div>
     </header>

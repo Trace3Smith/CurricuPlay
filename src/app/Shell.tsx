@@ -13,7 +13,7 @@ export default function Shell() {
   return <div className="ct">
     <a className="ct-skip" href="#classroom-content">Skip to content</a>
     <aside className="ct-sidebar">
-      <Link className="ct-brand" to="/classroom"><span className="ct-mark" aria-hidden="true">C<span>↗</span></span>ClassThread</Link>
+      <Link className="ct-brand" to="/classroom" aria-label="ClassThread home"><img src="/branding/classthread-logo-light.png" alt="ClassThread" width="800" height="155" /></Link>
       <span className="ct-edition">TEACHER FOUNDATION · ALPHA</span>
       <nav aria-label="ClassThread">{links.map(([label, path, glyph]) => <NavLink key={path} to={path}><span aria-hidden="true">{glyph}</span>{label}</NavLink>)}</nav>
       <div className="ct-sidebar-footer"><strong>A little more room to teach.</strong><span>Your work, connected.</span></div>

@@ -191,7 +191,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
 
   return <div className={`app slb-app ${playing ? 'slb-playing' : ''}`}>
     <ShapeDefs />
-    <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home">CLASS<span>THREAD</span><i /></button>
+    <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
       <div className="header-actions"><button onClick={onClassroom}>My Classroom</button>
         {playing && <><button disabled={!state.events?.length} onClick={undoLast}>Undo</button><button onClick={() => setPanel(true)}>Assessment</button><button onClick={() => setConfirm('end')}>End Game</button></>}
         <button onClick={onHome}>Home</button><button onClick={fullscreen}>Full Screen</button></div>
