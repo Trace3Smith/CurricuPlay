@@ -143,6 +143,9 @@ html[data-surface="classroom"] body{margin:0;background:var(--ds-background);col
 .ct-onboarding{align-items:flex-start;flex-direction:column}
 }
 
+/* The narrow sidebar only: slightly smaller nav text and padding keep every label on one line. Desktop and phone sizes are unchanged. */
+@media(min-width:721px) and (max-width:1050px){.ct-sidebar nav a{padding:0 12px;gap:10px;font-size:15px;white-space:nowrap}}
+
 @media(max-width:720px){.ct{display:block}
 .ct-sidebar{position:static;width:100%;height:auto;padding:18px}
 .ct-edition,.ct-sidebar-footer{display:none}
