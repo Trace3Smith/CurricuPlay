@@ -12,7 +12,9 @@ import { currentWindow, planningAhead, PLANNING_AHEAD, shortDate } from './curri
 import { loadState, saveState } from './utils/storage';
 import { categories, tiles, isBoardEligible } from './games/jeopardy/board';
 import { readLastOpened, spotlightGame, type HubGame } from './games/lastOpened';
+import './games/board-mode.css';
 import './games-hub.css';
+import './games/jeopardy/jeopardy.css';
 // Current + Review boards fill each subject from Current first, then Review. Saved legacy boards keep their range.
 const boardSlots = (base: Pick<Filters, 'grade' | 'range' | 'asOf' | 'unused'>) => tiles.map(t => ({ id: t.id,
   ...(isPaced(base.range) && t.category !== 'Review'
@@ -83,7 +85,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   const savedGames = ([['jeopardy', !!state.selectedGame], ['four-corners', !!resumableCorners], ['spelling-bee', resumableBee], ['state-lingo-bingo', !!resumableBingo]] as const).filter(([, saved]) => saved).map(([game]) => game);
   const spotlight = screen === 'home' ? spotlightGame(savedGames, readLastOpened()) : null;
   const spot = (game: HubGame) => (spotlight === game ? '' : undefined);
-  return <div className={`app ${active ? 'playing' : ''} ${screen === 'home' ? 'hub' : ''}`}>
+  return <div className={`app board-mode ${active ? 'playing' : ''} ${screen === 'home' ? 'hub' : 'jeopardy'}`}>
     <header><button className="wordmark" onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
       <div className="header-actions"><button onClick={onExit}>My Classroom</button>{active && <><span className="grade-pill">{gradeLabel(state.grade)}</span><button onClick={() => setConfirm('grade')}>Change Grade</button><button disabled={blockedBoard && !plan.complete} onClick={() => setConfirm('reset')}>Reset Game</button></>}
         {!active && <a href="/games/review" onClick={event => { event.preventDefault(); onNavigate('/games/review'); }}>Question Review</a>}{screen !== 'home' && <button onClick={() => { update({ screen: 'home' }); onNavigate('/games'); }}>Home</button>}<button onClick={fullscreen}>Full Screen</button></div>

@@ -1,0 +1,19 @@
+/* DESIGN.md board mode shared by restyled game screens (.app.board-mode): navy page, white Barlow Condensed Bold,
+   outlined 88px pill buttons, orange-edged notices. Screens that are not restyled yet keep the original styles.css look. */
+/* --u is one 1920×1080 board pixel: sizes are the DESIGN.md values at 1920×1080 (28px minimum text, 88px buttons),
+   scaled down with the window so screens still fit a laptop, with a floor so phones stay readable. */
+:root:has(.app.board-mode){background:var(--ds-board);color-scheme:dark}
+.app.board-mode{--u:max(.6px,min(100vh / 1080,100vw / 1920));--board-text:calc(28 * var(--u));
+  padding:0 calc(64 * var(--u)) calc(32 * var(--u));background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;color-scheme:dark}
+.app.board-mode :is(button,a,input,select):focus-visible{outline:3px solid var(--ds-highlight);outline-offset:3px;box-shadow:0 0 0 3px var(--ds-board)}
+.app.board-mode header{height:auto;min-height:0;padding:calc(16 * var(--u)) 0;border-bottom:2px solid var(--ds-primary-dark);gap:calc(24 * var(--u))}
+.app.board-mode .wordmark img{height:calc(52 * var(--u))}
+.app.board-mode .header-actions{gap:max(16px,calc(24 * var(--u)))}
+/* Board secondary buttons: outlined white pills. The orange board-button is reserved for each screen's one main action. */
+.app.board-mode :is(.header-actions button,.header-actions a,.review-entry){display:inline-flex;align-items:center;justify-content:center;min-height:calc(88 * var(--u));padding:0 calc(32 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;line-height:1.1;text-decoration:none}
+.app.board-mode :is(.header-actions button,.review-entry):hover:not(:disabled),.app.board-mode .header-actions a:hover{background:var(--ds-primary-dark);border-color:var(--ds-on-board)}
+/* Notices: full-contrast text on the board with an orange edge; no tinted fills behind text. */
+.app.board-mode .content-notice{background:var(--ds-board);border:2px solid var(--ds-highlight);border-left-width:8px;border-radius:var(--ds-rounded-md);color:var(--ds-on-board);font-size:var(--board-text);line-height:1.25;margin-top:calc(24 * var(--u));padding:calc(16 * var(--u)) calc(24 * var(--u))}
+.app.board-mode .warning{background:var(--ds-warning);color:var(--ds-on-warning);font-size:var(--board-text);font-weight:700;border-radius:var(--ds-rounded-md);margin-top:calc(16 * var(--u));padding:calc(12 * var(--u)) calc(24 * var(--u))}
+@media(prefers-reduced-motion:no-preference){.app.board-mode :is(button,a){transition:background-color .15s,border-color .15s,color .15s}}
+@media(max-width:900px){.app.board-mode{padding:0 20px 24px}.app.board-mode header{height:auto;flex-wrap:wrap}.app.board-mode .header-actions{flex-wrap:wrap}}
