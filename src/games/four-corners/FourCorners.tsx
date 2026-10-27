@@ -2,7 +2,7 @@ import MovementTimer from './MovementTimer';
 import { movementDuration, movementDurations, type MovementDuration } from './movementTimer';
 import TeamName from '../../assessment/TeamName';
 import { presentCornerSession } from './teams';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import AssessmentView from '../../assessment/AssessmentView';
 import AssessmentDialog from '../../assessment/AssessmentDialog';
 import SessionHistory from '../../assessment/SessionHistory';
@@ -23,6 +23,16 @@ import './four-corners-board.css';
 const CORNER_TOKENS = ['\u25cf', '\u25b2', '\u25a0', '\u25c6'];
 const isPrintRound = (delivery?: string) => delivery === 'look-at-print';
 
+// Presentation only: the question and the corner answers start large and shrink just enough to fit their areas.
+// One scale is shared by all four corners, so their styling never hints at the answer before reveal.
+const MIN_TEXT_SCALE = .55;
+function fitScale(host: HTMLElement, variable: string, boxes: HTMLElement[]) {
+  let scale = 1;
+  host.style.setProperty(variable, '1');
+  const overflowing = () => boxes.some(box => box.scrollHeight > box.clientHeight + 1 || box.scrollWidth > box.clientWidth + 1);
+  while (scale > MIN_TEXT_SCALE && overflowing()) { scale = Math.round((scale - .05) * 100) / 100; host.style.setProperty(variable, String(scale)); }
+}
+
 export default function FourCorners({ onHome, onClassroom }: { onHome: () => void; onClassroom: () => void }) {
   const [state, setState] = useState(loadState);
   const [saved, setSaved] = useState(true);
@@ -32,6 +42,7 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
   const [historyError, setHistoryError] = useState('');
   const dialog = useRef<HTMLDialogElement>(null);
   const title = useRef<HTMLHeadingElement>(null);
+  const game = useRef<HTMLElement>(null);
   useEffect(() => { setSaved(saveState(state)); }, [state]);
   useEffect(() => { if (state.session?.endedAt) setHistoryError(saveCompletedSession(state.session)); }, [state.session]);
   useEffect(() => { title.current?.focus(); }, [state.screen, state.currentRound]);
@@ -53,6 +64,20 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
   const timerKey = `${state.session?.id ?? 'legacy'}:${question?.id ?? ''}`;
   const displaySession = state.session ? presentCornerSession(state.session) : undefined;
   const assessment = displaySession ? summarizeSession(displaySession) : null;
+  useLayoutEffect(() => {
+    const main = game.current;
+    if (!main) return;
+    const prompt = main.querySelector<HTMLElement>('.fc-prompt'), answers = main.querySelector<HTMLElement>('.fc-answers');
+    const fit = () => {
+      if (prompt) fitScale(main, '--fc-question-scale', [prompt]);
+      fitScale(main, '--fc-answer-scale', [...main.querySelectorAll<HTMLElement>('.fc-choice')]);
+    };
+    fit();
+    void document.fonts?.ready.then(fit);
+    const observer = new ResizeObserver(fit);
+    [prompt, answers].forEach(box => box && observer.observe(box));
+    return () => observer.disconnect();
+  }, [question?.id, state.revealed, teamMode, active]);
   function update(patch: Partial<CornerState>) { setState(s => ({ ...s, ...patch })); }
   function start() {
     const available = eligible(state.grade, state.mix, content, asOf);
@@ -102,7 +127,7 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
       {pool.length < required && <p className="content-notice" role="status">{state.mix} has {pool.length} supported questions for {gradeLabel(state.grade)}; {required} {required === 1 ? 'is' : 'are'} needed. {state.mix !== 'Mixed Academic' ? 'Choose Mixed Academic for a balanced game.' : 'Select an available round count.'}</p>}
     </main>}
     {active && teamMode && <div className="fc-scoreboard" aria-label="Live scoreboard">{assessment?.teams.map(t => <span key={t.id} data-testid={`score-${t.id}`}><TeamName team={t} /> <b>{t.score + ((state.correctTeamIds ?? []).includes(t.id) ? 1 : 0)}</b></span>)}<small>{state.revealed ? 'Round marks pending Next Question' : 'LOOK → THINK → RUN → REVEAL → SCORE → ROTATE → NEXT'}</small></div>}
-    {active && <main className="fc-game">
+    {active && <main className="fc-game" ref={game}>
       <div className="fc-meta"><span>{gradeLabel(state.grade)} · {subjectLabel(question.subject)}</span><span>Round {state.currentRound + 1}{state.rounds !== 'all' && ` of ${state.rounds}`}</span></div>
       <div className="fc-prompt"><div>{question.delivery === 'look-at-print' ? <p className="fc-read">LOOK AT THE PRINTED LETTERS · TEACHER READS THE QUESTION ONLY</p> : question.teacherRead && <p className="fc-read">TEACHER READS QUESTION ALOUD</p>}<h1 ref={title} tabIndex={-1}>{question.question}</h1></div>{question.visual && <img src={question.visual.src} alt={question.visual.alt} />}</div>
       <div className="fc-answers">{question.choices.map((choice, index) => <div key={index} className={`fc-choice ${isPrintRound(question.delivery) ? 'fc-choice-print' : ''} ${state.revealed && index === question.correctIndex ? 'fc-correct' : ''}`}>{isPrintRound(question.delivery)

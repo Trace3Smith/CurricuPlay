@@ -34,26 +34,32 @@
 .app.fc-app .setup-bottom p strong{color:var(--ds-on-board)}
 
 /* Play: meta line, question, four corners, then the timer or round scoring, then Reveal / Next. */
-.app.fc-app .fc-game{gap:var(--fc-gap);padding:calc(16 * var(--u)) 0 0}
+/* The question row takes the space that used to sit empty above it; corners get the larger share. */
+.app.fc-app .fc-game{gap:var(--fc-gap);padding:calc(16 * var(--u)) 0 0;grid-template-rows:auto minmax(0,1fr) minmax(0,1.6fr) auto}
 .app.fc-app .fc-meta{color:var(--ds-on-board);font-size:calc(32 * var(--u));font-weight:700;letter-spacing:.04em}
 .app.fc-app .fc-prompt{gap:calc(32 * var(--u))}
-.app.fc-app .fc-prompt h1{font-family:var(--ds-font-board);font-size:calc(56 * var(--u));font-weight:700;line-height:1.15;letter-spacing:0}
+/* --fc-question-scale and --fc-answer-scale are set by FourCorners.tsx: 1 unless the text must shrink to fit (never below 0.55). */
+.app.fc-app .fc-prompt h1{font-family:var(--ds-font-board);font-size:calc(80 * var(--u) * var(--fc-question-scale, 1));font-weight:700;line-height:1.2;letter-spacing:0}
 .app.fc-app .fc-prompt img{width:calc(280 * var(--u));border-radius:var(--ds-rounded-md)}
 .app.fc-app .fc-read{color:var(--ds-secondary);font-size:var(--board-text);letter-spacing:.08em;margin-bottom:calc(12 * var(--u))}
-.app.fc-app .fc-answers{gap:var(--fc-gap)}
-.app.fc-app .fc-choice{gap:calc(24 * var(--u));padding:calc(16 * var(--u)) calc(28 * var(--u));border:3px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);background:var(--ds-primary);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:calc(40 * var(--u));font-weight:700;line-height:1.15}
-.app.fc-app .fc-choice>b{font-size:calc(72 * var(--u));color:var(--ds-on-board);line-height:1}
-.app.fc-app .fc-choice>span{padding-bottom:0}
+.app.fc-app .fc-answers{gap:var(--fc-gap);grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
+.app.fc-app .fc-prompt{min-height:0}
+.app.fc-app .fc-choice{gap:calc(24 * var(--u));padding:calc(16 * var(--u)) calc(28 * var(--u));border:3px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);background:var(--ds-primary);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:calc(64 * var(--u) * var(--fc-answer-scale, 1));font-weight:700;line-height:1.2}
+.app.fc-app .fc-choice>b{font-size:calc(80 * var(--u));color:var(--ds-on-board);line-height:1}
+.app.fc-app .fc-choice>span{padding-bottom:0;min-width:0;overflow-wrap:anywhere}
 /* Revealed correct corner: the one orange spotlight, still labelled "✓ Correct" in words. */
 .app.fc-app .fc-correct{background:var(--ds-highlight);border:3px solid var(--ds-on-board);color:var(--ds-on-highlight)}
 .app.fc-app .fc-correct>b{color:var(--ds-on-highlight)}
-.app.fc-app .fc-check{right:calc(24 * var(--u));bottom:calc(12 * var(--u));font-size:var(--board-text);color:var(--ds-on-highlight)}
+/* "✓ Correct" is a large navy-and-white badge, so it can never be mistaken for the Orange or Yellow team colour. */
+.app.fc-app .fc-correct .fc-check{position:static;flex:none;align-self:center;margin-left:auto;display:inline-flex;align-items:center;padding:calc(8 * var(--u)) calc(24 * var(--u));border:3px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:var(--ds-board);color:var(--ds-on-board);font-size:calc(40 * var(--u));line-height:1.1;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
 /* Printed-letter rounds: the corner sign (shape + "Corner A") and the letter card, recoloured only. */
 .app.fc-app .fc-choice-print>.fc-corner{top:calc(12 * var(--u));left:calc(20 * var(--u));gap:calc(10 * var(--u));font-size:calc(24 * var(--u));color:var(--ds-on-board)}
 .app.fc-app .fc-choice-print>.fc-corner>.fc-token{font-size:calc(32 * var(--u));color:var(--ds-on-board)}
-.app.fc-app .fc-choice-print>.fc-letter{background:var(--ds-on-board);color:var(--ds-board);font-size:calc(64 * var(--u))}
+.app.fc-app .fc-choice-print>.fc-letter{background:var(--ds-on-board);color:var(--ds-board);font-size:calc(72 * var(--u) * var(--fc-answer-scale, 1))}
 .app.fc-app .fc-correct.fc-choice-print>.fc-corner,.app.fc-app .fc-correct.fc-choice-print>.fc-corner>.fc-token{color:var(--ds-on-highlight)}
 .app.fc-app .fc-correct.fc-choice-print>.fc-letter{background:var(--ds-board);color:var(--ds-on-board)}
+/* Printed-letter corners stack the sign and the letter card, so the badge sits at the right edge, beside the letter card. */
+.app.fc-app .fc-correct.fc-choice-print .fc-check{position:absolute;top:50%;bottom:auto;right:calc(20 * var(--u));transform:translateY(-50%);margin:0}
 .app.fc-app .fc-controls{gap:calc(24 * var(--u));min-height:calc(88 * var(--u))}
 .app.fc-app .fc-controls p{color:var(--ds-on-board);font-size:var(--board-text);line-height:1.2}
 .app.fc-app .fc-controls p>.fc-token-inline{font-size:calc(36 * var(--u));color:var(--ds-on-board)}
@@ -84,13 +90,14 @@
 /* Team Mode packs more onto the screen: a slimmer header (still 64 px targets) and a smaller question. */
 .app.fc-app.fc-team-playing :is(.header-actions button,.header-actions a){min-height:calc(64 * var(--u));padding:0 calc(24 * var(--u))}
 .app.fc-app.fc-team-playing header{padding:calc(12 * var(--u)) 0}
-.app.fc-app.fc-team-playing .fc-game{gap:calc(12 * var(--u));padding-top:calc(12 * var(--u))}
-.app.fc-app.fc-team-playing .fc-prompt h1{font-size:calc(44 * var(--u))}
+.app.fc-app.fc-team-playing .fc-game{gap:calc(12 * var(--u));padding-top:calc(12 * var(--u));grid-template-rows:auto minmax(0,1fr) minmax(0,1.6fr) auto auto}
+.app.fc-app.fc-team-playing .fc-prompt h1{font-size:calc(64 * var(--u) * var(--fc-question-scale, 1))}
 .app.fc-app.fc-team-playing .fc-prompt img{width:calc(220 * var(--u))}
-.app.fc-app.fc-team-playing .fc-choice{padding:calc(10 * var(--u)) calc(24 * var(--u));font-size:calc(32 * var(--u))}
-.app.fc-app.fc-team-playing .fc-choice>b:not(.fc-corner){font-size:calc(56 * var(--u))}
+.app.fc-app.fc-team-playing .fc-choice{padding:calc(10 * var(--u)) calc(24 * var(--u));font-size:calc(52 * var(--u) * var(--fc-answer-scale, 1))}
+.app.fc-app.fc-team-playing .fc-choice>b:not(.fc-corner){font-size:calc(64 * var(--u))}
+.app.fc-app.fc-team-playing .fc-correct .fc-check{padding:calc(6 * var(--u)) calc(18 * var(--u));font-size:calc(32 * var(--u))}
 .app.fc-app.fc-team-playing .fc-choice-print{padding-top:calc(40 * var(--u))}
-.app.fc-app.fc-team-playing .fc-choice-print>.fc-letter{font-size:calc(48 * var(--u))}
+.app.fc-app.fc-team-playing .fc-choice-print>.fc-letter{font-size:calc(56 * var(--u) * var(--fc-answer-scale, 1))}
 .app.fc-app.fc-team-playing .fc-read{margin-bottom:calc(6 * var(--u))}
 .app.fc-app.fc-team-playing .fc-controls{min-height:calc(72 * var(--u))}
 .app.fc-app.fc-team-playing .fc-controls .primary{min-height:calc(72 * var(--u))}
