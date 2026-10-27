@@ -144,3 +144,46 @@
   .app.bee-app .bee-setup :is(p,label,.bee-check){font-size:15px;line-height:1.25}.app.bee-app .bee-setup .bee-muted{font-size:13px;line-height:1.2}.app.bee-app .bee-setup h2{font-size:22px}
   .app.bee-app .bee-setup h1{font-size:26px}.app.bee-app .bee-setup>div>p:not(.eyebrow){font-size:17px}.app.bee-app .bee-setup .eyebrow{font-size:15px}.app.bee-app .bee-setup .bee-panel{padding:6px 14px}
 }
+
+/* One orange button at a time in the play actions: Commit Results until the word is committed, then Next Word.
+   Keyed only off each button's existing enabled state (Next Word is enabled only after commit); nothing they do changes. */
+.app.bee-app .bee-play>.bee-actions>.primary:last-child:disabled,
+.app.bee-app .bee-play>.bee-actions:has(>.primary:last-child:not(:disabled))>.primary:not(:last-child){border-color:var(--ds-on-board);background:transparent;color:var(--ds-on-board)}
+
+/* Wide screens: the play screen fills the window height. The picture/clue row and the letter-slot row share all leftover
+   space, so on any window shape the picture and letters grow instead of leaving the bottom empty. */
+@media(min-width:1100px){
+  .app.bee-app:has(>.bee-play){height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+  .app.bee-app:has(>.bee-play)>header{flex-shrink:0}
+  .app.bee-app .bee-play,.app.bee-app .bee-play:has(.bee-letter-choices){flex:1;min-height:0;grid-template-rows:auto minmax(0,1.55fr) minmax(0,1fr) auto auto auto auto;align-content:stretch}
+  .app.bee-app .bee-play>.bee-timer{align-self:start}
+  /* Picture clue fills its row height, keeping its shape on a white card. */
+  .app.bee-app .bee-play:not(.bee-kindergarten) .bee-challenge{height:100%;min-height:0}
+  .app.bee-app .bee-play:not(.bee-kindergarten) .bee-challenge img,.app.bee-app .bee-play:not(.bee-kindergarten):has(.bee-letter-choices) .bee-challenge img{width:auto;height:100%;max-width:45%;aspect-ratio:17/15;object-fit:contain}
+  /* Letter slots size from their row: the box is the container, and each slot's width also respects the word length. */
+  .app.bee-app .bee-play>.bee-slots{height:100%;min-height:0;container-type:size;align-self:stretch}
+  .app.bee-app .bee-play>.bee-slots>span{--slot-w:min(78cqh,8.3cqw);flex-shrink:0;width:var(--slot-w);height:min(94cqh,calc(var(--slot-w) * 1.3));font-size:min(72cqh,calc(var(--slot-w) * .92))}
+  /* Fewer letters, wider tiles: up to 4, 6 and 10 letters, then long words. */
+  .app.bee-app .bee-play>.bee-slots:not(:has(>span:nth-child(5)))>span{--slot-w:min(78cqh,19cqw)}
+  .app.bee-app .bee-play>.bee-slots:has(>span:nth-child(5)):not(:has(>span:nth-child(7)))>span{--slot-w:min(78cqh,14cqw)}
+  .app.bee-app .bee-play>.bee-slots.bee-long{gap:calc(8 * var(--u))}
+  .app.bee-app .bee-play>.bee-slots.bee-long>span{--slot-w:min(66cqh,5.2cqw)}
+  .app.bee-app .bee-play>.bee-slots>.bee-punctuation{width:min(20cqh,2.2cqw)}
+  /* Kindergarten: the picture is the prompt, so it fills the whole left column beside the clue and the slot. */
+  /* Kindergarten: picture spans the left column from the heading row down to the team cards; clue, slot, letter
+     choices and tools stack on the right. */
+  .app.bee-app .bee-play.bee-kindergarten{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:auto auto minmax(0,1fr) auto auto auto auto}
+  .app.bee-app .bee-play.bee-kindergarten .bee-challenge img{grid-column:1;grid-row:2/6}
+  .app.bee-app .bee-play.bee-kindergarten .bee-challenge>div{grid-column:2;grid-row:2}
+  .app.bee-app .bee-play.bee-kindergarten>.bee-slots{grid-column:2;grid-row:3}
+  .app.bee-app .bee-play.bee-kindergarten>.bee-hint-help{grid-column:2;grid-row:4}
+  .app.bee-app .bee-play.bee-kindergarten>.bee-tools{grid-column:2;grid-row:5}
+  .app.bee-app .bee-play.bee-kindergarten>.bee-scoring{grid-column:1/-1;grid-row:6}
+  .app.bee-app .bee-play.bee-kindergarten>.bee-actions{grid-column:1/-1;grid-row:7}
+  .app.bee-app .bee-play.bee-kindergarten .bee-challenge img{width:100%;height:100%;min-height:0;object-fit:contain;justify-self:stretch;align-self:stretch}
+  .app.bee-app .bee-play.bee-kindergarten .bee-challenge>div{align-self:end}
+  /* Team cards: name and score side by side, the mark below, so the cards are shorter without smaller text. */
+  .app.bee-app .bee-play .bee-scoreboard button{display:grid;grid-template-columns:auto auto;justify-content:center;align-items:baseline;column-gap:calc(16 * var(--u));row-gap:0}
+  .app.bee-app .bee-play .bee-scoreboard button>small{grid-column:1/-1}
+  .app.bee-app .bee-play.bee-kindergarten>.bee-slots>span{--slot-w:min(80cqh,40cqw)}
+}
