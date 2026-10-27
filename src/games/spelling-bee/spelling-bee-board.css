@@ -1,0 +1,146 @@
+/* Spelling Bee in DESIGN.md board mode (shared basics: games/board-mode.css). Scoped to .app.bee-app.board-mode.
+   Styling only. Which letters show, the slot labels and the reveal all stay in the game code; nothing here adds content,
+   and every letter slot and every letter choice is styled identically.
+   Class-facing content (picture, clue, letter slots, letter choices, timer count, team names and scores, main actions)
+   is board-size; teacher controls and notes are compact but still at least 44 px tap targets. */
+.app.bee-app.board-mode{--ctl:max(44px,calc(64 * var(--u)));--ctl-text:max(16px,calc(22 * var(--u)));padding-bottom:calc(16 * var(--u))}
+.app.bee-app h1{font-family:var(--ds-font-board);font-weight:700;line-height:1.1;letter-spacing:0}
+.app.bee-app h2{font-family:var(--ds-font-board);font-weight:700}
+.app.bee-app p{line-height:1.3}
+.app.bee-app .eyebrow{font-size:var(--board-text);font-weight:700;line-height:1.2;letter-spacing:.08em;color:var(--ds-secondary)}
+/* The play screen gets a slimmer header so the letters and picture keep the space. */
+/* An older rule fixes the play header at 64px; let it size to its buttons instead. */
+.app.bee-app.board-mode header{height:auto}
+.app.bee-app:has(.bee-play) header{padding:calc(10 * var(--u)) 0}
+.app.bee-app:has(.bee-play) :is(.header-actions button,.header-actions a){min-height:var(--ctl);padding:0 calc(24 * var(--u))}
+
+/* Buttons: outlined white pills; the main action (Start Game, Commit Results, Next Word, New Game, Finish Game) is orange. */
+.app.bee-app :where(button:not(.wordmark)){min-height:var(--ctl);padding:0 calc(20 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--ctl-text);font-weight:700;line-height:1.1}
+.app.bee-app :where(button:not(.wordmark)):hover:not(:disabled){background:var(--ds-primary-dark);border-color:var(--ds-on-board)}
+.app.bee-app .primary{min-height:max(44px,calc(72 * var(--u)));padding:0 calc(36 * var(--u));border:2px solid var(--ds-highlight);background:var(--ds-highlight);color:var(--ds-on-highlight);font-size:calc(30 * var(--u))}
+.app.bee-app .primary:hover:not(:disabled){background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-on-highlight)}
+.app.bee-app :is(select,textarea,input:not([type=checkbox])){min-height:var(--ctl);padding:0 calc(14 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-md);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--ctl-text);font-weight:700;color-scheme:dark}
+.app.bee-app textarea{padding:calc(10 * var(--u)) calc(14 * var(--u))}
+.app.bee-app input[type=checkbox]{accent-color:var(--ds-highlight)}
+.app.bee-app label{font-family:var(--ds-font-board);font-weight:700}
+.app.bee-app .bee-notice{padding:calc(8 * var(--u)) calc(16 * var(--u));border:2px solid var(--ds-secondary);border-left-width:8px;border-radius:var(--ds-rounded-md);background:var(--ds-board);font-size:var(--ctl-text)}
+
+/* Panels (setup, history, word results): navy surfaces with a 2px blue outline. */
+.app.bee-app .bee-panel{background:var(--ds-board);border:2px solid var(--ds-primary-dark);border-radius:var(--ds-rounded-lg);color:var(--ds-on-board)}
+.app.bee-app :is(.bee-muted,.bee-preview,.bee-hint-help,.bee-timer-note){color:var(--ds-on-board)}
+
+/* Setup (word bank): board colours and a large heading; the form itself is teacher-size so the page fits 1080 px. */
+.app.bee-app .bee-setup{--ctl:max(44px,calc(56 * var(--u)));max-width:none;margin:calc(8 * var(--u)) 0 0;gap:calc(10 * var(--u))}
+.app.bee-app .bee-setup h1{font-size:calc(46 * var(--u))}
+.app.bee-app .bee-setup>div>p:not(.eyebrow){font-size:var(--board-text)}
+.app.bee-app .bee-setup-grid{gap:calc(24 * var(--u))}
+.app.bee-app .bee-setup .bee-panel{padding:calc(14 * var(--u)) calc(22 * var(--u));gap:calc(8 * var(--u))}
+.app.bee-app .bee-setup label{gap:calc(4 * var(--u))}
+.app.bee-app .bee-setup h2{font-size:calc(30 * var(--u))}
+.app.bee-app .bee-setup :is(p,label,.bee-check){font-size:var(--ctl-text)}
+.app.bee-app .bee-setup .bee-muted{font-size:max(15px,calc(18 * var(--u)))}
+/* Each dropdown's label sits beside it (a two-column form), so every setup variant, including custom lists, fits 1080px. */
+.app.bee-app .bee-setup .bee-panel>label:has(>select){display:grid;grid-template-columns:calc(190 * var(--u)) minmax(0,1fr);align-items:center;gap:calc(12 * var(--u))}
+.app.bee-app .bee-setup .bee-actions .primary{min-height:max(44px,calc(64 * var(--u)));font-size:calc(30 * var(--u))}
+.app.bee-app .bee-history-button{margin-top:calc(10 * var(--u))}
+.app.bee-app .bee-small-button{min-height:max(36px,calc(48 * var(--u)));font-size:max(14px,calc(18 * var(--u)))}
+.app.bee-app .bee-preview summary{min-height:max(44px,calc(52 * var(--u)));font-size:var(--ctl-text)}
+.app.bee-app .bee-bank-preview article{border-top:2px solid var(--ds-primary-dark)}
+.app.bee-app .bee-bank-preview a{color:var(--ds-sky)}
+
+/* Play screen */
+.app.bee-app .bee-play{gap:calc(12 * var(--u));padding:calc(12 * var(--u)) 0 0}
+.app.bee-app .bee-round{gap:calc(20 * var(--u))}
+.app.bee-app .bee-round h1{font-size:calc(34 * var(--u))}
+.app.bee-app .bee-round>span{font-size:var(--ctl-text);max-width:none}
+/* Picture clue: a large white card so photos and drawings read across the room. */
+.app.bee-app .bee-challenge{gap:calc(32 * var(--u))}
+.app.bee-app .bee-challenge img,.app.bee-app .bee-play:has(.bee-letter-choices) .bee-challenge img{width:calc(340 * var(--u));height:calc(300 * var(--u));padding:calc(8 * var(--u));background:#fff;border-radius:var(--ds-rounded-lg)}
+.app.bee-app .bee-clue{font-family:var(--ds-font-board);font-size:calc(48 * var(--u));font-weight:700;line-height:1.15}
+.app.bee-app .bee-challenge .bee-muted{font-size:var(--ctl-text);margin-top:calc(8 * var(--u))}
+/* Letter slots: the largest text on the screen. Every slot is styled the same, filled or blank. */
+.app.bee-app .bee-slots{gap:calc(12 * var(--u));min-height:0}
+.app.bee-app .bee-slots>span{width:calc(104 * var(--u));height:calc(128 * var(--u));border-bottom:calc(8 * var(--u)) solid var(--ds-highlight);border-radius:var(--ds-rounded-md);background:var(--ds-primary);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:calc(96 * var(--u));font-weight:700;line-height:1}
+.app.bee-app .bee-long>span{width:calc(76 * var(--u));font-size:calc(72 * var(--u))}
+.app.bee-app .bee-slots>.bee-punctuation{width:calc(28 * var(--u));border:0;background:transparent}
+.app.bee-app .bee-tools{gap:calc(14 * var(--u))}
+.app.bee-app .bee-tools label{gap:calc(10 * var(--u));font-size:var(--ctl-text)}
+.app.bee-app .bee-hint-help{font-size:max(15px,calc(20 * var(--u)))}
+/* Kindergarten letter choices: big, identical cards, so no choice looks different from another. */
+.app.bee-app .bee-letter-choices{gap:calc(32 * var(--u));margin-bottom:calc(6 * var(--u))}
+.app.bee-app .bee-letter-choices span{min-width:calc(110 * var(--u));padding:calc(2 * var(--u)) calc(28 * var(--u));border:3px solid var(--ds-on-board);border-radius:var(--ds-rounded-md);background:var(--ds-primary);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:calc(80 * var(--u));font-weight:700;line-height:1.1;text-align:center}
+
+/* Timer: big orange count; teacher controls compact. */
+.app.bee-app .bee-timer{gap:calc(10 * var(--u));padding:calc(14 * var(--u));border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);background:var(--ds-board)}
+.app.bee-app .bee-clock [role=timer]{font-family:var(--ds-font-board);font-size:calc(96 * var(--u));font-weight:700;line-height:1.2;color:var(--ds-highlight)}
+.app.bee-app .bee-clock strong{max-width:calc(170 * var(--u));color:var(--ds-on-board);font-size:var(--ctl-text);line-height:1.15}
+.app.bee-app .bee-time-up{border-color:var(--ds-highlight);background:var(--ds-board)}
+.app.bee-app .bee-time-up .bee-clock strong{color:var(--ds-highlight)}
+.app.bee-app .bee-timer-controls{gap:calc(10 * var(--u))}
+.app.bee-app .bee-timer-controls :is(button,select){min-height:var(--ctl);font-size:var(--ctl-text)}
+.app.bee-app .bee-timer-controls label{font-size:max(14px,calc(18 * var(--u)))}
+.app.bee-app .bee-timer-note{font-size:max(13px,calc(16 * var(--u)));line-height:1.25}
+
+/* Team scoring: each team keeps its colour (border and name, set by the game); scores are board-size. */
+.app.bee-app .bee-scoring>p{font-size:var(--ctl-text);margin-bottom:calc(8 * var(--u))}
+.app.bee-app .bee-scoreboard{gap:calc(14 * var(--u))}
+.app.bee-app .bee-scoreboard :is(button,article){min-height:0;padding:calc(8 * var(--u));border-width:3px;border-style:solid;border-radius:var(--ds-rounded-lg);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;gap:calc(2 * var(--u));line-height:1.1}
+.app.bee-app .bee-scoreboard strong{font-size:calc(52 * var(--u));line-height:1.05;color:var(--ds-on-board)}
+.app.bee-app .bee-scoreboard small{font-size:var(--ctl-text);color:var(--ds-on-board)}
+.app.bee-app .bee-scoreboard button:disabled{opacity:1}
+.app.bee-app .bee-scoreboard button:hover:not(:disabled){background:var(--ds-primary-dark)}
+/* A team marked correct turns solid DESIGN.md success green with "✓ Pending +1" / "✓ Correct" in words; its name turns
+   white for contrast (the inline team colour would be unreadable on green), and the team colour stays on its border. */
+.app.bee-app .bee-scoreboard button[aria-pressed=true],.app.bee-app .bee-scoreboard button[aria-pressed=true]:hover:not(:disabled){background:var(--ds-success)}
+.app.bee-app .bee-scoreboard button[aria-pressed=true] span{color:var(--ds-on-success)!important}
+.app.bee-app .bee-scoreboard button[aria-pressed=true] small{color:var(--ds-on-success)}
+.app.bee-app .bee-actions{gap:calc(14 * var(--u))}
+.app.bee-app .bee-actions>span{font-size:var(--ctl-text)}
+
+/* Exhausted-cycle and summary screens: heading, final scoreboard and main actions are board-size. */
+.app.bee-app .bee-summary{max-width:none;margin:calc(16 * var(--u)) 0 0;gap:calc(14 * var(--u))}
+.app.bee-app .bee-summary h1{font-size:calc(52 * var(--u))}
+.app.bee-app .bee-summary>p{font-size:var(--board-text)}
+.app.bee-app .bee-summary .bee-scoreboard :is(button,article){padding:calc(12 * var(--u))}
+.app.bee-app .bee-summary .bee-scoreboard h2{font-size:var(--board-text)}
+.app.bee-app .bee-summary .bee-scoreboard article p{font-size:var(--ctl-text)}
+.app.bee-app .bee-summary>.bee-panel{padding:calc(16 * var(--u)) calc(22 * var(--u));gap:calc(8 * var(--u))}
+.app.bee-app .bee-summary>.bee-panel h2{font-size:calc(30 * var(--u))}
+.app.bee-app .bee-summary>.bee-panel p{font-size:var(--ctl-text)}
+.app.bee-app .bee-summary>.bee-actions .primary{min-height:max(44px,calc(88 * var(--u)));font-size:calc(36 * var(--u))}
+.app.bee-app .bee-history{max-width:calc(1300 * var(--u));margin:calc(24 * var(--u)) auto}
+.app.bee-app .bee-history h1{font-size:calc(52 * var(--u))}
+.app.bee-app .bee-history>p{font-size:var(--ctl-text)}
+.app.bee-app .bee-history>button{min-height:max(44px,calc(64 * var(--u)));border-radius:var(--ds-rounded-md);text-align:left;font-size:var(--ctl-text)}
+
+/* End-game confirmation */
+.app.bee-app>dialog{max-width:calc(900 * var(--u));padding:calc(40 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-lg);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.bee-app>dialog::backdrop{background:#0b1f44e6}
+.app.bee-app>dialog h2{font-size:calc(44 * var(--u));line-height:1.1}
+.app.bee-app>dialog p{margin:calc(24 * var(--u)) 0 calc(32 * var(--u));font-size:var(--board-text);line-height:1.35}
+.app.bee-app>dialog .bee-actions button{min-height:max(44px,calc(88 * var(--u)));font-size:var(--board-text)}
+
+/* Wide screens: the original two-column play layout (timer on the right), resized in board pixels. */
+@media(min-width:1100px){
+  .app.bee-app .bee-play,.app.bee-app .bee-play:has(.bee-letter-choices){grid-template-columns:minmax(0,1fr) calc(440 * var(--u));gap:calc(12 * var(--u)) calc(24 * var(--u));padding:calc(12 * var(--u)) 0 0}
+  .app.bee-app .bee-challenge{min-height:0}
+  .app.bee-app .bee-play.bee-kindergarten{grid-template-columns:calc(520 * var(--u)) minmax(0,1fr)}
+  .app.bee-app .bee-play.bee-kindergarten .bee-challenge img{width:calc(500 * var(--u));height:calc(390 * var(--u))}
+}
+@media(max-width:1099px){.app.bee-app .bee-slots>span{width:min(8vw,calc(104 * var(--u)));height:calc(110 * var(--u));font-size:clamp(20px,5vw,calc(80 * var(--u)))}.app.bee-app .bee-long>span{width:min(5vw,calc(76 * var(--u)));font-size:clamp(16px,4vw,calc(60 * var(--u)))}.app.bee-app .bee-challenge img{width:min(80vw,calc(340 * var(--u)))}}
+/* Short screens (1280×720 and similar): the 44 px tap-target floor stops controls shrinking with the board scale,
+   so tighten vertical gaps and padding instead of shrinking the letters, picture or text. */
+@media(max-height:800px){
+  .app.bee-app:has(.bee-play) header{padding:4px 0}
+  .app.bee-app .bee-play,.app.bee-app .bee-play:has(.bee-letter-choices){row-gap:4px;padding-top:4px}
+  .app.bee-app .bee-timer{padding:8px;gap:6px}.app.bee-app .bee-timer-controls{gap:6px}
+  .app.bee-app .bee-scoring>p{margin-bottom:4px}.app.bee-app .bee-scoreboard :is(button,article){padding:4px}
+  .app.bee-app .bee-setup{gap:4px;margin-top:2px}.app.bee-app .bee-setup .bee-panel{padding:8px 16px;gap:4px}
+  .app.bee-app .bee-setup-grid{gap:16px}.app.bee-app .bee-setup label{gap:2px}
+  .app.bee-app .bee-small-button{min-height:36px}.app.bee-app .bee-history-button{margin-top:2px}
+  /* Setup labels sit beside their dropdowns here, saving a line per field. */
+  .app.bee-app .bee-setup .bee-panel>label:not(.bee-check){flex-direction:row;align-items:center;gap:12px}
+  .app.bee-app .bee-setup .bee-panel>label:not(.bee-check)>:is(select,input,textarea){flex:1;min-width:0}
+  .app.bee-app .bee-setup :is(p,label,.bee-check){font-size:15px;line-height:1.25}.app.bee-app .bee-setup .bee-muted{font-size:13px;line-height:1.2}.app.bee-app .bee-setup h2{font-size:22px}
+  .app.bee-app .bee-setup h1{font-size:26px}.app.bee-app .bee-setup>div>p:not(.eyebrow){font-size:17px}.app.bee-app .bee-setup .eyebrow{font-size:15px}.app.bee-app .bee-setup .bee-panel{padding:6px 14px}
+}

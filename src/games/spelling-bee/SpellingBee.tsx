@@ -7,6 +7,8 @@ import WordBank from './WordBank';
 import RoundTimer from './RoundTimer';
 import { freshTimer } from './timer';
 import './spelling-bee.css';
+import '../board-mode.css';
+import './spelling-bee-board.css';
 
 export default function SpellingBee({ onHome, onClassroom }: { onHome: () => void; onClassroom: () => void }) {
   const [loaded] = useState(readActive);
@@ -62,7 +64,7 @@ export default function SpellingBee({ onHome, onClassroom }: { onHome: () => voi
   const locked = state ? committed(state) : false;
   const scoringOpen = state ? canScore(state) : false;
   const picture = word?.picture ? pictures[word.picture] : null;
-  return <div className="app bee-app">
+  return <div className="app bee-app board-mode">
     <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button><div className="header-actions"><button onClick={onClassroom}>My Classroom</button><button onClick={onHome}>Games</button><button onClick={() => void fullscreen()}>Full Screen</button></div></header>
     {saveError && <div className="warning" role="alert">{saveError} {state && <button onClick={() => persist(state)}>Retry Saving</button>}</div>}
     {notice && <p className="bee-notice" role="status">{notice}</p>}
