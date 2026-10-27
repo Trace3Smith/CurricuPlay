@@ -1,0 +1,134 @@
+/* Four Corners in DESIGN.md board mode (shared basics: games/board-mode.css). Scoped to .app.fc-app.board-mode.
+   Styling only. Before reveal every corner is styled identically; .fc-correct is added by the game only after
+   the teacher reveals, and is the single orange spotlight. Team colours stay as the team accent dots. */
+.app.fc-app.board-mode{--fc-gap:calc(16 * var(--u))}
+.app.fc-app .primary{display:inline-flex;align-items:center;justify-content:center;min-height:calc(88 * var(--u));padding:0 calc(48 * var(--u));border:2px solid var(--ds-highlight);border-radius:var(--ds-rounded-pill);background:var(--ds-highlight);color:var(--ds-on-highlight);font-family:var(--ds-font-board);font-size:calc(36 * var(--u));font-weight:700;line-height:1.1}
+.app.fc-app .primary:hover:not(:disabled){background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-on-highlight)}
+/* Outlined white pills for every other board control. */
+.app.fc-app :where(.fc-mode-options button,.grade-options button,.fc-mixes button,.fc-rounds button,.fc-timer-buttons button,.fc-round-scoring>div:first-child button,.fc-team-buttons button,.assessment-report-actions button:not(.primary),.dialog-actions button:not(.primary)){min-height:calc(72 * var(--u));padding:calc(8 * var(--u)) calc(24 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;line-height:1.15}
+.app.fc-app :where(.fc-mode-options button,.grade-options button,.fc-mixes button,.fc-rounds button,.fc-timer-buttons button,.fc-round-scoring>div:first-child button,.assessment-report-actions button:not(.primary),.dialog-actions button:not(.primary)):hover:not(:disabled){background:var(--ds-primary-dark)}
+/* Selected options are filled white, so selection never depends on colour alone. */
+.app.fc-app :is(.fc-mode-options,.grade-options,.fc-mixes,.fc-rounds) button[aria-pressed=true]{background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+.app.fc-app .eyebrow{font-size:var(--board-text);font-weight:700;line-height:1.2;letter-spacing:.08em;color:var(--ds-secondary)}
+
+/* Setup */
+.app.fc-app .fc-setup{max-width:none;margin:calc(24 * var(--u)) 0 0}
+.app.fc-app .fc-setup h1{font-family:var(--ds-font-board);font-size:calc(56 * var(--u));font-weight:700;line-height:1.05;letter-spacing:0;margin:calc(12 * var(--u)) 0}
+.app.fc-app .fc-setup .fc-instructions,.app.fc-app .fc-mode p,.app.fc-app .pacing-note{color:var(--ds-on-board);font-size:var(--board-text);line-height:1.25;margin:0 0 calc(16 * var(--u));max-width:none}
+.app.fc-app .fc-mode p{margin:calc(12 * var(--u)) 0 0}
+.app.fc-app .fc-setup fieldset{margin:0 0 calc(16 * var(--u))}
+/* Each step's label sits beside its buttons (not above), so the whole setup and Start Game fit a 1080px board. */
+.app.fc-app .fc-setup legend{float:left;width:calc(300 * var(--u));margin:0;padding:calc(16 * var(--u)) 0 0;color:var(--ds-secondary);font-size:calc(32 * var(--u));font-weight:700;line-height:1.2}
+.app.fc-app .fc-setup fieldset>:not(legend){margin-left:calc(300 * var(--u))}
+.app.fc-app .fc-setup legend span{color:var(--ds-on-board);margin-left:calc(12 * var(--u))}
+.app.fc-app .grade-options,.app.fc-app .fc-mixes{gap:calc(16 * var(--u))}
+.app.fc-app .grade-options{grid-template-columns:repeat(6,minmax(0,1fr))}
+.app.fc-app .fc-rounds{gap:calc(16 * var(--u))}
+.app.fc-app .fc-rounds small{font-size:calc(24 * var(--u));margin-top:calc(4 * var(--u))}
+.app.fc-app .fc-mode-options{gap:calc(16 * var(--u))}
+.app.fc-app .fc-mode-options label{gap:calc(12 * var(--u));font-size:var(--board-text);font-weight:700}
+.app.fc-app :is(.fc-mode-options select,.setup-bottom input){min-height:calc(72 * var(--u));padding:0 calc(16 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-md);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;color-scheme:dark}
+.app.fc-app .setup-bottom{gap:calc(32 * var(--u));align-items:center;flex-wrap:wrap}
+.app.fc-app .setup-bottom label{gap:calc(16 * var(--u));font-size:var(--board-text);font-weight:700}
+.app.fc-app .setup-bottom p{color:var(--ds-on-board);font-size:var(--board-text);line-height:1.25;flex:1 1 calc(600 * var(--u))}
+.app.fc-app .setup-bottom p strong{color:var(--ds-on-board)}
+
+/* Play: meta line, question, four corners, then the timer or round scoring, then Reveal / Next. */
+.app.fc-app .fc-game{gap:var(--fc-gap);padding:calc(16 * var(--u)) 0 0}
+.app.fc-app .fc-meta{color:var(--ds-on-board);font-size:calc(32 * var(--u));font-weight:700;letter-spacing:.04em}
+.app.fc-app .fc-prompt{gap:calc(32 * var(--u))}
+.app.fc-app .fc-prompt h1{font-family:var(--ds-font-board);font-size:calc(56 * var(--u));font-weight:700;line-height:1.15;letter-spacing:0}
+.app.fc-app .fc-prompt img{width:calc(280 * var(--u));border-radius:var(--ds-rounded-md)}
+.app.fc-app .fc-read{color:var(--ds-secondary);font-size:var(--board-text);letter-spacing:.08em;margin-bottom:calc(12 * var(--u))}
+.app.fc-app .fc-answers{gap:var(--fc-gap)}
+.app.fc-app .fc-choice{gap:calc(24 * var(--u));padding:calc(16 * var(--u)) calc(28 * var(--u));border:3px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);background:var(--ds-primary);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:calc(40 * var(--u));font-weight:700;line-height:1.15}
+.app.fc-app .fc-choice>b{font-size:calc(72 * var(--u));color:var(--ds-on-board);line-height:1}
+.app.fc-app .fc-choice>span{padding-bottom:0}
+/* Revealed correct corner: the one orange spotlight, still labelled "✓ Correct" in words. */
+.app.fc-app .fc-correct{background:var(--ds-highlight);border:3px solid var(--ds-on-board);color:var(--ds-on-highlight)}
+.app.fc-app .fc-correct>b{color:var(--ds-on-highlight)}
+.app.fc-app .fc-check{right:calc(24 * var(--u));bottom:calc(12 * var(--u));font-size:var(--board-text);color:var(--ds-on-highlight)}
+/* Printed-letter rounds: the corner sign (shape + "Corner A") and the letter card, recoloured only. */
+.app.fc-app .fc-choice-print>.fc-corner{top:calc(12 * var(--u));left:calc(20 * var(--u));gap:calc(10 * var(--u));font-size:calc(24 * var(--u));color:var(--ds-on-board)}
+.app.fc-app .fc-choice-print>.fc-corner>.fc-token{font-size:calc(32 * var(--u));color:var(--ds-on-board)}
+.app.fc-app .fc-choice-print>.fc-letter{background:var(--ds-on-board);color:var(--ds-board);font-size:calc(64 * var(--u))}
+.app.fc-app .fc-correct.fc-choice-print>.fc-corner,.app.fc-app .fc-correct.fc-choice-print>.fc-corner>.fc-token{color:var(--ds-on-highlight)}
+.app.fc-app .fc-correct.fc-choice-print>.fc-letter{background:var(--ds-board);color:var(--ds-on-board)}
+.app.fc-app .fc-controls{gap:calc(24 * var(--u));min-height:calc(88 * var(--u))}
+.app.fc-app .fc-controls p{color:var(--ds-on-board);font-size:var(--board-text);line-height:1.2}
+.app.fc-app .fc-controls p>.fc-token-inline{font-size:calc(36 * var(--u));color:var(--ds-on-board)}
+.app.fc-app .fc-controls .primary{min-width:calc(300 * var(--u))}
+
+/* Movement timer: the count is the board's focal number while students move. */
+.app.fc-app .fc-movement-timer{gap:calc(24 * var(--u));min-height:0;padding:calc(8 * var(--u)) calc(24 * var(--u));border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);background:var(--ds-board)}
+.app.fc-app .fc-timer-count{min-width:calc(280 * var(--u));font-family:var(--ds-font-board);font-size:calc(104 * var(--u));font-weight:700;line-height:1.2;color:var(--ds-highlight)}
+.app.fc-app .fc-timer-instructions strong{color:var(--ds-secondary);font-size:var(--board-text);letter-spacing:.06em}
+.app.fc-app .fc-timer-instructions p{color:var(--ds-on-board);font-size:var(--board-text);line-height:1.2;margin-top:calc(4 * var(--u))}
+.app.fc-app .fc-timer-buttons{gap:max(16px,calc(16 * var(--u)))}
+.app.fc-app .fc-timer-expired{border-color:var(--ds-highlight)}
+
+/* Team Mode: live scoreboard chips and round scoring. Each team keeps its colour dot beside its written name. */
+.app.fc-app .fc-scoreboard{gap:calc(12 * var(--u));padding:calc(12 * var(--u)) 0 0}
+.app.fc-app .fc-scoreboard>span{display:inline-flex;align-items:center;padding:calc(6 * var(--u)) calc(16 * var(--u));border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-size:var(--board-text);font-weight:700;line-height:1.15}
+.app.fc-app .fc-scoreboard b{margin-left:calc(10 * var(--u));color:var(--ds-highlight)}
+.app.fc-app .fc-scoreboard small{color:var(--ds-on-board);font-size:var(--board-text);font-weight:700;letter-spacing:.04em}
+.app.fc-app .fc-round-scoring>div:first-child{height:auto;margin-bottom:calc(8 * var(--u));gap:calc(16 * var(--u));font-size:var(--board-text)}
+.app.fc-app .fc-round-scoring>div:first-child button{min-height:calc(56 * var(--u));padding:0 calc(24 * var(--u));font-size:var(--board-text)}
+.app.fc-app .fc-team-buttons{gap:calc(12 * var(--u))}
+.app.fc-app .fc-team-buttons button{min-height:calc(64 * var(--u));padding:calc(4 * var(--u)) calc(12 * var(--u));border-radius:var(--ds-rounded-md)}
+.app.fc-app .fc-team-buttons button:hover:not(:disabled){background:var(--ds-primary-dark)}
+/* A team marked correct is solid DESIGN.md success green with "✓ +1" in words; a Smart Board tap may keep hover, so this wins over hover. */
+.app.fc-app .fc-team-buttons button[aria-pressed=true],.app.fc-app .fc-team-buttons button[aria-pressed=true]:hover:not(:disabled){background:var(--ds-success);border-color:var(--ds-on-board);color:var(--ds-on-success)}
+.app.fc-app .fc-team-buttons button:disabled{opacity:.55}
+.app.fc-app .assessment-team-accent{border:2px solid var(--ds-board);box-shadow:0 0 0 2px var(--ds-on-board)}
+/* Team Mode packs more onto the screen: a slimmer header (still 64 px targets) and a smaller question. */
+.app.fc-app.fc-team-playing :is(.header-actions button,.header-actions a){min-height:calc(64 * var(--u));padding:0 calc(24 * var(--u))}
+.app.fc-app.fc-team-playing header{padding:calc(12 * var(--u)) 0}
+.app.fc-app.fc-team-playing .fc-game{gap:calc(12 * var(--u));padding-top:calc(12 * var(--u))}
+.app.fc-app.fc-team-playing .fc-prompt h1{font-size:calc(44 * var(--u))}
+.app.fc-app.fc-team-playing .fc-prompt img{width:calc(220 * var(--u))}
+.app.fc-app.fc-team-playing .fc-choice{padding:calc(10 * var(--u)) calc(24 * var(--u));font-size:calc(32 * var(--u))}
+.app.fc-app.fc-team-playing .fc-choice>b:not(.fc-corner){font-size:calc(56 * var(--u))}
+.app.fc-app.fc-team-playing .fc-choice-print{padding-top:calc(40 * var(--u))}
+.app.fc-app.fc-team-playing .fc-choice-print>.fc-letter{font-size:calc(48 * var(--u))}
+.app.fc-app.fc-team-playing .fc-read{margin-bottom:calc(6 * var(--u))}
+.app.fc-app.fc-team-playing .fc-controls{min-height:calc(72 * var(--u))}
+.app.fc-app.fc-team-playing .fc-controls .primary{min-height:calc(72 * var(--u))}
+
+/* Game summary: the heading, final scoreboard and actions are board-size for the class; the detailed report
+   (metrics, tabs, breakdowns) is teacher content in board colours at teacher-mode sizes. */
+.app.fc-app .assessment-report{padding:calc(16 * var(--u)) 0 0}
+.app.fc-app .assessment-report>h2{font-family:var(--ds-font-board);font-size:calc(44 * var(--u));font-weight:700;line-height:1.05;margin-bottom:calc(4 * var(--u))}
+.app.fc-app .assessment-report>p{color:var(--ds-on-board);font-size:var(--board-text);margin-bottom:calc(4 * var(--u))}
+.app.fc-app .assessment-report .assessment-scoreboard{font-size:var(--board-text);gap:calc(10 * var(--u));margin:calc(10 * var(--u)) 0}
+.app.fc-app .assessment-scoreboard>span{border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-pill);background:transparent;padding:calc(2 * var(--u)) calc(14 * var(--u))}
+/* Report metrics sit on one line each (label beside value) so the full report fits a 1080px board. */
+.app.fc-app .assessment-report .assessment-metrics{gap:calc(12 * var(--u))}
+.app.fc-app .assessment-report .assessment-metrics>div{flex-direction:row;align-items:baseline;justify-content:space-between;padding:calc(8 * var(--u)) calc(16 * var(--u))}
+.app.fc-app .assessment-report .assessment-view h1{margin:0}
+.app.fc-app .assessment-report .assessment-tabs{margin:calc(10 * var(--u)) 0}
+.app.fc-app .assessment-scoreboard b{color:var(--ds-highlight)}
+.app.fc-app .assessment-report-actions{gap:max(16px,calc(24 * var(--u)));margin-top:calc(16 * var(--u))}
+.app.fc-app .assessment-report-actions button{min-height:calc(88 * var(--u))}
+/* Report details (summary screen and the teacher-only Assessment / Session History panel). */
+.app.fc-app .assessment-view{color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.fc-app .assessment-view h1{font-family:var(--ds-font-board);font-size:calc(36 * var(--u));font-weight:700}
+.app.fc-app .assessment-context,.app.fc-app .assessment-note{color:var(--ds-on-board);font-size:calc(22 * var(--u))}
+.app.fc-app .assessment-metrics>div,.app.fc-app .assessment-view article{background:var(--ds-board);border:2px solid var(--ds-primary-dark);border-radius:var(--ds-rounded-md);color:var(--ds-on-board)}
+.app.fc-app .assessment-metrics strong{color:var(--ds-highlight)}
+.app.fc-app :is(.assessment-tabs,.assessment-paging,.assessment-history-list) button,.app.fc-app .assessment-close,.app.fc-app .assessment-modal section>button{border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.fc-app .assessment-history-list button{border-radius:var(--ds-rounded-md);text-align:left}
+.app.fc-app :is(.assessment-tabs,.assessment-paging,.assessment-history-list) button:hover:not(:disabled),.app.fc-app .assessment-close:hover{background:var(--ds-primary-dark)}
+.app.fc-app .assessment-view .assessment-tabs button[aria-pressed=true]{background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+.app.fc-app .assessment-modal{background:var(--ds-board);border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-lg);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.fc-app .assessment-modal::backdrop{background:#0b1f44e6}
+
+/* Confirmation dialog */
+.app.fc-app>dialog:not(.assessment-modal){max-width:calc(900 * var(--u));padding:calc(40 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-lg);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.fc-app>dialog:not(.assessment-modal)::backdrop{background:#0b1f44e6}
+.app.fc-app>dialog:not(.assessment-modal) h2{font-size:calc(44 * var(--u));line-height:1.1}
+.app.fc-app>dialog:not(.assessment-modal) p{margin:calc(24 * var(--u)) 0 calc(32 * var(--u));font-size:var(--board-text);line-height:1.35}
+.app.fc-app .dialog-actions{gap:max(16px,calc(24 * var(--u)))}
+.app.fc-app .dialog-actions button:not(.primary){min-height:calc(88 * var(--u))}
+
+@media(max-width:900px){.app.fc-app .fc-setup legend{float:none;width:auto;padding:0;margin-bottom:12px}.app.fc-app .fc-setup fieldset>:not(legend){margin-left:0}.app.fc-app .grade-options{grid-template-columns:repeat(3,minmax(0,1fr))}.app.fc-app .fc-choice>b{font-size:36px}.app.fc-app .fc-team-buttons{grid-template-columns:repeat(3,minmax(0,1fr))}}

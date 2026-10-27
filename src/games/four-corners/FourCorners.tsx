@@ -14,6 +14,8 @@ import { schoolDate } from '../../curriculum/eligibility';
 import { currentWindow, planningAhead, PLANNING_AHEAD, shortDate } from '../../curriculum/pacing';
 import type { PacedRange } from '../../types';
 import './four-corners.css';
+import '../board-mode.css';
+import './four-corners-board.css';
 
 // Printed-letter rounds label the corners with shapes instead of letters. On those questions the
 // choices are themselves letters, and a five-year-old cannot reliably tell the letter naming the
@@ -78,7 +80,7 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
     try { if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen(); }
     catch { setNotice('Use your browser’s full-screen control (usually F11).'); }
   }
-  return <div className={`app fc-app ${active ? 'fc-playing' : ''} ${active && teamMode ? 'fc-team-playing' : ''}`}>
+  return <div className={`app fc-app board-mode ${active ? 'fc-playing' : ''} ${active && teamMode ? 'fc-team-playing' : ''}`}>
     <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
       <div className="header-actions"><button onClick={onClassroom}>My Classroom</button>{active && <><button onClick={() => setConfirm('end')}>End Game</button>{teamMode && <button onClick={() => setPanel('live')}>Assessment</button>}</>}{!active && <button onClick={() => setPanel('history')}>Session History</button>}{state.screen !== 'setup' && <><button onClick={() => setConfirm('grade')}>Change Grade</button><button onClick={() => setConfirm('reset')}>Reset Game</button></>}<button onClick={onHome}>Home</button><button onClick={fullscreen}>Full Screen</button></div>
     </header>

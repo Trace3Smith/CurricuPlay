@@ -40,7 +40,7 @@ test('Team scoring toggles, clears, recovers, and commits only on Next; live vie
   await page.getByRole('button', { name: 'Reveal Answer' }).click();
   await page.getByRole('button', { name: teamName(1), exact: true }).click();
   await expect(page.getByTestId('score-team-1')).toHaveText('Orange 1');
-  await expect(page.getByRole('button', { name: `${teamName(1)} ✓ +1`, exact: true })).toHaveCSS('background-color', 'rgb(178, 245, 215)');
+  await expect(page.getByRole('button', { name: `${teamName(1)} ✓ +1`, exact: true })).toHaveCSS('background-color', 'rgb(30, 123, 58)');
   await page.getByRole('button', { name: `${teamName(1)} ✓ +1`, exact: true }).click();
   await expect(page.getByTestId('score-team-1')).toHaveText('Orange 0');
   await page.getByRole('button', { name: teamName(2), exact: true }).click();
@@ -66,7 +66,7 @@ test('Team scoring toggles, clears, recovers, and commits only on Next; live vie
   await expect(page.getByTestId('completed-questions')).toHaveText('1');
   await expect(page.getByTestId('response-attempts')).toHaveText('6');
   await page.getByRole('button', { name: 'Team Performance', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Team Performance', exact: true })).toHaveCSS('background-color', 'rgb(178, 245, 215)');
+  await expect(page.getByRole('button', { name: 'Team Performance', exact: true })).toHaveCSS('background-color', 'rgb(255, 255, 255)');
   await expect(page.locator('.assessment-team-grid article').first()).toContainText('100% (1/1)');
   await fits(page, '.assessment-modal, .assessment-team-grid article, .assessment-close');
   await page.screenshot({ path: 'test-results/team-live-assessment.png' });
