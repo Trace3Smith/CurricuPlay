@@ -3,10 +3,11 @@ import AssessmentDialog from '../../assessment/AssessmentDialog';
 import AssessmentView from '../../assessment/AssessmentView';
 import TeamName from '../../assessment/TeamName';
 import { saveCompletedSession } from '../../assessment/storage';
+import { tally } from '../../assessment/gameNames';
 import shapes from '../../data/state-shapes.json' with { type: 'json' };
 import {
-  beginGame, bingoGrades, boardLayout, buildSession, cardSizes, defaultSize, defaultTeamName, endGame, FITNESS_LIMIT, freshState, judge, MAX_TEAMS, MIN_TEAMS,
-  NAME_LIMIT, pool, progress, regions, report, setTarget, setupErrors, squareModes, stateByCode, states, statesNeeded, undo,
+  beginGame, boardLayout, buildSession, cardSizes, defaultSize, defaultTeamName, endGame, finishExercise, FITNESS_LIMIT, freshState, isLocked, judge, MAX_TEAMS, MIN_TEAMS,
+  NAME_LIMIT, pool, progress, regions, report, rollAll, rollExercise, setTarget, setupErrors, squareModes, stateByCode, states, statesNeeded, undo,
   type BingoState, type Region, type Scoring, type Settings, type SquareMode,
 } from './engine';
 import { discardActive, readActive, saveActive } from './storage';
@@ -14,7 +15,6 @@ import './state-lingo-bingo.css';
 import '../board-mode.css';
 import './state-lingo-bingo-board.css';
 
-const gradeLabel = (g: string) => `${g}${g === '3' ? 'rd' : 'th'} Grade`;
 const modeLabels: Record<SquareMode, string> = { names: 'Names', outline: 'Map-only: outline', location: 'Map-only: location' };
 const scoringLabels: Record<keyof Scoring, string> = { capital: 'Points per correct capital', line: 'Bonus per bingo line', blackout: 'Blackout bonus' };
 const fipsByCode = new Map(states.map(s => [s.code, s.fips]));
@@ -138,9 +138,12 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const errors = setupErrors(settings);
   function start() {
     const next = beginGame(settings, crypto.randomUUID(), new Date().toISOString());
-    if (next) { setState(next); setSelected(null); setChoosing(false); setHistoryError(''); }
+    // Every team starts with its own exercise; its card unlocks when the teacher taps Done.
+    if (next) { setState(rollAll(next)); setSelected(null); setChoosing(false); setHistoryError(''); }
   }
   function select(teamId: string) { setSelected(teamId); setChoosing(false); setPeek(false); }
+  function done(teamId: string) { setState(s => finishExercise(s, teamId, stamp(s))); setSelected(teamId); setChoosing(!progress(state, teamId).target); setPeek(false); }
+  function reroll(teamId: string) { setState(s => rollExercise(s, teamId)); setPeek(false); }
   function target(teamId: string, code: string) {
     const next = setTarget(state, teamId, code, stamp(state));
     if (next === state) return;
@@ -150,7 +153,8 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     if (!selected) return;
     const before = progress(state, selected), next = judge(state, selected, kind, stamp(state));
     if (next === state) return;
-    setState(next); setPeek(false);
+    // After every judged tile the team gets a new exercise and its card locks, unless the card is full.
+    setState(progress(next, selected).blackout ? next : rollExercise(next, selected)); setPeek(false);
     if (kind === 'wrong') { setNotice(`Wrong tile recorded for ${state.teams!.find(t => t.id === selected)!.name}. Back to the pool!`); return; }
     const after = progress(next, selected);
     setNotice('');
@@ -189,6 +193,8 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const selectedProgress = selected ? progress(state, selected) : null;
   const targetState = selectedProgress?.target ? stateByCode.get(selectedProgress.target)! : null;
   const showNames = settings.squareMode === 'names';
+  const selectedLocked = !!selected && isLocked(state, selected);
+  const selectedExercise = selected ? state.exercises?.[selected] : undefined;
   const [cols, rows] = boardLayout(teams.length || settings.teamCount);
 
   return <div className={`app slb-app board-mode ${playing ? 'slb-playing' : ''}`}>
@@ -207,17 +213,16 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
       <h1 ref={title} tabIndex={-1}>Roll. Move. Dig for the capital.</h1>
       <p className="slb-practice" data-testid="general-practice">General Practice · Not district-paced · Available on any date</p>
       <div className="slb-setup-grid">
-        <fieldset><legend>1 <span>Grade</span></legend><div className="slb-options">{bingoGrades.map(g => <button key={g} aria-pressed={settings.grade === g} onClick={() => updateSettings({ grade: g, size: defaultSize(g, settings.teamCount) })}>{gradeLabel(g)}</button>)}</div></fieldset>
-        <fieldset><legend>2 <span>Teams and card</span></legend><div className="slb-options">
-          <label>Teams <select aria-label="Number of teams" value={settings.teamCount} onChange={e => updateSettings({ teamCount: Number(e.target.value), size: defaultSize(settings.grade, Number(e.target.value)) })}>{Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => i + MIN_TEAMS).map(n => <option key={n} value={n}>{n}</option>)}</select></label>
+        <fieldset><legend>1 <span>Teams and card</span></legend><div className="slb-options">
+          <label>Teams <select aria-label="Number of teams" value={settings.teamCount} onChange={e => updateSettings({ teamCount: Number(e.target.value), size: defaultSize(Number(e.target.value)) })}>{Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => i + MIN_TEAMS).map(n => <option key={n} value={n}>{n}</option>)}</select></label>
           {cardSizes.map(size => <button key={size} aria-pressed={settings.size === size} onClick={() => updateSettings({ size })}>{size}×{size}{size === 5 ? ' · free center' : ''}</button>)}
-        </div><p className="slb-hint">Default: 4×4 for 3rd grade or 7+ teams; 5×5 for 4th and 5th with 6 or fewer teams. You can change it.</p></fieldset>
-        <fieldset><legend>3 <span>Regions</span></legend><div className="slb-options">{regions.map(r => <button key={r} aria-pressed={settings.regions.includes(r)} onClick={() => updateSettings({ regions: settings.regions.includes(r) ? settings.regions.filter(x => x !== r) : regions.filter(x => x === r || settings.regions.includes(x)) as Region[] })}>{r} · {pool([r]).length}</button>)}</div>
+        </div><p className="slb-hint">Default: 5×5 with 6 or fewer teams; 4×4 with 7 or more. You can change it.</p></fieldset>
+        <fieldset><legend>2 <span>Regions</span></legend><div className="slb-options">{regions.map(r => <button key={r} aria-pressed={settings.regions.includes(r)} onClick={() => updateSettings({ regions: settings.regions.includes(r) ? settings.regions.filter(x => x !== r) : regions.filter(x => x === r || settings.regions.includes(x)) as Region[] })}>{r} · {pool([r]).length}</button>)}</div>
           <p className="slb-hint" data-testid="region-count">{pool(settings.regions).length} states selected · a {settings.size}×{settings.size} card needs {statesNeeded(settings.size)}.</p></fieldset>
-        <fieldset><legend>4 <span>Squares show</span></legend><div className="slb-options">{squareModes.map(m => <button key={m} aria-pressed={settings.squareMode === m} onClick={() => updateSettings({ squareMode: m })}>{modeLabels[m]}</button>)}</div></fieldset>
-        <fieldset><legend>5 <span>Scoring</span></legend><div className="slb-inputs">{(Object.keys(scoringLabels) as (keyof Scoring)[]).map(k => <label key={k}>{scoringLabels[k]} <input type="number" min={0} max={100} step={1} value={settings.scoring[k]} onChange={e => updateSettings({ scoring: { ...settings.scoring, [k]: e.target.value === '' ? NaN : Number(e.target.value) } })} /></label>)}</div></fieldset>
-        <fieldset><legend>6 <span>Fitness card</span></legend><div className="slb-inputs">{settings.fitness.map((f, i) => <label key={i}>Roll {i + 1} <input aria-label={`Fitness card roll ${i + 1}`} maxLength={FITNESS_LIMIT} value={f} onChange={e => updateSettings({ fitness: settings.fitness.map((x, j) => j === i ? e.target.value : x) })} /></label>)}</div></fieldset>
-        <fieldset className="slb-names"><legend>7 <span>Team names</span></legend><p className="slb-hint">Optional. Up to {NAME_LIMIT} characters. Saved only with this game.</p><div className="slb-inputs">{Array.from({ length: settings.teamCount }, (_, i) => <label key={i}><TeamName team={{ id: String(i), name: defaultTeamName(i), accent: undefined }} /> <input aria-label={`Name for ${defaultTeamName(i)}`} placeholder={defaultTeamName(i)} maxLength={NAME_LIMIT} value={settings.names[i]} onChange={e => updateSettings({ names: settings.names.map((n, j) => j === i ? e.target.value : n) })} /></label>)}</div></fieldset>
+        <fieldset><legend>3 <span>Squares show</span></legend><div className="slb-options">{squareModes.map(m => <button key={m} aria-pressed={settings.squareMode === m} onClick={() => updateSettings({ squareMode: m })}>{modeLabels[m]}</button>)}</div></fieldset>
+        <fieldset><legend>4 <span>Scoring</span></legend><div className="slb-inputs">{(Object.keys(scoringLabels) as (keyof Scoring)[]).map(k => <label key={k}>{scoringLabels[k]} <input type="number" min={0} max={100} step={1} value={settings.scoring[k]} onChange={e => updateSettings({ scoring: { ...settings.scoring, [k]: e.target.value === '' ? NaN : Number(e.target.value) } })} /></label>)}</div></fieldset>
+        <fieldset><legend>5 <span>Fitness card</span></legend><div className="slb-inputs">{settings.fitness.map((f, i) => <label key={i}>Roll {i + 1} <input aria-label={`Fitness card roll ${i + 1}`} maxLength={FITNESS_LIMIT} value={f} onChange={e => updateSettings({ fitness: settings.fitness.map((x, j) => j === i ? e.target.value : x) })} /></label>)}</div></fieldset>
+        <fieldset className="slb-names"><legend>6 <span>Team names</span></legend><p className="slb-hint">Optional. Up to {NAME_LIMIT} characters. Saved only with this game.</p><div className="slb-inputs">{Array.from({ length: settings.teamCount }, (_, i) => <label key={i}><TeamName team={{ id: String(i), name: defaultTeamName(i), accent: undefined }} /> <input aria-label={`Name for ${defaultTeamName(i)}`} placeholder={defaultTeamName(i)} maxLength={NAME_LIMIT} value={settings.names[i]} onChange={e => updateSettings({ names: settings.names.map((n, j) => j === i ? e.target.value : n) })} /></label>)}</div></fieldset>
       </div>
       {errors.length > 0 && <ul className="content-notice" role="status" data-testid="setup-errors">{errors.map(e => <li key={e}>{e}</li>)}</ul>}
       <div className="setup-bottom"><p>{settings.teamCount} teams · {settings.size}×{settings.size} cards · {pool(settings.regions).length} states</p><button className="primary" disabled={errors.length > 0 || !!loadError} onClick={start}>Start Game →</button></div>
@@ -227,28 +232,35 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
       <main ref={board} className="slb-board" aria-label="Bingo cards" style={{ '--cols': cols, '--rows': rows } as CSSProperties}>
         {teams.map((team, index) => {
           const p = progress(state, team.id), card = state.cards![team.id], isSelected = team.id === selected;
+          const locked = isLocked(state, team.id), exercise = state.exercises?.[team.id];
           // A short last row is centered: each section spans two of the doubled grid columns.
           const lastRow = teams.length - cols * (rows - 1), start = index === cols * (rows - 1) && lastRow < cols ? cols - lastRow + 1 : undefined;
-          return <section key={team.id} className={`slb-team ${isSelected ? 'slb-selected' : ''}`} style={{ '--accent': team.accent, ...(start ? { gridColumn: `${start} / span 2` } : {}) } as CSSProperties} aria-label={team.name} data-testid={`card-${team.id}`}>
+          return <section key={team.id} className={`slb-team ${isSelected ? 'slb-selected' : ''} ${locked ? 'slb-locked' : ''}`} style={{ '--accent': team.accent, ...(start ? { gridColumn: `${start} / span 2` } : {}) } as CSSProperties} aria-label={team.name} data-testid={`card-${team.id}`}>
             <button className="slb-team-head" aria-pressed={isSelected} onClick={() => select(team.id)}>
               <TeamName team={team} /><span className="slb-stats"><b data-testid={`points-${team.id}`}>{p.score}</b> pts · {p.lines} {p.lines === 1 ? 'bingo' : 'bingos'}{p.blackout ? ' · BLACKOUT' : ''}</span>
             </button>
             <div className={`slb-target ${p.target ? '' : 'slb-target-empty'}`} data-testid={`target-${team.id}`}>{p.target ? <><small>TARGET</small><span className="slb-target-face"><StateFace code={p.target} mode={settings.squareMode} /></span></> : <small>{p.blackout ? 'Card complete!' : 'Choose a target'}</small>}</div>
             <div className="slb-card" style={{ '--size': settings.size } as CSSProperties}>{card.map((code, i) => code === null
               ? <div key={i} className="slb-square slb-free"><span className="slb-name">FREE</span></div>
-              : <button key={i} className={`slb-square ${p.marked.has(code) ? 'slb-marked' : ''} ${p.target === code ? 'slb-current' : ''}`} disabled={p.marked.has(code)}
+              : <button key={i} className={`slb-square ${p.marked.has(code) ? 'slb-marked' : ''} ${p.target === code ? 'slb-current' : ''}`} disabled={p.marked.has(code) || locked}
                   aria-label={`${team.name}: ${stateByCode.get(code)!.name}${p.marked.has(code) ? ', marked' : p.target === code ? ', current target' : ''}`}
-                  onClick={() => isSelected ? target(team.id, code) : select(team.id)}><StateFace code={code} mode={settings.squareMode} square />{p.marked.has(code) && <i className="slb-check" aria-hidden="true">✓</i>}</button>)}</div>
+                  onClick={() => { if (!isSelected) select(team.id); target(team.id, code); }}><StateFace code={code} mode={settings.squareMode} square />{p.marked.has(code) && <i className="slb-check" aria-hidden="true">✓</i>}</button>)}</div>
+            {locked && exercise && <div className="slb-exercise" role="group" aria-label={`${team.name} exercise`} data-testid={`exercise-${team.id}`}>
+              <p key={exercise.roll} className="slb-exercise-text" role="status"><b aria-hidden="true">{exercise.exercise + 1}</b><span>{settings.fitness[exercise.exercise]}</span></p>
+              <div className="slb-exercise-buttons"><button className="slb-exercise-done" aria-label={`✓ Done: ${team.name}`} onClick={() => done(team.id)}>✓ Done</button><button aria-label={`↻ Re-roll: ${team.name}`} onClick={() => reroll(team.id)}>↻ Re-roll</button></div>
+            </div>}
             {flash?.team === team.id && <div key={flash.key} className="slb-flash" role="status">{flash.text}</div>}
           </section>;
         })}
       </main>
       <section className="slb-controls" aria-label="Teacher controls">
         {!selectedTeam ? <p>Tap a team’s name to judge its tile or choose its target.</p> : <>
-          <p aria-live="polite"><TeamName team={selectedTeam} />{' · '}{choosing || !targetState ? <>Tap a square on {selectedTeam.name}’s card to set {choosing ? 'the next' : 'a'} target.</>
+          <p aria-live="polite"><TeamName team={selectedTeam} />{' · '}{selectedLocked && selectedExercise ? <>Exercise: <strong>{settings.fitness[selectedExercise.exercise]}</strong> · Tap ✓ Done on {selectedTeam.name}’s card when they finish.</>
+            : choosing || !targetState ? <>Tap a square on {selectedTeam.name}’s card to set {choosing ? 'the next' : 'a'} target.</>
             : <>Target: <strong>{showNames || peek ? targetState.name : 'shown on card'}</strong>{peek && <> · Capital: <strong data-testid="peek-capital">{targetState.capital}</strong></>}</>}</p>
           <div className="slb-control-buttons">
-            {targetState && !choosing && <><button className="primary" onClick={() => mark('correct')}>✓ Correct capital</button><button className="slb-wrong" onClick={() => mark('wrong')}>✗ Wrong tile</button><button aria-pressed={peek} onClick={() => setPeek(!peek)}>{peek ? 'Hide answer' : 'Check answer'}</button></>}
+            {selectedExercise && !selectedProgress?.blackout && <button onClick={() => reroll(selected!)}>↻ Re-roll exercise</button>}
+            {targetState && !choosing && !selectedLocked && <><button className="primary" onClick={() => mark('correct')}>✓ Correct capital</button><button className="slb-wrong" onClick={() => mark('wrong')}>✗ Wrong tile</button><button aria-pressed={peek} onClick={() => setPeek(!peek)}>{peek ? 'Hide answer' : 'Check answer'}</button></>}
             <button onClick={() => { setSelected(null); setChoosing(false); setPeek(false); }}>Done</button>
           </div></>}
         {notice && <p className="slb-notice" role="status">{notice}</p>}
@@ -278,6 +290,7 @@ function Results({ state, onReport, onNewGame, onHome, blocked, titleRef }: { st
       const s = stateByCode.get(r.state)!;
       return <li key={i}><strong>{s.name} — {s.capital}</strong> · {names.get(r.teamId)} · {r.reason === 'missed' ? 'wrong tile' : `took ${r.seconds} s`}</li>;
     })}</ul> : <p>No capitals to review.</p>}<p className="slb-hint">Team practice records. They do not show individual mastery.</p></section>
+    {data.teams.some(t => t.exercises.length) && <section className="slb-review" aria-label="Exercises"><h2>Exercises</h2><ul>{data.teams.map(t => <li key={t.team.id} data-testid={`exercises-${t.team.id}`}><strong>{t.team.name}</strong> · {tally(t.exercises) || 'none'}</li>)}</ul></section>}
     <div className="assessment-report-actions"><button onClick={onReport}>Session Report</button><button className="primary" disabled={blocked} onClick={onNewGame}>New Game</button><button onClick={onHome}>Back to Games</button></div>
   </main>;
 }

@@ -1,7 +1,7 @@
 import TeamName from './TeamName';
 import { useState } from 'react';
 import { formatAccuracy, summarizeSession, type GameSession } from './engine';
-import { gameName } from './gameNames';
+import { gameName, gradeLabel, tally } from './gameNames';
 import './assessment.css';
 
 /** Shared presentation: subjects and teams come from the session, never a fixed curriculum list. */
@@ -17,7 +17,7 @@ export default function AssessmentView({ session, live = false }: { session: Gam
   const insights = data.questions.filter(q => q.attempts > 0).sort((a, b) => a.percentage! - b.percentage!);
   return <section className="assessment-view">
     <h1>{live ? 'Live Assessment' : 'Session Report'}</h1>
-    <p className="assessment-context">{session.grade === 'K' ? 'Kindergarten' : `Grade ${session.grade}`} · {gameName(session.gameType)} · {session.teams.length ? `${session.teams.length} teams` : 'Classic Mode'}</p>
+    <p className="assessment-context">{gradeLabel(session.grade)}{gameName(session.gameType)} · {session.teams.length ? `${session.teams.length} teams` : 'Classic Mode'}</p>
     <div className="assessment-metrics">
       <div><span>Overall class accuracy</span><strong data-testid="overall-accuracy">{formatAccuracy(data.overall)}</strong></div>
       <div><span>Questions completed</span><strong data-testid="completed-questions">{data.completedQuestions}</strong></div>
@@ -35,7 +35,8 @@ export default function AssessmentView({ session, live = false }: { session: Gam
           return <article key={label as string}><h2>{label as string}</h2><p>{q.concept || q.prompt}</p><strong>{q.correct}/{q.attempts} teams correct</strong></article>;
         })}</div>}
       </>}
-      {tab === 'teams' && <div className="assessment-team-grid">{range(data.teams).map(t => <article key={t.id}><h2><TeamName team={t} /> · {t.score} points</h2><p><strong>Overall: {formatAccuracy(t.overall)}</strong></p>{t.subjects.map(s => <p key={s.subject}>{s.subject}: {formatAccuracy(s)}</p>)}</article>)}</div>}
+      {tab === 'teams' && <div className="assessment-team-grid">{range(data.teams).map(t => <article key={t.id}><h2><TeamName team={t} /> · {t.score} points</h2><p><strong>Overall: {formatAccuracy(t.overall)}</strong></p>{t.subjects.map(s => <p key={s.subject}>{s.subject}: {formatAccuracy(s)}</p>)}
+        {session.activities && <p data-testid={`activities-${t.id}`}>Exercises: {tally(session.activities.filter(a => a.teamId === t.id).map(a => a.label)) || 'none yet'}</p>}</article>)}</div>}
       {tab === 'questions' && <div className="assessment-question-list">{range(data.questions).map(q => <article key={q.questionId}><h2>{q.subject}{q.concept ? ` · ${q.concept}` : ''}</h2><p>{q.prompt}</p><strong>{q.attempts ? `${q.correct}/${q.attempts} teams correct · ${formatAccuracy(q)}` : '— No team responses'}</strong></article>)}</div>}
     </div>
     {pages > 1 && <div className="assessment-paging"><button disabled={shownPage === 0} onClick={() => setPage(shownPage - 1)}>Previous</button><span>Page {shownPage + 1} of {pages}</span><button disabled={shownPage === pages - 1} onClick={() => setPage(shownPage + 1)}>Next Page</button></div>}

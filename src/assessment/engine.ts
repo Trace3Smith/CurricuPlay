@@ -8,10 +8,14 @@ export interface AssessmentResponse {
   questionId: string; teamId: string; subject: string; standards?: string[]; concept?: string;
   correct: boolean; pointsAwarded: number; answeredAt: string;
 }
+/** Something a team did that is not a question, e.g. a fitness-card exercise in State Lingo Bingo. */
+export interface TeamActivity { teamId: string; label: string; at: string }
 export interface GameSession {
-  version: 1; id: string; gameType: GameType; grade: string; mode: string;
+  // grade is optional: games whose content is the same for every grade (State Lingo Bingo) leave it off.
+  version: 1; id: string; gameType: GameType; grade?: string; mode: string;
   startedAt: string; endedAt?: string; teams: AssessmentTeam[];
   questions: AssessmentQuestionSnapshot[]; responses: AssessmentResponse[];
+  activities?: TeamActivity[];
 }
 export interface Outcome { teamId: string; correct: boolean; pointsAwarded: number }
 export interface Accuracy { correct: number; attempts: number; percentage: number | null }
@@ -22,7 +26,7 @@ export function accuracy(responses: readonly AssessmentResponse[]): Accuracy {
 export function formatAccuracy(value: Accuracy): string {
   return value.percentage === null ? '—' : `${Number(value.percentage.toFixed(1))}% (${value.correct}/${value.attempts})`;
 }
-export function createSession(input: Pick<GameSession, 'id' | 'gameType' | 'grade' | 'mode' | 'startedAt' | 'teams'>): GameSession {
+export function createSession(input: Pick<GameSession, 'id' | 'gameType' | 'mode' | 'startedAt' | 'teams'> & { grade?: string }): GameSession {
   return { ...input, teams: input.teams.map(t => ({ ...t })), version: 1, questions: [], responses: [] };
 }
 /** Append once. Repeating an already committed question cannot award points twice. */
@@ -56,9 +60,10 @@ export function isGameSession(value: unknown): value is GameSession {
   const text = (v: unknown): v is string => typeof v === 'string' && !!v.trim();
   const date = (v: unknown) => text(v) && Number.isFinite(Date.parse(v));
   const metadata = (v: AssessmentQuestionSnapshot | AssessmentResponse) => (v.standards === undefined || (Array.isArray(v.standards) && v.standards.every(text))) && (v.concept === undefined || text(v.concept));
-  if (s.version !== 1 || !text(s.id) || !text(s.gameType) || !text(s.grade) || !text(s.mode) || !date(s.startedAt) || (s.endedAt !== undefined && (!date(s.endedAt) || s.endedAt < s.startedAt)) || !Array.isArray(s.teams) || !Array.isArray(s.questions) || !Array.isArray(s.responses)) return false;
+  if (s.version !== 1 || !text(s.id) || !text(s.gameType) || (s.grade !== undefined && !text(s.grade)) || !text(s.mode) || !date(s.startedAt) || (s.endedAt !== undefined && (!date(s.endedAt) || s.endedAt < s.startedAt)) || !Array.isArray(s.teams) || !Array.isArray(s.questions) || !Array.isArray(s.responses)) return false;
   if (!s.teams.every(t => t && text(t.id) && text(t.name) && (t.accent === undefined || /^#[0-9a-f]{6}$/i.test(t.accent))) || new Set(s.teams.map(t => t.id)).size !== s.teams.length) return false;
   if (!s.questions.every(q => q && text(q.questionId) && text(q.subject) && text(q.prompt) && metadata(q)) || new Set(s.questions.map(q => q.questionId)).size !== s.questions.length) return false;
+  if (s.activities !== undefined && (!Array.isArray(s.activities) || !s.activities.every(a => a && s.teams.some(t => t.id === a.teamId) && text(a.label) && date(a.at)))) return false;
   const keys = new Set<string>();
   return s.responses.every(r => {
     if (!r || !s.teams.some(t => t.id === r.teamId) || !date(r.answeredAt) || r.answeredAt < s.startedAt || (s.endedAt && r.answeredAt > s.endedAt) || typeof r.correct !== 'boolean' || !Number.isFinite(r.pointsAwarded) || !metadata(r)) return false;

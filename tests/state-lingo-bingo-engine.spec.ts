@@ -4,8 +4,8 @@ import { isGameSession, summarizeSession } from '../src/assessment/engine';
 import { gameName } from '../src/assessment/gameNames';
 import { teamColors } from '../src/games/four-corners/teams';
 import {
-  beginGame, bingoColors, boardLayout, buildSession, cardLines, completedLines, createTeams, defaultSize, endGame, freshSettings, generateCard, isBingoState,
-  isBlackout, judge, nameErrors, pool, progress, regions, report, setTarget, setupErrors, states, undo, type BingoState, type Settings,
+  beginGame, bingoColors, boardLayout, buildSession, cardLines, completedLines, createTeams, defaultSize, endGame, finishExercise, freshSettings, generateCard, isBingoState,
+  isBlackout, isLocked, judge, nameErrors, pool, progress, regions, report, rollAll, rollExercise, setTarget, setupErrors, states, undo, type BingoState, type Settings,
 } from '../src/games/state-lingo-bingo/engine';
 import { readActive, saveActive, UNREADABLE } from '../src/games/state-lingo-bingo/storage';
 import { BINGO_ACTIVE_KEY } from '../src/games/state-lingo-bingo/keys';
@@ -13,7 +13,7 @@ import { BINGO_ACTIVE_KEY } from '../src/games/state-lingo-bingo/keys';
 const t0 = Date.parse('2026-10-23T14:00:00.000Z');
 const at = (s: number) => new Date(t0 + s * 1000).toISOString();
 function seeded(seed = 1) { return () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }; }
-const settings = (patch: Partial<Settings> = {}): Settings => ({ ...freshSettings('4'), teamCount: 2, ...patch });
+const settings = (patch: Partial<Settings> = {}): Settings => ({ ...freshSettings(), teamCount: 2, ...patch });
 function game(patch: Partial<Settings> = {}, seed = 1): BingoState { return beginGame(settings(patch), 'session-1', at(0), seeded(seed))!; }
 /** Target then mark each listed square for a team, one second apart. */
 function play(s: BingoState, teamId: string, squares: number[], kind: 'correct' | 'wrong' = 'correct', start = (s.events?.length ?? 0) + 1): BingoState {
@@ -58,13 +58,10 @@ test('Card generation: no duplicate squares, free center on 5×5, only selected 
   expect(setupErrors(settings({ size: 5, regions: ['Northeast', 'Midwest'] }))).toEqual(['A 5×5 card needs at least 24 states. The selected regions have 21.']);
   expect(setupErrors(settings({ size: 4, regions: ['Northeast', 'Midwest'] }))).toEqual([]);
   expect(beginGame(settings({ size: 4, regions: ['Northeast'] }), 'x', at(0))).toBeNull();
-  // 4×4 for 3rd grade and for 7+ teams; 5×5 for 4th and 5th with 6 or fewer.
-  for (let n = 2; n <= 10; n++) {
-    expect(defaultSize('3', n)).toBe(4);
-    expect(defaultSize('4', n)).toBe(n >= 7 ? 4 : 5);
-    expect(defaultSize('5', n)).toBe(n >= 7 ? 4 : 5);
-  }
-  expect(freshSettings('5').size).toBe(4); // default class of 8 teams
+  // Card size comes from the team count only: 5×5 with 6 or fewer teams, 4×4 with 7 or more.
+  for (let n = 2; n <= 10; n++) expect(defaultSize(n)).toBe(n >= 7 ? 4 : 5);
+  expect(freshSettings()).toMatchObject({ teamCount: 8, size: 4 });
+  expect(freshSettings()).not.toHaveProperty('grade');
   // Each team gets its own card.
   const s = game({ teamCount: 6 });
   expect(new Set(Object.values(s.cards!).map(c => c.join())).size).toBe(6);
@@ -154,7 +151,8 @@ test('Assessment records: every correct and wrong tile per team with target stat
   s = endGame(s, at(60));
   const session = buildSession(s);
   expect(isGameSession(session)).toBe(true);
-  expect(session).toMatchObject({ gameType: 'state-lingo-bingo', grade: '4', mode: 'team', endedAt: at(60) });
+  expect(session).toMatchObject({ gameType: 'state-lingo-bingo', mode: 'team', endedAt: at(60) });
+  expect(session).not.toHaveProperty('grade');
   expect(gameName(session.gameType)).toBe('State Lingo Bingo');
   expect(gameName('four-corners')).toBe('Four Corners');
   const t1 = session.responses.filter(r => r.teamId === 'team-1');
@@ -232,4 +230,48 @@ test('Active save: an unfinished game round-trips exactly; an unreadable save is
   expect(readActive(store)).toEqual({ state: null, error: UNREADABLE });
   expect(saveActive(s, store)).toBe(UNREADABLE);
   expect(data.get(BINGO_ACTIVE_KEY)).toBe('{"version":1,"screen":"play"');
+});
+
+test('Grade: older saves that recorded a grade still load and report it; new games have none', () => {
+  const legacy = JSON.parse(JSON.stringify(play(game({ teamCount: 3 }), 'team-1', [0])));
+  legacy.settings.grade = '3';
+  expect(isBingoState(legacy)).toBe(true);
+  expect(buildSession(endGame(legacy, at(30))).grade).toBe('3');
+  expect(isBingoState({ ...legacy, settings: { ...legacy.settings, grade: '9' } })).toBe(false);
+  expect(beginGame({ ...settings(), grade: '5' }, 'id', at(0))!.settings).not.toHaveProperty('grade');
+});
+
+test('Exercises: each team gets its own; the card locks until Done; a new one after each judged tile; blackout gets none', () => {
+  let s = rollAll(game({ size: 4, teamCount: 3 }), seeded(5));
+  expect(s.teams!.every(t => isLocked(s, t.id) && s.exercises![t.id].roll === 1)).toBe(true);
+  // A re-roll always changes the exercise and stays locked.
+  for (let i = 0; i < 20; i++) { const before = s.exercises!['team-1'].exercise; s = rollExercise(s, 'team-1', seeded(i + 2)); expect(s.exercises!['team-1'].exercise).not.toBe(before); }
+  expect(isLocked(s, 'team-1')).toBe(true);
+  const first = s.exercises!['team-1'].exercise;
+  s = finishExercise(s, 'team-1', at(1));
+  expect(isLocked(s, 'team-1')).toBe(false);
+  expect(isLocked(s, 'team-2')).toBe(true);
+  expect(finishExercise(s, 'team-1', at(2))).toBe(s); // already done
+  expect(s.exerciseLog).toEqual([{ teamId: 'team-1', exercise: first, label: s.settings.fitness[first], at: at(1) }]);
+  // Judged tile, then a new exercise relocks the card; Undo of that tile unlocks it again.
+  s = judge(setTarget(s, 'team-1', s.cards!['team-1'][0]!, at(2)), 'team-1', 'correct', at(3));
+  s = rollExercise(s, 'team-1', seeded(9));
+  expect(isLocked(s, 'team-1')).toBe(true);
+  expect(isLocked(undo(s), 'team-1')).toBe(false);
+  // A full card has nothing left to unlock.
+  for (let i = 1; i < 16; i++) s = judge(setTarget(s, 'team-1', s.cards!['team-1'][i]!, at(3 + i * 2)), 'team-1', 'correct', at(4 + i * 2));
+  expect(progress(s, 'team-1').blackout).toBe(true);
+  expect(isLocked(s, 'team-1')).toBe(false);
+  expect(rollExercise(s, 'team-1')).toBe(s);
+  // Exercises save, validate and reach the shared session record.
+  s = finishExercise(s, 'team-2', at(40));
+  expect(isBingoState(JSON.parse(JSON.stringify(s)))).toBe(true);
+  const broken = (f: (x: any) => void) => { const x = JSON.parse(JSON.stringify(s)); f(x); return isBingoState(x); };
+  expect(broken(x => { x.exercises['team-1'].exercise = 6; })).toBe(false);
+  expect(broken(x => { x.exercises['team-99'] = { exercise: 0, done: false, roll: 1 }; })).toBe(false);
+  expect(broken(x => { x.exerciseLog[0].teamId = 'team-99'; })).toBe(false);
+  const session = buildSession(endGame(s, at(60)));
+  expect(isGameSession(session)).toBe(true);
+  expect(session.activities!.map(a => a.teamId)).toEqual(['team-1', 'team-2']);
+  expect(report(s).teams.map(t => t.exercises.length)).toEqual([1, 1, 0]);
 });

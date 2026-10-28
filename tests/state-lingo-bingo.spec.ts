@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
-import { beginGame, boardLayout, freshSettings, judge, setTarget, stateByCode, states, type BingoState, type Settings } from '../src/games/state-lingo-bingo/engine';
+import { beginGame, boardLayout, freshSettings, judge, rollAll, setTarget, stateByCode, states, type BingoState, type Settings } from '../src/games/state-lingo-bingo/engine';
 import { BINGO_ACTIVE_KEY } from '../src/games/state-lingo-bingo/keys';
 
 const key = BINGO_ACTIVE_KEY;
@@ -8,25 +8,27 @@ const sizes = [[1920, 1080], [1536, 864], [1280, 720]] as const;
 function seeded(seed = 7) { return () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }; }
 async function saved(page: Page): Promise<BingoState> { return page.evaluate(k => JSON.parse(localStorage.getItem(k)!), key); }
 /** Build a game in Node and load it as this browser's active save. */
-async function inject(page: Page, patch: Partial<Settings>, moves = true): Promise<BingoState> {
+async function inject(page: Page, patch: Partial<Settings>, moves = true, exercises = false): Promise<BingoState> {
   const start = Date.now() - 60_000, at = (s: number) => new Date(start + s * 1000).toISOString();
-  let s = beginGame({ ...freshSettings('5'), ...patch }, 'injected', at(0), seeded())!;
+  let s = beginGame({ ...freshSettings(), ...patch }, 'injected', at(0), seeded())!;
   if (moves) {
     const card = s.cards!['team-1'];
     [0, 1].forEach(i => { s = judge(setTarget(s, 'team-1', card[i]!, at(i * 2 + 1)), 'team-1', 'correct', at(i * 2 + 2)); });
     s = setTarget(s, 'team-1', card[2]!, at(10));
     s = setTarget(s, 'team-2', s.cards!['team-2'][3]!, at(11));
   }
+  if (exercises) s = rollAll(s, seeded(3));
   await page.goto('/games');
   await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
   await page.goto('/games/state-lingo-bingo');
   await expect(page.locator('.slb-team')).toHaveCount(s.teams!.length);
   return s;
 }
+const done = (page: Page, team: string) => page.getByRole('button', { name: `✓ Done: ${team}` }).click();
 const squareName = (s: BingoState, team: string, i: number) => stateByCode.get(s.cards![team][i]!)!.name;
 async function fits(page: Page) {
   expect(await page.evaluate(() => ({ h: document.documentElement.scrollHeight <= innerHeight, w: document.documentElement.scrollWidth <= innerWidth }))).toEqual({ h: true, w: true });
-  const over = await page.locator('.slb-team, .slb-square, .slb-square .slb-name, .slb-team-head, .slb-target, .slb-controls button, .slb-fitness li, .header-actions button').evaluateAll(nodes => nodes.filter(n => {
+  const over = await page.locator('.slb-team, .slb-square, .slb-square .slb-name, .slb-team-head, .slb-exercise, .slb-exercise-text, .slb-exercise button, .slb-target, .slb-controls button, .slb-fitness li, .header-actions button').evaluateAll(nodes => nodes.filter(n => {
     const r = n.getBoundingClientRect();
     return r.top < 0 || r.left < 0 || r.bottom > innerHeight + 0.5 || r.right > innerWidth + 0.5 || n.scrollWidth > n.clientWidth + 1 || n.scrollHeight > n.clientHeight + 1;
   }).map(n => `${n.className}: ${n.textContent?.slice(0, 30)}`));
@@ -44,9 +46,9 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   await page.evaluate(() => localStorage.clear());
   await page.goto('/games/state-lingo-bingo');
   await expect(page.getByTestId('general-practice')).toHaveText('General Practice · Not district-paced · Available on any date');
-  // Card size defaults: 4×4 for 3rd grade or 7+ teams, 5×5 for 4th/5th with 6 or fewer; the teacher can override.
+  // No grade step. Card size defaults from the team count: 5×5 with 6 or fewer, 4×4 with 7 or more; the teacher can override.
+  await expect(page.getByText(/Grade/)).toHaveCount(0);
   const four = page.getByRole('button', { name: '4×4' }), five = page.getByRole('button', { name: '5×5 · free center' });
-  await page.getByRole('button', { name: '4th Grade' }).click();
   await expect(page.getByLabel('Number of teams')).toHaveValue('8');
   await expect(four).toHaveAttribute('aria-pressed', 'true');
   await page.getByLabel('Number of teams').selectOption('6');
@@ -55,12 +57,9 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   await expect(four).toHaveAttribute('aria-pressed', 'true');
   await five.click();
   await expect(five).toHaveAttribute('aria-pressed', 'true');
-  await page.getByRole('button', { name: '5th Grade' }).click();
-  await expect(four).toHaveAttribute('aria-pressed', 'true');
   await page.getByLabel('Number of teams').selectOption('2');
   await expect(five).toHaveAttribute('aria-pressed', 'true');
-  await page.getByRole('button', { name: '3rd Grade' }).click();
-  await expect(four).toHaveAttribute('aria-pressed', 'true');
+  await four.click();
   // Region filter warning.
   for (const r of ['Midwest', 'South', 'West']) await page.getByRole('button', { name: new RegExp(`^${r}`) }).click();
   await expect(page.getByTestId('setup-errors')).toContainText('A 4×4 card needs at least 16 states. The selected regions have 9.');
@@ -83,35 +82,45 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   expect(s.settings.regions).toEqual(['Northeast', 'South']);
   expect(Object.values(s.cards!).every(c => c.length === 16)).toBe(true);
   const sq = (i: number, team = 'team-1') => page.getByRole('button', { name: new RegExp(`^${team === 'team-1' ? 'Rockets' : 'Comets'}: ${squareName(s, team, i)}`) });
-  await page.getByRole('button', { name: /Rockets/ }).first().click();
+  // Every card starts locked behind its own exercise.
+  for (const t of ['team-1', 'team-2']) await expect(page.getByTestId(`exercise-${t}`)).toBeVisible();
+  await expect(sq(0)).toBeDisabled();
+  await done(page, 'Rockets');
   await sq(0).click();
   await expect(page.getByTestId('target-popup')).toContainText(squareName(s, 'team-1', 0));
   await expect(page.getByTestId('target-team-1')).toContainText(squareName(s, 'team-1', 0));
   await page.getByRole('button', { name: '✗ Wrong tile' }).click();
   await expect(page.getByText('Wrong tile recorded for Rockets. Back to the pool!')).toBeVisible();
+  // A new exercise locks the card again; the same state stays the target.
+  await expect(page.getByTestId('exercise-team-1')).toBeVisible();
+  await expect(page.getByRole('button', { name: '✓ Correct capital' })).toHaveCount(0);
+  await done(page, 'Rockets');
+  await expect(page.getByTestId('target-team-1')).toContainText(squareName(s, 'team-1', 0));
   await page.getByRole('button', { name: 'Check answer' }).click();
   await expect(page.getByTestId('peek-capital')).toHaveText(stateByCode.get(s.cards!['team-1'][0]!)!.capital);
   await page.getByRole('button', { name: '✓ Correct capital' }).click();
   await expect(page.getByTestId('peek-capital')).toHaveCount(0);
   await expect(page.getByTestId('points-team-1')).toHaveText('1');
-  for (const i of [1, 2]) { await sq(i).click(); await page.getByRole('button', { name: '✓ Correct capital' }).click(); }
-  await sq(3).click(); await page.getByRole('button', { name: '✓ Correct capital' }).click();
+  for (const i of [1, 2]) { await done(page, 'Rockets'); await sq(i).click(); await page.getByRole('button', { name: '✓ Correct capital' }).click(); }
+  await done(page, 'Rockets'); await sq(3).click(); await page.getByRole('button', { name: '✓ Correct capital' }).click();
   await expect(page.locator('[data-testid=card-team-1] .slb-flash')).toHaveText('BINGO!');
   await expect(page.getByTestId('points-team-1')).toHaveText('9');
   await expect(page.getByTestId('card-team-1')).toContainText('1 bingo');
-  // Undo the bingo tap: the square returns to being the target.
+  // Undo the bingo tap: the square returns to being the target and the card unlocks.
+  await expect(page.getByTestId('exercise-team-1')).toBeVisible();
   await page.getByRole('button', { name: 'Undo', exact: true }).click();
   await expect(page.getByTestId('points-team-1')).toHaveText('3');
   await expect(page.getByTestId('target-team-1')).toContainText(squareName(s, 'team-1', 3));
   await page.getByRole('button', { name: '✓ Correct capital' }).click();
   await expect(page.getByTestId('points-team-1')).toHaveText('9');
   // Play continues after a bingo; Comets get a wrong tile and a correct one.
-  await page.getByRole('button', { name: /Comets/ }).first().click();
+  await done(page, 'Comets');
   await sq(0, 'team-2').click();
   await page.getByRole('button', { name: '✗ Wrong tile' }).click();
   await page.getByRole('button', { name: 'Undo', exact: true }).click();
   await expect(page.getByText(/Undid the last tap \(wrong tile\) for Comets/)).toBeVisible();
   await page.getByRole('button', { name: '✗ Wrong tile' }).click();
+  await done(page, 'Comets');
   await sq(5, 'team-2').click(); // change target before the tile returns
   await page.getByRole('button', { name: '✓ Correct capital' }).click();
   await expect(page.getByTestId('points-team-2')).toHaveText('1');
@@ -128,7 +137,8 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   await page.getByRole('button', { name: 'Home', exact: true }).click();
   const card = page.getByRole('button', { name: /STATE LINGO BINGO/ });
   await expect(card).toContainText('CONTINUE');
-  await expect(card).toContainText('3rd Grade · 2 teams');
+  await expect(card).toContainText('2 teams');
+  await expect(card).not.toContainText('Grade');
   await card.click();
   await expect(page.getByTestId('points-team-1')).toHaveText('9');
   expect(await page.evaluate(k => localStorage.getItem(k), key)).toBe(before);
@@ -145,10 +155,18 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   const review = page.getByRole('region', { name: 'Review list' });
   await expect(review).toContainText(`${squareName(s, 'team-1', 0)} — ${stateByCode.get(s.cards!['team-1'][0]!)!.capital} · Rockets · wrong tile`);
   await expect(review).toContainText(`${squareName(s, 'team-2', 0)} — ${stateByCode.get(s.cards!['team-2'][0]!)!.capital} · Comets · wrong tile`);
+  // Exercises each team did: Rockets finished 5, Comets 2.
+  const log = (await saved(page)).exerciseLog!;
+  expect(log.filter(e => e.teamId === 'team-1')).toHaveLength(5);
+  expect(log.filter(e => e.teamId === 'team-2')).toHaveLength(2);
+  await expect(page.getByTestId('exercises-team-1')).toContainText('Rockets ·');
+  await expect(page.getByTestId('exercises-team-2')).toContainText('Comets ·');
   await page.screenshot({ path: 'test-results/slb-results.png', fullPage: true });
   const history = await page.evaluate(k => JSON.parse(localStorage.getItem(k)!), historyKey);
   expect(history.sessions).toHaveLength(1);
-  expect(history.sessions[0]).toMatchObject({ gameType: 'state-lingo-bingo', grade: '3', mode: 'team', teams: [{ name: 'Rockets' }, { name: 'Comets' }] });
+  expect(history.sessions[0]).toMatchObject({ gameType: 'state-lingo-bingo', mode: 'team', teams: [{ name: 'Rockets' }, { name: 'Comets' }] });
+  expect(history.sessions[0]).not.toHaveProperty('grade');
+  expect(history.sessions[0].activities.map((a: any) => [a.teamId, a.label])).toEqual(log.map(e => [e.teamId, e.label]));
   expect(history.sessions[0].responses.map((r: any) => [r.teamId, r.correct, r.pointsAwarded])).toEqual([
     ['team-1', false, 0], ['team-1', true, 1], ['team-1', true, 1], ['team-1', true, 1], ['team-1', true, 6], ['team-2', false, 0], ['team-2', true, 1]]);
   // A finished game is no longer offered as Continue, and it shows in shared Session History.
@@ -156,7 +174,11 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   await expect(page.getByRole('button', { name: /STATE LINGO BINGO/ })).toContainText('PLAY');
   await page.goto('/games/four-corners');
   await page.getByRole('button', { name: 'Session History' }).click();
-  await expect(page.locator('.assessment-history-list button')).toContainText(['Grade 3 · State Lingo Bingo']);
+  await expect(page.locator('.assessment-history-list button')).toContainText(['State Lingo Bingo']);
+  await expect(page.locator('.assessment-history-list button')).not.toContainText(['Grade']);
+  await page.locator('.assessment-history-list button').first().click();
+  await page.getByRole('button', { name: 'Team Performance' }).click();
+  await expect(page.getByTestId('activities-team-1')).toContainText(/^Exercises: .+/);
   // New Game clears the active save and keeps the settings.
   await page.goto('/games/state-lingo-bingo');
   await page.getByRole('button', { name: 'New Game' }).click();
@@ -169,7 +191,7 @@ test('Board layout for every team count from 2 to 10 at 1920×1080, 1536×864 an
   for (const [width, height] of sizes) {
     await page.setViewportSize({ width, height });
     for (let count = 2; count <= 10; count++) {
-      await inject(page, { teamCount: count, size: 5 });
+      await inject(page, { teamCount: count, size: 5 }, true, count % 2 === 0);
       await fits(page);
       const boxes = await page.locator('.slb-team').evaluateAll(n => n.map(e => e.getBoundingClientRect().toJSON()));
       const [cols, rows] = boardLayout(count);
@@ -185,7 +207,7 @@ test('Board layout for every team count from 2 to 10 at 1920×1080, 1536×864 an
     }
   }
   // 4×4 cards for 3rd grade at the smallest size.
-  await inject(page, { grade: '3', size: 4, teamCount: 10 });
+  await inject(page, { size: 4, teamCount: 10 }, true, true);
   await fits(page);
 });
 
@@ -195,7 +217,7 @@ test('Every state name fits its square at one size per card in the bundled board
   const codes = [...states].sort((a, b) => b.name.length - a.name.length).map(x => x.code);
   // 10 teams on the 4×4 default and on 5×5, rebuilt so all 50 states appear (the longest names on team 1).
   for (const size of [4, 5] as const) {
-    let s = beginGame({ ...freshSettings('5'), teamCount: 10, size }, 'all-states', new Date(start).toISOString(), seeded())!;
+    let s = beginGame({ ...freshSettings(), teamCount: 10, size }, 'all-states', new Date(start).toISOString(), seeded())!;
     const per = size === 5 ? 24 : 16;
     s.teams!.forEach((t, ti) => { let n = 0; s.cards![t.id] = s.cards![t.id].map(c => c === null ? null : codes[(ti * per + n++) % 50]); });
     s = setTarget(s, 'team-1', s.cards!['team-1'][0]!, new Date(start + 1000).toISOString());
@@ -310,4 +332,30 @@ test('Games hub shows all four games without scrolling at each screen size', asy
     }))).toBe(true);
     if (width === 1920) await page.screenshot({ path: 'test-results/slb-hub-1920.png' });
   }
+});
+
+test('Exercise lock: dimmed squares cannot be tapped, Re-roll changes the exercise, Done unlocks; no roll animation under reduced motion', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const s = await inject(page, { teamCount: 4, size: 5 }, false, true);
+  const text = page.getByTestId('exercise-team-3').locator('.slb-exercise-text');
+  expect(await text.evaluate(e => getComputedStyle(e).animationName)).toBe('none');
+  const square = page.getByRole('button', { name: new RegExp(`^Team 3: ${squareName(s, 'team-3', 0)}`) });
+  await expect(square).toBeDisabled();
+  expect(Number(await square.evaluate(e => getComputedStyle(e).opacity))).toBeLessThan(0.5);
+  const doneButton = page.getByRole('button', { name: '✓ Done: Team 3' });
+  expect((await doneButton.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+  const before = (await saved(page)).exercises!['team-3'];
+  await page.getByRole('button', { name: '↻ Re-roll: Team 3' }).click();
+  const after = (await saved(page)).exercises!['team-3'];
+  expect(after.exercise).not.toBe(before.exercise);
+  expect(after.done).toBe(false);
+  await expect(text).toContainText(s.settings.fitness[after.exercise]);
+  await doneButton.click();
+  await expect(page.getByTestId('exercise-team-3')).toHaveCount(0);
+  await expect(square).toBeEnabled();
+  await expect(page.getByTestId('exercise-team-2')).toBeVisible(); // other teams stay locked
+  // One tap on an unlocked card picks the state for that team.
+  await square.click();
+  await expect(page.getByTestId('target-team-3')).toContainText(squareName(s, 'team-3', 0));
+  await fits(page);
 });
