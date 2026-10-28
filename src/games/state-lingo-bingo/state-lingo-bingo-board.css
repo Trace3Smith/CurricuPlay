@@ -1,0 +1,137 @@
+/* State Lingo Bingo in DESIGN.md board mode (shared basics: games/board-mode.css). Scoped to .app.slb-app.board-mode.
+   The play screen keeps its geometry (card grid, square sizes, target bar, controls, fitness strip) so fitCards() and the
+   layout rules stay exactly as before; this restyles colour, borders and type. Team colours stay on --accent. */
+
+/* Play keeps its slim header and narrow side margins so the cards keep their space. */
+.app.slb-app.board-mode.slb-playing{padding:0 .6vw}
+.app.slb-app.board-mode.slb-playing header{height:64px;padding:0;flex-shrink:0}
+.app.slb-app.board-mode.slb-playing .wordmark img{height:36px}
+.app.slb-app.board-mode.slb-playing :is(.header-actions button,.header-actions a){min-height:46px;padding:0 18px;font-size:20px}
+@media(max-height:800px){.app.slb-app.board-mode.slb-playing header{height:56px}}
+.app.slb-app .eyebrow{font-size:var(--board-text);font-weight:700;line-height:1.2;letter-spacing:.08em;color:var(--ds-secondary)}
+
+/* Buttons and fields: outlined white pills; the one main action is orange. */
+.app.slb-app :where(button:not(.wordmark,.slb-square,.slb-team-head)){border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app :where(button:not(.wordmark,.slb-square,.slb-team-head)):hover:not(:disabled){background:var(--ds-primary-dark);border-color:var(--ds-on-board)}
+.app.slb-app .primary{border:2px solid var(--ds-highlight);background:var(--ds-highlight);color:var(--ds-on-highlight);font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app .primary:hover:not(:disabled){background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-on-highlight)}
+.app.slb-app :is(select,input){border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-md);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;color-scheme:dark}
+.app.slb-app label{font-family:var(--ds-font-board)}
+
+/* Setup: board colours and a large heading; the form is teacher-size. */
+.app.slb-app .slb-setup{max-width:none;margin:calc(16 * var(--u)) 0 0}
+.app.slb-app .slb-setup h1{font-family:var(--ds-font-board);font-size:calc(52 * var(--u));font-weight:700;line-height:1.05;letter-spacing:0;margin:calc(8 * var(--u)) 0}
+.app.slb-app .slb-practice{background:transparent;border:2px solid var(--ds-secondary);border-radius:var(--ds-rounded-pill);color:var(--ds-on-board);padding:calc(6 * var(--u)) calc(18 * var(--u));font-size:max(16px,calc(22 * var(--u)));margin-bottom:calc(14 * var(--u))}
+.app.slb-app .slb-setup legend{color:var(--ds-secondary);font-size:calc(30 * var(--u));font-weight:700}
+.app.slb-app .slb-setup legend span{color:var(--ds-on-board);margin-left:calc(10 * var(--u))}
+.app.slb-app .slb-setup fieldset{margin-bottom:calc(14 * var(--u))}
+.app.slb-app .slb-options button{min-height:max(44px,calc(56 * var(--u)));padding:0 calc(20 * var(--u));font-size:max(16px,calc(22 * var(--u)))}
+/* Selected options are filled white, so selection never depends on colour alone. */
+.app.slb-app .slb-options button[aria-pressed=true]{background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+.app.slb-app .slb-options label,.app.slb-app .slb-inputs label{font-size:max(16px,calc(22 * var(--u)));font-weight:700}
+.app.slb-app :is(.slb-setup select,.slb-inputs input){min-height:max(44px,calc(52 * var(--u)));padding:0 calc(12 * var(--u));font-size:max(16px,calc(22 * var(--u)))}
+.app.slb-app .slb-hint{color:var(--ds-on-board);font-size:max(15px,calc(19 * var(--u)))}
+.app.slb-app .slb-setup .setup-bottom p{color:var(--ds-on-board);font-size:var(--board-text)}
+.app.slb-app .slb-setup .primary{min-height:max(44px,calc(80 * var(--u)));padding:0 calc(44 * var(--u));font-size:calc(34 * var(--u))}
+/* Compact setup so Start Game is on screen without scrolling: the practice badge sits beside the heading, team-name and
+   fitness labels sit beside their fields on one line, and sections are a little closer together. */
+.app.slb-app .slb-setup h1{display:inline-block;margin-right:calc(24 * var(--u));vertical-align:middle}
+.app.slb-app .slb-practice{vertical-align:middle;margin:calc(8 * var(--u)) 0 calc(10 * var(--u))}
+.app.slb-app .slb-setup fieldset{margin-bottom:calc(10 * var(--u))}
+.app.slb-app .slb-setup legend{margin-bottom:calc(8 * var(--u))}
+.app.slb-app .slb-inputs label{white-space:nowrap}
+.app.slb-app .slb-names label{flex-direction:row;align-items:center;gap:calc(10 * var(--u))}
+.app.slb-app .slb-names .slb-hint{margin:0 0 calc(8 * var(--u))}
+.app.slb-app .slb-setup .setup-bottom{margin-top:calc(4 * var(--u))}
+
+/* Team cards: navy card, bright-blue squares, white names over a faint outline; team colour on the top edge. */
+.app.slb-app .slb-team{background:var(--ds-board);border:2px solid var(--ds-primary-dark);border-top:8px solid var(--accent)}
+.app.slb-app .slb-team.slb-selected{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent);background:var(--ds-board)}
+.app.slb-app .slb-team-head{color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app .slb-team-head[aria-pressed=true]{background:var(--ds-primary-dark)}
+.app.slb-app .slb-stats{color:var(--ds-on-board);font-weight:700}
+.app.slb-app .slb-stats b{color:var(--ds-highlight)}
+.app.slb-app .assessment-team-accent{border:2px solid var(--ds-board);box-shadow:0 0 0 2px var(--ds-on-board)}
+/* Target bar: green label; once a target is set it is framed in orange, the board's "current target" colour. */
+.app.slb-app .slb-target{background:var(--ds-board);border:2px solid var(--ds-highlight)}
+.app.slb-app .slb-target-empty{border:1px dashed var(--ds-sky)}
+.app.slb-app .slb-target small{color:var(--ds-secondary);font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app .slb-target-face .slb-name{color:var(--ds-on-board)}
+.app.slb-app .slb-square{border:1px solid var(--ds-sky);background:var(--ds-primary);color:var(--ds-on-board)}
+.app.slb-app .slb-square:hover:not(:disabled){background:var(--ds-primary-dark)}
+.app.slb-app .slb-square .slb-name{text-shadow:0 1px 3px #0b1f44cc}
+.app.slb-app .slb-free{background:var(--ds-board);border:1px dashed var(--ds-sky)}
+.app.slb-app .slb-free .slb-name{color:var(--ds-highlight)}
+.app.slb-app .slb-marked{background:color-mix(in srgb,var(--accent) 55%,var(--ds-board));border-color:var(--accent);color:var(--ds-on-board)}
+/* Current target: team-colour ring capped at 8px. It was 4% of the card width, which on 2–6 team cards grew to a blob
+   covering neighbouring squares and the target bar. */
+.app.slb-app .slb-current{background:var(--ds-primary-dark);outline:clamp(3px,3cqw,8px) solid var(--accent);outline-offset:-2px}
+.app.slb-app .slb-art{fill:var(--ds-on-board)}
+.app.slb-app .slb-location .slb-us{fill:#ffffff26;stroke:#ffffff40}
+.app.slb-app .slb-location .slb-shape-hl{fill:var(--ds-highlight)}
+.app.slb-app .slb-solo{fill:var(--ds-on-board)}
+/* BINGO / BLACKOUT celebration: orange on a navy overlay (same timing and reduced-motion handling). */
+.app.slb-app .slb-flash{color:var(--ds-highlight);font-family:var(--ds-font-board);font-weight:700;letter-spacing:.04em;background:#0b1f44d9;text-shadow:0 4px 24px #000}
+
+/* Teacher controls and fitness strip */
+.app.slb-app .slb-controls{background:var(--ds-board);border:2px solid var(--ds-primary-dark);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;font-size:21px}
+.app.slb-app .slb-controls button{font-size:20px}
+.app.slb-app .slb-controls .primary{font-size:22px}
+.app.slb-app .slb-wrong{background:var(--ds-danger);border-color:var(--ds-danger);color:var(--ds-on-danger)}
+.app.slb-app .slb-wrong:hover:not(:disabled){background:var(--ds-danger);border-color:var(--ds-on-board)}
+.app.slb-app .slb-controls button[aria-pressed=true]{background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+.app.slb-app .slb-notice{color:var(--ds-highlight)}
+.app.slb-app .slb-fitness li{background:var(--ds-board);border:2px solid var(--ds-primary-dark);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;font-size:19px}
+.app.slb-app .slb-fitness b{background:var(--ds-highlight);color:var(--ds-on-highlight)}
+@media(max-height:800px){.app.slb-app .slb-controls{font-size:18px}.app.slb-app .slb-controls button{font-size:17px}.app.slb-app .slb-controls .primary{font-size:19px}.app.slb-app .slb-fitness li{font-size:16px}}
+
+/* Target pop-up: navy panel in the team's colour (same animation, never blocks controls). */
+.app.slb-app .slb-popup{background:#0b1f44f2;border:6px solid var(--accent);box-shadow:none}
+.app.slb-app .slb-popup small{color:var(--ds-secondary);font-family:var(--ds-font-board);font-weight:700;font-size:26px}
+.app.slb-app .slb-popup-face .slb-name{color:var(--ds-on-board)}
+
+/* Final results */
+.app.slb-app .slb-results{max-width:none;margin:calc(16 * var(--u)) 0 0}
+.app.slb-app .slb-results h1{font-family:var(--ds-font-board);font-size:calc(52 * var(--u));font-weight:700;line-height:1.05;margin:calc(8 * var(--u)) 0 calc(18 * var(--u))}
+.app.slb-app .slb-table{font-size:max(17px,calc(26 * var(--u)))}
+.app.slb-app .slb-table th,.app.slb-app .slb-table td{border-bottom:2px solid var(--ds-primary-dark)}
+.app.slb-app .slb-table th{color:var(--ds-secondary);font-size:max(15px,calc(20 * var(--u)))}
+.app.slb-app .slb-review{background:var(--ds-board);border:2px solid var(--ds-primary-dark);border-radius:var(--ds-rounded-lg)}
+.app.slb-app .slb-review h2{font-family:var(--ds-font-board);font-size:calc(32 * var(--u))}
+.app.slb-app .slb-review ul{font-size:max(16px,calc(21 * var(--u)))}
+.app.slb-app .assessment-report-actions{gap:max(16px,calc(24 * var(--u)))}
+.app.slb-app .assessment-report-actions button{min-height:max(44px,calc(72 * var(--u)));padding:0 calc(28 * var(--u));font-size:calc(26 * var(--u))}
+.app.slb-app .assessment-report-actions .primary{min-height:max(44px,calc(88 * var(--u)));font-size:calc(34 * var(--u))}
+
+/* Teacher-only Assessment / Session Report panel: board colours at teacher size; still opened only by the teacher. */
+.app.slb-app .assessment-modal{background:var(--ds-board);border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-lg);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app .assessment-modal::backdrop{background:#0b1f44e6}
+.app.slb-app .assessment-view{color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app .assessment-view h1{font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app .assessment-context,.app.slb-app .assessment-note{color:var(--ds-on-board)}
+.app.slb-app .assessment-metrics>div,.app.slb-app .assessment-view article{background:var(--ds-board);border:2px solid var(--ds-primary-dark);border-radius:var(--ds-rounded-md);color:var(--ds-on-board)}
+.app.slb-app .assessment-metrics strong,.app.slb-app .assessment-scoreboard b{color:var(--ds-highlight)}
+.app.slb-app .assessment-scoreboard>span{border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-pill);background:transparent}
+.app.slb-app .assessment-view .assessment-tabs button[aria-pressed=true]{background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+
+/* Confirmation dialog */
+.app.slb-app>dialog:not(.assessment-modal){max-width:calc(900 * var(--u));padding:calc(40 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-lg);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700}
+.app.slb-app>dialog:not(.assessment-modal)::backdrop{background:#0b1f44e6}
+.app.slb-app>dialog:not(.assessment-modal) h2{font-size:calc(44 * var(--u));line-height:1.1}
+.app.slb-app>dialog:not(.assessment-modal) p{margin:calc(24 * var(--u)) 0 calc(32 * var(--u));font-size:var(--board-text);line-height:1.35}
+.app.slb-app>dialog:not(.assessment-modal) .dialog-actions{gap:max(16px,calc(24 * var(--u)))}
+.app.slb-app>dialog:not(.assessment-modal) .dialog-actions button{min-height:max(44px,calc(88 * var(--u)));padding:0 calc(32 * var(--u));font-size:var(--board-text)}
+@media(max-width:700px){.app.slb-app.board-mode.slb-playing{padding:0 12px}.app.slb-app.board-mode.slb-playing header{height:auto}}
+/* Fitness card rolls in three columns (two rows) so the scoring/fitness row is one row shorter. */
+.app.slb-app .slb-setup fieldset:has(input[aria-label^="Fitness card"]) .slb-inputs{grid-template-columns:repeat(3,minmax(0,1fr))}
+/* Short screens (1280×720 and similar): tighter setup spacing so Start Game stays on screen. */
+@media(max-height:800px){
+  .app.slb-app .slb-setup{margin-top:4px}
+  .app.slb-app .slb-setup h1{font-size:30px;margin:2px 16px 2px 0}.app.slb-app .slb-setup .eyebrow{font-size:15px}
+  .app.slb-app .slb-practice{font-size:15px;padding:2px 12px;margin:2px 0 6px}
+  .app.slb-app .slb-setup fieldset{margin-bottom:6px}.app.slb-app .slb-setup legend{font-size:20px;margin-bottom:4px}
+  .app.slb-app .slb-hint{font-size:13px;margin-top:3px}.app.slb-app .slb-names .slb-hint{margin:0 0 4px}
+  .app.slb-app .slb-options,.app.slb-app .slb-inputs{gap:6px 12px}
+  .app.slb-app .slb-setup .primary{min-height:52px;font-size:22px}
+}
+@media(max-width:900px){.app.slb-app .slb-setup fieldset:has(input[aria-label^="Fitness card"]) .slb-inputs{grid-template-columns:1fr}}

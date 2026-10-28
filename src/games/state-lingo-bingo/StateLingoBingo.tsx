@@ -11,6 +11,8 @@ import {
 } from './engine';
 import { discardActive, readActive, saveActive } from './storage';
 import './state-lingo-bingo.css';
+import '../board-mode.css';
+import './state-lingo-bingo-board.css';
 
 const gradeLabel = (g: string) => `${g}${g === '3' ? 'rd' : 'th'} Grade`;
 const modeLabels: Record<SquareMode, string> = { names: 'Names', outline: 'Map-only: outline', location: 'Map-only: location' };
@@ -189,7 +191,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const showNames = settings.squareMode === 'names';
   const [cols, rows] = boardLayout(teams.length || settings.teamCount);
 
-  return <div className={`app slb-app ${playing ? 'slb-playing' : ''}`}>
+  return <div className={`app slb-app board-mode ${playing ? 'slb-playing' : ''}`}>
     <ShapeDefs />
     <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
       <div className="header-actions"><button onClick={onClassroom}>My Classroom</button>
