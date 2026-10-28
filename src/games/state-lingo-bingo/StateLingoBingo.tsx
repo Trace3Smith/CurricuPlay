@@ -254,7 +254,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
         })}
       </main>
       <section className="slb-controls" aria-label="Teacher controls">
-        {!selectedTeam ? <p>Tap a team’s name to judge its tile or choose its target.</p> : <>
+        {!selectedTeam ? <p>Tap ✓ Done when a team finishes its exercise. Then they tap a square on their card to pick a state.</p> : <>
           <p aria-live="polite"><TeamName team={selectedTeam} />{' · '}{selectedLocked && selectedExercise ? <>Exercise: <strong>{settings.fitness[selectedExercise.exercise]}</strong> · Tap ✓ Done on {selectedTeam.name}’s card when they finish.</>
             : choosing || !targetState ? <>Tap a square on {selectedTeam.name}’s card to set {choosing ? 'the next' : 'a'} target.</>
             : <>Target: <strong>{showNames || peek ? targetState.name : 'shown on card'}</strong>{peek && <> · Capital: <strong data-testid="peek-capital">{targetState.capital}</strong></>}</>}</p>
