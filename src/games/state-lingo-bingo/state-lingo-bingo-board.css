@@ -149,3 +149,13 @@
 .app.slb-app .slb-exercise-buttons .slb-exercise-done:hover{background:var(--ds-highlight);filter:brightness(1.08)}
 @keyframes slb-roll{0%{transform:translateY(-40%) rotateX(80deg);opacity:0}60%{transform:translateY(6%) rotateX(-12deg);opacity:1}100%{transform:none}}
 @media (prefers-reduced-motion:reduce){.app.slb-app .slb-exercise-text{animation:none}}
+
+/* Answer box: shown under an unlocked card once its team has picked a state; Enter checks the typed capital. */
+.app.slb-app .slb-team > .slb-answer{grid-row:4;grid-column:1;display:flex;gap:6px;min-width:0}
+.app.slb-app .slb-answer input{flex:1;min-width:0;min-height:max(44px,6.5cqh);padding:0 .45em;border:2px solid var(--accent);border-radius:10px;background:var(--ds-surface);color:var(--ds-on-surface);font-family:var(--ds-font-board);font-weight:700;font-size:clamp(14px,min(4.6cqw,4.6cqh),34px)}
+.app.slb-app .slb-answer input::placeholder{color:var(--ds-text-muted);font-weight:600}
+.app.slb-app .slb-answer input:focus-visible{outline:var(--ds-focus-ring);outline-offset:2px}
+.app.slb-app .slb-answer button{flex:none;min-width:max(48px,6.5cqh);min-height:max(44px,6.5cqh);padding:0 .5em;font-size:clamp(18px,min(5cqw,4.6cqh),30px);background:var(--ds-highlight);border-color:var(--ds-highlight);color:var(--ds-on-highlight)}
+.app.slb-app .slb-answer button:disabled{opacity:.45}
+.app.slb-app .slb-reveal{margin:0;max-width:100%;color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;font-size:clamp(14px,min(4.6cqw,6cqh),34px);line-height:1.2;overflow-wrap:anywhere}
+.app.slb-app .slb-reveal strong{color:var(--ds-highlight)}

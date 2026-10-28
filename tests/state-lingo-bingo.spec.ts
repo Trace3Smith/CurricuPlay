@@ -28,7 +28,7 @@ const done = (page: Page, team: string) => page.getByRole('button', { name: `✓
 const squareName = (s: BingoState, team: string, i: number) => stateByCode.get(s.cards![team][i]!)!.name;
 async function fits(page: Page) {
   expect(await page.evaluate(() => ({ h: document.documentElement.scrollHeight <= innerHeight, w: document.documentElement.scrollWidth <= innerWidth }))).toEqual({ h: true, w: true });
-  const over = await page.locator('.slb-team, .slb-square, .slb-square .slb-name, .slb-team-head, .slb-exercise, .slb-exercise-text, .slb-exercise button, .slb-target, .slb-controls button, .slb-fitness li, .header-actions button').evaluateAll(nodes => nodes.filter(n => {
+  const over = await page.locator('.slb-team, .slb-square, .slb-square .slb-name, .slb-team-head, .slb-exercise, .slb-exercise-text, .slb-exercise button, .slb-answer, .slb-answer input, .slb-answer button, .slb-reveal, .slb-target, .slb-controls button, .slb-fitness li, .header-actions button').evaluateAll(nodes => nodes.filter(n => {
     const r = n.getBoundingClientRect();
     return r.top < 0 || r.left < 0 || r.bottom > innerHeight + 0.5 || r.right > innerWidth + 0.5 || n.scrollWidth > n.clientWidth + 1 || n.scrollHeight > n.clientHeight + 1;
   }).map(n => `${n.className}: ${n.textContent?.slice(0, 30)}`));
@@ -39,6 +39,13 @@ async function fits(page: Page) {
     return [...range.getClientRects()].some(l => l.left < sq.left - .5 || l.right > sq.right + .5 || l.top < sq.top - .5 || l.bottom > sq.bottom + .5);
   }).map(n => n.textContent));
   expect(clipped).toEqual([]);
+  // The answer box is at least 44px tall and shows its whole placeholder.
+  const boxes = await page.locator('.slb-answer input').evaluateAll((nodes: HTMLInputElement[]) => nodes.map(e => {
+    const cs = getComputedStyle(e), c = document.createElement('canvas').getContext('2d')!;
+    c.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+    return e.getBoundingClientRect().height >= 44 && c.measureText(e.placeholder).width <= e.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  }));
+  expect(boxes.every(Boolean)).toBe(true);
 }
 
 test('Full play-through: setup with custom names, targets, wrong tile, bingo, undo, refresh recovery, end and records', async ({ page }) => {
@@ -358,4 +365,57 @@ test('Exercise lock: dimmed squares cannot be tapped, Re-roll changes the exerci
   await square.click();
   await expect(page.getByTestId('target-team-3')).toContainText(squareName(s, 'team-3', 0));
   await fits(page);
+});
+
+test('Answer box: Enter checks the typed capital leniently, marks it like ✓/✗, shows the capital after a wrong, and records what was said', async ({ page }) => {
+  // Team 1 picks Minnesota, Team 2 picks Florida (cards built so both states are on them).
+  const start = Date.now() - 60_000, at = (n: number) => new Date(start + n * 1000).toISOString();
+  let s = beginGame({ ...freshSettings(), teamCount: 2, size: 5, names: ['Rockets', 'Comets', ...Array(8).fill('')] }, 'typed', at(0), seeded())!;
+  s = { ...s, cards: { 'team-1': ['MN', ...s.cards!['team-1'].filter(c => c !== 'MN').slice(1)], 'team-2': ['FL', ...s.cards!['team-2'].filter(c => c !== 'FL').slice(1)] } };
+  s = { ...s, cards: Object.fromEntries(Object.entries(s.cards!).map(([k, c]) => [k, c.length === 25 ? c : [...c, ...states.map(x => x.code).filter(x => !c.includes(x))].slice(0, 25)])) };
+  s.cards!['team-1'][12] = null; s.cards!['team-2'][12] = null;
+  await page.goto('/games');
+  await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
+  await page.goto('/games/state-lingo-bingo');
+  const box = (team: string) => page.getByLabel(`Capital ${team} said`);
+  await expect(box('Rockets')).toHaveCount(0); // no box until a state is picked
+  await page.getByRole('button', { name: /^Rockets: Minnesota/ }).click();
+  await expect(box('Rockets')).toBeFocused();
+  expect((await box('Rockets').boundingBox())!.height).toBeGreaterThanOrEqual(44);
+  await box('Rockets').fill('  st. PAUL ');
+  await box('Rockets').press('Enter');
+  await expect(page.getByTestId('points-team-1')).toHaveText('1');
+  await expect(page.getByTestId('exercise-team-1')).toBeVisible(); // new exercise, card relocked
+  await expect(box('Rockets')).toHaveCount(0);
+  // A misspelling two letters off is accepted; a different capital is wrong and the right one is shown.
+  await page.getByRole('button', { name: /^Comets: Florida/ }).click();
+  await box('Comets').fill('Miami');
+  await page.getByRole('button', { name: 'Check Comets’s capital' }).click();
+  await expect(page.getByTestId('points-team-2')).toHaveText('0');
+  await expect(page.getByTestId('reveal-team-2')).toHaveText('✗ “Miami” · Florida’s capital is Tallahassee');
+  await expect(page.getByText('✗ Comets said “Miami”. The capital of Florida is Tallahassee.')).toBeVisible();
+  await done(page, 'Comets');
+  await expect(page.getByTestId('reveal-team-2')).toHaveCount(0);
+  await box('Comets').fill('Talahasee');
+  await box('Comets').press('Enter');
+  await expect(page.getByTestId('points-team-2')).toHaveText('1');
+  // Empty Enter does nothing; the ✓/✗ buttons still work.
+  await done(page, 'Rockets');
+  await page.getByRole('button', { name: /^Rockets: / }).filter({ hasNot: page.locator('.slb-marked') }).nth(1).click();
+  await box('Rockets').press('Enter');
+  await expect(page.getByTestId('points-team-1')).toHaveText('1');
+  await page.getByRole('button', { name: '✗ Wrong tile' }).click();
+  await expect(page.getByText('Wrong tile recorded for Rockets. Back to the pool!')).toBeVisible();
+  await expect(page.getByTestId('reveal-team-1')).toHaveCount(0);
+  const saved1 = await saved(page);
+  expect(saved1.events!.filter(e => e.kind !== 'target').map(e => [e.teamId, e.kind, e.said])).toEqual([
+    ['team-1', 'correct', 'st. PAUL'], ['team-2', 'wrong', 'Miami'], ['team-2', 'correct', 'Talahasee'], ['team-1', 'wrong', undefined]]);
+  // Results and the shared Session Report list what each team said next to the state.
+  await page.getByRole('button', { name: 'End Game', exact: true }).click();
+  await page.getByRole('dialog').getByRole('button', { name: 'End Game', exact: true }).click();
+  await expect(page.getByTestId('answers-team-1')).toHaveText('Rockets · Minnesota — said: st. PAUL ✓');
+  await expect(page.getByTestId('answers-team-2')).toHaveText('Comets · Florida — said: Miami ✗ · Florida — said: Talahasee ✓');
+  await page.getByRole('button', { name: 'Session Report' }).click();
+  await page.getByRole('button', { name: 'Team Performance' }).click();
+  await expect(page.getByTestId('said-team-2').locator('li')).toHaveText(['Florida — said: Miami ✗', 'Florida — said: Talahasee ✓']);
 });

@@ -16,7 +16,7 @@ export const cardSizes = [4, 5] as const;
 export type CardSize = typeof cardSizes[number];
 export const squareModes = ['names', 'outline', 'location'] as const;
 export type SquareMode = typeof squareModes[number];
-export const MIN_TEAMS = 2, MAX_TEAMS = 10, NAME_LIMIT = 16, FITNESS_LIMIT = 40;
+export const MIN_TEAMS = 2, MAX_TEAMS = 10, NAME_LIMIT = 16, FITNESS_LIMIT = 40, ANSWER_LIMIT = 40;
 /** 5×5 with 6 or fewer teams; 4×4 with 7 or more so squares stay readable. The teacher can change it. */
 export const LARGE_CLASS_TEAMS = 7;
 export const defaultSize = (teamCount: number): CardSize => teamCount >= LARGE_CLASS_TEAMS ? 4 : 5;
@@ -42,7 +42,8 @@ export interface Settings {
   teamCount: number; size: CardSize; regions: Region[]; squareMode: SquareMode;
   scoring: Scoring; fitness: string[]; names: string[]; // names[i] is '' for the default name
 }
-export type BingoEvent = { kind: 'target' | 'correct' | 'wrong'; teamId: string; state: string; at: string };
+// `said` is the capital the teacher typed for a judged tile (absent when marked with the ✓/✗ buttons).
+export type BingoEvent = { kind: 'target' | 'correct' | 'wrong'; teamId: string; state: string; at: string; said?: string };
 /** A team's current fitness-card exercise. While it is not done, the team's card is locked. `roll` counts rolls. */
 export interface ExerciseRoll { exercise: number; done: boolean; roll: number }
 /** An exercise a team finished (its fitness-card text at the time), for the results and the Session Report. */
@@ -135,9 +136,31 @@ export function setTarget(s: BingoState, teamId: string, state: string, now: str
   if (s.screen !== 'play' || !s.cards?.[teamId]?.includes(state) || progress(s, teamId).marked.has(state)) return s;
   return { ...s, events: [...s.events!, { kind: 'target', teamId, state, at: now }] };
 }
-export function judge(s: BingoState, teamId: string, kind: 'correct' | 'wrong', now: string): BingoState {
-  const target = s.screen === 'play' ? progress(s, teamId).target : null;
-  return target ? { ...s, events: [...s.events!, { kind, teamId, state: target, at: now }] } : s;
+export function judge(s: BingoState, teamId: string, kind: 'correct' | 'wrong', now: string, said?: string): BingoState {
+  const target = s.screen === 'play' ? progress(s, teamId).target : null, typed = said?.trim().slice(0, ANSWER_LIMIT);
+  return target ? { ...s, events: [...s.events!, { kind, teamId, state: target, at: now, ...(typed ? { said: typed } : {}) }] } : s;
+}
+
+/** Lenient capital check: ignores case, accents, spaces and punctuation, reads "St." as "Saint",
+ *  and allows small misspellings (1 letter off from 5 letters, 2 letters off from 8). */
+const simplify = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+  .replace(/[^a-z0-9\s]/g, ' ').replace(/\bst\b/g, 'saint').replace(/\s+/g, '');
+function lettersOff(a: string, b: string): number {
+  let row = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const next = [i];
+    for (let j = 1; j <= b.length; j++) next[j] = Math.min(row[j] + 1, next[j - 1] + 1, row[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    row = next;
+  }
+  return row[b.length];
+}
+export function capitalMatches(said: string, capital: string): boolean {
+  const a = simplify(said), b = simplify(capital);
+  if (!a) return false;
+  if (a === b) return true;
+  // Another state's capital, spelled right, is a wrong answer even when it is close (Columbus for Columbia).
+  if (states.some(st => simplify(st.capital) === a)) return false;
+  return lettersOff(a, b) <= (b.length >= 8 ? 2 : b.length >= 5 ? 1 : 0);
 }
 export function undo(s: BingoState): BingoState {
   if (s.screen !== 'play' || !s.events?.length) return s;
@@ -180,19 +203,21 @@ export function buildSession(s: BingoState): GameSession {
     let points = 0;
     if (e.kind === 'correct') { after.add(e.state); points = correctPoints(s.cards![e.teamId], before, after, s.settings.scoring); marked.set(e.teamId, after); }
     session = commitQuestion(session, { questionId: `attempt-${i + 1}::${e.state}`, subject: 'States & Capitals', concept: state.name, prompt: `${state.name} — capital: ${state.capital}` },
-      [{ teamId: e.teamId, correct: e.kind === 'correct', pointsAwarded: points }], e.at);
+      [{ teamId: e.teamId, correct: e.kind === 'correct', pointsAwarded: points, ...(e.said ? { said: e.said } : {}) }], e.at);
   });
   return s.endedAt ? endSession(session, s.endedAt) : session;
 }
 
-export interface TeamReport { team: AssessmentTeam; score: number; correct: number; wrong: number; lines: number; blackout: boolean; missed: string[]; exercises: string[] }
+export interface TypedAnswer { state: string; said: string; correct: boolean }
+export interface TeamReport { team: AssessmentTeam; score: number; correct: number; wrong: number; lines: number; blackout: boolean; missed: string[]; exercises: string[]; answers: TypedAnswer[] }
 export interface ReviewItem { state: string; teamId: string; reason: 'missed' | 'slow'; seconds?: number }
 export function report(s: BingoState): { teams: TeamReport[]; review: ReviewItem[] } {
   const events = s.events ?? [];
   const teams = s.teams!.map(team => {
     const p = progress(s, team.id), mine = events.filter(e => e.teamId === team.id);
     return { team, score: p.score, correct: p.marked.size, wrong: p.wrong, lines: p.lines, blackout: p.blackout, missed: [...new Set(mine.filter(e => e.kind === 'wrong').map(e => e.state))],
-      exercises: (s.exerciseLog ?? []).filter(e => e.teamId === team.id).map(e => e.label) };
+      exercises: (s.exerciseLog ?? []).filter(e => e.teamId === team.id).map(e => e.label),
+      answers: mine.filter(e => e.kind !== 'target' && e.said).map(e => ({ state: e.state, said: e.said!, correct: e.kind === 'correct' })) };
   });
   // Time to find: from the target being set to the correct tap.
   const timed: ReviewItem[] = [];
@@ -253,7 +278,8 @@ export function isBingoState(value: unknown): value is BingoState {
     const end = s.endedAt ? Date.parse(s.endedAt) : Infinity;
     for (const e of s.events) {
       if (!e || !['target', 'correct', 'wrong'].includes(e.kind) || !time(e.at) || Date.parse(e.at) < last || Date.parse(e.at) > end || !s.cards[e.teamId]) return false;
-      const next = e.kind === 'target' ? setTarget(replay, e.teamId, e.state, e.at) : progress(replay, e.teamId).target === e.state ? judge(replay, e.teamId, e.kind, e.at) : replay;
+      if (e.said !== undefined && (e.kind === 'target' || !text(e.said) || !e.said.trim() || e.said !== e.said.trim() || e.said.length > ANSWER_LIMIT)) return false;
+      const next = e.kind === 'target' ? setTarget(replay, e.teamId, e.state, e.at) : progress(replay, e.teamId).target === e.state ? judge(replay, e.teamId, e.kind, e.at, e.said) : replay;
       if (next === replay) return false;
       replay = next; last = Date.parse(e.at);
     }

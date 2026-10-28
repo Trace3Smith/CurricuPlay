@@ -6,7 +6,7 @@ import { saveCompletedSession } from '../../assessment/storage';
 import { tally } from '../../assessment/gameNames';
 import shapes from '../../data/state-shapes.json' with { type: 'json' };
 import {
-  beginGame, boardLayout, buildSession, cardSizes, defaultSize, defaultTeamName, endGame, finishExercise, FITNESS_LIMIT, freshState, isLocked, judge, MAX_TEAMS, MIN_TEAMS,
+  ANSWER_LIMIT, beginGame, boardLayout, buildSession, capitalMatches, cardSizes, defaultSize, defaultTeamName, endGame, finishExercise, FITNESS_LIMIT, freshState, isLocked, judge, MAX_TEAMS, MIN_TEAMS,
   NAME_LIMIT, pool, progress, regions, report, rollAll, rollExercise, setTarget, setupErrors, squareModes, stateByCode, states, statesNeeded, undo,
   type BingoState, type Region, type Scoring, type Settings, type SquareMode,
 } from './engine';
@@ -110,6 +110,10 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const [flash, setFlash] = useState<{ team: string; text: string; key: number } | null>(null);
   const [confirm, setConfirm] = useState<'end' | 'discard' | null>(null);
   const [panel, setPanel] = useState(false);
+  // What the teacher is typing on each card, and the right capital to show after a typed wrong answer.
+  const [typed, setTyped] = useState<Record<string, string>>({});
+  const [reveals, setReveals] = useState<Record<string, { state: string; said: string }>>({});
+  const [focusAnswer, setFocusAnswer] = useState<{ team: string; key: number } | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const title = useRef<HTMLHeadingElement>(null);
   const board = useRef<HTMLElement>(null);
@@ -121,6 +125,8 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   useEffect(() => { if (confirm) dialog.current?.showModal(); else dialog.current?.close(); }, [confirm]);
   useEffect(() => { if (!popup) return; const t = setTimeout(() => setPopup(null), 3000); return () => clearTimeout(t); }, [popup]);
   useEffect(() => { if (!flash) return; const t = setTimeout(() => setFlash(null), 2600); return () => clearTimeout(t); }, [flash]);
+  // After a team picks its state, the answer box is ready for the teacher to type into.
+  useEffect(() => { if (focusAnswer) document.getElementById(`slb-answer-${focusAnswer.team}`)?.focus(); }, [focusAnswer]);
   // Refit names whenever a card's squares change size (screen size, a target appearing or clearing).
   useLayoutEffect(() => {
     const b = board.current;
@@ -142,30 +148,45 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     if (next) { setState(rollAll(next)); setSelected(null); setChoosing(false); setHistoryError(''); }
   }
   function select(teamId: string) { setSelected(teamId); setChoosing(false); setPeek(false); }
-  function done(teamId: string) { setState(s => finishExercise(s, teamId, stamp(s))); setSelected(teamId); setChoosing(!progress(state, teamId).target); setPeek(false); }
+  const forget = (teamId: string) => setReveals(r => { const { [teamId]: _gone, ...rest } = r; return rest; });
+  function done(teamId: string) { forget(teamId); setState(s => finishExercise(s, teamId, stamp(s))); setSelected(teamId); setChoosing(!progress(state, teamId).target); setPeek(false); }
   function reroll(teamId: string) { setState(s => rollExercise(s, teamId)); setPeek(false); }
   function target(teamId: string, code: string) {
     const next = setTarget(state, teamId, code, stamp(state));
     if (next === state) return;
-    setState(next); setChoosing(false); setPeek(false); setPopup({ team: teamId, code, key: Date.now() });
+    setState(next); setChoosing(false); setPeek(false); setPopup({ team: teamId, code, key: Date.now() }); forget(teamId);
+    setFocusAnswer({ team: teamId, key: Date.now() });
   }
-  function mark(kind: 'correct' | 'wrong') {
-    if (!selected) return;
-    const before = progress(state, selected), next = judge(state, selected, kind, stamp(state));
+  function mark(kind: 'correct' | 'wrong', teamId = selected, said?: string) {
+    if (!teamId) return;
+    const before = progress(state, teamId), next = judge(state, teamId, kind, stamp(state), said);
     if (next === state) return;
     // After every judged tile the team gets a new exercise and its card locks, unless the card is full.
-    setState(progress(next, selected).blackout ? next : rollExercise(next, selected)); setPeek(false);
-    if (kind === 'wrong') { setNotice(`Wrong tile recorded for ${state.teams!.find(t => t.id === selected)!.name}. Back to the pool!`); return; }
-    const after = progress(next, selected);
-    setNotice('');
-    if (after.blackout && !before.blackout) setFlash({ team: selected, text: 'BLACKOUT!', key: Date.now() });
-    else if (after.lines > before.lines) setFlash({ team: selected, text: 'BINGO!', key: Date.now() });
+    setState(progress(next, teamId).blackout ? next : rollExercise(next, teamId)); setPeek(false);
+    setTyped(t => ({ ...t, [teamId]: '' })); forget(teamId);
+    const name = state.teams!.find(t => t.id === teamId)!.name, place = stateByCode.get(before.target!)!;
+    if (kind === 'wrong') {
+      if (said) { setReveals(r => ({ ...r, [teamId]: { state: place.code, said: said.trim() } })); setNotice(`✗ ${name} said “${said.trim()}”. The capital of ${place.name} is ${place.capital}.`); }
+      else setNotice(`Wrong tile recorded for ${name}. Back to the pool!`);
+      return;
+    }
+    const after = progress(next, teamId);
+    setNotice(said ? `✓ ${name} said “${said.trim()}” for ${place.capital}.` : '');
+    if (after.blackout && !before.blackout) setFlash({ team: teamId, text: 'BLACKOUT!', key: Date.now() });
+    else if (after.lines > before.lines) setFlash({ team: teamId, text: 'BINGO!', key: Date.now() });
     setChoosing(!after.blackout);
+  }
+  /** Enter on a card's answer box: check the typed capital and mark it like the ✓/✗ buttons. */
+  function answer(teamId: string) {
+    const target = progress(state, teamId).target, said = (typed[teamId] ?? '').trim();
+    if (!target || !said || isLocked(state, teamId)) return;
+    setSelected(teamId);
+    mark(capitalMatches(said, stateByCode.get(target)!.capital) ? 'correct' : 'wrong', teamId, said);
   }
   function undoLast() {
     const last = state.events?.at(-1);
     if (!last) return;
-    setState(undo(state)); setSelected(last.teamId); setChoosing(false); setPeek(false); setPopup(null); setFlash(null);
+    setState(undo(state)); setSelected(last.teamId); setChoosing(false); setPeek(false); setPopup(null); setFlash(null); forget(last.teamId);
     setNotice(`Undid the last tap (${last.kind === 'target' ? 'new target' : last.kind === 'wrong' ? 'wrong tile' : 'correct capital'}) for ${state.teams!.find(t => t.id === last.teamId)!.name}.`);
   }
   function confirmAction() {
@@ -246,9 +267,15 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
                   aria-label={`${team.name}: ${stateByCode.get(code)!.name}${p.marked.has(code) ? ', marked' : p.target === code ? ', current target' : ''}`}
                   onClick={() => { if (!isSelected) select(team.id); target(team.id, code); }}><StateFace code={code} mode={settings.squareMode} square />{p.marked.has(code) && <i className="slb-check" aria-hidden="true">✓</i>}</button>)}</div>
             {locked && exercise && <div className="slb-exercise" role="group" aria-label={`${team.name} exercise`} data-testid={`exercise-${team.id}`}>
+              {reveals[team.id] && <p className="slb-reveal" data-testid={`reveal-${team.id}`}>✗ “{reveals[team.id].said}” · {stateByCode.get(reveals[team.id].state)!.name}’s capital is <strong>{stateByCode.get(reveals[team.id].state)!.capital}</strong></p>}
               <p key={exercise.roll} className="slb-exercise-text" role="status"><b aria-hidden="true">{exercise.exercise + 1}</b><span>{settings.fitness[exercise.exercise]}</span></p>
               <div className="slb-exercise-buttons"><button className="slb-exercise-done" aria-label={`✓ Done: ${team.name}`} onClick={() => done(team.id)}>✓ Done</button><button aria-label={`↻ Re-roll: ${team.name}`} onClick={() => reroll(team.id)}>↻ Re-roll</button></div>
             </div>}
+            {p.target && !locked && <form className="slb-answer" onSubmit={e => { e.preventDefault(); answer(team.id); }}>
+              <input id={`slb-answer-${team.id}`} aria-label={`Capital ${team.name} said`} placeholder="Type the capital they said" autoComplete="off" spellCheck={false} maxLength={ANSWER_LIMIT}
+                value={typed[team.id] ?? ''} onChange={e => setTyped(t => ({ ...t, [team.id]: e.target.value }))} />
+              <button type="submit" aria-label={`Check ${team.name}’s capital`} disabled={!(typed[team.id] ?? '').trim()}>↵</button>
+            </form>}
             {flash?.team === team.id && <div key={flash.key} className="slb-flash" role="status">{flash.text}</div>}
           </section>;
         })}
@@ -290,6 +317,7 @@ function Results({ state, onReport, onNewGame, onHome, blocked, titleRef }: { st
       const s = stateByCode.get(r.state)!;
       return <li key={i}><strong>{s.name} — {s.capital}</strong> · {names.get(r.teamId)} · {r.reason === 'missed' ? 'wrong tile' : `took ${r.seconds} s`}</li>;
     })}</ul> : <p>No capitals to review.</p>}<p className="slb-hint">Team practice records. They do not show individual mastery.</p></section>
+    {data.teams.some(t => t.answers.length) && <section className="slb-review" aria-label="Typed answers"><h2>Typed answers</h2><ul>{data.teams.filter(t => t.answers.length).map(t => <li key={t.team.id} data-testid={`answers-${t.team.id}`}><strong>{t.team.name}</strong> · {t.answers.map(a => `${stateByCode.get(a.state)!.name} — said: ${a.said} ${a.correct ? '✓' : '✗'}`).join(' · ')}</li>)}</ul></section>}
     {data.teams.some(t => t.exercises.length) && <section className="slb-review" aria-label="Exercises"><h2>Exercises</h2><ul>{data.teams.map(t => <li key={t.team.id} data-testid={`exercises-${t.team.id}`}><strong>{t.team.name}</strong> · {tally(t.exercises) || 'none'}</li>)}</ul></section>}
     <div className="assessment-report-actions"><button onClick={onReport}>Session Report</button><button className="primary" disabled={blocked} onClick={onNewGame}>New Game</button><button onClick={onHome}>Back to Games</button></div>
   </main>;

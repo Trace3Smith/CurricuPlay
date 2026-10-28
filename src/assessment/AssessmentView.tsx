@@ -36,6 +36,7 @@ export default function AssessmentView({ session, live = false }: { session: Gam
         })}</div>}
       </>}
       {tab === 'teams' && <div className="assessment-team-grid">{range(data.teams).map(t => <article key={t.id}><h2><TeamName team={t} /> · {t.score} points</h2><p><strong>Overall: {formatAccuracy(t.overall)}</strong></p>{t.subjects.map(s => <p key={s.subject}>{s.subject}: {formatAccuracy(s)}</p>)}
+        {session.responses.some(r => r.teamId === t.id && r.said) && <ul className="assessment-said" data-testid={`said-${t.id}`}>{session.responses.filter(r => r.teamId === t.id && r.said).map((r, i) => <li key={i}>{r.concept ?? r.subject} — said: {r.said} {r.correct ? '✓' : '✗'}</li>)}</ul>}
         {session.activities && <p data-testid={`activities-${t.id}`}>Exercises: {tally(session.activities.filter(a => a.teamId === t.id).map(a => a.label)) || 'none yet'}</p>}</article>)}</div>}
       {tab === 'questions' && <div className="assessment-question-list">{range(data.questions).map(q => <article key={q.questionId}><h2>{q.subject}{q.concept ? ` · ${q.concept}` : ''}</h2><p>{q.prompt}</p><strong>{q.attempts ? `${q.correct}/${q.attempts} teams correct · ${formatAccuracy(q)}` : '— No team responses'}</strong></article>)}</div>}
     </div>

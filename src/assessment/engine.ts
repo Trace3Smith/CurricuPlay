@@ -7,6 +7,8 @@ export interface AssessmentQuestionSnapshot {
 export interface AssessmentResponse {
   questionId: string; teamId: string; subject: string; standards?: string[]; concept?: string;
   correct: boolean; pointsAwarded: number; answeredAt: string;
+  /** What the team answered, when the game records it (e.g. the capital typed in State Lingo Bingo). */
+  said?: string;
 }
 /** Something a team did that is not a question, e.g. a fitness-card exercise in State Lingo Bingo. */
 export interface TeamActivity { teamId: string; label: string; at: string }
@@ -17,7 +19,7 @@ export interface GameSession {
   questions: AssessmentQuestionSnapshot[]; responses: AssessmentResponse[];
   activities?: TeamActivity[];
 }
-export interface Outcome { teamId: string; correct: boolean; pointsAwarded: number }
+export interface Outcome { teamId: string; correct: boolean; pointsAwarded: number; said?: string }
 export interface Accuracy { correct: number; attempts: number; percentage: number | null }
 export function accuracy(responses: readonly AssessmentResponse[]): Accuracy {
   const correct = responses.filter(r => r.correct).length;
@@ -66,7 +68,7 @@ export function isGameSession(value: unknown): value is GameSession {
   if (s.activities !== undefined && (!Array.isArray(s.activities) || !s.activities.every(a => a && s.teams.some(t => t.id === a.teamId) && text(a.label) && date(a.at)))) return false;
   const keys = new Set<string>();
   return s.responses.every(r => {
-    if (!r || !s.teams.some(t => t.id === r.teamId) || !date(r.answeredAt) || r.answeredAt < s.startedAt || (s.endedAt && r.answeredAt > s.endedAt) || typeof r.correct !== 'boolean' || !Number.isFinite(r.pointsAwarded) || !metadata(r)) return false;
+    if (!r || !s.teams.some(t => t.id === r.teamId) || !date(r.answeredAt) || r.answeredAt < s.startedAt || (s.endedAt && r.answeredAt > s.endedAt) || typeof r.correct !== 'boolean' || !Number.isFinite(r.pointsAwarded) || !metadata(r) || (r.said !== undefined && !text(r.said))) return false;
     const q = s.questions.find(q => q.questionId === r.questionId);
     const key = JSON.stringify([r.questionId, r.teamId]);
     if (!q || q.subject !== r.subject || q.concept !== r.concept || JSON.stringify(q.standards) !== JSON.stringify(r.standards) || keys.has(key)) return false;

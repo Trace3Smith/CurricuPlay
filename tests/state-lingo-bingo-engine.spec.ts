@@ -4,7 +4,7 @@ import { isGameSession, summarizeSession } from '../src/assessment/engine';
 import { gameName } from '../src/assessment/gameNames';
 import { teamColors } from '../src/games/four-corners/teams';
 import {
-  beginGame, bingoColors, boardLayout, buildSession, cardLines, completedLines, createTeams, defaultSize, endGame, finishExercise, freshSettings, generateCard, isBingoState,
+  beginGame, bingoColors, capitalMatches, boardLayout, buildSession, cardLines, completedLines, createTeams, defaultSize, endGame, finishExercise, freshSettings, generateCard, isBingoState,
   isBlackout, isLocked, judge, nameErrors, pool, progress, regions, report, rollAll, rollExercise, setTarget, setupErrors, states, undo, type BingoState, type Settings,
 } from '../src/games/state-lingo-bingo/engine';
 import { readActive, saveActive, UNREADABLE } from '../src/games/state-lingo-bingo/storage';
@@ -274,4 +274,27 @@ test('Exercises: each team gets its own; the card locks until Done; a new one af
   expect(isGameSession(session)).toBe(true);
   expect(session.activities!.map(a => a.teamId)).toEqual(['team-1', 'team-2']);
   expect(report(s).teams.map(t => t.exercises.length)).toEqual([1, 1, 0]);
+});
+
+test('Typed capitals: lenient matching, never another state’s capital, and the answer rides on the judged tile', () => {
+  const yes: [string, string][] = [['Tallahassee', 'Tallahassee'], ['  talahasee ', 'Tallahassee'], ['ST. PAUL', 'Saint Paul'], ['st paul', 'Saint Paul'], ['salt-lake city!', 'Salt Lake City'],
+    ['Bose', 'Boise'], ['Frankfurt', 'Frankfort'], ['Honolulu.', 'Honolulu'], ['jeffersoncity', 'Jefferson City']];
+  const no: [string, string][] = [['', 'Dover'], ['   ', 'Dover'], ['Miami', 'Tallahassee'], ['Juno', 'Juneau'], ['Pier', 'Pierre'], ['Columbus', 'Columbia'], ['Columbia', 'Columbus'], ['Dovr', 'Boise']];
+  for (const [a, b] of yes) expect(capitalMatches(a, b), `${a} for ${b}`).toBe(true);
+  for (const [a, b] of no) expect(capitalMatches(a, b), `${a} for ${b}`).toBe(false);
+  for (const a of states) for (const b of states) if (a !== b) expect(capitalMatches(a.capital, b.capital)).toBe(false);
+  let s = game();
+  s = setTarget(s, 'team-1', s.cards!['team-1'][0]!, at(1));
+  s = judge(s, 'team-1', 'wrong', at(2), '  Miami  ');
+  s = judge(s, 'team-1', 'correct', at(3));
+  expect(s.events!.slice(1).map(e => e.said)).toEqual(['Miami', undefined]);
+  expect(isBingoState(JSON.parse(JSON.stringify(s)))).toBe(true);
+  const broken = (f: (x: any) => void) => { const x = JSON.parse(JSON.stringify(s)); f(x); return isBingoState(x); };
+  expect(broken(x => { x.events[0].said = 'x'; })).toBe(false); // only judged tiles carry an answer
+  expect(broken(x => { x.events[1].said = 'x'.repeat(41); })).toBe(false);
+  expect(broken(x => { x.events[1].said = 7; })).toBe(false);
+  const session = buildSession(s);
+  expect(isGameSession(session)).toBe(true);
+  expect(session.responses.map(r => r.said)).toEqual(['Miami', undefined]);
+  expect(report(s).teams[0].answers).toEqual([{ state: s.cards!['team-1'][0], said: 'Miami', correct: false }]);
 });
