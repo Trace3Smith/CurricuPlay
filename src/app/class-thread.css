@@ -239,3 +239,4 @@ html[data-surface="classroom"] body{margin:0;background:var(--ds-background);col
 .ct-lesson-use fieldset{margin-top:15px}
 .ct-panel form>fieldset>.ct-button{margin-top:18px}
 @media(max-width:900px){.ct-resource-attachments{grid-template-columns:1fr}.ct-page-heading:has(.ct-inline-actions){align-items:flex-start;flex-direction:column}.ct-lesson-editor .ct-inline-actions{gap:14px;align-items:center}}
+.ct-bottom-actions{display:flex;flex-wrap:wrap;gap:var(--ds-space-md);justify-content:flex-end}

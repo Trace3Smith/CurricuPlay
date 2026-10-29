@@ -22,6 +22,6 @@ export default function MyClassroom() {
     <ActiveCurriculum />
     <UpcomingLessons />
     <WorkQueue />
-    <div className="ct-bottom-row"><div><h2>Ready for a change of pace?</h2><p>Your classroom games are right where you need them.</p></div><Link className="ct-button ct-secondary" to="/games">Open Games →</Link></div>
+    <div className="ct-bottom-row"><div><h2>Ready for a change of pace?</h2><p>Your classroom games are right where you need them.</p></div><div className="ct-bottom-actions"><Link className="ct-button ct-secondary" to="/games/state-lingo-bingo/answer-key">Answer key · State Lingo Bingo</Link><Link className="ct-button ct-secondary" to="/games">Open Games →</Link></div></div>
   </>;
 }

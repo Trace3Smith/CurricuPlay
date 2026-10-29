@@ -8,11 +8,19 @@ import { resourceRepository, resourceDatabaseError } from '../../server/provider
 import type { FixtureDatabase } from './database';
 import { lessonRepository, lessonDatabaseError } from '../../server/providers/supabase/lessons';
 
+export const FIXTURE_ORIGIN = 'http://127.0.0.1:5174';
 export function fixturePorts(database: FixtureDatabase) {
   const sessions = new Map<string, AuthIdentity>();
   return (req: IncomingMessage, res: ServerResponse): RequestPorts => {
     let token = parseCookie(req.headers.cookie ?? '').classthread_fixture;
     let user = token ? sessions.get(token) ?? null : null;
+    // Same lifetime as the real Supabase session cookie (400 days), so "stay signed in" behaves the same here.
+    async function signInAs(email: string) {
+      user = { subject: await database.identity(email.toLowerCase()), email: email.toLowerCase() };
+      token = randomUUID(); sessions.set(token, user);
+      const prior = res.getHeader('Set-Cookie');
+      res.setHeader('Set-Cookie', [...(Array.isArray(prior) ? prior.map(String) : prior ? [String(prior)] : []), stringifySetCookie({ name: 'classthread_fixture', value: token, maxAge: 400 * 24 * 60 * 60, httpOnly: true, sameSite: 'lax', path: '/' })]);
+    }
     async function query<T>(sql: string, values: unknown[] = []) {
       if (!user) throw new AppError(401, 'Please sign in.');
       try { return (await database.asUser(user.subject, tx => tx.query<T>(sql, values))).rows; }
@@ -80,12 +88,15 @@ export function fixturePorts(database: FixtureDatabase) {
         async sendEmailCode() { /* Explicit local fixture: no external email. */ },
         async verifyEmailCode(email, code) {
           if (code !== '123456') throw new AppError(400, 'That code is invalid or expired. Request a new code.');
-          user = { subject: await database.identity(email.toLowerCase()), email: email.toLowerCase() };
-          token = randomUUID(); sessions.set(token, user);
-          res.setHeader('Set-Cookie', stringifySetCookie({ name: 'classthread_fixture', value: token, httpOnly: true, sameSite: 'lax', path: '/' }));
+          await signInAs(email);
         },
-        async startGoogle() { throw new AppError(503, 'Google is not available in the development fixture.'); },
-        async exchangeCode() { throw new AppError(400, 'External OAuth is not available in the development fixture.'); },
+        // Simulated Google for automated tests: a local "choose an account" page stands in for Google and returns a code.
+        async startGoogle(redirectTo) { return `${FIXTURE_ORIGIN}/__fixture/google?redirect_to=${encodeURIComponent(redirectTo)}`; },
+        async exchangeCode(code) {
+          const email = code.startsWith('fixture-google:') ? code.slice('fixture-google:'.length) : '';
+          if (!/^[^@\s]+@example\.test$/i.test(email)) throw new AppError(400, 'Sign-in could not be completed. Please try again.');
+          await signInAs(email);
+        },
         async signOut() { if (token) sessions.delete(token); user = null; res.setHeader('Set-Cookie', stringifySetCookie({ name: 'classthread_fixture', value: '', maxAge: 0, httpOnly: true, sameSite: 'lax', path: '/' })); },
       },
     };

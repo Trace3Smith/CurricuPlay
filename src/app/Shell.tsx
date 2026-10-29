@@ -27,7 +27,7 @@ export default function Shell() {
         <div className="ct-account">{session?.authenticated ? <><Link to="/manage">{data?.profile.displayName || 'Teacher profile'}</Link><button className="ct-quiet" disabled={busy} onClick={() => void signOut()}>Sign out</button></> : <Link to="/sign-in">Sign in</Link>}</div>
       </header>
       <main id="classroom-content" className="ct-content">
-        {session?.fixture && <p className="ct-fixture" role="status">Development fixture · Local test accounts and database. No real email or Google connection.</p>}
+        {session?.fixture && <p className="ct-fixture" role="status">Development fixture · Local test accounts and database. No real email; Google sign-in is simulated.</p>}
         {error && <div className="ct-alert" role="alert">{error} <button onClick={() => void reload()} disabled={busy}>Reload records</button></div>}
         {notice && <p className="ct-notice" role="status">{notice}</p>}
         <Outlet />

@@ -51,3 +51,7 @@ export function visibleWork(items: WorkItem[], assignmentId: string | null) {
 export function assignmentWithinYear(assignment: AssignmentInput, year: SchoolYear) {
   return assignment.schoolYearId === year.id && assignment.startsOn >= year.startsOn && assignment.endsOn <= year.endsOn;
 }
+
+/** Where to go after sign-in: only a path on this site (never another site, a protocol-relative URL, or the API). */
+export const returnPath = z.string().max(200).regex(/^\/(?![\/\\])(?!api\/)[^\\\s\u0000-\u001f]*$/);
+export function safeReturnPath(value: unknown): string | null { const parsed = returnPath.safeParse(value); return parsed.success ? parsed.data : null; }

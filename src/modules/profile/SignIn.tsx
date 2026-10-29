@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { Link, Navigate, useSearchParams } from 'react-router-dom';
 import { api } from '../../app/api';
 import { useFoundation } from '../../app/FoundationProvider';
+import { safeReturnPath } from '../../../shared/contracts/foundation';
 
 export default function SignIn() {
   const { session, loading, reload } = useFoundation();
@@ -11,9 +12,9 @@ export default function SignIn() {
   const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(params.has('error') ? 'Sign-in could not be completed. Please try again.' : '');
-  // ?next= returns the teacher to a page that asked for sign-in (e.g. the Bingo answer key); only same-site paths.
-  const next = params.get('next');
-  if (session?.authenticated) return <Navigate to={next && /^\/(?!\/)/.test(next) ? next : '/classroom'} replace />;
+  // ?next= returns the teacher to a page that asked for sign-in (e.g. the Bingo answer key), for email and Google; only same-site paths.
+  const next = safeReturnPath(params.get('next'));
+  if (session?.authenticated) return <Navigate to={next ?? '/classroom'} replace />;
   async function send(event: FormEvent) {
     event.preventDefault(); setBusy(true); setError('');
     try { await api('/auth/email', 'POST', { email }); setSent(true); } catch (error) { setError((error as Error).message); } finally { setBusy(false); }
@@ -24,7 +25,7 @@ export default function SignIn() {
   }
   async function google() {
     setBusy(true); setError('');
-    try { const result = await api<{ url: string }>('/auth/google', 'POST', {}); window.location.assign(result.url); } catch (error) { setError((error as Error).message); setBusy(false); }
+    try { const result = await api<{ url: string }>('/auth/google', 'POST', next ? { next } : {}); window.location.assign(result.url); } catch (error) { setError((error as Error).message); setBusy(false); }
   }
   const disabled = loading || !session?.configured || busy;
   return <section className="ct-sign-in">
@@ -33,7 +34,7 @@ export default function SignIn() {
     <p className="ct-lede">A home for your teaching assignments, your next steps, and the work that matters.</p>
     {session && !session.configured && <div className="ct-alert" role="status">Sign-in is not configured yet. Your existing Games are available below. Follow the repository’s Increment 1 setup guide to connect a development project.</div>}
     <div className="ct-panel ct-login-panel">
-      <button className="ct-button ct-google" disabled={disabled || session?.fixture} onClick={() => void google()}>Continue with Google</button>
+      <button className="ct-button ct-google" disabled={disabled} onClick={() => void google()}>Continue with Google</button>
       <div className="ct-divider">or use your email</div>
       {!sent ? <form onSubmit={send}>
         <label>Email address<input type="email" autoComplete="email" required maxLength={254} value={email} onChange={event => setEmail(event.target.value)} /></label>

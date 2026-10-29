@@ -1,6 +1,7 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { z } from 'zod';
-import { assignmentInput, assignmentWithinYear, contextInput, emailInput, idSchema, profileInput, verifyEmailInput, workInput, workStatusInput, yearInput } from '../shared/contracts/foundation.js';
+import { parseCookie, stringifySetCookie } from 'cookie';
+import { assignmentInput, assignmentWithinYear, contextInput, emailInput, idSchema, profileInput, returnPath, safeReturnPath, verifyEmailInput, workInput, workStatusInput, yearInput } from '../shared/contracts/foundation.js';
 import { AppError, type RequestPorts } from './ports.js';
 import { resourceService } from './resources/service.js';
 import { lessonService } from './lessons/service.js';
@@ -36,7 +37,17 @@ async function body(req: IncomingMessage, limit = 32768) {
   try { return JSON.parse(raw || '{}') as unknown; } catch { throw new AppError(400, 'Invalid JSON.'); }
 }
 
+/** Google sign-in leaves the site, so the page to return to rides in a short-lived, HttpOnly cookie scoped to the auth routes. */
+const NEXT_COOKIE = 'classthread-next';
+function appendCookie(res: ServerResponse, cookie: string) {
+  const prior = res.getHeader('Set-Cookie');
+  res.setHeader('Set-Cookie', [...(Array.isArray(prior) ? prior.map(String) : prior ? [String(prior)] : []), cookie]);
+}
+const googleInput = z.object({ next: returnPath.optional() }).strict();
+
 export function createApiHandler(options: ApiOptions) {
+  const secure = new URL(options.origin).protocol === 'https:';
+  const nextCookie = (value: string, maxAge: number) => stringifySetCookie({ name: NEXT_COOKIE, value, maxAge, httpOnly: true, sameSite: 'lax', secure, path: '/api/auth' });
   return async (req: IncomingMessage, res: ServerResponse) => {
     res.setHeader('Cache-Control', 'private, no-store');
     res.setHeader('Vary', 'Cookie');
@@ -60,8 +71,10 @@ export function createApiHandler(options: ApiOptions) {
         return json(res, 200, { configured: true, authenticated: !!user, fixture: !!options.fixture, ...(user ? { email: user.email } : {}) });
       }
       if (route === '/api/auth/google' && method === 'POST') {
-        await body(req);
-        return json(res, 200, { url: await auth.startGoogle(`${options.origin}/api/auth/callback`) });
+        const { next } = googleInput.parse(await body(req));
+        const url = await auth.startGoogle(`${options.origin}/api/auth/callback`);
+        appendCookie(res, nextCookie(next ?? '', next ? 600 : 0));
+        return json(res, 200, { url });
       }
       if (route === '/api/auth/email' && method === 'POST') {
         await auth.sendEmailCode(emailInput.parse(await body(req)).email);
@@ -74,12 +87,14 @@ export function createApiHandler(options: ApiOptions) {
         return json(res, 200, { ok: true });
       }
       if (route === '/api/auth/callback' && method === 'GET') {
+        const next = safeReturnPath(parseCookie(req.headers.cookie ?? '')[NEXT_COOKIE]);
+        appendCookie(res, nextCookie('', 0));
         try {
           const code = z.string().min(1).max(4096).parse(url.searchParams.get('code'));
           await auth.exchangeCode(code);
           await repository.bootstrap();
-          res.writeHead(303, { Location: '/classroom' }); res.end();
-        } catch { res.writeHead(303, { Location: '/sign-in?error=callback' }); res.end(); }
+          res.writeHead(303, { Location: next ?? '/classroom' }); res.end();
+        } catch { res.writeHead(303, { Location: `/sign-in?error=callback${next ? `&next=${encodeURIComponent(next)}` : ''}` }); res.end(); }
         return;
       }
       if (route === '/api/auth/sign-out' && method === 'POST') {

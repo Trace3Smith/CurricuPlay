@@ -106,7 +106,7 @@ No Vercel project settings or environments were changed. The repo includes the N
 npm run dev:fixture
 ```
 
-Visit **http://127.0.0.1:5174/sign-in**, enter an `example.test` email (for example `teacher@example.test`), and use code **123456**. A visible development banner identifies this environment; Google is disabled and no email is sent. Each email owns a separate empty workspace. Records are written to local PostgreSQL using the actual migration and RLS policies. They persist in `/tmp/classthread-foundation-fixture`; set `CLASSTHREAD_FIXTURE_DB` to another directory for an independent fixture. Fixture sessions reset on server restart; signing in with the same email recovers its records.
+Visit **http://127.0.0.1:5174/sign-in**, enter an `example.test` email (for example `teacher@example.test`), and use code **123456**. A visible development banner identifies this environment; no email is sent, and "Continue with Google" opens a clearly labeled simulated account chooser (any `example.test` email) instead of Google. Each email owns a separate empty workspace. Records are written to local PostgreSQL using the actual migration and RLS policies. They persist in `/tmp/classthread-foundation-fixture`; set `CLASSTHREAD_FIXTURE_DB` to another directory for an independent fixture. Fixture sessions reset on server restart; signing in with the same email recovers its records.
 
 This is an explicit testing tool, not an authentication fallback. It refuses to start with `NODE_ENV=production` or `VERCEL`. Its port is a different storage origin from the existing app, so it cannot see the real browser's Games records on port 5173. Do not enter real student information into it.
 
