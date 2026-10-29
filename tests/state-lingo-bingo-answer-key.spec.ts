@@ -102,3 +102,45 @@ test('Sign-in never returns to another site or the API, by email or Google', asy
   expect(failed.headers().location).toBe(`/sign-in?error=callback&next=${encodeURIComponent(KEY)}`);
   await context.close();
 });
+
+/** The sticky header is solid and full width: nothing from the list shows inside it, and its divider is below the count. */
+async function headerCovers(page: Page, label: string) {
+  const r = await page.evaluate(() => {
+    const top = document.querySelector('.slb-key-top')!, box = top.getBoundingClientRect(), count = document.querySelector('.slb-key-status')!.getBoundingClientRect();
+    const chips = document.querySelector('.slb-key-chips')!.getBoundingClientRect(), search = document.querySelector('.slb-key input')!.getBoundingClientRect();
+    const leaks: string[] = [];
+    for (let y = box.top + 1; y < box.bottom - 2; y += 4) for (let x = 2; x < innerWidth - 2; x += 12) {
+      const el = document.elementFromPoint(x, y); if (el && !top.contains(el)) leaks.push(`${x},${y}:${el.className}`);
+    }
+    return { top: box.top, left: box.left, width: box.width, bottom: box.bottom, inner: innerWidth, belowCount: count.bottom <= box.bottom - 1, belowChips: chips.bottom <= box.bottom - 1, belowSearch: search.bottom <= box.bottom - 1, leaks: leaks.slice(0, 3), bg: getComputedStyle(top).backgroundColor };
+  });
+  expect(r.leaks, label).toEqual([]);
+  expect([r.top, r.left, r.width], label).toEqual([0, 0, r.inner]);
+  expect([r.belowSearch, r.belowChips, r.belowCount], label).toEqual([true, true, true]);
+  expect(r.bg, label).toBe('rgb(252, 253, 255)');
+}
+for (const [width, height] of [[390, 844], [390, 667], [1024, 768]] as const) {
+  test(`Answer key header covers the list at ${width}×${height}: top, middle, bottom, and searching "wy"`, async ({ page }) => {
+    await page.setViewportSize({ width, height });
+    await page.emulateMedia({ reducedMotion: 'reduce' }); // jumps land instantly, so positions are final
+    await page.goto('/games/state-lingo-bingo/answer-key');
+    await expect(page.locator('.slb-key-list li')).toHaveCount(50);
+    await headerCovers(page, 'top');
+    await page.evaluate(() => scrollTo(0, (document.documentElement.scrollHeight - innerHeight) / 2));
+    await headerCovers(page, 'middle');
+    if (width === 390 && height === 844) await page.screenshot({ path: 'test-results/key-middle.png' });
+    await page.evaluate(() => scrollTo(0, document.documentElement.scrollHeight));
+    await headerCovers(page, 'bottom');
+    if (width === 390 && height === 844) await page.screenshot({ path: 'test-results/key-bottom.png' });
+    await page.getByLabel('Find a state').fill('wy');
+    await page.waitForTimeout(700);
+    await headerCovers(page, 'searching wy');
+    const wy = await page.getByTestId('key-WY').boundingBox(), bottom = await page.locator('.slb-key-top').evaluate(e => e.getBoundingClientRect().bottom);
+    expect(wy!.y).toBeGreaterThanOrEqual(bottom); // Wyoming fully below the header, not under it
+    expect(wy!.y + wy!.height).toBeLessThanOrEqual(height);
+    if (width === 390 && height === 844) await page.screenshot({ path: 'test-results/key-wy.png' });
+    await page.getByLabel('Find a state').fill('al');
+    await page.waitForTimeout(700);
+    expect((await page.getByTestId('key-AL').boundingBox())!.y).toBeGreaterThanOrEqual(await page.locator('.slb-key-top').evaluate(e => e.getBoundingClientRect().bottom));
+  });
+}
