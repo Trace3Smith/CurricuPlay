@@ -171,3 +171,15 @@
 .app.slb-app .slb-key-link small{font-size:max(14px,calc(18 * var(--u)));font-weight:700;color:var(--ds-on-board)}
 .app.slb-app .slb-key-link:hover span{text-decoration:underline}
 .app.slb-app .slb-key-link:focus-visible{outline:var(--ds-focus-ring);outline-offset:var(--ds-focus-offset)}
+
+/* In-card feedback only (no full-screen overlays during play): about a second inside the team's own box, never blocking taps. */
+.app.slb-app .slb-target.slb-target-cue{background:var(--accent);border-color:var(--accent);animation:slb-target-cue 1s ease-out both}
+.app.slb-app .slb-target-cue small,.app.slb-app .slb-target-cue .slb-name{color:var(--ds-board);animation:slb-target-cue-text 1s ease-out both}
+.app.slb-app .slb-target-cue .slb-art{opacity:.75}
+@keyframes slb-target-cue{0%,65%{background:var(--accent);border-color:var(--accent)}100%{background:var(--ds-board);border-color:var(--ds-highlight)}}
+@keyframes slb-target-cue-text{0%,65%{color:var(--ds-board)}100%{color:var(--ds-on-board)}}
+.app.slb-app .slb-flash{pointer-events:none}
+.app.slb-app .slb-flash.slb-cue-correct{animation-duration:1s;color:var(--ds-secondary)}
+.app.slb-app .slb-flash.slb-cue-bingo{animation-duration:1.3s}
+@media (prefers-reduced-motion:reduce){.app.slb-app .slb-target.slb-target-cue,.app.slb-app .slb-target-cue small,.app.slb-app .slb-target-cue .slb-name,.app.slb-app .slb-flash{animation:none}}
+.app.slb-app .slb-flash{background:var(--ds-board);text-shadow:none;z-index:4}

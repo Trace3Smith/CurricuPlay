@@ -91,6 +91,10 @@ function StateFace({ code, mode, square = false }: { code: string; mode: SquareM
   const fit = square ? undefined : { '--len': Math.max(5, ...words.map(w => w.length)), '--lines': words.length } as CSSProperties;
   return <><StateArt code={code} mode={mode} />{mode === 'names' && <span className={`slb-name ${square && longName(name) ? 'slb-long' : ''}`} style={fit} data-name={square ? name : undefined}>{square ? squareText(name) : name}</span>}</>;
 }
+type CueKind = 'target' | 'correct' | 'bingo' | 'blackout';
+// About a second each; a blackout (that team's card is full) gets a little longer.
+const CUE_MS: Record<CueKind, number> = { target: 1000, correct: 1000, bingo: 1300, blackout: 2600 };
+const CUE_TEXT: Record<CueKind, string> = { target: '', correct: '✓ Correct', bingo: 'BINGO!', blackout: 'BLACKOUT!' };
 /** Event times never go backwards, so a clock change cannot invalidate a saved game. */
 function stamp(s: BingoState): string {
   const now = Date.now(), last = Math.max(Date.parse(s.events?.at(-1)?.at ?? s.startedAt ?? ''), 0);
@@ -107,8 +111,9 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const [selected, setSelected] = useState<string | null>(null);
   const [choosing, setChoosing] = useState(false);
   const [peek, setPeek] = useState(false);
-  const [popup, setPopup] = useState<{ team: string; code: string; key: number } | null>(null);
-  const [flash, setFlash] = useState<{ team: string; text: string; key: number } | null>(null);
+  // Short feedback inside each team's own card (never over the board): several teams can have one at the same time.
+  const [cues, setCues] = useState<Record<string, { kind: CueKind; key: number }>>({});
+  const cueTimers = useRef(new Map<string, ReturnType<typeof setTimeout>>());
   const [confirm, setConfirm] = useState<'end' | 'discard' | null>(null);
   const [panel, setPanel] = useState(false);
   // What the teacher is typing on each card, and which teams just had a wrong answer (the capital is never shown on the board).
@@ -124,8 +129,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   useEffect(() => { if (session?.endedAt) setHistoryError(saveCompletedSession(session)); }, [session]);
   useEffect(() => { title.current?.focus(); }, [state.screen]);
   useEffect(() => { if (confirm) dialog.current?.showModal(); else dialog.current?.close(); }, [confirm]);
-  useEffect(() => { if (!popup) return; const t = setTimeout(() => setPopup(null), 3000); return () => clearTimeout(t); }, [popup]);
-  useEffect(() => { if (!flash) return; const t = setTimeout(() => setFlash(null), 2600); return () => clearTimeout(t); }, [flash]);
+  useEffect(() => () => cueTimers.current.forEach(clearTimeout), []);
   // After a team picks its state, the answer box is ready for the teacher to type into.
   useEffect(() => { if (focusAnswer) document.getElementById(`slb-answer-${focusAnswer.team}`)?.focus(); }, [focusAnswer]);
   // Refit names whenever a card's squares change size (screen size, a target appearing or clearing).
@@ -149,13 +153,18 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     if (next) { setState(rollAll(next)); setSelected(null); setChoosing(false); setHistoryError(''); }
   }
   function select(teamId: string) { setSelected(teamId); setChoosing(false); setPeek(false); }
+  function cue(teamId: string, kind: CueKind | null) {
+    clearTimeout(cueTimers.current.get(teamId));
+    setCues(c => { const { [teamId]: _old, ...rest } = c; return kind ? { ...rest, [teamId]: { kind, key: Date.now() } } : rest; });
+    if (kind) cueTimers.current.set(teamId, setTimeout(() => setCues(c => { const { [teamId]: _done, ...rest } = c; return rest; }), CUE_MS[kind]));
+  }
   const forget = (teamId: string) => setMissed(r => { const { [teamId]: _gone, ...rest } = r; return rest; });
   function done(teamId: string) { forget(teamId); setState(s => finishExercise(s, teamId, stamp(s))); setSelected(teamId); setChoosing(!progress(state, teamId).target); setPeek(false); }
   function reroll(teamId: string) { setState(s => rollExercise(s, teamId)); setPeek(false); }
   function target(teamId: string, code: string) {
     const next = setTarget(state, teamId, code, stamp(state));
     if (next === state) return;
-    setState(next); setChoosing(false); setPeek(false); setPopup({ team: teamId, code, key: Date.now() }); forget(teamId);
+    setState(next); setChoosing(false); setPeek(false); cue(teamId, 'target'); forget(teamId);
     setFocusAnswer({ team: teamId, key: Date.now() });
   }
   function mark(kind: 'correct' | 'wrong', teamId = selected, said?: string) {
@@ -174,8 +183,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     }
     const after = progress(next, teamId);
     setNotice(said ? `✓ ${name} said “${said.trim()}” for ${place.capital}.` : '');
-    if (after.blackout && !before.blackout) setFlash({ team: teamId, text: 'BLACKOUT!', key: Date.now() });
-    else if (after.lines > before.lines) setFlash({ team: teamId, text: 'BINGO!', key: Date.now() });
+    cue(teamId, after.blackout && !before.blackout ? 'blackout' : after.lines > before.lines ? 'bingo' : 'correct');
     setChoosing(!after.blackout);
   }
   /** Enter on a card's answer box: check the typed capital and mark it like the ✓/✗ buttons. */
@@ -188,7 +196,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   function undoLast() {
     const last = state.events?.at(-1);
     if (!last) return;
-    setState(undo(state)); setSelected(last.teamId); setChoosing(false); setPeek(false); setPopup(null); setFlash(null); forget(last.teamId);
+    setState(undo(state)); setSelected(last.teamId); setChoosing(false); setPeek(false); cue(last.teamId, null); forget(last.teamId);
     setNotice(`Undid the last tap (${last.kind === 'target' ? 'new target' : last.kind === 'wrong' ? 'wrong tile' : 'correct capital'}) for ${state.teams!.find(t => t.id === last.teamId)!.name}.`);
   }
   function confirmAction() {
@@ -262,7 +270,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
             <button className="slb-team-head" aria-pressed={isSelected} onClick={() => select(team.id)}>
               <TeamName team={team} /><span className="slb-stats"><b data-testid={`points-${team.id}`}>{p.score}</b> pts · {p.lines} {p.lines === 1 ? 'bingo' : 'bingos'}{p.blackout ? ' · BLACKOUT' : ''}</span>
             </button>
-            <div className={`slb-target ${p.target ? '' : 'slb-target-empty'}`} data-testid={`target-${team.id}`}>{p.target ? <><small>TARGET</small><span className="slb-target-face"><StateFace code={p.target} mode={settings.squareMode} /></span></> : <small>{p.blackout ? 'Card complete!' : 'Choose a target'}</small>}</div>
+            <div key={cues[team.id]?.kind === 'target' ? cues[team.id].key : 'bar'} className={`slb-target ${p.target ? '' : 'slb-target-empty'} ${cues[team.id]?.kind === 'target' ? 'slb-target-cue' : ''}`} data-testid={`target-${team.id}`}>{p.target ? <><small>TARGET</small><span className="slb-target-face"><StateFace code={p.target} mode={settings.squareMode} /></span></> : <small>{p.blackout ? 'Card complete!' : 'Choose a target'}</small>}</div>
             <div className="slb-card" style={{ '--size': settings.size } as CSSProperties}>{card.map((code, i) => code === null
               ? <div key={i} className="slb-square slb-free"><span className="slb-name">FREE</span></div>
               : <button key={i} className={`slb-square ${p.marked.has(code) ? 'slb-marked' : ''} ${p.target === code ? 'slb-current' : ''}`} disabled={p.marked.has(code) || locked}
@@ -278,7 +286,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
                 value={typed[team.id] ?? ''} onChange={e => setTyped(t => ({ ...t, [team.id]: e.target.value }))} />
               <button type="submit" aria-label={`Check ${team.name}’s capital`} disabled={!(typed[team.id] ?? '').trim()}>↵</button>
             </form>}
-            {flash?.team === team.id && <div key={flash.key} className="slb-flash" role="status">{flash.text}</div>}
+            {cues[team.id] && cues[team.id].kind !== 'target' && <div key={cues[team.id].key} className={`slb-flash slb-cue-${cues[team.id].kind}`} role="status">{CUE_TEXT[cues[team.id].kind]}</div>}
           </section>;
         })}
       </main>
@@ -295,8 +303,6 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
         {notice && <p className="slb-notice" role="status">{notice}</p>}
       </section>
       <ol className="slb-fitness" aria-label="Fitness card">{settings.fitness.map((f, i) => <li key={i}><b>{i + 1}</b>{f}</li>)}</ol>
-      {popup && <div key={popup.key} className="slb-popup" aria-hidden="true" data-testid="target-popup" style={{ '--accent': teams.find(t => t.id === popup.team)?.accent } as CSSProperties}>
-        <small>{teams.find(t => t.id === popup.team)?.name} · NEW TARGET</small><div className="slb-popup-face"><StateFace code={popup.code} mode={settings.squareMode} /></div></div>}
     </>}
 
     {state.screen === 'complete' && <Results state={state} onReport={() => setPanel(true)} onNewGame={newGame} onHome={onHome} blocked={!!historyError} titleRef={title} />}

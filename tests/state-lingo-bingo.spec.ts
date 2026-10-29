@@ -94,7 +94,7 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   await expect(sq(0)).toBeDisabled();
   await done(page, 'Rockets');
   await sq(0).click();
-  await expect(page.getByTestId('target-popup')).toContainText(squareName(s, 'team-1', 0));
+  await expect(page.getByTestId('target-team-1')).toHaveClass(/slb-target-cue/); // short flash inside the card, no pop-up
   await expect(page.getByTestId('target-team-1')).toContainText(squareName(s, 'team-1', 0));
   await page.getByRole('button', { name: '✗ Wrong tile' }).click();
   await expect(page.getByText('Wrong tile recorded for Rockets. Back to the pool!')).toBeVisible();
@@ -262,20 +262,31 @@ test('Every state name fits its square at one size per card in the bundled board
   expect(fonts.every(u => new URL(u).origin === new URL(page.url()).origin)).toBe(true);
 });
 
-test('Target pop-up never blocks controls and appears without animation under reduced motion', async ({ page }) => {
+test('Feedback stays inside each team’s card, lasts about a second, never blocks other teams, and is still under reduced motion', async ({ page }) => {
   for (const motion of ['no-preference', 'reduce'] as const) {
     await page.emulateMedia({ reducedMotion: motion });
-    const s = await inject(page, { teamCount: 4 }, false);
-    await page.getByRole('button', { name: /Team 1/ }).first().click();
-    await page.getByRole('button', { name: new RegExp(`^Team 1: ${squareName(s, 'team-1', 0)}`) }).click();
-    const popup = page.getByTestId('target-popup');
-    await expect(popup).toBeVisible();
-    expect(await popup.evaluate(e => getComputedStyle(e).animationName)).toBe(motion === 'reduce' ? 'none' : 'slb-pop');
-    expect(await popup.evaluate(e => getComputedStyle(e).pointerEvents)).toBe('none');
-    // Controls still work while the pop-up is showing.
+    const s = await inject(page, { teamCount: 8, size: 4 }, false);
+    // Eight teams pick their states one right after another; each card flashes on its own, nothing covers the board.
+    for (let t = 1; t <= 8; t++) await page.getByRole('button', { name: new RegExp(`^Team ${t}: ${squareName(s, `team-${t}`, 0)}`) }).click();
+    await expect(page.locator('.slb-target-cue')).not.toHaveCount(0);
+    await expect(page.locator('.slb-popup, [data-testid=target-popup]')).toHaveCount(0);
+    const cue = page.getByTestId('target-team-8');
+    await expect(cue).toHaveClass(/slb-target-cue/);
+    expect(await cue.evaluate(e => getComputedStyle(e).animationName)).toBe(motion === 'reduce' ? 'none' : 'slb-target-cue');
+    for (let t = 1; t <= 8; t++) await expect(page.getByTestId(`target-team-${t}`)).toContainText(squareName(s, `team-${t}`, 0));
+    // Correct for team 1 while others are flashing: its "✓ Correct" stays in its own card and lets taps through.
+    await page.getByRole('button', { name: /^Team 1 / }).first().click();
     await page.getByRole('button', { name: '✓ Correct capital' }).click();
-    await expect(page.getByTestId('points-team-1')).toHaveText('1');
-    await expect(popup).toHaveCount(0, { timeout: 5000 });
+    const flash = page.locator('[data-testid=card-team-1] .slb-flash');
+    await expect(flash).toHaveText('✓ Correct');
+    const [inside, events] = await flash.evaluate(e => { const f = e.getBoundingClientRect(), c = e.closest('.slb-team')!.getBoundingClientRect(); return [f.left >= c.left && f.right <= c.right && f.top >= c.top && f.bottom <= c.bottom, getComputedStyle(e).pointerEvents]; });
+    expect([inside, events]).toEqual([true, 'none']);
+    // Another team can still be tapped while team 1's feedback shows.
+    await page.getByRole('button', { name: new RegExp(`^Team 2: ${squareName(s, 'team-2', 1)}`) }).click();
+    await expect(page.getByTestId('target-team-2')).toContainText(squareName(s, 'team-2', 1));
+    // About a second, then gone.
+    await expect(flash).toHaveCount(0, { timeout: 1600 });
+    await expect(page.locator('.slb-target-cue')).toHaveCount(0, { timeout: 1600 });
   }
 });
 
