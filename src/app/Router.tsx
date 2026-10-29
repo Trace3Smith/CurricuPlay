@@ -7,6 +7,7 @@ import MyClassroom from '../modules/classroom/MyClassroom';
 import Manage from '../modules/profile/Manage';
 import WorkQueue from '../modules/work/WorkQueue';
 import GamesEntry from './GamesEntry';
+import AnswerKeyRoute from '../games/state-lingo-bingo/AnswerKeyRoute';
 import Resources from '../modules/resources/Resources';
 import ResourceDetail from '../modules/resources/ResourceDetail';
 import Plan from '../modules/lessons/Plan';
@@ -30,6 +31,7 @@ function FutureArea({ name }: { name: string }) {
 export default function ClassThreadRouter() {
   return <BrowserRouter><Suspense fallback={<p role="status">Opening Games…</p>}><Routes>
     <Route path="/" element={<RootRedirect />} />
+    <Route path="/games/state-lingo-bingo/answer-key" element={<FoundationProvider><AnswerKeyRoute /></FoundationProvider>} />
     <Route path="/games/*" element={<GamesEntry />} />
     <Route element={<FoundationProvider><Shell /></FoundationProvider>}>
       <Route path="/sign-in" element={<SignIn />} />

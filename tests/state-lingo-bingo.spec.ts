@@ -367,7 +367,7 @@ test('Exercise lock: dimmed squares cannot be tapped, Re-roll changes the exerci
   await fits(page);
 });
 
-test('Answer box: Enter checks the typed capital leniently, marks it like ✓/✗, shows the capital after a wrong, and records what was said', async ({ page }) => {
+test('Answer box: Enter checks the typed capital leniently, marks it like ✓/✗, shows only “Not quite” after a wrong, and records what was said', async ({ page }) => {
   // Team 1 picks Minnesota, Team 2 picks Florida (cards built so both states are on them).
   const start = Date.now() - 60_000, at = (n: number) => new Date(start + n * 1000).toISOString();
   let s = beginGame({ ...freshSettings(), teamCount: 2, size: 5, names: ['Rockets', 'Comets', ...Array(8).fill('')] }, 'typed', at(0), seeded())!;
@@ -392,8 +392,11 @@ test('Answer box: Enter checks the typed capital leniently, marks it like ✓/�
   await box('Comets').fill('Miami');
   await page.getByRole('button', { name: 'Check Comets’s capital' }).click();
   await expect(page.getByTestId('points-team-2')).toHaveText('0');
-  await expect(page.getByTestId('reveal-team-2')).toHaveText('✗ “Miami” · Florida’s capital is Tallahassee');
-  await expect(page.getByText('✗ Comets said “Miami”. The capital of Florida is Tallahassee.')).toBeVisible();
+  // Only "✗ Not quite" on the card; the capital appears nowhere on the shared screen, including the bottom bar.
+  await expect(page.getByTestId('reveal-team-2')).toHaveText('✗ Not quite');
+  await expect(page.getByText('✗ Not quite for Comets. Same state, new exercise.')).toBeVisible();
+  await expect(page.locator('.slb-app')).not.toContainText('Tallahassee');
+  await expect(page.getByTestId('target-team-2')).toContainText('Florida');
   await done(page, 'Comets');
   await expect(page.getByTestId('reveal-team-2')).toHaveCount(0);
   await box('Comets').fill('Talahasee');
@@ -406,7 +409,7 @@ test('Answer box: Enter checks the typed capital leniently, marks it like ✓/�
   await expect(page.getByTestId('points-team-1')).toHaveText('1');
   await page.getByRole('button', { name: '✗ Wrong tile' }).click();
   await expect(page.getByText('Wrong tile recorded for Rockets. Back to the pool!')).toBeVisible();
-  await expect(page.getByTestId('reveal-team-1')).toHaveCount(0);
+  await expect(page.getByTestId('reveal-team-1')).toHaveText('✗ Not quite'); // the ✗ button shows the same
   const saved1 = await saved(page);
   expect(saved1.events!.filter(e => e.kind !== 'target').map(e => [e.teamId, e.kind, e.said])).toEqual([
     ['team-1', 'correct', 'st. PAUL'], ['team-2', 'wrong', 'Miami'], ['team-2', 'correct', 'Talahasee'], ['team-1', 'wrong', undefined]]);
@@ -418,4 +421,27 @@ test('Answer box: Enter checks the typed capital leniently, marks it like ✓/�
   await page.getByRole('button', { name: 'Session Report' }).click();
   await page.getByRole('button', { name: 'Team Performance' }).click();
   await expect(page.getByTestId('said-team-2').locator('li')).toHaveText(['Florida — said: Miami ✗', 'Florida — said: Talahasee ✓']);
+});
+
+test('Setup shows an answer-key link with a QR code; the game board does not', async ({ page }) => {
+  await page.goto('/games');
+  await page.evaluate(() => localStorage.clear());
+  await page.goto('/games/state-lingo-bingo');
+  const link = page.getByTestId('answer-key-link');
+  await expect(link).toContainText('Answer key on your phone');
+  await expect(link).toHaveAttribute('href', '/games/state-lingo-bingo/answer-key');
+  await expect(link.getByRole('img', { name: 'QR code for the answer key' })).toBeVisible();
+  for (const [width, height] of sizes) {
+    await page.setViewportSize({ width, height });
+    expect(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight && document.documentElement.scrollWidth <= innerWidth), `setup fits at ${width}`).toBe(true);
+  }
+  await page.getByRole('button', { name: /Start Game/ }).click();
+  await expect(page.locator('.slb-team').first()).toBeVisible();
+  await expect(page.getByTestId('answer-key-link')).toHaveCount(0);
+});
+
+test('Answer key needs teacher sign-in: without it the page sends you to sign in and shows no capitals', async ({ page }) => {
+  await page.goto('/games/state-lingo-bingo/answer-key');
+  await expect(page).toHaveURL(/\/sign-in\?next=%2Fgames%2Fstate-lingo-bingo%2Fanswer-key$/);
+  await expect(page.locator('body')).not.toContainText('Cheyenne');
 });

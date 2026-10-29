@@ -4,6 +4,7 @@ import AssessmentView from '../../assessment/AssessmentView';
 import TeamName from '../../assessment/TeamName';
 import { saveCompletedSession } from '../../assessment/storage';
 import { tally } from '../../assessment/gameNames';
+import AnswerKeyQr from './AnswerKeyQr';
 import shapes from '../../data/state-shapes.json' with { type: 'json' };
 import {
   ANSWER_LIMIT, beginGame, boardLayout, buildSession, capitalMatches, cardSizes, defaultSize, defaultTeamName, endGame, finishExercise, FITNESS_LIMIT, freshState, isLocked, judge, MAX_TEAMS, MIN_TEAMS,
@@ -110,9 +111,9 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const [flash, setFlash] = useState<{ team: string; text: string; key: number } | null>(null);
   const [confirm, setConfirm] = useState<'end' | 'discard' | null>(null);
   const [panel, setPanel] = useState(false);
-  // What the teacher is typing on each card, and the right capital to show after a typed wrong answer.
+  // What the teacher is typing on each card, and which teams just had a wrong answer (the capital is never shown on the board).
   const [typed, setTyped] = useState<Record<string, string>>({});
-  const [reveals, setReveals] = useState<Record<string, { state: string; said: string }>>({});
+  const [missed, setMissed] = useState<Record<string, boolean>>({});
   const [focusAnswer, setFocusAnswer] = useState<{ team: string; key: number } | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const title = useRef<HTMLHeadingElement>(null);
@@ -148,7 +149,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     if (next) { setState(rollAll(next)); setSelected(null); setChoosing(false); setHistoryError(''); }
   }
   function select(teamId: string) { setSelected(teamId); setChoosing(false); setPeek(false); }
-  const forget = (teamId: string) => setReveals(r => { const { [teamId]: _gone, ...rest } = r; return rest; });
+  const forget = (teamId: string) => setMissed(r => { const { [teamId]: _gone, ...rest } = r; return rest; });
   function done(teamId: string) { forget(teamId); setState(s => finishExercise(s, teamId, stamp(s))); setSelected(teamId); setChoosing(!progress(state, teamId).target); setPeek(false); }
   function reroll(teamId: string) { setState(s => rollExercise(s, teamId)); setPeek(false); }
   function target(teamId: string, code: string) {
@@ -166,8 +167,9 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     setTyped(t => ({ ...t, [teamId]: '' })); forget(teamId);
     const name = state.teams!.find(t => t.id === teamId)!.name, place = stateByCode.get(before.target!)!;
     if (kind === 'wrong') {
-      if (said) { setReveals(r => ({ ...r, [teamId]: { state: place.code, said: said.trim() } })); setNotice(`✗ ${name} said “${said.trim()}”. The capital of ${place.name} is ${place.capital}.`); }
-      else setNotice(`Wrong tile recorded for ${name}. Back to the pool!`);
+      // Same state, new exercise, try again. The right capital stays off the shared screen (the teacher has the answer key).
+      setMissed(r => ({ ...r, [teamId]: true }));
+      setNotice(said ? `✗ Not quite for ${name}. Same state, new exercise.` : `Wrong tile recorded for ${name}. Back to the pool!`);
       return;
     }
     const after = progress(next, teamId);
@@ -246,7 +248,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
         <fieldset className="slb-names"><legend>6 <span>Team names</span></legend><p className="slb-hint">Optional. Up to {NAME_LIMIT} characters. Saved only with this game.</p><div className="slb-inputs">{Array.from({ length: settings.teamCount }, (_, i) => <label key={i}><TeamName team={{ id: String(i), name: defaultTeamName(i), accent: undefined }} /> <input aria-label={`Name for ${defaultTeamName(i)}`} placeholder={defaultTeamName(i)} maxLength={NAME_LIMIT} value={settings.names[i]} onChange={e => updateSettings({ names: settings.names.map((n, j) => j === i ? e.target.value : n) })} /></label>)}</div></fieldset>
       </div>
       {errors.length > 0 && <ul className="content-notice" role="status" data-testid="setup-errors">{errors.map(e => <li key={e}>{e}</li>)}</ul>}
-      <div className="setup-bottom"><p>{settings.teamCount} teams · {settings.size}×{settings.size} cards · {pool(settings.regions).length} states</p><button className="primary" disabled={errors.length > 0 || !!loadError} onClick={start}>Start Game →</button></div>
+      <div className="setup-bottom"><p>{settings.teamCount} teams · {settings.size}×{settings.size} cards · {pool(settings.regions).length} states</p><AnswerKeyQr /><button className="primary" disabled={errors.length > 0 || !!loadError} onClick={start}>Start Game →</button></div>
     </main>}
 
     {playing && <>
@@ -267,7 +269,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
                   aria-label={`${team.name}: ${stateByCode.get(code)!.name}${p.marked.has(code) ? ', marked' : p.target === code ? ', current target' : ''}`}
                   onClick={() => { if (!isSelected) select(team.id); target(team.id, code); }}><StateFace code={code} mode={settings.squareMode} square />{p.marked.has(code) && <i className="slb-check" aria-hidden="true">✓</i>}</button>)}</div>
             {locked && exercise && <div className="slb-exercise" role="group" aria-label={`${team.name} exercise`} data-testid={`exercise-${team.id}`}>
-              {reveals[team.id] && <p className="slb-reveal" data-testid={`reveal-${team.id}`}>✗ “{reveals[team.id].said}” · {stateByCode.get(reveals[team.id].state)!.name}’s capital is <strong>{stateByCode.get(reveals[team.id].state)!.capital}</strong></p>}
+              {missed[team.id] && <p className="slb-reveal" data-testid={`reveal-${team.id}`}>✗ Not quite</p>}
               <p key={exercise.roll} className="slb-exercise-text" role="status"><b aria-hidden="true">{exercise.exercise + 1}</b><span>{settings.fitness[exercise.exercise]}</span></p>
               <div className="slb-exercise-buttons"><button className="slb-exercise-done" aria-label={`✓ Done: ${team.name}`} onClick={() => done(team.id)}>✓ Done</button><button aria-label={`↻ Re-roll: ${team.name}`} onClick={() => reroll(team.id)}>↻ Re-roll</button></div>
             </div>}

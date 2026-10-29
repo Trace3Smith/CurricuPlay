@@ -11,7 +11,9 @@ export default function SignIn() {
   const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(params.has('error') ? 'Sign-in could not be completed. Please try again.' : '');
-  if (session?.authenticated) return <Navigate to="/classroom" replace />;
+  // ?next= returns the teacher to a page that asked for sign-in (e.g. the Bingo answer key); only same-site paths.
+  const next = params.get('next');
+  if (session?.authenticated) return <Navigate to={next && /^\/(?!\/)/.test(next) ? next : '/classroom'} replace />;
   async function send(event: FormEvent) {
     event.preventDefault(); setBusy(true); setError('');
     try { await api('/auth/email', 'POST', { email }); setSent(true); } catch (error) { setError((error as Error).message); } finally { setBusy(false); }

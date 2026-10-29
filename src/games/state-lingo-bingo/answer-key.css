@@ -1,0 +1,21 @@
+/* Teacher answer key (phone, portrait, bright light): light surface, navy text, large rows, no muted gray. */
+.slb-key{min-height:100vh;background:var(--ds-background);color:var(--ds-on-background);font-family:var(--ds-font-body);padding-bottom:var(--ds-space-xxl)}
+.slb-key-top{position:sticky;top:0;z-index:2;background:var(--ds-surface);border-bottom:2px solid var(--ds-outline);padding:var(--ds-space-md) var(--ds-space-md) var(--ds-space-sm);display:grid;gap:var(--ds-space-sm)}
+.slb-key-eyebrow{margin:0;font-size:var(--ds-label-size);font-weight:var(--ds-label-weight);letter-spacing:.06em;color:var(--ds-primary)}
+.slb-key h1{margin:0;font-family:var(--ds-font-headline);font-size:var(--ds-headline-md-size);font-weight:var(--ds-headline-md-weight);line-height:var(--ds-headline-md-line);letter-spacing:var(--ds-headline-md-tracking)}
+.slb-key input{width:100%;box-sizing:border-box;min-height:56px;padding:0 var(--ds-space-md);border:2px solid var(--ds-outline);border-radius:var(--ds-rounded-md);background:var(--ds-surface);color:var(--ds-on-surface);font:700 22px var(--ds-font-body)}
+.slb-key input::placeholder{color:var(--ds-text-muted);font-weight:600}
+.slb-key-chips{display:flex;flex-wrap:wrap;gap:var(--ds-space-sm)}
+.slb-key .slb-key-chips button,.slb-key .slb-key-chips button:hover:not(:disabled){flex:none;min-height:44px;padding:0 var(--ds-space-md);border:2px solid var(--ds-outline);border-radius:var(--ds-rounded-pill);background:var(--ds-surface);color:var(--ds-on-surface);font:700 16px var(--ds-font-body)}
+.slb-key .slb-key-chips button[aria-pressed=true],.slb-key .slb-key-chips button[aria-pressed=true]:hover:not(:disabled){background:var(--ds-primary);border-color:var(--ds-primary);color:var(--ds-on-primary)}
+.slb-key-status{margin:0;font-size:var(--ds-body-md-size);font-weight:700}
+.slb-key :focus-visible{outline:var(--ds-focus-ring);outline-offset:var(--ds-focus-offset)}
+.slb-key-list{list-style:none;margin:0;padding:var(--ds-space-sm) var(--ds-space-md);display:grid;gap:var(--ds-space-sm)}
+/* scroll-margin keeps a jumped-to row below the sticky search bar. */
+.slb-key-list li{scroll-margin-top:var(--slb-key-top,300px);display:grid;gap:2px;padding:12px var(--ds-space-md);background:var(--ds-surface);border:2px solid var(--ds-surface-muted);border-radius:var(--ds-rounded-md)}
+.slb-key-state{font-size:18px;font-weight:700}
+.slb-key-capital{font-family:var(--ds-font-headline);font-size:30px;font-weight:800;line-height:1.15;color:var(--ds-on-surface)}
+.slb-key-list li.slb-key-found{border-color:var(--ds-highlight);box-shadow:0 0 0 3px var(--ds-highlight);background:var(--ds-surface)}
+@media (min-width:700px){.slb-key{max-width:720px;margin:0 auto}}
+.slb-key-wait{padding:var(--ds-space-lg) var(--ds-space-md);font:700 20px var(--ds-font-body);color:var(--ds-on-background);background:var(--ds-background);min-height:100vh;margin:0}
+.slb-key-wait button{min-height:56px;padding:0 var(--ds-space-lg);border-radius:var(--ds-rounded-pill);border:0;background:var(--ds-primary);color:var(--ds-on-primary);font:700 18px var(--ds-font-body)}

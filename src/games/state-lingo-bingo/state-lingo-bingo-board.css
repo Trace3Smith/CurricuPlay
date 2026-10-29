@@ -133,6 +133,8 @@
   .app.slb-app .slb-hint{font-size:13px;margin-top:3px}.app.slb-app .slb-names .slb-hint{margin:0 0 4px}
   .app.slb-app .slb-options,.app.slb-app .slb-inputs{gap:6px 12px}
   .app.slb-app .slb-setup .primary{min-height:52px;font-size:22px}
+  .app.slb-app .slb-setup fieldset{margin-bottom:3px}.app.slb-app .slb-setup legend{margin-bottom:2px}.app.slb-app .slb-setup .setup-bottom{margin-top:0}
+  .app.slb-app .slb-key-link svg{width:52px}
 }
 @media(max-width:900px){.app.slb-app .slb-setup fieldset:has(input[aria-label^="Fitness card"]) .slb-inputs{grid-template-columns:1fr}}
 
@@ -159,3 +161,13 @@
 .app.slb-app .slb-answer button:disabled{opacity:.45}
 .app.slb-app .slb-reveal{margin:0;max-width:100%;color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;font-size:clamp(14px,min(4.6cqw,6cqh),34px);line-height:1.2;overflow-wrap:anywhere}
 .app.slb-app .slb-reveal strong{color:var(--ds-highlight)}
+.app.slb-app .slb-reveal{font-size:clamp(18px,min(7cqw,9cqh),64px);color:var(--ds-on-board)}
+
+/* Setup only: a small link with a QR code to the teacher answer key. */
+.app.slb-app .slb-key-link{margin-left:auto;display:flex;align-items:center;gap:calc(14 * var(--u));min-height:44px;color:var(--ds-on-board);text-decoration:none;font-family:var(--ds-font-board);font-weight:700;font-size:max(16px,calc(24 * var(--u)));line-height:1.15}
+/* No taller than Start Game, so the setup screen keeps its height. */
+.app.slb-app .slb-key-link svg{flex:none;width:max(52px,calc(80 * var(--u)));height:auto;border-radius:6px}
+.app.slb-app .slb-key-link span{display:grid}
+.app.slb-app .slb-key-link small{font-size:max(14px,calc(18 * var(--u)));font-weight:700;color:var(--ds-on-board)}
+.app.slb-app .slb-key-link:hover span{text-decoration:underline}
+.app.slb-app .slb-key-link:focus-visible{outline:var(--ds-focus-ring);outline-offset:var(--ds-focus-offset)}
