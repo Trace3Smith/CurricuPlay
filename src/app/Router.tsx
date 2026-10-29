@@ -31,7 +31,7 @@ function FutureArea({ name }: { name: string }) {
 export default function ClassThreadRouter() {
   return <BrowserRouter><Suspense fallback={<p role="status">Opening Games…</p>}><Routes>
     <Route path="/" element={<RootRedirect />} />
-    <Route path="/games/state-lingo-bingo/answer-key" element={<FoundationProvider><AnswerKeyRoute /></FoundationProvider>} />
+    <Route path="/games/state-lingo-bingo/answer-key" element={<AnswerKeyRoute />} />
     <Route path="/games/*" element={<GamesEntry />} />
     <Route element={<FoundationProvider><Shell /></FoundationProvider>}>
       <Route path="/sign-in" element={<SignIn />} />

@@ -13,5 +13,16 @@
       "destination": "/spelling-bee/photos/:name.webp",
       "permanent": true
     }
+  ],
+  "headers": [
+    {
+      "source": "/games/state-lingo-bingo/answer-key",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
   ]
 }

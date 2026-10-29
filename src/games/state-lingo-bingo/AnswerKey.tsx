@@ -20,7 +20,7 @@ export default function AnswerKey() {
   const toggle = (r: Region) => setShown(s => s.includes(r) ? s.filter(x => x !== r) : regions.filter(x => x === r || s.includes(x)));
   return <div className="slb-key">
     <header className="slb-key-top">
-      <p className="slb-key-eyebrow">STATE LINGO BINGO · TEACHER ONLY</p>
+      <p className="slb-key-eyebrow">STATE LINGO BINGO · FOR TEACHERS</p>
       <h1>Answer key</h1>
       <input type="search" aria-label="Find a state" placeholder="Find a state…" autoComplete="off" spellCheck={false} value={query} onChange={e => setQuery(e.target.value)} />
       <div className="slb-key-chips" role="group" aria-label="Regions">

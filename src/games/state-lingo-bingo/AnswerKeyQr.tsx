@@ -14,6 +14,6 @@ export default function AnswerKeyQr() {
   }, [url]);
   return <a className="slb-key-link" href={ANSWER_KEY_PATH} target="_blank" rel="noopener" data-testid="answer-key-link">
     <svg viewBox={`0 0 ${path.size} ${path.size}`} role="img" aria-label="QR code for the answer key" shapeRendering="crispEdges"><rect width={path.size} height={path.size} fill="#fff" /><path d={path.d} fill="#0B1F44" /></svg>
-    <span>Answer key on your phone<small>Teacher sign-in</small></span>
+    <span>Answer key on your phone<small>For teachers</small></span>
   </a>;
 }

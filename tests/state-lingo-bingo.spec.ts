@@ -440,8 +440,8 @@ test('Setup shows an answer-key link with a QR code; the game board does not', a
   await expect(page.getByTestId('answer-key-link')).toHaveCount(0);
 });
 
-test('Answer key needs teacher sign-in: without it the page sends you to sign in and shows no capitals', async ({ page }) => {
+test('Answer key opens without sign-in at its own address', async ({ page }) => {
   await page.goto('/games/state-lingo-bingo/answer-key');
-  await expect(page).toHaveURL(/\/sign-in\?next=%2Fgames%2Fstate-lingo-bingo%2Fanswer-key$/);
-  await expect(page.locator('body')).not.toContainText('Cheyenne');
+  await expect(page).toHaveURL(/\/games\/state-lingo-bingo\/answer-key$/);
+  await expect(page.getByTestId('key-WY')).toContainText('Cheyenne');
 });
