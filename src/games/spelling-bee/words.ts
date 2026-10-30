@@ -19,6 +19,18 @@ export interface WordEntry {
   activity?: 'initial' | 'spelling'; curriculum?: CurriculumEvidence; evidenceId?: string;
   displayWord?: string; // Validated punctuation-only presentation; word remains the canonical answer.
   complexity?: 'foundation' | 'academic';
+  /** First-letter photos only: other letters also counted correct, with the word that makes them right (jacket → C for "coat"). */
+  alsoAccept?: AlsoAccept[];
+}
+export interface AlsoAccept { letter: string; because: string }
+/** At most three; each a single capital letter that is not the word's own first letter, given by a word starting with it. */
+export function validAlsoAccept(w: Pick<WordEntry, 'word' | 'activity' | 'alsoAccept'>): boolean {
+  const list = w.alsoAccept;
+  if (list === undefined) return true;
+  if (w.activity !== 'initial' || !Array.isArray(list) || !list.length || list.length > 3) return false;
+  const letters = list.map(a => a?.letter);
+  return new Set(letters).size === letters.length && list.every(a => !!a && typeof a.letter === 'string' && /^[A-Z]$/.test(a.letter) &&
+    a.letter !== w.word[0].toUpperCase() && typeof a.because === 'string' && /^[a-z]{1,16}$/.test(a.because) && a.because[0].toUpperCase() === a.letter);
 }
 export interface WordList { id: string; name: string; entries: WordEntry[] }
 export function isWord(value: unknown): value is WordEntry {
@@ -31,7 +43,7 @@ export function isWord(value: unknown): value is WordEntry {
     ['approved', 'pending'].includes(w.reviewStatus) &&
     (w.activity === undefined || ['initial', 'spelling'].includes(w.activity)) &&
     (w.activity !== 'initial' || (w.grade === 'K' && !!w.picture)) &&
-    (w.complexity === undefined || ['foundation', 'academic'].includes(w.complexity)) &&
+    (w.complexity === undefined || ['foundation', 'academic'].includes(w.complexity)) && validAlsoAccept(w) &&
     (w.curriculum === undefined ? w.kind !== 'curriculum' : isEvidence(w.curriculum) && w.curriculum.grade === w.grade && w.kind === 'curriculum') && (w.picture === null || (typeof w.picture === 'string' && Object.hasOwn(pictures, w.picture)));
 }
 export function validateWords(value: unknown): { entries: WordEntry[]; errors: string[] } {

@@ -13,6 +13,15 @@ pictures=json.loads((ROOT/'src/data/spelling-bee-pictures.json').read_text())
 pictures.update({name:dict(src=f'/spelling-bee/{name}.svg') for name in ['cat','sun','sit','map','ship','cake','night','rain']})
 pictures.update(plant=dict(src='/four-corners/plant.svg'),leaf=dict(src='/four-corners/plant-leaf.svg'))
 pictures.update(json.loads((ROOT/'src/data/spelling-bee-pictures.json').read_text()))
+
+def also_accept_ok(w):
+    """Optional extra letters for Kindergarten first-letter photos: [{letter: 'C', because: 'coat'}] (same rule as the game)."""
+    v = w.get('alsoAccept')
+    if v is None: return True
+    return w.get('activity') == 'initial' and isinstance(v, list) and 0 < len(v) <= 3 and len({a.get('letter') for a in v if isinstance(a, dict)}) == len(v) and all(
+        isinstance(a, dict) and set(a) == {'letter', 'because'} and isinstance(a['letter'], str) and re.fullmatch('[A-Z]', a['letter']) is not None
+        and a['letter'] != w['word'][0].upper() and isinstance(a['because'], str) and re.fullmatch('[a-z]{1,16}', a['because']) is not None
+        and a['because'][0].upper() == a['letter'] for a in v)
 errors=[]
 for collection in [bank,general]:
     seen=set()
@@ -25,6 +34,7 @@ for collection in [bank,general]:
         check(0<len(w['clue'])<=180,'invalid clue')
         check(not re.search(r'\b'+w['word']+r'\b',w['clue'],re.I),'clue leaks word')
         check(w['picture'] is None or w['picture'] in pictures,'missing reviewed picture')
+        check(also_accept_ok(w),'invalid alsoAccept')
         if w.get('activity')=='initial':
             check(w['grade']=='K' and w['picture']==w['word'],'initial prompt needs matching object picture')
             check(w['clue']=='What letter does this object start with?','initial prompt prints object name')

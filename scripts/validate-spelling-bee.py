@@ -7,6 +7,15 @@ import xml.etree.ElementTree as ET
 
 root = Path(__file__).resolve().parents[1]
 words = json.loads((root / 'src/data/spelling-bee.json').read_text())
+
+def also_accept_ok(w):
+    """Optional extra letters for Kindergarten first-letter photos: [{letter: 'C', because: 'coat'}] (same rule as the game)."""
+    v = w.get('alsoAccept')
+    if v is None: return True
+    return w.get('activity') == 'initial' and isinstance(v, list) and 0 < len(v) <= 3 and len({a.get('letter') for a in v if isinstance(a, dict)}) == len(v) and all(
+        isinstance(a, dict) and set(a) == {'letter', 'because'} and isinstance(a['letter'], str) and re.fullmatch('[A-Z]', a['letter']) is not None
+        and a['letter'] != w['word'][0].upper() and isinstance(a['because'], str) and re.fullmatch('[a-z]{1,16}', a['because']) is not None
+        and a['because'][0].upper() == a['letter'] for a in v)
 errors = []
 seen_ids, seen_words = set(), set()
 pictures = {**{name: f'spelling-bee/{name}.svg' for name in ['sit', 'map', 'ship', 'cake', 'night', 'rain']}, 'cat': 'spelling-bee/cat.svg', 'sun': 'spelling-bee/sun.svg', 'plant': 'four-corners/plant.svg', 'leaf': 'four-corners/plant-leaf.svg'}
@@ -25,6 +34,7 @@ for row, word in enumerate(words, 1):
     check(0 < len(word['skill']) <= 80, 'invalid skill')
     check(word['kind'] == 'sample' and 'not district pacing-guide vocabulary' in word['source'], 'unsupported provenance')
     check(word['reviewStatus'] == 'approved', 'unreviewed sample')
+    check(also_accept_ok(word), 'invalid alsoAccept')
     check(word['picture'] is None or word['picture'] in pictures, 'unreviewed image reference')
     if word['grade'] in ['K', '1', '2'] and word['word'] in pictures:
         check(word['picture'] == word['word'], 'missing or mismatched picture for a concrete sample word')

@@ -187,3 +187,6 @@
   .app.bee-app .bee-play .bee-scoreboard button>small{grid-column:1/-1}
   .app.bee-app .bee-play.bee-kindergarten>.bee-slots>span{--slot-w:min(80cqh,40cqw)}
 }
+/* Alternate accepted letters (first-letter photos): the teaching line after Reveal, in board size. */
+.app.bee-app .bee-hint-help .bee-teach{color:var(--ds-highlight);font-family:var(--ds-font-board);font-weight:700;font-size:max(20px,calc(36 * var(--u)));line-height:1.2}
+.app.bee-app .bee-hint-help .bee-also{font-weight:700}

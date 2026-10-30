@@ -69,6 +69,17 @@ def listed_in_week(snap, week, word):
     end = text.find('📅', match.end()); block = text[match.start():end if end >= 0 else None]
     return bool(re.search(r'\b' + word + r'\b', block, re.I))
 
+def also_accept(word, value, where):
+    """Kindergarten first-letter words may accept other letters, each with the word that makes it right: [{letter: 'C', because: 'coat'}].
+    Same rule as the game and validate-spelling-bee-pacing.py."""
+    ok = isinstance(value, list) and 0 < len(value) <= 3 and len({a.get('letter') for a in value if isinstance(a, dict)}) == len(value) and all(
+        isinstance(a, dict) and set(a) == {'letter', 'because'} and isinstance(a['letter'], str) and re.fullmatch('[A-Z]', a['letter'])
+        and a['letter'] != word[0].upper() and isinstance(a['because'], str) and re.fullmatch('[a-z]{1,16}', a['because'])
+        and a['because'][0].upper() == a['letter'] for a in value)
+    if not ok:
+        raise SystemExit(f'{where}: alsoAccept must be 1–3 of {{"letter": "C", "because": "coat"}} (a different capital letter, given by a lowercase word that starts with it)')
+    return [dict(letter=a['letter'], because=a['because']) for a in value]
+
 def slug(text):
     return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')[:40]
 
@@ -122,12 +133,16 @@ for r in review:
             locator=ev['locator'], unit=ev['locator'][:120], earliestEligible=period['end'], periods=[period],
             category=category, timing='documented', review='approved',
             note=f'Teacher-approved {BATCH} batch item {rid}. ' + ('Object names are ClassThread practice; child supplies only the first letter.' if initial else 'Original ClassThread clue.'))
+        accepts = None
+        if it.get('alsoAccept') is not None:
+            if not initial: raise SystemExit(f'{rid}: alsoAccept is only for Kindergarten first-letter words')
+            accepts = also_accept(word, it['alsoAccept'], rid)
         existing = sb_words.get((g, word))
         if existing:
             if existing['curriculum']['timing'] == 'documented' and not existing['evidenceId'].startswith(f'paced-{BATCH}-'):
                 skipped.append((rid, f'already in bank as {existing["id"]}')); continue
             evid = f'paced-{BATCH}-{rid}'  # resolves a previously held date conflict
-            sb_updates[existing['id']] = (curriculum, evid)
+            sb_updates[existing['id']] = (curriculum, evid, accepts)
             sb_evidence.append(dict(id=evid, snapshot=snap_path, **curriculum))
             continue
         entry = dict(id=f'pacing-{g}-{word}', grade=g, word=word,
@@ -137,6 +152,7 @@ for r in review:
             complexity='foundation' if g in ('K', '1') else 'academic')
         if initial:
             entry['activity'] = 'initial'
+            if accepts: entry['alsoAccept'] = accepts
         assert entry['id'] not in sb_ids, entry['id']
         sb_ids.add(entry['id']); sb_new.append(entry)
         sb_evidence.append(dict(id=entry['evidenceId'], snapshot=snap_path, **curriculum))
@@ -154,7 +170,9 @@ for w in sb_bank:
     if own(w):
         continue  # rebuilt below
     if w['id'] in sb_updates:
-        w = dict(w); w['curriculum'], w['evidenceId'] = sb_updates[w['id']]
+        w = dict(w); w['curriculum'], w['evidenceId'], accepts = sb_updates[w['id']]
+        w.pop('alsoAccept', None)
+        if accepts: w['alsoAccept'] = accepts
     out_bank.append(w)
 for e in sb_evidence:
     if e['id'] in by_id:
