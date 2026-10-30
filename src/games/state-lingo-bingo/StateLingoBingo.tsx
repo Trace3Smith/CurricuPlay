@@ -3,13 +3,14 @@ import AssessmentDialog from '../../assessment/AssessmentDialog';
 import AssessmentView from '../../assessment/AssessmentView';
 import TeamName from '../../assessment/TeamName';
 import { saveCompletedSession } from '../../assessment/storage';
-import { tally } from '../../assessment/gameNames';
+import { answerLine, tally } from '../../assessment/gameNames';
 import AnswerKeyQr from './AnswerKeyQr';
+import TeamKeyboard, { type KeyPress } from './TeamKeyboard';
 import shapes from '../../data/state-shapes.json' with { type: 'json' };
 import {
   ANSWER_LIMIT, beginGame, boardLayout, buildSession, capitalMatches, cardSizes, defaultSize, defaultTeamName, endGame, finishExercise, FITNESS_LIMIT, freshState, isLocked, judge, MAX_TEAMS, MIN_TEAMS,
   NAME_LIMIT, pool, progress, regions, report, rollAll, rollExercise, setTarget, setupErrors, squareModes, stateByCode, states, statesNeeded, undo,
-  type BingoState, type Region, type Scoring, type Settings, type SquareMode,
+  type BingoState, type EnteredBy, type Region, type Scoring, type Settings, type SquareMode,
 } from './engine';
 import { discardActive, readActive, saveActive } from './storage';
 import './state-lingo-bingo.css';
@@ -116,10 +117,18 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   const cueTimers = useRef(new Map<string, ReturnType<typeof setTimeout>>());
   const [confirm, setConfirm] = useState<'end' | 'discard' | null>(null);
   const [panel, setPanel] = useState(false);
-  // What the teacher is typing on each card, and which teams just had a wrong answer (the capital is never shown on the board).
+  // The teacher's typed override (bottom bar), and which teams just had a wrong answer (the capital is never shown on the board).
   const [typed, setTyped] = useState<Record<string, string>>({});
   const [missed, setMissed] = useState<Record<string, boolean>>({});
-  const [focusAnswer, setFocusAnswer] = useState<{ team: string; key: number } | null>(null);
+  // Each team's own answer from its card keyboard, and teams that tapped "Change" to pick another state.
+  const [drafts, setDrafts] = useState<Record<string, string>>({});
+  const draftsRef = useRef(drafts);
+  const [changing, setChanging] = useState<Record<string, boolean>>({});
+  // Teams act at the same moment: every action starts from the newest game state, not the last render's.
+  const latest = useRef(state);
+  latest.current = state;
+  const commit = (next: BingoState) => { latest.current = next; setState(next); };
+  const setDraft = (teamId: string, value: string) => { draftsRef.current = { ...draftsRef.current, [teamId]: value }; setDrafts(draftsRef.current); };
   const dialog = useRef<HTMLDialogElement>(null);
   const title = useRef<HTMLHeadingElement>(null);
   const board = useRef<HTMLElement>(null);
@@ -130,8 +139,6 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
   useEffect(() => { title.current?.focus(); }, [state.screen]);
   useEffect(() => { if (confirm) dialog.current?.showModal(); else dialog.current?.close(); }, [confirm]);
   useEffect(() => () => cueTimers.current.forEach(clearTimeout), []);
-  // After a team picks its state, the answer box is ready for the teacher to type into.
-  useEffect(() => { if (focusAnswer) document.getElementById(`slb-answer-${focusAnswer.team}`)?.focus(); }, [focusAnswer]);
   // Refit names whenever a card's squares change size (screen size, a target appearing or clearing).
   useLayoutEffect(() => {
     const b = board.current;
@@ -159,22 +166,23 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     if (kind) cueTimers.current.set(teamId, setTimeout(() => setCues(c => { const { [teamId]: _done, ...rest } = c; return rest; }), CUE_MS[kind]));
   }
   const forget = (teamId: string) => setMissed(r => { const { [teamId]: _gone, ...rest } = r; return rest; });
-  function done(teamId: string) { forget(teamId); setState(s => finishExercise(s, teamId, stamp(s))); setSelected(teamId); setChoosing(!progress(state, teamId).target); setPeek(false); }
-  function reroll(teamId: string) { setState(s => rollExercise(s, teamId)); setPeek(false); }
+  function done(teamId: string) { forget(teamId); const s0 = latest.current; commit(finishExercise(s0, teamId, stamp(s0))); setSelected(teamId); setChoosing(!progress(s0, teamId).target); setPeek(false); }
+  function reroll(teamId: string) { commit(rollExercise(latest.current, teamId)); setPeek(false); }
   function target(teamId: string, code: string) {
-    const next = setTarget(state, teamId, code, stamp(state));
-    if (next === state) return;
-    setState(next); setChoosing(false); setPeek(false); cue(teamId, 'target'); forget(teamId);
-    setFocusAnswer({ team: teamId, key: Date.now() });
+    const current = latest.current, next = setTarget(current, teamId, code, stamp(current));
+    if (next === current) return;
+    commit(next); setPeek(false); cue(teamId, 'target'); forget(teamId);
+    if (teamId === selected) setChoosing(false);
+    setChanging(c => ({ ...c, [teamId]: false })); setDraft(teamId, '');
   }
-  function mark(kind: 'correct' | 'wrong', teamId = selected, said?: string) {
+  function mark(kind: 'correct' | 'wrong', teamId = selected, said?: string, by: EnteredBy = 'teacher') {
     if (!teamId) return;
-    const before = progress(state, teamId), next = judge(state, teamId, kind, stamp(state), said);
-    if (next === state) return;
+    const current = latest.current, before = progress(current, teamId), next = judge(current, teamId, kind, stamp(current), said, by);
+    if (next === current) return;
     // After every judged tile the team gets a new exercise and its card locks, unless the card is full.
-    setState(progress(next, teamId).blackout ? next : rollExercise(next, teamId)); setPeek(false);
-    setTyped(t => ({ ...t, [teamId]: '' })); forget(teamId);
-    const name = state.teams!.find(t => t.id === teamId)!.name, place = stateByCode.get(before.target!)!;
+    commit(progress(next, teamId).blackout ? next : rollExercise(next, teamId)); if (teamId === selected) setPeek(false);
+    setTyped(t => ({ ...t, [teamId]: '' })); setDraft(teamId, ''); forget(teamId);
+    const name = current.teams!.find(t => t.id === teamId)!.name, place = stateByCode.get(before.target!)!;
     if (kind === 'wrong') {
       // Same state, new exercise, try again. The right capital stays off the shared screen (the teacher has the answer key).
       setMissed(r => ({ ...r, [teamId]: true }));
@@ -184,19 +192,27 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
     const after = progress(next, teamId);
     setNotice(said ? `✓ ${name} said “${said.trim()}” for ${place.capital}.` : '');
     cue(teamId, after.blackout && !before.blackout ? 'blackout' : after.lines > before.lines ? 'bingo' : 'correct');
-    setChoosing(!after.blackout);
+    if (teamId === selected) setChoosing(!after.blackout);
   }
-  /** Enter on a card's answer box: check the typed capital and mark it like the ✓/✗ buttons. */
-  function answer(teamId: string) {
-    const target = progress(state, teamId).target, said = (typed[teamId] ?? '').trim();
-    if (!target || !said || isLocked(state, teamId)) return;
-    setSelected(teamId);
-    mark(capitalMatches(said, stateByCode.get(target)!.capital) ? 'correct' : 'wrong', teamId, said);
+  /** Check a typed capital with the lenient matching and mark it like the ✓/✗ buttons. */
+  function check(teamId: string, said: string, by: EnteredBy) {
+    const current = latest.current, target = progress(current, teamId).target;
+    if (!target || !said.trim() || isLocked(current, teamId)) return;
+    mark(capitalMatches(said, stateByCode.get(target)!.capital) ? 'correct' : 'wrong', teamId, said, by);
+  }
+  /** The teacher's typed override in the bottom bar. */
+  function answer(teamId: string) { check(teamId, typed[teamId] ?? '', 'teacher'); }
+  /** A key on a team's own card keyboard: it only ever changes that team's answer. */
+  function teamKey(teamId: string, key: KeyPress) {
+    const draft = draftsRef.current[teamId] ?? '';
+    if (key.kind === 'submit') { check(teamId, draft, 'team'); return; }
+    const next = key.kind === 'back' ? draft.slice(0, -1) : key.kind === 'space' ? (draft && !draft.endsWith(' ') ? `${draft} ` : draft) : `${draft}${key.letter}`;
+    setDraft(teamId, next.slice(0, ANSWER_LIMIT));
   }
   function undoLast() {
     const last = state.events?.at(-1);
     if (!last) return;
-    setState(undo(state)); setSelected(last.teamId); setChoosing(false); setPeek(false); cue(last.teamId, null); forget(last.teamId);
+    commit(undo(latest.current)); setDraft(last.teamId, ''); setSelected(last.teamId); setChoosing(false); setPeek(false); cue(last.teamId, null); forget(last.teamId);
     setNotice(`Undid the last tap (${last.kind === 'target' ? 'new target' : last.kind === 'wrong' ? 'wrong tile' : 'correct capital'}) for ${state.teams!.find(t => t.id === last.teamId)!.name}.`);
   }
   function confirmAction() {
@@ -264,14 +280,21 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
         {teams.map((team, index) => {
           const p = progress(state, team.id), card = state.cards![team.id], isSelected = team.id === selected;
           const locked = isLocked(state, team.id), exercise = state.exercises?.[team.id];
+          // After picking a state, the team's grid gives way to its answer keyboard (inside this card only).
+          const typing = !!p.target && !locked && !p.blackout && !changing[team.id];
+          // (computed before the target bar, which shows the team's answer while it types)
           // A short last row is centered: each section spans two of the doubled grid columns.
           const lastRow = teams.length - cols * (rows - 1), start = index === cols * (rows - 1) && lastRow < cols ? cols - lastRow + 1 : undefined;
           return <section key={team.id} className={`slb-team ${isSelected ? 'slb-selected' : ''} ${locked ? 'slb-locked' : ''}`} style={{ '--accent': team.accent, ...(start ? { gridColumn: `${start} / span 2` } : {}) } as CSSProperties} aria-label={team.name} data-testid={`card-${team.id}`}>
             <button className="slb-team-head" aria-pressed={isSelected} onClick={() => select(team.id)}>
               <TeamName team={team} /><span className="slb-stats"><b data-testid={`points-${team.id}`}>{p.score}</b> pts · {p.lines} {p.lines === 1 ? 'bingo' : 'bingos'}{p.blackout ? ' · BLACKOUT' : ''}</span>
             </button>
-            <div key={cues[team.id]?.kind === 'target' ? cues[team.id].key : 'bar'} className={`slb-target ${p.target ? '' : 'slb-target-empty'} ${cues[team.id]?.kind === 'target' ? 'slb-target-cue' : ''}`} data-testid={`target-${team.id}`}>{p.target ? <><small>TARGET</small><span className="slb-target-face"><StateFace code={p.target} mode={settings.squareMode} /></span></> : <small>{p.blackout ? 'Card complete!' : 'Choose a target'}</small>}</div>
-            <div className="slb-card" style={{ '--size': settings.size } as CSSProperties}>{card.map((code, i) => code === null
+            <div key={cues[team.id]?.kind === 'target' ? cues[team.id].key : 'bar'} className={`slb-target ${p.target ? '' : 'slb-target-empty'} ${cues[team.id]?.kind === 'target' ? 'slb-target-cue' : ''}`} data-testid={`target-${team.id}`}>{p.target ? <><small>TARGET</small><span className="slb-target-face"><StateFace code={p.target} mode={settings.squareMode} /></span>
+              {/* While the team types, its answer shares the target bar so the keys get the room. */}
+              {typing && <><span className={`slb-kbd-text ${drafts[team.id] ? '' : 'slb-kbd-empty'}`} data-testid={`answer-${team.id}`}>{drafts[team.id] || <><span className="slb-kbd-long">Type the capital</span><span className="slb-kbd-short">Capital?</span></>}</span>
+                <button type="button" className="slb-kbd-change" aria-label={`Change state: ${team.name}`} onMouseDown={e => e.preventDefault()} onClick={() => setChanging(c => ({ ...c, [team.id]: true }))}>Change</button></>}</>
+              : <small>{p.blackout ? 'Card complete!' : 'Choose a target'}</small>}</div>
+            <div className={`slb-card ${typing ? 'slb-card-hidden' : ''}`} style={{ '--size': settings.size } as CSSProperties}>{card.map((code, i) => code === null
               ? <div key={i} className="slb-square slb-free"><span className="slb-name">FREE</span></div>
               : <button key={i} className={`slb-square ${p.marked.has(code) ? 'slb-marked' : ''} ${p.target === code ? 'slb-current' : ''}`} disabled={p.marked.has(code) || locked}
                   aria-label={`${team.name}: ${stateByCode.get(code)!.name}${p.marked.has(code) ? ', marked' : p.target === code ? ', current target' : ''}`}
@@ -281,11 +304,7 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
               <p key={exercise.roll} className="slb-exercise-text" role="status"><b aria-hidden="true">{exercise.exercise + 1}</b><span>{settings.fitness[exercise.exercise]}</span></p>
               <div className="slb-exercise-buttons"><button className="slb-exercise-done" aria-label={`✓ Done: ${team.name}`} onClick={() => done(team.id)}>✓ Done</button><button aria-label={`↻ Re-roll: ${team.name}`} onClick={() => reroll(team.id)}>↻ Re-roll</button></div>
             </div>}
-            {p.target && !locked && <form className="slb-answer" onSubmit={e => { e.preventDefault(); answer(team.id); }}>
-              <input id={`slb-answer-${team.id}`} aria-label={`Capital ${team.name} said`} placeholder="Type the capital they said" autoComplete="off" spellCheck={false} maxLength={ANSWER_LIMIT}
-                value={typed[team.id] ?? ''} onChange={e => setTyped(t => ({ ...t, [team.id]: e.target.value }))} />
-              <button type="submit" aria-label={`Check ${team.name}’s capital`} disabled={!(typed[team.id] ?? '').trim()}>↵</button>
-            </form>}
+            {typing && <TeamKeyboard teamName={team.name} draft={drafts[team.id] ?? ''} onKey={key => teamKey(team.id, key)} />}
             {cues[team.id] && cues[team.id].kind !== 'target' && <div key={cues[team.id].key} className={`slb-flash slb-cue-${cues[team.id].kind}`} role="status">{CUE_TEXT[cues[team.id].kind]}</div>}
           </section>;
         })}
@@ -297,7 +316,12 @@ export default function StateLingoBingo({ onHome, onClassroom }: { onHome: () =>
             : <>Target: <strong>{showNames || peek ? targetState.name : 'shown on card'}</strong>{peek && <> · Capital: <strong data-testid="peek-capital">{targetState.capital}</strong></>}</>}</p>
           <div className="slb-control-buttons">
             {selectedExercise && !selectedProgress?.blackout && <button onClick={() => reroll(selected!)}>↻ Re-roll exercise</button>}
-            {targetState && !choosing && !selectedLocked && <><button className="primary" onClick={() => mark('correct')}>✓ Correct capital</button><button className="slb-wrong" onClick={() => mark('wrong')}>✗ Wrong tile</button><button aria-pressed={peek} onClick={() => setPeek(!peek)}>{peek ? 'Hide answer' : 'Check answer'}</button></>}
+            {targetState && !choosing && !selectedLocked && <><form className="slb-teacher-answer" onSubmit={e => { e.preventDefault(); answer(selected!); }}>
+              {/* inputMode none: typed from a real keyboard; the Windows touch keyboard never opens over the board. */}
+              <input aria-label={`Capital ${selectedTeam.name} said`} placeholder="Teacher: type the capital" inputMode="none" autoComplete="off" spellCheck={false} maxLength={ANSWER_LIMIT}
+                value={typed[selected!] ?? ''} onChange={e => setTyped(t => ({ ...t, [selected!]: e.target.value }))} />
+              <button type="submit" aria-label={`Check ${selectedTeam.name}’s capital`} disabled={!(typed[selected!] ?? '').trim()}>↵</button></form>
+              <button className="primary" onClick={() => mark('correct')}>✓ Correct capital</button><button className="slb-wrong" onClick={() => mark('wrong')}>✗ Wrong tile</button><button aria-pressed={peek} onClick={() => setPeek(!peek)}>{peek ? 'Hide answer' : 'Check answer'}</button></>}
             <button onClick={() => { setSelected(null); setChoosing(false); setPeek(false); }}>Done</button>
           </div></>}
         {notice && <p className="slb-notice" role="status">{notice}</p>}
@@ -325,7 +349,8 @@ function Results({ state, onReport, onNewGame, onHome, blocked, titleRef }: { st
       const s = stateByCode.get(r.state)!;
       return <li key={i}><strong>{s.name} — {s.capital}</strong> · {names.get(r.teamId)} · {r.reason === 'missed' ? 'wrong tile' : `took ${r.seconds} s`}</li>;
     })}</ul> : <p>No capitals to review.</p>}<p className="slb-hint">Team practice records. They do not show individual mastery.</p></section>
-    {data.teams.some(t => t.answers.length) && <section className="slb-review" aria-label="Typed answers"><h2>Typed answers</h2><ul>{data.teams.filter(t => t.answers.length).map(t => <li key={t.team.id} data-testid={`answers-${t.team.id}`}><strong>{t.team.name}</strong> · {t.answers.map(a => `${stateByCode.get(a.state)!.name} — said: ${a.said} ${a.correct ? '✓' : '✗'}`).join(' · ')}</li>)}</ul></section>}
+    {data.teams.some(t => t.answers.length) && <section className="slb-review" aria-label="Answers"><h2>Answers</h2><ul>{data.teams.filter(t => t.answers.length).map(t => <li key={t.team.id} data-testid={`answers-${t.team.id}`}><strong>{t.team.name}</strong>
+      <ul className="slb-answer-list">{t.answers.map((a, i) => <li key={i}>{answerLine(stateByCode.get(a.state)!.name, a.said, a.correct, a.by)}</li>)}</ul></li>)}</ul></section>}
     {data.teams.some(t => t.exercises.length) && <section className="slb-review" aria-label="Exercises"><h2>Exercises</h2><ul>{data.teams.map(t => <li key={t.team.id} data-testid={`exercises-${t.team.id}`}><strong>{t.team.name}</strong> · {tally(t.exercises) || 'none'}</li>)}</ul></section>}
     <div className="assessment-report-actions"><button onClick={onReport}>Session Report</button><button className="primary" disabled={blocked} onClick={onNewGame}>New Game</button><button onClick={onHome}>Back to Games</button></div>
   </main>;

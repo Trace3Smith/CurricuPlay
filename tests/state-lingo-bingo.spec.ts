@@ -1,5 +1,5 @@
-import { test, expect, type Page } from '@playwright/test';
-import { beginGame, boardLayout, freshSettings, judge, rollAll, setTarget, stateByCode, states, type BingoState, type Settings } from '../src/games/state-lingo-bingo/engine';
+import { test, expect, type Page, type CDPSession } from '@playwright/test';
+import { beginGame, boardLayout, freshSettings, judge, progress, rollAll, setTarget, stateByCode, states, type BingoState, type Settings } from '../src/games/state-lingo-bingo/engine';
 import { BINGO_ACTIVE_KEY } from '../src/games/state-lingo-bingo/keys';
 
 const key = BINGO_ACTIVE_KEY;
@@ -25,10 +25,11 @@ async function inject(page: Page, patch: Partial<Settings>, moves = true, exerci
   return s;
 }
 const done = (page: Page, team: string) => page.getByRole('button', { name: `✓ Done: ${team}` }).click();
+const progressTarget = (s: BingoState, team: string) => progress(s, team).target!;
 const squareName = (s: BingoState, team: string, i: number) => stateByCode.get(s.cards![team][i]!)!.name;
 async function fits(page: Page) {
   expect(await page.evaluate(() => ({ h: document.documentElement.scrollHeight <= innerHeight, w: document.documentElement.scrollWidth <= innerWidth }))).toEqual({ h: true, w: true });
-  const over = await page.locator('.slb-team, .slb-square, .slb-square .slb-name, .slb-team-head, .slb-exercise, .slb-exercise-text, .slb-exercise button, .slb-answer, .slb-answer input, .slb-answer button, .slb-reveal, .slb-target, .slb-controls button, .slb-fitness li, .header-actions button').evaluateAll(nodes => nodes.filter(n => {
+  const over = await page.locator('.slb-team, .slb-square, .slb-square .slb-name, .slb-team-head, .slb-exercise, .slb-exercise-text, .slb-exercise button, .slb-reveal, .slb-kbd, .slb-key, .slb-kbd-change, .slb-target, .slb-controls button, .slb-fitness li, .header-actions button').evaluateAll(nodes => nodes.filter(n => {
     const r = n.getBoundingClientRect();
     return r.top < 0 || r.left < 0 || r.bottom > innerHeight + 0.5 || r.right > innerWidth + 0.5 || n.scrollWidth > n.clientWidth + 1 || n.scrollHeight > n.clientHeight + 1;
   }).map(n => `${n.className}: ${n.textContent?.slice(0, 30)}`));
@@ -128,7 +129,9 @@ test('Full play-through: setup with custom names, targets, wrong tile, bingo, un
   await expect(page.getByText(/Undid the last tap \(wrong tile\) for Comets/)).toBeVisible();
   await page.getByRole('button', { name: '✗ Wrong tile' }).click();
   await done(page, 'Comets');
+  await page.getByRole('button', { name: 'Change state: Comets' }).click(); // the keyboard gives way to the grid
   await sq(5, 'team-2').click(); // change target before the tile returns
+  await expect(page.locator('[data-testid=card-team-2] .slb-kbd')).toBeVisible();
   await page.getByRole('button', { name: '✓ Correct capital' }).click();
   await expect(page.getByTestId('points-team-2')).toHaveText('1');
   await fits(page);
@@ -262,31 +265,52 @@ test('Every state name fits its square at one size per card in the bundled board
   expect(fonts.every(u => new URL(u).origin === new URL(page.url()).origin)).toBe(true);
 });
 
+/** Records every in-card cue as it appears and disappears, so short (1 s) cues are checked even on a busy machine. */
+async function watchCues(page: Page) {
+  await page.evaluate(() => {
+    const log: Record<string, unknown>[] = []; (window as any).__cues = log;
+    const seen = new Map<Element, Record<string, unknown>>();
+    const scan = () => {
+      for (const el of document.querySelectorAll('.slb-flash, .slb-target-cue')) if (!seen.has(el)) {
+        const card = el.closest('.slb-team')!, f = el.getBoundingClientRect(), c = card.getBoundingClientRect(), cs = getComputedStyle(el);
+        const entry = { team: card.getAttribute('data-testid'), kind: el.classList.contains('slb-flash') ? 'flash' : 'target', text: el.textContent, inside: f.left >= c.left - .5 && f.right <= c.right + .5 && f.top >= c.top - .5 && f.bottom <= c.bottom + .5,
+          pointer: cs.pointerEvents, animation: cs.animationName, added: performance.now(), removed: 0 };
+        seen.set(el, entry); log.push(entry);
+      }
+      for (const [el, entry] of seen) if (!el.isConnected || !(el.classList.contains('slb-flash') || el.classList.contains('slb-target-cue'))) { if (!entry.removed) entry.removed = performance.now(); }
+    };
+    new MutationObserver(scan).observe(document.body, { subtree: true, childList: true, attributes: true, attributeFilter: ['class'] });
+  });
+  return async () => page.evaluate(() => (window as any).__cues as { team: string; kind: string; text: string; inside: boolean; pointer: string; animation: string; added: number; removed: number }[]);
+}
+
 test('Feedback stays inside each team’s card, lasts about a second, never blocks other teams, and is still under reduced motion', async ({ page }) => {
   for (const motion of ['no-preference', 'reduce'] as const) {
     await page.emulateMedia({ reducedMotion: motion });
     const s = await inject(page, { teamCount: 8, size: 4 }, false);
+    const cues = await watchCues(page);
     // Eight teams pick their states one right after another; each card flashes on its own, nothing covers the board.
     for (let t = 1; t <= 8; t++) await page.getByRole('button', { name: new RegExp(`^Team ${t}: ${squareName(s, `team-${t}`, 0)}`) }).click();
-    await expect(page.locator('.slb-target-cue')).not.toHaveCount(0);
     await expect(page.locator('.slb-popup, [data-testid=target-popup]')).toHaveCount(0);
-    const cue = page.getByTestId('target-team-8');
-    await expect(cue).toHaveClass(/slb-target-cue/);
-    expect(await cue.evaluate(e => getComputedStyle(e).animationName)).toBe(motion === 'reduce' ? 'none' : 'slb-target-cue');
     for (let t = 1; t <= 8; t++) await expect(page.getByTestId(`target-team-${t}`)).toContainText(squareName(s, `team-${t}`, 0));
-    // Correct for team 1 while others are flashing: its "✓ Correct" stays in its own card and lets taps through.
+    // Correct for team 1, and team 2 types at the same time.
     await page.getByRole('button', { name: /^Team 1 / }).first().click();
     await page.getByRole('button', { name: '✓ Correct capital' }).click();
-    const flash = page.locator('[data-testid=card-team-1] .slb-flash');
-    await expect(flash).toHaveText('✓ Correct');
-    const [inside, events] = await flash.evaluate(e => { const f = e.getBoundingClientRect(), c = e.closest('.slb-team')!.getBoundingClientRect(); return [f.left >= c.left && f.right <= c.right && f.top >= c.top && f.bottom <= c.bottom, getComputedStyle(e).pointerEvents]; });
-    expect([inside, events]).toEqual([true, 'none']);
-    // Another team can still be tapped while team 1's feedback shows.
-    await page.getByRole('button', { name: new RegExp(`^Team 2: ${squareName(s, 'team-2', 1)}`) }).click();
-    await expect(page.getByTestId('target-team-2')).toContainText(squareName(s, 'team-2', 1));
-    // About a second, then gone.
-    await expect(flash).toHaveCount(0, { timeout: 1600 });
-    await expect(page.locator('.slb-target-cue')).toHaveCount(0, { timeout: 1600 });
+    await page.getByRole('button', { name: 'A: Team 2', exact: true }).click();
+    await expect(page.getByTestId('answer-team-2')).toHaveText('A');
+    // Everything has ended by itself.
+    await expect(page.locator('.slb-flash, .slb-target-cue')).toHaveCount(0, { timeout: 5000 });
+    const log = await cues();
+    const targets = log.filter(c => c.kind === 'target'), correct = log.find(c => c.kind === 'flash' && c.team === 'card-team-1');
+    expect(new Set(targets.map(c => c.team)).size, motion).toBe(8);
+    expect(correct?.text).toBe('✓ Correct');
+    for (const c of log) {
+      expect(c.inside, `${c.team} ${c.kind} inside its card`).toBe(true);
+      expect(c.animation === 'none', `${c.kind} animation (${motion})`).toBe(motion === 'reduce');
+      // (Team 1's target flash is replaced early by its "✓ Correct", as it should be.)
+      if (!(c.team === 'card-team-1' && c.kind === 'target')) expect(c.removed - c.added, `${c.team} ${c.kind} lasts about a second`).toBeGreaterThan(800);
+    }
+    expect(correct!.pointer).toBe('none');
   }
 });
 
@@ -378,8 +402,8 @@ test('Exercise lock: dimmed squares cannot be tapped, Re-roll changes the exerci
   await fits(page);
 });
 
-test('Answer box: Enter checks the typed capital leniently, marks it like ✓/✗, shows only “Not quite” after a wrong, and records what was said', async ({ page }) => {
-  // Team 1 picks Minnesota, Team 2 picks Florida (cards built so both states are on them).
+/** Two teams whose cards hold Minnesota (Rockets) and Florida (Comets) in the top-left square. */
+async function capitalsGame(page: Page) {
   const start = Date.now() - 60_000, at = (n: number) => new Date(start + n * 1000).toISOString();
   let s = beginGame({ ...freshSettings(), teamCount: 2, size: 5, names: ['Rockets', 'Comets', ...Array(8).fill('')] }, 'typed', at(0), seeded())!;
   s = { ...s, cards: { 'team-1': ['MN', ...s.cards!['team-1'].filter(c => c !== 'MN').slice(1)], 'team-2': ['FL', ...s.cards!['team-2'].filter(c => c !== 'FL').slice(1)] } };
@@ -388,50 +412,57 @@ test('Answer box: Enter checks the typed capital leniently, marks it like ✓/�
   await page.goto('/games');
   await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
   await page.goto('/games/state-lingo-bingo');
+  return s;
+}
+
+test('Teacher override box: Enter checks leniently, marks like ✓/✗, only “Not quite” after a wrong, and records the teacher entered it', async ({ page }) => {
+  await capitalsGame(page);
   const box = (team: string) => page.getByLabel(`Capital ${team} said`);
   await expect(box('Rockets')).toHaveCount(0); // no box until a state is picked
   await page.getByRole('button', { name: /^Rockets: Minnesota/ }).click();
-  await expect(box('Rockets')).toBeFocused();
+  // The teacher's box is in the bottom bar, never on the board, and never opens the touch keyboard.
+  await expect(page.locator('.slb-board input')).toHaveCount(0);
+  await expect(box('Rockets')).toHaveAttribute('inputmode', 'none');
+  await expect(box('Rockets')).not.toBeFocused();
   expect((await box('Rockets').boundingBox())!.height).toBeGreaterThanOrEqual(44);
   await box('Rockets').fill('  st. PAUL ');
   await box('Rockets').press('Enter');
   await expect(page.getByTestId('points-team-1')).toHaveText('1');
   await expect(page.getByTestId('exercise-team-1')).toBeVisible(); // new exercise, card relocked
   await expect(box('Rockets')).toHaveCount(0);
-  // A misspelling two letters off is accepted; a different capital is wrong and the right one is shown.
+  // A different capital is wrong; only "✗ Not quite" shows, never the capital.
   await page.getByRole('button', { name: /^Comets: Florida/ }).click();
   await box('Comets').fill('Miami');
   await page.getByRole('button', { name: 'Check Comets’s capital' }).click();
   await expect(page.getByTestId('points-team-2')).toHaveText('0');
-  // Only "✗ Not quite" on the card; the capital appears nowhere on the shared screen, including the bottom bar.
   await expect(page.getByTestId('reveal-team-2')).toHaveText('✗ Not quite');
   await expect(page.getByText('✗ Not quite for Comets. Same state, new exercise.')).toBeVisible();
   await expect(page.locator('.slb-app')).not.toContainText('Tallahassee');
   await expect(page.getByTestId('target-team-2')).toContainText('Florida');
   await done(page, 'Comets');
   await expect(page.getByTestId('reveal-team-2')).toHaveCount(0);
-  await box('Comets').fill('Talahasee');
+  await box('Comets').fill('Talahasee'); // two letters off: accepted
   await box('Comets').press('Enter');
   await expect(page.getByTestId('points-team-2')).toHaveText('1');
-  // Empty Enter does nothing; the ✓/✗ buttons still work.
+  // Empty Enter does nothing; the ✗ button still works.
   await done(page, 'Rockets');
   await page.getByRole('button', { name: /^Rockets: / }).filter({ hasNot: page.locator('.slb-marked') }).nth(1).click();
   await box('Rockets').press('Enter');
   await expect(page.getByTestId('points-team-1')).toHaveText('1');
   await page.getByRole('button', { name: '✗ Wrong tile' }).click();
   await expect(page.getByText('Wrong tile recorded for Rockets. Back to the pool!')).toBeVisible();
-  await expect(page.getByTestId('reveal-team-1')).toHaveText('✗ Not quite'); // the ✗ button shows the same
-  const saved1 = await saved(page);
-  expect(saved1.events!.filter(e => e.kind !== 'target').map(e => [e.teamId, e.kind, e.said])).toEqual([
-    ['team-1', 'correct', 'st. PAUL'], ['team-2', 'wrong', 'Miami'], ['team-2', 'correct', 'Talahasee'], ['team-1', 'wrong', undefined]]);
-  // Results and the shared Session Report list what each team said next to the state.
+  await expect(page.getByTestId('reveal-team-1')).toHaveText('✗ Not quite');
+  const second = (await saved(page)).events!.filter(e => e.kind === 'wrong' && e.teamId === 'team-1')[0].state;
+  expect((await saved(page)).events!.filter(e => e.kind !== 'target').map(e => [e.teamId, e.kind, e.said, e.by])).toEqual([
+    ['team-1', 'correct', 'st. PAUL', 'teacher'], ['team-2', 'wrong', 'Miami', 'teacher'], ['team-2', 'correct', 'Talahasee', 'teacher'], ['team-1', 'wrong', undefined, 'teacher']]);
+  // Results and the shared Session Report list each answer, what was said, and who entered it.
   await page.getByRole('button', { name: 'End Game', exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'End Game', exact: true }).click();
-  await expect(page.getByTestId('answers-team-1')).toHaveText('Rockets · Minnesota — said: st. PAUL ✓');
-  await expect(page.getByTestId('answers-team-2')).toHaveText('Comets · Florida — said: Miami ✗ · Florida — said: Talahasee ✓');
+  await expect(page.getByTestId('answers-team-1').locator('li')).toHaveText(['Minnesota — said: st. PAUL ✓ · teacher', `${stateByCode.get(second)!.name} — ✗ · teacher`]);
+  await expect(page.getByTestId('answers-team-2').locator('li')).toHaveText(['Florida — said: Miami ✗ · teacher', 'Florida — said: Talahasee ✓ · teacher']);
   await page.getByRole('button', { name: 'Session Report' }).click();
   await page.getByRole('button', { name: 'Team Performance' }).click();
-  await expect(page.getByTestId('said-team-2').locator('li')).toHaveText(['Florida — said: Miami ✗', 'Florida — said: Talahasee ✓']);
+  await expect(page.getByTestId('said-team-2').locator('li')).toHaveText(['Florida — said: Miami ✗ · teacher', 'Florida — said: Talahasee ✓ · teacher']);
 });
 
 test('Setup shows an answer-key link with a QR code; the game board does not', async ({ page }) => {
@@ -455,4 +486,76 @@ test('Answer key opens without sign-in at its own address', async ({ page }) => 
   await page.goto('/games/state-lingo-bingo/answer-key');
   await expect(page).toHaveURL(/\/games\/state-lingo-bingo\/answer-key$/);
   await expect(page.getByTestId('key-WY')).toContainText('Cheyenne');
+});
+
+/** Every team has picked a state and is typing (no exercises), so every card shows its keyboard. */
+async function typingGame(page: Page, teamCount: number) {
+  const start = Date.now() - 60_000, at = (n: number) => new Date(start + n * 1000).toISOString();
+  let s = beginGame({ ...freshSettings(), teamCount }, 'typing', at(0), seeded())!;
+  s.teams!.forEach((t, i) => { s = setTarget(s, t.id, s.cards![t.id].find(Boolean)!, at(1 + i)); });
+  await page.goto('/games');
+  await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
+  await page.goto('/games/state-lingo-bingo');
+  await expect(page.locator('.slb-kbd')).toHaveCount(teamCount);
+  return s;
+}
+/** Several fingers at once: one touch point per key, all down together, then all up (real multi-touch, not taps in turn). */
+async function touchAll(cdp: CDPSession, points: { x: number; y: number }[]) {
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: points.map((p, id) => ({ ...p, id })) });
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+}
+
+test('Eight teams type on their own keyboards at the same moment; each answer stays separate and is checked as the team’s', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 1920, height: 1080 }, hasTouch: true, baseURL: 'http://127.0.0.1:5173' });
+  const page = await context.newPage(), cdp = await context.newCDPSession(page);
+  const s = await typingGame(page, 8);
+  const teams = s.teams!, capital = (t: number) => stateByCode.get(progressTarget(s, teams[t].id))!.capital;
+  // Teams 1–6 type their own capital; teams 7 and 8 type each other's (a wrong answer).
+  const answers = teams.map((_, t) => (t === 6 ? capital(7) : t === 7 ? capital(6) : capital(t)).toUpperCase());
+  const center = async (label: string) => { const b = (await page.getByRole('button', { name: label, exact: true }).boundingBox())!; return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; };
+  const keyFor = (ch: string, team: string) => ch === ' ' ? `Space: ${team}` : `${ch}: ${team}`;
+  const longest = Math.max(...answers.map(a => a.length));
+  for (let i = 0; i < longest; i++) {
+    const presses = await Promise.all(teams.flatMap((t, n) => answers[n][i] ? [center(keyFor(answers[n][i], t.name))] : []));
+    await touchAll(cdp, presses);
+    for (const [n, t] of teams.entries()) await expect(page.getByTestId(`answer-${t.id}`), `${t.name} after ${i + 1} presses`).toHaveText(answers[n].slice(0, i + 1).replace(/ $/, ' '));
+  }
+  // Nothing on the board ever took text focus (so no touch keyboard), and no text box exists there.
+  expect(await page.evaluate(() => document.activeElement?.tagName)).not.toBe('INPUT');
+  await expect(page.locator('.slb-board input, .slb-board textarea, .slb-board [contenteditable]')).toHaveCount(0);
+  // Backspace in two cards at once only shortens those two answers.
+  await touchAll(cdp, [await center(`Backspace: ${teams[0].name}`), await center(`Backspace: ${teams[3].name}`)]);
+  await expect(page.getByTestId(`answer-${teams[0].id}`)).toHaveText(answers[0].slice(0, -1));
+  await expect(page.getByTestId(`answer-${teams[1].id}`)).toHaveText(answers[1]);
+  await touchAll(cdp, [await center(keyFor(answers[0].at(-1)!, teams[0].name)), await center(keyFor(answers[3].at(-1)!, teams[3].name))]);
+  // All eight press Submit together.
+  await touchAll(cdp, await Promise.all(teams.map(t => center(`Submit: ${t.name}`))));
+  for (let n = 0; n < 8; n++) await expect(page.getByTestId(`points-${teams[n].id}`)).toHaveText(n < 6 ? '1' : '0');
+  for (const n of [6, 7]) await expect(page.getByTestId(`reveal-${teams[n].id}`)).toHaveText('✗ Not quite');
+  for (const t of teams) await expect(page.getByTestId(`exercise-${t.id}`)).toBeVisible(); // everyone gets a new exercise
+  await expect(page.locator('.slb-app')).not.toContainText(capital(6));
+  const judged = (await saved(page)).events!.filter(e => e.kind !== 'target');
+  expect(judged).toHaveLength(8);
+  expect(judged.every(e => e.by === 'team')).toBe(true);
+  expect(Object.fromEntries(judged.map(e => [e.teamId, [e.kind, e.said]]))).toEqual(Object.fromEntries(teams.map((t, n) => [t.id, [n < 6 ? 'correct' : 'wrong', answers[n]]])));
+  await page.screenshot({ path: 'test-results/kbd-8-after-submit.png' });
+  await context.close();
+});
+
+test('Card keyboards: QWERTY or A–Z by card size; keys at least 44px at 1920×1080 for 2–10 teams; nothing overflows anywhere', async ({ page }) => {
+  test.setTimeout(240_000);
+  const smallest: string[] = [];
+  for (const [width, height] of sizes) {
+    await page.setViewportSize({ width, height });
+    for (let count = 2; count <= 10; count++) {
+      await typingGame(page, count);
+      await page.waitForTimeout(100);
+      const min = await page.locator('.slb-key').evaluateAll(keys => Math.min(...keys.map(k => { const b = k.getBoundingClientRect(); return Math.min(b.width, b.height); })));
+      if (width === 1920) expect(min, `${count} teams at 1920`).toBeGreaterThanOrEqual(44);
+      expect(min, `${count} teams at ${width}`).toBeGreaterThanOrEqual(26);
+      smallest.push(`${width}:${count}=${Math.floor(min)}`);
+      await fits(page);
+    }
+  }
+  console.log('Smallest keys:', smallest.join(' '));
 });

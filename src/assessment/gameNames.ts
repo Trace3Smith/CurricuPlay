@@ -9,3 +9,8 @@ export function tally(labels: readonly string[]): string {
   labels.forEach(l => counts.set(l, (counts.get(l) ?? 0) + 1));
   return [...counts].map(([label, n]) => n > 1 ? `${label} ×${n}` : label).join(', ');
 }
+
+/** One answer in a report: "Florida — said: Talahasee ✓ · team" (or "Florida — ✓ · teacher" for a ✓/✗ button). */
+export function answerLine(concept: string, said: string | undefined, correct: boolean, by?: 'team' | 'teacher') {
+  return `${concept} — ${said ? `said: ${said} ` : ''}${correct ? '✓' : '✗'}${by ? ` · ${by}` : ''}`;
+}

@@ -298,3 +298,20 @@ test('Typed capitals: lenient matching, never another state’s capital, and the
   expect(session.responses.map(r => r.said)).toEqual(['Miami', undefined]);
   expect(report(s).teams[0].answers).toEqual([{ state: s.cards!['team-1'][0], said: 'Miami', correct: false }]);
 });
+
+test('Who entered each answer: team or teacher is saved, validated, and reaches the shared session record', () => {
+  let s = game();
+  s = judge(setTarget(s, 'team-1', s.cards!['team-1'][0]!, at(1)), 'team-1', 'wrong', at(2), 'Miami', 'team');
+  s = judge(s, 'team-1', 'correct', at(3), undefined, 'teacher');
+  s = judge(setTarget(s, 'team-2', s.cards!['team-2'][0]!, at(4)), 'team-2', 'correct', at(5)); // an older-style mark
+  expect(s.events!.filter(e => e.kind !== 'target').map(e => e.by)).toEqual(['team', 'teacher', undefined]);
+  expect(isBingoState(JSON.parse(JSON.stringify(s)))).toBe(true);
+  const broken = (f: (x: any) => void) => { const x = JSON.parse(JSON.stringify(s)); f(x); return isBingoState(x); };
+  expect(broken(x => { x.events[1].by = 'student'; })).toBe(false);
+  expect(broken(x => { x.events[0].by = 'team'; })).toBe(false); // a target is not an answer
+  const session = buildSession(s);
+  expect(isGameSession(session)).toBe(true);
+  expect(session.responses.map(r => r.enteredBy)).toEqual(['team', 'teacher', undefined]);
+  expect(isGameSession({ ...session, responses: session.responses.map(r => ({ ...r, enteredBy: 'robot' })) })).toBe(false);
+  expect(report(s).teams[0].answers).toEqual([{ state: s.cards!['team-1'][0], said: 'Miami', correct: false, by: 'team' }, { state: s.cards!['team-1'][0], correct: true, by: 'teacher' }]);
+});

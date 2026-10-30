@@ -42,8 +42,10 @@ export interface Settings {
   teamCount: number; size: CardSize; regions: Region[]; squareMode: SquareMode;
   scoring: Scoring; fitness: string[]; names: string[]; // names[i] is '' for the default name
 }
-// `said` is the capital the teacher typed for a judged tile (absent when marked with the ✓/✗ buttons).
-export type BingoEvent = { kind: 'target' | 'correct' | 'wrong'; teamId: string; state: string; at: string; said?: string };
+// On a judged tile: `said` is the capital typed (absent for the ✓/✗ buttons); `by` is who entered it,
+// the team on its card keyboard or the teacher (absent in older saves).
+export type EnteredBy = 'team' | 'teacher';
+export type BingoEvent = { kind: 'target' | 'correct' | 'wrong'; teamId: string; state: string; at: string; said?: string; by?: EnteredBy };
 /** A team's current fitness-card exercise. While it is not done, the team's card is locked. `roll` counts rolls. */
 export interface ExerciseRoll { exercise: number; done: boolean; roll: number }
 /** An exercise a team finished (its fitness-card text at the time), for the results and the Session Report. */
@@ -136,9 +138,9 @@ export function setTarget(s: BingoState, teamId: string, state: string, now: str
   if (s.screen !== 'play' || !s.cards?.[teamId]?.includes(state) || progress(s, teamId).marked.has(state)) return s;
   return { ...s, events: [...s.events!, { kind: 'target', teamId, state, at: now }] };
 }
-export function judge(s: BingoState, teamId: string, kind: 'correct' | 'wrong', now: string, said?: string): BingoState {
+export function judge(s: BingoState, teamId: string, kind: 'correct' | 'wrong', now: string, said?: string, by?: EnteredBy): BingoState {
   const target = s.screen === 'play' ? progress(s, teamId).target : null, typed = said?.trim().slice(0, ANSWER_LIMIT);
-  return target ? { ...s, events: [...s.events!, { kind, teamId, state: target, at: now, ...(typed ? { said: typed } : {}) }] } : s;
+  return target ? { ...s, events: [...s.events!, { kind, teamId, state: target, at: now, ...(typed ? { said: typed } : {}), ...(by ? { by } : {}) }] } : s;
 }
 
 /** Lenient capital check: ignores case, accents, spaces and punctuation, reads "St." as "Saint",
@@ -203,12 +205,12 @@ export function buildSession(s: BingoState): GameSession {
     let points = 0;
     if (e.kind === 'correct') { after.add(e.state); points = correctPoints(s.cards![e.teamId], before, after, s.settings.scoring); marked.set(e.teamId, after); }
     session = commitQuestion(session, { questionId: `attempt-${i + 1}::${e.state}`, subject: 'States & Capitals', concept: state.name, prompt: `${state.name} — capital: ${state.capital}` },
-      [{ teamId: e.teamId, correct: e.kind === 'correct', pointsAwarded: points, ...(e.said ? { said: e.said } : {}) }], e.at);
+      [{ teamId: e.teamId, correct: e.kind === 'correct', pointsAwarded: points, ...(e.said ? { said: e.said } : {}), ...(e.by ? { enteredBy: e.by } : {}) }], e.at);
   });
   return s.endedAt ? endSession(session, s.endedAt) : session;
 }
 
-export interface TypedAnswer { state: string; said: string; correct: boolean }
+export interface TypedAnswer { state: string; said?: string; correct: boolean; by?: EnteredBy }
 export interface TeamReport { team: AssessmentTeam; score: number; correct: number; wrong: number; lines: number; blackout: boolean; missed: string[]; exercises: string[]; answers: TypedAnswer[] }
 export interface ReviewItem { state: string; teamId: string; reason: 'missed' | 'slow'; seconds?: number }
 export function report(s: BingoState): { teams: TeamReport[]; review: ReviewItem[] } {
@@ -217,7 +219,8 @@ export function report(s: BingoState): { teams: TeamReport[]; review: ReviewItem
     const p = progress(s, team.id), mine = events.filter(e => e.teamId === team.id);
     return { team, score: p.score, correct: p.marked.size, wrong: p.wrong, lines: p.lines, blackout: p.blackout, missed: [...new Set(mine.filter(e => e.kind === 'wrong').map(e => e.state))],
       exercises: (s.exerciseLog ?? []).filter(e => e.teamId === team.id).map(e => e.label),
-      answers: mine.filter(e => e.kind !== 'target' && e.said).map(e => ({ state: e.state, said: e.said!, correct: e.kind === 'correct' })) };
+      // Every tile with a typed answer or a known enterer (team keyboard or teacher), in order.
+      answers: mine.filter(e => e.kind !== 'target' && (e.said || e.by)).map(e => ({ state: e.state, ...(e.said ? { said: e.said } : {}), correct: e.kind === 'correct', ...(e.by ? { by: e.by } : {}) })) };
   });
   // Time to find: from the target being set to the correct tap.
   const timed: ReviewItem[] = [];
@@ -279,7 +282,8 @@ export function isBingoState(value: unknown): value is BingoState {
     for (const e of s.events) {
       if (!e || !['target', 'correct', 'wrong'].includes(e.kind) || !time(e.at) || Date.parse(e.at) < last || Date.parse(e.at) > end || !s.cards[e.teamId]) return false;
       if (e.said !== undefined && (e.kind === 'target' || !text(e.said) || !e.said.trim() || e.said !== e.said.trim() || e.said.length > ANSWER_LIMIT)) return false;
-      const next = e.kind === 'target' ? setTarget(replay, e.teamId, e.state, e.at) : progress(replay, e.teamId).target === e.state ? judge(replay, e.teamId, e.kind, e.at, e.said) : replay;
+      if (e.by !== undefined && (e.kind === 'target' || (e.by !== 'team' && e.by !== 'teacher'))) return false;
+      const next = e.kind === 'target' ? setTarget(replay, e.teamId, e.state, e.at) : progress(replay, e.teamId).target === e.state ? judge(replay, e.teamId, e.kind, e.at, e.said, e.by) : replay;
       if (next === replay) return false;
       replay = next; last = Date.parse(e.at);
     }

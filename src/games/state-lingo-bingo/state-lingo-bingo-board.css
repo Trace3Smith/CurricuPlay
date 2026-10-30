@@ -183,3 +183,30 @@
 .app.slb-app .slb-flash.slb-cue-bingo{animation-duration:1.3s}
 @media (prefers-reduced-motion:reduce){.app.slb-app .slb-target.slb-target-cue,.app.slb-app .slb-target-cue small,.app.slb-app .slb-target-cue .slb-name,.app.slb-app .slb-flash{animation:none}}
 .app.slb-app .slb-flash{background:var(--ds-board);text-shadow:none;z-index:4}
+
+/* Team answer keyboard: replaces that team's grid (row 3) once it has picked a state. Keys are buttons, never text inputs.
+   The answer itself shows in the target bar (state · answer · Change), so the keys get the card's height. */
+.app.slb-app .slb-card.slb-card-hidden{display:none}
+.app.slb-app .slb-team > .slb-kbd{grid-row:3;grid-column:1;min-height:0;min-width:0;display:flex;align-items:center}
+.app.slb-app .slb-target:has(.slb-kbd-text){height:max(46px,15cqh);gap:1.2cqw;padding-right:3px}
+.app.slb-app .slb-target:has(.slb-kbd-text) small{display:none}
+.app.slb-app .slb-target:has(.slb-kbd-text) .slb-target-face{flex:0 1 34%}
+.app.slb-app .slb-kbd-text{flex:1 1 0;min-width:0;align-self:stretch;display:flex;align-items:center;margin:3px 0;padding:0 .35em;border-radius:8px;background:var(--ds-surface);color:var(--ds-on-surface);overflow:hidden;white-space:pre;font-family:var(--ds-font-board);font-weight:700;font-size:clamp(16px,min(6cqw,8cqh),52px)}
+.app.slb-app .slb-kbd-text::after{content:'';flex:none;width:3px;height:1.1em;margin-left:2px;background:var(--ds-on-surface)}
+.app.slb-app .slb-kbd-text.slb-kbd-empty{color:var(--ds-text-muted);font-size:clamp(13px,min(4.4cqw,6cqh),36px)}
+.app.slb-app .slb-kbd-text.slb-kbd-empty::after{display:none}
+.app.slb-app .slb-kbd-change{flex:none;align-self:center;min-height:0;height:calc(100% - 6px);padding:0 .6em;border-radius:8px;font-size:clamp(13px,min(3.4cqw,4.5cqh),24px)}
+/* Narrow cards: a shorter prompt so it is never cut off. */
+.app.slb-app .slb-kbd-short{display:none}
+@container (max-width:380px){.app.slb-app .slb-kbd-long{display:none}.app.slb-app .slb-kbd-short{display:inline}}
+.app.slb-app .slb-kbd-grid{flex:1;display:grid;gap:4px;align-content:center}
+.app.slb-app .slb-key{min-width:0;min-height:0;height:100%;padding:0;border-radius:8px;border:2px solid var(--ds-on-board);background:var(--ds-primary-dark);color:var(--ds-on-board);font-family:var(--ds-font-board);font-weight:700;font-size:var(--key-font);line-height:1;touch-action:manipulation;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.app.slb-app .slb-key:hover:not(:disabled){background:var(--ds-primary);border-color:var(--ds-on-board)}
+.app.slb-app .slb-key:active:not(:disabled){background:var(--ds-on-board);color:var(--ds-board)}
+.app.slb-app .slb-key.slb-key-submit{background:var(--ds-highlight);border-color:var(--ds-highlight);color:var(--ds-on-highlight)}
+.app.slb-app .slb-key.slb-key-submit:hover:not(:disabled){background:var(--ds-highlight);filter:brightness(1.08)}
+.app.slb-app .slb-key:disabled{opacity:.45}
+.app.slb-app .slb-key-space,.app.slb-app .slb-key-submit,.app.slb-app .slb-key-back{font-size:calc(var(--key-font) * .8)}
+.app.slb-app .slb-teacher-answer{display:flex;gap:6px}
+.app.slb-app .slb-teacher-answer input{min-height:44px;width:min(260px,22vw);padding:0 .5em;border:2px solid var(--ds-on-board);border-radius:10px;background:var(--ds-surface);color:var(--ds-on-surface);font:700 18px var(--ds-font-board)}
+.app.slb-app .slb-teacher-answer button{min-height:44px;min-width:48px;background:var(--ds-highlight);border-color:var(--ds-highlight);color:var(--ds-on-highlight)}
