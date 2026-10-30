@@ -190,12 +190,16 @@
 .app.slb-app .slb-team > .slb-kbd{grid-row:3;grid-column:1;min-height:0;min-width:0;display:flex;align-items:center}
 .app.slb-app .slb-target:has(.slb-kbd-text){height:max(46px,15cqh);gap:1.2cqw;padding-right:3px}
 .app.slb-app .slb-target:has(.slb-kbd-text) small{display:none}
-.app.slb-app .slb-target:has(.slb-kbd-text) .slb-target-face{flex:0 1 34%}
+/* The state name keeps a readable size (never smaller than the Change button text) and wraps to two lines;
+   the answer box gives up width instead. Sizes use the team card's units, not the name box's. */
+.app.slb-app .slb-target:has(.slb-kbd-text) .slb-target-face{flex:0 1 auto;max-width:52%;container-type:normal;justify-content:flex-start}
+.app.slb-app .slb-target:has(.slb-kbd-text) .slb-target-face .slb-name{font-size:clamp(14px,min(7.5cqw,7cqh),44px);line-height:1.02;white-space:normal;overflow-wrap:normal;word-break:keep-all;text-align:left;max-width:100%}
+.app.slb-app .slb-target:has(.slb-kbd-text) .slb-kbd-text{min-width:24%}
 .app.slb-app .slb-kbd-text{flex:1 1 0;min-width:0;align-self:stretch;display:flex;align-items:center;margin:3px 0;padding:0 .35em;border-radius:8px;background:var(--ds-surface);color:var(--ds-on-surface);overflow:hidden;white-space:pre;font-family:var(--ds-font-board);font-weight:700;font-size:clamp(16px,min(6cqw,8cqh),52px)}
 .app.slb-app .slb-kbd-text::after{content:'';flex:none;width:3px;height:1.1em;margin-left:2px;background:var(--ds-on-surface)}
 .app.slb-app .slb-kbd-text.slb-kbd-empty{color:var(--ds-text-muted);font-size:clamp(13px,min(4.4cqw,6cqh),36px)}
 .app.slb-app .slb-kbd-text.slb-kbd-empty::after{display:none}
-.app.slb-app .slb-kbd-change{flex:none;align-self:center;min-height:0;height:calc(100% - 6px);padding:0 .6em;border-radius:8px;font-size:clamp(13px,min(3.4cqw,4.5cqh),24px)}
+.app.slb-app .slb-kbd-change{flex:none;align-self:center;min-height:0;height:calc(100% - 6px);padding:0 .5em;border-radius:8px;font-size:clamp(13px,min(3.4cqw,4.5cqh),24px)}
 /* Narrow cards: a shorter prompt so it is never cut off. */
 .app.slb-app .slb-kbd-short{display:none}
 @container (max-width:380px){.app.slb-app .slb-kbd-long{display:none}.app.slb-app .slb-kbd-short{display:inline}}

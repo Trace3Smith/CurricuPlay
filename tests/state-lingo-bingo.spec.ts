@@ -559,3 +559,51 @@ test('Card keyboards: QWERTY or A–Z by card size; keys at least 44px at 1920×
   }
   console.log('Smallest keys:', smallest.join(' '));
 });
+
+test('Answer bar: every long state name stays readable (at least the Change button’s size, at most two lines) at 2–10 teams and all three screens', async ({ page }) => {
+  test.setTimeout(300_000);
+  // The names called out from class use, plus every other state name of 10 or more letters.
+  const named = ['Massachusetts', 'Pennsylvania', 'New Hampshire', 'North Carolina', 'South Carolina', 'Connecticut', 'West Virginia', 'Rhode Island'];
+  const long = [...new Set([...named, ...states.map(x => x.name).filter(n => n.length >= 10)])];
+  const code = (name: string) => states.find(x => x.name === name)!.code;
+  const problems: string[] = [];
+  let smallest = Infinity;
+  for (const [width, height] of sizes) {
+    await page.setViewportSize({ width, height });
+    for (let count = 2; count <= 10; count++) {
+      for (let pass = 0; pass * count < long.length; pass++) {
+        const start = Date.now() - 60_000, at = (n: number) => new Date(start + n * 1000).toISOString();
+        let s = beginGame({ ...freshSettings(), teamCount: count, size: 5 }, 'long', at(0), seeded())!;
+        const cards = { ...s.cards! };
+        s.teams!.forEach((t, i) => {
+          const want = code(long[(pass * count + i) % long.length]), card = [...cards[t.id]];
+          if (!card.includes(want)) card[card.findIndex(Boolean)] = want;
+          cards[t.id] = card;
+        });
+        s = { ...s, cards };
+        s.teams!.forEach((t, i) => { s = setTarget(s, t.id, code(long[(pass * count + i) % long.length]), at(1 + i)); });
+        await page.goto('/games');
+        await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, JSON.stringify(s)]);
+        await page.goto('/games/state-lingo-bingo');
+        await expect(page.locator('.slb-kbd')).toHaveCount(count);
+        await page.evaluate(() => document.fonts.ready);
+        const bars = await page.locator('.slb-target:has(.slb-kbd-text)').evaluateAll(nodes => nodes.map(bar => {
+          const name = bar.querySelector('.slb-target-face .slb-name') as HTMLElement, change = bar.querySelector('.slb-kbd-change') as HTMLElement;
+          const box = bar.getBoundingClientRect(), range = document.createRange(); range.selectNodeContents(name);
+          const lines = new Set([...range.getClientRects()].map(r => Math.round(r.top))).size;
+          const clipped = [...range.getClientRects()].some(r => r.left < box.left - .5 || r.right > box.right + .5 || r.top < box.top - .5 || r.bottom > box.bottom + .5);
+          return { text: name.textContent, size: parseFloat(getComputedStyle(name).fontSize), change: parseFloat(getComputedStyle(change).fontSize), lines, clipped };
+        }));
+        for (const b of bars) {
+          smallest = Math.min(smallest, b.size);
+          if (b.size < b.change || b.lines > 2 || b.clipped) problems.push(`${width} ${count} teams: ${b.text} ${b.size}px (Change ${b.change}px), ${b.lines} lines${b.clipped ? ', clipped' : ''}`);
+        }
+        await fits(page);
+        if (width === 1920 && count === 8 && pass === 0) await page.screenshot({ path: 'test-results/long-names-8-1920.png' });
+        if (width === 1280 && count === 10 && pass === 0) await page.screenshot({ path: 'test-results/long-names-10-1280.png' });
+      }
+    }
+  }
+  expect(problems).toEqual([]);
+  console.log(`Long names checked: ${long.join(', ')}. Smallest name size: ${smallest}px.`);
+});
