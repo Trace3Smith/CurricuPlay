@@ -2,15 +2,11 @@
  "batch": "2026-10",
  "jeopardy": 64,
  "fourCorners": 57,
- "spellingBeeNew": 113,
+ "spellingBeeNew": 114,
  "spellingBeeResolved": [
   "pacing-K-cat"
  ],
  "skipped": [
-  {
-   "id": "K-sb-17",
-   "reason": "held: cap: children read the photo as 'hat'; H is not taught in Kindergarten yet (teacher decision Oct 25)."
-  },
   {
    "id": "K-fc-9",
    "reason": "remove"

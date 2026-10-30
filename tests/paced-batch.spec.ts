@@ -63,5 +63,5 @@ test('Spelling Bee: October words unlock on their days and the Kindergarten lett
   expect(k('2026-10-26', 'current')).toContain('egg');
   // C was taught Sept 23, so it is Review from Oct 23.
   expect(k('2026-10-23', 'review')).toEqual(expect.arrayContaining(['cat', 'can', 'pan', 'pin']));
-  expect(k('2026-10-23', 'mixed')).not.toContain('cap'); // held: children call the photo a hat
+  expect(k('2026-10-23', 'mixed')).toContain('cap'); // released: children who call the photo a hat are accepted with H
 });

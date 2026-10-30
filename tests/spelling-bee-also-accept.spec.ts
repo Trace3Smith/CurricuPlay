@@ -69,6 +69,14 @@ test('Letter choices never offer an accepted letter as a wrong choice; words wit
   expect(letterChoices(withB, 3)).toEqual(letterChoices(plain, 3)); // B was never a filler
 });
 
+test('October’s cap ships with H (hat) accepted and teaches C', () => {
+  const cap = curriculumBank.find(w => w.grade === 'K' && w.word === 'cap')!;
+  expect(cap).toMatchObject({ activity: 'initial', picture: 'cap', alsoAccept: [{ letter: 'H', because: 'hat' }] });
+  expect(teachingLine(cap, 'H')).toBe('Yes! Hat starts with H. This is a cap, and cap starts with C.');
+  expect(acceptedLabel(cap, 'H')).toBe('H (hat)');
+  expect(letterChoices(cap, 3)).not.toContain('H');
+});
+
 async function load(page: Page, s: BeeState) {
   await page.goto('/games');
   await page.evaluate(([k, v]) => localStorage.setItem(k, v), [ACTIVE_KEY, JSON.stringify(s)]);
