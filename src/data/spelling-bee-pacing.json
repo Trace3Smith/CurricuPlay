@@ -11632,5 +11632,4493 @@
     },
     "evidenceId": "paced-2026-10-5-sb-19",
     "complexity": "academic"
+  },
+  {
+    "id": "pacing-1-shed",
+    "grade": "1",
+    "word": "shed",
+    "clue": "Dad keeps his rake and tools in the ___ out back.",
+    "skill": "Review: beginning digraph sh-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review: beginning digraph sh-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Wednesday 4; Phonics row",
+      "unit": "Nov 2–6; Wednesday 4; Phonics row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-0. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-0",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-whip",
+    "grade": "1",
+    "word": "whip",
+    "clue": "Mom will ___ the cream until it is light and fluffy.",
+    "skill": "Review: beginning digraph wh-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review: beginning digraph wh-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Wednesday 4; Phonics row",
+      "unit": "Nov 2–6; Wednesday 4; Phonics row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-1. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-1",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-bench",
+    "grade": "1",
+    "word": "bench",
+    "clue": "A long seat at the park that two or three people can share.",
+    "skill": "Review: ending digraph -ch",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review: ending digraph -ch",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Thursday 5; Phonics row",
+      "unit": "Nov 2–6; Thursday 5; Phonics row",
+      "earliestEligible": "2026-11-05",
+      "periods": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-05"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-2. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-2",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-fetch",
+    "grade": "1",
+    "word": "fetch",
+    "clue": "Throw the stick, and the dog will run to ___ it.",
+    "skill": "Review: trigraph -tch",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review: trigraph -tch",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Thursday 5; Phonics row",
+      "unit": "Nov 2–6; Thursday 5; Phonics row",
+      "earliestEligible": "2026-11-05",
+      "periods": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-05"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-3. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-3",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-bang",
+    "grade": "1",
+    "word": "bang",
+    "clue": "A big, loud sound, like a pot hitting the floor.",
+    "skill": "Review: ending digraph -ng",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review: ending digraph -ng",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Thursday 5; Phonics row",
+      "unit": "Nov 2–6; Thursday 5; Phonics row",
+      "earliestEligible": "2026-11-05",
+      "periods": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-05"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-4. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-4",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-plug",
+    "grade": "1",
+    "word": "plug",
+    "clue": "Push this into the wall so the lamp can turn on.",
+    "skill": "Review: beginning blend pl-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review: beginning blend pl-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Friday 6; Phonics row",
+      "unit": "Nov 2–6; Friday 6; Phonics row",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-06",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-5. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-5",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-skin",
+    "grade": "1",
+    "word": "skin",
+    "clue": "It covers your whole body, from your head to your toes.",
+    "skill": "Review: beginning blend sk-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review: beginning blend sk-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Friday 6; Phonics row",
+      "unit": "Nov 2–6; Friday 6; Phonics row",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-06",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-6. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-6",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-like",
+    "grade": "1",
+    "word": "like",
+    "clue": "I ___ to play outside with my friends.",
+    "skill": "Review Super Words: like, make, there, what; go, no, so, which",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review Super Words: like, make, there, what; go, no, so, which",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Wednesday 4; High-Frequency Words row",
+      "unit": "Nov 2–6; Wednesday 4; High-Frequency Words row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-7. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-7",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-what",
+    "grade": "1",
+    "word": "what",
+    "clue": "___ is your name?",
+    "skill": "Review Super Words: like, make, there, what; go, no, so, which",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review Super Words: like, make, there, what; go, no, so, which",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Wednesday 4; High-Frequency Words row",
+      "unit": "Nov 2–6; Wednesday 4; High-Frequency Words row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-8. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-8",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-which",
+    "grade": "1",
+    "word": "which",
+    "clue": "___ one do you want, the red cup or the blue cup?",
+    "skill": "Review Super Words: like, make, there, what; go, no, so, which",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Review Super Words: like, make, there, what; go, no, so, which",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 2–6; Wednesday 4; High-Frequency Words row",
+      "unit": "Nov 2–6; Wednesday 4; High-Frequency Words row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-9. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-9",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-crab",
+    "grade": "1",
+    "word": "crab",
+    "clue": "A sea animal with a hard shell that walks sideways.",
+    "skill": "Beginning blend cr-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend cr-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Monday 9; Phonics row",
+      "unit": "Nov 9–13; Monday 9; Phonics row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-10. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-10",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-frog",
+    "grade": "1",
+    "word": "frog",
+    "clue": "A green animal that hops and says ribbit.",
+    "skill": "Beginning blend fr-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend fr-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Monday 9; Phonics row",
+      "unit": "Nov 9–13; Monday 9; Phonics row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-11. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-11",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-fresh",
+    "grade": "1",
+    "word": "fresh",
+    "clue": "Just picked, not old: ___ apples from the tree.",
+    "skill": "Beginning blend fr- with digraph -sh",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend fr- with digraph -sh",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Monday 9; Phonics row",
+      "unit": "Nov 9–13; Monday 9; Phonics row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-12. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-12",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-drum",
+    "grade": "1",
+    "word": "drum",
+    "clue": "You tap it with sticks to make a beat.",
+    "skill": "Beginning blend dr-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend dr-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Wednesday 11; Phonics row",
+      "unit": "Nov 9–13; Wednesday 11; Phonics row",
+      "earliestEligible": "2026-11-11",
+      "periods": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-13. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-13",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-drip",
+    "grade": "1",
+    "word": "drip",
+    "clue": "A leaky sink lets water fall one drop at a time.",
+    "skill": "Beginning blend dr-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend dr-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Wednesday 11; Phonics row",
+      "unit": "Nov 9–13; Wednesday 11; Phonics row",
+      "earliestEligible": "2026-11-11",
+      "periods": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-14. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-14",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-trap",
+    "grade": "1",
+    "word": "trap",
+    "clue": "A box or net used to catch something.",
+    "skill": "Beginning blend tr-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend tr-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Wednesday 11; Phonics row",
+      "unit": "Nov 9–13; Wednesday 11; Phonics row",
+      "earliestEligible": "2026-11-11",
+      "periods": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-15. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-15",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-into",
+    "grade": "1",
+    "word": "into",
+    "clue": "The frog jumped ___ the pond.",
+    "skill": "Super Words: into, more, one, you, your",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: into, more, one, you, your",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Monday 9; High-Frequency Words row",
+      "unit": "Nov 9–13; Monday 9; High-Frequency Words row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-16. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-16",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-more",
+    "grade": "1",
+    "word": "more",
+    "clue": "I am still hungry. May I have some ___?",
+    "skill": "Super Words: into, more, one, you, your",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: into, more, one, you, your",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Monday 9; High-Frequency Words row",
+      "unit": "Nov 9–13; Monday 9; High-Frequency Words row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-17. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-17",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-one",
+    "grade": "1",
+    "word": "one",
+    "clue": "The number that comes just before two.",
+    "skill": "Super Words: into, more, one, you, your",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: into, more, one, you, your",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Monday 9; High-Frequency Words row",
+      "unit": "Nov 9–13; Monday 9; High-Frequency Words row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-18. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-18",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-your",
+    "grade": "1",
+    "word": "your",
+    "clue": "Is this ___ coat, or is it mine?",
+    "skill": "Super Words: into, more, one, you, your",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: into, more, one, you, your",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 9–13; Tuesday 10; High-Frequency Words row",
+      "unit": "Nov 9–13; Tuesday 10; High-Frequency Words row",
+      "earliestEligible": "2026-11-10",
+      "periods": [
+        {
+          "start": "2026-11-10",
+          "end": "2026-11-10"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-19. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-19",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-brick",
+    "grade": "1",
+    "word": "brick",
+    "clue": "A hard red block used to build a wall.",
+    "skill": "Beginning blend br-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend br-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Monday 16; Phonics row",
+      "unit": "Nov 16–20; Monday 16; Phonics row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-20. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-20",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-grab",
+    "grade": "1",
+    "word": "grab",
+    "clue": "Reach out and take hold of something fast.",
+    "skill": "Beginning blend gr-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend gr-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Monday 16; Phonics row",
+      "unit": "Nov 16–20; Monday 16; Phonics row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-21. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-21",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-snack",
+    "grade": "1",
+    "word": "snack",
+    "clue": "A small bite of food you eat between meals.",
+    "skill": "Beginning blend sn-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend sn-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Wednesday 18; Phonics row",
+      "unit": "Nov 16–20; Wednesday 18; Phonics row",
+      "earliestEligible": "2026-11-18",
+      "periods": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-22. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-22",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-swim",
+    "grade": "1",
+    "word": "swim",
+    "clue": "Fish move through the water when they do this.",
+    "skill": "Beginning blend sw-",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend sw-",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Wednesday 18; Phonics row",
+      "unit": "Nov 16–20; Wednesday 18; Phonics row",
+      "earliestEligible": "2026-11-18",
+      "periods": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-23. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-23",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-swing",
+    "grade": "1",
+    "word": "swing",
+    "clue": "At the playground, you sit on it and go back and forth.",
+    "skill": "Beginning blend sw- with -ng",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Beginning blend sw- with -ng",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Wednesday 18; Phonics row",
+      "unit": "Nov 16–20; Wednesday 18; Phonics row",
+      "earliestEligible": "2026-11-18",
+      "periods": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-24. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-24",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-brushing",
+    "grade": "1",
+    "word": "brushing",
+    "clue": "Right now I am ___ my teeth before bed.",
+    "skill": "Inflectional ending -ing (with br- blend)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Inflectional ending -ing (with br- blend)",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; I Can",
+      "unit": "Nov 16–20; I Can",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-25. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-25",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-could",
+    "grade": "1",
+    "word": "could",
+    "clue": "I wish I ___ fly like a bird.",
+    "skill": "Super Words: could, great, said, would",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: could, great, said, would",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "unit": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-26. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-26",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-great",
+    "grade": "1",
+    "word": "great",
+    "clue": "Wow, you did a ___ job!",
+    "skill": "Super Words: could, great, said, would",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: could, great, said, would",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "unit": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-27. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-27",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-said",
+    "grade": "1",
+    "word": "said",
+    "clue": "“Hello!” Mom ___ when I came home.",
+    "skill": "Super Words: could, great, said, would",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: could, great, said, would",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "unit": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-28. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-28",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-1-would",
+    "grade": "1",
+    "word": "would",
+    "clue": "___ you like some juice?",
+    "skill": "Super Words: could, great, said, would",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "1",
+      "subject": "Literacy",
+      "target": "Super Words: could, great, said, would",
+      "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+      "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+      "locator": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "unit": "Nov 16–20; Monday 16; High-Frequency Words row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 1-sb-29. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-1-sb-29",
+    "complexity": "foundation"
+  },
+  {
+    "id": "pacing-2-said",
+    "grade": "2",
+    "word": "said",
+    "clue": "Mom ___, \"Put on your coat before we go outside.\"",
+    "skill": "High-frequency words review: by, down, my, said",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "High-frequency words review: by, down, my, said",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Wednesday 4 (Session 27), High-Frequency Words row",
+      "unit": "Nov 2–6, Wednesday 4 (Session 27), High-Frequency Words row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-0. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-0",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-down",
+    "grade": "2",
+    "word": "down",
+    "clue": "The leaves fell ___ from the tree to the ground.",
+    "skill": "High-frequency words review: by, down, my, said",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "High-frequency words review: by, down, my, said",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Wednesday 4 (Session 27), High-Frequency Words row",
+      "unit": "Nov 2–6, Wednesday 4 (Session 27), High-Frequency Words row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-1. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-1",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-rice",
+    "grade": "2",
+    "word": "rice",
+    "clue": "We ate beans and ___ for dinner. The c sounds like s.",
+    "skill": "Review: final e and soft c",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Review: final e and soft c",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "unit": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-2. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-2",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-page",
+    "grade": "2",
+    "word": "page",
+    "clue": "Turn to the next ___ of the book. The g sounds like j.",
+    "skill": "Review: final e and soft g",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Review: final e and soft g",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "unit": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-3. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-3",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-baking",
+    "grade": "2",
+    "word": "baking",
+    "clue": "Grandma is ___ cookies in the oven right now. (Drop the e, add -ing.)",
+    "skill": "Review: endings -ing with final e",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Review: endings -ing with final e",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "unit": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-4. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-4",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-smiled",
+    "grade": "2",
+    "word": "smiled",
+    "clue": "The baby looked at me and ___ with a big, happy grin. (Past tense of smile.)",
+    "skill": "Review: endings -ed with final e",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Review: endings -ed with final e",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "unit": "Nov 2–6, Wednesday 4 (Session 27), Phonics row",
+      "earliestEligible": "2026-11-04",
+      "periods": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-04"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-5. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-5",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-street",
+    "grade": "2",
+    "word": "street",
+    "clue": "Look both ways before you cross the ___.",
+    "skill": "Review: three-letter blend str + long e (ee)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Review: three-letter blend str + long e (ee)",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Thursday 5 (Session 28), Phonics row",
+      "unit": "Nov 2–6, Thursday 5 (Session 28), Phonics row",
+      "earliestEligible": "2026-11-05",
+      "periods": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-05"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-6. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-6",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-three",
+    "grade": "2",
+    "word": "three",
+    "clue": "The number after two is ___.",
+    "skill": "Review: three-letter blend thr + long e (ee)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Review: three-letter blend thr + long e (ee)",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Thursday 5 (Session 28), Phonics row",
+      "unit": "Nov 2–6, Thursday 5 (Session 28), Phonics row",
+      "earliestEligible": "2026-11-05",
+      "periods": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-05"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-7. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-7",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-baby",
+    "grade": "2",
+    "word": "baby",
+    "clue": "A very young child who cannot walk yet is a ___.",
+    "skill": "Review: open syllables (long a) and long e spelled y",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Review: open syllables (long a) and long e spelled y",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 2–6, Friday 6 (Sessions 29 & 30), Phonics row",
+      "unit": "Nov 2–6, Friday 6 (Sessions 29 & 30), Phonics row",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-06",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-8. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-8",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-been",
+    "grade": "2",
+    "word": "been",
+    "clue": "I have ___ to the beach two times.",
+    "skill": "High-frequency words: also, been, good, look",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "High-frequency words: also, been, good, look",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Monday 9 (Session 1), High-Frequency Words row",
+      "unit": "Nov 9–13, Monday 9 (Session 1), High-Frequency Words row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-9. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-9",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-also",
+    "grade": "2",
+    "word": "also",
+    "clue": "I like apples, and I ___ like grapes. It means \"too.\"",
+    "skill": "High-frequency words: also, been, good, look",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "High-frequency words: also, been, good, look",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Monday 9 (Session 1), High-Frequency Words row",
+      "unit": "Nov 9–13, Monday 9 (Session 1), High-Frequency Words row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-10. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-10",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-desert",
+    "grade": "2",
+    "word": "desert",
+    "clue": "A dry place that gets very little rain. (Not the sweet treat after dinner!)",
+    "skill": "Unit vocabulary: habitat, desert, survive, ecosystem",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Unit vocabulary: habitat, desert, survive, ecosystem",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Monday 9 (Session 1), Vocabulary row",
+      "unit": "Nov 9–13, Monday 9 (Session 1), Vocabulary row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-11. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-11",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-habitat",
+    "grade": "2",
+    "word": "habitat",
+    "clue": "The natural home where a plant or animal lives.",
+    "skill": "Unit vocabulary: habitat, desert, survive, ecosystem",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Unit vocabulary: habitat, desert, survive, ecosystem",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Monday 9 (Session 1), Vocabulary row",
+      "unit": "Nov 9–13, Monday 9 (Session 1), Vocabulary row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-12. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-12",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-cactus",
+    "grade": "2",
+    "word": "cactus",
+    "clue": "A desert plant with sharp spines that stores water inside its thick stem.",
+    "skill": "Unit vocabulary: dunes, canyon, cactus, spines, shelter",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Unit vocabulary: dunes, canyon, cactus, spines, shelter",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Wednesday 11 (Session 3), Vocabulary row",
+      "unit": "Nov 9–13, Wednesday 11 (Session 3), Vocabulary row",
+      "earliestEligible": "2026-11-11",
+      "periods": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-13. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-13",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-shelter",
+    "grade": "2",
+    "word": "shelter",
+    "clue": "A safe place that protects you from heat, wind, or rain.",
+    "skill": "Unit vocabulary: dunes, canyon, cactus, spines, shelter",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Unit vocabulary: dunes, canyon, cactus, spines, shelter",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Wednesday 11 (Session 3), Vocabulary row",
+      "unit": "Nov 9–13, Wednesday 11 (Session 3), Vocabulary row",
+      "earliestEligible": "2026-11-11",
+      "periods": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-14. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-14",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-light",
+    "grade": "2",
+    "word": "light",
+    "clue": "Turn on the lamp so we have ___ to read by. (Long i spelled igh.)",
+    "skill": "Long i spelled igh",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Long i spelled igh",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Monday 9 (Session 1), Phonics row",
+      "unit": "Nov 9–13, Monday 9 (Session 1), Phonics row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-15. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-15",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-fly",
+    "grade": "2",
+    "word": "fly",
+    "clue": "Birds flap their wings to ___ up into the air. (Long i spelled y.)",
+    "skill": "Long i spelled y",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Long i spelled y",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Monday 9 (Session 1), Phonics row",
+      "unit": "Nov 9–13, Monday 9 (Session 1), Phonics row",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-16. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-16",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-pie",
+    "grade": "2",
+    "word": "pie",
+    "clue": "For dessert we had a slice of apple ___. (Long i spelled ie.)",
+    "skill": "Long i spelled ie",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Long i spelled ie",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Wednesday 11 (Session 3), Phonics row",
+      "unit": "Nov 9–13, Wednesday 11 (Session 3), Phonics row",
+      "earliestEligible": "2026-11-11",
+      "periods": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-17. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-17",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-wild",
+    "grade": "2",
+    "word": "wild",
+    "clue": "Lions and zebras are ___ animals, not pets. (Long i spelled i.)",
+    "skill": "Long i spelled i",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Long i spelled i",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 9–13, Wednesday 11 (Session 3), Phonics row",
+      "unit": "Nov 9–13, Wednesday 11 (Session 3), Phonics row",
+      "earliestEligible": "2026-11-11",
+      "periods": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-18. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-18",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-people",
+    "grade": "2",
+    "word": "people",
+    "clue": "Lots of ___ came to watch the parade.",
+    "skill": "High-frequency words: know, new, over, people",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "High-frequency words: know, new, over, people",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Monday 16 (Session 6), High-Frequency Words row",
+      "unit": "Nov 16–20, Monday 16 (Session 6), High-Frequency Words row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-19. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-19",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-know",
+    "grade": "2",
+    "word": "know",
+    "clue": "I ___ the answer because I studied. (It starts with a silent k.)",
+    "skill": "High-frequency words: know, new, over, people",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "High-frequency words: know, new, over, people",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Monday 16 (Session 6), High-Frequency Words row",
+      "unit": "Nov 16–20, Monday 16 (Session 6), High-Frequency Words row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-20. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-20",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-over",
+    "grade": "2",
+    "word": "over",
+    "clue": "The cow jumped ___ the moon in the nursery rhyme.",
+    "skill": "High-frequency words: know, new, over, people",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "High-frequency words: know, new, over, people",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Monday 16 (Session 6), High-Frequency Words row",
+      "unit": "Nov 16–20, Monday 16 (Session 6), High-Frequency Words row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-21. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-21",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-valley",
+    "grade": "2",
+    "word": "valley",
+    "clue": "Low land between hills or mountains.",
+    "skill": "Unit vocabulary: shelter, shady, valley, burrowing",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Unit vocabulary: shelter, shady, valley, burrowing",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Monday 16 (Session 6), Vocabulary row",
+      "unit": "Nov 16–20, Monday 16 (Session 6), Vocabulary row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-22. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-22",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-protect",
+    "grade": "2",
+    "word": "protect",
+    "clue": "To keep someone or something safe from harm.",
+    "skill": "Unit vocabulary: nonliving, nectar, protect, adapted",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Unit vocabulary: nonliving, nectar, protect, adapted",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Wednesday 18 (Session 8), Vocabulary row",
+      "unit": "Nov 16–20, Wednesday 18 (Session 8), Vocabulary row",
+      "earliestEligible": "2026-11-18",
+      "periods": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-23. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-23",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-nectar",
+    "grade": "2",
+    "word": "nectar",
+    "clue": "The sweet liquid inside flowers that bees and hummingbirds drink.",
+    "skill": "Unit vocabulary: nonliving, nectar, protect, adapted",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Unit vocabulary: nonliving, nectar, protect, adapted",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Wednesday 18 (Session 8), Vocabulary row",
+      "unit": "Nov 16–20, Wednesday 18 (Session 8), Vocabulary row",
+      "earliestEligible": "2026-11-18",
+      "periods": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-24. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-24",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-boat",
+    "grade": "2",
+    "word": "boat",
+    "clue": "We rowed a small ___ across the lake. (Long o spelled oa.)",
+    "skill": "Long o spelled oa",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Long o spelled oa",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Monday 16 (Session 6), Phonics row",
+      "unit": "Nov 16–20, Monday 16 (Session 6), Phonics row",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-25. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-25",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-snow",
+    "grade": "2",
+    "word": "snow",
+    "clue": "Cold, white flakes that fall from the sky in winter. (Long o spelled ow.)",
+    "skill": "Long o spelled ow",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Long o spelled ow",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Wednesday 18 (Session 8), Phonics row",
+      "unit": "Nov 16–20, Wednesday 18 (Session 8), Phonics row",
+      "earliestEligible": "2026-11-18",
+      "periods": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-26. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-26",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-2-toe",
+    "grade": "2",
+    "word": "toe",
+    "clue": "Your big ___ is on your foot. (Long o spelled oe.)",
+    "skill": "Long o spelled oe",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "2",
+      "subject": "Literacy",
+      "target": "Long o spelled oe",
+      "source": "DCSS 2nd Grade ELA Pacing Calendar",
+      "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+      "locator": "Nov 16–20, Wednesday 18 (Session 8), Phonics row",
+      "unit": "Nov 16–20, Wednesday 18 (Session 8), Phonics row",
+      "earliestEligible": "2026-11-18",
+      "periods": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 2-sb-27. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-2-sb-27",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-character",
+    "grade": "3",
+    "word": "character",
+    "clue": "A person or animal in a story.",
+    "skill": "Reading: characters and their perspectives",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: characters and their perspectives",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 2–6 (Unit 3: Another View), Support / PEC",
+      "unit": "Weekly catalog, Nov 2–6 (Unit 3: Another View), Support / PEC",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-0. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-0",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-elements",
+    "grade": "3",
+    "word": "elements",
+    "clue": "The basic parts that make up something, like the setting and plot of a story.",
+    "skill": "Reading: use story elements to understand a text",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: use story elements to understand a text",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 2–6 (Unit 3: Another View), I Can",
+      "unit": "Weekly catalog, Nov 2–6 (Unit 3: Another View), I Can",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-1. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-1",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-multiplication",
+    "grade": "3",
+    "word": "multiplication",
+    "clue": "The math operation for finding the total of equal groups, shown with the × sign.",
+    "skill": "Math: use a multiplication table",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: use a multiplication table",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 2–6 (Unit 2: Multiplication and Division), I Can",
+      "unit": "Weekly catalog, Nov 2–6 (Unit 2: Multiplication and Division), I Can",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-2. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-2",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-division",
+    "grade": "3",
+    "word": "division",
+    "clue": "The math operation that splits a total into equal groups, shown with the ÷ sign.",
+    "skill": "Math: fact families for multiplying and dividing",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: fact families for multiplying and dividing",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 2–6 (Unit 2: Multiplication and Division), I Can",
+      "unit": "Weekly catalog, Nov 2–6 (Unit 2: Multiplication and Division), I Can",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-3. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-3",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-formation",
+    "grade": "3",
+    "word": "formation",
+    "clue": "The way something is made or takes shape over time.",
+    "skill": "Science S3E2: how fossils are formed",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Science S3E2: how fossils are formed",
+      "source": "3rd Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+      "locator": "Weekly catalog, Nov 2–6 (Rocks, Soils and Fossils), GaDOE Inspire",
+      "unit": "Weekly catalog, Nov 2–6 (Rocks, Soils and Fossils), GaDOE Inspire",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-4. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-4",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-observations",
+    "grade": "3",
+    "word": "observations",
+    "clue": "Things you notice by carefully using your senses, like what you see or feel.",
+    "skill": "Science S3E2: observing fossils",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Science S3E2: observing fossils",
+      "source": "3rd Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+      "locator": "Weekly catalog, Nov 2–6 (Rocks, Soils and Fossils), Brain Pop",
+      "unit": "Weekly catalog, Nov 2–6 (Rocks, Soils and Fossils), Brain Pop",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-5. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-5",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-exploration",
+    "grade": "3",
+    "word": "exploration",
+    "clue": "Traveling to unknown places to discover and learn about them.",
+    "skill": "Social Studies: reasons for exploring North America",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Social Studies: reasons for exploring North America",
+      "source": "3rd Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+      "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+      "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-6. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-6",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-explorer",
+    "grade": "3",
+    "word": "explorer",
+    "clue": "A person who travels to new places to find out what is there.",
+    "skill": "Social Studies: early explorers",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Social Studies: early explorers",
+      "source": "3rd Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+      "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
+      "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-7. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-7",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-obstacles",
+    "grade": "3",
+    "word": "obstacles",
+    "clue": "Things that get in your way and make a goal hard to reach.",
+    "skill": "Social Studies: obstacles explorers faced",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Social Studies: obstacles explorers faced",
+      "source": "3rd Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+      "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+      "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-8. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-8",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-theme",
+    "grade": "3",
+    "word": "theme",
+    "clue": "The big message or lesson an author wants readers to learn from a story.",
+    "skill": "Reading: compare and contrast themes of two texts",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: compare and contrast themes of two texts",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
+      "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-9. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-9",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-realistic",
+    "grade": "3",
+    "word": "realistic",
+    "clue": "Something that could really happen in real life.",
+    "skill": "Writing: write a realistic ending",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Writing: write a realistic ending",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
+      "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-10. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-10",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-narrative",
+    "grade": "3",
+    "word": "narrative",
+    "clue": "A story that tells about events, real or made up, with characters and a plot.",
+    "skill": "Writing: narrative endings",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Writing: narrative endings",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
+      "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-11. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-11",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-discussion",
+    "grade": "3",
+    "word": "discussion",
+    "clue": "A talk where people share ideas and listen to each other.",
+    "skill": "Speaking: accountable talk",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Speaking: accountable talk",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), Support / PEC",
+      "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), Support / PEC",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-12. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-12",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-addition",
+    "grade": "3",
+    "word": "addition",
+    "clue": "The math operation where you put numbers together to find a sum.",
+    "skill": "Math: patterns in an addition table",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: patterns in an addition table",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 9–13 (Unit 2: Multiplication and Division), I Can",
+      "unit": "Weekly catalog, Nov 9–13 (Unit 2: Multiplication and Division), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-13. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-13",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-patterns",
+    "grade": "3",
+    "word": "patterns",
+    "clue": "Things that repeat or change in a rule-following way.",
+    "skill": "Math: patterns in addition and multiplication tables",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: patterns in addition and multiplication tables",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 9–13 (Unit 2: Multiplication and Division), I Can",
+      "unit": "Weekly catalog, Nov 9–13 (Unit 2: Multiplication and Division), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-14. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-14",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-dinosaur",
+    "grade": "3",
+    "word": "dinosaur",
+    "clue": "A reptile that lived a long time ago and is now extinct; we know about it from fossils.",
+    "skill": "Science S3E2: fossils as evidence of past organisms",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Science S3E2: fossils as evidence of past organisms",
+      "source": "3rd Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+      "locator": "Weekly catalog, Nov 9–13 (Rocks, Soils and Fossils), Science A-Z",
+      "unit": "Weekly catalog, Nov 9–13 (Rocks, Soils and Fossils), Science A-Z",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-15. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-15",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-economic",
+    "grade": "3",
+    "word": "economic",
+    "clue": "Having to do with money, trade, and making choices about how to use resources.",
+    "skill": "Social Studies: economic choices of early explorers",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Social Studies: economic choices of early explorers",
+      "source": "3rd Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+      "locator": "Weekly catalog, Nov 9–13 (Unit: Let’s Go Exploring), GaDOE Inspire",
+      "unit": "Weekly catalog, Nov 9–13 (Unit: Let’s Go Exploring), GaDOE Inspire",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-16. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-16",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-mood",
+    "grade": "3",
+    "word": "mood",
+    "clue": "The feeling a story gives the reader, like spooky, cheerful, or calm.",
+    "skill": "Reading: story elements (vocabulary notebook)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: story elements (vocabulary notebook)",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-17. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-17",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-climax",
+    "grade": "3",
+    "word": "climax",
+    "clue": "The most exciting point of a story, at the top of the story mountain.",
+    "skill": "Reading: story mountain / plot",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: story mountain / plot",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-18. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-18",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-resolution",
+    "grade": "3",
+    "word": "resolution",
+    "clue": "The part of a story where the problem is solved.",
+    "skill": "Reading: story mountain / plot",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: story mountain / plot",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-19. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-19",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-drama",
+    "grade": "3",
+    "word": "drama",
+    "clue": "A story written to be acted out on a stage, with lines for each character.",
+    "skill": "Reading: elements of a drama",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: elements of a drama",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-20. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-20",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-sequence",
+    "grade": "3",
+    "word": "sequence",
+    "clue": "The order in which things happen, one after another.",
+    "skill": "Writing: narrative with sequence words",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Writing: narrative with sequence words",
+      "source": "3rd ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Another View), I Can",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Another View), I Can",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-21. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-21",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-area",
+    "grade": "3",
+    "word": "area",
+    "clue": "The amount of space inside a flat shape, measured in square units.",
+    "skill": "Math: find area by counting and multiplying",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: find area by counting and multiplying",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-22. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-22",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-rectangle",
+    "grade": "3",
+    "word": "rectangle",
+    "clue": "A four-sided shape with four square corners; opposite sides are the same length.",
+    "skill": "Math: area of a rectangle",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: area of a rectangle",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-23. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-23",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-length",
+    "grade": "3",
+    "word": "length",
+    "clue": "How long something is from one end to the other.",
+    "skill": "Math: area = length × width",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: area = length × width",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-24. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-24",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-width",
+    "grade": "3",
+    "word": "width",
+    "clue": "How wide something is from side to side.",
+    "skill": "Math: area = length × width",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Math: area = length × width",
+      "source": "3rd Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit?usp=drive_link",
+      "locator": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "unit": "Weekly catalog, Nov 16–20 (Unit 3: Multiplication and Area), I Can",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-25. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-25",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-invertebrate",
+    "grade": "3",
+    "word": "invertebrate",
+    "clue": "An animal that has no backbone, like a snail or a crab.",
+    "skill": "Science S3E2: invertebrate fossils",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Science S3E2: invertebrate fossils",
+      "source": "3rd Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+      "locator": "Weekly catalog, Nov 16–20 (Rocks, Soils and Fossils), Science A-Z",
+      "unit": "Weekly catalog, Nov 16–20 (Rocks, Soils and Fossils), Science A-Z",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-26. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-26",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-depression",
+    "grade": "4",
+    "word": "depression",
+    "clue": "A long time when many people lose jobs and money, like the hard years of the 1930s.",
+    "skill": "Great Depression and daily life",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Great Depression and daily life",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 2–6 weekly block, Unit 3: Art and the Great Depression (Sessions 1–3)",
+      "unit": "Nov 2–6 weekly block, Unit 3: Art and the Great Depression (Sessions 1–3)",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-0. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-0",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-historical",
+    "grade": "4",
+    "word": "historical",
+    "clue": "Having to do with events and people from the past.",
+    "skill": "Art and historical events",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Art and historical events",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 2–6 weekly block, Unit 3: Art and the Great Depression (Sessions 1–3)",
+      "unit": "Nov 2–6 weekly block, Unit 3: Art and the Great Depression (Sessions 1–3)",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-1. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-1",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-analyze",
+    "grade": "4",
+    "word": "analyze",
+    "clue": "Look closely at something, part by part, to understand it.",
+    "skill": "Art and historical events",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Art and historical events",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 2–6 weekly block, Unit 3: Art and the Great Depression (Sessions 1–3)",
+      "unit": "Nov 2–6 weekly block, Unit 3: Art and the Great Depression (Sessions 1–3)",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-2. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-2",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-convert",
+    "grade": "4",
+    "word": "convert",
+    "clue": "Change a measurement into a different unit, like feet into inches.",
+    "skill": "Measurement conversion",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Measurement conversion",
+      "source": "4th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "locator": "Nov 2–6 weekly block, Unit 3 (iReady Lesson 13)",
+      "unit": "Nov 2–6 weekly block, Unit 3 (iReady Lesson 13)",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-3. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-3",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-ounce",
+    "grade": "4",
+    "word": "ounce",
+    "clue": "A small unit of weight; 16 of them make one pound.",
+    "skill": "Customary units of weight",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Customary units of weight",
+      "source": "4th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "locator": "Nov 2–6 weekly block, Unit 3 (iReady Lesson 13)",
+      "unit": "Nov 2–6 weekly block, Unit 3 (iReady Lesson 13)",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-4. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-4",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-liquid",
+    "grade": "4",
+    "word": "liquid",
+    "clue": "Matter that flows and takes the shape of its container, like water or juice.",
+    "skill": "Liquid volume and mass",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Liquid volume and mass",
+      "source": "4th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "locator": "Nov 2–6 weekly block, Unit 3 (iReady Lesson 13)",
+      "unit": "Nov 2–6 weekly block, Unit 3 (iReady Lesson 13)",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-5. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-5",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-evaporation",
+    "grade": "4",
+    "word": "evaporation",
+    "clue": "When the Sun warms liquid water and it turns into water vapor.",
+    "skill": "Water cycle",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Water cycle",
+      "source": "4th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+      "locator": "Nov 2–6 weekly block, Unit 3: Forecasting the Weather",
+      "unit": "Nov 2–6 weekly block, Unit 3: Forecasting the Weather",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-6. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-6",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-territory",
+    "grade": "4",
+    "word": "territory",
+    "clue": "An area of land that belongs to a country but is not yet a state.",
+    "skill": "How the United States and territories were added",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "How the United States and territories were added",
+      "source": "4th Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+      "locator": "Nov 2–6 weekly block, Unit 4: The Nation Expands",
+      "unit": "Nov 2–6 weekly block, Unit 4: The Nation Expands",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-7. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-7",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-buffalo",
+    "grade": "4",
+    "word": "buffalo",
+    "clue": "A large, shaggy animal of the Great Plains that American Indians used for food, clothing, and shelter.",
+    "skill": "Plains American Indians",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Plains American Indians",
+      "source": "4th Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+      "locator": "Nov 2–6 weekly block, Unit 4: The Nation Expands",
+      "unit": "Nov 2–6 weekly block, Unit 4: The Nation Expands",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-8. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-8",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-informational",
+    "grade": "4",
+    "word": "informational",
+    "clue": "Describes a text that teaches facts about a real topic.",
+    "skill": "Main idea in informational text",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Main idea in informational text",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "unit": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-9. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-9",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-supporting",
+    "grade": "4",
+    "word": "supporting",
+    "clue": "Details that hold up and prove the main idea are called this kind of details.",
+    "skill": "Main idea and supporting details",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Main idea and supporting details",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "unit": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-10. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-10",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-purpose",
+    "grade": "4",
+    "word": "purpose",
+    "clue": "The reason an author writes: to inform, persuade, or entertain.",
+    "skill": "Author's purpose",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Author's purpose",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "unit": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-11. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-11",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-era",
+    "grade": "4",
+    "word": "era",
+    "clue": "A period of time in history, like the 1930s.",
+    "skill": "Author's purpose for writing about the era",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Author's purpose for writing about the era",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "unit": "Nov 9–13 weekly block, Unit 3: Art and the Great Depression (Sessions 4–8)",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-12. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-12",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-dividend",
+    "grade": "4",
+    "word": "dividend",
+    "clue": "In 84 ÷ 4, the number 84 is called this.",
+    "skill": "Dividing three-digit numbers",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Dividing three-digit numbers",
+      "source": "4th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "locator": "Nov 9–13 weekly block, Unit 3 (iReady Lesson 14)",
+      "unit": "Nov 9–13 weekly block, Unit 3 (iReady Lesson 14)",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-13. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-13",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-divisor",
+    "grade": "4",
+    "word": "divisor",
+    "clue": "In 84 ÷ 4, the number 4 is called this.",
+    "skill": "Dividing three-digit numbers",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Dividing three-digit numbers",
+      "source": "4th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "locator": "Nov 9–13 weekly block, Unit 3 (iReady Lesson 14)",
+      "unit": "Nov 9–13 weekly block, Unit 3 (iReady Lesson 14)",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-14. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-14",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-remainder",
+    "grade": "4",
+    "word": "remainder",
+    "clue": "The amount left over when a number cannot be divided equally.",
+    "skill": "Division with remainders",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Division with remainders",
+      "source": "4th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "locator": "Nov 9–13 weekly block, Unit 3 (iReady Lesson 14)",
+      "unit": "Nov 9–13 weekly block, Unit 3 (iReady Lesson 14)",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-15. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-15",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-condensation",
+    "grade": "4",
+    "word": "condensation",
+    "clue": "When water vapor cools and turns into tiny drops, like on a cold glass.",
+    "skill": "Water cycle",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Water cycle",
+      "source": "4th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+      "locator": "Nov 9–13 weekly block, Unit 3: Forecasting the Weather",
+      "unit": "Nov 9–13 weekly block, Unit 3: Forecasting the Weather",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-16. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-16",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-suffrage",
+    "grade": "4",
+    "word": "suffrage",
+    "clue": "The right to vote in elections.",
+    "skill": "Women's suffrage movement",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Women's suffrage movement",
+      "source": "4th Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+      "locator": "Nov 9–13 weekly block, Unit 4: The Nation Expands",
+      "unit": "Nov 9–13 weekly block, Unit 4: The Nation Expands",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-17. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-17",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-quote",
+    "grade": "4",
+    "word": "quote",
+    "clue": "The exact words someone said or wrote, copied word for word into your own writing.",
+    "skill": "Using direct quotes in writing",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Using direct quotes in writing",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "unit": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-18. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-18",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-compare",
+    "grade": "4",
+    "word": "compare",
+    "clue": "Tell how two or more things are alike.",
+    "skill": "Comparing historical texts",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Comparing historical texts",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "unit": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-19. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-19",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-opinion",
+    "grade": "4",
+    "word": "opinion",
+    "clue": "What a person thinks or feels; it cannot be proven true.",
+    "skill": "Fact and opinion",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Fact and opinion",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "unit": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-20. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-20",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-poetry",
+    "grade": "4",
+    "word": "poetry",
+    "clue": "Writing arranged in lines and stanzas that often uses rhythm and rhyme.",
+    "skill": "Elements of poetry",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Elements of poetry",
+      "source": "4th ELA Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+      "locator": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "unit": "Nov 16–20 weekly block, Unit 3: Art and the Great Depression (Sessions 9–13)",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-21. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-21",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-quotient",
+    "grade": "4",
+    "word": "quotient",
+    "clue": "The answer to a division problem.",
+    "skill": "Dividing four-digit numbers",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Dividing four-digit numbers",
+      "source": "4th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit?usp=drive_link",
+      "locator": "Nov 16–20 weekly block, Unit 3 (iReady Lesson 15)",
+      "unit": "Nov 16–20 weekly block, Unit 3 (iReady Lesson 15)",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-22. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-22",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-climate",
+    "grade": "4",
+    "word": "climate",
+    "clue": "The usual weather pattern of a place over many years.",
+    "skill": "Weather vs. climate",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Weather vs. climate",
+      "source": "4th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+      "locator": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
+      "unit": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-23. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-23",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-precipitation",
+    "grade": "4",
+    "word": "precipitation",
+    "clue": "Water falling from clouds as rain, snow, sleet, or hail.",
+    "skill": "Water cycle and weather",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Water cycle and weather",
+      "source": "4th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+      "locator": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
+      "unit": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-24. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-24",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-forecast",
+    "grade": "4",
+    "word": "forecast",
+    "clue": "A prediction of what the weather will be like.",
+    "skill": "Predicting weather",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Predicting weather",
+      "source": "4th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+      "locator": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
+      "unit": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-25. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-25",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-4-banner",
+    "grade": "4",
+    "word": "banner",
+    "clue": "A long flag or sign; a famous one is “Star-Spangled.”",
+    "skill": "Document analysis of the national anthem",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "4",
+      "subject": "Literacy",
+      "target": "Document analysis of the national anthem",
+      "source": "4th Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+      "locator": "Nov 16–20 weekly block, Unit 4: The Nation Expands",
+      "unit": "Nov 16–20 weekly block, Unit 4: The Nation Expands",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 4-sb-26. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-4-sb-26",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-abolition",
+    "grade": "5",
+    "word": "abolition",
+    "clue": "The act of ending slavery for good, a cause many Americans fought for in the 1800s.",
+    "skill": "Literacy: Unit 3 Freedom Seekers concept vocabulary",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy: Unit 3 Freedom Seekers concept vocabulary",
+      "source": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+      "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+      "locator": "ELA tab wk 11/2-11/6, Day 2 block (Unit 3 Session 1), Academic Vocabulary",
+      "unit": "ELA tab wk 11/2-11/6, Day 2 block (Unit 3 Session 1), Academic Vocabulary",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-0. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-0",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-freedom",
+    "grade": "5",
+    "word": "freedom",
+    "clue": "The right to make your own choices and live without being owned or controlled by others.",
+    "skill": "Literacy: Unit 3 Freedom Seekers concept vocabulary",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy: Unit 3 Freedom Seekers concept vocabulary",
+      "source": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+      "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+      "locator": "ELA tab wk 11/2-11/6, Day 2 block (Unit 3 Session 1), Academic Vocabulary",
+      "unit": "ELA tab wk 11/2-11/6, Day 2 block (Unit 3 Session 1), Academic Vocabulary",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-1. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-1",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-firsthand",
+    "grade": "5",
+    "word": "firsthand",
+    "clue": "Describes an account told by someone who was actually there.",
+    "skill": "Literacy: first-hand vs. second-hand accounts (5.T.T.2.c)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy: first-hand vs. second-hand accounts (5.T.T.2.c)",
+      "source": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+      "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+      "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
+      "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-2. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-2",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-secondhand",
+    "grade": "5",
+    "word": "secondhand",
+    "clue": "Describes an account written by someone who was not there and learned about it from others.",
+    "skill": "Literacy: first-hand vs. second-hand accounts (5.T.T.2.c)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy: first-hand vs. second-hand accounts (5.T.T.2.c)",
+      "source": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+      "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+      "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
+      "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-3. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-3",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-perspective",
+    "grade": "5",
+    "word": "perspective",
+    "clue": "A point of view; how an author sees and presents a topic.",
+    "skill": "Literacy: author's point of view in accounts (5.T.T.2.c)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy: author's point of view in accounts (5.T.T.2.c)",
+      "source": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+      "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+      "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
+      "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-4. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-4",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-hyperbole",
+    "grade": "5",
+    "word": "hyperbole",
+    "clue": "A huge exaggeration used for effect, like saying your backpack weighs a ton.",
+    "skill": "Literacy: figurative language (Daily Dose of Grammar)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy: figurative language (Daily Dose of Grammar)",
+      "source": "5th Grade Writing_Rope_Lesson_Plan_Template",
+      "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit?usp=sharing",
+      "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 56-59 (Day 60 assessment)",
+      "unit": "Daily Dose of Grammar Skills Weekly Outline, Day 56-59 (Day 60 assessment)",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-5. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-5",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-reasoning",
+    "grade": "5",
+    "word": "reasoning",
+    "clue": "The thinking you explain to show why your answer makes sense.",
+    "skill": "Math: add and subtract decimals and explain thinking (5.NR.4.4)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Math: add and subtract decimals and explain thinking (5.NR.4.4)",
+      "source": "5th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "locator": "Weekly catalog Nov 2–6, Unit 2 (iReady Lesson 11; daily calendar Mon Nov 2: Unit 2 - Lesson 11 Decimals 5.NR.4.4), I Can",
+      "unit": "Weekly catalog Nov 2–6, Unit 2 (iReady Lesson 11; daily calendar Mon Nov 2: Unit 2 - Lesson 11 Decimals 5.NR.4.4), I Can",
+      "earliestEligible": "2026-11-02",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-02"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-6. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-6",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-regrouping",
+    "grade": "5",
+    "word": "regrouping",
+    "clue": "Trading 10 hundredths for 1 tenth (or the reverse) when you add or subtract.",
+    "skill": "Math: add and subtract decimals (5.NR.4.4)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Math: add and subtract decimals (5.NR.4.4)",
+      "source": "5th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "locator": "Weekly catalog Nov 2–6, Unit 2 (iReady Lesson 11; daily calendar Mon Nov 2: Unit 2 - Lesson 11 Decimals 5.NR.4.4), I Can",
+      "unit": "Weekly catalog Nov 2–6, Unit 2 (iReady Lesson 11; daily calendar Mon Nov 2: Unit 2 - Lesson 11 Decimals 5.NR.4.4), I Can",
+      "earliestEligible": "2026-11-02",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-02"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-7. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-7",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-treaty",
+    "grade": "5",
+    "word": "treaty",
+    "clue": "A formal written agreement between countries, often to end a war.",
+    "skill": "Social Studies: end of World War I (SS5H2)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Social Studies: end of World War I (SS5H2)",
+      "source": "5th Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+      "locator": "Weekly catalog Nov 2–6, Unit 4: War and Prosperity, Resources",
+      "unit": "Weekly catalog Nov 2–6, Unit 4: War and Prosperity, Resources",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-8. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-8",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-fraction",
+    "grade": "5",
+    "word": "fraction",
+    "clue": "A number like 3/4 that names part of a whole.",
+    "skill": "Math: add and subtract fractions (5.NR.3.3)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Math: add and subtract fractions (5.NR.3.3)",
+      "source": "5th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "locator": "Weekly catalog Nov 9–13, Unit 2 (iReady Lesson 12: Add and Subtract Fractions), I Can",
+      "unit": "Weekly catalog Nov 9–13, Unit 2 (iReady Lesson 12: Add and Subtract Fractions), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-9. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-9",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-denominator",
+    "grade": "5",
+    "word": "denominator",
+    "clue": "The bottom number of a fraction; it tells how many equal parts make one whole.",
+    "skill": "Math: add and subtract fractions with unlike denominators (5.NR.3.3)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Math: add and subtract fractions with unlike denominators (5.NR.3.3)",
+      "source": "5th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "locator": "Weekly catalog Nov 9–13, Unit 2 (iReady Lesson 12), I Can",
+      "unit": "Weekly catalog Nov 9–13, Unit 2 (iReady Lesson 12), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-10. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-10",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-equivalent",
+    "grade": "5",
+    "word": "equivalent",
+    "clue": "Equal in value, like 1/2 and 2/4.",
+    "skill": "Math: rewrite fractions with a common denominator to add/subtract (5.NR.3.3)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Math: rewrite fractions with a common denominator to add/subtract (5.NR.3.3)",
+      "source": "5th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "locator": "Weekly catalog Nov 9–13, Unit 2 (iReady Lesson 12), I Can",
+      "unit": "Weekly catalog Nov 9–13, Unit 2 (iReady Lesson 12), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-11. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-11",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-electricity",
+    "grade": "5",
+    "word": "electricity",
+    "clue": "Energy that flows through wires to light lamps and run computers.",
+    "skill": "Science: natural vs. human-harnessed electricity (S5P2a)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Science: natural vs. human-harnessed electricity (S5P2a)",
+      "source": "5th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+      "locator": "UbD Stage 3 daily calendar, Mon Nov 9",
+      "unit": "UbD Stage 3 daily calendar, Mon Nov 9",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-12. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-12",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-natural",
+    "grade": "5",
+    "word": "natural",
+    "clue": "Happening on its own in the world around us, not made by people, like lightning.",
+    "skill": "Science: natural vs. human-harnessed electricity (S5P2a)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Science: natural vs. human-harnessed electricity (S5P2a)",
+      "source": "5th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+      "locator": "UbD Stage 3 daily calendar, Mon Nov 9",
+      "unit": "UbD Stage 3 daily calendar, Mon Nov 9",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-13. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-13",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-harnessed",
+    "grade": "5",
+    "word": "harnessed",
+    "clue": "Captured and controlled so it can be put to work, like power from a power plant.",
+    "skill": "Science: natural vs. human-harnessed electricity (S5P2a)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Science: natural vs. human-harnessed electricity (S5P2a)",
+      "source": "5th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+      "locator": "UbD Stage 3 daily calendar, Mon Nov 9",
+      "unit": "UbD Stage 3 daily calendar, Mon Nov 9",
+      "earliestEligible": "2026-11-09",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-09"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-14. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-14",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-investigate",
+    "grade": "5",
+    "word": "investigate",
+    "clue": "To study something carefully by asking questions and testing ideas.",
+    "skill": "Science: investigating electricity (S5P2)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Science: investigating electricity (S5P2)",
+      "source": "5th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+      "locator": "Unit 3 UbD pacing calendar weekly plans, Nov 9–13 (5P2A Natural vs. Human-Harnessed Electricity), I Can",
+      "unit": "Unit 3 UbD pacing calendar weekly plans, Nov 9–13 (5P2A Natural vs. Human-Harnessed Electricity), I Can",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-15. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-15",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-jazz",
+    "grade": "5",
+    "word": "jazz",
+    "clue": "A lively style of American music with lots of improvising that became hugely popular in the 1920s.",
+    "skill": "Social Studies: 1920s culture (SS5H2)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Social Studies: 1920s culture (SS5H2)",
+      "source": "5th Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+      "locator": "Weekly catalog Nov 9–13, Unit 4, BrainPop resources",
+      "unit": "Weekly catalog Nov 9–13, Unit 4, BrainPop resources",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-16. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-16",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-renaissance",
+    "grade": "5",
+    "word": "renaissance",
+    "clue": "A rebirth or blooming of art, music, and writing, as in Harlem in the 1920s.",
+    "skill": "Social Studies: Harlem Renaissance (SS5H2)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Social Studies: Harlem Renaissance (SS5H2)",
+      "source": "5th Social Studies Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+      "locator": "Weekly catalog Nov 9–13, Unit 4, Resources",
+      "unit": "Weekly catalog Nov 9–13, Unit 4, Resources",
+      "earliestEligible": "2026-11-13",
+      "periods": [
+        {
+          "start": "2026-11-09",
+          "end": "2026-11-13"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-17. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-17",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-circuit",
+    "grade": "5",
+    "word": "circuit",
+    "clue": "A complete, closed path that electricity flows around.",
+    "skill": "Science: circuits, conductors, and insulators (S5P2b)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Science: circuits, conductors, and insulators (S5P2b)",
+      "source": "5th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+      "locator": "UbD Stage 3 daily calendar, Mon Nov 16",
+      "unit": "UbD Stage 3 daily calendar, Mon Nov 16",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-18. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-18",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-battery",
+    "grade": "5",
+    "word": "battery",
+    "clue": "A power source in a flashlight that pushes electricity through a circuit.",
+    "skill": "Science: parts of a simple circuit (S5P2b)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Science: parts of a simple circuit (S5P2b)",
+      "source": "5th Science Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+      "locator": "UbD Stage 3 daily calendar, Mon Nov 16",
+      "unit": "UbD Stage 3 daily calendar, Mon Nov 16",
+      "earliestEligible": "2026-11-16",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-19. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-19",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-benchmark",
+    "grade": "5",
+    "word": "benchmark",
+    "clue": "A friendly number like 1/2 used to compare other fractions.",
+    "skill": "Math: compare and order fractions using benchmarks (5.NR.3.2)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Math: compare and order fractions using benchmarks (5.NR.3.2)",
+      "source": "5th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "locator": "Weekly catalog Nov 16–20, Unit 2, Support / PEC",
+      "unit": "Weekly catalog Nov 16–20, Unit 2, Support / PEC",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "source-listed",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-20. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-20",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-numerator",
+    "grade": "5",
+    "word": "numerator",
+    "clue": "The top number of a fraction; it tells how many parts you have.",
+    "skill": "Math: compare and order fractions and mixed numbers (5.NR.3.2)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Math: compare and order fractions and mixed numbers (5.NR.3.2)",
+      "source": "5th Math Pacing Support",
+      "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+      "locator": "Weekly catalog Nov 16–20, Unit 2 (iReady Lesson 13), I Can",
+      "unit": "Weekly catalog Nov 16–20, Unit 2 (iReady Lesson 13), I Can",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-21. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-21",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-apostrophe",
+    "grade": "5",
+    "word": "apostrophe",
+    "clue": "A punctuation mark that shows a missing letter in a contraction or that something belongs to someone.",
+    "skill": "Literacy: apostrophes and its vs. it’s (Daily Dose of Grammar)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy: apostrophes and its vs. it’s (Daily Dose of Grammar)",
+      "source": "5th Grade Writing_Rope_Lesson_Plan_Template",
+      "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit?usp=sharing",
+      "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 66-69 (Day 70 assessment)",
+      "unit": "Daily Dose of Grammar Skills Weekly Outline, Day 66-69 (Day 70 assessment)",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-22. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-22",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-5-dialogue",
+    "grade": "5",
+    "word": "dialogue",
+    "clue": "The words characters say out loud to each other in a story, set off with quotation marks.",
+    "skill": "Literacy/Writing: narrative techniques (5.T.T.1.a)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "5",
+      "subject": "Literacy",
+      "target": "Literacy/Writing: narrative techniques (5.T.T.1.a)",
+      "source": "5th Grade Writing_Rope_Lesson_Plan_Template",
+      "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit?usp=sharing",
+      "locator": "Unit 3 Narrative Writing Rope plan (Week of 10/26/26-12/18/26), I Do Think-Aloud",
+      "unit": "Unit 3 Narrative Writing Rope plan (Week of 10/26/26-12/18/26), I Do Think-Aloud",
+      "earliestEligible": "2026-11-20",
+      "periods": [
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-20"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 5-sb-23. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-5-sb-23",
+    "complexity": "academic"
   }
 ]

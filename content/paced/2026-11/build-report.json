@@ -1,0 +1,213 @@
+{
+ "batch": "2026-11",
+ "jeopardy": 109,
+ "fourCorners": 80,
+ "spellingBeeNew": 136,
+ "spellingBeeResolved": [],
+ "skipped": [
+  {
+   "id": "K-sb-0",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-1",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-2",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-3",
+   "reason": "remove"
+  },
+  {
+   "id": "K-sb-4",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-5",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-6",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-7",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-8",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-9",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-10",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-11",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-12",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-13",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-14",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-15",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-16",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-17",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-18",
+   "reason": "remove"
+  },
+  {
+   "id": "K-sb-19",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-20",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-21",
+   "reason": "remove"
+  },
+  {
+   "id": "K-sb-22",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-23",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-24",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-25",
+   "reason": "remove"
+  },
+  {
+   "id": "K-sb-26",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-27",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-28",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-29",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-30",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-31",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-32",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-33",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-34",
+   "reason": "held: Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  },
+  {
+   "id": "K-sb-35",
+   "reason": "remove"
+  },
+  {
+   "id": "K-jp-0",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-jp-1",
+   "reason": "remove"
+  },
+  {
+   "id": "K-jp-2",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-jp-4",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-jp-6",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-jp-7",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-jp-11",
+   "reason": "remove"
+  },
+  {
+   "id": "K-jp-13",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-jp-14",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-jp-15",
+   "reason": "remove"
+  },
+  {
+   "id": "K-fc-0",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-fc-1",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-fc-5",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "K-fc-6",
+   "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
+  },
+  {
+   "id": "3-jp-17",
+   "reason": "remove"
+  }
+ ]
+}

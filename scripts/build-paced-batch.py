@@ -163,8 +163,10 @@ for e in sb_evidence:
         evidence_all.append(e); by_id[e['id']] = e
 write(ROOT / 'src/data/spelling-bee-pacing.json', out_bank + sb_new, 2)
 write(evidence_path, evidence_all, 2)
-write(ROOT / 'src/data/paced-jeopardy.json', jeopardy)
-write(ROOT / 'src/data/paced-four-corners.json', corners)
+# Keep other batches' questions; replace only this batch's.
+others = lambda path: [q for q in read(path) if q.get('packId') != PACK_ID] if path.exists() else []
+write(ROOT / 'src/data/paced-jeopardy.json', others(ROOT / 'src/data/paced-jeopardy.json') + jeopardy)
+write(ROOT / 'src/data/paced-four-corners.json', others(ROOT / 'src/data/paced-four-corners.json') + corners)
 report = dict(batch=BATCH, jeopardy=len(jeopardy), fourCorners=len(corners), spellingBeeNew=len(sb_new), spellingBeeResolved=sorted(sb_updates),
               skipped=[dict(id=i, reason=why) for i, why in skipped])
 write(DIR / 'build-report.json', report)
