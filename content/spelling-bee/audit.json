@@ -21,7 +21,7 @@
       "sourceListed": 12,
       "skillPractice": 30,
       "general": 45,
-      "excluded": 20
+      "excluded": 50
     },
     {
       "grade": "2",
@@ -31,7 +31,7 @@
       "sourceListed": 18,
       "skillPractice": 22,
       "general": 44,
-      "excluded": 20
+      "excluded": 48
     },
     {
       "grade": "3",
@@ -41,7 +41,7 @@
       "sourceListed": 28,
       "skillPractice": 12,
       "general": 44,
-      "excluded": 20
+      "excluded": 47
     },
     {
       "grade": "4",
@@ -51,7 +51,7 @@
       "sourceListed": 0,
       "skillPractice": 40,
       "general": 44,
-      "excluded": 16
+      "excluded": 43
     },
     {
       "grade": "5",
@@ -61,7 +61,7 @@
       "sourceListed": 3,
       "skillPractice": 38,
       "general": 45,
-      "excluded": 22
+      "excluded": 46
     }
   ]
 }
