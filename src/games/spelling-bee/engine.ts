@@ -12,6 +12,8 @@ export interface BeeState {
   flow?: { selection: CurriculumSelection; untilStop: boolean; cycle: number; order: string[]; offset: number; generalApproved: boolean; choices: 0 | 2 | 3 };
   timer?: RoundTimer; // Absent in historical v1/v2 sessions.
   extraLetters?: number[]; // Optional for compatibility with existing v1 saves.
+  /** Current word only: teams marked correct with one of its alsoAccept letters (team ID → letter). Absent in older saves. */
+  acceptedAs?: Record<string, string>;
 }
 export function beginGame(words: WordEntry[], grade: Grade, difficulty: Difficulty, id: string, now: string, random = Math.random, options?: StartOptions): BeeState | null {
   if (options) return beginPacedGame(words, grade, difficulty, id, now, random, options);
@@ -30,8 +32,26 @@ export const exhausted = (s: BeeState) => s.screen === 'play' && !!s.flow?.until
 export const canScore = (s: BeeState, now = Date.now()) => s.grade === 'K' || !s.timer || timerFinished(s.timer, now);
 export function toggleTeam(s: BeeState, id: string, now = Date.now()): BeeState {
   if (s.screen !== 'play' || committed(s) || !canScore(s, now) || !s.session.teams.some(t => t.id === id)) return s;
-  return { ...s, correctTeamIds: s.correctTeamIds.includes(id) ? s.correctTeamIds.filter(t => t !== id) : [...s.correctTeamIds, id] };
+  const alternates = currentWord(s).alsoAccept?.map(a => a.letter) ?? [];
+  if (!alternates.length) return { ...s, correctTeamIds: s.correctTeamIds.includes(id) ? s.correctTeamIds.filter(t => t !== id) : [...s.correctTeamIds, id] };
+  // Words with extra accepted letters: each tap moves the team along: not marked → ✓ main letter → ✓ each alternate → not marked.
+  const { [id]: current, ...others } = s.acceptedAs ?? {};
+  if (!s.correctTeamIds.includes(id)) return { ...s, correctTeamIds: [...s.correctTeamIds, id], acceptedAs: others };
+  const next = alternates[current === undefined ? 0 : alternates.indexOf(current) + 1];
+  return next ? { ...s, acceptedAs: { ...others, [id]: next } } : { ...s, correctTeamIds: s.correctTeamIds.filter(t => t !== id), acceptedAs: others };
 }
+/** "C (coat)" for a team marked with an alternate letter; undefined for the word's own letter. */
+export function acceptedLabel(w: WordEntry, letter: string | undefined): string | undefined {
+  const a = letter ? w.alsoAccept?.find(x => x.letter === letter) : undefined;
+  return a ? `${a.letter} (${a.because})` : undefined;
+}
+/** The teaching line after an alternate answer: "Yes! Coat starts with C. This is a jacket, and jacket starts with J." */
+export function teachingLine(w: WordEntry, letter: string): string | undefined {
+  const a = w.alsoAccept?.find(x => x.letter === letter);
+  return a && `Yes! ${a.because[0].toUpperCase()}${a.because.slice(1)} starts with ${a.letter}. This is ${/^[aeiou]/.test(w.word) ? 'an' : 'a'} ${w.word}, and ${w.word} starts with ${answerFor(w).toUpperCase()}.`;
+}
+/** Clearing the marks for a word also clears which letter each team gave. */
+export const clearMarks = (s: BeeState): BeeState => { const { acceptedAs: _gone, ...rest } = s; return { ...rest, correctTeamIds: [] }; };
 export function reveal(s: BeeState): BeeState { return s.screen === 'play' ? { ...s, revealed: true } : s; }
 export function revealAnotherLetter(s: BeeState): BeeState {
   if (s.screen !== 'play' || s.revealed) return s;
@@ -42,17 +62,26 @@ export function commitResults(s: BeeState, now: string): BeeState {
   if (s.screen !== 'play' || committed(s) || !canScore(s, Date.parse(now))) return s;
   const w = currentWord(s);
   const session = commitQuestion(s.session, { questionId: questionId(s), subject: 'Spelling', concept: w.skill, prompt: resultPrompt(w) },
-    s.session.teams.map(t => ({ teamId: t.id, correct: s.correctTeamIds.includes(t.id), pointsAwarded: s.correctTeamIds.includes(t.id) ? 1 : 0 })), now);
+    s.session.teams.map(t => {
+      const correct = s.correctTeamIds.includes(t.id), said = correct ? acceptedLabel(w, s.acceptedAs?.[t.id]) : undefined;
+      return { teamId: t.id, correct, pointsAwarded: correct ? 1 : 0, ...(said ? { said } : {}) };
+    }), now);
   return { ...s, session, ...(s.timer ? { timer: advanceTimer(s.timer, Date.parse(now)) } : {}) };
 }
 export function nextWord(s: BeeState, now: string): BeeState {
   if (s.screen !== 'play' || !committed(s)) return s;
   if (s.index === (s.flow?.order.length ?? s.words.length) - 1) return s.flow?.untilStop ? s : finishGame(s, now);
-  const next = { ...s, index: s.index + 1, revealed: false, correctTeamIds: [], extraLetters: [], timer: s.grade === 'K' ? undefined : freshTimer(s.timer?.duration) };
+  const next = { ...clearMarks(s), index: s.index + 1, revealed: false, extraLetters: [], timer: s.grade === 'K' ? undefined : freshTimer(s.timer?.duration) };
   return { ...next, extraLetters: startingHints(currentWord(next), next.difficulty) };
 }
 export function finishGame(s: BeeState, now: string): BeeState {
   return s.screen === 'complete' ? s : { ...s, screen: 'complete', session: endSession(s.session, now) };
+}
+/** acceptedAs is optional; when present it only names marked teams and letters this word accepts. */
+function validAccepted(s: BeeState, w: WordEntry): boolean {
+  if (s.acceptedAs === undefined) return true;
+  if (!s.acceptedAs || typeof s.acceptedAs !== 'object' || Array.isArray(s.acceptedAs)) return false;
+  return Object.entries(s.acceptedAs).every(([team, letter]) => s.correctTeamIds.includes(team) && !!w.alsoAccept?.some(x => x.letter === letter));
 }
 export function isBeeState(value: unknown): value is BeeState {
   try {
@@ -65,6 +94,7 @@ export function isBeeState(value: unknown): value is BeeState {
     const length = s.words[s.index].word.length;
     if (s.extraLetters !== undefined && (!Array.isArray(s.extraLetters) || new Set(s.extraLetters).size !== s.extraLetters.length ||
       s.extraLetters.some(i => !Number.isInteger(i) || i < 0 || i >= length || i === Math.floor(length / 2)))) return false;
+    if (!validAccepted(s, s.words[s.index])) return false;
     const a = s.session;
     if (a.gameType !== 'spelling-bee' || a.mode !== 'team' || a.grade !== s.grade || !!a.endedAt !== (s.screen === 'complete') ||
       JSON.stringify(a.teams) !== JSON.stringify(createCornerTeams(6)) || !Array.isArray(s.correctTeamIds) ||
@@ -118,7 +148,7 @@ function beginPacedGame(words: WordEntry[], grade: Grade, difficulty: Difficulty
 export function repeatCycle(s: BeeState, random = Math.random): BeeState {
   if (!exhausted(s) || !s.flow) return s;
   const flow = { ...s.flow, cycle: s.flow.cycle + 1, offset: s.session.questions.length, order: shuffle(s.words.map(w => w.id), random) };
-  const next = { ...s, flow, index: 0, revealed: false, correctTeamIds: [], extraLetters: [], timer: s.grade === 'K' ? undefined : freshTimer(s.timer?.duration) };
+  const next = { ...clearMarks(s), flow, index: 0, revealed: false, extraLetters: [], timer: s.grade === 'K' ? undefined : freshTimer(s.timer?.duration) };
   return { ...next, extraLetters: startingHints(currentWord(next), s.difficulty) };
 }
 /** Add a reviewed selection at the SAME cutoff. No automatic expansion or future dates. */
@@ -134,9 +164,9 @@ export function extendGame(s: BeeState, words: WordEntry[], options: StartOption
 }
 export function letterChoices(w: WordEntry, count: 0 | 2 | 3): string[] {
   if (!count || w.activity !== 'initial') return [];
-  const answer = answerFor(w).toUpperCase();
-  // Neutral ordering and plausible, non-confusable alternatives; no correctness styling.
-  return [answer, ...['M', 'T', 'S', 'B', 'A'].filter(c => c !== answer).slice(0, count - 1)].sort();
+  const answer = answerFor(w).toUpperCase(), accepted = w.alsoAccept?.map(a => a.letter) ?? [];
+  // Neutral ordering and plausible, non-confusable alternatives; no correctness styling. A letter that is also accepted is never offered as a wrong choice.
+  return [answer, ...['M', 'T', 'S', 'B', 'A'].filter(c => c !== answer && !accepted.includes(c)).slice(0, count - 1)].sort();
 }
 function isPacedState(s: BeeState): boolean {
   const f = s.flow, a = s.session;
@@ -149,6 +179,7 @@ function isPacedState(s: BeeState): boolean {
   if (a.gameType !== 'spelling-bee' || a.mode !== 'team' || a.grade !== s.grade || !!a.endedAt !== (s.screen === 'complete') ||
     JSON.stringify(a.teams) !== JSON.stringify(createCornerTeams(6)) || !Array.isArray(s.correctTeamIds) || new Set(s.correctTeamIds).size !== s.correctTeamIds.length ||
     s.correctTeamIds.some(id => !a.teams.some(t => t.id === id))) return false;
+  if (!validAccepted(s, currentWord(s))) return false;
   const length = answerFor(currentWord(s)).length;
   if (!Array.isArray(s.extraLetters) || new Set(s.extraLetters).size !== s.extraLetters.length || s.extraLetters.some(i => !Number.isInteger(i) || i < 0 || i >= length || i === Math.floor(length / 2))) return false;
   if (a.questions.length < f.offset + s.index || a.questions.length > f.offset + s.index + 1 || a.responses.length !== a.questions.length * 6) return false;
@@ -167,5 +198,5 @@ export function controlTimer(s: BeeState, action: 'start' | 'pause' | 'reset' | 
   const timer = s.timer ?? freshTimer();
   if (duration !== undefined && (timer.status !== 'ready' || !timerDurations.includes(duration))) return s;
   const next = duration !== undefined ? freshTimer(duration) : action === 'start' ? startTimer(timer, now) : action === 'pause' ? pauseTimer(timer, now) : action === 'end' ? endTimer(timer, now) : action === 'reset' ? freshTimer(timer.duration) : advanceTimer(timer, now);
-  return next === timer ? s : { ...s, timer: next, ...(action === 'reset' ? { correctTeamIds: [] } : {}) };
+  return next === timer ? s : { ...(action === 'reset' ? clearMarks(s) : s), timer: next };
 }
