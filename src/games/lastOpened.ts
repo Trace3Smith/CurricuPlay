@@ -1,7 +1,7 @@
 /** Which game was opened last, so the Games hub can spotlight it. Browser-only and separate from every game's own save. */
 export const LAST_OPENED_KEY = 'classthread.games.last-opened.v1';
-export type HubGame = 'jeopardy' | 'four-corners' | 'spelling-bee' | 'state-lingo-bingo';
-const hubGames: readonly HubGame[] = ['jeopardy', 'four-corners', 'spelling-bee', 'state-lingo-bingo'];
+export type HubGame = 'quick-check' | 'jeopardy' | 'four-corners' | 'spelling-bee' | 'state-lingo-bingo';
+const hubGames: readonly HubGame[] = ['quick-check', 'jeopardy', 'four-corners', 'spelling-bee', 'state-lingo-bingo'];
 
 /** Maps a game route such as /games/spelling-bee to its game; other paths (the hub, Question Review) return null. */
 export const gameForPath = (path: string): HubGame | null => hubGames.find(game => path === `/games/${game}`) ?? null;

@@ -363,11 +363,11 @@ test('An unreadable save is left untouched until the teacher discards it', async
   expect((await saved(page)).screen).toBe('setup');
 });
 
-test('Games hub shows all four games without scrolling at each screen size', async ({ page }) => {
+test('Games hub shows all five games without scrolling at each screen size', async ({ page }) => {
   for (const [width, height] of sizes) {
     await page.setViewportSize({ width, height });
     await page.goto('/games');
-    await expect(page.locator('.game-card.live')).toHaveCount(4);
+    await expect(page.locator('.game-card.live')).toHaveCount(5);
     expect(await page.locator('.game-card.live').evaluateAll(cards => cards.every(card => {
       const b = card.getBoundingClientRect();
       return b.top >= 0 && b.bottom <= innerHeight && b.left >= 0 && b.right <= innerWidth && card.scrollHeight <= card.clientHeight + 1;

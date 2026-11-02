@@ -1,0 +1,74 @@
+/* Quick Check in DESIGN.md board mode (shared basics: games/board-mode.css). Scoped to .app.qc-app.
+   Before reveal every numbered choice is styled identically; .qc-correct is added only after Reveal and is the
+   single orange spotlight. Team colours appear only as accent dots beside written team names. */
+.app.qc-app .primary{display:inline-flex;align-items:center;justify-content:center;min-height:calc(88 * var(--u));min-width:calc(320 * var(--u));padding:0 calc(48 * var(--u));border:2px solid var(--ds-highlight);border-radius:var(--ds-rounded-pill);background:var(--ds-highlight);color:var(--ds-on-highlight);font-family:var(--ds-font-board);font-size:calc(40 * var(--u));font-weight:700;line-height:1.1}
+.app.qc-app .primary:hover:not(:disabled){background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-on-highlight)}
+/* Outlined white pills for every other board control. */
+.app.qc-app :where(.qc-options button,.qc-meta button,.qc-controls button:not(.primary),.qc-mark button,.qc-end-actions button:not(.primary),.warning button){display:inline-flex;align-items:center;justify-content:center;gap:calc(12 * var(--u));min-height:calc(72 * var(--u));padding:calc(8 * var(--u)) calc(28 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;line-height:1.15}
+.app.qc-app :where(.qc-options button,.qc-meta button,.qc-controls button:not(.primary),.qc-mark button,.qc-end-actions button:not(.primary)):hover:not(:disabled){background:var(--ds-primary-dark)}
+/* Selected options and marked teams are filled white, so selection never depends on colour alone. */
+.app.qc-app :is(.qc-options,.qc-mark) button[aria-pressed=true]{background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+.app.qc-app .eyebrow{font-size:var(--board-text);font-weight:700;line-height:1.2;letter-spacing:.08em;color:var(--ds-secondary)}
+.app.qc-app .assessment-team-accent{width:calc(26 * var(--u));height:calc(26 * var(--u));min-width:14px;min-height:14px}
+
+/* Setup: one screen, no scrolling. Each label sits beside its buttons. */
+.app.qc-app .qc-setup{margin:calc(24 * var(--u)) 0 0}
+.app.qc-app .qc-setup h1{font-family:var(--ds-font-board);font-size:calc(64 * var(--u));font-weight:700;line-height:1.05;letter-spacing:0;margin:calc(12 * var(--u)) 0 calc(32 * var(--u))}
+.app.qc-app .qc-setup fieldset{display:flex;align-items:center;margin:0 0 calc(24 * var(--u))}
+.app.qc-app .qc-setup legend{float:left;flex:none;width:calc(260 * var(--u));margin:0;padding:0;color:var(--ds-secondary);font-size:calc(36 * var(--u));font-weight:700;line-height:1.2}
+.app.qc-app .qc-options{display:flex;flex-wrap:wrap;gap:calc(16 * var(--u));flex:1}
+.app.qc-app .qc-options button{min-width:calc(140 * var(--u))}
+.app.qc-app .qc-grades{display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+.app.qc-app .qc-name-inputs{flex:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(16 * var(--u))}
+.app.qc-app .qc-name-inputs label{display:flex;align-items:center;gap:calc(12 * var(--u))}
+.app.qc-app :is(.qc-name-inputs input,.qc-start input){min-width:0;width:100%;min-height:calc(64 * var(--u));padding:0 calc(16 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-md);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;color-scheme:dark}
+.app.qc-app .qc-name-inputs input::placeholder{color:var(--ds-on-board);opacity:.75}
+.app.qc-app .qc-start{display:flex;align-items:center;gap:calc(32 * var(--u));margin-top:calc(32 * var(--u))}
+.app.qc-app .qc-start label{display:flex;align-items:center;gap:calc(16 * var(--u));font-size:var(--board-text);white-space:nowrap}
+.app.qc-app .qc-start input{width:auto}
+.app.qc-app .qc-start p{flex:1;font-size:var(--board-text);line-height:1.25}
+
+/* Play: progress, the question (one focal point), numbered choices, answer, team marks, Back / Reveal / Next, scores. */
+.app.qc-app.qc-playing{height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+.app.qc-app.qc-playing header{flex-shrink:0}
+.app.qc-app .qc-game{flex:1;min-height:0;display:flex;flex-direction:column;gap:calc(20 * var(--u));padding:calc(20 * var(--u)) 0 0}
+.app.qc-app .qc-meta{display:flex;align-items:center;gap:calc(32 * var(--u));font-size:calc(36 * var(--u));letter-spacing:.04em}
+.app.qc-app .qc-meta [data-testid=qc-progress]{color:var(--ds-highlight)}
+.app.qc-app .qc-meta button{margin-left:auto}
+/* --qc-question-scale and --qc-choice-scale are set by QuickCheck.tsx: 1 unless text must shrink to fit. */
+.app.qc-app .qc-prompt{flex:1 1 0;min-height:0;display:flex;align-items:center;justify-content:center;gap:calc(40 * var(--u));text-align:center;overflow:hidden}
+.app.qc-app .qc-prompt h1{font-family:var(--ds-font-board);font-size:calc(96 * var(--u) * var(--qc-question-scale, 1));font-weight:700;line-height:1.15;letter-spacing:0;text-wrap:balance;overflow-wrap:anywhere}
+.app.qc-app .qc-prompt img{width:calc(260 * var(--u));max-height:100%;object-fit:contain;border-radius:var(--ds-rounded-md)}
+.app.qc-app .qc-choices{flex:1.2 1 0;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:calc(16 * var(--u));margin:0;padding:0;list-style:none}
+.app.qc-app .qc-choice{min-height:0;display:flex;align-items:center;gap:calc(24 * var(--u));padding:calc(12 * var(--u)) calc(28 * var(--u));border:3px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);background:var(--ds-primary);font-size:calc(56 * var(--u) * var(--qc-choice-scale, 1));line-height:1.15;overflow:hidden}
+.app.qc-app .qc-choice>b{flex:none;display:inline-flex;align-items:center;justify-content:center;width:calc(80 * var(--u));height:calc(80 * var(--u));border-radius:50%;background:var(--ds-on-board);color:var(--ds-board);font-size:calc(56 * var(--u))}
+.app.qc-app .qc-choice>span{min-width:0;overflow-wrap:anywhere}
+.app.qc-app .qc-correct{background:var(--ds-highlight);border-color:var(--ds-on-board);color:var(--ds-on-highlight)}
+.app.qc-app .qc-correct>b{background:var(--ds-board);color:var(--ds-on-board)}
+.app.qc-app .qc-check{flex:none;margin-left:auto;padding:calc(6 * var(--u)) calc(20 * var(--u));border:3px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:var(--ds-board);color:var(--ds-on-board);font-size:calc(32 * var(--u));white-space:nowrap}
+.app.qc-app .qc-answer{flex:none;display:flex;align-items:baseline;gap:calc(24 * var(--u));padding:calc(16 * var(--u)) calc(32 * var(--u));border:3px solid var(--ds-highlight);border-radius:var(--ds-rounded-lg)}
+.app.qc-app .qc-answer span{flex:none;color:var(--ds-highlight);font-size:calc(36 * var(--u))}
+.app.qc-app .qc-answer p{font-size:calc(56 * var(--u));line-height:1.15;overflow-wrap:anywhere}
+.app.qc-app .qc-answer-line{flex:none;font-size:var(--board-text)}
+.app.qc-app .qc-mark{flex:none;display:flex;align-items:center;gap:calc(24 * var(--u))}
+.app.qc-app .qc-mark>span{flex:none;font-size:var(--board-text);color:var(--ds-secondary)}
+.app.qc-app .qc-mark>div{display:flex;flex-wrap:wrap;gap:calc(16 * var(--u))}
+.app.qc-app .qc-controls{flex:none;display:flex;align-items:center;justify-content:space-between;gap:calc(32 * var(--u));padding:0 calc(24 * var(--u)) calc(8 * var(--u))}
+/* The score bar sits in the page flow below the controls, so it can never cover the question. */
+.app.qc-app .qc-scorebar{flex:none;display:flex;flex-wrap:wrap;justify-content:center;gap:calc(12 * var(--u)) calc(32 * var(--u));padding:calc(10 * var(--u)) 0;border-top:2px solid var(--ds-primary-dark);font-size:var(--board-text)}
+.app.qc-app .qc-scorebar b,.app.qc-app .qc-final-scores b{color:var(--ds-highlight);margin-left:calc(8 * var(--u))}
+
+/* End screen */
+.app.qc-app .qc-end{margin:calc(24 * var(--u)) 0 0;display:flex;flex-direction:column;gap:calc(20 * var(--u))}
+.app.qc-app .qc-end h1{font-family:var(--ds-font-board);font-size:calc(96 * var(--u));line-height:1;color:var(--ds-highlight)}
+.app.qc-app .qc-final{display:flex;align-items:center;flex-wrap:wrap;gap:calc(16 * var(--u)) calc(40 * var(--u))}
+.app.qc-app .qc-winner{font-size:calc(48 * var(--u))}
+.app.qc-app .qc-final-scores{display:flex;flex-wrap:wrap;gap:calc(12 * var(--u)) calc(32 * var(--u));font-size:calc(36 * var(--u))}
+.app.qc-app .qc-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(16 * var(--u));margin:0;padding:0;list-style:none}
+.app.qc-app .qc-summary li{padding:calc(16 * var(--u)) calc(24 * var(--u));border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);font-size:var(--board-text);line-height:1.2}
+.app.qc-app .qc-summary-meta{color:var(--ds-secondary)}
+.app.qc-app .qc-summary p{margin-top:calc(6 * var(--u));overflow-wrap:anywhere}
+.app.qc-app .qc-summary-answer{color:var(--ds-highlight)}
+.app.qc-app .qc-end-actions{display:flex;gap:calc(24 * var(--u));padding-bottom:calc(24 * var(--u))}
+@media(max-width:900px){.app.qc-app .qc-setup fieldset{flex-direction:column;align-items:stretch}.app.qc-app .qc-setup legend{float:none;width:auto;margin-bottom:8px}.app.qc-app .qc-grades{grid-template-columns:repeat(3,1fr)}.app.qc-app .qc-name-inputs{grid-template-columns:1fr 1fr}.app.qc-app .qc-start{flex-wrap:wrap}.app.qc-app .qc-summary{grid-template-columns:1fr}.app.qc-app .qc-choices{grid-template-columns:1fr;grid-template-rows:none}}
+@media(prefers-reduced-motion:no-preference){.app.qc-app button{transition:background-color .15s,border-color .15s,color .15s}}

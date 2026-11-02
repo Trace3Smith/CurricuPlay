@@ -25,7 +25,7 @@ test('Spotlight rule: the last-opened saved game, else the only saved game, else
 });
 
 async function spotlights(page: Page) {
-  await expect(page.locator('.game-card.live')).toHaveCount(4);
+  await expect(page.locator('.game-card.live')).toHaveCount(5);
   return page.locator('.game-card.live').evaluateAll(cards => cards.map(card => ({
     name: card.querySelector('strong')!.textContent,
     tag: card.querySelector('.play-tag')!.textContent,
@@ -40,7 +40,7 @@ test('Games hub gives only the most recently opened saved game the orange CONTIN
   await page.reload();
   // The fixture saves Jeopardy and Four Corners; with no record of which was opened last, neither is the spotlight.
   let cards = await spotlights(page);
-  expect(cards.map(c => [c.name, c.tag, c.spotlight])).toEqual([['JEOPARDY', 'CONTINUE ↗', false], ['FOUR CORNERS', 'CONTINUE ↗', false], ['SPELLING BEE', 'PLAY ↗', false], ['STATE LINGO BINGO', 'PLAY ↗', false]]);
+  expect(cards.map(c => [c.name, c.tag, c.spotlight])).toEqual([['QUICK CHECK', 'PLAY ↗', false], ['JEOPARDY', 'CONTINUE ↗', false], ['FOUR CORNERS', 'CONTINUE ↗', false], ['SPELLING BEE', 'PLAY ↗', false], ['STATE LINGO BINGO', 'PLAY ↗', false]]);
   expect(new Set(cards.map(c => c.tagBackground))).toEqual(new Set(['rgba(0, 0, 0, 0)']));
 
   await page.evaluate(key => localStorage.setItem(key, JSON.stringify({ version: 1, game: 'four-corners', at: '2026-10-26T15:00:00.000Z' })), LAST_OPENED_KEY);

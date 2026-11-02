@@ -3,6 +3,7 @@ import QuestionReview from './components/QuestionReview';
 import FourCorners from './games/four-corners/FourCorners';
 import { readActive as readSpellingBee } from './games/spelling-bee/storage';
 import { readActive as readBingo } from './games/state-lingo-bingo/storage';
+import { loadState as loadQuickCheck } from './games/quick-check/engine';
 import { isTeamMode, loadState as loadFourCornersState } from './games/four-corners/engine';
 import { readReviews, REVIEW_KEY } from './services/questionReview';
 import { grades, type Filters, type GameState, type Grade } from './types';
@@ -81,8 +82,10 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   const resumableCorners = cornerState?.screen === 'play' ? cornerState : null;
   const bingoState = screen === 'home' ? readBingo().state : null;
   const resumableBingo = bingoState?.screen === 'play' ? bingoState : null;
+  const quickState = screen === 'home' ? loadQuickCheck() : null;
+  const resumableQuick = quickState?.screen === 'play' ? quickState : null;
   // Only one saved game gets the orange board spotlight; the others show a white-outlined CONTINUE.
-  const savedGames = ([['jeopardy', !!state.selectedGame], ['four-corners', !!resumableCorners], ['spelling-bee', resumableBee], ['state-lingo-bingo', !!resumableBingo]] as const).filter(([, saved]) => saved).map(([game]) => game);
+  const savedGames = ([['quick-check', !!resumableQuick], ['jeopardy', !!state.selectedGame], ['four-corners', !!resumableCorners], ['spelling-bee', resumableBee], ['state-lingo-bingo', !!resumableBingo]] as const).filter(([, saved]) => saved).map(([game]) => game);
   const spotlight = screen === 'home' ? spotlightGame(savedGames, readLastOpened()) : null;
   const spot = (game: HubGame) => (spotlight === game ? '' : undefined);
   return <div className={`app board-mode ${active ? 'playing' : ''} ${screen === 'home' ? 'hub' : 'jeopardy'}`}>
@@ -97,6 +100,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
       <h1 ref={title} tabIndex={-1}>This week’s content.<br /><span>Ready to play.</span></h1>
       <p className="intro">Your curriculum. Your classroom. A new way to play.</p>
       <div className="game-cards">
+        <button className="game-card live" data-spotlight={spot('quick-check')} onClick={() => onNavigate('/games/quick-check')}><span className="qc-home-art" aria-hidden="true">✓</span><span className="card-bottom"><strong>QUICK CHECK</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableQuick ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableQuick ? `${gradeLabel(resumableQuick.grade!)} · ${resumableQuick.index + 1} of ${resumableQuick.questions.length}` : 'Pick a grade. Press Start. Review.'}</span></button>
         {/* data-spotlight only styles the most recently opened saved game as the board spotlight. */}
         <button className="game-card live" data-spotlight={spot('jeopardy')} onClick={() => { update({ screen: state.selectedGame === 'jeopardy' ? (state.current ? 'question' : 'board') : 'setup' }); onNavigate('/games/jeopardy'); }}>
           <span className="card-art" aria-hidden="true">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span><span className="card-bottom"><strong>JEOPARDY</strong><span className="play-tag">{state.selectedGame ? 'CONTINUE' : 'PLAY'} ↗</span></span>

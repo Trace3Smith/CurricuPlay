@@ -1,5 +1,5 @@
 /** Display names for shared reports. Unlisted game types still show their stored ID. */
-const names: Record<string, string> = { 'four-corners': 'Four Corners', 'state-lingo-bingo': 'State Lingo Bingo' };
+const names: Record<string, string> = { 'quick-check': 'Quick Check', 'four-corners': 'Four Corners', 'state-lingo-bingo': 'State Lingo Bingo' };
 export const gameName = (gameType: string) => names[gameType] ?? gameType;
 /** Report header prefix: "Grade 5 · ", "Kindergarten · ", or nothing for a record without a grade. */
 export const gradeLabel = (grade?: string) => !grade ? '' : grade === 'K' ? 'Kindergarten · ' : `Grade ${grade} · `;
