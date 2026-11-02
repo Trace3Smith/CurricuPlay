@@ -383,7 +383,12 @@
   "K-sb-6": "approve",
   "K-sb-7": "approve",
   "K-sb-8": "approve",
-  "K-sb-9": "approve"
+  "K-sb-9": "approve",
+  "1-jp-w1": "approve",
+  "1-jp-w2": "approve",
+  "3-sb-w1": "approve",
+  "3-sb-w2": "approve",
+  "5-jp-w1": "approve"
  },
  "notes": {
   "3-sb-15": "Don't say they lived a million years ago, say they lived a long time ago and are now extinct.",
@@ -402,6 +407,24 @@
  "edits": {
   "3-sb-15": {
    "clue": "A reptile that lived a long time ago and is now extinct; we know about it from fossils."
+  },
+  "1-jp-5": {
+   "answer": "A picture graph (pictograph). Our class weather chart is one."
+  },
+  "1-jp-3": {
+   "taughtOn": "2026-11-05"
+  },
+  "3-sb-1": {
+   "taughtOn": "2026-11-05"
+  },
+  "5-sb-2": {
+   "taughtOn": "2026-11-02"
+  },
+  "5-sb-3": {
+   "taughtOn": "2026-11-02"
+  },
+  "5-sb-4": {
+   "taughtOn": "2026-11-02"
   }
  },
  "held": {
@@ -446,6 +469,12 @@
   "K-sb-6": "Kindergarten photo not made yet (Trace chose image generation, Oct 30).",
   "K-sb-7": "Kindergarten photo not made yet (Trace chose image generation, Oct 30).",
   "K-sb-8": "Kindergarten photo not made yet (Trace chose image generation, Oct 30).",
-  "K-sb-9": "Kindergarten photo not made yet (Trace chose image generation, Oct 30)."
+  "K-sb-9": "Kindergarten photo not made yet (Trace chose image generation, Oct 30).",
+  "3-sb-6": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
+  "3-sb-7": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
+  "3-sb-8": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
+  "3-jp-5": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
+  "3-fc-3": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
+  "3-fc-4": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
  }
 }

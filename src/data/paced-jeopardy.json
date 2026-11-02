@@ -2892,6 +2892,7 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "1-jp-3",
+  "taughtOn": "2026-11-05",
   "lessonPlanCheck": {
    "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
    "section": "M 11/2; Vocabulary & Strategy",
@@ -2942,7 +2943,7 @@
   "subject": "Science",
   "difficulty": 1,
   "question": "We draw a small picture for each day’s weather to make a graph. What do we call a graph made with pictures?",
-  "answer": "A pictograph (picture graph).",
+  "answer": "A picture graph (pictograph). Our class weather chart is one.",
   "standard": "S1E1.a",
   "session": null,
   "questionType": "short-answer",
@@ -3607,7 +3608,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "2-jp-3"
+  "batchItemId": "2-jp-3",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 2",
+   "section": "11.2-11.6 | Math, Unit 2: Lesson 9",
+   "quote": "choose whether to add or subtract to solve a word problem."
+  }
  },
  {
   "id": "paced-2026-11-2-ben-read-45-pages-ava-read-27-pages-how-",
@@ -3641,7 +3647,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "2-jp-4"
+  "batchItemId": "2-jp-4",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 2",
+   "section": "11.2-11.6 | Math, Unit 2: Lesson 9",
+   "quote": "choose whether to add or subtract to solve a word problem."
+  }
  },
  {
   "id": "paced-2026-11-2-which-region-of-georgia-has-the-state-s-",
@@ -4199,7 +4210,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-jp-0"
+  "batchItemId": "3-jp-0",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "section": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "paced-2026-11-3-a-teacher-thinks-homework-helps-students",
@@ -4233,7 +4249,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-jp-1"
+  "batchItemId": "3-jp-1",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "section": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "paced-2026-11-3-on-a-multiplication-table-go-across-the-",
@@ -4267,7 +4288,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-jp-2"
+  "batchItemId": "3-jp-2",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "section": "M 11/2 | November 2-5, 2026",
+   "quote": "Lesson 12 - Multiplication and Division Facts"
+  }
  },
  {
   "id": "paced-2026-11-3-write-all-four-facts-in-the-fact-family-",
@@ -4301,7 +4327,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-jp-3"
+  "batchItemId": "3-jp-3",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "section": "M 11/2 | November 2-5, 2026",
+   "quote": "Lesson 12 - Multiplication and Division Facts"
+  }
  },
  {
   "id": "paced-2026-11-3-what-usually-has-to-happen-to-a-plant-or",
@@ -4336,40 +4367,6 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "3-jp-4"
- },
- {
-  "id": "paced-2026-11-3-name-one-reason-european-explorers-saile",
-  "subject": "Social Studies",
-  "difficulty": 1,
-  "question": "Name one reason European explorers sailed to North America in the 1400s and 1500s.",
-  "answer": "Any one: to find gold and riches, to find a new trade route to Asia, to claim land for their country, or to spread their religion.",
-  "standard": "SS3H2",
-  "session": null,
-  "questionType": "short-answer",
-  "teacherRead": true,
-  "grade": "3",
-  "weekIntroduced": "2026-11-02",
-  "alignedWeeks": [
-   "2026-11-02"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-9.json",
-   "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-   "sourceTitle": "3rd Social Studies Pacing Support",
-   "section": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-   "quote": "Describe the reasons and obstacles for the  exploration of North America."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 3-jp-5).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "3-jp-5"
  },
  {
   "id": "paced-2026-11-3-story-1-a-turtle-wins-a-race-because-he-",
@@ -6216,5 +6213,125 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "5-jp-23"
+ },
+ {
+  "id": "paced-2026-11-1-put-the-two-small-words-butter-and-fly-t",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Put the two small words “butter” and “fly” together. What compound word do they make?",
+  "answer": "Butterfly.",
+  "standard": null,
+  "session": "Week 11.2-11.6 | Foundations 11/2, Friday Session 30, Instructions",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-11-02",
+  "alignedWeeks": [
+   "2026-11-02"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1YcVXbDTUr-2026-11-02.json",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+   "section": "Week 11.2-11.6 | Foundations 11/2, Friday Session 30, Instructions",
+   "quote": "compound words are when two small words come together to make one word. Ex: butter+fly=butterfly."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 1-jp-w1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-w1",
+  "taughtOn": "2026-11-06",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+   "section": "Week 11.2-11.6 | Foundations 11/2, Friday Session 30, Instructions",
+   "quote": "compound words are when two small words come together to make one word. Ex: butter+fly=butterfly."
+  }
+ },
+ {
+  "id": "paced-2026-11-1-6-6-12-use-that-double-to-solve-7-6",
+  "subject": "Math",
+  "difficulty": 2,
+  "question": "6 + 6 = 12. Use that double to solve 7 + 6.",
+  "answer": "13. 7 + 6 is one more than 6 + 6.",
+  "standard": null,
+  "session": "Week 11.2-11.6 | M 11/2, Wednesday- Session 3, CER Exit Ticket",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-11-02",
+  "alignedWeeks": [
+   "2026-11-02"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1YcVXbDTUr-2026-11-02.json",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+   "section": "Week 11.2-11.6 | M 11/2, Wednesday- Session 3, CER Exit Ticket",
+   "quote": "How can you use doubles to solve 7 + 6?"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 1-jp-w2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-w2",
+  "taughtOn": "2026-11-04",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+   "section": "Week 11.2-11.6 | M 11/2, Wednesday- Session 3, CER Exit Ticket",
+   "quote": "How can you use doubles to solve 7 + 6?"
+  }
+ },
+ {
+  "id": "paced-2026-11-5-in-the-word-nonfiction-which-prefix-mean",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "In the word “nonfiction,” which prefix means “not”?",
+  "answer": "Non- (nonfiction means not fiction).",
+  "standard": null,
+  "session": "ELA wk 11/2-11/6 | Session 4 block, Academic Vocabulary",
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "5",
+  "weekIntroduced": "2026-11-02",
+  "alignedWeeks": [
+   "2026-11-02"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1Yqz9D2HYE-2026-11-02.json",
+   "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+   "section": "ELA wk 11/2-11/6 | Session 4 block, Academic Vocabulary",
+   "quote": "Prefixes: im-, non-"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 5-jp-w1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-jp-w1",
+  "taughtOn": "2026-11-02",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+   "section": "ELA wk 11/2-11/6 | Session 4 block, Academic Vocabulary",
+   "quote": "Prefixes: im-, non-"
+  }
  }
 ]

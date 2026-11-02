@@ -4739,14 +4739,14 @@
     "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
     "locator": "Weekly catalog, Nov 2–6 (Unit 3: Another View), I Can",
     "unit": "Weekly catalog, Nov 2–6 (Unit 3: Another View), I Can",
-    "earliestEligible": "2026-11-06",
+    "earliestEligible": "2026-11-05",
     "periods": [
       {
-        "start": "2026-11-02",
-        "end": "2026-11-06"
+        "start": "2026-11-05",
+        "end": "2026-11-05"
       }
     ],
-    "category": "source-listed",
+    "category": "skill-practice",
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 3-sb-1. Original ClassThread clue."
@@ -4838,72 +4838,6 @@
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 3-sb-5. Original ClassThread clue."
-  },
-  {
-    "id": "paced-2026-11-3-sb-6",
-    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
-    "grade": "3",
-    "subject": "Literacy",
-    "target": "Social Studies: reasons for exploring North America",
-    "source": "3rd Social Studies Pacing Support",
-    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-    "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-    "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-    "earliestEligible": "2026-11-06",
-    "periods": [
-      {
-        "start": "2026-11-02",
-        "end": "2026-11-06"
-      }
-    ],
-    "category": "source-listed",
-    "timing": "documented",
-    "review": "approved",
-    "note": "Teacher-approved 2026-11 batch item 3-sb-6. Original ClassThread clue."
-  },
-  {
-    "id": "paced-2026-11-3-sb-7",
-    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
-    "grade": "3",
-    "subject": "Literacy",
-    "target": "Social Studies: early explorers",
-    "source": "3rd Social Studies Pacing Support",
-    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-    "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
-    "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
-    "earliestEligible": "2026-11-06",
-    "periods": [
-      {
-        "start": "2026-11-02",
-        "end": "2026-11-06"
-      }
-    ],
-    "category": "source-listed",
-    "timing": "documented",
-    "review": "approved",
-    "note": "Teacher-approved 2026-11 batch item 3-sb-7. Original ClassThread clue."
-  },
-  {
-    "id": "paced-2026-11-3-sb-8",
-    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
-    "grade": "3",
-    "subject": "Literacy",
-    "target": "Social Studies: obstacles explorers faced",
-    "source": "3rd Social Studies Pacing Support",
-    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-    "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-    "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-    "earliestEligible": "2026-11-06",
-    "periods": [
-      {
-        "start": "2026-11-02",
-        "end": "2026-11-06"
-      }
-    ],
-    "category": "source-listed",
-    "timing": "documented",
-    "review": "approved",
-    "note": "Teacher-approved 2026-11 batch item 3-sb-8. Original ClassThread clue."
   },
   {
     "id": "paced-2026-11-3-sb-9",
@@ -5941,7 +5875,7 @@
   },
   {
     "id": "paced-2026-11-5-sb-2",
-    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11.json",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11-02.json",
     "grade": "5",
     "subject": "Literacy",
     "target": "Literacy: first-hand vs. second-hand accounts (5.T.T.2.c)",
@@ -5949,11 +5883,11 @@
     "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
     "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
     "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
-    "earliestEligible": "2026-11-06",
+    "earliestEligible": "2026-11-02",
     "periods": [
       {
         "start": "2026-11-02",
-        "end": "2026-11-06"
+        "end": "2026-11-02"
       }
     ],
     "category": "skill-practice",
@@ -5963,7 +5897,7 @@
   },
   {
     "id": "paced-2026-11-5-sb-3",
-    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11.json",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11-02.json",
     "grade": "5",
     "subject": "Literacy",
     "target": "Literacy: first-hand vs. second-hand accounts (5.T.T.2.c)",
@@ -5971,11 +5905,11 @@
     "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
     "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
     "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
-    "earliestEligible": "2026-11-06",
+    "earliestEligible": "2026-11-02",
     "periods": [
       {
         "start": "2026-11-02",
-        "end": "2026-11-06"
+        "end": "2026-11-02"
       }
     ],
     "category": "skill-practice",
@@ -5985,7 +5919,7 @@
   },
   {
     "id": "paced-2026-11-5-sb-4",
-    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11.json",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11-02.json",
     "grade": "5",
     "subject": "Literacy",
     "target": "Literacy: author's point of view in accounts (5.T.T.2.c)",
@@ -5993,11 +5927,11 @@
     "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
     "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
     "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
-    "earliestEligible": "2026-11-06",
+    "earliestEligible": "2026-11-02",
     "periods": [
       {
         "start": "2026-11-02",
-        "end": "2026-11-06"
+        "end": "2026-11-02"
       }
     ],
     "category": "skill-practice",
@@ -6422,5 +6356,49 @@
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 5-sb-23. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-3-sb-w1",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1QQOJoRIXx-2026-11-02.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading: story elements (conflict and resolution)",
+    "source": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/2 | Vocabulary",
+    "unit": "ELA 11/2 | Vocabulary",
+    "earliestEligible": "2026-11-06",
+    "periods": [
+      {
+        "start": "2026-11-02",
+        "end": "2026-11-06"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 3-sb-w1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-3-sb-w2",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1QQOJoRIXx-2026-11-02.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading: story elements",
+    "source": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/2 | Vocabulary",
+    "unit": "ELA 11/2 | Vocabulary",
+    "earliestEligible": "2026-11-06",
+    "periods": [
+      {
+        "start": "2026-11-02",
+        "end": "2026-11-06"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 3-sb-w2. Original ClassThread clue."
   }
 ]

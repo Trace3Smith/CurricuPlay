@@ -5354,8 +5354,13 @@
   "checks": [
    "The Grade 2 plan for Nov 2 still shows last week's math, so this week's word-problem topic comes only from the district math support doc."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+   "locator": "11.2-11.6 | Math, Unit 2: Lesson 9",
+   "quote": "choose whether to add or subtract to solve a word problem."
+  }
  },
  {
   "id": "2-jp-4",
@@ -5385,8 +5390,13 @@
   "checks": [
    "The Grade 2 plan for Nov 2 still shows last week's math, so this week's word-problem topic comes only from the district math support doc."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+   "locator": "11.2-11.6 | Math, Unit 2: Lesson 9",
+   "quote": "choose whether to add or subtract to solve a word problem."
+  }
  },
  {
   "id": "2-jp-5",
@@ -6393,8 +6403,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "3-sb-1",
@@ -6423,8 +6438,13 @@
   "checks": [
    "'Elements' is an abstract word; the drafter suggested dropping it if it feels weak."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "3-sb-2",
@@ -6453,8 +6473,13 @@
   "checks": [
    "Long word for 3rd grade; consider using it as a challenge word."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "M 11/2 | November 2-5, 2026",
+   "quote": "Lesson 12 - Multiplication and Division Facts"
+  }
  },
  {
   "id": "3-sb-3",
@@ -6481,8 +6506,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "M 11/2 | November 2-5, 2026",
+   "quote": "Lesson 12 - Multiplication and Division Facts"
+  }
  },
  {
   "id": "3-sb-4",
@@ -7167,8 +7197,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "3-jp-1",
@@ -7196,8 +7231,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "3-jp-2",
@@ -7225,8 +7265,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "M 11/2 | November 2-5, 2026",
+   "quote": "Lesson 12 - Multiplication and Division Facts"
+  }
  },
  {
   "id": "3-jp-3",
@@ -7256,8 +7301,13 @@
   "checks": [
    "Four-part answer; decide ahead whether a team gets credit for naming only some of the facts."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "M 11/2 | November 2-5, 2026",
+   "quote": "Lesson 12 - Multiplication and Division Facts"
+  }
  },
  {
   "id": "3-jp-4",
@@ -7717,8 +7767,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "3-fc-1",
@@ -7752,8 +7807,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "3-fc-2",
@@ -10110,8 +10170,13 @@
   "checks": [
    "Evidence is the plan's Nov 2 tab, which was copied from the Oct 26 tab, so this word was really taught Oct 27 and is review this week."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+   "locator": "ELA wk 11/2-11/6 | Session 4 block, I can",
+   "quote": "I can compare firsthand and secondhand accounts of the same event using comparison terms (similar, different)."
+  }
  },
  {
   "id": "5-sb-5",
@@ -11987,5 +12052,177 @@
   ],
   "plan": "unchecked",
   "planEvidence": null
+ },
+ {
+  "id": "1-jp-w1",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Put the two small words “butter” and “fly” together. What compound word do they make?",
+   "answer": "Butterfly.",
+   "standard": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+    "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+    "locator": "Week 11.2-11.6 | Foundations 11/2, Friday Session 30, Instructions",
+    "quote": "compound words are when two small words come together to make one word. Ex: butter+fly=butterfly."
+   },
+   "weekOf": "2026-11-02",
+   "taughtOn": "2026-11-06"
+  },
+  "checks": [],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "Week 11.2-11.6 | Foundations 11/2, Friday Session 30, Instructions",
+   "quote": "compound words are when two small words come together to make one word. Ex: butter+fly=butterfly."
+  }
+ },
+ {
+  "id": "1-jp-w2",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-11-02",
+  "subject": "Math",
+  "showsUp": "2026-11-04",
+  "review": "2026-12-04",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "6 + 6 = 12. Use that double to solve 7 + 6.",
+   "answer": "13. 7 + 6 is one more than 6 + 6.",
+   "standard": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+    "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+    "locator": "Week 11.2-11.6 | M 11/2, Wednesday- Session 3, CER Exit Ticket",
+    "quote": "How can you use doubles to solve 7 + 6?"
+   },
+   "weekOf": "2026-11-02",
+   "taughtOn": "2026-11-04"
+  },
+  "checks": [],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "Week 11.2-11.6 | M 11/2, Wednesday- Session 3, CER Exit Ticket",
+   "quote": "How can you use doubles to solve 7 + 6?"
+  }
+ },
+ {
+  "id": "3-sb-w1",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": false,
+  "item": {
+   "word": "conflict",
+   "clue": "The problem a character has to face in a story.",
+   "skill": "Reading: story elements (conflict and resolution)",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/2 | Vocabulary",
+    "quote": "Plot · Conflict · Resolution"
+   },
+   "weekOf": "2026-11-02",
+   "taughtOn": null
+  },
+  "checks": [
+   "Week-only vocabulary, so it unlocks Friday 11/6 (that day's Do Now asks about the problem in the story)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Vocabulary",
+   "quote": "Plot · Conflict · Resolution"
+  }
+ },
+ {
+  "id": "3-sb-w2",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": false,
+  "item": {
+   "word": "setting",
+   "clue": "The time and place of a story.",
+   "skill": "Reading: story elements",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/2 | Vocabulary",
+    "quote": "Perspective · Character · Setting"
+   },
+   "weekOf": "2026-11-02",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/2 | Vocabulary",
+   "quote": "Perspective · Character · Setting"
+  }
+ },
+ {
+  "id": "5-jp-w1",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "showsUp": "2026-11-02",
+  "review": "2026-12-02",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "In the word “nonfiction,” which prefix means “not”?",
+   "answer": "Non- (nonfiction means not fiction).",
+   "standard": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+    "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+    "locator": "ELA wk 11/2-11/6 | Session 4 block, Academic Vocabulary",
+    "quote": "Prefixes: im-, non-"
+   },
+   "weekOf": "2026-11-02",
+   "taughtOn": "2026-11-02"
+  },
+  "checks": [
+   "The plan's day blocks are copied from last week; the Daily Overview puts Session 4 (where im- and non- are taught) on Mon Nov 2. Could also have been Fri Oct 30."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 2",
+   "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+   "locator": "ELA wk 11/2-11/6 | Session 4 block, Academic Vocabulary",
+   "quote": "Prefixes: im-, non-"
+  }
  }
 ]

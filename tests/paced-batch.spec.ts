@@ -82,8 +82,19 @@ test('November batch: approved items ship; removed, held and Kindergarten photo 
   expect(new Set(corners.map(q => q.correctIndex)).size).toBe(4);
   // No Kindergarten Spelling Bee words until their photos exist; Trace's dinosaur edit is applied.
   const novWords = pacingBank.filter(w => w.evidenceId.startsWith('paced-2026-11-'));
-  expect(novWords.length).toBe(136);
+  expect(novWords.length).toBe(135);
   expect(novWords.some(w => w.grade === 'K')).toBe(false);
+  // Nov 2 review: Grade 3 explorer items held, new items added, the removed Piedmont question left out.
+  for (const id of ['3-sb-6', '3-sb-7', '3-sb-8', '3-jp-5', '3-fc-3', '3-fc-4']) {
+    expect(hold[id]).toBeDefined();
+    expect(nov.map(q => q.batchItemId)).not.toContain(id);
+    expect(novWords.map(w => w.evidenceId)).not.toContain(`paced-2026-11-${id}`);
+  }
+  for (const id of ['1-jp-w1', '1-jp-w2', '5-jp-w1']) expect(nov.map(q => q.batchItemId)).toContain(id);
+  expect(novWords.map(w => w.word)).toEqual(expect.arrayContaining(['conflict', 'setting']));
+  expect(nov.map(q => q.batchItemId)).not.toContain('2-jp-w1');
+  expect(nov.find(q => q.batchItemId === '1-jp-3')!.taughtOn).toBe('2026-11-05');
+  expect(novWords.find(w => w.word === 'firsthand')!.curriculum.earliestEligible).toBe('2026-11-02');
   expect(novWords.find(w => w.word === 'dinosaur')!.clue).toContain('long time ago');
   // Nothing unlocks on Tue Nov 3 (no school), and nothing is visible before Nov 2.
   for (const q of nov) { expect(questionTaughtDate(q)).not.toBe('2026-11-03'); expect(questionStatus(q, '2026-10-30')).toBeNull(); }

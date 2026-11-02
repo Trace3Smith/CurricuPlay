@@ -4287,7 +4287,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-fc-0"
+  "batchItemId": "3-fc-0",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "section": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "fc-paced-2026-11-3-a-student-thinks-recess-is-too-short-a-t",
@@ -4329,7 +4334,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-fc-1"
+  "batchItemId": "3-fc-1",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+   "section": "ELA 11/2 | Unit 3: Another View Session 3-5, Learning Target",
+   "quote": "I can identify key story elements from the beginning, middle, and end of a story, explain different characters' perspectives"
+  }
  },
  {
   "id": "fc-paced-2026-11-3-which-dead-fish-has-the-best-chance-of-b",
@@ -4372,90 +4382,6 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "3-fc-2"
- },
- {
-  "id": "fc-paced-2026-11-3-which-was-an-obstacle-for-early-explorer",
-  "subject": "Social Studies",
-  "difficulty": 1,
-  "question": "Which was an obstacle for early explorers crossing the ocean?",
-  "answer": "Storms and running out of fresh food",
-  "choices": [
-   "Too many maps to choose from",
-   "Airplanes flying overhead",
-   "Traffic jams at the port",
-   "Storms and running out of fresh food"
-  ],
-  "correctIndex": 3,
-  "explanation": "Long trips on wooden ships meant danger from storms, hunger, and sickness.",
-  "standard": "SS3H2",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "3",
-  "weekIntroduced": "2026-11-02",
-  "alignedWeeks": [
-   "2026-11-02"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-9.json",
-   "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-   "sourceTitle": "3rd Social Studies Pacing Support",
-   "section": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-   "quote": "Describe the reasons and obstacles for the  exploration of North America."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 3-fc-3).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "3-fc-3"
- },
- {
-  "id": "fc-paced-2026-11-3-john-cabot-sailed-to-north-america-in-14",
-  "subject": "Social Studies",
-  "difficulty": 2,
-  "question": "John Cabot sailed to North America in 1497. Which country paid for his voyage?",
-  "answer": "England",
-  "choices": [
-   "England",
-   "Spain",
-   "China",
-   "Mexico"
-  ],
-  "correctIndex": 0,
-  "explanation": "John Cabot was born in Italy but sailed for England.",
-  "standard": "SS3H2",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "3",
-  "weekIntroduced": "2026-11-02",
-  "alignedWeeks": [
-   "2026-11-02"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-9.json",
-   "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-   "sourceTitle": "3rd Social Studies Pacing Support",
-   "section": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), Additional Resources",
-   "quote": "Read Aloud: John Cabot"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 3-fc-4).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "3-fc-4"
  },
  {
   "id": "fc-paced-2026-11-3-story-1-an-ant-gathers-food-all-summer-a",

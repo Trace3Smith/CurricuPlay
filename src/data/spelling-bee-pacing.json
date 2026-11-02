@@ -13638,14 +13638,14 @@
       "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
       "locator": "Weekly catalog, Nov 2–6 (Unit 3: Another View), I Can",
       "unit": "Weekly catalog, Nov 2–6 (Unit 3: Another View), I Can",
-      "earliestEligible": "2026-11-06",
+      "earliestEligible": "2026-11-05",
       "periods": [
         {
-          "start": "2026-11-02",
-          "end": "2026-11-06"
+          "start": "2026-11-05",
+          "end": "2026-11-05"
         }
       ],
-      "category": "source-listed",
+      "category": "skill-practice",
       "timing": "documented",
       "review": "approved",
       "note": "Teacher-approved 2026-11 batch item 3-sb-1. Original ClassThread clue."
@@ -13783,105 +13783,6 @@
       "note": "Teacher-approved 2026-11 batch item 3-sb-5. Original ClassThread clue."
     },
     "evidenceId": "paced-2026-11-3-sb-5",
-    "complexity": "academic"
-  },
-  {
-    "id": "pacing-3-exploration",
-    "grade": "3",
-    "word": "exploration",
-    "clue": "Traveling to unknown places to discover and learn about them.",
-    "skill": "Social Studies: reasons for exploring North America",
-    "picture": null,
-    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
-    "kind": "curriculum",
-    "reviewStatus": "approved",
-    "curriculum": {
-      "grade": "3",
-      "subject": "Literacy",
-      "target": "Social Studies: reasons for exploring North America",
-      "source": "3rd Social Studies Pacing Support",
-      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-      "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-      "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-      "earliestEligible": "2026-11-06",
-      "periods": [
-        {
-          "start": "2026-11-02",
-          "end": "2026-11-06"
-        }
-      ],
-      "category": "source-listed",
-      "timing": "documented",
-      "review": "approved",
-      "note": "Teacher-approved 2026-11 batch item 3-sb-6. Original ClassThread clue."
-    },
-    "evidenceId": "paced-2026-11-3-sb-6",
-    "complexity": "academic"
-  },
-  {
-    "id": "pacing-3-explorer",
-    "grade": "3",
-    "word": "explorer",
-    "clue": "A person who travels to new places to find out what is there.",
-    "skill": "Social Studies: early explorers",
-    "picture": null,
-    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
-    "kind": "curriculum",
-    "reviewStatus": "approved",
-    "curriculum": {
-      "grade": "3",
-      "subject": "Literacy",
-      "target": "Social Studies: early explorers",
-      "source": "3rd Social Studies Pacing Support",
-      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-      "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
-      "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
-      "earliestEligible": "2026-11-06",
-      "periods": [
-        {
-          "start": "2026-11-02",
-          "end": "2026-11-06"
-        }
-      ],
-      "category": "source-listed",
-      "timing": "documented",
-      "review": "approved",
-      "note": "Teacher-approved 2026-11 batch item 3-sb-7. Original ClassThread clue."
-    },
-    "evidenceId": "paced-2026-11-3-sb-7",
-    "complexity": "academic"
-  },
-  {
-    "id": "pacing-3-obstacles",
-    "grade": "3",
-    "word": "obstacles",
-    "clue": "Things that get in your way and make a goal hard to reach.",
-    "skill": "Social Studies: obstacles explorers faced",
-    "picture": null,
-    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
-    "kind": "curriculum",
-    "reviewStatus": "approved",
-    "curriculum": {
-      "grade": "3",
-      "subject": "Literacy",
-      "target": "Social Studies: obstacles explorers faced",
-      "source": "3rd Social Studies Pacing Support",
-      "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
-      "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-      "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
-      "earliestEligible": "2026-11-06",
-      "periods": [
-        {
-          "start": "2026-11-02",
-          "end": "2026-11-06"
-        }
-      ],
-      "category": "source-listed",
-      "timing": "documented",
-      "review": "approved",
-      "note": "Teacher-approved 2026-11 batch item 3-sb-8. Original ClassThread clue."
-    },
-    "evidenceId": "paced-2026-11-3-sb-8",
     "complexity": "academic"
   },
   {
@@ -15453,11 +15354,11 @@
       "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
       "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
       "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
-      "earliestEligible": "2026-11-06",
+      "earliestEligible": "2026-11-02",
       "periods": [
         {
           "start": "2026-11-02",
-          "end": "2026-11-06"
+          "end": "2026-11-02"
         }
       ],
       "category": "skill-practice",
@@ -15486,11 +15387,11 @@
       "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
       "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
       "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
-      "earliestEligible": "2026-11-06",
+      "earliestEligible": "2026-11-02",
       "periods": [
         {
           "start": "2026-11-02",
-          "end": "2026-11-06"
+          "end": "2026-11-02"
         }
       ],
       "category": "skill-practice",
@@ -15519,11 +15420,11 @@
       "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
       "locator": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
       "unit": "ELA tab wk 11/2-11/6, Day 5 block (Unit 3 Session 4), Academic Vocabulary",
-      "earliestEligible": "2026-11-06",
+      "earliestEligible": "2026-11-02",
       "periods": [
         {
           "start": "2026-11-02",
-          "end": "2026-11-06"
+          "end": "2026-11-02"
         }
       ],
       "category": "skill-practice",
@@ -16159,6 +16060,72 @@
       "note": "Teacher-approved 2026-11 batch item 5-sb-23. Original ClassThread clue."
     },
     "evidenceId": "paced-2026-11-5-sb-23",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-conflict",
+    "grade": "3",
+    "word": "conflict",
+    "clue": "The problem a character has to face in a story.",
+    "skill": "Reading: story elements (conflict and resolution)",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: story elements (conflict and resolution)",
+      "source": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+      "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+      "locator": "ELA 11/2 | Vocabulary",
+      "unit": "ELA 11/2 | Vocabulary",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-w1. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-w1",
+    "complexity": "academic"
+  },
+  {
+    "id": "pacing-3-setting",
+    "grade": "3",
+    "word": "setting",
+    "clue": "The time and place of a story.",
+    "skill": "Reading: story elements",
+    "picture": null,
+    "source": "DCSS FY27 Literacy: teacher-approved paced batch 2026-11",
+    "kind": "curriculum",
+    "reviewStatus": "approved",
+    "curriculum": {
+      "grade": "3",
+      "subject": "Literacy",
+      "target": "Reading: story elements",
+      "source": "Sweetwater Grade 3 lesson plan, week of Nov 2",
+      "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+      "locator": "ELA 11/2 | Vocabulary",
+      "unit": "ELA 11/2 | Vocabulary",
+      "earliestEligible": "2026-11-06",
+      "periods": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06"
+        }
+      ],
+      "category": "skill-practice",
+      "timing": "documented",
+      "review": "approved",
+      "note": "Teacher-approved 2026-11 batch item 3-sb-w2. Original ClassThread clue."
+    },
+    "evidenceId": "paced-2026-11-3-sb-w2",
     "complexity": "academic"
   }
 ]
