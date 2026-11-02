@@ -6,8 +6,12 @@
 /* Outlined white pills for every other board control. */
 .app.qc-app :where(.qc-options button,.qc-meta button,.qc-controls button:not(.primary),.qc-mark button,.qc-end-actions button:not(.primary),.warning button){display:inline-flex;align-items:center;justify-content:center;gap:calc(12 * var(--u));min-height:calc(72 * var(--u));padding:calc(8 * var(--u)) calc(28 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;line-height:1.15}
 .app.qc-app :where(.qc-options button,.qc-meta button,.qc-controls button:not(.primary),.qc-mark button,.qc-end-actions button:not(.primary)):hover:not(:disabled){background:var(--ds-primary-dark)}
-/* Selected options and marked teams are filled white, so selection never depends on colour alone. */
-.app.qc-app :is(.qc-options,.qc-mark) button[aria-pressed=true]{background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+/* Selected options and marked teams: solid white with navy text and a ✓ (as on Jeopardy's grade buttons), so a
+   selection reads from across the gym and never depends on colour alone. They switch instantly, never through a
+   half-faded grey, and hover, focus and touch keep the same fill. */
+.app.qc-app :is(.qc-options,.qc-mark) button{transition:none}
+.app.qc-app :is(.qc-options,.qc-mark) button[aria-pressed=true],.app.qc-app :is(.qc-options,.qc-mark) button[aria-pressed=true]:is(:hover,:focus,:active){background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board);opacity:1}
+.app.qc-app :is(.qc-options,.qc-mark) button[aria-pressed=true]::before{content:'✓ ' / '';white-space:pre}
 .app.qc-app .eyebrow{font-size:var(--board-text);font-weight:700;line-height:1.2;letter-spacing:.08em;color:var(--ds-secondary)}
 .app.qc-app .assessment-team-accent{width:calc(26 * var(--u));height:calc(26 * var(--u));min-width:14px;min-height:14px}
 
@@ -54,6 +58,10 @@
 .app.qc-app .qc-mark>span{flex:none;font-size:var(--board-text);color:var(--ds-secondary)}
 .app.qc-app .qc-mark>div{display:flex;flex-wrap:wrap;gap:calc(16 * var(--u))}
 .app.qc-app .qc-controls{flex:none;display:flex;align-items:center;justify-content:space-between;gap:calc(32 * var(--u));padding:0 calc(24 * var(--u)) calc(8 * var(--u))}
+/* End sits beside Next / Reveal with a full gap, so the wrong one isn't tapped. */
+.app.qc-app .qc-controls-main{display:flex;align-items:center;gap:calc(32 * var(--u))}
+.app.qc-app .qc-controls .qc-end-button{min-height:calc(88 * var(--u));min-width:calc(180 * var(--u));font-size:calc(36 * var(--u))}
+.app.qc-app .qc-exhausted .qc-prompt p{margin-top:calc(24 * var(--u));font-size:calc(40 * var(--u));line-height:1.25}
 /* The score bar sits in the page flow below the controls, so it can never cover the question. */
 .app.qc-app .qc-scorebar{flex:none;display:flex;flex-wrap:wrap;justify-content:center;gap:calc(12 * var(--u)) calc(32 * var(--u));padding:calc(10 * var(--u)) 0;border-top:2px solid var(--ds-primary-dark);font-size:var(--board-text)}
 .app.qc-app .qc-scorebar b,.app.qc-app .qc-final-scores b{color:var(--ds-highlight);margin-left:calc(8 * var(--u))}
@@ -61,6 +69,7 @@
 /* End screen */
 .app.qc-app .qc-end{margin:calc(24 * var(--u)) 0 0;display:flex;flex-direction:column;gap:calc(20 * var(--u))}
 .app.qc-app .qc-end h1{font-family:var(--ds-font-board);font-size:calc(96 * var(--u));line-height:1;color:var(--ds-highlight)}
+.app.qc-app .qc-end-count{font-size:calc(36 * var(--u))}
 .app.qc-app .qc-final{display:flex;align-items:center;flex-wrap:wrap;gap:calc(16 * var(--u)) calc(40 * var(--u))}
 .app.qc-app .qc-winner{font-size:calc(48 * var(--u))}
 .app.qc-app .qc-final-scores{display:flex;flex-wrap:wrap;gap:calc(12 * var(--u)) calc(32 * var(--u));font-size:calc(36 * var(--u))}

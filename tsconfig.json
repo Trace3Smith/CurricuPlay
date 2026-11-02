@@ -32,6 +32,7 @@
     "tests/api-runtime.spec.ts",
     "tests/spelling-bee*.spec.ts",
     "tests/legacy-preservation.spec.ts",
+    "tests/quick-check.spec.ts",
     "tests/resources*.spec.ts",
     "tests/lessons*.spec.ts"
   ]
