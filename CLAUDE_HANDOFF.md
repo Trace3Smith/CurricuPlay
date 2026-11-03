@@ -1,10 +1,69 @@
 # CurricuPlay (ClassThread) — handoff to Claude Code
 
-Last updated October 24, 2026, when State Lingo Bingo was released. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
+Last updated November 3, 2026, when Quick Check was released. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
 
 **Release flow (applies to every change):** work on a feature branch, push it for a GitHub/Vercel Preview, let Trace check the Preview, then fast-forward `main`. **A merge to `main` is a production release.** Never merge, force-push, or promote to production without Trace's explicit approval for that specific change. Approval for one release does not carry over to the next. Do not change other games' behavior, existing storage keys, security settings, or anything in FantasyEdge or Sideline Creator unless asked.
 
-Games are public at `/games/*` with no login: Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The State Lingo Bingo section comes first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
+Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The Quick Check and State Lingo Bingo sections come first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
+
+## Quick Check (released November 3, 2026)
+
+A no-setup end-of-class review for K–5, built to Trace's spec in board mode. Route: `/games/quick-check`. It is the **first** card on the Games hub, which now has five cards in one row on board-size screens.
+
+- **Setup (one screen, no scrolling):** grade, Teams (Off by default, or 2–8), team names when teams are on, teaching date (today by default). There is **no question limit**: Trace removed the 5/10 setting before release. With Teams Off, starting is two taps: grade, then Start. The last choices are remembered.
+- **Content:** no new content. It draws on the existing banks through the existing engines:
+  - approved Jeopardy questions (`classroomQuestions`: tomorrow pack plus paced batches) and Four Corners questions (`eligible(grade, 'Mixed Academic', …)`);
+  - Jeopardy's pacing: Current + Review on the teaching date, never before a question's taught date;
+  - teacher vetoes in Question Review are respected.
+- **Order and repeats:**
+  - Questions taught this school week (on or after the Monday of the teaching date's week) come first, then everything older. Each part is shuffled.
+  - One question per family: a Four Corners conversion of a Jeopardy question, and template variants, count as the same question. See `familyKey()` in the engine.
+  - Used questions are remembered per grade in the save, so the next game continues with questions not used yet.
+  - When the grade's list runs out, the game shows "That's every question for now!" with **Start the list over** (a new pass, this week first again; repeated questions get keys like `id~2`) or **End**. If a new game finds nothing unused, it starts the list over without a message.
+- **Play:**
+  - Running count ("Question 7"), Reveal, then Next.
+  - **End** sits beside Reveal/Next and works at any time. The end screen lists every question asked, including one shown but not yet revealed.
+  - **Back** first hides the answer, then goes to the previous question. Team marks are kept.
+  - **Keep going** on the end screen undoes an accidental End.
+  - Four Corners choices are numbered 1–4 and look identical until Reveal.
+  - K–2 get **Read it to me** when the browser has speech synthesis (same API as Spelling Bee).
+- **Teams:**
+  - Colors 1–6 are the shared `teamColors`; 7 and 8 are Pink and Aqua, matching State Lingo Bingo. Names are up to 16 characters and default to the color name.
+  - After Reveal, tap each team that got it right; a second tap clears it. 1 point each.
+  - The score bar sits below the controls, never over the question.
+  - The end screen shows final scores and the winner; ties are named.
+- **Selected buttons:** solid white with navy text and a ✓, switching instantly with no fade. Trace reported pale selected text on the first preview. It could not be reproduced in Chrome (dev or production build), but a screenshot caught the 0.15 s fade half-way, so the fade was removed for these buttons.
+- **Code:** `src/games/quick-check/`:
+  - `engine.ts`: pool, order, state transitions, session building, save validation.
+  - `QuickCheck.tsx`: UI.
+  - `quick-check-board.css`.
+  - `keys.ts`: the storage key, so the Games export can import it without loading the question banks.
+  - The hub card is in `src/App.tsx`, and the route is in `src/app/LegacyGamesRoute.tsx`.
+- **Saves:** browser-local in `classthread.quick-check.v1`, including used-question history per grade. The key is in "Export browser Games data".
+  - A game in progress recovers after a refresh.
+  - **Unlike State Lingo Bingo, an unreadable or invalid save is not preserved:** Quick Check opens a fresh setup and its next save replaces it. Saves from the first (5/10-question) preview are discarded this way; that version never reached production.
+- **Assessment:** End saves to the shared history `curricuplay.sessions.v1` with gameType `quick-check` (display name "Quick Check" in `gameNames.ts`).
+  - Mode is `team` or `classic`. The questionId is the question key.
+  - With teams on, there is one response per team per question; with Teams Off there are none.
+  - Saving is by session id, so a refresh, or Keep going followed by End again, updates the same record rather than adding one.
+  - These are class practice records, not individual mastery.
+- **Tests:**
+  - `tests/quick-check.spec.ts` covers:
+    - no future content, every grade and school day;
+    - grade filtering and vetoes;
+    - four choices on Four Corners questions;
+    - this-week-first order, no repeats, list start-over;
+    - Teams Off and Teams On play, End, Keep going, history saving;
+    - selected-button colors;
+    - Read it to me for K–2 only;
+    - setup fit at 1920×1080, 1536×864 and 1280×720;
+    - the hub card.
+  - It is in `tsconfig.json`'s include list, so typecheck covers it. Most other test files are not typechecked.
+  - The hub, export and State Lingo Bingo hub tests were updated for the fifth card and the new key.
+  - Full suite at release: 336 passed with `--workers=8`.
+- **Known limits:**
+  - The end-screen question list scrolls once a game passes about 6 questions at 1920×1080.
+  - Kindergarten has few this-week questions in early November because its photo items are held, so its games turn to review quickly.
 
 ## State Lingo Bingo (released October 24, 2026)
 
