@@ -90,7 +90,7 @@
   "2-jp-10": "approve",
   "2-jp-11": "approve",
   "2-jp-12": "approve",
-  "2-jp-13": "approve",
+  "2-jp-13": "remove",
   "2-jp-14": "approve",
   "2-jp-15": "approve",
   "2-jp-16": "approve",
@@ -388,7 +388,37 @@
   "1-jp-w2": "approve",
   "3-sb-w1": "approve",
   "3-sb-w2": "approve",
-  "5-jp-w1": "approve"
+  "5-jp-w1": "approve",
+  "K-jp-w0": "approve",
+  "K-jp-w1": "approve",
+  "K-fc-w0": "approve",
+  "1-sb-w0": "approve",
+  "1-sb-w1": "approve",
+  "1-jp-w0": "approve",
+  "1-jp-w3": "approve",
+  "1-jp-w4": "approve",
+  "1-fc-w0": "approve",
+  "2-jp-w0": "approve",
+  "2-jp-w1": "approve",
+  "2-fc-w0": "approve",
+  "2-fc-w1": "approve",
+  "2-jp-w2": "approve",
+  "2-sb-w0": "approve",
+  "3-sb-w3": "approve",
+  "3-jp-w1": "approve",
+  "3-fc-w1": "approve",
+  "4-sb-w0": "approve",
+  "4-jp-w0": "approve",
+  "4-jp-w1": "approve",
+  "4-jp-w2": "approve",
+  "4-fc-w0": "approve",
+  "4-fc-w1": "approve",
+  "5-sb-w0": "approve",
+  "5-sb-w1": "approve",
+  "5-jp-w0": "approve",
+  "5-jp-w2": "approve",
+  "5-fc-w0": "approve",
+  "5-fc-w1": "approve"
  },
  "notes": {
   "3-sb-15": "Don't say they lived a million years ago, say they lived a long time ago and are now extinct.",
@@ -402,7 +432,12 @@
   "K-jp-2": "This would be better as an image.",
   "K-jp-4": "An Image would be good for this as well with the word problem",
   "K-jp-6": "An image would be better for this one.",
-  "K-jp-7": "An image would be better for this one."
+  "K-jp-7": "An image would be better for this one.",
+  "2-jp-19": "Hold them until a Grade 2 plan shows a government lesson.",
+  "2-fc-13": "Hold them until a Grade 2 plan shows a government lesson.",
+  "1-jp-w3": "Sent as 1-jp-w1 in classthread-batch-2026-11-09; renamed because 1-jp-w1 is already a different Nov 2 item.",
+  "1-jp-w4": "Sent as 1-jp-w2 in classthread-batch-2026-11-09; renamed because 1-jp-w2 is already a different Nov 2 item.",
+  "5-jp-w2": "Sent as 5-jp-w1 in classthread-batch-2026-11-09; renamed because 5-jp-w1 is already a different Nov 2 item."
  },
  "edits": {
   "3-sb-15": {
@@ -425,6 +460,75 @@
   },
   "5-sb-4": {
    "taughtOn": "2026-11-02"
+  },
+  "1-jp-9": {
+   "taughtOn": "2026-11-09"
+  },
+  "1-jp-10": {
+   "taughtOn": "2026-11-09"
+  },
+  "1-jp-11": {
+   "taughtOn": "2026-11-11"
+  },
+  "1-jp-12": {
+   "taughtOn": "2026-11-09"
+  },
+  "1-fc-5": {
+   "taughtOn": "2026-11-10"
+  },
+  "1-fc-7": {
+   "taughtOn": "2026-11-10"
+  },
+  "1-fc-8": {
+   "taughtOn": "2026-11-11"
+  },
+  "2-jp-8": {
+   "taughtOn": "2026-11-10"
+  },
+  "2-jp-9": {
+   "taughtOn": "2026-11-12"
+  },
+  "2-jp-11": {
+   "taughtOn": "2026-11-09"
+  },
+  "2-jp-12": {
+   "taughtOn": "2026-11-09"
+  },
+  "3-sb-9": {
+   "taughtOn": "2026-11-09"
+  },
+  "3-jp-6": {
+   "taughtOn": "2026-11-09"
+  },
+  "3-fc-5": {
+   "taughtOn": "2026-11-09"
+  },
+  "3-sb-10": {
+   "taughtOn": "2026-11-10"
+  },
+  "3-sb-11": {
+   "taughtOn": "2026-11-10"
+  },
+  "3-jp-7": {
+   "taughtOn": "2026-11-10"
+  },
+  "3-fc-6": {
+   "taughtOn": "2026-11-10"
+  },
+  "3-sb-12": {
+   "taughtOn": "2026-11-11"
+  },
+  "3-sb-16": {
+   "taughtOn": "2026-11-12"
+  },
+  "3-jp-11": {
+   "taughtOn": "2026-11-12"
+  },
+  "5-jp-8": {
+   "taughtOn": "2026-11-09"
+  },
+  "5-fc-5": {
+   "taughtOn": "2026-11-09"
   }
  },
  "held": {
@@ -470,11 +574,7 @@
   "K-sb-7": "Kindergarten photo not made yet (Trace chose image generation, Oct 30).",
   "K-sb-8": "Kindergarten photo not made yet (Trace chose image generation, Oct 30).",
   "K-sb-9": "Kindergarten photo not made yet (Trace chose image generation, Oct 30).",
-  "3-sb-6": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
-  "3-sb-7": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
-  "3-sb-8": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
-  "3-jp-5": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
-  "3-fc-3": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit.",
-  "3-fc-4": "Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
+  "2-jp-19": "Nov 9 review: Hold them until a Grade 2 plan shows a government lesson.",
+  "2-fc-13": "Nov 9 review: Hold them until a Grade 2 plan shows a government lesson."
  }
 }

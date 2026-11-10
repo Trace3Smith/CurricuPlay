@@ -1,0 +1,61 @@
+{
+ "batch": "2026-12",
+ "jeopardy": 75,
+ "fourCorners": 57,
+ "spellingBeeNew": 91,
+ "spellingBeeResolved": [],
+ "skipped": [
+  {
+   "id": "K-sb-0",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-1",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-2",
+   "reason": "remove"
+  },
+  {
+   "id": "K-sb-3",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-4",
+   "reason": "remove"
+  },
+  {
+   "id": "K-sb-5",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-6",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-7",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-8",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-9",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-10",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-11",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-12",
+   "reason": "remove"
+  }
+ ]
+}

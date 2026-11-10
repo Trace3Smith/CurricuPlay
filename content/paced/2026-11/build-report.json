@@ -1,8 +1,8 @@
 {
  "batch": "2026-11",
- "jeopardy": 111,
- "fourCorners": 78,
- "spellingBeeNew": 135,
+ "jeopardy": 124,
+ "fourCorners": 88,
+ "spellingBeeNew": 145,
  "spellingBeeResolved": [],
  "skipped": [
   {
@@ -206,32 +206,20 @@
    "reason": "held: Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
   },
   {
-   "id": "3-sb-6",
-   "reason": "held: Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
+   "id": "2-jp-13",
+   "reason": "remove"
   },
   {
-   "id": "3-sb-7",
-   "reason": "held: Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
+   "id": "2-jp-19",
+   "reason": "held: Nov 9 review: Hold them until a Grade 2 plan shows a government lesson."
   },
   {
-   "id": "3-sb-8",
-   "reason": "held: Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
-  },
-  {
-   "id": "3-jp-5",
-   "reason": "held: Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
+   "id": "2-fc-13",
+   "reason": "held: Nov 9 review: Hold them until a Grade 2 plan shows a government lesson."
   },
   {
    "id": "3-jp-17",
    "reason": "remove"
-  },
-  {
-   "id": "3-fc-3",
-   "reason": "held: Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
-  },
-  {
-   "id": "3-fc-4",
-   "reason": "held: Held on the 2026-11-02 review (c-3-explore): Hold until the Grade 3 Social Studies plan shows the explorers unit."
   }
  ]
 }

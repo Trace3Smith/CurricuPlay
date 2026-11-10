@@ -3873,7 +3873,7 @@
   },
   {
     "id": "paced-2026-11-1-sb-20",
-    "snapshot": "content/sources/linked-1-literacy.json",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
     "grade": "1",
     "subject": "Literacy",
     "target": "Beginning blend br-",
@@ -3895,7 +3895,7 @@
   },
   {
     "id": "paced-2026-11-1-sb-21",
-    "snapshot": "content/sources/linked-1-literacy.json",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
     "grade": "1",
     "subject": "Literacy",
     "target": "Beginning blend gr-",
@@ -3917,7 +3917,7 @@
   },
   {
     "id": "paced-2026-11-1-sb-22",
-    "snapshot": "content/sources/linked-1-literacy.json",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
     "grade": "1",
     "subject": "Literacy",
     "target": "Beginning blend sn-",
@@ -3939,7 +3939,7 @@
   },
   {
     "id": "paced-2026-11-1-sb-23",
-    "snapshot": "content/sources/linked-1-literacy.json",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
     "grade": "1",
     "subject": "Literacy",
     "target": "Beginning blend sw-",
@@ -3961,7 +3961,7 @@
   },
   {
     "id": "paced-2026-11-1-sb-24",
-    "snapshot": "content/sources/linked-1-literacy.json",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
     "grade": "1",
     "subject": "Literacy",
     "target": "Beginning blend sw- with -ng",
@@ -4840,6 +4840,72 @@
     "note": "Teacher-approved 2026-11 batch item 3-sb-5. Original ClassThread clue."
   },
   {
+    "id": "paced-2026-11-3-sb-6",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Social Studies: reasons for exploring North America",
+    "source": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+    "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+    "earliestEligible": "2026-11-06",
+    "periods": [
+      {
+        "start": "2026-11-02",
+        "end": "2026-11-06"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 3-sb-6. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-3-sb-7",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Social Studies: early explorers",
+    "source": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
+    "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), GaDOE Inspire",
+    "earliestEligible": "2026-11-06",
+    "periods": [
+      {
+        "start": "2026-11-02",
+        "end": "2026-11-06"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 3-sb-7. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-3-sb-8",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Social Studies: obstacles explorers faced",
+    "source": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+    "unit": "Weekly catalog, Nov 2–6 (Unit: Let’s Go Exploring), I Can",
+    "earliestEligible": "2026-11-06",
+    "periods": [
+      {
+        "start": "2026-11-02",
+        "end": "2026-11-06"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 3-sb-8. Original ClassThread clue."
+  },
+  {
     "id": "paced-2026-11-3-sb-9",
     "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
     "grade": "3",
@@ -4849,11 +4915,11 @@
     "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
     "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
     "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
-    "earliestEligible": "2026-11-13",
+    "earliestEligible": "2026-11-09",
     "periods": [
       {
         "start": "2026-11-09",
-        "end": "2026-11-13"
+        "end": "2026-11-09"
       }
     ],
     "category": "source-listed",
@@ -4871,14 +4937,14 @@
     "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
     "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
     "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
-    "earliestEligible": "2026-11-13",
+    "earliestEligible": "2026-11-10",
     "periods": [
       {
-        "start": "2026-11-09",
-        "end": "2026-11-13"
+        "start": "2026-11-10",
+        "end": "2026-11-10"
       }
     ],
-    "category": "source-listed",
+    "category": "skill-practice",
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 3-sb-10. Original ClassThread clue."
@@ -4893,14 +4959,14 @@
     "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
     "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
     "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), I Can",
-    "earliestEligible": "2026-11-13",
+    "earliestEligible": "2026-11-10",
     "periods": [
       {
-        "start": "2026-11-09",
-        "end": "2026-11-13"
+        "start": "2026-11-10",
+        "end": "2026-11-10"
       }
     ],
-    "category": "source-listed",
+    "category": "skill-practice",
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 3-sb-11. Original ClassThread clue."
@@ -4915,14 +4981,14 @@
     "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
     "locator": "Weekly catalog, Nov 9–13 (Unit 3: Another View), Support / PEC",
     "unit": "Weekly catalog, Nov 9–13 (Unit 3: Another View), Support / PEC",
-    "earliestEligible": "2026-11-13",
+    "earliestEligible": "2026-11-11",
     "periods": [
       {
-        "start": "2026-11-09",
-        "end": "2026-11-13"
+        "start": "2026-11-11",
+        "end": "2026-11-11"
       }
     ],
-    "category": "source-listed",
+    "category": "skill-practice",
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 3-sb-12. Original ClassThread clue."
@@ -5003,14 +5069,14 @@
     "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
     "locator": "Weekly catalog, Nov 9–13 (Unit: Let’s Go Exploring), GaDOE Inspire",
     "unit": "Weekly catalog, Nov 9–13 (Unit: Let’s Go Exploring), GaDOE Inspire",
-    "earliestEligible": "2026-11-13",
+    "earliestEligible": "2026-11-12",
     "periods": [
       {
-        "start": "2026-11-09",
-        "end": "2026-11-13"
+        "start": "2026-11-12",
+        "end": "2026-11-12"
       }
     ],
-    "category": "source-listed",
+    "category": "skill-practice",
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 3-sb-16. Original ClassThread clue."
@@ -6293,12 +6359,12 @@
   },
   {
     "id": "paced-2026-11-5-sb-21",
-    "snapshot": "content/sources/support-20.json",
+    "snapshot": "content/sources/support-20-2026-11-08.json",
     "grade": "5",
     "subject": "Literacy",
     "target": "Math: compare and order fractions and mixed numbers (5.NR.3.2)",
     "source": "5th Math Pacing Support",
-    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit?usp=drive_link",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
     "locator": "Weekly catalog Nov 16–20, Unit 2 (iReady Lesson 13), I Can",
     "unit": "Weekly catalog Nov 16–20, Unit 2 (iReady Lesson 13), I Can",
     "earliestEligible": "2026-11-20",
@@ -6315,12 +6381,12 @@
   },
   {
     "id": "paced-2026-11-5-sb-22",
-    "snapshot": "content/sources/support-19.json",
+    "snapshot": "content/sources/support-19-2026-11-08.json",
     "grade": "5",
     "subject": "Literacy",
     "target": "Literacy: apostrophes and its vs. it’s (Daily Dose of Grammar)",
     "source": "5th Grade Writing_Rope_Lesson_Plan_Template",
-    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit?usp=sharing",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
     "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 66-69 (Day 70 assessment)",
     "unit": "Daily Dose of Grammar Skills Weekly Outline, Day 66-69 (Day 70 assessment)",
     "earliestEligible": "2026-11-20",
@@ -6400,5 +6466,2161 @@
     "timing": "documented",
     "review": "approved",
     "note": "Teacher-approved 2026-11 batch item 3-sb-w2. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-1-sb-w0",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1YcVXbDTUr-2026-11-09.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Beginning blend tr-",
+    "source": "Sweetwater Grade 1 lesson plan, week of Nov 9",
+    "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+    "locator": "Foundations 11/9, Wednesday (session 3), Word Bank",
+    "unit": "Foundations 11/9, Wednesday (session 3), Word Bank",
+    "earliestEligible": "2026-11-11",
+    "periods": [
+      {
+        "start": "2026-11-11",
+        "end": "2026-11-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 1-sb-w0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-1-sb-w1",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1YcVXbDTUr-2026-11-09.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Beginning blend dr-",
+    "source": "Sweetwater Grade 1 lesson plan, week of Nov 9",
+    "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+    "locator": "Foundations 11/9, Wednesday (session 3), Word Bank",
+    "unit": "Foundations 11/9, Wednesday (session 3), Word Bank",
+    "earliestEligible": "2026-11-11",
+    "periods": [
+      {
+        "start": "2026-11-11",
+        "end": "2026-11-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 1-sb-w1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-2-sb-w0",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Unit vocabulary: dunes, canyon, cactus, spines, shelter",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 9–13, Wednesday 11 (Session 3), Vocabulary row",
+    "unit": "Nov 9–13, Wednesday 11 (Session 3), Vocabulary row",
+    "earliestEligible": "2026-11-11",
+    "periods": [
+      {
+        "start": "2026-11-11",
+        "end": "2026-11-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 2-sb-w0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-3-sb-w3",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1QQOJoRIXx-2026-11-09.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Social Studies: scarcity and explorers' choices",
+    "source": "Sweetwater Grade 3 lesson plan, week of Nov 9",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "SS 11/9 | Guided Discovery",
+    "unit": "SS 11/9 | Guided Discovery",
+    "earliestEligible": "2026-11-09",
+    "periods": [
+      {
+        "start": "2026-11-09",
+        "end": "2026-11-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 3-sb-w3. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-4-sb-w0",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-10.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Properties of water: heat and temperature",
+    "source": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 3, Acquisition",
+    "unit": "UbD planning document, Unit 3, Acquisition",
+    "earliestEligible": "2026-11-13",
+    "periods": [
+      {
+        "start": "2026-11-09",
+        "end": "2026-11-13"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 4-sb-w0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-5-sb-w0",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11-09.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Reading: point of view in historical fiction (5.T.C.2.a)",
+    "source": "Sweetwater Grade 5 lesson plan, week of Nov 9",
+    "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+    "locator": "ELA wk 11/9-11/13 | Day 1 Monday (Session 9), Academic Vocabulary",
+    "unit": "ELA wk 11/9-11/13 | Day 1 Monday (Session 9), Academic Vocabulary",
+    "earliestEligible": "2026-11-09",
+    "periods": [
+      {
+        "start": "2026-11-09",
+        "end": "2026-11-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 5-sb-w0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-11-5-sb-w1",
+    "snapshot": "content/sources/lesson-plans/sweetwater-1Yqz9D2HYE-2026-11-09.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Grammar: vague pronouns (5.L.GC.1.38)",
+    "source": "Sweetwater Grade 5 lesson plan, week of Nov 9",
+    "sourceUrl": "https://docs.google.com/document/d/1Yqz9D2HYEdw7NYbzCcjgPlUjkcwDwVUlOgkirT0NnhM/edit",
+    "locator": "ELA wk 11/9-11/13 | Day 2 Tuesday (Session 10), Academic Vocabulary",
+    "unit": "ELA wk 11/9-11/13 | Day 2 Tuesday (Session 10), Academic Vocabulary",
+    "earliestEligible": "2026-11-10",
+    "periods": [
+      {
+        "start": "2026-11-10",
+        "end": "2026-11-10"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-11 batch item 5-sb-w1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-0",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Three-letter blend scr-",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Monday 30; Phonics row",
+    "unit": "Nov 30–Dec 4; Monday 30; Phonics row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-1",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Three-letter blend spl- with digraph -sh",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Monday 30; Phonics row",
+    "unit": "Nov 30–Dec 4; Monday 30; Phonics row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-2",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Three-letter blend spl-",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Tuesday 1; Phonics row",
+    "unit": "Nov 30–Dec 4; Tuesday 1; Phonics row",
+    "earliestEligible": "2026-12-01",
+    "periods": [
+      {
+        "start": "2026-12-01",
+        "end": "2026-12-01"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-2. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-3",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Three-letter blend spr- with -ng",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Wednesday 2; Phonics row",
+    "unit": "Nov 30–Dec 4; Wednesday 2; Phonics row",
+    "earliestEligible": "2026-12-02",
+    "periods": [
+      {
+        "start": "2026-12-02",
+        "end": "2026-12-02"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-3. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-4",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Three-letter blend str- with -ng",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Wednesday 2; Phonics row",
+    "unit": "Nov 30–Dec 4; Wednesday 2; Phonics row",
+    "earliestEligible": "2026-12-02",
+    "periods": [
+      {
+        "start": "2026-12-02",
+        "end": "2026-12-02"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-4. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-5",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Beginning blend sn-",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Thursday 3; Phonics row",
+    "unit": "Nov 30–Dec 4; Thursday 3; Phonics row",
+    "earliestEligible": "2026-12-03",
+    "periods": [
+      {
+        "start": "2026-12-03",
+        "end": "2026-12-03"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-5. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-6",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: all, small, their, through",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Monday 30; High-Frequency Words row",
+    "unit": "Nov 30–Dec 4; Monday 30; High-Frequency Words row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-6. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-7",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: all, small, their, through",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Monday 30; High-Frequency Words row",
+    "unit": "Nov 30–Dec 4; Monday 30; High-Frequency Words row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-7. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-8",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: all, small, their, through",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 30–Dec 4; Monday 30; High-Frequency Words row",
+    "unit": "Nov 30–Dec 4; Monday 30; High-Frequency Words row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-8. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-9",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending blend -sk",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Monday 7; Phonics row",
+    "unit": "Dec 7–11; Monday 7; Phonics row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-9. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-10",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending blend -st",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Monday 7; Phonics row",
+    "unit": "Dec 7–11; Monday 7; Phonics row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-10. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-11",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending blend -sk",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Tuesday 8; Phonics row",
+    "unit": "Dec 7–11; Tuesday 8; Phonics row",
+    "earliestEligible": "2026-12-08",
+    "periods": [
+      {
+        "start": "2026-12-08",
+        "end": "2026-12-08"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-11. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-12",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending blend -mp",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Wednesday 9; Phonics row",
+    "unit": "Dec 7–11; Wednesday 9; Phonics row",
+    "earliestEligible": "2026-12-09",
+    "periods": [
+      {
+        "start": "2026-12-09",
+        "end": "2026-12-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-12. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-13",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending blend -nd",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Wednesday 9; Phonics row",
+    "unit": "Dec 7–11; Wednesday 9; Phonics row",
+    "earliestEligible": "2026-12-09",
+    "periods": [
+      {
+        "start": "2026-12-09",
+        "end": "2026-12-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-13. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-14",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Ending blend -nt",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Wednesday 9; Phonics row",
+    "unit": "Dec 7–11; Wednesday 9; Phonics row",
+    "earliestEligible": "2026-12-09",
+    "periods": [
+      {
+        "start": "2026-12-09",
+        "end": "2026-12-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-14. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-15",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: any, many, most, want",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Monday 7; High-Frequency Words row",
+    "unit": "Dec 7–11; Monday 7; High-Frequency Words row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-15. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-16",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: any, many, most, want",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Monday 7; High-Frequency Words row",
+    "unit": "Dec 7–11; Monday 7; High-Frequency Words row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-16. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-1-sb-17",
+    "snapshot": "content/sources/linked-1-literacy-2026-11-08.json",
+    "grade": "1",
+    "subject": "Literacy",
+    "target": "Super Words: any, many, most, want",
+    "source": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 7–11; Monday 7; High-Frequency Words row",
+    "unit": "Dec 7–11; Monday 7; High-Frequency Words row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 1-sb-17. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-0",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words: because, word, work, write",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Monday 30 (Session 11), High-Frequency Words row",
+    "unit": "Nov 30–Dec 4, Monday 30 (Session 11), High-Frequency Words row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-1",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words: because, word, work, write",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Monday 30 (Session 11), High-Frequency Words row",
+    "unit": "Nov 30–Dec 4, Monday 30 (Session 11), High-Frequency Words row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-2",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words: because, word, work, write",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Monday 30 (Session 11), High-Frequency Words row",
+    "unit": "Nov 30–Dec 4, Monday 30 (Session 11), High-Frequency Words row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-2. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-3",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Long u spelled u_e",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Monday 30 (Session 11), Phonics row",
+    "unit": "Nov 30–Dec 4, Monday 30 (Session 11), Phonics row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-3. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-4",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Long u spelled ue",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Monday 30 (Session 11), Phonics row",
+    "unit": "Nov 30–Dec 4, Monday 30 (Session 11), Phonics row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-4. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-5",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Long u spelled ew",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Wednesday 2 (Session 13), Phonics row",
+    "unit": "Nov 30–Dec 4, Wednesday 2 (Session 13), Phonics row",
+    "earliestEligible": "2026-12-02",
+    "periods": [
+      {
+        "start": "2026-12-02",
+        "end": "2026-12-02"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-5. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-6",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Long u spelled u (open syllable)",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Wednesday 2 (Session 13), Phonics row",
+    "unit": "Nov 30–Dec 4, Wednesday 2 (Session 13), Phonics row",
+    "earliestEligible": "2026-12-02",
+    "periods": [
+      {
+        "start": "2026-12-02",
+        "end": "2026-12-02"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-6. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-7",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Unit vocabulary: adapted, predators, scales",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Monday 30 (Session 11), Vocabulary row",
+    "unit": "Nov 30–Dec 4, Monday 30 (Session 11), Vocabulary row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-7. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-8",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Unit vocabulary: adapted, predators, scales",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, Monday 30 (Session 11), Vocabulary row",
+    "unit": "Nov 30–Dec 4, Monday 30 (Session 11), Vocabulary row",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-8. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-9",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Prefix re- (again)",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Nov 30–Dec 4, I Can",
+    "unit": "Nov 30–Dec 4, I Can",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-9. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-10",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Silent letters kn",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Monday 7 (Session 16), Phonics row",
+    "unit": "Dec 7–11, Monday 7 (Session 16), Phonics row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-10. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-11",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Silent letters kn",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Monday 7 (Session 16), Phonics row",
+    "unit": "Dec 7–11, Monday 7 (Session 16), Phonics row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-11. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-12",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Silent letters wr",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Monday 7 (Session 16), Phonics row",
+    "unit": "Dec 7–11, Monday 7 (Session 16), Phonics row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-12. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-13",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Silent letters mb",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Wednesday 9 (Session 18), Phonics row",
+    "unit": "Dec 7–11, Wednesday 9 (Session 18), Phonics row",
+    "earliestEligible": "2026-12-09",
+    "periods": [
+      {
+        "start": "2026-12-09",
+        "end": "2026-12-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-13. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-14",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Silent letters mb",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Wednesday 9 (Session 18), Phonics row",
+    "unit": "Dec 7–11, Wednesday 9 (Session 18), Phonics row",
+    "earliestEligible": "2026-12-09",
+    "periods": [
+      {
+        "start": "2026-12-09",
+        "end": "2026-12-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-14. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-15",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Silent letters gn",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Wednesday 9 (Session 18), Phonics row",
+    "unit": "Dec 7–11, Wednesday 9 (Session 18), Phonics row",
+    "earliestEligible": "2026-12-09",
+    "periods": [
+      {
+        "start": "2026-12-09",
+        "end": "2026-12-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-15. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-16",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words: after, one, warm, your",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Monday 7 (Session 16), High-Frequency Words row",
+    "unit": "Dec 7–11, Monday 7 (Session 16), High-Frequency Words row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-16. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-17",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "High-frequency words: after, one, warm, your",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Monday 7 (Session 16), High-Frequency Words row",
+    "unit": "Dec 7–11, Monday 7 (Session 16), High-Frequency Words row",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-17. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-18",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Unit vocabulary: den, store, horizon",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, Wednesday 9 (Session 18), Vocabulary row",
+    "unit": "Dec 7–11, Wednesday 9 (Session 18), Vocabulary row",
+    "earliestEligible": "2026-12-09",
+    "periods": [
+      {
+        "start": "2026-12-09",
+        "end": "2026-12-09"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-18. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-2-sb-19",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-3.json",
+    "grade": "2",
+    "subject": "Literacy",
+    "target": "Prefix un- (opposite of)",
+    "source": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 7–11, I Can",
+    "unit": "Dec 7–11, I Can",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 2-sb-19. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-0",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading vocabulary: I Wanna Iguana",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "unit": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-1",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading vocabulary: I Wanna Iguana",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "unit": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-2",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading vocabulary: Duck! Rabbit!",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "unit": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-2. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-3",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading vocabulary: Duck! Rabbit!",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "unit": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-3. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-4",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading vocabulary: The Lemonade War",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "unit": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-4. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-5",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Reading vocabulary: The Lemonade War",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "unit": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-5. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-6",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Science S3L1: animal adaptations",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4 (Under the Sun), I Can",
+    "unit": "Weekly catalog, Nov 30–Dec 4 (Under the Sun), I Can",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-6. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-7",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Science S3L1: animal adaptations",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4 (Under the Sun), I Can",
+    "unit": "Weekly catalog, Nov 30–Dec 4 (Under the Sun), I Can",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-7. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-8",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Social Studies: accomplishments of early explorers",
+    "source": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Nov 30–Dec 4 (Unit: Let’s Go Exploring), I Can",
+    "unit": "Weekly catalog, Nov 30–Dec 4 (Unit: Let’s Go Exploring), I Can",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-8. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-9",
+    "snapshot": "content/sources/support-10-2026-11-08.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Math 3.GSR.8.1: perimeter",
+    "source": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Weekly catalog, Dec 7–11 (Unit 3: Multiplication and Area), I Can",
+    "unit": "Weekly catalog, Dec 7–11 (Unit 3: Multiplication and Area), I Can",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-9. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-10",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Science S3L1: camouflage",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "unit": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-10. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-11",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Science S3L1: mimicry",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "unit": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-11. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-12",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Science S3L1: behavioral adaptations",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Dec 7–11, Additional Resources",
+    "unit": "Weekly catalog, Dec 7–11, Additional Resources",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-12. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-13",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Science S3L1: freshwater habitats",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Dec 7–11, Brain Pop",
+    "unit": "Weekly catalog, Dec 7–11, Brain Pop",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-13. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-14",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-8.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Science S3L1: animal adaptations",
+    "source": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Dec 7–11, Science A-Z",
+    "unit": "Weekly catalog, Dec 7–11, Science A-Z",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-14. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-15",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Social Studies: contact between explorers and American Indians",
+    "source": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "unit": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-15. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-16",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-9.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Social Studies: how explorers interacted with American Indians",
+    "source": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "unit": "Weekly catalog, Dec 7–11, GaDOE Inspire",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-16. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-3-sb-17",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-4.json",
+    "grade": "3",
+    "subject": "Literacy",
+    "target": "Writing: narrative paragraph with dialogue",
+    "source": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Dec 7–11 (Unit 3: Another View), I Can",
+    "unit": "Weekly catalog, Dec 7–11 (Unit 3: Another View), I Can",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 3-sb-17. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-0",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Word choice creates mood",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Unit 3: Art and the Great Depression",
+    "unit": "Nov 30–Dec 4 weekly block, Unit 3: Art and the Great Depression",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-1",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Word choice and mood (mood meter word)",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "unit": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-2",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Word choice and mood (mood meter word)",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "unit": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-2. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-3",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Word choice and mood (mood meter word)",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "unit": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-3. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-4",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Word choice and mood (mood meter word)",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "unit": "Nov 30–Dec 4 weekly block, Support / PEC (mood meter)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-4. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-5",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Summarize complex informational text",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Unit 3: Art and the Great Depression",
+    "unit": "Nov 30–Dec 4 weekly block, Unit 3: Art and the Great Depression",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-5. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-6",
+    "snapshot": "content/sources/support-15-2026-11-08.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Area and perimeter",
+    "source": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Unit 4 (iReady Lesson 16, optional)",
+    "unit": "Nov 30–Dec 4 weekly block, Unit 4 (iReady Lesson 16, optional)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-6. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-7",
+    "snapshot": "content/sources/support-15-2026-11-08.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Area and perimeter",
+    "source": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Nov 30–Dec 4 weekly block, Unit 4 (iReady Lesson 16, optional)",
+    "unit": "Nov 30–Dec 4 weekly block, Unit 4 (iReady Lesson 16, optional)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-7. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-8",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-10.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Water cycle",
+    "source": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 3, Understanding",
+    "unit": "UbD planning document, Unit 3, Understanding",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-8. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-9",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Integrate information from visuals and text",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 7–11 weekly block, Unit 3: Art and the Great Depression",
+    "unit": "Dec 7–11 weekly block, Unit 3: Art and the Great Depression",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-9. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-10",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Integrate information from visuals and text",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 7–11 weekly block, Unit 3: Art and the Great Depression",
+    "unit": "Dec 7–11 weekly block, Unit 3: Art and the Great Depression",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-10. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-11",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-5.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Write an organized paragraph with evidence",
+    "source": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 7–11 weekly block, Unit 3: Art and the Great Depression",
+    "unit": "Dec 7–11 weekly block, Unit 3: Art and the Great Depression",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-11. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-12",
+    "snapshot": "content/sources/support-15-2026-11-08.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Equivalent fractions",
+    "source": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Dec 7–11 weekly block, Unit 4 (iReady Lesson 17)",
+    "unit": "Dec 7–11 weekly block, Unit 4 (iReady Lesson 17)",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-12. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-13",
+    "snapshot": "content/sources/support-15-2026-11-08.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Equivalent fractions",
+    "source": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Unit 4 Stage 1, Vocabulary",
+    "unit": "Unit 4 Stage 1, Vocabulary",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-13. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-14",
+    "snapshot": "content/sources/support-15-2026-11-08.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Equivalent fractions",
+    "source": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Unit 4 Stage 1, Vocabulary",
+    "unit": "Unit 4 Stage 1, Vocabulary",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-14. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-15",
+    "snapshot": "content/sources/support-15-2026-11-08.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Generate equivalent fractions",
+    "source": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Dec 7–11 weekly block, Unit 4 (iReady Lesson 17)",
+    "unit": "Dec 7–11 weekly block, Unit 4 (iReady Lesson 17)",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-15. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-16",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-10.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Predicting weather",
+    "source": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 3: Forecasting the Weather, Vocabulary",
+    "unit": "UbD planning document, Unit 3: Forecasting the Weather, Vocabulary",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-16. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-4-sb-17",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-11.json",
+    "grade": "4",
+    "subject": "Literacy",
+    "target": "Westward expansion: the Oregon Trail",
+    "source": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Dec 7–11 weekly block, Unit 4: The Nation Expands (Resources)",
+    "unit": "Dec 7–11 weekly block, Unit 4: The Nation Expands (Resources)",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 4-sb-17. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-0",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Science: types of magnets (S5P3a)",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Unit 3 UbD Stage 1, Established Goals, Vocabulary",
+    "unit": "Unit 3 UbD Stage 1, Established Goals, Vocabulary",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-0. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-1",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Science: types of magnets (S5P3a)",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Unit 3 UbD Stage 1, Established Goals, Vocabulary",
+    "unit": "Unit 3 UbD Stage 1, Established Goals, Vocabulary",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-1. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-2",
+    "snapshot": "content/sources/support-21-2026-11-08.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Science: how magnets work (S5P3a)",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "UbD Stage 3 daily calendar, Mon Nov 30",
+    "unit": "UbD Stage 3 daily calendar, Mon Nov 30",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-2. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-3",
+    "snapshot": "content/sources/support-21-2026-11-08.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Science: how magnets work (S5P3a)",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "UbD Stage 3 daily calendar, Mon Nov 30",
+    "unit": "UbD Stage 3 daily calendar, Mon Nov 30",
+    "earliestEligible": "2026-11-30",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-11-30"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-3. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-4",
+    "snapshot": "content/sources/support-20-2026-11-08.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Math: fraction and decimal word problems (5.NR.3.3, 5.NR.4.4)",
+    "source": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Unit 2 UbD Stage 1, Understandings",
+    "unit": "Unit 2 UbD Stage 1, Understandings",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-4. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-5",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-12.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Social Studies: the Great Depression (SS5H3)",
+    "source": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Nov 30-Dec 4, Unit 5, I Can",
+    "unit": "Weekly catalog Nov 30-Dec 4, Unit 5, I Can",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-5. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-6",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-12.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Social Studies: the stock market and the Great Depression (SS5H3)",
+    "source": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Nov 30-Dec 4, Unit 5, BrainPop",
+    "unit": "Weekly catalog Nov 30-Dec 4, Unit 5, BrainPop",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-6. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-7",
+    "snapshot": "content/sources/support-19-2026-11-08.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Grammar: object of the preposition",
+    "source": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 76-79 (Day 80 assessment)",
+    "unit": "Daily Dose of Grammar Skills Weekly Outline, Day 76-79 (Day 80 assessment)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-7. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-8",
+    "snapshot": "content/sources/support-19-2026-11-08.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Grammar: singular vs. plural verbs",
+    "source": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 76-79 (Day 80 assessment)",
+    "unit": "Daily Dose of Grammar Skills Weekly Outline, Day 76-79 (Day 80 assessment)",
+    "earliestEligible": "2026-12-04",
+    "periods": [
+      {
+        "start": "2026-11-30",
+        "end": "2026-12-04"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-8. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-9",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Science: electricity and magnetism are connected (S5P3b)",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Unit 3 UbD pacing calendar weekly plans, Dec 7-11",
+    "unit": "Unit 3 UbD pacing calendar weekly plans, Dec 7-11",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-9. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-10",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-7.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Science: building an electromagnet (S5P3b)",
+    "source": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Unit 3 UbD pacing calendar weekly plans, Dec 7-11",
+    "unit": "Unit 3 UbD pacing calendar weekly plans, Dec 7-11",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-10. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-11",
+    "snapshot": "content/sources/support-20-2026-11-08.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Math: compare and order fractions (5.NR.3.2)",
+    "source": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Daily calendar, Mon Dec 7",
+    "unit": "Daily calendar, Mon Dec 7",
+    "earliestEligible": "2026-12-07",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-07"
+      }
+    ],
+    "category": "source-listed",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-11. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-12",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-6.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Reading: setting, events and characters shape the plot (5.T.T.1.b)",
+    "source": "5th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+    "locator": "Weekly catalog Dec 7-11, Unit 3: Freedom Seekers, I Can",
+    "unit": "Weekly catalog Dec 7-11, Unit 3: Freedom Seekers, I Can",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-12. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-13",
+    "snapshot": "content/sources/support-19-2026-11-08.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Grammar: who's vs. whose",
+    "source": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 81-84 (Day 85 assessment)",
+    "unit": "Daily Dose of Grammar Skills Weekly Outline, Day 81-84 (Day 85 assessment)",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-13. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-14",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-12.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Social Studies: the Dust Bowl (SS5H3)",
+    "source": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Dec 7-11, Unit 5, Resources",
+    "unit": "Weekly catalog Dec 7-11, Unit 5, Resources",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-14. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-15",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-12.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Social Studies: the New Deal (SS5H3)",
+    "source": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Dec 7-11, Unit 5, Resources",
+    "unit": "Weekly catalog Dec 7-11, Unit 5, Resources",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-15. Original ClassThread clue."
+  },
+  {
+    "id": "paced-2026-12-5-sb-16",
+    "snapshot": "content/sources/spelling-bee-2026-10-09-12.json",
+    "grade": "5",
+    "subject": "Literacy",
+    "target": "Social Studies: four sectors of the economy (SS5E2)",
+    "source": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Unit overview table, Unit 5 (Nov 30-Dec 18)",
+    "unit": "Unit overview table, Unit 5 (Nov 30-Dec 18)",
+    "earliestEligible": "2026-12-11",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-11"
+      }
+    ],
+    "category": "skill-practice",
+    "timing": "documented",
+    "review": "approved",
+    "note": "Teacher-approved 2026-12 batch item 5-sb-16. Original ClassThread clue."
   }
 ]
