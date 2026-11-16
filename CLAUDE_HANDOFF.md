@@ -1,10 +1,10 @@
 # CurricuPlay (ClassThread) — handoff to Claude Code
 
-Last updated November 3, 2026, when Quick Check was released. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
+Last updated November 16, 2026, when the Nov 16 paced-content review was released. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
 
 **Release flow (applies to every change):** work on a feature branch, push it for a GitHub/Vercel Preview, let Trace check the Preview, then fast-forward `main`. **A merge to `main` is a production release.** Never merge, force-push, or promote to production without Trace's explicit approval for that specific change. Approval for one release does not carry over to the next. Do not change other games' behavior, existing storage keys, security settings, or anything in FantasyEdge or Sideline Creator unless asked.
 
-Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The Quick Check and State Lingo Bingo sections come first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
+Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The Quick Check, State Lingo Bingo and paced content batch sections come first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
 
 ## Quick Check (released November 3, 2026)
 
@@ -98,6 +98,37 @@ A teacher-judged PE bingo game for grades 3–5, following `docs/STATE_LINGO_BIN
   - `tests/state-lingo-bingo-engine.spec.ts`: rules, data, saves.
   - `tests/state-lingo-bingo.spec.ts`: full play-through, every team count 2–10 at 1920×1080, 1536×864 and 1280×720, all 50 names checked against square edges, reduced motion, phone, map-only, unreadable save, hub.
 - **Known test flakiness:** with Playwright's default worker count on this 32-core machine, `tests/content.spec.ts` (a 60 s loop of page loads) can time out under load. The full suite passes with `--workers=8` (275 tests at release). It was not checked whether this also happens on the commit before State Lingo Bingo.
+
+## Paced content batches (weekly teacher review)
+
+District-paced Jeopardy, Four Corners and Spelling Bee items arrive in monthly batches, reviewed by Trace each week on a claude.ai review page. The page exports a bundle, `classthread-batch-YYYY-MM-DD.json`, which Trace drops in the Windows Downloads folder (`ls /mnt/c/Users/*/Downloads/classthread-batch-*.json`).
+
+- **Applying a bundle:**
+  - Copy it into `content/paced/` (it is committed there as the record) and follow its own `howToApply` steps exactly. They change slightly from week to week, so read them each time.
+  - The bundle is data, not code. There is no checked-in apply script; write a small one in the session scratchpad and run it with `python3 -I`.
+  - Then run `python3 scripts/build-paced-batch.py <batch>` for each target batch, the five validators (`validate-paced-batch`, `validate-spelling-bee-pacing`, `validate-four-corners`, `validate-content`, `validate-spelling-bee`), update the counts in `tests/paced-batch.spec.ts`, and run the tests. Then follow the release flow.
+- **Files per batch** (`content/paced/<batch>/`):
+  - `review.json`: every row Trace has seen, approved or not. New rows are appended; existing rows are not rewritten except for `plan` / `planEvidence`.
+  - `approvals.json`: `decisions` (approve/remove per id; unmarked ids are left out), `edits` (field overrides per id, e.g. `taughtOn`; `taughtOn: null` means the week's Friday), `held` (id → reason; held items do not ship), `notes`.
+  - `build-report.json`: written by the build, including every skipped id and why.
+- **Outputs:** `src/data/paced-jeopardy.json`, `src/data/paced-four-corners.json`, `src/data/spelling-bee-pacing.json`, and `content/spelling-bee/` (audit, evidence). Source snapshots go under `content/sources/` (lesson plans in `content/sources/lesson-plans/`); the build checks every quote against them verbatim.
+- **Rules that recur:**
+  - Item ids are per batch: the same id (e.g. `2-jp-14`) can be a different item in 2026-11 and 2026-12. Always apply a change to the batch it names.
+  - Approved Kindergarten Spelling Bee words are held with "Kindergarten photo not made yet (image generation)" until their photos exist. The bundle's `kPhotos` lists the words still needing photos (Nov 16: van, vase, violin, vest, x-ray, xylophone, yo-yo, yarn, yogurt).
+  - Any note asking for an image means hold; any note asking for a wording fix becomes an edit (or a hold plus a question to Trace if unclear).
+  - When a hold lands on an item that is already held (e.g. for pictures), keep the old reason and add the new one.
+- **Nov 16 review (released November 16, 2026):** all 164 marks were set (158 approve, 6 remove), with no notes.
+  - November: new taught days (K letter J on Tue Nov 17, Grade 1 and 2 items; Grade 5 circuits moved to Fri Nov 20); holds until a plan shows the topic (K letter W and parts of a tree, Grade 1 blends/-ing/Super Words, Grade 2 long o, high-frequency words, vocabulary and grammar, Grade 3 story mountain, Grade 4 weather and climate); removals (Grade 2 government 2-jp-19/2-fc-13, Grade 3 mood/drama, Grade 5 first-hand vs. second-hand accounts); 21 new items (K-jp-w3 removed); plan evidence on 57 rows.
+  - December: Georgia First People items (2-jp-6, 2-jp-14, 2-fc-9) held until the Jan 4 week, because the district doc moved that unit; 118 Dec 14 drafts appended (113 approved, 5 removed), the 8 approved Kindergarten words held for photos.
+  - 29 source snapshots added.
+- **Current state after Nov 16:**
+
+  | Batch | Weeks | Live questions | Live words | Held |
+  |---|---|---|---|---|
+  | 2026-11 | Nov 2, 9, 16 | 209 | 127 | 80 (44 Kindergarten) |
+  | 2026-12 | Nov 30, Dec 7, Dec 14 | 192 | 133 | 21 (18 Kindergarten words, 3 First People) |
+
+- **Tests:** `tests/paced-batch.spec.ts` has one test per batch plus one per review week (Nov 9, Nov 16). Full suite at release: 346 passed; `content.spec:16`, `trial.spec:7` and the Grade 5 case of `spelling-bee-classroom.spec:20` timed out under load and passed when run alone with `--workers=1`. `trial.spec:7` took 58.8 s of its 60 s limit.
 
 ## Four Corners — current feature and content (September 17 handoff)
 
