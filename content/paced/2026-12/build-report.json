@@ -1,8 +1,8 @@
 {
  "batch": "2026-12",
- "jeopardy": 75,
- "fourCorners": 57,
- "spellingBeeNew": 91,
+ "jeopardy": 107,
+ "fourCorners": 85,
+ "spellingBeeNew": 133,
  "spellingBeeResolved": [],
  "skipped": [
   {
@@ -55,6 +55,70 @@
   },
   {
    "id": "K-sb-12",
+   "reason": "remove"
+  },
+  {
+   "id": "2-jp-6",
+   "reason": "held: Nov 16 review (Grade 2 Jeopardy + Four Corners · Georgia's First People (Creek, Cherokee, Sequoyah)): The items stay on hold until the Jan 4 week. Nothing else changes."
+  },
+  {
+   "id": "2-jp-14",
+   "reason": "held: Nov 16 review (Grade 2 Jeopardy + Four Corners · Georgia's First People (Creek, Cherokee, Sequoyah)): The items stay on hold until the Jan 4 week. Nothing else changes."
+  },
+  {
+   "id": "2-fc-9",
+   "reason": "held: Nov 16 review (Grade 2 Jeopardy + Four Corners · Georgia's First People (Creek, Cherokee, Sequoyah)): The items stay on hold until the Jan 4 week. Nothing else changes."
+  },
+  {
+   "id": "K-sb-13",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-14",
+   "reason": "remove"
+  },
+  {
+   "id": "K-sb-15",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-16",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-17",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-18",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-19",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-20",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "K-sb-21",
+   "reason": "held: Kindergarten photo not made yet (image generation)"
+  },
+  {
+   "id": "2-jp-17",
+   "reason": "remove"
+  },
+  {
+   "id": "3-jp-17",
+   "reason": "remove"
+  },
+  {
+   "id": "3-fc-14",
+   "reason": "remove"
+  },
+  {
+   "id": "4-jp-13",
    "reason": "remove"
   }
  ]

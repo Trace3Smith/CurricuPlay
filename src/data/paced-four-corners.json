@@ -2881,7 +2881,7 @@
   "packName": "ClassThread paced content (2026-11)",
   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
   "evidence": {
-   "document": "linked-k-literacy.json",
+   "document": "kinder-ela-calendar-2026-11-15.json",
    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
    "section": "Week of Nov 16–20; Monday 16",
@@ -2894,93 +2894,12 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "K-fc-10",
-  "taughtOn": "2026-11-16"
- },
- {
-  "id": "fc-paced-2026-11-K-which-word-starts-with-the-w-sound",
-  "subject": "Literacy",
-  "difficulty": 1,
-  "question": "Which word starts with the /w/ sound?",
-  "answer": "Wagon",
-  "choices": [
-   "Wagon",
-   "Cat",
-   "Fish",
-   "Pig"
-  ],
-  "correctIndex": 0,
-  "explanation": "Wagon begins with /w/, the sound of the letter W.",
-  "standard": null,
-  "session": "Week of Nov 16–20; Wednesday 18",
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "K",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
-  "evidence": {
-   "document": "linked-k-literacy.json",
-   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
-   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
-   "section": "Week of Nov 16–20; Wednesday 18",
-   "quote": "Introduce Letter Ww"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item K-fc-11).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "K-fc-11",
-  "taughtOn": "2026-11-18"
- },
- {
-  "id": "fc-paced-2026-11-K-which-part-of-a-tree-is-under-the-ground",
-  "subject": "Literacy",
-  "difficulty": 2,
-  "question": "Which part of a tree is under the ground?",
-  "answer": "Roots",
-  "choices": [
-   "Leaves",
-   "Roots",
-   "Flowers",
-   "Limbs"
-  ],
-  "correctIndex": 1,
-  "explanation": "Roots grow under the ground and hold the tree in the soil.",
-  "standard": null,
-  "session": "Week of Nov 16–20; Thursday 19",
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "K",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
-  "evidence": {
-   "document": "linked-k-literacy.json",
-   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
-   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
-   "section": "Week of Nov 16–20; Thursday 19",
-   "quote": "Reading: Parts of a Tree (Visual Text)"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item K-fc-12).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "K-fc-12",
-  "taughtOn": "2026-11-19"
+  "taughtOn": "2026-11-17",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 16",
+   "section": "11/16 Phonics/Writing | Phonics, To do for the week, Tuesday",
+   "quote": "Tuesday:  Unit 3 session 6 pages 34-36"
+  }
  },
  {
   "id": "fc-paced-2026-11-K-you-want-a-toy-but-do-not-have-enough-mo",
@@ -3023,7 +2942,12 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "K-fc-13",
-  "taughtOn": "2026-11-16"
+  "taughtOn": "2026-11-16",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 16",
+   "section": "SS 11/16 | Economics and Traditions, Vocabulary & Strategy",
+   "quote": "Spending, saving, veteran, goods, services"
+  }
  },
  {
   "id": "fc-paced-2026-11-K-what-do-many-families-do-on-thanksgiving",
@@ -3498,49 +3422,6 @@
   }
  },
  {
-  "id": "fc-paced-2026-11-1-which-word-begins-with-the-gr-blend",
-  "subject": "Literacy",
-  "difficulty": 1,
-  "question": "Which word begins with the gr blend?",
-  "answer": "Grab",
-  "choices": [
-   "Brick",
-   "Snack",
-   "Swim",
-   "Grab"
-  ],
-  "correctIndex": 3,
-  "explanation": "Grab starts with g and r blended together: /gr/.",
-  "standard": "1.F.P.1-3",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "1",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
-  "evidence": {
-   "document": "linked-1-literacy-2026-11-08.json",
-   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
-   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
-   "section": "Nov 16–20; Monday 16; Phonics row",
-   "quote": "Beginning Blends br-, gr-"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 1-fc-9).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "1-fc-9",
-  "taughtOn": "2026-11-16"
- },
- {
   "id": "fc-paced-2026-11-1-the-crab-s-shell-is-hard-who-does-the-sh",
   "subject": "Literacy",
   "difficulty": 2,
@@ -3580,7 +3461,13 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "1-fc-10"
+  "batchItemId": "1-fc-10",
+  "taughtOn": "2026-11-16",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 16",
+   "section": "11/16 | Writing, Monday, Learning Targets",
+   "quote": "Show who owns something."
+  }
  },
  {
   "id": "fc-paced-2026-11-1-what-does-a-wind-vane-show-us",
@@ -3622,7 +3509,13 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "1-fc-11"
+  "batchItemId": "1-fc-11",
+  "taughtOn": "2026-11-18",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 16",
+   "section": "11/16 | Science, CER tickets, Day 3",
+   "quote": "You want to know which way the wind is blowing. What tool would you use?"
+  }
  },
  {
   "id": "fc-paced-2026-11-1-which-list-names-only-weather-tools",
@@ -3664,7 +3557,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "1-fc-12"
+  "batchItemId": "1-fc-12",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 16",
+   "section": "11/16 | Science, Vocabulary & Strategy",
+   "quote": "Thermometer, wind vane, rain gauge"
+  }
  },
  {
   "id": "fc-paced-2026-11-2-which-word-has-a-soft-g-the-sound-you-he",
@@ -4097,92 +3995,6 @@
   }
  },
  {
-  "id": "fc-paced-2026-11-2-which-word-spells-long-o-with-oa",
-  "subject": "Literacy",
-  "difficulty": 1,
-  "question": "Which word spells long o with oa?",
-  "answer": "road",
-  "choices": [
-   "rod",
-   "road",
-   "red",
-   "ride"
-  ],
-  "correctIndex": 1,
-  "explanation": "In road, the letters oa say long o.",
-  "standard": null,
-  "session": "Nov 16–20, Monday 16 (Session 6), Phonics row",
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "2",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-3.json",
-   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
-   "section": "Nov 16–20, Monday 16 (Session 6), Phonics row",
-   "quote": "Introduce Long o (o, oa)"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 2-fc-9).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "2-fc-9",
-  "taughtOn": "2026-11-16"
- },
- {
-  "id": "fc-paced-2026-11-2-which-word-spells-long-o-with-ow",
-  "subject": "Literacy",
-  "difficulty": 1,
-  "question": "Which word spells long o with ow?",
-  "answer": "slow",
-  "choices": [
-   "slot",
-   "sled",
-   "slow",
-   "slip"
-  ],
-  "correctIndex": 2,
-  "explanation": "In slow, the letters ow say long o.",
-  "standard": null,
-  "session": "Nov 16–20, Wednesday 18 (Session 8), Phonics row",
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "2",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-3.json",
-   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
-   "section": "Nov 16–20, Wednesday 18 (Session 8), Phonics row",
-   "quote": "Introduce Long o (ow, oe)"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 2-fc-10).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "2-fc-10",
-  "taughtOn": "2026-11-18"
- },
- {
   "id": "fc-paced-2026-11-2-a-burrowing-animal-in-the-desert-is-one-",
   "subject": "Literacy",
   "difficulty": 2,
@@ -4223,7 +4035,12 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "2-fc-11",
-  "taughtOn": "2026-11-16"
+  "taughtOn": "2026-11-16",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 16",
+   "section": "11.16-11.20 | Reading, Vocabulary & Strategy",
+   "quote": "Vocabulary & Strategy: ecosystems, habitat, survive, desert, dunes, canyons, cactus, spines, shelter, shady, valley, burrowing"
+  }
  },
  {
   "id": "fc-paced-2026-11-2-a-desert-animal-has-adapted-to-its-habit",
@@ -4266,7 +4083,12 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "2-fc-12",
-  "taughtOn": "2026-11-18"
+  "taughtOn": "2026-11-17",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 16",
+   "section": "11.16-11.20 | Writing, Tuesday, I do",
+   "quote": "Review the words survive and adaptation."
+  }
  },
  {
   "id": "fc-paced-2026-11-3-which-of-these-is-a-story-element",
@@ -4674,90 +4496,6 @@
   }
  },
  {
-  "id": "fc-paced-2026-11-3-on-a-story-mountain-which-part-comes-rig",
-  "subject": "Literacy",
-  "difficulty": 1,
-  "question": "On a story mountain, which part comes right after the climax?",
-  "answer": "Falling action",
-  "choices": [
-   "Introduction",
-   "Falling action",
-   "Rising action",
-   "The title"
-  ],
-  "correctIndex": 1,
-  "explanation": "After the most exciting point, events start to wind down in the falling action.",
-  "standard": "3.T.C.2",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "3",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-4.json",
-   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
-   "sourceTitle": "3rd ELA Pacing Support",
-   "section": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
-   "quote": "Add Mood, Story Mountain, Introduction, Rising Action, Climax, Falling Action, Resolution, and Drama to vocabulary notebooks."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 3-fc-9).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "3-fc-9"
- },
- {
-  "id": "fc-paced-2026-11-3-the-house-was-dark-the-wind-howled-and-a",
-  "subject": "Literacy",
-  "difficulty": 1,
-  "question": "\"The house was dark, the wind howled, and a door creaked open.\" What is the mood?",
-  "answer": "Spooky",
-  "choices": [
-   "Silly",
-   "Peaceful",
-   "Spooky",
-   "Sleepy"
-  ],
-  "correctIndex": 2,
-  "explanation": "Dark, howling, and creaking details make the reader feel nervous.",
-  "standard": "3.T.C.2",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "3",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-4.json",
-   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
-   "sourceTitle": "3rd ELA Pacing Support",
-   "section": "Weekly catalog, Nov 16–20 (Unit 3: Another View), Support / PEC",
-   "quote": "Add Mood, Story Mountain, Introduction, Rising Action, Climax, Falling Action, Resolution, and Drama to vocabulary notebooks."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 3-fc-10).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "3-fc-10"
- },
- {
   "id": "fc-paced-2026-11-3-the-part-of-a-story-where-the-problem-ge",
   "subject": "Literacy",
   "difficulty": 1,
@@ -4797,7 +4535,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-fc-11"
+  "batchItemId": "3-fc-11",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
+   "section": "ELA 11/16 | Success Criteria",
+   "quote": "Explain the ultimate resolution of the central narrative struggle."
+  }
  },
  {
   "id": "fc-paced-2026-11-3-which-of-these-animals-is-an-invertebrat",
@@ -4839,7 +4582,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-fc-12"
+  "batchItemId": "3-fc-12",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
+   "section": "Sci 11/16 | Lesson Link, Science A-Z",
+   "quote": "Invertebrate fossils teaching tips"
+  }
  },
  {
   "id": "fc-paced-2026-11-3-which-was-a-main-reason-european-explore",
@@ -4881,7 +4629,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-fc-13"
+  "batchItemId": "3-fc-13",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
+   "section": "SS 11/16 | Graphic Organizer",
+   "quote": "Explorer Information Table: Explorer | Goals/motivations | Journey/route | Key events/achievements | Source evidence | Similarities/differences."
+  }
  },
  {
   "id": "fc-paced-2026-11-4-which-detail-best-shows-how-the-great-de",
@@ -5307,90 +5060,6 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "4-fc-9"
- },
- {
-  "id": "fc-paced-2026-11-4-which-sentence-describes-climate-not-wea",
-  "subject": "Science",
-  "difficulty": 2,
-  "question": "Which sentence describes CLIMATE, not weather?",
-  "answer": "Georgia usually has hot, humid summers.",
-  "choices": [
-   "Georgia usually has hot, humid summers.",
-   "It is raining right now.",
-   "Today's high will be 70°F.",
-   "A storm is coming this afternoon."
-  ],
-  "correctIndex": 0,
-  "explanation": "Climate is the usual pattern over many years; the others describe a short time.",
-  "standard": "S4E4",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "4",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-10.json",
-   "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
-   "sourceTitle": "4th Science Pacing Support",
-   "section": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
-   "quote": "I can gather and analyze weather information to predict weather patterns and explain how weather is different from climate."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 4-fc-10).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "4-fc-10"
- },
- {
-  "id": "fc-paced-2026-11-4-which-weather-tool-measures-how-much-rai",
-  "subject": "Science",
-  "difficulty": 1,
-  "question": "Which weather tool measures how much rain has fallen?",
-  "answer": "Rain gauge",
-  "choices": [
-   "Rain gauge",
-   "Thermometer",
-   "Wind vane",
-   "Barometer"
-  ],
-  "correctIndex": 0,
-  "explanation": "A rain gauge collects and measures rainfall.",
-  "standard": "S4E4",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "4",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-10.json",
-   "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
-   "sourceTitle": "4th Science Pacing Support",
-   "section": "Nov 16–20 weekly block, Unit 3: Forecasting the Weather",
-   "quote": "I can gather and analyze weather information to predict weather patterns and explain how weather is different from climate."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 4-fc-11).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "4-fc-11"
  },
  {
   "id": "fc-paced-2026-11-4-which-of-these-is-a-physical-natural-fea",
@@ -5873,48 +5542,6 @@
   "batchItemId": "5-fc-9"
  },
  {
-  "id": "fc-paced-2026-11-5-a-soldier-s-diary-and-a-news-article-wri",
-  "subject": "Literacy",
-  "difficulty": 2,
-  "question": "A soldier’s diary and a news article written years later describe the same battle. What is one main difference?",
-  "answer": "The diary shares the writer’s own experience and feelings",
-  "choices": [
-   "The article’s writer was at the battle",
-   "The diary cannot include any facts",
-   "They cannot describe the same event",
-   "The diary shares the writer’s own experience and feelings"
-  ],
-  "correctIndex": 3,
-  "explanation": "The diary is first-hand; the later article is second-hand and built from other sources.",
-  "standard": "5.T.T.2.c",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "5",
-  "weekIntroduced": "2026-11-16",
-  "alignedWeeks": [
-   "2026-11-16"
-  ],
-  "source": "ClassThread paced content (2026-11)",
-  "packId": "classthread-paced-2026-11",
-  "packName": "ClassThread paced content (2026-11)",
-  "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-6.json",
-   "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
-   "sourceTitle": "5th ELA Pacing Support",
-   "section": "Weekly catalog Nov 16–20, Unit 3: Freedom Seekers, I Can",
-   "quote": "I can compare and contrast first-hand and second-hand accounts of the same event. (5.T.T.2.c)"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 5-fc-10).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "5-fc-10"
- },
- {
   "id": "fc-paced-2026-11-5-which-sentence-uses-its-and-it-s-correct",
   "subject": "Literacy",
   "difficulty": 2,
@@ -5954,7 +5581,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "5-fc-11"
+  "batchItemId": "5-fc-11",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 16",
+   "section": "wk 11/16-11/20 | ELA, Daily Overview & Schedule, Monday",
+   "quote": "Daily Dose of Grammar: Day 71"
+  }
  },
  {
   "id": "fc-paced-2026-11-5-which-material-is-the-best-conductor-to-",
@@ -5997,7 +5629,11 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "5-fc-12",
-  "taughtOn": "2026-11-16"
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 16",
+   "section": "11/16 science | Vocabulary & Strategy",
+   "quote": "Circuit, closed circuit, conductor, insulator, open circuit"
+  }
  },
  {
   "id": "fc-paced-2026-11-5-what-does-a-simple-circuit-need-for-a-bu",
@@ -6040,7 +5676,11 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "5-fc-13",
-  "taughtOn": "2026-11-16"
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 16",
+   "section": "11/16 science | Standard",
+   "quote": "5P2B: Design a complete, simple electric circuit, and explain all necessary components."
+  }
  },
  {
   "id": "fc-paced-2026-11-5-november-11-began-as-armistice-day-marki",
@@ -6082,7 +5722,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "5-fc-14"
+  "batchItemId": "5-fc-14",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 16",
+   "section": "wk 11/16-11/20 | Social Studies, Resources",
+   "quote": "Social Studies Lab: How Do We Remember War?"
+  }
  },
  {
   "id": "fc-paced-2026-11-K-which-word-is-a-noun-a-naming-word-for-a",
@@ -6507,6 +6152,244 @@
    "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 9",
    "section": "ELA wk 11/9-11/13 | Day 4 Thursday (Session 12), Learning Goals",
    "quote": "Use a comma to set off a noun of direct address from the rest of a sentence."
+  }
+ },
+ {
+  "id": "fc-paced-2026-11-K-a-story-has-a-beginning-a-middle-and-an",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "A story has a beginning, a middle, and an ___.",
+  "answer": "End",
+  "choices": [
+   "Apple",
+   "End",
+   "Hat",
+   "Ball"
+  ],
+  "correctIndex": 1,
+  "explanation": "Stories go in order: beginning, middle, and end.",
+  "standard": null,
+  "session": "11/16 Phonics/Writing | Writing, Learning Target",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-11-16",
+  "alignedWeeks": [
+   "2026-11-16"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/1f-DfMmgwFKU2uN8unTC9p3ROKM0qh2sTUPHDuNo-vcY/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1f-DfMmgwF-2026-11-16.json",
+   "sourceUrl": "https://docs.google.com/document/d/1f-DfMmgwFKU2uN8unTC9p3ROKM0qh2sTUPHDuNo-vcY/edit",
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 16",
+   "section": "11/16 Phonics/Writing | Writing, Learning Target",
+   "quote": "I can help write a story with my class using beginning, middle, and end."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item K-fc-w1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-w1",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 16",
+   "section": "11/16 Phonics/Writing | Writing, Learning Target",
+   "quote": "I can help write a story with my class using beginning, middle, and end."
+  }
+ },
+ {
+  "id": "fc-paced-2026-11-2-which-word-means-to-look-at-someone-in-a",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which word means to look at someone in an angry way?",
+  "answer": "glare",
+  "choices": [
+   "glance",
+   "peek",
+   "glare",
+   "gaze"
+  ],
+  "correctIndex": 2,
+  "explanation": "To glare is to look at someone angrily. A glance or a peek is a quick look, and a gaze is a long, calm look.",
+  "standard": "2.L.V.3.c",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-11-16",
+  "alignedWeeks": [
+   "2026-11-16"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-16JOGbY6WN-2026-11-09.json",
+   "sourceUrl": "https://docs.google.com/document/d/16JOGbY6WNqRJvGtqGcOJ1sRTxasDzc8H94zDH-dp-5w/edit",
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 16",
+   "section": "11.16-11.20 | Grammar, Standards (Thursday)",
+   "quote": "Distinguish shades of meaning among verbs that differ in manner (e.g., look, peek, glance, stare, glare, scowl)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 2-fc-w2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-w2",
+  "taughtOn": "2026-11-19",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 16",
+   "section": "11.16-11.20 | Grammar, Standards (Thursday)",
+   "quote": "Distinguish shades of meaning among verbs that differ in manner (e.g., look, peek, glance, stare, glare, scowl)"
+  }
+ },
+ {
+  "id": "fc-paced-2026-11-3-which-of-these-is-a-primary-source-about",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Which of these is a PRIMARY source about an explorer's voyage?",
+  "answer": "A journal the explorer wrote during the voyage",
+  "choices": [
+   "A journal the explorer wrote during the voyage",
+   "A textbook chapter written last year",
+   "A cartoon movie about the explorer",
+   "An encyclopedia article about the explorer"
+  ],
+  "correctIndex": 0,
+  "explanation": "A primary source was made by someone who was there at the time, like the explorer's own journal.",
+  "standard": "SS3H2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-11-16",
+  "alignedWeeks": [
+   "2026-11-16"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1QQOJoRIXx-2026-11-16.json",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
+   "section": "SS 11/16 | Five-Day Teaching Sequence, Mon Nov 16",
+   "quote": "Mon, Nov 16: Part 1: Review visual, primary, secondary, and literary sources used to investigate Columbus."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 3-fc-w2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-w2",
+  "taughtOn": "2026-11-16",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
+   "section": "SS 11/16 | Five-Day Teaching Sequence, Mon Nov 16",
+   "quote": "Mon, Nov 16: Part 1: Review visual, primary, secondary, and literary sources used to investigate Columbus."
+  }
+ },
+ {
+  "id": "fc-paced-2026-11-4-which-statement-about-the-water-cycle-is",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "Which statement about the water cycle is TRUE?",
+  "answer": "Water can take many different paths through the water cycle.",
+  "choices": [
+   "Water can take many different paths through the water cycle.",
+   "Water always follows the exact same single path.",
+   "Water stops moving once it reaches the ground.",
+   "Only rain is part of the water cycle."
+  ],
+  "correctIndex": 0,
+  "explanation": "A drop of water can evaporate, fall as precipitation, soak into the ground, run off into a river, or freeze in a glacier, so there are many pathways.",
+  "standard": "S4E3b",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-11-16",
+  "alignedWeeks": [
+   "2026-11-16"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/19j3B1efOMNt7iYH3cjSdM63gOtlniVZcmZ8ts7Aa7Hk/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-19j3B1efOM-2026-11-16.json",
+   "sourceUrl": "https://docs.google.com/document/d/19j3B1efOMNt7iYH3cjSdM63gOtlniVZcmZ8ts7Aa7Hk/edit",
+   "sourceTitle": "Sweetwater Grade 4 lesson plan, week of Nov 16",
+   "section": "11/16 | Science, Daily Instructional Plan, Wednesday",
+   "quote": "Students will play a game to explore the multiple pathways a drop of water can take as it moves through the water cycle."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 4-fc-w2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-w2",
+  "taughtOn": "2026-11-18",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 4 lesson plan, week of Nov 16",
+   "section": "11/16 | Science, Daily Instructional Plan, Wednesday",
+   "quote": "Students will play a game to explore the multiple pathways a drop of water can take as it moves through the water cycle."
+  }
+ },
+ {
+  "id": "fc-paced-2026-11-5-which-sentence-uses-there-their-and-they",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which sentence uses there, their, and they’re correctly?",
+  "answer": "They’re going to hang their coats over there.",
+  "choices": [
+   "They’re going to hang their coats over there.",
+   "There going to hang they’re coats over their.",
+   "Their going to hang there coats over they’re.",
+   "They’re going to hang there coats over their."
+  ],
+  "correctIndex": 0,
+  "explanation": "They’re = they are; their = belonging to them; there = a place.",
+  "standard": "5.L.GC.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-11-16",
+  "alignedWeeks": [
+   "2026-11-16"
+  ],
+  "source": "ClassThread paced content (2026-11)",
+  "packId": "classthread-paced-2026-11",
+  "packName": "ClassThread paced content (2026-11)",
+  "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+  "evidence": {
+   "document": "support-19-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+   "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+   "section": "Daily Dose of Grammar Skills Weekly Outline, Day 71-74",
+   "quote": "Homophones, contraction, subject, sentence construction"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-11 review page (item 5-fc-w2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-w2",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 5 lesson plan, week of Nov 16",
+   "section": "wk 11/16-11/20 | ELA, Daily Overview & Schedule, Monday",
+   "quote": "Daily Dose of Grammar: Day 71"
   }
  },
  {
@@ -7661,48 +7544,6 @@
   "reviewQuestion": false,
   "batchItemId": "2-fc-8",
   "taughtOn": "2026-12-09"
- },
- {
-  "id": "fc-paced-2026-12-2-sequoyah-is-famous-in-georgia-history-fo",
-  "subject": "Social Studies",
-  "difficulty": 2,
-  "question": "Sequoyah is famous in Georgia history for creating what?",
-  "answer": "A way to write the Cherokee language",
-  "choices": [
-   "A way to write the Cherokee language",
-   "The first map of Georgia",
-   "The city of Savannah",
-   "A new kind of corn"
-  ],
-  "correctIndex": 0,
-  "explanation": "Sequoyah created a writing system (syllabary) so Cherokee people could read and write their own language.",
-  "standard": "SS2H1.b",
-  "session": null,
-  "questionType": "four-corners",
-  "teacherRead": true,
-  "grade": "2",
-  "weekIntroduced": "2026-12-07",
-  "alignedWeeks": [
-   "2026-12-07"
-  ],
-  "source": "ClassThread paced content (2026-12)",
-  "packId": "classthread-paced-2026-12",
-  "packName": "ClassThread paced content (2026-12)",
-  "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
-  "evidence": {
-   "document": "support-6-2026-11-08.json",
-   "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
-   "sourceTitle": "2nd Science/Social Studies Pacing Support",
-   "section": "Unit overview table, row SS3",
-   "quote": "Georgia’s First People"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-fc-9).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "2-fc-9"
  },
  {
   "id": "fc-paced-2026-12-3-it-rains-on-saturday-one-kid-is-sad-beca",
@@ -8922,5 +8763,1232 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "5-fc-8"
+ },
+ {
+  "id": "fc-paced-2026-12-K-which-word-starts-with-the-v-sound",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word starts with the /v/ sound?",
+  "answer": "Van",
+  "choices": [
+   "Mop",
+   "Sun",
+   "Van",
+   "Bat"
+  ],
+  "correctIndex": 2,
+  "explanation": "Van starts with /v/, like violin.",
+  "standard": null,
+  "session": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "kinder-ela-calendar-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+   "quote": "Introduce Letter Vv / Xx"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item K-fc-8).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-8",
+  "taughtOn": "2026-12-14"
+ },
+ {
+  "id": "fc-paced-2026-12-K-which-word-starts-with-the-y-sound",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word starts with the /y/ sound?",
+  "answer": "Yarn",
+  "choices": [
+   "Hat",
+   "Yarn",
+   "Dog",
+   "Pen"
+  ],
+  "correctIndex": 1,
+  "explanation": "Yarn starts with /y/, like yo-yo.",
+  "standard": null,
+  "session": "Dec 14–18; Wednesday 16; ML Unit 3 Session 23",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "kinder-ela-calendar-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Dec 14–18; Wednesday 16; ML Unit 3 Session 23",
+   "quote": "Introduce Letter Yy"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item K-fc-9).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-9",
+  "taughtOn": "2026-12-16"
+ },
+ {
+  "id": "fc-paced-2026-12-K-why-are-we-thankful-for-trees",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Why are we thankful for trees?",
+  "answer": "They give us shade and fruit",
+  "choices": [
+   "They give us shade and fruit",
+   "They can talk to us",
+   "They drive cars",
+   "They make it rain candy"
+  ],
+  "correctIndex": 0,
+  "explanation": "Trees help us in many ways, like giving shade and fruit.",
+  "standard": null,
+  "session": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "kinder-ela-calendar-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+   "quote": "Reading: Be Thankful for Trees (Anchor Text, read 1 of 4)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item K-fc-10).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-10",
+  "taughtOn": "2026-12-14"
+ },
+ {
+  "id": "fc-paced-2026-12-K-which-one-needs-food-and-water-to-live",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "Which one needs food and water to live?",
+  "answer": "A goldfish",
+  "choices": [
+   "A teddy bear",
+   "A toy car",
+   "A goldfish",
+   "A rock"
+  ],
+  "correctIndex": 2,
+  "explanation": "A goldfish is living, so it needs food and water. The others are non-living.",
+  "standard": "SKL1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "kinder-sci-ss-support-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Dec 14–18 | Unit: Living and Non-Living; Monday 14",
+   "quote": "Focus Review both elements of Standard"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item K-fc-11).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-11",
+  "taughtOn": "2026-12-14"
+ },
+ {
+  "id": "fc-paced-2026-12-K-which-one-is-a-way-many-families-celebra",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "Which one is a way many families celebrate Christmas?",
+  "answer": "Decorating a tree",
+  "choices": [
+   "Carving pumpkins",
+   "Hunting for eggs",
+   "Decorating a tree",
+   "Watching Fourth of July fireworks"
+  ],
+  "correctIndex": 2,
+  "explanation": "Many families decorate a Christmas tree in December.",
+  "standard": "SSKH1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "kinder-sci-ss-support-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Dec 14–18 | Unit: Living and Non-Living; Standards",
+   "quote": "SKL1; SSKH1; SSKG1 (Christmas)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item K-fc-12).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-fc-12"
+ },
+ {
+  "id": "fc-paced-2026-12-1-which-word-has-the-long-a-sound-like-in-",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word has the long a sound, like in “cake”?",
+  "answer": "Cape",
+  "choices": [
+   "Cap",
+   "Cape",
+   "Can",
+   "Cat"
+  ],
+  "correctIndex": 1,
+  "explanation": "In cape, the silent e at the end makes the a say its name: /ā/.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Dec 14–18; Monday 14; Phonics row",
+   "quote": "Long a: a_e"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 1-fc-10).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-10",
+  "taughtOn": "2026-12-14"
+ },
+ {
+  "id": "fc-paced-2026-12-1-which-one-uses-a-or-an-the-right-way",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which one uses a or an the right way?",
+  "answer": "an apple",
+  "choices": [
+   "a egg",
+   "an apple",
+   "an ball",
+   "a apple"
+  ],
+  "correctIndex": 1,
+  "explanation": "We use an before a word that starts with a vowel sound, like apple.",
+  "standard": "1.L.GC.1-2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Dec 14–18; I Can",
+   "quote": "I can use the articles a and an."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 1-fc-11).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-11"
+ },
+ {
+  "id": "fc-paced-2026-12-1-which-word-means-more-than-one-cake",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word means more than one cake?",
+  "answer": "Cakes",
+  "choices": [
+   "Caked",
+   "Caking",
+   "Cakes",
+   "Cake"
+  ],
+  "correctIndex": 2,
+  "explanation": "Adding -s to cake makes cakes, which means more than one.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Dec 14–18; I Can",
+   "quote": "I can read and write plurals with long and short vowels."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 1-fc-12).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-12"
+ },
+ {
+  "id": "fc-paced-2026-12-1-a-short-line-of-words-under-a-photo-tell",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "A short line of words under a photo tells what the photo shows. What is this text feature called?",
+  "answer": "A caption",
+  "choices": [
+   "A caption",
+   "A glossary",
+   "A table of contents",
+   "An index"
+  ],
+  "correctIndex": 0,
+  "explanation": "A caption is the small line of words that tells about a picture or photo.",
+  "standard": "1.T.SS.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Dec 14–18; I Can",
+   "quote": "I can identify and use text features to find information in a text."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 1-fc-13).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-13"
+ },
+ {
+  "id": "fc-paced-2026-12-1-george-washington-carver-studied-plants-",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "George Washington Carver studied plants and taught farmers how to keep their soil healthy. What was his job?",
+  "answer": "A scientist",
+  "choices": [
+   "A pilot",
+   "A chef",
+   "A firefighter",
+   "A scientist"
+  ],
+  "correctIndex": 3,
+  "explanation": "George Washington Carver was a scientist who studied plants and helped farmers.",
+  "standard": "SS1H1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+  "evidence": {
+   "document": "support-2-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+   "sourceTitle": "1st Grade Pacing",
+   "section": "Dec 14 – 18; Unit 5: Inventors and Community; I Can",
+   "quote": "I can describe the contributions and character traits of George Washington Carver."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 1-fc-14).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-fc-14"
+ },
+ {
+  "id": "fc-paced-2026-12-2-which-word-has-the-r-controlled-vowel-ar",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word has the r-controlled vowel ar?",
+  "answer": "barn",
+  "choices": [
+   "bran",
+   "barn",
+   "ban",
+   "bean"
+  ],
+  "correctIndex": 1,
+  "explanation": "In \"barn,\" the letters a and r work together to make the /ar/ sound, like in \"car.\"",
+  "standard": null,
+  "session": "Dec 14–18, Monday 14 (Session 21), Phonics row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Dec 14–18, Monday 14 (Session 21), Phonics row",
+   "quote": "Introduce r-Controlled Vowel: ar"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-fc-10).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-10",
+  "taughtOn": "2026-12-14"
+ },
+ {
+  "id": "fc-paced-2026-12-2-if-a-store-is-nearby-where-is-it",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "If a store is nearby, where is it?",
+  "answer": "Close to here",
+  "choices": [
+   "Very far away",
+   "Close to here",
+   "Under the water",
+   "Up in the sky"
+  ],
+  "correctIndex": 1,
+  "explanation": "Nearby means close by, not far away.",
+  "standard": null,
+  "session": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+   "quote": "seedling, nearby, signal"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-fc-11).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-11",
+  "taughtOn": "2026-12-15"
+ },
+ {
+  "id": "fc-paced-2026-12-2-which-of-these-is-a-signal",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Which of these is a signal?",
+  "answer": "A traffic light turning red",
+  "choices": [
+   "A traffic light turning red",
+   "A pile of sand",
+   "A sleeping cat",
+   "A glass of water"
+  ],
+  "correctIndex": 0,
+  "explanation": "A signal is a sign, sound, or light that sends a message. A red light tells drivers to stop.",
+  "standard": null,
+  "session": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+   "quote": "seedling, nearby, signal"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-fc-12).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-12",
+  "taughtOn": "2026-12-15"
+ },
+ {
+  "id": "fc-paced-2026-12-2-which-change-can-be-undone",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Which change can be undone?",
+  "answer": "Freezing water into ice",
+  "choices": [
+   "Baking a cake",
+   "Boiling an egg",
+   "Freezing water into ice",
+   "Toasting bread"
+  ],
+  "correctIndex": 2,
+  "explanation": "Ice can melt back into water, so freezing can be undone. A baked cake, a boiled egg, and toast cannot go back to how they were.",
+  "standard": "S2P1.c",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+  "evidence": {
+   "document": "support-6-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+   "sourceTitle": "2nd Science/Social Studies Pacing Support",
+   "section": "Dec 14–18 weekly block, Week Focus",
+   "quote": "Reversible and irreversible changes from heating and cooling: melting ice, freezing water, baking, boiling an egg (S2P1.c)."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-fc-13).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-13"
+ },
+ {
+  "id": "fc-paced-2026-12-2-when-cookie-dough-is-baked-in-a-hot-oven",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "When cookie dough is baked in a hot oven, can the cookies be turned back into dough?",
+  "answer": "No, the change cannot be undone",
+  "choices": [
+   "Yes, by cooling them",
+   "Yes, by adding water",
+   "No, the change cannot be undone",
+   "Yes, by freezing them"
+  ],
+  "correctIndex": 2,
+  "explanation": "Heating changed the dough into something new. Baking is a change that cannot be reversed.",
+  "standard": "S2P1.c",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+  "evidence": {
+   "document": "support-6-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+   "sourceTitle": "2nd Science/Social Studies Pacing Support",
+   "section": "Dec 14–18 weekly block, Week Focus",
+   "quote": "Reversible and irreversible changes from heating and cooling: melting ice, freezing water, baking, boiling an egg (S2P1.c)."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-fc-14).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-fc-14"
+ },
+ {
+  "id": "fc-paced-2026-12-3-max-says-to-his-sister-let-s-sell-lemona",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Max says to his sister: Let's sell lemonade. When you write this with dialogue, which words go inside the quotation marks?",
+  "answer": "Let's sell lemonade",
+  "choices": [
+   "Let's sell lemonade",
+   "Max says to his sister",
+   "to his sister",
+   "sell"
+  ],
+  "correctIndex": 0,
+  "explanation": "Only the exact words Max says go inside the quotation marks: Max said, \"Let's sell lemonade.\" The speech tag stays outside.",
+  "standard": "3.L.GC.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Dec 14–18 (Unit 3: Another View), Support / PEC",
+   "quote": "Have students highlight their dialogue and speech tags."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 3-fc-10).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-10"
+ },
+ {
+  "id": "fc-paced-2026-12-3-you-finish-your-first-draft-then-read-it",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "You finish your first draft, then read it again and add details to make it better. What are you doing?",
+  "answer": "Revising",
+  "choices": [
+   "Brainstorming",
+   "Revising",
+   "Publishing",
+   "Illustrating"
+  ],
+  "correctIndex": 1,
+  "explanation": "Revising means changing your writing to improve it after the first draft.",
+  "standard": "3.L.GC.2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Weekly catalog, Dec 14–18 (Unit 3: Another View), I Can",
+   "quote": "I can plan, write, and revise a narrative from the point of view of a character in The Lemonade War."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 3-fc-11).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-11"
+ },
+ {
+  "id": "fc-paced-2026-12-3-which-of-these-is-an-example-of-hibernat",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "Which of these is an example of hibernation?",
+  "answer": "A groundhog sleeps deep underground all winter",
+  "choices": [
+   "A bird flies south for the winter",
+   "A chameleon changes color to match a leaf",
+   "A groundhog sleeps deep underground all winter",
+   "A squirrel runs up a tree"
+  ],
+  "correctIndex": 2,
+  "explanation": "Hibernation is a long, deep winter sleep that helps an animal survive when food is hard to find.",
+  "standard": "S3L1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-8.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+   "sourceTitle": "3rd Science Pacing Support",
+   "section": "Unit 2: Under the Sun, Standards (S3L1)",
+   "quote": "Construct an explanation of how external features and adaptations (camouflage, hibernation, migration, mimicry) of animals allow them to survive in their habitat."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 3-fc-12).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-12"
+ },
+ {
+  "id": "fc-paced-2026-12-3-which-animal-is-best-suited-to-live-in-a",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Which animal is best suited to live in a grassland habitat?",
+  "answer": "A bison",
+  "choices": [
+   "A polar bear",
+   "A bison",
+   "A whale",
+   "A penguin"
+  ],
+  "correctIndex": 1,
+  "explanation": "Bison eat grass and live in big open fields; the others need icy or ocean habitats.",
+  "standard": "S3L1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-8.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+   "sourceTitle": "3rd Science Pacing Support",
+   "section": "Unit 2: Under the Sun, Standards (S3L1)",
+   "quote": "Use evidence to construct an explanation of why some organisms can thrive in one habitat and not in another."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 3-fc-13).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-fc-13"
+ },
+ {
+  "id": "fc-paced-2026-12-4-a-classmate-reads-your-draft-and-says-on",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "A classmate reads your draft and says one part is confusing. What is the BEST thing to do with this peer feedback?",
+  "answer": "Use it to revise the confusing part",
+  "choices": [
+   "Ignore it and turn the draft in",
+   "Use it to revise the confusing part",
+   "Erase the whole draft",
+   "Copy your classmate's paper"
+  ],
+  "correctIndex": 1,
+  "explanation": "Good writers use helpful feedback to revise and make their writing clearer.",
+  "standard": "4.T.RA.1, 4.T.RA.2 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-5.json",
+   "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+   "sourceTitle": "4th ELA Pacing Support",
+   "section": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+   "quote": "I revise my writing based on a revision plan, peer feedback, self-evaluation, and a checklist."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 4-fc-10).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-10"
+ },
+ {
+  "id": "fc-paced-2026-12-4-which-question-would-best-help-you-refle",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which question would BEST help you reflect on your reading growth in a unit?",
+  "answer": "What is one reading skill I got better at?",
+  "choices": [
+   "What is one reading skill I got better at?",
+   "What is my favorite color?",
+   "How many pages did the book have?",
+   "What day is it today?"
+  ],
+  "correctIndex": 0,
+  "explanation": "Reflecting on growth means thinking about how your reading skills improved.",
+  "standard": "4.T.RA.1, 4.T.RA.2 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-5.json",
+   "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+   "sourceTitle": "4th ELA Pacing Support",
+   "section": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+   "quote": "I can reflect on my reading growth in this unit."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 4-fc-11).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-11"
+ },
+ {
+  "id": "fc-paced-2026-12-4-which-weather-data-would-best-help-a-met",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Which weather data would BEST help a meteorologist predict that rain is coming soon?",
+  "answer": "Air pressure is dropping and dark clouds are moving in",
+  "choices": [
+   "Air pressure is dropping and dark clouds are moving in",
+   "It rained last month",
+   "Today is a Monday",
+   "The leaves on the trees are green"
+  ],
+  "correctIndex": 0,
+  "explanation": "Falling air pressure and incoming clouds are weather data that often come before rain.",
+  "standard": "S4E3, S4E4 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-10.json",
+   "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+   "sourceTitle": "4th Science Pacing Support",
+   "section": "Dec 14–18 weekly block, Unit 3: Forecasting the Weather (I Can)",
+   "quote": "I can gather and analyze weather information to predict weather patterns and explain how weather is different from climate."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 4-fc-12).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-12"
+ },
+ {
+  "id": "fc-paced-2026-12-4-water-can-stay-in-one-place-for-a-very-l",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Water can stay in one place for a very long time before it moves on in the water cycle. Where might water stay frozen for many years?",
+  "answer": "In a glacier",
+  "choices": [
+   "In a glacier",
+   "In a puddle on a sunny day",
+   "In a falling raindrop",
+   "In steam from a pot"
+  ],
+  "correctIndex": 0,
+  "explanation": "Water can be stored as ice in glaciers for a long time before it melts and keeps moving.",
+  "standard": "S4E3, S4E4 (week list; per-item mapping not stated)",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-10.json",
+   "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+   "sourceTitle": "4th Science Pacing Support",
+   "section": "Dec 14–18 weekly block, Unit 3: Forecasting the Weather (I Can)",
+   "quote": "I can use investigations and models to explain how water changes form and travels through the water cycle in different ways."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 4-fc-13).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-13"
+ },
+ {
+  "id": "fc-paced-2026-12-4-what-was-the-main-goal-of-the-abolitioni",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "What was the main goal of the abolitionist movement?",
+  "answer": "To end slavery",
+  "choices": [
+   "To end slavery",
+   "To win women the right to vote",
+   "To explore the West",
+   "To build the first railroads"
+  ],
+  "correctIndex": 0,
+  "explanation": "Abolitionists worked to end slavery; the suffrage movement worked for women's right to vote.",
+  "standard": "SS4H4",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "4",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-11.json",
+   "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+   "sourceTitle": "4th Social Studies Pacing Support",
+   "section": "Unit overview table, Unit 4: The Nation Expands (standards)",
+   "quote": "Examine the main ideas of the abolitionist and suffrage movements."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 4-fc-14).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-fc-14"
+ },
+ {
+  "id": "fc-paced-2026-12-5-which-word-is-a-common-noun",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Which word is a common noun?",
+  "answer": "river",
+  "choices": [
+   "Georgia",
+   "river",
+   "Monday",
+   "Atlanta"
+  ],
+  "correctIndex": 1,
+  "explanation": "A common noun names any person, place, or thing; Georgia, Monday, and Atlanta are proper nouns.",
+  "standard": "5.L.GC.1",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+  "evidence": {
+   "document": "support-19-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+   "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+   "section": "Daily Dose of Grammar Skills Weekly Outline, Day 86-89 (Day 90 assessment)",
+   "quote": "order of adjectives, quotations, common nouns, sentence construction"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 5-fc-9).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-9"
+ },
+ {
+  "id": "fc-paced-2026-12-5-why-do-writers-add-dialogue-to-a-narrati",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Why do writers add dialogue to a narrative?",
+  "answer": "To show what characters say and reveal their feelings and the setting",
+  "choices": [
+   "To list facts in number order",
+   "To show what characters say and reveal their feelings and the setting",
+   "To give the page numbers of a book",
+   "To explain how to follow the steps of a recipe"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dialogue is characters’ spoken words; it shows personality and feelings and can give details about the setting.",
+  "standard": "5.T.T.1.a",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+  "evidence": {
+   "document": "support-19-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+   "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+   "section": "Unit 3 Writing Rope lesson, WE DO Prompts",
+   "quote": "What is a setting in narrative writing? What is dialogue in narrative writing?"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 5-fc-10).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-10"
+ },
+ {
+  "id": "fc-paced-2026-12-5-you-rub-a-balloon-on-your-hair-and-then-",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "You rub a balloon on your hair, and then it sticks to a wall. What kind of electricity is this?",
+  "answer": "Static electricity",
+  "choices": [
+   "Static electricity",
+   "Electricity from a battery",
+   "Electricity from a power plant",
+   "Electricity from a wall outlet"
+  ],
+  "correctIndex": 0,
+  "explanation": "Rubbing moves electric charges and builds up static electricity, which happens naturally without wires or batteries.",
+  "standard": "S5P2a",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-7.json",
+   "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+   "sourceTitle": "5th Science Pacing Support",
+   "section": "Unit 3 UbD Stage 1, Understandings",
+   "quote": "Electricity can occur naturally or be harnessed by humans to power devices."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 5-fc-11).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-11",
+  "taughtOn": "2026-12-14"
+ },
+ {
+  "id": "fc-paced-2026-12-5-which-sector-of-the-u-s-economy-makes-go",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Which sector of the U.S. economy makes goods and services to sell for a profit?",
+  "answer": "Private businesses",
+  "choices": [
+   "Households",
+   "Private businesses",
+   "Banks",
+   "Government"
+  ],
+  "correctIndex": 1,
+  "explanation": "Private businesses are producers; households are consumers, banks save and lend money, and government provides public goods with taxes.",
+  "standard": "SS5E2",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-12.json",
+   "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+   "sourceTitle": "5th Social Studies Pacing Support",
+   "section": "Unit overview table, Unit 5 (Nov 30-Dec 18)",
+   "quote": "SS5E2 - Describe the functions of four major sectors in the U. S. economy."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 5-fc-12).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-12"
+ },
+ {
+  "id": "fc-paced-2026-12-5-duke-ellington-was-one-of-the-best-known",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Duke Ellington was one of the best-known American entertainers of the 1930s. What was he famous for?",
+  "answer": "Leading a jazz band and writing music",
+  "choices": [
+   "Flying alone across the Atlantic Ocean",
+   "Leading a jazz band and writing music",
+   "Inventing the assembly line",
+   "Winning four Olympic gold medals"
+  ],
+  "correctIndex": 1,
+  "explanation": "Duke Ellington was a jazz bandleader, pianist, and composer whose music stayed popular through the Depression years.",
+  "standard": "SS5H3",
+  "session": null,
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "grade": "5",
+  "weekIntroduced": "2026-12-14",
+  "alignedWeeks": [
+   "2026-12-14"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-12.json",
+   "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+   "sourceTitle": "5th Social Studies Pacing Support",
+   "section": "Weekly catalog Dec 14–18, Unit 5, Resources",
+   "quote": "1930s Icons"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 5-fc-13).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-fc-13"
  }
 ]

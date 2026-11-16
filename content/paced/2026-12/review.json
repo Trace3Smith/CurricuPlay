@@ -4066,9 +4066,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 11/30 | Date(s), Lesson",
+   "locator": "M 11/30 | Lesson #/Title",
    "quote": "Lesson 16 - Add Areas"
   }
  },
@@ -4100,9 +4100,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 11/30 | Date(s), Lesson",
+   "locator": "M 11/30 | Lesson #/Title",
    "quote": "Lesson 16 - Add Areas"
   }
  },
@@ -7424,6 +7424,3771 @@
   },
   "checks": [
    "General-knowledge fact: the four sectors are households, businesses, banks and government; the source names \"four major sectors\" only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-13",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "van",
+   "answer": "V",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter V and its sound",
+   "category": "skill-practice",
+   "picture": "van",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Introduce Letter Vv / Xx"
+   },
+   "alsoAccept": [
+    {
+     "letter": "C",
+     "because": "car"
+    },
+    {
+     "letter": "T",
+     "because": "truck"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: kids may say 'car' (C) or 'truck' (T); a family minivan side view is clearest."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-14",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "vase",
+   "answer": "V",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter V and its sound",
+   "category": "skill-practice",
+   "picture": "vase",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Introduce Letter Vv / Xx"
+   },
+   "alsoAccept": [
+    {
+     "letter": "F",
+     "because": "flowers"
+    },
+    {
+     "letter": "J",
+     "because": "jar"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: a vase full of flowers invites 'flowers' (F); an empty vase may be called a 'jar' (J). Show a vase with one or two stems."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-15",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "violin",
+   "answer": "V",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter V and its sound",
+   "category": "skill-practice",
+   "picture": "violin",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Introduce Letter Vv / Xx"
+   },
+   "alsoAccept": [
+    {
+     "letter": "G",
+     "because": "guitar"
+    },
+    {
+     "letter": "F",
+     "because": "fiddle"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: kids may say 'guitar' (G); show the bow with the violin."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-16",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "vest",
+   "answer": "V",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter V and its sound",
+   "category": "skill-practice",
+   "picture": "vest",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Introduce Letter Vv / Xx"
+   },
+   "alsoAccept": [
+    {
+     "letter": "J",
+     "because": "jacket"
+    },
+    {
+     "letter": "C",
+     "because": "coat"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: kids may say 'jacket' (J) or 'coat' (C); a sleeveless puffer vest is clearest."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-17",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "x-ray",
+   "answer": "X",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter X and its sound",
+   "category": "skill-practice",
+   "picture": "x-ray",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Introduce Letter Vv / Xx"
+   },
+   "alsoAccept": [
+    {
+     "letter": "B",
+     "because": "bones"
+    },
+    {
+     "letter": "S",
+     "because": "skeleton"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: kids may say 'bones' (B) or 'skeleton' (S); a hand x-ray is the most recognizable.",
+   "X words are rare at the start of everyday words; Kindergarten usually hears /ks/ at the end (box, fox).",
+   "Word has a hyphen; check the Spelling Bee screen shows it well (like the 'jellybeans' fix)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-18",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "xylophone",
+   "answer": "X",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter X and its sound",
+   "category": "skill-practice",
+   "picture": "xylophone",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Introduce Letter Vv / Xx"
+   },
+   "alsoAccept": [
+    {
+     "letter": "P",
+     "because": "piano"
+    }
+   ]
+  },
+  "checks": [
+   "Sound check: xylophone starts with the letter X but the /z/ sound; fine for naming the first letter, but worth a glance.",
+   "Photo risk: a toy xylophone may be called a 'piano' (P).",
+   "X words are rare at the start of everyday words; Kindergarten usually hears /ks/ at the end (box, fox)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-19",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-16",
+  "review": "2027-01-16",
+  "dayNamed": true,
+  "item": {
+   "word": "yo-yo",
+   "answer": "Y",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter Y and its sound",
+   "category": "skill-practice",
+   "picture": "yo-yo",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-16",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Wednesday 16; ML Unit 3 Session 23",
+    "quote": "Introduce Letter Yy"
+   },
+   "alsoAccept": [
+    {
+     "letter": "T",
+     "because": "toy"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: kids may just say 'toy' (T).",
+   "Word has a hyphen; check the Spelling Bee screen shows it well (like the 'jellybeans' fix)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-20",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-16",
+  "review": "2027-01-16",
+  "dayNamed": true,
+  "item": {
+   "word": "yarn",
+   "answer": "Y",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter Y and its sound",
+   "category": "skill-practice",
+   "picture": "yarn",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-16",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Wednesday 16; ML Unit 3 Session 23",
+    "quote": "Introduce Letter Yy"
+   },
+   "alsoAccept": [
+    {
+     "letter": "S",
+     "because": "string"
+    },
+    {
+     "letter": "B",
+     "because": "ball"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: kids may say 'string' (S) or 'ball' (B); show a ball of yarn with knitting needles."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-21",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-16",
+  "review": "2027-01-16",
+  "dayNamed": true,
+  "item": {
+   "word": "yogurt",
+   "answer": "Y",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter Y and its sound",
+   "category": "skill-practice",
+   "picture": "yogurt",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-16",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Wednesday 16; ML Unit 3 Session 23",
+    "quote": "Introduce Letter Yy"
+   },
+   "alsoAccept": [
+    {
+     "letter": "P",
+     "because": "pudding"
+    }
+   ]
+  },
+  "checks": [
+   "Photo risk: a yogurt cup may be called 'pudding' (P); an open cup with a spoon and fruit helps."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-12",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "On a hot, sunny day, we can sit under a big tree to stay cool. What does the tree give us?",
+   "answer": "Shade.",
+   "standard": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Reading: Be Thankful for Trees (Anchor Text, read 1 of 4)"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: trees give shade; the source names the book only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-13",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Apples, oranges, and peaches grow on trees. What kind of food are they?",
+   "answer": "Fruit.",
+   "standard": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Tuesday 15; ML Unit 3 Session 22",
+    "quote": "Reading: Be Thankful for Trees (read 2 of 4)"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: these fruits grow on trees; the source names the book only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-14",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "This brown coin is worth 1 cent. What is the coin called?",
+   "answer": "A penny.",
+   "standard": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+    "locator": "Curriculum calendar, December 2026; Dec 14 week; Monday 14",
+    "quote": "One-Day Activity: Pennies, Nickels & Dimes"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: a penny is worth 1 cent.",
+   "No standard code assigned; the source lists K.NR.1.1, K.NR.1.2 and K.NR.1.4 for the week without mapping them."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-15",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "A nickel is a silver coin. How many cents is a nickel worth?",
+   "answer": "5 cents.",
+   "standard": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+    "locator": "Curriculum calendar, December 2026; Dec 14 week; Monday 14",
+    "quote": "One-Day Activity: Pennies, Nickels & Dimes"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: a nickel is worth 5 cents.",
+   "No standard code assigned; the source lists K.NR.1.1, K.NR.1.2 and K.NR.1.4 for the week without mapping them."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-16",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Dogs have fur and birds have feathers. Fish have small, shiny pieces covering their bodies. What are they called?",
+   "answer": "Scales.",
+   "standard": "SKL1",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Dec 14–18 | Unit: Living and Non-Living; Monday 14",
+    "quote": "Focus Review both elements of Standard"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: fish are covered in scales; the source says only 'review both elements of the standard'."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-17",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "Many families celebrate Christmas with lights and gifts. In which month is Christmas?",
+   "answer": "December.",
+   "standard": "SSKH1",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Dec 14–18 | Unit: Living and Non-Living; Standards",
+    "quote": "SKL1; SSKH1; SSKG1 (Christmas)"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: Christmas is December 25; the source lists 'SSKG1 (Christmas)' but no lesson content or day."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-8",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word starts with the /v/ sound?",
+   "choices": [
+    "Mop",
+    "Sun",
+    "Van",
+    "Bat"
+   ],
+   "correctIndex": 2,
+   "explanation": "Van starts with /v/, like violin.",
+   "standard": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Introduce Letter Vv / Xx"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-9",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-16",
+  "review": "2027-01-16",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word starts with the /y/ sound?",
+   "choices": [
+    "Hat",
+    "Yarn",
+    "Dog",
+    "Pen"
+   ],
+   "correctIndex": 1,
+   "explanation": "Yarn starts with /y/, like yo-yo.",
+   "standard": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-16",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Wednesday 16; ML Unit 3 Session 23",
+    "quote": "Introduce Letter Yy"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-10",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Why are we thankful for trees?",
+   "choices": [
+    "They give us shade and fruit",
+    "They can talk to us",
+    "They drive cars",
+    "They make it rain candy"
+   ],
+   "correctIndex": 0,
+   "explanation": "Trees help us in many ways, like giving shade and fruit.",
+   "standard": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Dec 14–18; Monday 14; ML Unit 3 Session 21",
+    "quote": "Reading: Be Thankful for Trees (Anchor Text, read 1 of 4)"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: trees give shade and fruit; the source names the book only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-11",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "Which one needs food and water to live?",
+   "choices": [
+    "A teddy bear",
+    "A toy car",
+    "A goldfish",
+    "A rock"
+   ],
+   "correctIndex": 2,
+   "explanation": "A goldfish is living, so it needs food and water. The others are non-living.",
+   "standard": "SKL1",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Dec 14–18 | Unit: Living and Non-Living; Monday 14",
+    "quote": "Focus Review both elements of Standard"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: living things need food and water; the source gives only the topic."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-12",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "Which one is a way many families celebrate Christmas?",
+   "choices": [
+    "Carving pumpkins",
+    "Hunting for eggs",
+    "Decorating a tree",
+    "Watching Fourth of July fireworks"
+   ],
+   "correctIndex": 2,
+   "explanation": "Many families decorate a Christmas tree in December.",
+   "standard": "SSKH1",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Dec 14–18 | Unit: Living and Non-Living; Standards",
+    "quote": "SKL1; SSKH1; SSKG1 (Christmas)"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: Christmas traditions; the source lists 'SSKG1 (Christmas)' and 'Winter Holidays' but no lesson content or day."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-18",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "cake",
+   "clue": "A sweet treat you eat at a birthday party.",
+   "skill": "Long a: a_e",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; Phonics row",
+    "quote": "Long a: a_e"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-19",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "wave",
+   "clue": "Water in the ocean rises up and rolls to the shore as a ___.",
+   "skill": "Long a: a_e",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; Phonics row",
+    "quote": "Long a: a_e"
+   }
+  },
+  "checks": [
+   "\"wave\" can also mean moving your hand to say hi; the clue sentence shows the ocean meaning."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-20",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "gate",
+   "clue": "A door in a fence that swings open and shut.",
+   "skill": "Long a: a_e",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; Phonics row",
+    "quote": "Long a: a_e"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-22",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-17",
+  "review": "2027-01-17",
+  "dayNamed": true,
+  "item": {
+   "word": "hand",
+   "clue": "You have five fingers on each ___.",
+   "skill": "Short a with ending blend -nd",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-17",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Thursday 17; Phonics row",
+    "quote": "Long a: a_e; Ending Blends -nd, -nt, -mp"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-23",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-17",
+  "review": "2027-01-17",
+  "dayNamed": true,
+  "item": {
+   "word": "camp",
+   "clue": "We sleep in a tent when we go to ___ in the woods.",
+   "skill": "Short a with ending blend -mp",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-17",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Thursday 17; Phonics row",
+    "quote": "Long a: a_e; Ending Blends -nd, -nt, -mp"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-24",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "other",
+   "clue": "I lost one sock, and now I can't find the ___ one.",
+   "skill": "Super Words: other, people, too, write",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; High-Frequency Words row",
+    "quote": "other, people, too, write"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-25",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "people",
+   "clue": "Lots of ___ came to watch the parade.",
+   "skill": "Super Words: other, people, too, write",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; High-Frequency Words row",
+    "quote": "other, people, too, write"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-26",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "too",
+   "clue": "I want to come to the park ___!",
+   "skill": "Super Words: other, people, too, write",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; High-Frequency Words row",
+    "quote": "other, people, too, write"
+   }
+  },
+  "checks": [
+   "\"too\" sounds like \"to\" and \"two\"; the clue sentence shows which one is meant."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-27",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "write",
+   "clue": "Use your pencil to ___ your name at the top.",
+   "skill": "Super Words: other, people, too, write",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; High-Frequency Words row",
+    "quote": "other, people, too, write"
+   }
+  },
+  "checks": [
+   "\"write\" sounds like \"right\"; the clue sentence shows which one is meant."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-12",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "The ocean is like a stack: a sunny top part, a darker middle part, and a dark deep part. What word names each part in the stack?",
+   "answer": "A layer.",
+   "standard": "1.L.V.1-3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Tuesday 15; Vocabulary row",
+    "quote": "layer, float, steep"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [
+   "General-knowledge fact: the ocean can be described in layers from the sunny top to the dark bottom; the calendar lists the word layer but no definition."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-13",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "A beach ball stays on top of the pool water and does not sink. What word means to stay on top of the water?",
+   "answer": "Float.",
+   "standard": "1.L.V.1-3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Tuesday 15; Vocabulary row",
+    "quote": "layer, float, steep"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [
+   "General-knowledge fact: float means to stay on top of water without sinking; the calendar lists the word only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-14",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "A hill goes up so sharply that it is very hard to climb. What word describes a hill like that?",
+   "answer": "Steep.",
+   "standard": "1.L.V.1-3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Tuesday 15; Vocabulary row",
+    "quote": "layer, float, steep"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [
+   "General-knowledge fact: steep means going up or down sharply; the calendar lists the word only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-15",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "There are 9 crabs on the sand. There are 4 more sea stars than crabs. How many sea stars are there?",
+   "answer": "13 sea stars.",
+   "standard": "1.NR.2.1, 1.NR.2.2",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "1st Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+    "locator": "Dec 14–18; Unit 3; I Can",
+    "quote": "I can solve word problems and make comparisons."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "Review week: Math Unit Assessment 3 is on Fri Dec 18, so these are review items for compare and word problems."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-16",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "Nora had 16 shells. She gave some to her friend. Now she has 9 shells. How many shells did she give away?",
+   "answer": "7 shells.",
+   "standard": "1.NR.2.1, 1.NR.2.2",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "1st Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+    "locator": "Dec 14–18; Unit 3; I Can",
+    "quote": "I can solve word problems and make comparisons."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "Review week: Math Unit Assessment 3 is on Fri Dec 18, so these are review items for compare and word problems."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-17",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "George Washington Carver was a scientist who found hundreds of ways to use one plant. Its seeds grow underground, and people make a butter from them. What plant is it?",
+   "answer": "The peanut.",
+   "standard": "SS1H1",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "1st Grade Pacing",
+    "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+    "locator": "Dec 14 – 18; Unit 5; Standards and GaDOE Inspire",
+    "quote": "George Washington Carver — agricultural contributions"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: George Washington Carver found hundreds of uses for the peanut; the pacing doc names his agricultural contributions but gives no details.",
+   "Peanut butter is a common allergy topic; fine as a fact, but no food is handed out."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-10",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word has the long a sound, like in “cake”?",
+   "choices": [
+    "Cap",
+    "Cape",
+    "Can",
+    "Cat"
+   ],
+   "correctIndex": 1,
+   "explanation": "In cape, the silent e at the end makes the a say its name: /ā/.",
+   "standard": "1.F.P.1-3",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; Monday 14; Phonics row",
+    "quote": "Long a: a_e"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-11",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which one uses a or an the right way?",
+   "choices": [
+    "a egg",
+    "an apple",
+    "an ball",
+    "a apple"
+   ],
+   "correctIndex": 1,
+   "explanation": "We use an before a word that starts with a vowel sound, like apple.",
+   "standard": "1.L.GC.1-2",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; I Can",
+    "quote": "I can use the articles a and an."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-12",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word means more than one cake?",
+   "choices": [
+    "Caked",
+    "Caking",
+    "Cakes",
+    "Cake"
+   ],
+   "correctIndex": 2,
+   "explanation": "Adding -s to cake makes cakes, which means more than one.",
+   "standard": "1.F.P.1-3",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; I Can",
+    "quote": "I can read and write plurals with long and short vowels."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-13",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "A short line of words under a photo tells what the photo shows. What is this text feature called?",
+   "choices": [
+    "A caption",
+    "A glossary",
+    "A table of contents",
+    "An index"
+   ],
+   "correctIndex": 0,
+   "explanation": "A caption is the small line of words that tells about a picture or photo.",
+   "standard": "1.T.SS.1",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Dec 14–18; I Can",
+    "quote": "I can identify and use text features to find information in a text."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: definition of a caption; the calendar says text features but does not list which ones."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-14",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "George Washington Carver studied plants and taught farmers how to keep their soil healthy. What was his job?",
+   "choices": [
+    "A pilot",
+    "A chef",
+    "A firefighter",
+    "A scientist"
+   ],
+   "correctIndex": 3,
+   "explanation": "George Washington Carver was a scientist who studied plants and helped farmers.",
+   "standard": "SS1H1",
+   "evidence": {
+    "sourceTitle": "1st Grade Pacing",
+    "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+    "locator": "Dec 14 – 18; Unit 5: Inventors and Community; I Can",
+    "quote": "I can describe the contributions and character traits of George Washington Carver."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: Carver was an agricultural scientist who taught farmers about soil and crops; the pacing doc names the topic only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-20",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "farm",
+   "clue": "Cows, pigs, and hens live on a ___.",
+   "skill": "r-controlled vowel ar",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Monday 14 (Session 21), Phonics row",
+    "quote": "Introduce r-Controlled Vowel: ar"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-21",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "star",
+   "clue": "At night I saw a bright ___ twinkle in the sky.",
+   "skill": "r-controlled vowel ar",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Monday 14 (Session 21), Phonics row",
+    "quote": "Introduce r-Controlled Vowel: ar"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-22",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "shark",
+   "clue": "A ___ is a big fish with sharp teeth.",
+   "skill": "r-controlled vowel ar",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Monday 14 (Session 21), Phonics row",
+    "quote": "Introduce r-Controlled Vowel: ar"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-23",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "garden",
+   "clue": "We planted carrots and beans in our ___.",
+   "skill": "Multisyllabic words with r-controlled vowels",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, I Can",
+    "quote": "I can read multisyllabic words with r-controlled vowels."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-24",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "more",
+   "clue": "May I please have ___ milk?",
+   "skill": "High-frequency words: more, now, only, our",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Monday 14 (Session 21), High-Frequency Words row",
+    "quote": "more, now, only, our"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-25",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "now",
+   "clue": "It is time to go home right ___.",
+   "skill": "High-frequency words: more, now, only, our",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Monday 14 (Session 21), High-Frequency Words row",
+    "quote": "more, now, only, our"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [
+   "\"Now\" sounds like the start of \"know\" to some children - read the clue sentence aloud."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-26",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "only",
+   "clue": "I have ___ one sister and no brothers.",
+   "skill": "High-frequency words: more, now, only, our",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Monday 14 (Session 21), High-Frequency Words row",
+    "quote": "more, now, only, our"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-27",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "word": "seedling",
+   "clue": "A tiny new plant that just grew from a seed is a ___.",
+   "skill": "Unit 3 vocabulary: seedling, nearby, signal",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+    "quote": "seedling, nearby, signal"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-28",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "word": "nearby",
+   "clue": "The park is ___, so we can walk there.",
+   "skill": "Unit 3 vocabulary: seedling, nearby, signal",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+    "quote": "seedling, nearby, signal"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-29",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "word": "signal",
+   "clue": "The coach blew a whistle as a ___ to start the race.",
+   "skill": "Unit 3 vocabulary: seedling, nearby, signal",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+    "quote": "seedling, nearby, signal"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-15",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "What do we call a baby plant that has just started to grow from a seed?",
+   "answer": "A seedling.",
+   "standard": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+    "quote": "seedling, nearby, signal"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-16",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "A writer ends a paragraph with one last sentence that sums up the main idea. What is that last sentence called?",
+   "answer": "A concluding statement (a conclusion).",
+   "standard": "K-12.P.EICC.4.g",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "2nd Grade writing units",
+    "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
+    "locator": "Unit 3 Week 5 (Week of December 14), Weekly 'I Can' Statements",
+    "quote": "I can write and share a published explanatory paragraph with a strong concluding statement."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-17",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "question": "This giant desert cactus can live for about 200 years, and many desert animals make their homes in it. What kind of cactus is it?",
+   "answer": "The saguaro cactus.",
+   "standard": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "2nd Grade writing units",
+    "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
+    "locator": "Unit 3 Week 5 (Week of December 14), Writing Focus for This Text",
+    "quote": "Guiberson follows the life cycle of the saguaro cactus — 200 years — and shows how it becomes a hotel for desert animals."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: birds such as woodpeckers and owls nest in saguaro holes; the source names the saguaro, its 200-year life, and that it becomes a home for desert animals."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-18",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "Write the number four hundred sixty-two using digits.",
+   "answer": "462.",
+   "standard": "2.NR.1.3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "2nd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+    "locator": "Daily pacing calendar, Dec 14 (U3-Day 6)",
+    "quote": "Dec 14U3-DAY 6iReady L13: Read & Write 3-Digit Nums"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-19",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "Write the number 538 in expanded form.",
+   "answer": "500 + 30 + 8.",
+   "standard": "2.NR.1.3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "2nd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+    "locator": "Unit 3 weekly plans, Dec 14–18",
+    "quote": "I Can: I can read and write 3-digit numbers."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [
+   "Expanded form is listed in the unit vocabulary; confirm it is taught in iReady Lesson 13 this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-20",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "You leave an ice cube on a plate in a warm room, and it turns into water. What is this change called?",
+   "answer": "Melting.",
+   "standard": "S2P1.c",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "2nd Science/Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+    "locator": "Dec 14–18 weekly block, Week Focus",
+    "quote": "Reversible and irreversible changes from heating and cooling: melting ice, freezing water, baking, boiling an egg (S2P1.c)."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-10",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word has the r-controlled vowel ar?",
+   "choices": [
+    "bran",
+    "barn",
+    "ban",
+    "bean"
+   ],
+   "correctIndex": 1,
+   "explanation": "In \"barn,\" the letters a and r work together to make the /ar/ sound, like in \"car.\"",
+   "standard": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Monday 14 (Session 21), Phonics row",
+    "quote": "Introduce r-Controlled Vowel: ar"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-11",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "If a store is nearby, where is it?",
+   "choices": [
+    "Very far away",
+    "Close to here",
+    "Under the water",
+    "Up in the sky"
+   ],
+   "correctIndex": 1,
+   "explanation": "Nearby means close by, not far away.",
+   "standard": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+    "quote": "seedling, nearby, signal"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-12",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-15",
+  "review": "2027-01-15",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "Which of these is a signal?",
+   "choices": [
+    "A traffic light turning red",
+    "A pile of sand",
+    "A sleeping cat",
+    "A glass of water"
+   ],
+   "correctIndex": 0,
+   "explanation": "A signal is a sign, sound, or light that sends a message. A red light tells drivers to stop.",
+   "standard": null,
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Dec 14–18, Tuesday 15 (Session 22), Vocabulary row",
+    "quote": "seedling, nearby, signal"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-15"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-13",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Which change can be undone?",
+   "choices": [
+    "Baking a cake",
+    "Boiling an egg",
+    "Freezing water into ice",
+    "Toasting bread"
+   ],
+   "correctIndex": 2,
+   "explanation": "Ice can melt back into water, so freezing can be undone. A baked cake, a boiled egg, and toast cannot go back to how they were.",
+   "standard": "S2P1.c",
+   "evidence": {
+    "sourceTitle": "2nd Science/Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+    "locator": "Dec 14–18 weekly block, Week Focus",
+    "quote": "Reversible and irreversible changes from heating and cooling: melting ice, freezing water, baking, boiling an egg (S2P1.c)."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: toasting bread is an irreversible heating change (the source lists baking and boiling an egg)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-14",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "When cookie dough is baked in a hot oven, can the cookies be turned back into dough?",
+   "choices": [
+    "Yes, by cooling them",
+    "Yes, by adding water",
+    "No, the change cannot be undone",
+    "Yes, by freezing them"
+   ],
+   "correctIndex": 2,
+   "explanation": "Heating changed the dough into something new. Baking is a change that cannot be reversed.",
+   "standard": "S2P1.c",
+   "evidence": {
+    "sourceTitle": "2nd Science/Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+    "locator": "Dec 14–18 weekly block, Week Focus",
+    "quote": "Reversible and irreversible changes from heating and cooling: melting ice, freezing water, baking, boiling an egg (S2P1.c)."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-19",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "revise",
+   "clue": "To change your writing to make it better after you write the first draft.",
+   "skill": "Writing: plan, write, and revise a narrative",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Unit 3: Another View), I Can",
+    "quote": "I can plan, write, and revise a narrative from the point of view of a character in The Lemonade War."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-20",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "estimation",
+   "clue": "A smart guess about a number that is close to the exact answer, used to check your work.",
+   "skill": "Math: use estimation to check word problem answers",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Pacing calendar, Dec 14–18 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can use estimation to check the answers to word problems."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-21",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "array",
+   "clue": "Objects arranged in equal rows and columns, used to show multiplication.",
+   "skill": "Math: equal groups and arrays",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Pacing calendar, Dec 14–18 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can multiply or divide to solve problems about equal groups, arrays, and areas."
+   }
+  },
+  "checks": [
+   "The source prints the plural 'arrays'; the singular is used for the spelling word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-22",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "hibernation",
+   "clue": "A long, deep sleep some animals go into to survive the cold winter.",
+   "skill": "Science S3L1: animal adaptations",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Unit 2: Under the Sun, Standards (S3L1)",
+    "quote": "Construct an explanation of how external features and adaptations (camouflage, hibernation, migration, mimicry) of animals allow them to survive in their habitat."
+   }
+  },
+  "checks": [
+   "Long word for 3rd grade; consider using it as a challenge word.",
+   "The word comes from the unit's S3L1 standard list, not the Dec 14 weekly row itself (which names adaptations generally)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-23",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "migration",
+   "clue": "When animals travel a long way, often each season, to find food or warmer weather.",
+   "skill": "Science S3L1: animal adaptations",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Unit 2: Under the Sun, Standards (S3L1)",
+    "quote": "Construct an explanation of how external features and adaptations (camouflage, hibernation, migration, mimicry) of animals allow them to survive in their habitat."
+   }
+  },
+  "checks": [
+   "The word comes from the unit's S3L1 standard list, not the Dec 14 weekly row itself (which names adaptations generally)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-24",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "habitat",
+   "clue": "The natural home where a plant or animal lives and finds food, water, and shelter.",
+   "skill": "Science S3L1: habitats",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Under the Sun), Science A-Z",
+    "quote": "Clever Animals Habitat in a bottle Habitat Vocabulary cards"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-25",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "grassland",
+   "clue": "A wide, flat area covered mostly with grasses and very few trees.",
+   "skill": "Science S3L1: habitats (forests and grasslands)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Under the Sun), Brain Pop",
+    "quote": "Forests Grasslands"
+   }
+  },
+  "checks": [
+   "The source prints the plural 'Grasslands' (a Brain Pop title); the singular is used for the spelling word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-26",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "thrive",
+   "clue": "To grow strong and healthy and do very well.",
+   "skill": "Science S3L1: why organisms thrive in some habitats",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Unit 2: Under the Sun, Standards (S3L1)",
+    "quote": "Use evidence to construct an explanation of why some organisms can thrive in one habitat and not in another."
+   }
+  },
+  "checks": [
+   "The word comes from the unit's S3L1 standard list, not the Dec 14 weekly row itself."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-12",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Read this sentence: \"I want to sell lemonade,\" said Max. Which words are the speech tag that tells who is talking?",
+   "answer": "\"said Max\"",
+   "standard": "3.L.GC.1",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Unit 3: Another View), Support / PEC",
+    "quote": "Have students highlight their dialogue and speech tags."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-13",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "When you write a narrative, which three parts of the story should each get their own paragraph?",
+   "answer": "The beginning, the middle, and the end.",
+   "standard": "3.L.GC.2",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Unit 3: Another View), Support / PEC",
+    "quote": "Encourage students to write their beginning, middle, and end into separate paragraphs."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-14",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "A garden has 6 rows of tomato plants with 8 plants in each row. How many tomato plants are there in all?",
+   "answer": "48 tomato plants (6 × 8 = 48).",
+   "standard": "3.PAR.3.6",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Pacing calendar, Dec 14–18 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can multiply or divide to solve problems about equal groups, arrays, and areas."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-15",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 3,
+   "question": "Nia buys 3 packs of pencils with 5 pencils in each pack. Then she gives 4 pencils to friends. How many pencils does she have left?",
+   "answer": "11 pencils (3 × 5 = 15, then 15 − 4 = 11).",
+   "standard": "3.PAR.3.7",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Pacing calendar, Dec 14–18 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can write equations for two-step word problems and solve them."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-16",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "Many birds fly south every fall to warmer places where they can find more food. What do we call this kind of adaptation?",
+   "answer": "Migration.",
+   "standard": "S3L1",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Unit 2: Under the Sun, Standards (S3L1)",
+    "quote": "Construct an explanation of how external features and adaptations (camouflage, hibernation, migration, mimicry) of animals allow them to survive in their habitat."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: birds flying south in fall is a standard migration example; the source names migration but gives no example."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-17",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "In the 1530s, French explorer Jacques Cartier sailed up a large river in what is now Canada. Which river did he explore?",
+   "answer": "The St. Lawrence River.",
+   "standard": "SS3H2",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Unit: Let’s Go Exploring), Additional Resources",
+    "quote": "Video: Jacques Cartier"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: the source only lists a Jacques Cartier video; Cartier explored the St. Lawrence River for France in 1534–1536."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-10",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Max says to his sister: Let's sell lemonade. When you write this with dialogue, which words go inside the quotation marks?",
+   "choices": [
+    "Let's sell lemonade",
+    "Max says to his sister",
+    "to his sister",
+    "sell"
+   ],
+   "correctIndex": 0,
+   "explanation": "Only the exact words Max says go inside the quotation marks: Max said, \"Let's sell lemonade.\" The speech tag stays outside.",
+   "standard": "3.L.GC.1",
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Unit 3: Another View), Support / PEC",
+    "quote": "Have students highlight their dialogue and speech tags."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-11",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "You finish your first draft, then read it again and add details to make it better. What are you doing?",
+   "choices": [
+    "Brainstorming",
+    "Revising",
+    "Publishing",
+    "Illustrating"
+   ],
+   "correctIndex": 1,
+   "explanation": "Revising means changing your writing to improve it after the first draft.",
+   "standard": "3.L.GC.2",
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Unit 3: Another View), I Can",
+    "quote": "I can plan, write, and revise a narrative from the point of view of a character in The Lemonade War."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-12",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "Which of these is an example of hibernation?",
+   "choices": [
+    "A bird flies south for the winter",
+    "A chameleon changes color to match a leaf",
+    "A groundhog sleeps deep underground all winter",
+    "A squirrel runs up a tree"
+   ],
+   "correctIndex": 2,
+   "explanation": "Hibernation is a long, deep winter sleep that helps an animal survive when food is hard to find.",
+   "standard": "S3L1",
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Unit 2: Under the Sun, Standards (S3L1)",
+    "quote": "Construct an explanation of how external features and adaptations (camouflage, hibernation, migration, mimicry) of animals allow them to survive in their habitat."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: groundhogs are true hibernators; the source names hibernation but gives no example."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-13",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Which animal is best suited to live in a grassland habitat?",
+   "choices": [
+    "A polar bear",
+    "A bison",
+    "A whale",
+    "A penguin"
+   ],
+   "correctIndex": 1,
+   "explanation": "Bison eat grass and live in big open fields; the others need icy or ocean habitats.",
+   "standard": "S3L1",
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Unit 2: Under the Sun, Standards (S3L1)",
+    "quote": "Use evidence to construct an explanation of why some organisms can thrive in one habitat and not in another."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: bison as grassland animals is a standard example; the source names grasslands (Brain Pop) and thriving in habitats but no animals."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-14",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Jacques Cartier explored the land that is now Canada. Which country did he explore for?",
+   "choices": [
+    "England",
+    "Spain",
+    "France",
+    "Portugal"
+   ],
+   "correctIndex": 2,
+   "explanation": "Jacques Cartier was a French explorer who sailed for the king of France.",
+   "standard": "SS3H2",
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Dec 14–18 (Unit: Let’s Go Exploring), Additional Resources",
+    "quote": "Video: Jacques Cartier"
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: the source only lists a Jacques Cartier video; Cartier sailed for France."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-18",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "revise",
+   "clue": "To change your writing to make it better, like adding details or moving ideas.",
+   "skill": "Revising writing with a plan and checklist",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+    "quote": "I revise my writing based on a revision plan, peer feedback, self-evaluation, and a checklist."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-19",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "feedback",
+   "clue": "Helpful comments someone gives you about your work so you can improve it.",
+   "skill": "Using peer feedback to revise",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+    "quote": "I revise my writing based on a revision plan, peer feedback, self-evaluation, and a checklist."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-20",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "checklist",
+   "clue": "A list of things to look for or do, which you mark off one by one.",
+   "skill": "Revising writing with a plan and checklist",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+    "quote": "I revise my writing based on a revision plan, peer feedback, self-evaluation, and a checklist."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-21",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "growth",
+   "clue": "The amount you have improved or gotten bigger over time.",
+   "skill": "Reflecting on reading growth",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+    "quote": "I can reflect on my reading growth in this unit."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-22",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "benchmark",
+   "clue": "A familiar number, like one half, used to help compare other numbers.",
+   "skill": "Comparing fractions with benchmark fractions",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Dec 14–18 weekly block, Unit 4 (iReady Lesson 18)",
+    "quote": "I can use common denominators and benchmark fractions to compare fractions."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-23",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "fraction",
+   "clue": "A number that names part of a whole or part of a group, like three fourths.",
+   "skill": "Comparing fractions",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Dec 14–18 weekly block, Unit 4 (iReady Lesson 18)",
+    "quote": "I can use common denominators and benchmark fractions to compare fractions."
+   }
+  },
+  "checks": [
+   "The source prints the plural “fractions”; the word list uses the singular."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-24",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "predict",
+   "clue": "To use clues and evidence to say what will happen next.",
+   "skill": "Predicting weather patterns",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Forecasting the Weather (I Can)",
+    "quote": "I can gather and analyze weather information to predict weather patterns and explain how weather is different from climate."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-25",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "abolitionist",
+   "clue": "A person who worked to end slavery in the United States.",
+   "skill": "Abolitionist movement",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Unit overview table, Unit 4: The Nation Expands (standards)",
+    "quote": "Examine the main ideas of the abolitionist and suffrage movements."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-26",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "biography",
+   "clue": "A true story of a real person's life, written by someone else.",
+   "skill": "Westward expansion biographies",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Dec 14–18 weekly block, Unit 4: The Nation Expands (Resources)",
+    "quote": "Westward Expansion Biography"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-12",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "A writer reads a draft again, adds stronger details, and moves a sentence so the ideas make more sense. What is this step of the writing process called?",
+   "answer": "Revising.",
+   "standard": "4.T.RA.1, 4.T.RA.2 (week list; per-item mapping not stated)",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+    "quote": "I revise my writing based on a revision plan, peer feedback, self-evaluation, and a checklist."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-13",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "During the Great Depression, life was very hard for many families. Name one way art helped people get through those hard times.",
+   "answer": "Open answer: it gave people hope and something to enjoy, and some artists were paid to paint murals and make art (jobs).",
+   "standard": "4.T.RA.1, 4.T.RA.2 (week list; per-item mapping not stated)",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Support / PEC (4-box storyboard)",
+    "quote": "How people used art/hope to get through."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the source only names the idea (art and hope); the answer about hope and paid art jobs is general knowledge. Open answer: accept any reasonable way art gave hope or work."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-14",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "Compare 2/3 and 5/6 by rewriting them with a common denominator. Which fraction is greater?",
+   "answer": "5/6 (2/3 = 4/6, and 5/6 is more than 4/6).",
+   "standard": "4.NR.4.2, 4.NR.4.3",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Dec 14–18 weekly block, Unit 4 (iReady Lesson 18)",
+    "quote": "I can use common denominators and benchmark fractions to compare fractions."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-15",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 3,
+   "question": "Use 1/2 as a benchmark to compare 5/8 and 2/5. Which fraction is greater?",
+   "answer": "5/8, because 5/8 is more than 1/2 and 2/5 is less than 1/2.",
+   "standard": "4.NR.4.2, 4.NR.4.3",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Dec 14–18 weekly block, Unit 4 (iReady Lesson 18)",
+    "quote": "I can use common denominators and benchmark fractions to compare fractions."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-16",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "A weather forecast says a big storm is coming tomorrow. How does knowing this help a community?",
+   "answer": "Open answer: people can prepare and stay safe (bring things inside, stock supplies, change plans, close schools if needed).",
+   "standard": "S4E3, S4E4 (week list; per-item mapping not stated)",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 3, Understanding",
+    "quote": "Understanding weather patterns helps communities prepare for and respond to weather events."
+   }
+  },
+  "checks": [
+   "Open answer: accept any way the forecast helps people prepare for or respond to the storm."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-17",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Frederick Douglass escaped slavery and became a famous speaker and writer. What did he work to end?",
+   "answer": "Slavery (he was an abolitionist).",
+   "standard": "SS4H4",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Dec 14–18 weekly block, Unit 4: The Nation Expands (Resources, BrainPOP)",
+    "quote": "Frederick Douglas"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the source lists a Frederick Douglass video (spelled “Frederick Douglas” in the doc) but not this fact; please confirm it matches what the class learned."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-10",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "A classmate reads your draft and says one part is confusing. What is the BEST thing to do with this peer feedback?",
+   "choices": [
+    "Ignore it and turn the draft in",
+    "Use it to revise the confusing part",
+    "Erase the whole draft",
+    "Copy your classmate's paper"
+   ],
+   "correctIndex": 1,
+   "explanation": "Good writers use helpful feedback to revise and make their writing clearer.",
+   "standard": "4.T.RA.1, 4.T.RA.2 (week list; per-item mapping not stated)",
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+    "quote": "I revise my writing based on a revision plan, peer feedback, self-evaluation, and a checklist."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-11",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which question would BEST help you reflect on your reading growth in a unit?",
+   "choices": [
+    "What is one reading skill I got better at?",
+    "What is my favorite color?",
+    "How many pages did the book have?",
+    "What day is it today?"
+   ],
+   "correctIndex": 0,
+   "explanation": "Reflecting on growth means thinking about how your reading skills improved.",
+   "standard": "4.T.RA.1, 4.T.RA.2 (week list; per-item mapping not stated)",
+   "evidence": {
+    "sourceTitle": "4th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1DMCCIDmTcvp03-m53YZouPJc8yG-Vx3ZYzV88FIlzfs/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Art and the Great Depression (I Can)",
+    "quote": "I can reflect on my reading growth in this unit."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-12",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Which weather data would BEST help a meteorologist predict that rain is coming soon?",
+   "choices": [
+    "Air pressure is dropping and dark clouds are moving in",
+    "It rained last month",
+    "Today is a Monday",
+    "The leaves on the trees are green"
+   ],
+   "correctIndex": 0,
+   "explanation": "Falling air pressure and incoming clouds are weather data that often come before rain.",
+   "standard": "S4E3, S4E4 (week list; per-item mapping not stated)",
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Forecasting the Weather (I Can)",
+    "quote": "I can gather and analyze weather information to predict weather patterns and explain how weather is different from climate."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: falling air pressure and thickening clouds often signal rain; the source states the skill (predicting from weather information), not this fact."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-13",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Water can stay in one place for a very long time before it moves on in the water cycle. Where might water stay frozen for many years?",
+   "choices": [
+    "In a glacier",
+    "In a puddle on a sunny day",
+    "In a falling raindrop",
+    "In steam from a pot"
+   ],
+   "correctIndex": 0,
+   "explanation": "Water can be stored as ice in glaciers for a long time before it melts and keeps moving.",
+   "standard": "S4E3, S4E4 (week list; per-item mapping not stated)",
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "Dec 14–18 weekly block, Unit 3: Forecasting the Weather (I Can)",
+    "quote": "I can use investigations and models to explain how water changes form and travels through the water cycle in different ways."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: glaciers storing water is general knowledge (it also appears in the Nov 16 lesson plan's sample answers); the district doc only names the skill."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-14",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "What was the main goal of the abolitionist movement?",
+   "choices": [
+    "To end slavery",
+    "To win women the right to vote",
+    "To explore the West",
+    "To build the first railroads"
+   ],
+   "correctIndex": 0,
+   "explanation": "Abolitionists worked to end slavery; the suffrage movement worked for women's right to vote.",
+   "standard": "SS4H4",
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Unit overview table, Unit 4: The Nation Expands (standards)",
+    "quote": "Examine the main ideas of the abolitionist and suffrage movements."
+   },
+   "weekOf": "2026-12-14",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-18",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "technique",
+   "clue": "A special way or method of doing something, such as a writer using dialogue.",
+   "skill": "Writing: narrative techniques (Writing Rope, Unit 3)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Unit 3 Writing Rope lesson (10/26/26-12/18/26), I DO Think-Aloud",
+    "quote": "The teacher will display narrative techniques and how techniques such as setting and dialogue are incorporated in the text."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-19",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "quotation",
+   "clue": "Words repeated exactly as someone said or wrote them, set inside special marks.",
+   "skill": "Grammar: quotations (Daily Dose of Grammar Days 86-89)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 86-89 (Day 90 assessment)",
+    "quote": "order of adjectives, quotations, common nouns, sentence construction"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-20",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "adjective",
+   "clue": "A word that describes a noun, such as big, red, or soft.",
+   "skill": "Grammar: order of adjectives (Daily Dose of Grammar Days 86-89)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 86-89 (Day 90 assessment)",
+    "quote": "order of adjectives, quotations, common nouns, sentence construction"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-23",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "word": "multiplication",
+   "clue": "The math operation of combining equal groups; 4 groups of 3/4 is an example.",
+   "skill": "Math: investigate fraction multiplication (5.NR.3.4)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Daily calendar, Mon Dec 14",
+    "quote": "Unit 3 - Multi-Day Investigate Fraction Multiplication"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-25",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "sector",
+   "clue": "One part or section of the economy, such as households or businesses.",
+   "skill": "Social Studies: four sectors of the U.S. economy (SS5E2)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Unit overview table, Unit 5 (Nov 30-Dec 18)",
+    "quote": "SS5E2 - Describe the functions of four major sectors in the U. S. economy."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-26",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "word": "infographic",
+   "clue": "A poster or chart that uses pictures, numbers, and a few words to share information.",
+   "skill": "Social Studies: Great Depression culminating task (SS5H3)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Dec 14–18, Unit 5, Resources",
+    "quote": "Culminating Performance Task: An Infographic of the Great Depression"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-12",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "Rewrite this phrase so the adjectives are in the usual English order: “a red big wagon.”",
+   "answer": "“a big red wagon” (size comes before color).",
+   "standard": "5.L.GC.1",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 86-89 (Day 90 assessment)",
+    "quote": "order of adjectives, quotations, common nouns, sentence construction"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the size-before-color adjective order rule is standard English usage; the source names only \"order of adjectives\"."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-13",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "Coach asked, “Are you ready to play?” Does the question mark belong inside or outside the closing quotation mark, and why?",
+   "answer": "Inside, because the question is part of what Coach said.",
+   "standard": "5.L.GC.1",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 86-89 (Day 90 assessment)",
+    "quote": "order of adjectives, quotations, common nouns, sentence construction"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: punctuation placement with quotation marks is standard usage; the source names only \"quotations\"."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-14",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-16",
+  "review": "2027-01-16",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "What is 3 × 2/5? Give your answer as a fraction or a mixed number.",
+   "answer": "6/5, which is 1 1/5.",
+   "standard": "5.NR.3.4",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-16",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Daily calendar, Wed Dec 16",
+    "quote": "Unit 3 - Mult. Fractions × Whole #s"
+   }
+  },
+  "checks": [
+   "Math week conflict: the district weekly box says fraction as division (5.NR.3.1), but its daily calendar and unit table say multiplying fractions by whole numbers (5.NR.3.4) Dec 14-18; this item follows the daily calendar."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-15",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Math",
+  "showsUp": "2026-12-16",
+  "review": "2027-01-16",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "Each of 4 students drinks 3/4 cup of juice. How many cups of juice do they drink in all?",
+   "answer": "3 cups (4 × 3/4 = 12/4 = 3).",
+   "standard": "5.NR.3.4",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-16",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Unit 3 UbD weekly table, Dec 14–18, I Can",
+    "quote": "I can multiply a fraction by whole number."
+   }
+  },
+  "checks": [
+   "Math week conflict: the district weekly box says fraction as division (5.NR.3.1), but its daily calendar and unit table say multiplying fractions by whole numbers (5.NR.3.4) Dec 14-18; this item follows the daily calendar."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-16",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "A wire is coiled around an iron nail and hooked to a battery to make an electromagnet. Name one way to make it pick up more paper clips.",
+   "answer": "Possible answers: wrap more coils of wire around the nail, or use a stronger battery (more current).",
+   "standard": "S5P3b",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Unit 3 UbD Stage 1, Understandings",
+    "quote": "Magnets have distinct properties, and electricity and magnetism are connected."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: more coils or more current make an electromagnet stronger; the source only says electricity and magnetism are connected."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-17",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "At the 1936 Olympic Games in Berlin, this African American track star won four gold medals. Who was he?",
+   "answer": "Jesse Owens.",
+   "standard": "SS5H3",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Dec 14–18, Unit 5, Resources",
+    "quote": "1930s Icons"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the district lists a \"1930s Icons\" resource but does not name the icons; Jesse Owens is assumed to be among them."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-18",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "This New Deal program hired young men to plant trees, fight forest fires, and build parks. What was it called?",
+   "answer": "The Civilian Conservation Corps (CCC).",
+   "standard": "SS5H3",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Dec 14–18, Unit 5, I Can",
+    "quote": "I can explain the causes and effects of the Great Depression and describe how the New Deal programs helped people and changed life in the United States."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the district names \"New Deal programs\" but not the CCC specifically."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-9",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word is a common noun?",
+   "choices": [
+    "Georgia",
+    "river",
+    "Monday",
+    "Atlanta"
+   ],
+   "correctIndex": 1,
+   "explanation": "A common noun names any person, place, or thing; Georgia, Monday, and Atlanta are proper nouns.",
+   "standard": "5.L.GC.1",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 86-89 (Day 90 assessment)",
+    "quote": "order of adjectives, quotations, common nouns, sentence construction"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-10",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Literacy",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "Why do writers add dialogue to a narrative?",
+   "choices": [
+    "To list facts in number order",
+    "To show what characters say and reveal their feelings and the setting",
+    "To give the page numbers of a book",
+    "To explain how to follow the steps of a recipe"
+   ],
+   "correctIndex": 1,
+   "explanation": "Dialogue is characters’ spoken words; it shows personality and feelings and can give details about the setting.",
+   "standard": "5.T.T.1.a",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Unit 3 Writing Rope lesson, WE DO Prompts",
+    "quote": "What is a setting in narrative writing? What is dialogue in narrative writing?"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-11",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Science",
+  "showsUp": "2026-12-14",
+  "review": "2027-01-14",
+  "dayNamed": true,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "You rub a balloon on your hair, and then it sticks to a wall. What kind of electricity is this?",
+   "choices": [
+    "Static electricity",
+    "Electricity from a battery",
+    "Electricity from a power plant",
+    "Electricity from a wall outlet"
+   ],
+   "correctIndex": 0,
+   "explanation": "Rubbing moves electric charges and builds up static electricity, which happens naturally without wires or batteries.",
+   "standard": "S5P2a",
+   "weekOf": "2026-12-14",
+   "taughtOn": "2026-12-14",
+   "evidence": {
+    "sourceTitle": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Unit 3 UbD Stage 1, Understandings",
+    "quote": "Electricity can occur naturally or be harnessed by humans to power devices."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the balloon example of static electricity is not in the source, which names natural vs. human-harnessed electricity."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-12",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Which sector of the U.S. economy makes goods and services to sell for a profit?",
+   "choices": [
+    "Households",
+    "Private businesses",
+    "Banks",
+    "Government"
+   ],
+   "correctIndex": 1,
+   "explanation": "Private businesses are producers; households are consumers, banks save and lend money, and government provides public goods with taxes.",
+   "standard": "SS5E2",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Unit overview table, Unit 5 (Nov 30-Dec 18)",
+    "quote": "SS5E2 - Describe the functions of four major sectors in the U. S. economy."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the district names the four sectors standard but not their functions."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-13",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-12-14",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-18",
+  "review": "2027-01-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Duke Ellington was one of the best-known American entertainers of the 1930s. What was he famous for?",
+   "choices": [
+    "Flying alone across the Atlantic Ocean",
+    "Leading a jazz band and writing music",
+    "Inventing the assembly line",
+    "Winning four Olympic gold medals"
+   ],
+   "correctIndex": 1,
+   "explanation": "Duke Ellington was a jazz bandleader, pianist, and composer whose music stayed popular through the Depression years.",
+   "standard": "SS5H3",
+   "weekOf": "2026-12-14",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly catalog Dec 14–18, Unit 5, Resources",
+    "quote": "1930s Icons"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: the district lists a \"1930s Icons\" resource but does not name the icons; Duke Ellington is assumed to be among them."
   ],
   "plan": "unchecked",
   "planEvidence": null

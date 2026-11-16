@@ -75,7 +75,7 @@ test('Spelling Bee: October words unlock on their days and the Kindergarten lett
 test('November batch: approved items ship; removed, held and Kindergarten photo words do not', () => {
   const dec = novApprovals.decisions as Record<string, string>, hold = novApprovals.held as Record<string, string>;
   const nov = [...pacedJeopardy, ...pacedCorners].filter(q => q.packId === NOV);
-  expect(nov.length).toBe(212);
+  expect(nov.length).toBe(209);
   for (const q of nov) { expect(dec[q.batchItemId]).toBe('approve'); expect(hold[q.batchItemId]).toBeUndefined(); }
   for (const id of ['3-jp-17', 'K-jp-1', 'K-jp-11', 'K-jp-15', 'K-jp-0']) expect(nov.map(q => q.batchItemId)).not.toContain(id);
   // Four Corners answers are spread across the corners, not always the first.
@@ -83,7 +83,7 @@ test('November batch: approved items ship; removed, held and Kindergarten photo 
   expect(new Set(corners.map(q => q.correctIndex)).size).toBe(4);
   // No Kindergarten Spelling Bee words until their photos exist; Trace's dinosaur edit is applied.
   const novWords = pacingBank.filter(w => w.evidenceId.startsWith('paced-2026-11-'));
-  expect(novWords.length).toBe(145);
+  expect(novWords.length).toBe(127);
   expect(novWords.some(w => w.grade === 'K')).toBe(false);
   // Grade 3 explorer items: held on Nov 2, released on Nov 9 once the plan showed the explorers unit.
   for (const id of ['3-jp-5', '3-fc-3', '3-fc-4']) { expect(hold[id]).toBeUndefined(); expect(nov.map(q => q.batchItemId)).toContain(id); }
@@ -109,8 +109,9 @@ test('Nov 9 review: exact days, the Grade 2 government items, and new items unde
   const dec = novApprovals.decisions as Record<string, string>, hold = novApprovals.held as Record<string, string>;
   const nov = [...pacedJeopardy, ...pacedCorners].filter(q => q.packId === NOV);
   const item = (id: string) => nov.find(q => q.batchItemId === id)!;
-  // Laws question removed; the Nov 16 government items held until a Grade 2 plan shows government.
+  // Laws question removed; the Nov 16 government items were held, then removed in the Nov 16 review.
   expect(dec['2-jp-13']).toBe('remove');
+  for (const id of ['2-jp-19', '2-fc-13']) expect(dec[id]).toBe('remove');
   for (const id of ['2-jp-13', '2-jp-19', '2-fc-13']) expect(nov.map(q => q.batchItemId)).not.toContain(id);
   for (const id of ['2-jp-19', '2-fc-13']) expect(hold[id]).toContain('government lesson');
   // Teaching days from the lesson plans.
@@ -131,21 +132,46 @@ test('Nov 9 review: exact days, the Grade 2 government items, and new items unde
   }
 });
 
-test('December batch: approved Nov 30 and Dec 7 items ship; removed and Kindergarten photo words do not', () => {
+test('December batch: approved Nov 30, Dec 7 and Dec 14 items ship; removed and Kindergarten photo words do not', () => {
   const dec = decApprovals.decisions as Record<string, string>, hold = decApprovals.held as Record<string, string>;
   const qs = [...pacedJeopardy, ...pacedCorners].filter(q => q.packId === DEC);
-  expect(pacedJeopardy.filter(q => q.packId === DEC).length).toBe(75);
-  expect(pacedCorners.filter(q => q.packId === DEC).length).toBe(57);
+  expect(pacedJeopardy.filter(q => q.packId === DEC).length).toBe(107);
+  expect(pacedCorners.filter(q => q.packId === DEC).length).toBe(85);
   for (const q of qs) { expect(dec[q.batchItemId]).toBe('approve'); expect(hold[q.batchItemId]).toBeUndefined(); }
-  expect(new Set(qs.map(q => q.weekIntroduced))).toEqual(new Set(['2026-11-30', '2026-12-07']));
+  expect(new Set(qs.map(q => q.weekIntroduced))).toEqual(new Set(['2026-11-30', '2026-12-07', '2026-12-14']));
   const words = pacingBank.filter(w => w.evidenceId.startsWith('paced-2026-12-'));
-  expect(words.length).toBe(91);
+  expect(words.length).toBe(133);
   expect(words.some(w => w.grade === 'K')).toBe(false);
-  for (const id of ['K-sb-2', 'K-sb-4', 'K-sb-12']) expect(dec[id]).toBe('remove');
-  expect(Object.keys(hold)).toHaveLength(10);
+  for (const id of ['K-sb-2', 'K-sb-4', 'K-sb-12', 'K-sb-14']) expect(dec[id]).toBe('remove');
+  // 18 Kindergarten photo words plus the three Georgia First People items held on Nov 16.
+  expect(Object.keys(hold)).toHaveLength(21);
+  for (const id of ['2-jp-6', '2-jp-14', '2-fc-9']) { expect(hold[id]).toContain('First People'); expect(qs.map(q => q.batchItemId)).not.toContain(id); }
   // Nothing is visible before Nov 30, and every item is Current on its taught day.
   for (const q of qs) {
     expect(questionStatus(q, '2026-11-27')).toBeNull();
     expect(questionStatus(q, questionTaughtDate(q)!)).toBe('current');
   }
+});
+
+test('Nov 16 review: new days, holds and removals for the week of Nov 16', () => {
+  const dec = novApprovals.decisions as Record<string, string>, hold = novApprovals.held as Record<string, string>;
+  const nov = [...pacedJeopardy, ...pacedCorners].filter(q => q.packId === NOV);
+  const ids = nov.map(q => q.batchItemId);
+  const item = (id: string) => nov.find(q => q.batchItemId === id)!;
+  // Exact days from the classroom plans; the circuits items move to Friday.
+  expect(item('K-fc-10').taughtOn).toBe('2026-11-17');
+  expect(item('1-fc-10').taughtOn).toBe('2026-11-16');
+  expect(item('1-jp-16').taughtOn).toBe('2026-11-17');
+  expect(item('2-fc-12').taughtOn).toBe('2026-11-17');
+  expect(item('5-jp-21').taughtOn).toBeUndefined();
+  expect(questionTaughtDate(item('5-jp-21'))).toBe('2026-11-20');
+  // Held until a plan shows the topic.
+  for (const id of ['K-fc-11', 'K-fc-12', '1-jp-13', '2-jp-14', '2-fc-9', '3-jp-12', '3-fc-9', '4-jp-16', '4-fc-10']) {
+    expect(hold[id]).toContain('Nov 16 review'); expect(ids).not.toContain(id);
+  }
+  // Removed (K-jp-w3 was a removed new item, so it was never added).
+  for (const id of ['3-jp-13', '3-fc-10', '5-jp-16', '5-fc-10']) { expect(dec[id]).toBe('remove'); expect(ids).not.toContain(id); }
+  expect(ids).not.toContain('K-jp-w3');
+  // Kept as is.
+  for (const id of ['K-jp-19', 'K-fc-14', '1-jp-15', '3-jp-16', '3-fc-12', '5-jp-18', '5-jp-19', '5-jp-17', '5-fc-11']) expect(ids).toContain(id);
 });
