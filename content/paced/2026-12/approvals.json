@@ -1,6 +1,6 @@
 {
  "batch": "2026-12",
- "reviewedOn": "2026-11-16",
+ "reviewedOn": "2026-11-23",
  "reviewPage": "ClassThread Content Review — week of Nov 9 (claude.ai artifact)",
  "decisions": {
   "K-sb-0": "approve",
@@ -115,12 +115,12 @@
   "2-jp-11": "approve",
   "2-jp-12": "approve",
   "2-jp-13": "approve",
-  "2-jp-14": "approve",
+  "2-jp-14": "remove",
   "2-fc-5": "approve",
   "2-fc-6": "approve",
   "2-fc-7": "approve",
   "2-fc-8": "approve",
-  "2-fc-9": "approve",
+  "2-fc-9": "remove",
   "3-sb-0": "approve",
   "3-sb-1": "approve",
   "3-sb-2": "approve",
@@ -356,10 +356,96 @@
   "5-fc-10": "approve",
   "5-fc-11": "approve",
   "5-fc-12": "approve",
-  "5-fc-13": "approve"
+  "5-fc-13": "approve",
+  "K-sb-w1": "approve",
+  "K-sb-w2": "approve",
+  "K-sb-w3": "approve",
+  "K-sb-w4": "approve",
+  "K-sb-w5": "approve",
+  "K-jp-w1": "approve",
+  "K-fc-w1": "approve",
+  "K-fc-w2": "approve",
+  "1-sb-w1": "approve",
+  "1-sb-w2": "approve",
+  "1-sb-w3": "approve",
+  "1-sb-w4": "approve",
+  "1-sb-w5": "approve",
+  "1-sb-w6": "approve",
+  "1-jp-w1": "approve",
+  "1-jp-w2": "approve",
+  "1-fc-w1": "approve",
+  "2-sb-w1": "approve",
+  "2-sb-w2": "approve",
+  "2-sb-w3": "approve",
+  "2-sb-w4": "approve",
+  "2-sb-w5": "approve",
+  "2-sb-w6": "approve",
+  "2-sb-w7": "approve",
+  "2-sb-w8": "approve",
+  "2-jp-w1": "approve",
+  "2-jp-w2": "approve",
+  "2-jp-w3": "approve",
+  "2-fc-w1": "approve",
+  "2-fc-w2": "approve",
+  "3-sb-w1": "approve",
+  "3-sb-w2": "approve",
+  "3-jp-w1": "approve",
+  "3-fc-w1": "approve"
  },
  "notes": {},
- "edits": {},
+ "edits": {
+  "K-sb-0": {
+   "taughtOn": "2026-12-03"
+  },
+  "K-sb-1": {
+   "taughtOn": "2026-12-03"
+  },
+  "K-sb-3": {
+   "taughtOn": "2026-12-03"
+  },
+  "K-jp-0": {
+   "taughtOn": "2026-12-03"
+  },
+  "K-fc-3": {
+   "taughtOn": "2026-12-03"
+  },
+  "K-jp-1": {
+   "taughtOn": "2026-12-04"
+  },
+  "1-sb-5": {
+   "taughtOn": "2026-12-02"
+  },
+  "1-fc-3": {
+   "taughtOn": "2026-11-30"
+  },
+  "1-jp-1": {
+   "taughtOn": "2026-12-01"
+  },
+  "1-jp-2": {
+   "taughtOn": "2026-12-01"
+  },
+  "1-jp-5": {
+   "taughtOn": "2026-12-02"
+  },
+  "1-fc-4": {
+   "taughtOn": "2026-12-02"
+  },
+  "2-jp-4": {
+   "taughtOn": "2026-12-02"
+  },
+  "2-jp-5": {
+   "taughtOn": "2026-12-01"
+  },
+  "2-jp-6": {
+   "taughtOn": "2026-11-30"
+  },
+  "3-jp-0": {
+   "taughtOn": "2026-12-02"
+  },
+  "3-fc-0": {
+   "taughtOn": "2026-12-02"
+  }
+ },
  "held": {
   "K-sb-0": "Kindergarten photo not made yet (image generation)",
   "K-sb-1": "Kindergarten photo not made yet (image generation)",
@@ -371,9 +457,6 @@
   "K-sb-9": "Kindergarten photo not made yet (image generation)",
   "K-sb-10": "Kindergarten photo not made yet (image generation)",
   "K-sb-11": "Kindergarten photo not made yet (image generation)",
-  "2-jp-6": "Nov 16 review (Grade 2 Jeopardy + Four Corners · Georgia's First People (Creek, Cherokee, Sequoyah)): The items stay on hold until the Jan 4 week. Nothing else changes.",
-  "2-jp-14": "Nov 16 review (Grade 2 Jeopardy + Four Corners · Georgia's First People (Creek, Cherokee, Sequoyah)): The items stay on hold until the Jan 4 week. Nothing else changes.",
-  "2-fc-9": "Nov 16 review (Grade 2 Jeopardy + Four Corners · Georgia's First People (Creek, Cherokee, Sequoyah)): The items stay on hold until the Jan 4 week. Nothing else changes.",
   "K-sb-13": "Kindergarten photo not made yet (image generation)",
   "K-sb-15": "Kindergarten photo not made yet (image generation)",
   "K-sb-16": "Kindergarten photo not made yet (image generation)",
@@ -381,6 +464,48 @@
   "K-sb-18": "Kindergarten photo not made yet (image generation)",
   "K-sb-19": "Kindergarten photo not made yet (image generation)",
   "K-sb-20": "Kindergarten photo not made yet (image generation)",
-  "K-sb-21": "Kindergarten photo not made yet (image generation)"
+  "K-sb-21": "Kindergarten photo not made yet (image generation)",
+  "1-sb-0": "Nov 22 review (Hold scr/spl/spr/str items: the class has not reached them): The class plan for the week of Nov 30 teaches Unit 3 sessions 6–10 (br, gr, -ed/-ing, sn, sw). That is the district's Nov 16 content, so the class is about one teaching week behind, and three-letter blends (district sessions 11–15) aren't in the plan yet.",
+  "1-sb-1": "Nov 22 review (Hold scr/spl/spr/str items: the class has not reached them): The class plan for the week of Nov 30 teaches Unit 3 sessions 6–10 (br, gr, -ed/-ing, sn, sw). That is the district's Nov 16 content, so the class is about one teaching week behind, and three-letter blends (district sessions 11–15) aren't in the plan yet.",
+  "1-sb-2": "Nov 22 review (Hold scr/spl/spr/str items: the class has not reached them): The class plan for the week of Nov 30 teaches Unit 3 sessions 6–10 (br, gr, -ed/-ing, sn, sw). That is the district's Nov 16 content, so the class is about one teaching week behind, and three-letter blends (district sessions 11–15) aren't in the plan yet.",
+  "1-sb-3": "Nov 22 review (Hold scr/spl/spr/str items: the class has not reached them): The class plan for the week of Nov 30 teaches Unit 3 sessions 6–10 (br, gr, -ed/-ing, sn, sw). That is the district's Nov 16 content, so the class is about one teaching week behind, and three-letter blends (district sessions 11–15) aren't in the plan yet.",
+  "1-sb-4": "Nov 22 review (Hold scr/spl/spr/str items: the class has not reached them): The class plan for the week of Nov 30 teaches Unit 3 sessions 6–10 (br, gr, -ed/-ing, sn, sw). That is the district's Nov 16 content, so the class is about one teaching week behind, and three-letter blends (district sessions 11–15) aren't in the plan yet.",
+  "1-fc-0": "Nov 22 review (Hold scr/spl/spr/str items: the class has not reached them): The class plan for the week of Nov 30 teaches Unit 3 sessions 6–10 (br, gr, -ed/-ing, sn, sw). That is the district's Nov 16 content, so the class is about one teaching week behind, and three-letter blends (district sessions 11–15) aren't in the plan yet.",
+  "1-fc-1": "Nov 22 review (Hold scr/spl/spr/str items: the class has not reached them): The class plan for the week of Nov 30 teaches Unit 3 sessions 6–10 (br, gr, -ed/-ing, sn, sw). That is the district's Nov 16 content, so the class is about one teaching week behind, and three-letter blends (district sessions 11–15) aren't in the plan yet.",
+  "1-sb-6": "Nov 22 review (Hold Super Words all/small/their): The Nov 30 plan's Super Words are into, more, one, your; by, come, my, some. all, small, their come after could, great, said, would, which the class hasn't reached either.",
+  "1-sb-7": "Nov 22 review (Hold Super Words all/small/their): The Nov 30 plan's Super Words are into, more, one, your; by, come, my, some. all, small, their come after could, great, said, would, which the class hasn't reached either.",
+  "1-sb-8": "Nov 22 review (Hold Super Words all/small/their): The Nov 30 plan's Super Words are into, more, one, your; by, come, my, some. all, small, their come after could, great, said, would, which the class hasn't reached either.",
+  "2-sb-0": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-1": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-2": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-3": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-4": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-5": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-6": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-7": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-8": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-sb-9": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-jp-0": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-jp-1": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-jp-2": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-jp-3": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-fc-0": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-fc-3": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "2-fc-4": "Nov 22 review (Hold the district Nov 30 ELA items (class is one week behind)): The Nov 30 plan teaches Unit 3 Sessions 6-10 (long o, super words know/new/over/people, words shelter through protect). The district calendar has those sessions in the week of Nov 16 and Sessions 11-15 (long u, because/word/work/write, predators/scales, re-/pre-) in the week of Nov 30. The plan's writing week (compare fiction vs. informational text, adjectives, irregular verbs) matches the district's Week 2 lessons, not Week 3 (adverbs, fennec fox vs. Gila monster).",
+  "3-sb-0": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "3-sb-1": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "3-sb-2": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "3-sb-3": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "3-sb-4": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "3-sb-5": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "3-jp-1": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "3-fc-1": "Nov 22 review (Hold the vocabulary for Duck! Rabbit!, I Wanna Iguana and The Lemonade War): For Sessions 11-15 the class plan reads Little Roja Riding Hood (Mon/Tue) and The Wolf’s Side of the Story (Wed). It never names Duck! Rabbit!, I Wanna Iguana or The Lemonade War. The Lemonade War comes back in the district Dec 14 week, so these words may fit better then.",
+  "4-fc-2": "Nov 22 review (Hold the Nov 30 'meteorologist reads a thermometer' question): This is the same topic (gathering weather data, meteorologists) as the Nov 16 items that are held because the class plan showed only the water cycle. No Nov 30 class plan was found to show the class has reached it. Keeping it live while its Nov 16 companions stay held is inconsistent.",
+  "K-sb-w1": "Kindergarten photo not made yet (image generation)",
+  "K-sb-w2": "Kindergarten photo not made yet (image generation)",
+  "K-sb-w3": "Kindergarten photo not made yet (image generation)",
+  "K-sb-w4": "Kindergarten photo not made yet (image generation)",
+  "K-sb-w5": "Kindergarten photo not made yet (image generation)",
+  "K-jp-w1": "Trace asked for images on this item (Oct 30); ships once pictures are supported and made."
  }
 }

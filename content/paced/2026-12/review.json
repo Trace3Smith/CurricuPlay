@@ -546,8 +546,13 @@
   "checks": [
    "General-knowledge fact: living things eat, drink and grow; rocks do not."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "Science 11/30 | Lesson Title",
+   "quote": "Living and Non-living"
+  }
  },
  {
   "id": "K-jp-3",
@@ -577,8 +582,13 @@
   "checks": [
    "General-knowledge fact: moving does not make something living; source gives only the topic."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "Science 11/30 | Lesson Title",
+   "quote": "Living and Non-living"
+  }
  },
  {
   "id": "K-jp-4",
@@ -606,8 +616,13 @@
    "taughtOn": null
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 math | Learning Target",
+   "quote": "I can recognize, write, and count numbers 6–10."
+  }
  },
  {
   "id": "K-jp-5",
@@ -672,8 +687,13 @@
   "checks": [
    "General-knowledge fact: traits of living things; source gives only the topic."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "Science 11/30 | Learning Target",
+   "quote": "I can sort objects into living and non-living groups and  explain my grouping."
+  }
  },
  {
   "id": "K-fc-1",
@@ -709,8 +729,13 @@
   "checks": [
    "General-knowledge fact: traits of living things; source gives only the topic."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "Science 11/30 | Learning Target",
+   "quote": "I can sort objects into living and non-living groups and  explain my grouping."
+  }
  },
  {
   "id": "K-fc-2",
@@ -746,8 +771,13 @@
   "checks": [
    "General-knowledge fact: living things grow; source gives only the topic."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "Science 11/30 | Lesson Title",
+   "quote": "Living and Non-living"
+  }
  },
  {
   "id": "K-fc-3",
@@ -1281,8 +1311,13 @@
    "weekOf": "2026-11-30"
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Wednesday (Session 8), Learning Targets",
+   "quote": "Read and write words with sn and sw."
+  }
  },
  {
   "id": "1-sb-6",
@@ -1429,8 +1464,13 @@
   "checks": [
    "General-knowledge fact: a squid has eight arms and two longer tentacles; the calendar names squid but gives no facts."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Writing, Tuesday, I Do",
+   "quote": "Model gathering words say: A squid can change colors."
+  }
  },
  {
   "id": "1-jp-2",
@@ -1460,8 +1500,13 @@
   "checks": [
    "The calendar says contractions this week but does not list which ones."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Writing, Tuesday, Learning Targets",
+   "quote": "I can use words like isn’t and can’t in my sentences."
+  }
  },
  {
   "id": "1-jp-3",
@@ -1553,8 +1598,13 @@
   "checks": [
    "General-knowledge fact: winter is usually the coldest season; the source names seasonal patterns but gives no facts."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Science, Learning Target",
+   "quote": "Identify the seasons.(Wed-Thurs)"
+  }
  },
  {
   "id": "1-fc-0",
@@ -1695,8 +1745,13 @@
   "checks": [
    "General-knowledge fact: definition of a food chain; the calendar names the topic only."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Writing, Monday, I Do",
+   "quote": "Model writing/drawing the food chain"
+  }
  },
  {
   "id": "1-fc-4",
@@ -1732,8 +1787,13 @@
   "checks": [
    "General-knowledge fact: summer is usually the hottest season; the source names seasonal patterns but gives no facts."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Science, Learning Target",
+   "quote": "Identify the seasons.(Wed-Thurs)"
+  }
  },
  {
   "id": "1-sb-9",
@@ -2905,8 +2965,13 @@
    }
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Reading 11/30 - 12/4, Vocabulary & Strategy",
+   "quote": "Unit Words - shelter, shady, valley, burrowing, nonliving, nectar, protect"
+  }
  },
  {
   "id": "2-fc-2",
@@ -2942,8 +3007,13 @@
   "checks": [
    "General-knowledge fact: nectar is a sweet liquid made by flowers."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Reading 11/30 - 12/4, Vocabulary & Strategy",
+   "quote": "Unit Words - shelter, shady, valley, burrowing, nonliving, nectar, protect"
+  }
  },
  {
   "id": "2-fc-3",
@@ -4004,8 +4074,13 @@
   "checks": [
    "Open-ended: any answer that explains Jada's side and names a different feeling should count."
   ],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/30, I Can",
+   "quote": "I can put myself in a character’s shoes and explain their perspective about the events in the story."
+  }
  },
  {
   "id": "3-jp-1",
@@ -4066,9 +4141,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 11/30 | Lesson #/Title",
+   "locator": "M 11/30, Lesson title",
    "quote": "Lesson 16 - Add Areas"
   }
  },
@@ -4100,9 +4175,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 11/30 | Lesson #/Title",
+   "locator": "M 11/30, Lesson title",
    "quote": "Lesson 16 - Add Areas"
   }
  },
@@ -4200,8 +4275,13 @@
    "taughtOn": null
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/30, I Can",
+   "quote": "I can put myself in a character’s shoes and explain their perspective about the events in the story."
+  }
  },
  {
   "id": "3-fc-1",
@@ -4376,9 +4456,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 12/7 | Date(s), Lesson",
+   "locator": "M 12/7, Lesson title",
    "quote": "Lesson 32 - Area and Perimeter of Shapes"
   }
  },
@@ -4638,9 +4718,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 12/7 | Date(s), Lesson",
+   "locator": "M 12/7, Lesson title",
    "quote": "Lesson 32 - Area and Perimeter of Shapes"
   }
  },
@@ -4672,9 +4752,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 12/7 | Date(s), Lesson",
+   "locator": "M 12/7, Lesson title",
    "quote": "Lesson 32 - Area and Perimeter of Shapes"
   }
  },
@@ -4706,9 +4786,9 @@
   "checks": [],
   "plan": "confirmed",
   "planEvidence": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
-   "locator": "M 12/7 | Date(s), Lesson",
+   "locator": "M 12/7, Lesson title",
    "quote": "Lesson 32 - Area and Perimeter of Shapes"
   }
  },
@@ -9739,8 +9819,13 @@
    "taughtOn": null
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "M 12/14, Lesson title",
+   "quote": "Lesson 17 - Solve One-Step Word Problems Using Multiplication and Division"
+  }
  },
  {
   "id": "3-jp-15",
@@ -9768,8 +9853,13 @@
    "taughtOn": null
   },
   "checks": [],
-  "plan": "unchecked",
-  "planEvidence": null
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "M 12/14, Lesson title",
+   "quote": "Lesson 18 - Solve Two-Step Word Problems Using the Four Operations"
+  }
  },
  {
   "id": "3-jp-16",
@@ -11192,5 +11282,1289 @@
   ],
   "plan": "unchecked",
   "planEvidence": null
+ },
+ {
+  "id": "K-sb-w1",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "watermelon",
+   "answer": "W",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter W and its sound",
+   "category": "skill-practice",
+   "picture": "watermelon",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Wednesday 18; ML Unit 3 Session 8",
+    "quote": "Introduce Letter Ww"
+   }
+  },
+  "checks": [
+   "Stays hidden after approval: Kindergarten photo not made yet (image generation)",
+   "Copy of held item K-sb-30 (batch 2026-11), re-dated to the day the class plan reaches Session 8 ('Introduce Letter Ww' in the district calendar).",
+   "Kindergarten photo is still needed. The photo hold carries over from K-sb-30.",
+   "The plan labels Monday 'Letter U' but names Session 8. W is assumed from the session number."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Monday",
+   "quote": "Monday:  Letter U  unit 3 session 8 pages 45-49"
+  }
+ },
+ {
+  "id": "K-sb-w2",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "window",
+   "answer": "W",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter W and its sound",
+   "category": "skill-practice",
+   "picture": "window",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Wednesday 18; ML Unit 3 Session 8",
+    "quote": "Introduce Letter Ww"
+   }
+  },
+  "checks": [
+   "Stays hidden after approval: Kindergarten photo not made yet (image generation)",
+   "Copy of held item K-sb-31 (batch 2026-11), re-dated to the day the class plan reaches Session 8 ('Introduce Letter Ww' in the district calendar).",
+   "Kindergarten photo is still needed. The photo hold carries over from K-sb-31.",
+   "The plan labels Monday 'Letter U' but names Session 8. W is assumed from the session number."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Monday",
+   "quote": "Monday:  Letter U  unit 3 session 8 pages 45-49"
+  }
+ },
+ {
+  "id": "K-sb-w3",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "wagon",
+   "answer": "W",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter W and its sound",
+   "category": "skill-practice",
+   "picture": "wagon",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "alsoAccept": [
+    {
+     "letter": "C",
+     "because": "cart"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Wednesday 18; ML Unit 3 Session 8",
+    "quote": "Introduce Letter Ww"
+   }
+  },
+  "checks": [
+   "Stays hidden after approval: Kindergarten photo not made yet (image generation)",
+   "Copy of held item K-sb-32 (batch 2026-11), re-dated to the day the class plan reaches Session 8 ('Introduce Letter Ww' in the district calendar).",
+   "Kindergarten photo is still needed. The photo hold carries over from K-sb-32.",
+   "The plan labels Monday 'Letter U' but names Session 8. W is assumed from the session number."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Monday",
+   "quote": "Monday:  Letter U  unit 3 session 8 pages 45-49"
+  }
+ },
+ {
+  "id": "K-sb-w4",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "worm",
+   "answer": "W",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter W and its sound",
+   "category": "skill-practice",
+   "picture": "worm",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "alsoAccept": [
+    {
+     "letter": "S",
+     "because": "snake"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Wednesday 18; ML Unit 3 Session 8",
+    "quote": "Introduce Letter Ww"
+   }
+  },
+  "checks": [
+   "Stays hidden after approval: Kindergarten photo not made yet (image generation)",
+   "Copy of held item K-sb-33 (batch 2026-11), re-dated to the day the class plan reaches Session 8 ('Introduce Letter Ww' in the district calendar).",
+   "Kindergarten photo is still needed. The photo hold carries over from K-sb-33.",
+   "The plan labels Monday 'Letter U' but names Session 8. W is assumed from the session number."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Monday",
+   "quote": "Monday:  Letter U  unit 3 session 8 pages 45-49"
+  }
+ },
+ {
+  "id": "K-sb-w5",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "watch",
+   "answer": "W",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter W and its sound",
+   "category": "skill-practice",
+   "picture": "watch",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "alsoAccept": [
+    {
+     "letter": "C",
+     "because": "clock"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Wednesday 18; ML Unit 3 Session 8",
+    "quote": "Introduce Letter Ww"
+   }
+  },
+  "checks": [
+   "Stays hidden after approval: Kindergarten photo not made yet (image generation)",
+   "Copy of held item K-sb-34 (batch 2026-11), re-dated to the day the class plan reaches Session 8 ('Introduce Letter Ww' in the district calendar).",
+   "Kindergarten photo is still needed. The photo hold carries over from K-sb-34.",
+   "The plan labels Monday 'Letter U' but names Session 8. W is assumed from the session number."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Monday",
+   "quote": "Monday:  Letter U  unit 3 session 8 pages 45-49"
+  }
+ },
+ {
+  "id": "K-jp-w1",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "I say “worm.” What letter does worm start with?",
+   "answer": "W.",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Wednesday 18; ML Unit 3 Session 8",
+    "quote": "Introduce Letter Ww"
+   }
+  },
+  "checks": [
+   "Stays hidden after approval: Trace asked for images on this item (Oct 30); ships once pictures are supported and made.",
+   "Copy of held item K-jp-14 (batch 2026-11), re-dated to the day the class plan reaches Session 8 ('Introduce Letter Ww' in the district calendar).",
+   "Trace asked for images on this item (Oct 30). The image hold carries over from K-jp-14.",
+   "The plan labels Monday 'Letter U' but names Session 8. W is assumed from the session number."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Monday",
+   "quote": "Monday:  Letter U  unit 3 session 8 pages 45-49"
+  }
+ },
+ {
+  "id": "K-fc-w1",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word starts with the /w/ sound?",
+   "choices": [
+    "Wagon",
+    "Cat",
+    "Fish",
+    "Pig"
+   ],
+   "correctIndex": 0,
+   "explanation": "Wagon begins with /w/, the sound of the letter W.",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Wednesday 18; ML Unit 3 Session 8",
+    "quote": "Introduce Letter Ww"
+   }
+  },
+  "checks": [
+   "Copy of held item K-fc-11 (batch 2026-11), re-dated to the day the class plan reaches Session 8 ('Introduce Letter Ww' in the district calendar).",
+   "The plan labels Monday 'Letter U' but names Session 8. W is assumed from the session number."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Monday",
+   "quote": "Monday:  Letter U  unit 3 session 8 pages 45-49"
+  }
+ },
+ {
+  "id": "K-fc-w2",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-01",
+  "review": "2027-01-01",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "Which part of a tree is under the ground?",
+   "choices": [
+    "Leaves",
+    "Roots",
+    "Flowers",
+    "Limbs"
+   ],
+   "correctIndex": 1,
+   "explanation": "Roots grow under the ground and hold the tree in the soil.",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-01",
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Nov 16–20; Thursday 19; ML Unit 3 Session 9",
+    "quote": "Reading: Parts of a Tree (Visual Text)"
+   }
+  },
+  "checks": [
+   "Copy of held item K-fc-12 (batch 2026-11), re-dated to the day the plan does Session 9, the district's 'Parts of a Tree' session.",
+   "General-knowledge fact: roots grow under the ground.",
+   "The plan does not name the Parts of a Tree reading itself, only Session 9."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1X7_R3JE9U6waf09daz9au-Xwh8O683jAJxLZQTBQWP8/edit",
+   "locator": "11/30 Phonics/Writing | Phonics, To do for the week, Tuesday",
+   "quote": "Tuesday:  Letter U Unit 3 session 9  pages 50-54"
+  }
+ },
+ {
+  "id": "1-sb-w1",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "brick",
+   "clue": "A hard red block used to build a wall.",
+   "skill": "Beginning blend br-",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; Monday 16; Phonics row",
+    "quote": "Beginning Blends br-, gr-"
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-sb-20 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Monday (Session 6), Learning Targets",
+   "quote": "Read and write words with br and gr."
+  }
+ },
+ {
+  "id": "1-sb-w2",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "grab",
+   "clue": "Reach out and take hold of something fast.",
+   "skill": "Beginning blend gr-",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; Monday 16; Phonics row",
+    "quote": "Beginning Blends br-, gr-"
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-sb-21 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Monday (Session 6), Learning Targets",
+   "quote": "Read and write words with br and gr."
+  }
+ },
+ {
+  "id": "1-sb-w3",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "word": "snack",
+   "clue": "A small bite of food you eat between meals.",
+   "skill": "Beginning blend sn-",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; Wednesday 18; Phonics row",
+    "quote": "Beginning Blends sn-, sw-"
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-sb-22 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Wednesday (Session 8), Learning Targets",
+   "quote": "Read and write words with sn and sw."
+  }
+ },
+ {
+  "id": "1-sb-w4",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "word": "swim",
+   "clue": "Fish move through the water when they do this.",
+   "skill": "Beginning blend sw-",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; Wednesday 18; Phonics row",
+    "quote": "Beginning Blends sn-, sw-"
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-sb-23 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Wednesday (Session 8), Learning Targets",
+   "quote": "Read and write words with sn and sw."
+  }
+ },
+ {
+  "id": "1-sb-w5",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "word": "swing",
+   "clue": "At the playground, you sit on it and go back and forth.",
+   "skill": "Beginning blend sw- with -ng",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; Wednesday 18; Phonics row",
+    "quote": "Beginning Blends sn-, sw-"
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-sb-24 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Wednesday (Session 8), Learning Targets",
+   "quote": "Read and write words with sn and sw."
+  }
+ },
+ {
+  "id": "1-sb-w6",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-01",
+  "review": "2027-01-01",
+  "dayNamed": true,
+  "item": {
+   "word": "brushing",
+   "clue": "Right now I am ___ my teeth before bed.",
+   "skill": "Inflectional ending -ing (with br- blend)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-01",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; I Can",
+    "quote": "I can read and write action words with inflectional endings -ed, -ing."
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-sb-25 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind).",
+   "'brushing' also uses the sh digraph (taught earlier in the year)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Tuesday (session 7), Learning Targets",
+   "quote": "Read and add words ed and ing to the end of words."
+  }
+ },
+ {
+  "id": "1-jp-w1",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Say “swim.” What two letters make the blend at the start?",
+   "answer": "s and w (the sw blend).",
+   "standard": "1.F.P.1-3",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; Wednesday 18; Phonics row",
+    "quote": "Beginning Blends sn-, sw-"
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-jp-13 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Wednesday (Session 8), Learning Targets",
+   "quote": "Read and write words with sn and sw."
+  }
+ },
+ {
+  "id": "1-jp-w2",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-01",
+  "review": "2027-01-01",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Add -ing to the word “jump.” What new word do you make?",
+   "answer": "Jumping.",
+   "standard": "1.F.P.1-3",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-01",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; I Can",
+    "quote": "I can read and write action words with inflectional endings -ed, -ing."
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-jp-14 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind).",
+   "Base word 'jump' has the -mp ending blend that the district places Dec 9; asked orally (teacherRead), so low risk."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Tuesday (session 7), Learning Targets",
+   "quote": "Read and add words ed and ing to the end of words."
+  }
+ },
+ {
+  "id": "1-fc-w1",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word begins with the gr blend?",
+   "choices": [
+    "Brick",
+    "Snack",
+    "Swim",
+    "Grab"
+   ],
+   "correctIndex": 3,
+   "explanation": "Grab starts with g and r blended together: /gr/.",
+   "standard": "1.F.P.1-3",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Nov 16–20; Monday 16; Phonics row",
+    "quote": "Beginning Blends br-, gr-"
+   }
+  },
+  "checks": [
+   "Copy of held Nov 16 item 1-fc-9 moved to the week the class plan actually teaches it; district-calendar evidence kept (district taught it Nov 16, the class is running behind).",
+   "Plan teaches br/gr Mon–Tue and sn/sw Wed; set to Wed Dec 2 so all four answer choices (Brick, Snack, Swim, Grab) have been taught."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1YcVXbDTUrtpFAdddFUIukxvAf7Un_ZkR2nVAc4s0xFY/edit",
+   "locator": "11/30 | Foundations, Monday (Session 6), Learning Targets",
+   "quote": "Read and write words with br and gr."
+  }
+ },
+ {
+  "id": "2-sb-w1",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "people",
+   "clue": "Lots of ___ came to watch the parade.",
+   "skill": "High-frequency words: know, new, over, people",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+    "quote": "read the super words know, new, over, and people."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-19 (same word and clue); the class reaches these super words in Session 6 on Mon Nov 30."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Vocabulary & Strategy",
+   "quote": "Super Words: know, new, over, people"
+  }
+ },
+ {
+  "id": "2-sb-w2",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "know",
+   "clue": "I ___ the answer because I studied. (It starts with a silent k.)",
+   "skill": "High-frequency words: know, new, over, people",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+    "quote": "read the super words know, new, over, and people."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-20 (same word and clue); the class reaches these super words in Session 6 on Mon Nov 30."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Vocabulary & Strategy",
+   "quote": "Super Words: know, new, over, people"
+  }
+ },
+ {
+  "id": "2-sb-w3",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "over",
+   "clue": "The cow jumped ___ the moon in the nursery rhyme.",
+   "skill": "High-frequency words: know, new, over, people",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+    "quote": "read the super words know, new, over, and people."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-21 (same word and clue); the class reaches these super words in Session 6 on Mon Nov 30."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Vocabulary & Strategy",
+   "quote": "Super Words: know, new, over, people"
+  }
+ },
+ {
+  "id": "2-sb-w4",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "boat",
+   "clue": "We rowed a small ___ across the lake. (Long o spelled oa.)",
+   "skill": "Long o spelled oa",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+    "quote": "recognize the long o sound in words spelled o and oa."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-25 (boat)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Monday (session 6), Learning Target",
+   "quote": "Today I will read and write words with the long o sound and read longer words and super words."
+  }
+ },
+ {
+  "id": "2-sb-w5",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "word": "snow",
+   "clue": "Cold, white flakes that fall from the sky in winter. (Long o spelled ow.)",
+   "skill": "Long o spelled ow",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Wednesday (session 8), Success Criteria",
+    "quote": "recognize the long o sound spelled ow and oe."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-26 (snow)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Wednesday (session 8), Success Criteria",
+   "quote": "read and write words with the long o sound using ow and oe."
+  }
+ },
+ {
+  "id": "2-sb-w6",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "word": "toe",
+   "clue": "Your big ___ is on your foot. (Long o spelled oe.)",
+   "skill": "Long o spelled oe",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Wednesday (session 8), Success Criteria",
+    "quote": "recognize the long o sound spelled ow and oe."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-27 (toe)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Wednesday (session 8), Success Criteria",
+   "quote": "read and write words with the long o sound using ow and oe."
+  }
+ },
+ {
+  "id": "2-sb-w7",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "word": "protect",
+   "clue": "To keep someone or something safe from harm.",
+   "skill": "Unit vocabulary: nonliving, nectar, protect, adapted",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Reading 11/30 - 12/4, Vocabulary & Strategy",
+    "quote": "Unit Words - shelter, shady, valley, burrowing, nonliving, nectar, protect"
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-23 (protect). The plan lists the unit words for the whole week without a day; Wed Dec 2 is the class Session 8, the session where the district calendar introduces nonliving, nectar, protect, adapted (same date the live items 2-fc-1/2-fc-2 already use). Use week-only (shows up Fri Dec 4) if you prefer."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Reading 11/30 - 12/4, Lesson #/Title",
+   "quote": "Magnetic Integrated Literacy - Unit 3, Sessions 6-10"
+  }
+ },
+ {
+  "id": "2-sb-w8",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "word": "nectar",
+   "clue": "The sweet liquid inside flowers that bees and hummingbirds drink.",
+   "skill": "Unit vocabulary: nonliving, nectar, protect, adapted",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Reading 11/30 - 12/4, Vocabulary & Strategy",
+    "quote": "Unit Words - shelter, shady, valley, burrowing, nonliving, nectar, protect"
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-sb-24 (nectar). The plan lists the unit words for the whole week without a day; Wed Dec 2 is the class Session 8, the session where the district calendar introduces nonliving, nectar, protect, adapted (same date the live items 2-fc-1/2-fc-2 already use). Use week-only (shows up Fri Dec 4) if you prefer."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Reading 11/30 - 12/4, Lesson #/Title",
+   "quote": "Magnetic Integrated Literacy - Unit 3, Sessions 6-10"
+  }
+ },
+ {
+  "id": "2-jp-w1",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Say the word \"coat.\" Which two letters spell the long o sound?",
+   "answer": "o-a (oa).",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+    "quote": "recognize the long o sound in words spelled o and oa."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-jp-14 (coat). Batch 2026-12 already has a different 2-jp-14 (Creek crops); the new id avoids the clash."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Monday (session 6), Learning Target",
+   "quote": "Today I will read and write words with the long o sound and read longer words and super words."
+  }
+ },
+ {
+  "id": "2-jp-w2",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "Finish the sentence with the past tense of \"dig\": \"Yesterday the desert fox ___ a hole in the sand.\"",
+   "answer": "Dug.",
+   "standard": "K-2.L.GC.1",
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Writing 11/30 - 12/4, Wednesday, I do",
+    "quote": "Review irregular verbs such as grew, dug, hid, and fled."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-jp-15 (dug)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Writing 11/30 - 12/4, Wednesday, We do",
+   "quote": "dig → dug"
+  }
+ },
+ {
+  "id": "2-jp-w3",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2026-11-30",
+  "subject": "Social Studies",
+  "showsUp": "2026-12-03",
+  "review": "2027-01-03",
+  "dayNamed": true,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Long ago, Muscogee (Creek) farmers in Georgia grew three main crops together. Name one of them.",
+   "answer": "Corn, beans, or squash.",
+   "standard": "SS2H2",
+   "teacherRead": true,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-03",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "SS 11/30 - 12/4, Thursday, I Do",
+    "quote": "Explain farming, hunting, fishing, gathering, and trading. Introduce corn, beans, and squash."
+   }
+  },
+  "checks": [
+   "Replaces 2026-12 item 2-jp-14 (weekOf Dec 7), because the class plan teaches corn, beans, and squash on Thu Dec 3, outside that item's week.",
+   "Wording changed from \"Creek and Cherokee farmers\" to \"Muscogee (Creek) farmers\" because this week's plan covers the Muscogee (Creek) only.",
+   "District conflict: the current district Sci/SS pacing doc (updated Nov 21) puts Georgia's First People at Jan 4 - Feb 5 and Science (matter) at Nov 30 - Dec 18. The class plan teaches the Muscogee (Creek) this week and links an older August copy of the pacing doc. Approve only if the class really teaches this on Dec 3."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "SS 11/30 - 12/4, Thursday, Lesson",
+   "quote": "Muscogee (Creek) people food, tools, and ways of making a living"
+  }
+ },
+ {
+  "id": "2-fc-w1",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word spells long o with oa?",
+   "choices": [
+    "rod",
+    "road",
+    "red",
+    "ride"
+   ],
+   "correctIndex": 1,
+   "explanation": "In road, the letters oa say long o.",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+    "quote": "recognize the long o sound in words spelled o and oa."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-fc-9 (road). Batch 2026-12 already has a different 2-fc-9 (Sequoyah)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Monday (session 6), Learning Target",
+   "quote": "Today I will read and write words with the long o sound and read longer words and super words."
+  }
+ },
+ {
+  "id": "2-fc-w2",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word spells long o with ow?",
+   "choices": [
+    "slot",
+    "sled",
+    "slow",
+    "slip"
+   ],
+   "correctIndex": 2,
+   "explanation": "In slow, the letters ow say long o.",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+    "locator": "Phonics 11/30 - 12/4, Wednesday (session 8), Success Criteria",
+    "quote": "recognize the long o sound spelled ow and oe."
+   }
+  },
+  "checks": [
+   "Replaces held Nov 16 item 2-fc-10 (slow). Batch 2026-12 already has a different 2-fc-10 (ar)."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "locator": "Phonics 11/30 - 12/4, Wednesday (session 8), Success Criteria",
+   "quote": "read and write words with the long o sound using ow and oe."
+  }
+ },
+ {
+  "id": "3-sb-w1",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-11-30",
+  "review": "2026-12-30",
+  "dayNamed": true,
+  "item": {
+   "word": "illustration",
+   "clue": "A picture in a book that helps show what the words tell.",
+   "skill": "Reading: connect illustrations and text (Little Roja Riding Hood)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-11-30",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/30, Graphic Organizer (Mon 11/30)",
+    "quote": "11/30 - Connect Illustrations and Text Pg. 104"
+   }
+  },
+  "checks": [],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/30, Graphic Organizer (Mon 11/30)",
+   "quote": "11/30 - Connect Illustrations and Text Pg. 104"
+  }
+ },
+ {
+  "id": "3-sb-w2",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "word": "mood",
+   "clue": "The feeling a story or picture gives the reader, like scary, calm or exciting.",
+   "skill": "Reading: illustrations show characters, setting and mood",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/30, Learning Target",
+    "quote": "Look at illustrations in a story for clues about characters, settings, and mood."
+   }
+  },
+  "checks": [],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/30, Learning Target",
+   "quote": "Look at illustrations in a story for clues about characters, settings, and mood."
+  }
+ },
+ {
+  "id": "3-jp-w1",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-02",
+  "review": "2027-01-02",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "In Little Roja Riding Hood the wolf is the bad guy. In The Wolf’s Side of the Story, the wolf tells what happened his way. Why can the same character seem so different in two stories?",
+   "answer": "Each story is told from a different perspective, so we learn different thoughts and feelings about the wolf.",
+   "standard": "3.T.C.2",
+   "teacherRead": true,
+   "weekOf": "2026-11-30",
+   "taughtOn": "2026-12-02",
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/30, Retrieval Activator (Wed 12/2)",
+    "quote": "12/2 Do Now Session 13 Pg. 117 - The Wolf’s Side of the Story"
+   }
+  },
+  "checks": [
+   "Open-ended: any answer that names point of view or perspective, or says each story is told by a different character, should count."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/30, CER Exit Ticket",
+   "quote": "How is the wolf's perspective different in Little Roja Riding Hood and The Wolf's Side of the Story?"
+  }
+ },
+ {
+  "id": "3-fc-w1",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "When you study an illustration in a storybook, what can it give you clues about?",
+   "choices": [
+    "The characters, setting and mood",
+    "The price of the book",
+    "How many pages the book has",
+    "The name of the printing company"
+   ],
+   "correctIndex": 0,
+   "explanation": "Pictures show who is in the story, where it happens, and how it feels, like scary or happy.",
+   "standard": "3.T.C.2",
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+    "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+    "locator": "ELA 11/30, Learning Target",
+    "quote": "Look at illustrations in a story for clues about characters, settings, and mood."
+   }
+  },
+  "checks": [
+   "Standard 3.T.C.2 is the closest of the plan’s listed standards; the plan does not map one to this target."
+  ],
+  "plan": "confirmed",
+  "planEvidence": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "locator": "ELA 11/30, Learning Target",
+   "quote": "Look at illustrations in a story for clues about characters, settings, and mood."
+  }
  }
 ]

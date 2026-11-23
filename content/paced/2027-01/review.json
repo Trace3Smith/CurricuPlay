@@ -1,0 +1,4082 @@
+[
+ {
+  "id": "K-sb-0",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "lollipop",
+   "answer": "L",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter L and its sound",
+   "category": "skill-practice",
+   "picture": "lollipop",
+   "alsoAccept": [
+    {
+     "letter": "C",
+     "because": "candy"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter L = Unit 3 Session 1",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter L was introduced in Unit 3 Session 1 ('Introduce Letter Ll', saved in the same snapshot).",
+   "Kindergarten photo needed."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-1",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "log",
+   "answer": "L",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter L and its sound",
+   "category": "skill-practice",
+   "picture": "log",
+   "alsoAccept": [
+    {
+     "letter": "W",
+     "because": "wood"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter L = Unit 3 Session 1",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter L was introduced in Unit 3 Session 1 ('Introduce Letter Ll', saved in the same snapshot).",
+   "Kindergarten photo needed."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-2",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "lunchbox",
+   "answer": "L",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter L and its sound",
+   "category": "skill-practice",
+   "picture": "lunchbox",
+   "alsoAccept": [
+    {
+     "letter": "B",
+     "because": "box"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter L = Unit 3 Session 1",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter L was introduced in Unit 3 Session 1 ('Introduce Letter Ll', saved in the same snapshot).",
+   "Kindergarten photo needed."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-3",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "grapes",
+   "answer": "G",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter G and its sound",
+   "category": "skill-practice",
+   "picture": "grapes",
+   "alsoAccept": [
+    {
+     "letter": "F",
+     "because": "fruit"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter G = Unit 3 Session 3",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter G was introduced in Unit 3 Session 3 ('Introduce Letter Gg', saved in the same snapshot).",
+   "Kindergarten photo needed."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-4",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "glove",
+   "answer": "G",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter G and its sound",
+   "category": "skill-practice",
+   "picture": "glove",
+   "alsoAccept": [
+    {
+     "letter": "M",
+     "because": "mitten"
+    },
+    {
+     "letter": "H",
+     "because": "hand"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter G = Unit 3 Session 3",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter G was introduced in Unit 3 Session 3 ('Introduce Letter Gg', saved in the same snapshot).",
+   "Kindergarten photo needed."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-5",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "jeans",
+   "answer": "J",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter J and its sound",
+   "category": "skill-practice",
+   "picture": "jeans",
+   "alsoAccept": [
+    {
+     "letter": "P",
+     "because": "pants"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter J = Unit 3 Session 6",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter J was introduced in Unit 3 Session 6 ('Introduce Letter Jj', saved in the same snapshot).",
+   "Kindergarten photo needed."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-6",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "jump rope",
+   "answer": "J",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter J and its sound",
+   "category": "skill-practice",
+   "picture": "jump rope",
+   "alsoAccept": [
+    {
+     "letter": "R",
+     "because": "rope"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter J = Unit 3 Session 6",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter J was introduced in Unit 3 Session 6 ('Introduce Letter Jj', saved in the same snapshot).",
+   "Kindergarten photo needed.",
+   "Two words: check the Spelling Bee shows the space correctly (like \"question mark\")."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-7",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "wheel",
+   "answer": "W",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter W and its sound",
+   "category": "skill-practice",
+   "picture": "wheel",
+   "alsoAccept": [
+    {
+     "letter": "T",
+     "because": "tire"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter W = Unit 3 Session 8",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter W was introduced in Unit 3 Session 8 ('Introduce Letter Ww', saved in the same snapshot).",
+   "Kindergarten photo needed.",
+   "W depends on the class having done Session 8 on Nov 30. See change c-K-w-letter."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sb-8",
+  "grade": "K",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "wallet",
+   "answer": "W",
+   "clue": "What letter does this object start with?",
+   "skill": "Beginning letter W and its sound",
+   "category": "skill-practice",
+   "picture": "wallet",
+   "alsoAccept": [
+    {
+     "letter": "M",
+     "because": "money"
+    },
+    {
+     "letter": "P",
+     "because": "purse"
+    }
+   ],
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27; letter W = Unit 3 Session 8",
+    "quote": "Review Sessions 1-10"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Review day: the calendar names 'Review Sessions 1-10'. Letter W was introduced in Unit 3 Session 8 ('Introduce Letter Ww', saved in the same snapshot).",
+   "Kindergarten photo needed.",
+   "W depends on the class having done Session 8 on Nov 30. See change c-K-w-letter."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-0",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "Before we write a story, we decide what happens at the beginning, middle, and end. What do we call this first step?",
+   "answer": "Making a plan (accept plan or story plan).",
+   "standard": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Tuesday 5; ML Unit 3 Session 26",
+    "quote": "Process Writing: Plan Narrative Writing"
+   },
+   "subject": "Literacy",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [
+   "General-knowledge fact: narrative planning covers the beginning, middle and end. The source names the planning step only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-1",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "I say “jam.” What letter does jam start with?",
+   "answer": "J.",
+   "standard": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27",
+    "quote": "Review Sessions 1-10"
+   },
+   "subject": "Literacy",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Letter J = Unit 3 Session 6 ('Introduce Letter Jj'), inside review Sessions 1-10."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-2",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "I say “up.” What letter does up start with?",
+   "answer": "U.",
+   "standard": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Thursday 7; ML Unit 3 Session 28",
+    "quote": "Review Sessions 11-15"
+   },
+   "subject": "Literacy",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07"
+  },
+  "checks": [
+   "Letter U = Unit 3 Session 11 ('Introduce Letter Uu'), inside review Sessions 11-15. 'up' is also a Nov 30 sight word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-3",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "People who follow rules, help others, and take care of their school and town are called good ___. What is the word?",
+   "answer": "Citizens.",
+   "standard": "SSKCG1",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Jan 4–8 | Unit: Review of Citizenship; Tuesday 5",
+    "quote": "Focus Citizenship"
+   },
+   "subject": "Social Studies",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [
+   "Standard from the week box: SSKCG1; SSKCG2."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-4",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 2,
+   "question": "You see trash on the playground. What can a good citizen do to help?",
+   "answer": "Pick it up and put it in the trash can.",
+   "standard": "SSKCG1",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Jan 4–8 | Unit: Review of Citizenship; I Can",
+    "quote": "I can demonstrate and explain what it means to be a good citizen."
+   },
+   "subject": "Social Studies",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [
+   "General-knowledge fact: caring for shared spaces is good citizenship."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-5",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "Our picture graph shows 4 children chose apples and 2 children chose bananas. How many children chose a fruit in all?",
+   "answer": "6 children.",
+   "standard": "K.MDR.7.3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+    "locator": "Curriculum calendar, January 2027; Jan 4 week; Tuesday 5",
+    "quote": "One-Day Activity: Ask Questions/Use Data"
+   },
+   "subject": "Math",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [
+   "Standard conflict: the weekly box says K.MDR.7.3, but the calendar standards row for the Jan 4 week says K.NR.5.1. The data activity matches K.MDR.7.3."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-jp-6",
+  "grade": "K",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 2,
+   "question": "Our tally chart shows these marks next to “cats”: | | | | How many children chose cats?",
+   "answer": "4.",
+   "standard": "K.MDR.7.3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Kinder Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+    "locator": "Jan 4–8 | Week 20; I Can",
+    "quote": "I can interpret data from graphical displays."
+   },
+   "subject": "Math",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [
+   "Taught day from the calendar: the Tue Jan 5 one-day data activity.",
+   "Teacher reads the tally marks aloud or draws them on the board; four single marks (no bundle of five)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-0",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "Which word starts with the /g/ sound?",
+   "choices": [
+    "Map",
+    "Goat",
+    "Sun",
+    "Cup"
+   ],
+   "correctIndex": 1,
+   "explanation": "Goat starts with /g/, the sound of the letter G.",
+   "standard": null,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27",
+    "quote": "Review Sessions 1-10"
+   },
+   "subject": "Literacy",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Letter G = Unit 3 Session 3 ('Introduce Letter Gg'), inside review Sessions 1-10."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-1",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "Which word starts with the /l/ sound?",
+   "choices": [
+    "Bed",
+    "Fish",
+    "Lamp",
+    "Hat"
+   ],
+   "correctIndex": 2,
+   "explanation": "Lamp starts with /l/, the sound of the letter L.",
+   "standard": null,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27",
+    "quote": "Review Sessions 1-10"
+   },
+   "subject": "Literacy",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Letter L = Unit 3 Session 1 ('Introduce Letter Ll'), inside review Sessions 1-10."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-2",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "Before you write a story, what should you do first?",
+   "choices": [
+    "Make a plan",
+    "Close the book",
+    "Erase the page",
+    "Go to recess"
+   ],
+   "correctIndex": 0,
+   "explanation": "Writers plan their story before they draft it.",
+   "standard": null,
+   "evidence": {
+    "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+    "locator": "Jan 4–8; Tuesday 5; ML Unit 3 Session 26",
+    "quote": "Process Writing: Plan Narrative Writing"
+   },
+   "subject": "Literacy",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-3",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "Which one shows being a good citizen at school?",
+   "choices": [
+    "Pushing in line",
+    "Helping clean up the room",
+    "Taking a friend’s snack",
+    "Yelling in the library"
+   ],
+   "correctIndex": 1,
+   "explanation": "Good citizens help take care of their classroom and the people in it.",
+   "standard": "SSKCG1",
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Jan 4–8 | Unit: Review of Citizenship; I Can",
+    "quote": "I can demonstrate and explain what it means to be a good citizen."
+   },
+   "subject": "Social Studies",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [
+   "General-knowledge fact: examples of good citizenship."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-fc-4",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "difficulty": 1,
+   "question": "Which school rule helps keep everyone safe?",
+   "choices": [
+    "Push friends in line",
+    "Keep your hands to yourself",
+    "Throw sand at others",
+    "Stand on your chair"
+   ],
+   "correctIndex": 1,
+   "explanation": "Keeping your hands to yourself keeps classmates safe. Good citizens follow rules.",
+   "standard": "SSKCG1",
+   "evidence": {
+    "sourceTitle": "Kinder Sci & SS Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+    "locator": "Jan 4–8 | Unit: Review of Citizenship; Tuesday 5",
+    "quote": "Focus Citizenship"
+   },
+   "subject": "Social Studies",
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05"
+  },
+  "checks": [
+   "General-knowledge fact: example classroom safety rule."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-0",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "crib",
+   "clue": "A small bed with high sides for a baby.",
+   "skill": "Beginning r blend cr-",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Wednesday 6; Phonics row",
+    "quote": "Beginning Blends with r and s; Closed Syllables and Endings -ed, -ing"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-1",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "sniff",
+   "clue": "Use your nose to smell something: ___ the flower.",
+   "skill": "Beginning s blend sn- with -ff",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Wednesday 6; Phonics row",
+    "quote": "Beginning Blends with r and s; Closed Syllables and Endings -ed, -ing"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-2",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "helped",
+   "clue": "Yesterday I ___ my dad wash the car.",
+   "skill": "Closed syllable with ending -ed",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Wednesday 6; Phonics row",
+    "quote": "Beginning Blends with r and s; Closed Syllables and Endings -ed, -ing"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-3",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "word": "strip",
+   "clue": "A long, thin piece of paper or tape.",
+   "skill": "Three-letter blend str-",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Thursday 7; Phonics row",
+    "quote": "Three-Letter Blends scr-, spl-, spr-, str-; Contractions with 's"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-4",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "word": "scrap",
+   "clue": "A small leftover piece of paper or food.",
+   "skill": "Three-letter blend scr-",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Thursday 7; Phonics row",
+    "quote": "Three-Letter Blends scr-, spl-, spr-, str-; Contractions with 's"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-5",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "word": "through",
+   "clue": "The train went ___ the dark tunnel.",
+   "skill": "Super Words: all, small, their, through",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Thursday 7; High-Frequency Words row",
+    "quote": "all, small, their, through"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07"
+  },
+  "checks": [
+   "'through' is an irregular Super Word; the class plan had not reached this Super Word set by Nov 30.",
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-6",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "word": "lamp",
+   "clue": "Turn on the ___ so you can read at night.",
+   "skill": "Ending blend -mp",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Friday 8; Phonics row",
+    "quote": "Ending Blends -st, -sk, -mp, -nd; Contractions with not; Long a: a_e; Plurals with CVCe words"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-7",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "word": "games",
+   "clue": "We played two ___ of tag at recess.",
+   "skill": "Plurals with CVCe words (long a_e + s)",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Friday 8; Phonics row",
+    "quote": "Ending Blends -st, -sk, -mp, -nd; Contractions with not; Long a: a_e; Plurals with CVCe words"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-8",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "word": "any",
+   "clue": "Do you have ___ crayons I can use?",
+   "skill": "Super Words: any, many, most, want",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Friday 8; High-Frequency Words row",
+    "quote": "any, many, most, want; other, people, too, write"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-sb-9",
+  "grade": "1",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "word": "frost",
+   "clue": "Thin white ice that covers the grass on a cold morning.",
+   "skill": "Beginning r blend fr- with ending blend -st",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Friday 8; Phonics row",
+    "quote": "Ending Blends -st, -sk, -mp, -nd; Contractions with not; Long a: a_e; Plurals with CVCe words"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08"
+  },
+  "checks": [
+   "fr- is listed in the week's I Can (beginning blends); placed Friday with the -st ending blend.",
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-0",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Add -ing to the word “rest.” What new word do you make?",
+   "answer": "Resting.",
+   "standard": "1.F.P.1-3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Wednesday 6; Phonics row",
+    "quote": "Beginning Blends with r and s; Closed Syllables and Endings -ed, -ing"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-1",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Put the words “she is” together with an apostrophe. What contraction do you make?",
+   "answer": "She's.",
+   "standard": "1.F.P.1-3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Thursday 7; Phonics row",
+    "quote": "Three-Letter Blends scr-, spl-, spr-, str-; Contractions with 's"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-2",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "Put the words “was not” together as a contraction. What word do you make?",
+   "answer": "Wasn't.",
+   "standard": "1.F.P.1-3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Friday 8; Phonics row",
+    "quote": "Ending Blends -st, -sk, -mp, -nd; Contractions with not; Long a: a_e; Plurals with CVCe words"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-3",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "How many ones do you need to make one ten?",
+   "answer": "10 ones.",
+   "standard": "1.NR.1.1-1.NR.1.3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "1st Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+    "locator": "Jan 4–8; Unit 4; I Can",
+    "quote": "I can use tens and ones to organize and count."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-4",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "A number has 2 tens and 3 ones. What is the number?",
+   "answer": "23.",
+   "standard": "1.NR.1.1-1.NR.1.3",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "1st Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+    "locator": "Jan 4–8; Unit 4; I Can",
+    "quote": "I can use tens and ones to organize and count."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-jp-5",
+  "grade": "1",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "A baker makes loaves of bread to sell. Is the bread a good or a service?",
+   "answer": "A good (something people make).",
+   "standard": "SS1E1",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "1st Grade Pacing",
+    "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+    "locator": "Jan 4 – 8; Unit 5: Inventors and Community; I Can",
+    "quote": "I can describe goods that people make and services that people provide for each other."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: bread made by a baker is a good."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-0",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word tells about something that already happened?",
+   "choices": [
+    "Jumping",
+    "Jumped",
+    "Jump",
+    "Jumps"
+   ],
+   "correctIndex": 1,
+   "explanation": "The -ed ending tells that it already happened: jumped.",
+   "standard": "1.F.P.1-3",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Wednesday 6; Phonics row",
+    "quote": "Beginning Blends with r and s; Closed Syllables and Endings -ed, -ing"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-1",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word begins with the spr blend?",
+   "choices": [
+    "Sprint",
+    "Strip",
+    "Scrap",
+    "Splash"
+   ],
+   "correctIndex": 0,
+   "explanation": "Sprint starts with s, p, and r blended together: /spr/.",
+   "standard": "1.F.P.1-3",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Thursday 7; Phonics row",
+    "quote": "Three-Letter Blends scr-, spl-, spr-, str-; Contractions with 's"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-2",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word ends with the nd blend?",
+   "choices": [
+    "Lamp",
+    "Band",
+    "Desk",
+    "Fast"
+   ],
+   "correctIndex": 1,
+   "explanation": "Band ends with n and d blended together: /nd/.",
+   "standard": "1.F.P.1-3",
+   "evidence": {
+    "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+    "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+    "locator": "Jan 4–8; Friday 8; Phonics row",
+    "quote": "Ending Blends -st, -sk, -mp, -nd; Contractions with not; Long a: a_e; Plurals with CVCe words"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08"
+  },
+  "checks": [
+   "Class plan ran about one teaching week behind the district calendar in late November; check the January plan before release."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-3",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "Which of these is a service someone does for you?",
+   "choices": [
+    "A loaf of bread",
+    "A barber cutting hair",
+    "A pair of shoes",
+    "A box of crayons"
+   ],
+   "correctIndex": 1,
+   "explanation": "A service is work someone does for you. A barber cutting hair is a service; the others are goods.",
+   "standard": "SS1E1",
+   "evidence": {
+    "sourceTitle": "1st Grade Pacing",
+    "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+    "locator": "Jan 4 – 8; Unit 5: Inventors and Community; I Can",
+    "quote": "I can describe goods that people make and services that people provide for each other."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: a haircut is a service; bread, shoes and crayons are goods."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-fc-4",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "Which one is a good?",
+   "choices": [
+    "A nurse giving a checkup",
+    "A mail carrier bringing mail",
+    "An apple grown on a farm",
+    "A teacher reading a story"
+   ],
+   "correctIndex": 2,
+   "explanation": "A good is something people make or grow that you can hold. An apple is a good; the others are services.",
+   "standard": "SS1E1",
+   "evidence": {
+    "sourceTitle": "1st Grade Pacing",
+    "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+    "locator": "Jan 4 – 8; Unit 5: Inventors and Community; I Can",
+    "quote": "I can describe goods that people make and services that people provide for each other."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: a farm apple is a good; a checkup, mail delivery and teaching are services."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-0",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "bright",
+   "clue": "The sun is very ___ at noon. (Long i spelled igh.)",
+   "skill": "Unit 3 review: long i (igh)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Wednesday 6 (Session 27), Phonics row",
+    "quote": "Review Sessions 1-10 (Long i, e, o)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-1",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "sheep",
+   "clue": "The farmer has a flock of ___ with soft, woolly coats. (Long e spelled ee.)",
+   "skill": "Unit 3 review: long e (ee)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Wednesday 6 (Session 27), Phonics row",
+    "quote": "Review Sessions 1-10 (Long i, e, o)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-2",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "word": "throw",
+   "clue": "Can you ___ the ball to me? (Long o spelled ow.)",
+   "skill": "Unit 3 review: long o (ow)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Wednesday 6 (Session 27), Phonics row",
+    "quote": "Review Sessions 1-10 (Long i, e, o)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-3",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "word": "flute",
+   "clue": "She played a song on her silver ___. (Long u spelled u_e.)",
+   "skill": "Unit 3 review: long u (u_e)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Thursday 7 (Session 28), Phonics row",
+    "quote": "Review Sessions 11-15 (Long u)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-4",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "word": "cute",
+   "clue": "The baby bunny is small and ___. (Long u spelled u_e.)",
+   "skill": "Unit 3 review: long u (u_e)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Thursday 7 (Session 28), Phonics row",
+    "quote": "Review Sessions 11-15 (Long u)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-5",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "word": "chew",
+   "clue": "Be sure to ___ your food before you swallow. (Long u spelled ew.)",
+   "skill": "Unit 3 review: long u (ew)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Thursday 7 (Session 28), Phonics row",
+    "quote": "Review Sessions 11-15 (Long u)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-6",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "word": "wrist",
+   "clue": "He wears a watch on his ___. (Silent w.)",
+   "skill": "Unit 3 review: silent letters (wr)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Friday 8 (Sessions 29 & 30), Phonics row",
+    "quote": "Review Sessions 16-25 (Silent Letters & ar)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan.",
+   "Class estimate: silent letters fall around Dec 14 at the current pace, so they are taught before Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-7",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "word": "comb",
+   "clue": "Use a ___ to fix your hair. (Silent b.)",
+   "skill": "Unit 3 review: silent letters (mb)",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Friday 8 (Sessions 29 & 30), Phonics row",
+    "quote": "Review Sessions 16-25 (Silent Letters & ar)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-sb-8",
+  "grade": "2",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "word": "park",
+   "clue": "We played on the swings at the ___. (r-controlled ar.)",
+   "skill": "Unit 3 review: r-controlled vowel ar",
+   "category": "skill-practice",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Friday 8 (Sessions 29 & 30), Phonics row",
+    "quote": "Review Sessions 16-25 (Silent Letters & ar)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan.",
+   "At the class pace, ar may first be taught in the week of Jan 5 itself (district Sessions 21-25), not before it. Check the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-0",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-05",
+  "review": "2027-02-05",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "Which number is greater, 482 or 428? Tell how you know.",
+   "answer": "482. Both have 4 hundreds, but 482 has 8 tens and 428 has only 2 tens.",
+   "standard": "2.NR.1.3",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-05",
+   "evidence": {
+    "sourceTitle": "2nd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+    "locator": "Daily pacing calendar, Jan 5 (U3-Day 11)",
+    "quote": "Jan 5★ MUC-3 OpensU3-DAY 11iReady L14: Compare 3-Digit Numbers2.NR.1.3GaDOE: Comparing Numbers"
+   }
+  },
+  "checks": [
+   "Math: the class is on pace with the district (the Nov 30 plan says \"on track\", with the Unit 2 review and assessment the same week as the district).",
+   "Live workbook conflict: the SECOND tab row for Jan 4 lists \"U3: 2.NR.2.2\", but the Math Pacing Support daily calendar has L14 Compare 3-Digit Numbers (2.NR.1.3). The items follow the daily calendar."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-1",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "Put these numbers in order from least to greatest: 365, 356, 536.",
+   "answer": "356, 365, 536.",
+   "standard": "2.NR.1.3",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06",
+   "evidence": {
+    "sourceTitle": "2nd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+    "locator": "Daily pacing calendar, Jan 6 (U3-Day 12)",
+    "quote": "Jan 6U3-DAY 12iReady L14: Compare 3-Digit Numbers2.NR.1.3"
+   }
+  },
+  "checks": [
+   "Math: the class is on pace with the district (the Nov 30 plan says \"on track\", with the Unit 2 review and assessment the same week as the district).",
+   "Live workbook conflict: the SECOND tab row for Jan 4 lists \"U3: 2.NR.2.2\", but the Math Pacing Support daily calendar has L14 Compare 3-Digit Numbers (2.NR.1.3). The items follow the daily calendar."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-2",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Say the word \"tube.\" Which letters spell the long u sound?",
+   "answer": "u and a silent e at the end (u_e).",
+   "standard": null,
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Thursday 7 (Session 28), Phonics row",
+    "quote": "Review Sessions 11-15 (Long u)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-3",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Say the word \"gnat.\" Which letter at the beginning is silent?",
+   "answer": "The g.",
+   "standard": null,
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Friday 8 (Sessions 29 & 30), Phonics row",
+    "quote": "Review Sessions 16-25 (Silent Letters & ar)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan.",
+   "Class estimate: silent gn is taught around Dec 14-18 at the current pace."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-4",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "When you write a fact you learned from a book, what two things can you name to show where the fact came from?",
+   "answer": "The author's name and the title of the book.",
+   "standard": "2.T.T.2.b",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "2nd Grade writing units",
+    "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
+    "locator": "Unit 3 Week 6, Weekly 'I Can' Statements",
+    "quote": "I can cite text evidence using the author's name and the title of the book."
+   }
+  },
+  "checks": [
+   "District doc conflict: the writing-units doc labels Unit 3 Week 6 (Sessions 26-30) \"Week of December 14\", but the ELA calendar puts Sessions 26-30 in the Jan 4-8 week. Drafted as week-only for Jan 4.",
+   "Standard listed for this lesson in the writing doc (2.T.T.2.b); citing evidence is the I Can focus."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-jp-5",
+  "grade": "2",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "The Muscogee (Creek) and Cherokee lived in Georgia long ago. Do Muscogee (Creek) and Cherokee people still live in Georgia and the United States today?",
+   "answer": "Yes. Muscogee (Creek) and Cherokee people still live in Georgia and the U.S. today.",
+   "standard": "SS2H2",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "2nd Science/Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+    "locator": "Jan 4–8 weekly block, Support / PEC",
+    "quote": "Teach that Muscogee (Creek) and Cherokee people still live in Georgia and the U.S. today; avoid language that suggests they no longer exist."
+   }
+  },
+  "checks": [
+   "If the class already taught the Muscogee (Creek) in the Nov 30 week (see c-2-creek-release), this is review. Still fine for Jan 5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-0",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-06",
+  "review": "2027-02-06",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word has the long i sound spelled igh?",
+   "choices": [
+    "mitt",
+    "might",
+    "mat",
+    "met"
+   ],
+   "correctIndex": 1,
+   "explanation": "In might, the letters igh spell the long i sound.",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-06",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Wednesday 6 (Session 27), Phonics row",
+    "quote": "Review Sessions 1-10 (Long i, e, o)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-1",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-07",
+  "review": "2027-02-07",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word has the long u sound spelled ue?",
+   "choices": [
+    "cub",
+    "clue",
+    "clap",
+    "club"
+   ],
+   "correctIndex": 1,
+   "explanation": "In clue, the letters ue spell the long u sound.",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-07",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Thursday 7 (Session 28), Phonics row",
+    "quote": "Review Sessions 11-15 (Long u)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-2",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": true,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word has a silent k?",
+   "choices": [
+    "kite",
+    "knot",
+    "kick",
+    "keep"
+   ],
+   "correctIndex": 1,
+   "explanation": "In knot, the k is silent. You only hear the n.",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": "2027-01-08",
+   "evidence": {
+    "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+    "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+    "locator": "Jan 4–8, Friday 8 (Sessions 29 & 30), Phonics row",
+    "quote": "Review Sessions 16-25 (Silent Letters & ar)"
+   }
+  },
+  "checks": [
+   "Pacing: the class is about one week behind the district ELA calendar. Its Jan 5 week may still be Sessions 21-25, not the review week. This pattern is taught before Jan 5 either way, so it is review. Confirm against the Jan 4 plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-3",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "You are writing about two books. Which linking word shows that the two books are DIFFERENT?",
+   "choices": [
+    "however",
+    "both",
+    "similarly",
+    "also"
+   ],
+   "correctIndex": 0,
+   "explanation": "\"However\" shows a difference. \"Both,\" \"similarly,\" and \"also\" show things that are alike.",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "2nd Grade writing units",
+    "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
+    "locator": "Unit 3 Week 6, Weekly 'I Can' Statements",
+    "quote": "I can compare facts from two informational texts using transition language (both, similarly, however, while)."
+   }
+  },
+  "checks": [
+   "Same Week 6 date-label conflict as the writing Jeopardy draft; drafted week-only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-fc-4",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "Long ago, where did the Muscogee (Creek) and Cherokee often build their towns?",
+   "choices": [
+    "Near rivers and streams",
+    "Far from any water",
+    "Out on islands in the ocean",
+    "On top of snowy mountain peaks"
+   ],
+   "correctIndex": 0,
+   "explanation": "Rivers and streams gave them water, fish, and rich soil for farming, and made travel by canoe easier.",
+   "standard": "SS2G2.d",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "2nd Science/Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+    "locator": "Jan 4–8 weekly block, I Can",
+    "quote": "I can locate where the Muscogee (Creek) and Cherokee lived in Georgia and explain how they used their local resources."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: Muscogee (Creek) and Cherokee towns were usually built near rivers and streams. The district line gives the topic (where they lived, how they used local resources), not this fact."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-0",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "graph",
+   "clue": "A picture or chart that shows information using bars or pictures.",
+   "skill": "Math: picture graphs and bar graphs",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can read and interpret picture graph and bar graphs to solve one- and two-step math problems."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-1",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "scale",
+   "clue": "The numbers along a bar graph that tell how much each space or picture stands for.",
+   "skill": "Math: scaled picture and bar graphs",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can use scales to understand and create pictures and bar graphs."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-2",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "interpret",
+   "clue": "To figure out and explain what something means.",
+   "skill": "Math: read and interpret graphs",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can read and interpret picture graph and bar graphs to solve one- and two-step math problems."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-3",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "desert",
+   "clue": "A very dry habitat that gets very little rain.",
+   "skill": "Science S3L1: desert habitats",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Jan 4–8, Brain Pop",
+    "quote": "Deserts"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-4",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "reptile",
+   "clue": "A cold-blooded animal with dry, scaly skin, like a snake or a lizard.",
+   "skill": "Science S3L1: desert reptiles",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Jan 4–8, Science A-Z",
+    "quote": "Reptile Response Sheet"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: reptiles are cold-blooded animals with dry, scaly skin."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-5",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "colony",
+   "clue": "A settlement in a new land that is ruled by a country far away.",
+   "skill": "Social Studies: British Colonial America",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit: British Colonial America), I Can",
+    "quote": "Identify why the key reasons the colonies were founded in North America."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: definition of a colony."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-6",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "colonial",
+   "clue": "Having to do with the time when America was made up of colonies.",
+   "skill": "Social Studies: colonial children",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Jan 4–8, GaDOE Inspire",
+    "quote": "A Child's Eye: Colonial Children"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-7",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "thirteen",
+   "clue": "The number that comes after twelve; how many British colonies there were.",
+   "skill": "Social Studies: the 13 colonies",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Jan 4–8, Brain Pop",
+    "quote": "Building the 13 Colonies"
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-sb-8",
+  "grade": "3",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "narrator",
+   "clue": "The voice or character who tells a story.",
+   "skill": "Reading review: point of view and narrator (Unit 3)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Unit overview, Unit 3 row",
+    "quote": "3.T.C.1, 3.T.C.2, 3.T.SS.1, 3.T.T.3"
+   }
+  },
+  "checks": [
+   "The Jan 4–8 ELA row has no I Can or standards yet (\"[Add I Can statement]\"); it lists Review (Tue), Sessions 23-24, and the Unit 3 Assessment (Fri). This item reviews a Unit 3 standard (3.T.C.2)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-0",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "In a picture graph, each star stands for 5 books. The row for Monday has 4 stars. How many books were read on Monday?",
+   "answer": "20 books (4 × 5 = 20).",
+   "standard": "3.NR.1.2, 3.PAR.2.1, 3.PAR.3.3, 3.PAR.3.6, 3.PAR.3.7",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can use scales to understand and create pictures and bar graphs."
+   }
+  },
+  "checks": [
+   "The source lists five standards for the week without saying which goes with graphs; the field copies the list."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-1",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "On a bar graph that counts by 2s, the dogs bar ends at 8 and the cats bar ends at 14. How many more cats than dogs are there?",
+   "answer": "6 more cats (14 − 8 = 6).",
+   "standard": "3.NR.1.2, 3.PAR.2.1, 3.PAR.3.3, 3.PAR.3.6, 3.PAR.3.7",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit 3: Multiplication and Area), I Can",
+    "quote": "I can read and interpret picture graph and bar graphs to solve one- and two-step math problems."
+   }
+  },
+  "checks": [
+   "The source lists five standards for the week without saying which goes with graphs; the field copies the list."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-2",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "A goldfish breathes with gills and needs water all the time. Why could it not survive in a dry desert?",
+   "answer": "A desert has almost no water, and the fish needs water to breathe and live.",
+   "standard": "S3L1",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit: Under the sun), I Can",
+    "quote": "Explain why one animal can live in one habitat but not another."
+   }
+  },
+  "checks": [
+   "Open-ended: any answer about the fish needing water that the desert does not have should count."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-3",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Camels can go many days without drinking water and have wide feet that do not sink in sand. Which habitat are they suited for?",
+   "answer": "The desert.",
+   "standard": "S3L1",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Jan 4–8, Brain Pop",
+    "quote": "Deserts"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: camels can go days without water and have wide feet for sand."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-4",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Before they became the United States, how many British colonies were there along the Atlantic coast of North America?",
+   "answer": "13 (thirteen) colonies.",
+   "standard": "SS3H3",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Jan 4–8, Brain Pop",
+    "quote": "Building the 13 Colonies"
+   }
+  },
+  "checks": [
+   "Standard written as \"H3\" in the source; mapped to SS3H3, the same way H2 was written as SS3H2."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-5",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Name one reason people from England sailed across the ocean to start colonies in North America.",
+   "answer": "Any one of: to own land, to make money by trading, or to worship (practice religion) freely.",
+   "standard": "SS3H3",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit: British Colonial America), I Can",
+    "quote": "Identify why the key reasons the colonies were founded in North America."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: reasons for founding the colonies (land, money/trade, religious freedom).",
+   "Standard written as \"H3\" in the source; mapped to SS3H3."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-jp-6",
+  "grade": "3",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "question": "A story says: \"Wolfie licked his lips and tiptoed toward the house.\" The narrator is not a character in the story. Is it told in first-person or third-person point of view?",
+   "answer": "Third person. The narrator is outside the story and uses words like he and his.",
+   "standard": "3.T.C.2",
+   "teacherRead": true,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Unit overview, Unit 3 row",
+    "quote": "3.T.C.1, 3.T.C.2, 3.T.SS.1, 3.T.T.3"
+   }
+  },
+  "checks": [
+   "The Jan 4–8 ELA row has no I Can or standards yet (\"[Add I Can statement]\"); it lists Review (Tue), Sessions 23-24, and the Unit 3 Assessment (Fri). This item reviews a Unit 3 standard (3.T.C.2)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-0",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "Which animal is best suited to live in a hot, dry desert?",
+   "choices": [
+    "A camel",
+    "A polar bear",
+    "A penguin",
+    "A goldfish"
+   ],
+   "correctIndex": 0,
+   "explanation": "Camels can go a long time without water. The others need cold places or water.",
+   "standard": "S3L1",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Jan 4–8, Brain Pop",
+    "quote": "Deserts"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: camels are adapted to deserts."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-1",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Why would a polar bear have a hard time surviving in a hot desert?",
+   "choices": [
+    "Its thick fur would make it too hot",
+    "It cannot see in sunlight",
+    "Deserts have too much snow",
+    "Polar bears cannot walk on land"
+   ],
+   "correctIndex": 0,
+   "explanation": "Thick fur helps in the icy Arctic but would make a polar bear overheat in a hot desert.",
+   "standard": "S3L1",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit: Under the sun), I Can",
+    "quote": "Explain why one animal can live in one habitat but not another."
+   }
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-2",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 1,
+   "question": "Which choice best describes a colony?",
+   "choices": [
+    "A land settled by people and ruled by a faraway country",
+    "A kind of sailing ship",
+    "A tall mountain range",
+    "A large city with no rulers"
+   ],
+   "correctIndex": 0,
+   "explanation": "The 13 colonies were settled by people from Europe and ruled by Great Britain, far across the ocean.",
+   "standard": "SS3H3",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Jan 4–8 (Unit: British Colonial America), I Can",
+    "quote": "Identify why the key reasons the colonies were founded in North America."
+   }
+  },
+  "checks": [
+   "General-knowledge fact: definition of a colony.",
+   "Standard written as \"H3\" in the source; mapped to SS3H3."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-3",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Which of these was part of daily life for many children in colonial America?",
+   "choices": [
+    "Doing chores like carrying water and feeding animals",
+    "Playing video games",
+    "Riding a school bus",
+    "Watching television"
+   ],
+   "correctIndex": 0,
+   "explanation": "Colonial children helped their families with chores. The other choices had not been invented yet.",
+   "standard": "SS3H3",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+    "locator": "Weekly catalog, Jan 4–8, GaDOE Inspire",
+    "quote": "A Child's Eye: Colonial Children"
+   }
+  },
+  "checks": [
+   "General-knowledge fact: colonial children did household and farm chores.",
+   "Standard written as \"H3\" in the source; mapped to SS3H3."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-fc-4",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "question": "Which word in a narrator’s sentence is a clue that the story is told in first person?",
+   "choices": [
+    "I",
+    "she",
+    "they",
+    "he"
+   ],
+   "correctIndex": 0,
+   "explanation": "A first-person narrator is in the story and uses words like I, me and my.",
+   "standard": "3.T.C.2",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "3rd ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+    "locator": "Unit overview, Unit 3 row",
+    "quote": "3.T.C.1, 3.T.C.2, 3.T.SS.1, 3.T.T.3"
+   }
+  },
+  "checks": [
+   "The Jan 4–8 ELA row has no I Can or standards yet (\"[Add I Can statement]\"); it lists Review (Tue), Sessions 23-24, and the Unit 3 Assessment (Fri). This item reviews a Unit 3 standard (3.T.C.2)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-0",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "producer",
+   "clue": "A living thing, like a plant, that makes its own food using energy from the Sun.",
+   "skill": "Roles in an ecosystem",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Vocabulary",
+    "quote": "Vocabulary: producer, consumer, decomposer, food chain, food web, ecosystem, energy flow, community"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: plants make their own food using sunlight.",
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-1",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "consumer",
+   "clue": "A living thing that gets energy by eating plants or other animals.",
+   "skill": "Roles in an ecosystem",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Vocabulary",
+    "quote": "Vocabulary: producer, consumer, decomposer, food chain, food web, ecosystem, energy flow, community"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-2",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "decomposer",
+   "clue": "A living thing, like a mushroom or worm, that breaks down dead plants and animals.",
+   "skill": "Roles in an ecosystem",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Vocabulary",
+    "quote": "Vocabulary: producer, consumer, decomposer, food chain, food web, ecosystem, energy flow, community"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: mushrooms and worms are examples of decomposers.",
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-3",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "ecosystem",
+   "clue": "All the living and nonliving things in one area and how they interact.",
+   "skill": "Ecosystems",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Vocabulary",
+    "quote": "Vocabulary: producer, consumer, decomposer, food chain, food web, ecosystem, energy flow, community"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-4",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "community",
+   "clue": "In science, all the different living things that live together in one area.",
+   "skill": "Ecosystems",
+   "category": "source-listed",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Vocabulary",
+    "quote": "Vocabulary: producer, consumer, decomposer, food chain, food web, ecosystem, energy flow, community"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-5",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "organism",
+   "clue": "Any single living thing, such as a plant, animal or fungus.",
+   "skill": "Role of organisms",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Understanding",
+    "quote": "All organisms in an ecosystem play a role — producer, consumer, or decomposer — in the flow of energy."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-6",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "energy",
+   "clue": "What living things need to grow and move; in a food chain it starts with the Sun.",
+   "skill": "Flow of energy",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Understanding",
+    "quote": "Energy flows from the sun through producers to consumers and decomposers in a food chain or web."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-7",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "subtract",
+   "clue": "To take one amount away from another, like 5/8 take away 2/8.",
+   "skill": "Add/subtract fractions with like denominators",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Unit 4 Pacing Calendar, Jan 4–8 row (L19: Add/Subtract Fractions (Like Denominators))",
+    "quote": "I can use fraction models to add and subtract fractions with like denominators."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-8",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "expansion",
+   "clue": "Growing larger, like the United States spreading west in the 1800s.",
+   "skill": "Westward expansion",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Jan 4–8 weekly block, Unit 4: The Nation Expands (I Can)",
+    "quote": "I can explain how the United States and territories were added. I can describe how westward expansion affected the people, places, and cultures of our nation."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-sb-9",
+  "grade": "4",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "purchase",
+   "clue": "To buy something, like the land the United States bought from France in 1803.",
+   "skill": "The Louisiana Purchase",
+   "category": "skill-practice",
+   "picture": null,
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Jan 4–8 weekly block, Unit 4: The Nation Expands (Resources)",
+    "quote": "Louisiana Purchase: Deal of the Century - Read All About it!"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: the Louisiana Purchase was bought from France in 1803."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-0",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "In a food chain, what do we call a living thing, like grass or a tree, that makes its own food using energy from the Sun?",
+   "answer": "A producer.",
+   "standard": "S4L1.a",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Understanding",
+    "quote": "Energy flows from the sun through producers to consumers and decomposers in a food chain or web."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: plants make their own food using sunlight.",
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-1",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Mushrooms and earthworms break down dead plants and animals and return nutrients to the soil. What role do they play in an ecosystem?",
+   "answer": "They are decomposers.",
+   "standard": "S4L1.a",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Stage 2 Learning Target (S4L1.a)",
+    "quote": "I can: identify producers, consumers, and decomposers in an ecosystem."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: mushrooms and earthworms are decomposers.",
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-2",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 1,
+   "question": "What is 2/8 + 3/8?",
+   "answer": "5/8.",
+   "standard": "4.NR.4.4",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Unit 4 Pacing Calendar, Jan 4–8 row (L19: Add/Subtract Fractions (Like Denominators))",
+    "quote": "I can use fraction models to add and subtract fractions with like denominators."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-3",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "A pizza has 5/6 left. A family eats 2/6 of the pizza. What fraction of the pizza is left now?",
+   "answer": "3/6 (also accept 1/2).",
+   "standard": "4.NR.4.4",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Unit 4 Pacing Calendar, Jan 4–8 row (L19: Add/Subtract Fractions (Like Denominators))",
+    "quote": "I can use fraction models to add and subtract fractions with like denominators."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "Accept 3/6 or the equivalent 1/2."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-4",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 3,
+   "question": "When you add 3/10 + 4/10, why does the denominator stay 10 in the answer?",
+   "answer": "The parts are all tenths (the same size), so you add only the numerators: 7/10.",
+   "standard": "4.NR.4.4",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+    "locator": "Unit 4 Stage 1, Standards Addressed",
+    "quote": "4.NR.4.4 – Add and subtract fractions and mixed numbers with like denominators."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "Open answer: accept any explanation that the pieces are the same size, so only the numerators are added."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-jp-5",
+  "grade": "4",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "In 1803, the United States bought a huge area of land from France that about doubled the size of the country. What was this land deal called?",
+   "answer": "The Louisiana Purchase.",
+   "standard": "SS4H3",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Jan 4–8 weekly block, Unit 4: The Nation Expands (Resources)",
+    "quote": "Louisiana Purchase: Deal of the Century - Read All About it!"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: 1803, bought from France, roughly doubled the size of the U.S."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-0",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "In the food chain grass → rabbit → fox, which living thing is the consumer that eats the producer?",
+   "choices": [
+    "The grass",
+    "The rabbit",
+    "The Sun",
+    "The soil"
+   ],
+   "correctIndex": 1,
+   "explanation": "Grass is the producer. The rabbit eats the grass, so it is the consumer that eats the producer.",
+   "standard": "S4L1.a",
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Stage 2 Learning Target (S4L1.a)",
+    "quote": "I can: identify producers, consumers, and decomposers in an ecosystem."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-1",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "What do the arrows in a food chain show?",
+   "choices": [
+    "The direction energy flows, from the food to the eater",
+    "Which animal is the biggest",
+    "Where each animal sleeps at night",
+    "Which animal runs the fastest"
+   ],
+   "correctIndex": 0,
+   "explanation": "Food chain arrows show energy moving from the living thing that is eaten to the one that eats it.",
+   "standard": "S4L1.b",
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Stage 2 Learning Target (S4L1.b)",
+    "quote": "I can: create food chains and food webs to model energy flow."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: arrows point from the food to the eater.",
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-2",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "Where does almost all of the energy in a food chain first come from?",
+   "choices": [
+    "The Sun",
+    "The soil",
+    "Rain water",
+    "Decomposers"
+   ],
+   "correctIndex": 0,
+   "explanation": "Energy flows from the Sun to producers, then to consumers and decomposers.",
+   "standard": "S4L1",
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "UbD planning document, Unit 4, Understanding",
+    "quote": "Energy flows from the sun through producers to consumers and decomposers in a food chain or web."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-3",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 3,
+   "question": "A disease kills most of the plants in a meadow. What will most likely happen to the rabbits that eat those plants?",
+   "choices": [
+    "They will have less food, so fewer rabbits may survive",
+    "They will have more food than before",
+    "Nothing will change for the rabbits",
+    "The rabbits will start making their own food"
+   ],
+   "correctIndex": 0,
+   "explanation": "A change in an ecosystem affects the energy available: fewer plants means less food for rabbits.",
+   "standard": "S4L1.c",
+   "evidence": {
+    "sourceTitle": "4th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+    "locator": "Jan 4–8 weekly block, Unit 4: Role of Organisms and Flow of Energy (I Can)",
+    "quote": "I can create food chains, identify producers, consumers, and decomposers, and explain how changes in an ecosystem affect the energy available to living things."
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "District conflict: the pacing workbook (Copy of DCSS Pacing Guide FY27, 4th Grade tab, Jan 4 row) leaves Science blank and first lists S4L1 on the Jan 11 row, while the 4th Science Pacing Support day grid says Tuesday Jan 5: Begin Unit 4. Kept week-only (shows up Jan 8)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-fc-4",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "Why was the Louisiana Purchase important to the United States?",
+   "choices": [
+    "It about doubled the size of the country",
+    "It ended the War of 1812",
+    "It gave women the right to vote",
+    "It made Georgia the first state"
+   ],
+   "correctIndex": 0,
+   "explanation": "In 1803 the U.S. bought the Louisiana Territory from France, about doubling the nation's size and opening land for westward expansion.",
+   "standard": "SS4H3",
+   "evidence": {
+    "sourceTitle": "4th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+    "locator": "Jan 4–8 weekly block, Unit 4: The Nation Expands (Resources)",
+    "quote": "Louisiana Purchase: Deal of the Century - Read All About it!"
+   },
+   "weekOf": "2027-01-04",
+   "taughtOn": null
+  },
+  "checks": [
+   "General-knowledge fact: the Louisiana Purchase roughly doubled the size of the U.S."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-0",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "quotient",
+   "clue": "The answer you get when you divide one number by another.",
+   "skill": "Math: fraction as division (5.NR.3.1)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Weekly table, Jan 4–8, Unit 3: More Decimals and Fractions: Multiplication and Division, I Can",
+    "quote": "I can solve division problems where the quotient is a fraction or mixed number."
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-1",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "division",
+   "clue": "The operation of splitting a number into equal groups; a fraction like 3/4 can mean 3 split into 4 equal parts.",
+   "skill": "Math: fraction as division (5.NR.3.1)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Weekly table, Jan 4–8, iReady",
+    "quote": "Fraction as Division"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-2",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "global",
+   "clue": "Involving the whole world, like a war fought on many continents.",
+   "skill": "Social Studies: World War II (SS5H4)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly table, Jan 4–8, Resources",
+    "quote": "World War II_ Global Conflict Overview"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-3",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "aggressive",
+   "clue": "Ready to attack or start fights, like nations that invaded their neighbors before World War II.",
+   "skill": "Social Studies: causes of World War II (SS5H4a)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly table, Jan 4–8, Resources",
+    "quote": "Getting Aggressive"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "General-knowledge fact: clue links aggression to the invasions that led to World War II (SS5H4a); the source names the lesson 'Getting Aggressive' only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-4",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "opinion",
+   "clue": "What a writer believes or feels about a topic, backed up with reasons.",
+   "skill": "Writing: opinion pieces (5.T.T.3.c)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Unit 4 Opinion Writing Rope lesson, Georgia Standard(s) Addressed",
+    "quote": "state an opinion about the topic"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "Writing Unit 4 dates read 01/06/27-02/13/27, so opinion writing may start Wed Jan 6."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-5",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "explanatory",
+   "clue": "Describes writing that explains a topic or tells how something works.",
+   "skill": "Reading: Unit 4 The Beauty of Rot (Opinion+Explanatory)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th ELA Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1K1Ea-3dAEB0p8H2hftqJnYl519c2rCo8oV7gzBslopQ/edit",
+    "locator": "Unit overview table, Unit 4",
+    "quote": "Opinion+Explanatory"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-6",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "conjunction",
+   "clue": "A joining word such as and, but, or so that connects words or sentences.",
+   "skill": "Grammar: coordinating conjunctions (Daily Dose Day 91-94)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 91-94 (Day 95 assessment)",
+    "quote": "Vague vs. precise word choice, simile, coordinating conjunctions, appositive phrases"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-7",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "appositive",
+   "clue": "A noun phrase set beside another noun to rename it, like 'a fluffy beagle' in 'Our dog, a fluffy beagle, barked.'",
+   "skill": "Grammar: appositive phrases (Daily Dose Day 91-94)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 91-94 (Day 95 assessment)",
+    "quote": "Vague vs. precise word choice, simile, coordinating conjunctions, appositive phrases"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-8",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "precise",
+   "clue": "Exact and specific, the opposite of vague word choice.",
+   "skill": "Grammar: vague vs. precise word choice (Daily Dose Day 91-94)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 91-94 (Day 95 assessment)",
+    "quote": "Vague vs. precise word choice, simile, coordinating conjunctions, appositive phrases"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-sb-9",
+  "grade": "5",
+  "game": "spellingBee",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "word": "device",
+   "clue": "A machine or tool made for a job, like a flashlight or a phone that runs on electricity.",
+   "skill": "Science: electricity powers everyday devices (S5P2)",
+   "category": "source-listed",
+   "picture": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly table, Jan 4–8, Unit 3: Electricity and Magnetism, I Can",
+    "quote": "how electricity flows and powers everyday devices"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-0",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 2,
+   "question": "A 3-pound bag of trail mix is shared equally by 4 friends. How many pounds of trail mix does each friend get?",
+   "answer": "3/4 pound (3 ÷ 4 = 3/4).",
+   "standard": "5.NR.3.1",
+   "teacherRead": false,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Weekly table, Jan 4–8, Unit 3: More Decimals and Fractions: Multiplication and Division, I Can",
+    "quote": "I can solve division problems where the quotient is a fraction or mixed number."
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-1",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Math",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Math",
+   "difficulty": 3,
+   "question": "Five students share 12 granola bars equally. How many granola bars does each student get? Give your answer as a mixed number.",
+   "answer": "2 2/5 granola bars (12 ÷ 5 = 12/5 = 2 2/5).",
+   "standard": "5.NR.3.1",
+   "teacherRead": false,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Math Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+    "locator": "Weekly table, Jan 4–8, Unit 3: More Decimals and Fractions: Multiplication and Division, I Can",
+    "quote": "I can solve division problems where the quotient is a fraction or mixed number."
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-2",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Wires, a battery, and a bulb are connected with no gaps, so electricity flows all the way around and the bulb lights. What kind of circuit is this?",
+   "answer": "A closed (complete) circuit.",
+   "standard": "S5P2b",
+   "teacherRead": false,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly table, Jan 4–8, Support / PEC",
+    "quote": "Creating a Closed Circuit"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "Jan 5–8 is the End Unit 3 Assessment window in the science support doc, so these are review items for Unit 3."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-3",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "On December 7, 1941, Japan made a surprise attack on this U.S. naval base in Hawaii, and the United States entered World War II. What was the base?",
+   "answer": "Pearl Harbor.",
+   "standard": "SS5H4",
+   "teacherRead": false,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly table, Jan 4–8, Unit 6: Another World War, I Can",
+    "quote": "I can explain the causes and major events of World War II"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "General-knowledge fact: Pearl Harbor attack on Dec 7, 1941 brought the U.S. into WWII (SS5H4b); not stated in the source."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-4",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Grammar",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Grammar",
+   "difficulty": 2,
+   "question": "Join these two sentences with a comma and a coordinating conjunction: \"The rain stopped. The game was still canceled.\"",
+   "answer": "\"The rain stopped, but the game was still canceled.\" (\"yet\" also works.)",
+   "standard": "3-5.L.GC.1",
+   "teacherRead": false,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 91-94 (Day 95 assessment)",
+    "quote": "Vague vs. precise word choice, simile, coordinating conjunctions, appositive phrases"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-jp-5",
+  "grade": "5",
+  "game": "jeopardy",
+  "week": "2027-01-04",
+  "subject": "Writing",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Writing",
+   "difficulty": 1,
+   "question": "In an opinion piece, writers use linking words to connect their opinion to their reasons. Name two linking words a writer could use.",
+   "answer": "Any two: because, therefore, since, for example (also accept so, also, in addition).",
+   "standard": "5.T.T.3.c",
+   "teacherRead": false,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Unit 4 Opinion Writing Rope lesson, Georgia Standard(s) Addressed",
+    "quote": "supply reasons and evidence to support the opinion with linking words (e.g., because, therefore, since, for example)"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "Writing Unit 4 dates read 01/06/27-02/13/27, so opinion writing may start Wed Jan 6."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-0",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 1,
+   "question": "Which material is an insulator that would stop electricity from flowing through a circuit?",
+   "choices": [
+    "A rubber band",
+    "A copper wire",
+    "A strip of aluminum foil",
+    "A steel paper clip"
+   ],
+   "correctIndex": 0,
+   "explanation": "Rubber is an insulator; copper, aluminum and steel are metals that conduct electricity.",
+   "standard": "S5P2b",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly table, Jan 4–8, STEMSCOPES",
+    "quote": "5P2BC Circuits, Conductors, and Insulators"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "General-knowledge fact: rubber insulates; copper, aluminum and steel conduct. Source lists the topic only."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-1",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Science",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Science",
+   "difficulty": 2,
+   "question": "Which everyday device uses an electromagnet to work?",
+   "choices": [
+    "An electric doorbell",
+    "A wax candle",
+    "A wooden ruler",
+    "A rubber eraser"
+   ],
+   "correctIndex": 0,
+   "explanation": "An electric doorbell uses current in a coil (an electromagnet) to pull a striker that rings the bell.",
+   "standard": "S5P3b",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Science Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+    "locator": "Weekly table, Jan 4–8, Unit 3: Electricity and Magnetism, I Can",
+    "quote": "explain how magnets work and how electricity and magnetism are connected"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "General-knowledge fact: electric doorbells use electromagnets; not stated in the source."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-2",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Grammar",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Grammar",
+   "difficulty": 2,
+   "question": "Which sentence includes an appositive phrase?",
+   "choices": [
+    "Our dog, a fluffy beagle, chased the ball.",
+    "Our dog chased the ball and the stick.",
+    "The fluffy dog quickly chased the ball.",
+    "Our dog chased the ball because it was bored."
+   ],
+   "correctIndex": 0,
+   "explanation": "\"A fluffy beagle\" sits beside \"our dog\" and renames it, so it is an appositive phrase.",
+   "standard": "3-5.L.GC.1",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 91-94 (Day 95 assessment)",
+    "quote": "Vague vs. precise word choice, simile, coordinating conjunctions, appositive phrases"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-3",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Grammar",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Grammar",
+   "difficulty": 1,
+   "question": "Which sentence uses the most precise word choice?",
+   "choices": [
+    "The storm was bad.",
+    "The storm was really bad.",
+    "The storm flattened fences and snapped tree limbs.",
+    "The storm was not good at all."
+   ],
+   "correctIndex": 2,
+   "explanation": "It tells exactly what the storm did instead of using a vague word like \"bad.\"",
+   "standard": "3-5.L.GC.1",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+    "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+    "locator": "Daily Dose of Grammar Skills Weekly Outline, Day 91-94 (Day 95 assessment)",
+    "quote": "Vague vs. precise word choice, simile, coordinating conjunctions, appositive phrases"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-fc-4",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Social Studies",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Social Studies",
+   "difficulty": 2,
+   "question": "During World War II, the United States fought on which side?",
+   "choices": [
+    "The Allies",
+    "The Axis Powers",
+    "The Central Powers",
+    "The Confederacy"
+   ],
+   "correctIndex": 0,
+   "explanation": "The U.S. joined the Allies, with Great Britain and the Soviet Union, against the Axis Powers.",
+   "standard": "SS5H4",
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "evidence": {
+    "sourceTitle": "5th Social Studies Pacing Support",
+    "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+    "locator": "Weekly table, Jan 4–8, Unit 6: Another World War, I Can",
+    "quote": "I can explain the causes and major events of World War II"
+   }
+  },
+  "checks": [
+   "Week-only: the source gives the week (Jan 4–8), not a day for this skill, so it unlocks Fri Jan 8.",
+   "General-knowledge fact: U.S. fought with the Allies in WWII; not stated in the source."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ }
+]

@@ -7243,7 +7243,7 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "K-jp-0",
-  "taughtOn": "2026-11-30"
+  "taughtOn": "2026-12-03"
  },
  {
   "id": "paced-2026-12-K-an-acorn-is-planted-in-the-soil-a-tiny-n",
@@ -7278,7 +7278,7 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "K-jp-1",
-  "taughtOn": "2026-12-01"
+  "taughtOn": "2026-12-04"
  },
  {
   "id": "paced-2026-12-K-a-dog-eats-drinks-and-grows-a-rock-does-",
@@ -7313,7 +7313,12 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "K-jp-2",
-  "taughtOn": "2026-11-30"
+  "taughtOn": "2026-11-30",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "section": "Science 11/30 | Lesson Title",
+   "quote": "Living and Non-living"
+  }
  },
  {
   "id": "paced-2026-12-K-a-toy-car-can-roll-but-it-does-not-eat-d",
@@ -7348,7 +7353,12 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "K-jp-3",
-  "taughtOn": "2026-11-30"
+  "taughtOn": "2026-11-30",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "section": "Science 11/30 | Lesson Title",
+   "quote": "Living and Non-living"
+  }
  },
  {
   "id": "paced-2026-12-K-count-with-me-1-2-3-4-5-6-7-what-number-",
@@ -7382,7 +7392,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "K-jp-4"
+  "batchItemId": "K-jp-4",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Kindergarten lesson plan, week of Nov 30",
+   "section": "11/30 math | Learning Target",
+   "quote": "I can recognize, write, and count numbers 6–10."
+  }
  },
  {
   "id": "paced-2026-12-K-count-backward-with-me-10-9-8-7-what-num",
@@ -7694,7 +7709,12 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "1-jp-1",
-  "taughtOn": "2026-12-02"
+  "taughtOn": "2026-12-01",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "section": "11/30 | Writing, Tuesday, I Do",
+   "quote": "Model gathering words say: A squid can change colors."
+  }
  },
  {
   "id": "paced-2026-12-1-put-the-words-it-is-together-with-an-apo",
@@ -7728,7 +7748,13 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "1-jp-2"
+  "batchItemId": "1-jp-2",
+  "taughtOn": "2026-12-01",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "section": "11/30 | Writing, Tuesday, Learning Targets",
+   "quote": "I can use words like isn’t and can’t in my sentences."
+  }
  },
  {
   "id": "paced-2026-12-1-our-class-chart-shows-3-kids-like-cats-b",
@@ -7830,7 +7856,13 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "1-jp-5"
+  "batchItemId": "1-jp-5",
+  "taughtOn": "2026-12-02",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "section": "11/30 | Science, Learning Target",
+   "quote": "Identify the seasons.(Wed-Thurs)"
+  }
  },
  {
   "id": "paced-2026-12-1-put-the-words-can-not-together-as-a-cont",
@@ -8038,143 +8070,6 @@
   "batchItemId": "1-jp-11"
  },
  {
-  "id": "paced-2026-12-2-the-prefix-re-means-again-add-re-to-the-",
-  "subject": "Literacy",
-  "difficulty": 2,
-  "question": "The prefix re- means \"again.\" Add re- to the word \"paint.\" What new word do you make, and what does it mean?",
-  "answer": "Repaint - to paint again.",
-  "standard": null,
-  "session": "Nov 30–Dec 4, I Can",
-  "questionType": "short-answer",
-  "teacherRead": true,
-  "grade": "2",
-  "weekIntroduced": "2026-11-30",
-  "alignedWeeks": [
-   "2026-11-30"
-  ],
-  "source": "ClassThread paced content (2026-12)",
-  "packId": "classthread-paced-2026-12",
-  "packName": "ClassThread paced content (2026-12)",
-  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-3.json",
-   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
-   "section": "Nov 30–Dec 4, I Can",
-   "quote": "I can read and write words with the prefixes re- and pre-."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-0).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "2-jp-0"
- },
- {
-  "id": "paced-2026-12-2-what-do-we-call-animals-that-hunt-and-ea",
-  "subject": "Literacy",
-  "difficulty": 1,
-  "question": "What do we call animals that hunt and eat other animals?",
-  "answer": "Predators.",
-  "standard": null,
-  "session": "Nov 30–Dec 4, Monday 30 (Session 11), Vocabulary row",
-  "questionType": "short-answer",
-  "teacherRead": true,
-  "grade": "2",
-  "weekIntroduced": "2026-11-30",
-  "alignedWeeks": [
-   "2026-11-30"
-  ],
-  "source": "ClassThread paced content (2026-12)",
-  "packId": "classthread-paced-2026-12",
-  "packName": "ClassThread paced content (2026-12)",
-  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-3.json",
-   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
-   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
-   "section": "Nov 30–Dec 4, Monday 30 (Session 11), Vocabulary row",
-   "quote": "adapted, predators, scales"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-1).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "2-jp-1",
-  "taughtOn": "2026-11-30"
- },
- {
-  "id": "paced-2026-12-2-in-the-sentence-the-fennec-fox-hunts-sil",
-  "subject": "Literacy",
-  "difficulty": 2,
-  "question": "In the sentence \"The fennec fox hunts silently at night,\" which word tells HOW the fox hunts?",
-  "answer": "Silently.",
-  "standard": "2.L.GC.1",
-  "session": null,
-  "questionType": "short-answer",
-  "teacherRead": true,
-  "grade": "2",
-  "weekIntroduced": "2026-11-30",
-  "alignedWeeks": [
-   "2026-11-30"
-  ],
-  "source": "ClassThread paced content (2026-12)",
-  "packId": "classthread-paced-2026-12",
-  "packName": "ClassThread paced content (2026-12)",
-  "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
-  "evidence": {
-   "document": "support-4-2026-11-08.json",
-   "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
-   "sourceTitle": "2nd Grade writing units",
-   "section": "Unit 3 Week 3 (Week of November 30), I DO Skill / Strategy Named",
-   "quote": "Explanatory writers use ADVERBS to explain HOW, WHEN, or WHERE something happens."
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-2).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "2-jp-2"
- },
- {
-  "id": "paced-2026-12-2-fennec-foxes-and-gila-monsters-both-live",
-  "subject": "Literacy",
-  "difficulty": 2,
-  "question": "Fennec foxes and Gila monsters both live in the desert. Name one other way these two animals are alike.",
-  "answer": "They both dig burrows (or: they are both active at night).",
-  "standard": null,
-  "session": "Unit 3 Week 3 (Week of November 30), Anchor Chart / Visual Created",
-  "questionType": "short-answer",
-  "teacherRead": true,
-  "grade": "2",
-  "weekIntroduced": "2026-11-30",
-  "alignedWeeks": [
-   "2026-11-30"
-  ],
-  "source": "ClassThread paced content (2026-12)",
-  "packId": "classthread-paced-2026-12",
-  "packName": "ClassThread paced content (2026-12)",
-  "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
-  "evidence": {
-   "document": "support-4-2026-11-08.json",
-   "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
-   "sourceTitle": "2nd Grade writing units",
-   "section": "Unit 3 Week 3 (Week of November 30), Anchor Chart / Visual Created",
-   "quote": "Similar (both burrow, both desert, both nocturnal)"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-3).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "2-jp-3"
- },
- {
   "id": "paced-2026-12-2-recess-starts-at-10-00-and-ends-at-10-30",
   "subject": "Math",
   "difficulty": 2,
@@ -8207,7 +8102,7 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "2-jp-4",
-  "taughtOn": "2026-11-30"
+  "taughtOn": "2026-12-02"
  },
  {
   "id": "paced-2026-12-2-ana-has-3-dimes-and-4-nickels-a-pencil-c",
@@ -8241,7 +8136,43 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "2-jp-5"
+  "batchItemId": "2-jp-5",
+  "taughtOn": "2026-12-01"
+ },
+ {
+  "id": "paced-2026-12-2-long-ago-before-georgia-became-a-colony-",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "Long ago, before Georgia became a colony, two big American Indian groups lived on the land. Name one of them.",
+  "answer": "The Creek (Muscogee) or the Cherokee.",
+  "standard": "SS2H2",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-11-30",
+  "alignedWeeks": [
+   "2026-11-30"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+  "evidence": {
+   "document": "support-6-2026-11-08.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+   "sourceTitle": "2nd Science/Social Studies Pacing Support",
+   "section": "Unit overview table, row SS3",
+   "quote": "Georgia’s First People"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-6",
+  "taughtOn": "2026-11-30"
  },
  {
   "id": "paced-2026-12-2-say-the-word-knock-which-letter-at-the-b",
@@ -8518,41 +8449,13 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-jp-0"
- },
- {
-  "id": "paced-2026-12-3-in-the-picture-book-duck-rabbit-two-voic",
-  "subject": "Literacy",
-  "difficulty": 2,
-  "question": "In the picture book Duck! Rabbit!, two voices argue about one animal. One says it is a duck; the other says it is a rabbit. Why can both have a point?",
-  "answer": "They look at the same picture from different perspectives, so each one sees something different.",
-  "standard": "3.T.C.2",
-  "session": null,
-  "questionType": "short-answer",
-  "teacherRead": true,
-  "grade": "3",
-  "weekIntroduced": "2026-11-30",
-  "alignedWeeks": [
-   "2026-11-30"
-  ],
-  "source": "ClassThread paced content (2026-12)",
-  "packId": "classthread-paced-2026-12",
-  "packName": "ClassThread paced content (2026-12)",
-  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
-  "evidence": {
-   "document": "spelling-bee-2026-10-09-4.json",
-   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
-   "sourceTitle": "3rd ELA Pacing Support",
-   "section": "Weekly catalog, Nov 30–Dec 4, Support (preteach vocabulary)",
-   "quote": "Duck! Rabbit!"
-  },
-  "reviewStatus": "approved",
-  "approvalBasis": "teacher-review",
-  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 3-jp-1).",
-  "requiresExternalClassroomMaterial": false,
-  "materialReviewNote": "Self-contained classroom question.",
-  "reviewQuestion": false,
-  "batchItemId": "3-jp-1"
+  "batchItemId": "3-jp-0",
+  "taughtOn": "2026-12-02",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "ELA 11/30, I Can",
+   "quote": "I can put myself in a character’s shoes and explain their perspective about the events in the story."
+  }
  },
  {
   "id": "paced-2026-12-3-break-a-7-6-rectangle-into-a-5-6-rectang",
@@ -8588,8 +8491,8 @@
   "reviewQuestion": false,
   "batchItemId": "3-jp-2",
   "lessonPlanCheck": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
-   "section": "M 11/30 | Lesson #/Title",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "M 11/30, Lesson title",
    "quote": "Lesson 16 - Add Areas"
   }
  },
@@ -8627,8 +8530,8 @@
   "reviewQuestion": false,
   "batchItemId": "3-jp-3",
   "lessonPlanCheck": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 16",
-   "section": "M 11/30 | Lesson #/Title",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "M 11/30, Lesson title",
    "quote": "Lesson 16 - Add Areas"
   }
  },
@@ -8734,8 +8637,8 @@
   "reviewQuestion": false,
   "batchItemId": "3-jp-6",
   "lessonPlanCheck": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
-   "section": "M 12/7 | Date(s), Lesson",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "M 12/7, Lesson title",
    "quote": "Lesson 32 - Area and Perimeter of Shapes"
   }
  },
@@ -8773,8 +8676,8 @@
   "reviewQuestion": false,
   "batchItemId": "3-jp-7",
   "lessonPlanCheck": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
-   "section": "M 12/7 | Date(s), Lesson",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "M 12/7, Lesson title",
    "quote": "Lesson 32 - Area and Perimeter of Shapes"
   }
  },
@@ -8812,8 +8715,8 @@
   "reviewQuestion": false,
   "batchItemId": "3-jp-8",
   "lessonPlanCheck": {
-   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 9",
-   "section": "M 12/7 | Date(s), Lesson",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "M 12/7, Lesson title",
    "quote": "Lesson 32 - Area and Perimeter of Shapes"
   }
  },
@@ -10429,7 +10332,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-jp-14"
+  "batchItemId": "3-jp-14",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "M 12/14, Lesson title",
+   "quote": "Lesson 17 - Solve One-Step Word Problems Using Multiplication and Division"
+  }
  },
  {
   "id": "paced-2026-12-3-nia-buys-3-packs-of-pencils-with-5-penci",
@@ -10463,7 +10371,12 @@
   "requiresExternalClassroomMaterial": false,
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
-  "batchItemId": "3-jp-15"
+  "batchItemId": "3-jp-15",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "M 12/14, Lesson title",
+   "quote": "Lesson 18 - Solve Two-Step Word Problems Using the Four Operations"
+  }
  },
  {
   "id": "paced-2026-12-3-many-birds-fly-south-every-fall-to-warme",
@@ -10909,5 +10822,1551 @@
   "materialReviewNote": "Self-contained classroom question.",
   "reviewQuestion": false,
   "batchItemId": "5-jp-18"
+ },
+ {
+  "id": "paced-2026-12-1-say-swim-what-two-letters-make-the-blend",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Say “swim.” What two letters make the blend at the start?",
+  "answer": "s and w (the sw blend).",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-11-30",
+  "alignedWeeks": [
+   "2026-11-30"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-08.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Nov 16–20; Wednesday 18; Phonics row",
+   "quote": "Beginning Blends sn-, sw-"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 1-jp-w1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-w1",
+  "taughtOn": "2026-12-02",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "section": "11/30 | Foundations, Wednesday (Session 8), Learning Targets",
+   "quote": "Read and write words with sn and sw."
+  }
+ },
+ {
+  "id": "paced-2026-12-1-add-ing-to-the-word-jump-what-new-word-d",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Add -ing to the word “jump.” What new word do you make?",
+  "answer": "Jumping.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2026-11-30",
+  "alignedWeeks": [
+   "2026-11-30"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Nov 16–20; I Can",
+   "quote": "I can read and write action words with inflectional endings -ed, -ing."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 1-jp-w2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-w2",
+  "taughtOn": "2026-12-01",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 1 lesson plan, week of Nov 30",
+   "section": "11/30 | Foundations, Tuesday (session 7), Learning Targets",
+   "quote": "Read and add words ed and ing to the end of words."
+  }
+ },
+ {
+  "id": "paced-2026-12-2-say-the-word-coat-which-two-letters-spel",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Say the word \"coat.\" Which two letters spell the long o sound?",
+  "answer": "o-a (oa).",
+  "standard": null,
+  "session": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-11-30",
+  "alignedWeeks": [
+   "2026-11-30"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-14DeMn70_o-2026-11-30.json",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "section": "Phonics 11/30 - 12/4, Monday (session 6), Success Criteria",
+   "quote": "recognize the long o sound in words spelled o and oa."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-w1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-w1",
+  "taughtOn": "2026-11-30",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "section": "Phonics 11/30 - 12/4, Monday (session 6), Learning Target",
+   "quote": "Today I will read and write words with the long o sound and read longer words and super words."
+  }
+ },
+ {
+  "id": "paced-2026-12-2-finish-the-sentence-with-the-past-tense-",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Finish the sentence with the past tense of \"dig\": \"Yesterday the desert fox ___ a hole in the sand.\"",
+  "answer": "Dug.",
+  "standard": "K-2.L.GC.1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-11-30",
+  "alignedWeeks": [
+   "2026-11-30"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-14DeMn70_o-2026-11-30.json",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "section": "Writing 11/30 - 12/4, Wednesday, I do",
+   "quote": "Review irregular verbs such as grew, dug, hid, and fled."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-w2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-w2",
+  "taughtOn": "2026-12-02",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "section": "Writing 11/30 - 12/4, Wednesday, We do",
+   "quote": "dig → dug"
+  }
+ },
+ {
+  "id": "paced-2026-12-2-long-ago-muscogee-creek-farmers-in-georg",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Long ago, Muscogee (Creek) farmers in Georgia grew three main crops together. Name one of them.",
+  "answer": "Corn, beans, or squash.",
+  "standard": "SS2H2",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2026-11-30",
+  "alignedWeeks": [
+   "2026-11-30"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-14DeMn70_o-2026-11-30.json",
+   "sourceUrl": "https://docs.google.com/document/d/14DeMn70_o-tEf0GSL-UDUZHQABvE8uDsZ3uZaYAB1NM/edit",
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "section": "SS 11/30 - 12/4, Thursday, I Do",
+   "quote": "Explain farming, hunting, fishing, gathering, and trading. Introduce corn, beans, and squash."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 2-jp-w3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-w3",
+  "taughtOn": "2026-12-03",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 2 lesson plan, week of Nov 30",
+   "section": "SS 11/30 - 12/4, Thursday, Lesson",
+   "quote": "Muscogee (Creek) people food, tools, and ways of making a living"
+  }
+ },
+ {
+  "id": "paced-2026-12-3-in-little-roja-riding-hood-the-wolf-is-t",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "In Little Roja Riding Hood the wolf is the bad guy. In The Wolf’s Side of the Story, the wolf tells what happened his way. Why can the same character seem so different in two stories?",
+  "answer": "Each story is told from a different perspective, so we learn different thoughts and feelings about the wolf.",
+  "standard": "3.T.C.2",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2026-11-30",
+  "alignedWeeks": [
+   "2026-11-30"
+  ],
+  "source": "ClassThread paced content (2026-12)",
+  "packId": "classthread-paced-2026-12",
+  "packName": "ClassThread paced content (2026-12)",
+  "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+  "evidence": {
+   "document": "lesson-plans/sweetwater-1QQOJoRIXx-2026-11-30.json",
+   "sourceUrl": "https://docs.google.com/document/d/1QQOJoRIXxsT4uHzZjuVhLm2srpgHpKQlaGRUOZj4weA/edit",
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "ELA 11/30, Retrieval Activator (Wed 12/2)",
+   "quote": "12/2 Do Now Session 13 Pg. 117 - The Wolf’s Side of the Story"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-12 review page (item 3-jp-w1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-w1",
+  "taughtOn": "2026-12-02",
+  "lessonPlanCheck": {
+   "sourceTitle": "Sweetwater Grade 3 lesson plan, week of Nov 30",
+   "section": "ELA 11/30, CER Exit Ticket",
+   "quote": "How is the wolf's perspective different in Little Roja Riding Hood and The Wolf's Side of the Story?"
+  }
+ },
+ {
+  "id": "paced-2027-01-K-before-we-write-a-story-we-decide-what-h",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Before we write a story, we decide what happens at the beginning, middle, and end. What do we call this first step?",
+  "answer": "Making a plan (accept plan or story plan).",
+  "standard": null,
+  "session": "Jan 4–8; Tuesday 5; ML Unit 3 Session 26",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "kinder-ela-calendar-2026-11-15.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Jan 4–8; Tuesday 5; ML Unit 3 Session 26",
+   "quote": "Process Writing: Plan Narrative Writing"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item K-jp-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-jp-0",
+  "taughtOn": "2027-01-05"
+ },
+ {
+  "id": "paced-2027-01-K-i-say-jam-what-letter-does-jam-start-wit",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "I say “jam.” What letter does jam start with?",
+  "answer": "J.",
+  "standard": null,
+  "session": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "kinder-ela-calendar-2026-11-02.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Jan 4–8; Wednesday 6; ML Unit 3 Session 27",
+   "quote": "Review Sessions 1-10"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item K-jp-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-jp-1",
+  "taughtOn": "2027-01-06"
+ },
+ {
+  "id": "paced-2027-01-K-i-say-up-what-letter-does-up-start-with",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "I say “up.” What letter does up start with?",
+  "answer": "U.",
+  "standard": null,
+  "session": "Jan 4–8; Thursday 7; ML Unit 3 Session 28",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+  "evidence": {
+   "document": "kinder-ela-calendar-2026-11-02.json",
+   "sourceUrl": "https://docs.google.com/document/d/11MbfvfKtepy68_1l48QRWUf5UycwSLONbMa22Hn4fjM/edit",
+   "sourceTitle": "Kinder ELA Pacing Calendar 2026-27",
+   "section": "Jan 4–8; Thursday 7; ML Unit 3 Session 28",
+   "quote": "Review Sessions 11-15"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item K-jp-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-jp-2",
+  "taughtOn": "2027-01-07"
+ },
+ {
+  "id": "paced-2027-01-K-people-who-follow-rules-help-others-and-",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "People who follow rules, help others, and take care of their school and town are called good ___. What is the word?",
+  "answer": "Citizens.",
+  "standard": "SSKCG1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "linked-k-science-social.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Jan 4–8 | Unit: Review of Citizenship; Tuesday 5",
+   "quote": "Focus Citizenship"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item K-jp-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-jp-3",
+  "taughtOn": "2027-01-05"
+ },
+ {
+  "id": "paced-2027-01-K-you-see-trash-on-the-playground-what-can",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "You see trash on the playground. What can a good citizen do to help?",
+  "answer": "Pick it up and put it in the trash can.",
+  "standard": "SSKCG1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+  "evidence": {
+   "document": "linked-k-science-social.json",
+   "sourceUrl": "https://docs.google.com/document/d/1kx-s1ri85_PnmHBcTjBYcud57u-C-Z_4PBV4pWW6TnY/edit",
+   "sourceTitle": "Kinder Sci & SS Pacing Support",
+   "section": "Jan 4–8 | Unit: Review of Citizenship; I Can",
+   "quote": "I can demonstrate and explain what it means to be a good citizen."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item K-jp-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-jp-4",
+  "taughtOn": "2027-01-05"
+ },
+ {
+  "id": "paced-2027-01-K-our-picture-graph-shows-4-children-chose",
+  "subject": "Math",
+  "difficulty": 1,
+  "question": "Our picture graph shows 4 children chose apples and 2 children chose bananas. How many children chose a fruit in all?",
+  "answer": "6 children.",
+  "standard": "K.MDR.7.3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+  "evidence": {
+   "document": "linked-k-math.json",
+   "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+   "sourceTitle": "Kinder Math Pacing Support",
+   "section": "Curriculum calendar, January 2027; Jan 4 week; Tuesday 5",
+   "quote": "One-Day Activity: Ask Questions/Use Data"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item K-jp-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-jp-5",
+  "taughtOn": "2027-01-05"
+ },
+ {
+  "id": "paced-2027-01-K-our-tally-chart-shows-these-marks-next-t",
+  "subject": "Math",
+  "difficulty": 2,
+  "question": "Our tally chart shows these marks next to “cats”: | | | | How many children chose cats?",
+  "answer": "4.",
+  "standard": "K.MDR.7.3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "K",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+  "evidence": {
+   "document": "linked-k-math.json",
+   "sourceUrl": "https://docs.google.com/document/d/1msfvKEpu6uI_cKTOTdMsm2utf48A_Fu0my-lLQi5V2g/edit",
+   "sourceTitle": "Kinder Math Pacing Support",
+   "section": "Jan 4–8 | Week 20; I Can",
+   "quote": "I can interpret data from graphical displays."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item K-jp-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-jp-6",
+  "taughtOn": "2027-01-05"
+ },
+ {
+  "id": "paced-2027-01-1-add-ing-to-the-word-rest-what-new-word-d",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Add -ing to the word “rest.” What new word do you make?",
+  "answer": "Resting.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Jan 4–8; Wednesday 6; Phonics row",
+   "quote": "Beginning Blends with r and s; Closed Syllables and Endings -ed, -ing"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 1-jp-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-0",
+  "taughtOn": "2027-01-06"
+ },
+ {
+  "id": "paced-2027-01-1-put-the-words-she-is-together-with-an-ap",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Put the words “she is” together with an apostrophe. What contraction do you make?",
+  "answer": "She's.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Jan 4–8; Thursday 7; Phonics row",
+   "quote": "Three-Letter Blends scr-, spl-, spr-, str-; Contractions with 's"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 1-jp-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-1",
+  "taughtOn": "2027-01-07"
+ },
+ {
+  "id": "paced-2027-01-1-put-the-words-was-not-together-as-a-cont",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Put the words “was not” together as a contraction. What word do you make?",
+  "answer": "Wasn't.",
+  "standard": "1.F.P.1-3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+  "evidence": {
+   "document": "linked-1-literacy-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1My3sb3tKxDYV9rt3Ixt-amjPZNGV4s5AiW14tNKNSOM/edit",
+   "sourceTitle": "DCSS 1st Grade ELA Pacing Calendar 2026-27",
+   "section": "Jan 4–8; Friday 8; Phonics row",
+   "quote": "Ending Blends -st, -sk, -mp, -nd; Contractions with not; Long a: a_e; Plurals with CVCe words"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 1-jp-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-2",
+  "taughtOn": "2027-01-08"
+ },
+ {
+  "id": "paced-2027-01-1-how-many-ones-do-you-need-to-make-one-te",
+  "subject": "Math",
+  "difficulty": 1,
+  "question": "How many ones do you need to make one ten?",
+  "answer": "10 ones.",
+  "standard": "1.NR.1.1-1.NR.1.3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+  "evidence": {
+   "document": "support-1-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+   "sourceTitle": "1st Math Pacing Support",
+   "section": "Jan 4–8; Unit 4; I Can",
+   "quote": "I can use tens and ones to organize and count."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 1-jp-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-3"
+ },
+ {
+  "id": "paced-2027-01-1-a-number-has-2-tens-and-3-ones-what-is-t",
+  "subject": "Math",
+  "difficulty": 2,
+  "question": "A number has 2 tens and 3 ones. What is the number?",
+  "answer": "23.",
+  "standard": "1.NR.1.1-1.NR.1.3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+  "evidence": {
+   "document": "support-1-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1eali0q9ry7NXi9EpqyvI--G8BILKclun9I1q6QfoiIk/edit",
+   "sourceTitle": "1st Math Pacing Support",
+   "section": "Jan 4–8; Unit 4; I Can",
+   "quote": "I can use tens and ones to organize and count."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 1-jp-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-4"
+ },
+ {
+  "id": "paced-2027-01-1-a-baker-makes-loaves-of-bread-to-sell-is",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "A baker makes loaves of bread to sell. Is the bread a good or a service?",
+  "answer": "A good (something people make).",
+  "standard": "SS1E1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "1",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+  "evidence": {
+   "document": "support-2-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1M8CPd5hvu_a28fR_JGTaOHKZCGtNNu0t9SOEUiEwwjI/edit",
+   "sourceTitle": "1st Grade Pacing",
+   "section": "Jan 4 – 8; Unit 5: Inventors and Community; I Can",
+   "quote": "I can describe goods that people make and services that people provide for each other."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 1-jp-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "1-jp-5"
+ },
+ {
+  "id": "paced-2027-01-2-which-number-is-greater-482-or-428-tell-",
+  "subject": "Math",
+  "difficulty": 1,
+  "question": "Which number is greater, 482 or 428? Tell how you know.",
+  "answer": "482. Both have 4 hundreds, but 482 has 8 tens and 428 has only 2 tens.",
+  "standard": "2.NR.1.3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+  "evidence": {
+   "document": "support-5-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+   "sourceTitle": "2nd Math Pacing Support",
+   "section": "Daily pacing calendar, Jan 5 (U3-Day 11)",
+   "quote": "Jan 5★ MUC-3 OpensU3-DAY 11iReady L14: Compare 3-Digit Numbers2.NR.1.3GaDOE: Comparing Numbers"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 2-jp-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-0",
+  "taughtOn": "2027-01-05"
+ },
+ {
+  "id": "paced-2027-01-2-put-these-numbers-in-order-from-least-to",
+  "subject": "Math",
+  "difficulty": 2,
+  "question": "Put these numbers in order from least to greatest: 365, 356, 536.",
+  "answer": "356, 365, 536.",
+  "standard": "2.NR.1.3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+  "evidence": {
+   "document": "support-5-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/14GPsTO9yB9a0TDJ9SpeFpIemmlEx1sBO4oAnx-hMQD0/edit",
+   "sourceTitle": "2nd Math Pacing Support",
+   "section": "Daily pacing calendar, Jan 6 (U3-Day 12)",
+   "quote": "Jan 6U3-DAY 12iReady L14: Compare 3-Digit Numbers2.NR.1.3"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 2-jp-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-1",
+  "taughtOn": "2027-01-06"
+ },
+ {
+  "id": "paced-2027-01-2-say-the-word-tube-which-letters-spell-th",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Say the word \"tube.\" Which letters spell the long u sound?",
+  "answer": "u and a silent e at the end (u_e).",
+  "standard": null,
+  "session": "Jan 4–8, Thursday 7 (Session 28), Phonics row",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Jan 4–8, Thursday 7 (Session 28), Phonics row",
+   "quote": "Review Sessions 11-15 (Long u)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 2-jp-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-2",
+  "taughtOn": "2027-01-07"
+ },
+ {
+  "id": "paced-2027-01-2-say-the-word-gnat-which-letter-at-the-be",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Say the word \"gnat.\" Which letter at the beginning is silent?",
+  "answer": "The g.",
+  "standard": null,
+  "session": "Jan 4–8, Friday 8 (Sessions 29 & 30), Phonics row",
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-3.json",
+   "sourceUrl": "https://docs.google.com/document/d/1UxVa_1yV4KW1m5x15eQa51i9UZMZJ8hA3rGhq8VUSQA/edit",
+   "sourceTitle": "DCSS 2nd Grade ELA Pacing Calendar",
+   "section": "Jan 4–8, Friday 8 (Sessions 29 & 30), Phonics row",
+   "quote": "Review Sessions 16-25 (Silent Letters & ar)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 2-jp-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-3",
+  "taughtOn": "2027-01-08"
+ },
+ {
+  "id": "paced-2027-01-2-when-you-write-a-fact-you-learned-from-a",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "When you write a fact you learned from a book, what two things can you name to show where the fact came from?",
+  "answer": "The author's name and the title of the book.",
+  "standard": "2.T.T.2.b",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
+  "evidence": {
+   "document": "support-4-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1jD5VaZyPImoY-nk9g99MenC14NPPzkmauYsqodrPbOs/edit",
+   "sourceTitle": "2nd Grade writing units",
+   "section": "Unit 3 Week 6, Weekly 'I Can' Statements",
+   "quote": "I can cite text evidence using the author's name and the title of the book."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 2-jp-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-4"
+ },
+ {
+  "id": "paced-2027-01-2-the-muscogee-creek-and-cherokee-lived-in",
+  "subject": "Social Studies",
+  "difficulty": 1,
+  "question": "The Muscogee (Creek) and Cherokee lived in Georgia long ago. Do Muscogee (Creek) and Cherokee people still live in Georgia and the United States today?",
+  "answer": "Yes. Muscogee (Creek) and Cherokee people still live in Georgia and the U.S. today.",
+  "standard": "SS2H2",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "2",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+  "evidence": {
+   "document": "support-6-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ebmL99FhxYsOqF9Kt9FBPpr3lgwX5h1U7wL_bfD8DPQ/edit",
+   "sourceTitle": "2nd Science/Social Studies Pacing Support",
+   "section": "Jan 4–8 weekly block, Support / PEC",
+   "quote": "Teach that Muscogee (Creek) and Cherokee people still live in Georgia and the U.S. today; avoid language that suggests they no longer exist."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 2-jp-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "2-jp-5"
+ },
+ {
+  "id": "paced-2027-01-3-in-a-picture-graph-each-star-stands-for-",
+  "subject": "Math",
+  "difficulty": 1,
+  "question": "In a picture graph, each star stands for 5 books. The row for Monday has 4 stars. How many books were read on Monday?",
+  "answer": "20 books (4 × 5 = 20).",
+  "standard": "3.NR.1.2, 3.PAR.2.1, 3.PAR.3.3, 3.PAR.3.6, 3.PAR.3.7",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+  "evidence": {
+   "document": "support-10-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+   "sourceTitle": "3rd Math Pacing Support",
+   "section": "Weekly catalog, Jan 4–8 (Unit 3: Multiplication and Area), I Can",
+   "quote": "I can use scales to understand and create pictures and bar graphs."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 3-jp-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-0"
+ },
+ {
+  "id": "paced-2027-01-3-on-a-bar-graph-that-counts-by-2s-the-dog",
+  "subject": "Math",
+  "difficulty": 2,
+  "question": "On a bar graph that counts by 2s, the dogs bar ends at 8 and the cats bar ends at 14. How many more cats than dogs are there?",
+  "answer": "6 more cats (14 − 8 = 6).",
+  "standard": "3.NR.1.2, 3.PAR.2.1, 3.PAR.3.3, 3.PAR.3.6, 3.PAR.3.7",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+  "evidence": {
+   "document": "support-10-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1MrnDeF0eZtCBEOeVCIxW-nvY-wBIClp52W8h84gQJMo/edit",
+   "sourceTitle": "3rd Math Pacing Support",
+   "section": "Weekly catalog, Jan 4–8 (Unit 3: Multiplication and Area), I Can",
+   "quote": "I can read and interpret picture graph and bar graphs to solve one- and two-step math problems."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 3-jp-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-1"
+ },
+ {
+  "id": "paced-2027-01-3-a-goldfish-breathes-with-gills-and-needs",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "A goldfish breathes with gills and needs water all the time. Why could it not survive in a dry desert?",
+  "answer": "A desert has almost no water, and the fish needs water to breathe and live.",
+  "standard": "S3L1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-8.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+   "sourceTitle": "3rd Science Pacing Support",
+   "section": "Weekly catalog, Jan 4–8 (Unit: Under the sun), I Can",
+   "quote": "Explain why one animal can live in one habitat but not another."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 3-jp-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-2"
+ },
+ {
+  "id": "paced-2027-01-3-camels-can-go-many-days-without-drinking",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Camels can go many days without drinking water and have wide feet that do not sink in sand. Which habitat are they suited for?",
+  "answer": "The desert.",
+  "standard": "S3L1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-8.json",
+   "sourceUrl": "https://docs.google.com/document/d/1ytudSiuwi6Eujh-Lnen9ZpKIHQdDfvXaJILtdtmUi2E/edit",
+   "sourceTitle": "3rd Science Pacing Support",
+   "section": "Weekly catalog, Jan 4–8, Brain Pop",
+   "quote": "Deserts"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 3-jp-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-3"
+ },
+ {
+  "id": "paced-2027-01-3-before-they-became-the-united-states-how",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Before they became the United States, how many British colonies were there along the Atlantic coast of North America?",
+  "answer": "13 (thirteen) colonies.",
+  "standard": "SS3H3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-9.json",
+   "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+   "sourceTitle": "3rd Social Studies Pacing Support",
+   "section": "Weekly catalog, Jan 4–8, Brain Pop",
+   "quote": "Building the 13 Colonies"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 3-jp-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-4"
+ },
+ {
+  "id": "paced-2027-01-3-name-one-reason-people-from-england-sail",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "Name one reason people from England sailed across the ocean to start colonies in North America.",
+  "answer": "Any one of: to own land, to make money by trading, or to worship (practice religion) freely.",
+  "standard": "SS3H3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-9.json",
+   "sourceUrl": "https://docs.google.com/document/d/1b0SMCnPQbRFLyVwToc3rFeqns406mwZzcIio_4W0_LQ/edit",
+   "sourceTitle": "3rd Social Studies Pacing Support",
+   "section": "Weekly catalog, Jan 4–8 (Unit: British Colonial America), I Can",
+   "quote": "Identify why the key reasons the colonies were founded in North America."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 3-jp-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-5"
+ },
+ {
+  "id": "paced-2027-01-3-a-story-says-wolfie-licked-his-lips-and-",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "A story says: \"Wolfie licked his lips and tiptoed toward the house.\" The narrator is not a character in the story. Is it told in first-person or third-person point of view?",
+  "answer": "Third person. The narrator is outside the story and uses words like he and his.",
+  "standard": "3.T.C.2",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": true,
+  "grade": "3",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-4.json",
+   "sourceUrl": "https://docs.google.com/document/d/1BqAG1xbs8xnDNwNZWbPr41UB6U4ov496beS3H1DMrZ4/edit",
+   "sourceTitle": "3rd ELA Pacing Support",
+   "section": "Unit overview, Unit 3 row",
+   "quote": "3.T.C.1, 3.T.C.2, 3.T.SS.1, 3.T.T.3"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 3-jp-6).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "3-jp-6"
+ },
+ {
+  "id": "paced-2027-01-4-in-a-food-chain-what-do-we-call-a-living",
+  "subject": "Science",
+  "difficulty": 1,
+  "question": "In a food chain, what do we call a living thing, like grass or a tree, that makes its own food using energy from the Sun?",
+  "answer": "A producer.",
+  "standard": "S4L1.a",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "4",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-10.json",
+   "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+   "sourceTitle": "4th Science Pacing Support",
+   "section": "UbD planning document, Unit 4, Understanding",
+   "quote": "Energy flows from the sun through producers to consumers and decomposers in a food chain or web."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 4-jp-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-jp-0"
+ },
+ {
+  "id": "paced-2027-01-4-mushrooms-and-earthworms-break-down-dead",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Mushrooms and earthworms break down dead plants and animals and return nutrients to the soil. What role do they play in an ecosystem?",
+  "answer": "They are decomposers.",
+  "standard": "S4L1.a",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "4",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-10.json",
+   "sourceUrl": "https://docs.google.com/document/d/1fMsdaVkqkBFjQOxbeoeDo6FNTYt9Z6XY9tO-XstCr8I/edit",
+   "sourceTitle": "4th Science Pacing Support",
+   "section": "UbD planning document, Unit 4, Stage 2 Learning Target (S4L1.a)",
+   "quote": "I can: identify producers, consumers, and decomposers in an ecosystem."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 4-jp-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-jp-1"
+ },
+ {
+  "id": "paced-2027-01-4-what-is-2-8-3-8",
+  "subject": "Math",
+  "difficulty": 1,
+  "question": "What is 2/8 + 3/8?",
+  "answer": "5/8.",
+  "standard": "4.NR.4.4",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "4",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+  "evidence": {
+   "document": "support-15-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+   "sourceTitle": "4th Math Pacing Support",
+   "section": "Unit 4 Pacing Calendar, Jan 4–8 row (L19: Add/Subtract Fractions (Like Denominators))",
+   "quote": "I can use fraction models to add and subtract fractions with like denominators."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 4-jp-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-jp-2"
+ },
+ {
+  "id": "paced-2027-01-4-a-pizza-has-5-6-left-a-family-eats-2-6-o",
+  "subject": "Math",
+  "difficulty": 2,
+  "question": "A pizza has 5/6 left. A family eats 2/6 of the pizza. What fraction of the pizza is left now?",
+  "answer": "3/6 (also accept 1/2).",
+  "standard": "4.NR.4.4",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "4",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+  "evidence": {
+   "document": "support-15-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+   "sourceTitle": "4th Math Pacing Support",
+   "section": "Unit 4 Pacing Calendar, Jan 4–8 row (L19: Add/Subtract Fractions (Like Denominators))",
+   "quote": "I can use fraction models to add and subtract fractions with like denominators."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 4-jp-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-jp-3"
+ },
+ {
+  "id": "paced-2027-01-4-when-you-add-3-10-4-10-why-does-the-deno",
+  "subject": "Math",
+  "difficulty": 3,
+  "question": "When you add 3/10 + 4/10, why does the denominator stay 10 in the answer?",
+  "answer": "The parts are all tenths (the same size), so you add only the numerators: 7/10.",
+  "standard": "4.NR.4.4",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "4",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+  "evidence": {
+   "document": "support-15-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1TAS0QglfVU1PPBwCVThmtjVzBXyJloO4ldCLXgCDX_o/edit",
+   "sourceTitle": "4th Math Pacing Support",
+   "section": "Unit 4 Stage 1, Standards Addressed",
+   "quote": "4.NR.4.4 – Add and subtract fractions and mixed numbers with like denominators."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 4-jp-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-jp-4"
+ },
+ {
+  "id": "paced-2027-01-4-in-1803-the-united-states-bought-a-huge-",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "In 1803, the United States bought a huge area of land from France that about doubled the size of the country. What was this land deal called?",
+  "answer": "The Louisiana Purchase.",
+  "standard": "SS4H3",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "4",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-11.json",
+   "sourceUrl": "https://docs.google.com/document/d/18IWmvRn8V1PiU9FKBpHvxt0RsP2kgjZHIFCeGtB4djM/edit",
+   "sourceTitle": "4th Social Studies Pacing Support",
+   "section": "Jan 4–8 weekly block, Unit 4: The Nation Expands (Resources)",
+   "quote": "Louisiana Purchase: Deal of the Century - Read All About it!"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 4-jp-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "4-jp-5"
+ },
+ {
+  "id": "paced-2027-01-5-a-3-pound-bag-of-trail-mix-is-shared-equ",
+  "subject": "Math",
+  "difficulty": 2,
+  "question": "A 3-pound bag of trail mix is shared equally by 4 friends. How many pounds of trail mix does each friend get?",
+  "answer": "3/4 pound (3 ÷ 4 = 3/4).",
+  "standard": "5.NR.3.1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "5",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+  "evidence": {
+   "document": "support-20-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+   "sourceTitle": "5th Math Pacing Support",
+   "section": "Weekly table, Jan 4–8, Unit 3: More Decimals and Fractions: Multiplication and Division, I Can",
+   "quote": "I can solve division problems where the quotient is a fraction or mixed number."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 5-jp-0).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-jp-0"
+ },
+ {
+  "id": "paced-2027-01-5-five-students-share-12-granola-bars-equa",
+  "subject": "Math",
+  "difficulty": 3,
+  "question": "Five students share 12 granola bars equally. How many granola bars does each student get? Give your answer as a mixed number.",
+  "answer": "2 2/5 granola bars (12 ÷ 5 = 12/5 = 2 2/5).",
+  "standard": "5.NR.3.1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "5",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+  "evidence": {
+   "document": "support-20-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/17ST3ZsBNvVZxLA2F22dO33bfXSQMbe3vXq2d4zSNaVk/edit",
+   "sourceTitle": "5th Math Pacing Support",
+   "section": "Weekly table, Jan 4–8, Unit 3: More Decimals and Fractions: Multiplication and Division, I Can",
+   "quote": "I can solve division problems where the quotient is a fraction or mixed number."
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 5-jp-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-jp-1"
+ },
+ {
+  "id": "paced-2027-01-5-wires-a-battery-and-a-bulb-are-connected",
+  "subject": "Science",
+  "difficulty": 2,
+  "question": "Wires, a battery, and a bulb are connected with no gaps, so electricity flows all the way around and the bulb lights. What kind of circuit is this?",
+  "answer": "A closed (complete) circuit.",
+  "standard": "S5P2b",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "5",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-7.json",
+   "sourceUrl": "https://docs.google.com/document/d/1LPIw0bonSe4C441V9viwC7TiAUpdIxg51thGZFiqFlY/edit",
+   "sourceTitle": "5th Science Pacing Support",
+   "section": "Weekly table, Jan 4–8, Support / PEC",
+   "quote": "Creating a Closed Circuit"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 5-jp-2).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-jp-2"
+ },
+ {
+  "id": "paced-2027-01-5-on-december-7-1941-japan-made-a-surprise",
+  "subject": "Social Studies",
+  "difficulty": 2,
+  "question": "On December 7, 1941, Japan made a surprise attack on this U.S. naval base in Hawaii, and the United States entered World War II. What was the base?",
+  "answer": "Pearl Harbor.",
+  "standard": "SS5H4",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "5",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+  "evidence": {
+   "document": "spelling-bee-2026-10-09-12.json",
+   "sourceUrl": "https://docs.google.com/document/d/1-AWrtCJXD11Nm4OUBatj8qSDZh3DACsDZtragfs8eHg/edit",
+   "sourceTitle": "5th Social Studies Pacing Support",
+   "section": "Weekly table, Jan 4–8, Unit 6: Another World War, I Can",
+   "quote": "I can explain the causes and major events of World War II"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 5-jp-3).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-jp-3"
+ },
+ {
+  "id": "paced-2027-01-5-join-these-two-sentences-with-a-comma-an",
+  "subject": "Literacy",
+  "difficulty": 2,
+  "question": "Join these two sentences with a comma and a coordinating conjunction: \"The rain stopped. The game was still canceled.\"",
+  "answer": "\"The rain stopped, but the game was still canceled.\" (\"yet\" also works.)",
+  "standard": "3-5.L.GC.1",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "5",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+  "evidence": {
+   "document": "support-19-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+   "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+   "section": "Daily Dose of Grammar Skills Weekly Outline, Day 91-94 (Day 95 assessment)",
+   "quote": "Vague vs. precise word choice, simile, coordinating conjunctions, appositive phrases"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 5-jp-4).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-jp-4"
+ },
+ {
+  "id": "paced-2027-01-5-in-an-opinion-piece-writers-use-linking-",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "In an opinion piece, writers use linking words to connect their opinion to their reasons. Name two linking words a writer could use.",
+  "answer": "Any two: because, therefore, since, for example (also accept so, also, in addition).",
+  "standard": "5.T.T.3.c",
+  "session": null,
+  "questionType": "short-answer",
+  "teacherRead": false,
+  "grade": "5",
+  "weekIntroduced": "2027-01-04",
+  "alignedWeeks": [
+   "2027-01-04"
+  ],
+  "source": "ClassThread paced content (2027-01)",
+  "packId": "classthread-paced-2027-01",
+  "packName": "ClassThread paced content (2027-01)",
+  "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+  "evidence": {
+   "document": "support-19-2026-11-22.json",
+   "sourceUrl": "https://docs.google.com/document/d/1D9vNy10flWo_ahqCEm9k9HlCYZByh--diiXtXPHEujI/edit",
+   "sourceTitle": "5th Grade Writing_Rope_Lesson_Plan_Template",
+   "section": "Unit 4 Opinion Writing Rope lesson, Georgia Standard(s) Addressed",
+   "quote": "supply reasons and evidence to support the opinion with linking words (e.g., because, therefore, since, for example)"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2027-01 review page (item 5-jp-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "5-jp-5"
  }
 ]
