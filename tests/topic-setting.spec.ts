@@ -13,16 +13,18 @@ const decoding = pacedCorners.filter(q => q.packId === DC) as unknown as CornerQ
 const labels: Record<string, string> = { K: 'Kindergarten', '1': '1st Grade', '2': '2nd Grade', '3': '3rd Grade', '4': '4th Grade', '5': '5th Grade' };
 const fits = (page: Page) => page.evaluate(() => document.documentElement.scrollHeight <= innerHeight && document.documentElement.scrollWidth <= innerWidth);
 
-test('Decoding batch: all 52 approved items ship, grades 1–5, each unlocking on its Friday', () => {
-  expect(review).toHaveLength(52);
-  expect(Object.values(approvals.decisions)).toEqual(Array(52).fill('approve'));
+test('Decoding batch: all 76 approved items ship, grades 1–5, each unlocking on its Friday', () => {
+  // 52 from the Nov 24 bundle, then 24 Grade 1 and 2 items appended from the Nov 24b bundle.
+  expect(review).toHaveLength(76);
+  expect(Object.values(approvals.decisions)).toEqual(Array(76).fill('approve'));
   expect(approvals.held).toEqual({});
-  expect(decoding).toHaveLength(52);
-  expect(Object.fromEntries(['1', '2', '3', '4', '5'].map(g => [g, decoding.filter(q => q.grade === g).length]))).toEqual({ '1': 10, '2': 12, '3': 10, '4': 10, '5': 10 });
+  expect(decoding).toHaveLength(76);
+  expect(Object.fromEntries(['1', '2', '3', '4', '5'].map(g => [g, decoding.filter(q => q.grade === g).length]))).toEqual({ '1': 22, '2': 24, '3': 10, '4': 10, '5': 10 });
+  for (const id of ['1-dc-11', '1-dc-22', '2-dc-13', '2-dc-24']) expect(decoding.map(q => q.batchItemId)).toContain(id);
   // The Nov 24 items, not the Nov 20 bundle's withdrawn -dc- drafts (e.g. its "closed syllable: cat" item).
   expect(decoding.find(q => q.batchItemId === '1-dc-1')!.choices).toEqual(['cupcake', 'napkin', 'sunset', 'muffin']);
   expect(decoding.some(q => q.choices.includes('cat'))).toBe(false);
-  expect(new Set(decoding.map(q => q.id)).size).toBe(52);
+  expect(new Set(decoding.map(q => q.id)).size).toBe(76);
   for (const q of decoding) {
     expect([q.subject, q.topic, q.spokenTarget]).toEqual(['Literacy', 'decoding', undefined]);
     expect(q.choices[q.correctIndex]).toBe(q.answer);
@@ -33,8 +35,8 @@ test('Decoding batch: all 52 approved items ship, grades 1–5, each unlocking o
   }
   // Repeated drill prompts are different questions: no two share both prompt and choices.
   const keys = decoding.map(q => `${q.question}|${[...q.choices].sort().join(',')}`);
-  expect(new Set(keys).size).toBe(52);
-  expect(decoding.filter(q => q.question === 'Which word has a vowel team?')).toHaveLength(4);
+  expect(new Set(keys).size).toBe(76);
+  expect(decoding.filter(q => q.question === 'Which word has a vowel team?')).toHaveLength(7);
   expect(new Set(decoding.map(q => q.correctIndex)).size).toBe(4);
   // Trace's Nov 24 wording edit.
   for (const id of ['3-dc-5', '4-dc-5', '5-dc-5']) expect(decoding.find(q => q.batchItemId === id)!.explanation).toContain('is an r-controlled syllable');
@@ -61,7 +63,8 @@ test('Topic: offered per grade; a topic plays only its items, still paced; All i
   }
   expect(eligible('3', 'Mixed Academic', 'mixed', FRIDAY, 'decoding')).toHaveLength(10);
   expect(eligible('3', 'Mixed Academic', 'mixed', '2026-11-19', 'decoding')).toHaveLength(0);
-  expect(eligible('1', 'Mixed Academic', 'mixed', FRIDAY, 'decoding').map(q => q.batchItemId).sort()).toEqual(['1-dc-1', '1-dc-2', '1-dc-3', '1-dc-4']);
+  expect(eligible('1', 'Mixed Academic', 'mixed', FRIDAY, 'decoding').map(q => q.batchItemId).sort()).toEqual(['1-dc-1', '1-dc-2', '1-dc-3', '1-dc-4', ...Array.from({ length: 12 }, (_, i) => `1-dc-${i + 11}`)].sort());
+  expect(eligible('2', 'Mixed Academic', 'mixed', '2026-09-25', 'decoding').map(q => q.batchItemId).sort()).toEqual(['2-dc-1', '2-dc-13', '2-dc-14', '2-dc-15', '2-dc-2']);
 });
 
 test('Quick Check Topic: only that topic’s Four Corners items; starting a topic over keeps the rest of the grade’s history', () => {

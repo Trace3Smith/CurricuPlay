@@ -1,14 +1,14 @@
 # CurricuPlay (ClassThread) — handoff to Claude Code
 
-Last updated November 24, 2026: spoken sight words released; Topic setting and decoding batch on Preview. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
+Last updated November 24, 2026: spoken sight words, the Topic setting and the decoding batch are live on `main`; 24 more Grade 1–2 decoding items are on Preview (branch `decoding-grades-1-2`). Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
 
 **Release flow (applies to every change):** work on a feature branch, push it for a GitHub/Vercel Preview, let Trace check the Preview, then fast-forward `main`. **A merge to `main` is a production release.** Never merge, force-push, or promote to production without Trace's explicit approval for that specific change. Approval for one release does not carry over to the next. Do not change other games' behavior, existing storage keys, security settings, or anything in FantasyEdge or Sideline Creator unless asked.
 
 Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The Quick Check, State Lingo Bingo and paced content batch sections come first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
 
-## Topic setting and decoding batch (branch `topic-setting-decoding`, Preview Nov 24, 2026; not on main yet)
+## Topic setting and decoding batch (released Nov 24, 2026; `main` at e20687a)
 
-From bundle `classthread-batch-2026-11-24-decoding.json`. It replaces the Nov 20 bundle's `-dc-` drafts, which were never applied.
+From bundle `classthread-batch-2026-11-24-decoding.json`. It replaces the Nov 20 bundle's `-dc-` drafts, which were never applied. Bundle `classthread-batch-2026-11-24b-decoding-grades-1-2.json` then appended 24 Grade 1–2 items (on Preview, branch `decoding-grades-1-2`, until Trace checks it).
 
 - **Topic** is a pregame setting in Four Corners (step 3) and Quick Check (after Grade): **All** (default, the usual game), **Sight Words** and **Decoding**.
   - A topic button shows only if the grade has items with that topic on any date (`gradeTopics()` in `four-corners/engine.ts`): Kindergarten gets Sight Words, grades 1–5 get Decoding.
@@ -16,15 +16,15 @@ From bundle `classthread-batch-2026-11-24-decoding.json`. It replaces the Nov 20
   - The choice is remembered with the other settings (`topic` in both saves). Older saves without it mean All. If the remembered topic isn't offered for a newly chosen grade, the setting falls back to All.
   - Four Corners now shows the short-pool message beside Start instead of as an extra row, so the setup still fits one screen.
   - When a Quick Check topic runs out and starts over, only that topic's questions are cleared from the grade's history of used questions.
-- **Batch `content/paced/2026-27-decoding/`:** 52 items, all approved, none held. Topic `decoding`. Counts: Grade 1 10, Grade 2 12, Grades 3–5 10 each. Sources are the three PL snapshots in `content/sources/pl/`.
-  - The prompts repeat ("Which word has a vowel team?" ×4). So topic items without a spoken word are named by item id (`fc-paced-2026-27-decoding-1-dc-1`), and the duplicate-prompt check treats a topic item as its prompt plus its choices. Items without a topic must still have unique prompts.
+- **Batch `content/paced/2026-27-decoding/`:** 76 items, all approved, none held. Topic `decoding`. Counts: Grade 1 22, Grade 2 24, Grades 3–5 10 each. The first 52 are from the Nov 24 bundle; 1-dc-11..22 and 2-dc-13..24 are from the Nov 24b bundle. Sources are the three PL snapshots in `content/sources/pl/`.
+  - The prompts repeat ("Which word has a vowel team?" ×7). So topic items without a spoken word are named by item id (`fc-paced-2026-27-decoding-1-dc-1`), and the duplicate-prompt check treats a topic item as its prompt plus its choices. Items without a topic must still have unique prompts.
   - Trace's edit in `approvals.json`: the 3-dc-5, 4-dc-5 and 5-dc-5 explanations say "an r-controlled" (the bundle had "a r-controlled").
   - Grade 2's Sept 25 items are Current on Oct 18, so `pacing-games.spec` now expects only topic items to be Current then (Kindergarten and Grade 2).
 - Tests: `tests/topic-setting.spec.ts`.
 
-## Spoken sight words in Four Corners (released Nov 24, 2026)
+## Spoken sight words in Four Corners (released Nov 24, 2026; `main` at 6cc39aa)
 
-From bundle `classthread-batch-2026-11-20-sightwords-decoding.json`. Trace checks the Preview on the Smart Board before it is merged.
+From bundle `classthread-batch-2026-11-20-sightwords-decoding.json`. Trace checked the Preview on the Smart Board before release.
 
 - **`spokenTarget`** (optional Four Corners item field): the teacher says the word and children run to it. Rules are in `src/games/four-corners/spoken.ts` and repeated in `scripts/validate-paced-batch.py`:
   - the word is the answer and appears exactly once among the choices;
@@ -34,14 +34,14 @@ From bundle `classthread-batch-2026-11-20-sightwords-decoding.json`. Trace check
   - "Speak" says the word using speech synthesis at Spelling Bee's settings. "Show word" is a small teacher toggle; it resets on every new question and after a refresh.
   - Reports and history name the word: the prompt is saved as `… (Word: “said”)`.
   - **Quick Check** supports it the same way: the banner, and Speak / Show word in place of Read it to me.
-  - Not built yet: Trace's pregame **Topic** filter. Items carry `topic` (`sight-words`, and later `syllable-types` and `syllable-division`).
+  - Items carry `topic: "sight-words"`, used by the Topic setting (see above).
 - **Batch `content/paced/2026-27-k-sight-words/`:** the whole-year Kindergarten sight-word list (Aug 24, 2026 – Mar 29, 2027), from the photographed handout `content/sources/k-sight-words-2026-27.json`. Each word unlocks on the Friday of its week, and distractors are only words taught by then.
   - Trace approved all 109, and all 109 ship. On Nov 24 Trace changed the prompt on every item to **"Listen. Run!"** (an `edits` entry per id in `approvals.json`). The bundle's prompt, "Listen! Run to the word your teacher says.", printed "the", "to" and "your", so K-sw-1, K-sw-5 and K-sw-40 had been held until then.
   - The **decoding items** (`-dc-`, grades 1–5) and their PL snapshots are in the bundle but not applied; Trace is reworking them.
 - **Existing tests updated:** the list reaches back to August, so on the old test dates (Sept 17, Oct 18) Kindergarten now has 8 extra live questions, and on Oct 18 some Current ones.
   - `four-corners.spec` and `four-corners-team.spec` now count the base pack plus paced items taught by Sept 17.
   - `pacing-games.spec` checks the "no Current questions" notice on 3rd Grade, and checks that on Oct 18 Kindergarten's only Current items are the sight words.
-- **K Mixed Academic** games now include many sight-word rounds. That is the case for the Topic filter.
+- **K Mixed Academic** games include many sight-word rounds; the Topic setting gives teachers a Sight Words-only game (or All).
 
 ## Quick Check (released November 3, 2026)
 

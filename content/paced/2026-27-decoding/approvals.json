@@ -54,7 +54,31 @@
   "5-dc-7": "approve",
   "5-dc-8": "approve",
   "5-dc-9": "approve",
-  "5-dc-10": "approve"
+  "5-dc-10": "approve",
+  "1-dc-11": "approve",
+  "1-dc-12": "approve",
+  "1-dc-13": "approve",
+  "1-dc-14": "approve",
+  "1-dc-15": "approve",
+  "1-dc-16": "approve",
+  "1-dc-17": "approve",
+  "1-dc-18": "approve",
+  "1-dc-19": "approve",
+  "1-dc-20": "approve",
+  "1-dc-21": "approve",
+  "1-dc-22": "approve",
+  "2-dc-13": "approve",
+  "2-dc-14": "approve",
+  "2-dc-15": "approve",
+  "2-dc-16": "approve",
+  "2-dc-17": "approve",
+  "2-dc-18": "approve",
+  "2-dc-19": "approve",
+  "2-dc-20": "approve",
+  "2-dc-21": "approve",
+  "2-dc-22": "approve",
+  "2-dc-23": "approve",
+  "2-dc-24": "approve"
  },
  "edits": {
   "3-dc-5": {
@@ -71,6 +95,7 @@
  "notes": [
   "Replaces the -dc- items of the Nov 20 bundle, which were never applied.",
   "Nov 24: Trace approved 1-dc-3, 1-dc-4, 2-dc-5 (1st and 2nd grade can split words).",
-  "Nov 24: Trace corrected \"a r-controlled\" to \"an r-controlled\" in the explanations of 3-dc-5, 4-dc-5 and 5-dc-5."
+  "Nov 24: Trace corrected \"a r-controlled\" to \"an r-controlled\" in the explanations of 3-dc-5, 4-dc-5 and 5-dc-5.",
+  "Nov 24 (bundle classthread-batch-2026-11-24b-decoding-grades-1-2): 24 more Grade 1 and 2 items appended (1-dc-11..22, 2-dc-13..24); Trace approved all, none held."
  ]
 }

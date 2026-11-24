@@ -2134,5 +2134,989 @@
   ],
   "plan": "unchecked",
   "planEvidence": null
+ },
+ {
+  "id": "1-dc-11",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "muffin",
+    "pancake",
+    "kitten",
+    "picnic"
+   ],
+   "correctIndex": 1,
+   "explanation": "pan-cake: “cake” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-12",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "rabbit",
+    "magnet",
+    "bedtime",
+    "tennis"
+   ],
+   "correctIndex": 2,
+   "explanation": "bed-time: “time” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-13",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "hiccup",
+    "puppet",
+    "insect",
+    "sunshine"
+   ],
+   "correctIndex": 3,
+   "explanation": "sun-shine: “shine” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-14",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has only closed syllables?",
+   "choices": [
+    "kitten",
+    "pancake",
+    "bedtime",
+    "cupcake"
+   ],
+   "correctIndex": 0,
+   "explanation": "kit-ten: both parts end in a consonant with a short vowel.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-15",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has only closed syllables?",
+   "choices": [
+    "invite",
+    "magnet",
+    "sunshine",
+    "inside"
+   ],
+   "correctIndex": 1,
+   "explanation": "mag-net: both parts end in a consonant with a short vowel.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-16",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has only closed syllables?",
+   "choices": [
+    "trombone",
+    "pancake",
+    "picnic",
+    "bedtime"
+   ],
+   "correctIndex": 2,
+   "explanation": "pic-nic: both parts end in a consonant with a short vowel.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-17",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “muffin” into syllables?",
+   "choices": [
+    "mu-ffin",
+    "muff-in",
+    "m-uffin",
+    "muf-fin"
+   ],
+   "correctIndex": 3,
+   "explanation": "muf-fin. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-18",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “rabbit” into syllables?",
+   "choices": [
+    "rab-bit",
+    "ra-bbit",
+    "rabb-it",
+    "r-abbit"
+   ],
+   "correctIndex": 0,
+   "explanation": "rab-bit. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-19",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “pancake” into syllables?",
+   "choices": [
+    "pa-ncake",
+    "pan-cake",
+    "panc-ake",
+    "pancak-e"
+   ],
+   "correctIndex": 1,
+   "explanation": "pan-cake. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-20",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “kitten” into syllables?",
+   "choices": [
+    "ki-tten",
+    "kitt-en",
+    "kit-ten",
+    "k-itten"
+   ],
+   "correctIndex": 2,
+   "explanation": "kit-ten. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-21",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “bedtime” into syllables?",
+   "choices": [
+    "be-dtime",
+    "bedt-ime",
+    "bedti-me",
+    "bed-time"
+   ],
+   "correctIndex": 3,
+   "explanation": "bed-time. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-22",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “insect” into syllables?",
+   "choices": [
+    "in-sect",
+    "i-nsect",
+    "ins-ect",
+    "inse-ct"
+   ],
+   "correctIndex": 0,
+   "explanation": "in-sect. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-13",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "contest",
+    "invite",
+    "until",
+    "trumpet"
+   ],
+   "correctIndex": 1,
+   "explanation": "in-vite: “vite” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": "2026-09-25",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 2 Unit 2 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-14",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "problem",
+    "goblin",
+    "explode",
+    "insect"
+   ],
+   "correctIndex": 2,
+   "explanation": "ex-plode: “plode” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": "2026-09-25",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 2 Unit 2 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-15",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has only closed syllables?",
+   "choices": [
+    "explode",
+    "reptile",
+    "costume",
+    "contest"
+   ],
+   "correctIndex": 3,
+   "explanation": "con-test: both parts end in a consonant with a short vowel.",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": "2026-09-25",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; grade 2 Unit 2 per PL slide table",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-16",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a vowel team?",
+   "choices": [
+    "teapot",
+    "trumpet",
+    "invite",
+    "contest"
+   ],
+   "correctIndex": 0,
+   "explanation": "tea-pot: “ea” is two vowels making one sound.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; grade 2 Unit 3 per PL slide table",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-17",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a vowel team?",
+   "choices": [
+    "until",
+    "seaweed",
+    "explode",
+    "problem"
+   ],
+   "correctIndex": 1,
+   "explanation": "sea-weed: “ea” and “ee” are vowel teams.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; grade 2 Unit 3 per PL slide table",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-18",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a vowel team?",
+   "choices": [
+    "dentist",
+    "costume",
+    "raincoat",
+    "goblin"
+   ],
+   "correctIndex": 2,
+   "explanation": "rain-coat: “ai” and “oa” are vowel teams.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; grade 2 Unit 3 per PL slide table",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week. Wrong answers use only syllable types this grade has been taught."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-19",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “contest” into syllables?",
+   "choices": [
+    "co-ntest",
+    "cont-est",
+    "conte-st",
+    "con-test"
+   ],
+   "correctIndex": 3,
+   "explanation": "con-test. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-20",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “until” into syllables?",
+   "choices": [
+    "un-til",
+    "u-ntil",
+    "unt-il",
+    "unti-l"
+   ],
+   "correctIndex": 0,
+   "explanation": "un-til. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-21",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “reptile” into syllables?",
+   "choices": [
+    "re-ptile",
+    "rep-tile",
+    "rept-ile",
+    "reptil-e"
+   ],
+   "correctIndex": 1,
+   "explanation": "rep-tile. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-22",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “invite” into syllables?",
+   "choices": [
+    "i-nvite",
+    "inv-ite",
+    "in-vite",
+    "invit-e"
+   ],
+   "correctIndex": 2,
+   "explanation": "in-vite. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-23",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “oatmeal” into syllables?",
+   "choices": [
+    "o-atmeal",
+    "oa-tmeal",
+    "oatm-eal",
+    "oat-meal"
+   ],
+   "correctIndex": 3,
+   "explanation": "oat-meal. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-24",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “seaweed” into syllables?",
+   "choices": [
+    "sea-weed",
+    "se-aweed",
+    "seaw-eed",
+    "seawe-ed"
+   ],
+   "correctIndex": 0,
+   "explanation": "sea-weed. 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "1 Consonant between the vowels",
+    "quote": "When a word has 1 consonant in between the vowels, draw a line before the consonant."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24 that 1st and 2nd graders split words. Dated to the PL week. Split keeps blends and digraphs together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
  }
 ]
