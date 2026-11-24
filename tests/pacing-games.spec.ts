@@ -102,10 +102,10 @@ test('Four Corners content choice splits Current and Review; Math stays excluded
     const current = eligible(grade, mix, 'current', '2026-09-20'), review = eligible(grade, mix, 'review', '2026-09-20'), both = eligible(grade, mix, 'mixed', '2026-09-20');
     expect(current.length + review.length).toBe(both.length);
     expect(both.some(q => q.subject === 'Math')).toBe(false);
-    // Oct 18 falls between the Sept 13 bank and the October batch. Only Kindergarten's whole-year
-    // sight-word list (weeks of Sept 21 and 28) is Current then.
-    expect(eligible(grade, mix, 'current', '2026-10-18').filter(q => q.packId !== 'classthread-paced-2026-27-k-sight-words')).toEqual([]);
-    if (grade !== 'K') expect(eligible(grade, mix, 'current', '2026-10-18')).toEqual([]);
+    // Oct 18 falls between the Sept 13 bank and the October batch. Only the whole-year topic lists are Current
+    // then: Kindergarten sight words (weeks of Sept 21 and 28) and Grade 2 decoding (Sept 25).
+    expect(eligible(grade, mix, 'current', '2026-10-18').filter(q => !q.topic)).toEqual([]);
+    if (!['K', '2'].includes(grade)) expect(eligible(grade, mix, 'current', '2026-10-18')).toEqual([]);
   }
 });
 

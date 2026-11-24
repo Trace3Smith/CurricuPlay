@@ -1,12 +1,28 @@
 # CurricuPlay (ClassThread) — handoff to Claude Code
 
-Last updated November 24, 2026, for the spoken sight-word Preview (not yet released); before that, November 16, when the Nov 16 paced-content review was released. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
+Last updated November 24, 2026: spoken sight words released; Topic setting and decoding batch on Preview. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
 
 **Release flow (applies to every change):** work on a feature branch, push it for a GitHub/Vercel Preview, let Trace check the Preview, then fast-forward `main`. **A merge to `main` is a production release.** Never merge, force-push, or promote to production without Trace's explicit approval for that specific change. Approval for one release does not carry over to the next. Do not change other games' behavior, existing storage keys, security settings, or anything in FantasyEdge or Sideline Creator unless asked.
 
 Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The Quick Check, State Lingo Bingo and paced content batch sections come first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
 
-## Spoken sight words in Four Corners (branch `four-corners-spoken-target`, Preview Nov 24, 2026; not on main yet)
+## Topic setting and decoding batch (branch `topic-setting-decoding`, Preview Nov 24, 2026; not on main yet)
+
+From bundle `classthread-batch-2026-11-24-decoding.json`. It replaces the Nov 20 bundle's `-dc-` drafts, which were never applied.
+
+- **Topic** is a pregame setting in Four Corners (step 3) and Quick Check (after Grade): **All** (default, the usual game), **Sight Words** and **Decoding**.
+  - A topic button shows only if the grade has items with that topic on any date (`gradeTopics()` in `four-corners/engine.ts`): Kindergarten gets Sight Words, grades 1–5 get Decoding.
+  - A topic game plays only items with that `topic`, still paced, and Current/Review still apply. In Four Corners the subject Mix buttons are disabled while a topic is chosen, because topics are all Reading / ELA. Quick Check leaves out Jeopardy questions, which have no topic.
+  - The choice is remembered with the other settings (`topic` in both saves). Older saves without it mean All. If the remembered topic isn't offered for a newly chosen grade, the setting falls back to All.
+  - Four Corners now shows the short-pool message beside Start instead of as an extra row, so the setup still fits one screen.
+  - When a Quick Check topic runs out and starts over, only that topic's questions are cleared from the grade's history of used questions.
+- **Batch `content/paced/2026-27-decoding/`:** 52 items, all approved, none held. Topic `decoding`. Counts: Grade 1 10, Grade 2 12, Grades 3–5 10 each. Sources are the three PL snapshots in `content/sources/pl/`.
+  - The prompts repeat ("Which word has a vowel team?" ×4). So topic items without a spoken word are named by item id (`fc-paced-2026-27-decoding-1-dc-1`), and the duplicate-prompt check treats a topic item as its prompt plus its choices. Items without a topic must still have unique prompts.
+  - 3-dc-5, 4-dc-5 and 5-dc-5 explanations say "a r-controlled" (approved as written).
+  - Grade 2's Sept 25 items are Current on Oct 18, so `pacing-games.spec` now expects only topic items to be Current then (Kindergarten and Grade 2).
+- Tests: `tests/topic-setting.spec.ts`.
+
+## Spoken sight words in Four Corners (released Nov 24, 2026)
 
 From bundle `classthread-batch-2026-11-20-sightwords-decoding.json`. Trace checks the Preview on the Smart Board before it is merged.
 

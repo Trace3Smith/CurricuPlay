@@ -1,0 +1,2138 @@
+[
+ {
+  "id": "1-dc-1",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "cupcake",
+    "napkin",
+    "sunset",
+    "muffin"
+   ],
+   "correctIndex": 0,
+   "explanation": "cup-cake: “cake” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-2",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "rabbit",
+    "inside",
+    "kitten",
+    "basket"
+   ],
+   "correctIndex": 1,
+   "explanation": "in-side: “side” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 1 Unit 3 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-3",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “napkin” into syllables?",
+   "choices": [
+    "na-pkin",
+    "napk-in",
+    "nap-kin",
+    "n-apkin"
+   ],
+   "correctIndex": 2,
+   "explanation": "nap-kin. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24: 1st and 2nd graders split words. Dated to the PL week (Fri Nov 20)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-4",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “sunset” into syllables?",
+   "choices": [
+    "su-nset",
+    "suns-et",
+    "sunse-t",
+    "sun-set"
+   ],
+   "correctIndex": 3,
+   "explanation": "sun-set. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24: 1st and 2nd graders split words. Dated to the PL week (Fri Nov 20)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-5",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a vowel team?",
+   "choices": [
+    "rainbow",
+    "cupcake",
+    "sunset",
+    "inside"
+   ],
+   "correctIndex": 0,
+   "explanation": "rain-bow: “ai” is two vowels making one sound.",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": "2027-01-15",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; grade 1 Unit 4 per PL slide table",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-6",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a vowel team?",
+   "choices": [
+    "napkin",
+    "mailbox",
+    "bedtime",
+    "kitten"
+   ],
+   "correctIndex": 1,
+   "explanation": "mail-box: “ai” is two vowels making one sound.",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": "2027-01-15",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; grade 1 Unit 4 per PL slide table",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-7",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has an r-controlled syllable?",
+   "choices": [
+    "rainbow",
+    "pancake",
+    "garden",
+    "muffin"
+   ],
+   "correctIndex": 2,
+   "explanation": "gar-den: the r changes the a sound in “gar.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": "2027-03-05",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "r-controlled syllable; grade 1 Unit 5 per PL slide table",
+    "quote": "r controlled: at least 1 vowel followed by r; ar, er, ir, or, ur (star)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-8",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has an r-controlled syllable?",
+   "choices": [
+    "mailbox",
+    "inside",
+    "basket",
+    "popcorn"
+   ],
+   "correctIndex": 3,
+   "explanation": "pop-corn: the r changes the o sound in “corn.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": "2027-03-05",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "r-controlled syllable; grade 1 Unit 5 per PL slide table",
+    "quote": "r controlled: at least 1 vowel followed by r; ar, er, ir, or, ur (star)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-9",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-04-12",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-04-16",
+  "review": "2027-05-16",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word ends in a consonant-le syllable?",
+   "choices": [
+    "puzzle",
+    "garden",
+    "raincoat",
+    "cupcake"
+   ],
+   "correctIndex": 0,
+   "explanation": "puz-zle ends in a consonant and -le.",
+   "standard": null,
+   "weekOf": "2027-04-12",
+   "taughtOn": "2027-04-16",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "consonant-le syllable; grade 1 Unit 6 per PL slide table",
+    "quote": "consonant -le: ends with a consonant and -le (turtle)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "1-dc-10",
+  "grade": "1",
+  "game": "fourCorners",
+  "week": "2027-04-12",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-04-16",
+  "review": "2027-05-16",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word ends in a consonant-le syllable?",
+   "choices": [
+    "corner",
+    "candle",
+    "rainbow",
+    "napkin"
+   ],
+   "correctIndex": 1,
+   "explanation": "can-dle ends in a consonant and -le.",
+   "standard": null,
+   "weekOf": "2027-04-12",
+   "taughtOn": "2027-04-16",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "consonant-le syllable; grade 1 Unit 6 per PL slide table",
+    "quote": "consonant -le: ends with a consonant and -le (turtle)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-1",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a silent e syllable?",
+   "choices": [
+    "dentist",
+    "problem",
+    "reptile",
+    "trumpet"
+   ],
+   "correctIndex": 2,
+   "explanation": "rep-tile: “tile” ends with a silent e.",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": "2026-09-25",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; grade 2 Unit 2 per PL slide table",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-2",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has only closed syllables?",
+   "choices": [
+    "cupcake",
+    "invite",
+    "costume",
+    "dentist"
+   ],
+   "correctIndex": 3,
+   "explanation": "den-tist: both parts end in a consonant with a short vowel.",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": "2026-09-25",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; grade 2 Unit 2 per PL slide table",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-3",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a vowel team?",
+   "choices": [
+    "peanut",
+    "contest",
+    "explode",
+    "goblin"
+   ],
+   "correctIndex": 0,
+   "explanation": "pea-nut: “ea” is two vowels making one sound.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; grade 2 Unit 3 per PL slide table",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-4",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-09",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-13",
+  "review": "2026-12-13",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has a vowel team?",
+   "choices": [
+    "reptile",
+    "oatmeal",
+    "until",
+    "invite"
+   ],
+   "correctIndex": 1,
+   "explanation": "oat-meal: “oa” and “ea” are vowel teams.",
+   "standard": null,
+   "weekOf": "2026-11-09",
+   "taughtOn": "2026-11-13",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; grade 2 Unit 3 per PL slide table",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-5",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “dentist” into syllables?",
+   "choices": [
+    "de-ntist",
+    "dent-ist",
+    "den-tist",
+    "dentis-t"
+   ],
+   "correctIndex": 2,
+   "explanation": "den-tist. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Trace confirmed Nov 24: 1st and 2nd graders split words. Dated to the PL week (Fri Nov 20)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-6",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word starts with an open syllable?",
+   "choices": [
+    "rabbit",
+    "mailbox",
+    "cupcake",
+    "robot"
+   ],
+   "correctIndex": 3,
+   "explanation": "ro-bot: “ro” ends with a vowel that says its name.",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": "2027-01-15",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "open syllable; grade 2 Unit 4 per PL slide table",
+    "quote": "open: ends with a vowel, vowel has long sound (go)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-7",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word starts with an open syllable?",
+   "choices": [
+    "music",
+    "problem",
+    "oatmeal",
+    "invite"
+   ],
+   "correctIndex": 0,
+   "explanation": "mu-sic: “mu” ends with a vowel that says its name.",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": "2027-01-15",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "open syllable; grade 2 Unit 4 per PL slide table",
+    "quote": "open: ends with a vowel, vowel has long sound (go)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-8",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "How do you split “robot” into syllables?",
+   "choices": [
+    "rob-ot",
+    "ro-bot",
+    "r-obot",
+    "robo-t"
+   ],
+   "correctIndex": 1,
+   "explanation": "ro-bot. 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": "2027-01-15",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "1 Consonant between the vowels",
+    "quote": "When a word has 1 consonant in between the vowels, draw a line before the consonant."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5.",
+   "Open syllables are Grade 2 Unit 4, so this unlocks with them (Jan 15)."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-9",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has an r-controlled syllable?",
+   "choices": [
+    "peanut",
+    "robot",
+    "harvest",
+    "costume"
+   ],
+   "correctIndex": 2,
+   "explanation": "har-vest: the r changes the a sound in “har.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": "2027-03-05",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "r-controlled syllable; grade 2 Unit 5 per PL slide table",
+    "quote": "r controlled: at least 1 vowel followed by r; ar, er, ir, or, ur (star)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-10",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word has an r-controlled syllable?",
+   "choices": [
+    "pilot",
+    "teacup",
+    "explode",
+    "thunder"
+   ],
+   "correctIndex": 3,
+   "explanation": "thun-der: the r changes the e sound in “der.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": "2027-03-05",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "r-controlled syllable; grade 2 Unit 5 per PL slide table",
+    "quote": "r controlled: at least 1 vowel followed by r; ar, er, ir, or, ur (star)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-11",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-04-12",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-04-16",
+  "review": "2027-05-16",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word ends in a consonant-le syllable?",
+   "choices": [
+    "tumble",
+    "morning",
+    "student",
+    "rainbow"
+   ],
+   "correctIndex": 0,
+   "explanation": "tum-ble ends in a consonant and -le.",
+   "standard": null,
+   "weekOf": "2027-04-12",
+   "taughtOn": "2027-04-16",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "consonant-le syllable; grade 2 Unit 6 per PL slide table",
+    "quote": "consonant -le: ends with a consonant and -le (turtle)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "2-dc-12",
+  "grade": "2",
+  "game": "fourCorners",
+  "week": "2027-04-12",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2027-04-16",
+  "review": "2027-05-16",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 2,
+   "topic": "decoding",
+   "question": "Which word ends in a consonant-le syllable?",
+   "choices": [
+    "perfect",
+    "simple",
+    "music",
+    "oatmeal"
+   ],
+   "correctIndex": 1,
+   "explanation": "sim-ple ends in a consonant and -le.",
+   "standard": null,
+   "weekOf": "2027-04-12",
+   "taughtOn": "2027-04-16",
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "consonant-le syllable; grade 2 Unit 6 per PL slide table",
+    "quote": "consonant -le: ends with a consonant and -le (turtle)"
+   }
+  },
+  "checks": [
+   "Date = Friday of the unit's first week (pacing-guide unit start + PL slide table). Check against the grade's lesson plan."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-1",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “pumpkin”?",
+   "choices": [
+    "Vowel team",
+    "R-controlled",
+    "Closed",
+    "Consonant-le"
+   ],
+   "correctIndex": 2,
+   "explanation": "pump-kin: “pump” is a closed syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; review for grades 3-5",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-2",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “complete”?",
+   "choices": [
+    "R-controlled",
+    "Consonant-le",
+    "Closed",
+    "Silent e"
+   ],
+   "correctIndex": 3,
+   "explanation": "com-plete: “plete” is a silent e syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; review for grades 3-5",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-3",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “tiger”?",
+   "choices": [
+    "Open",
+    "Consonant-le",
+    "Closed",
+    "Silent e"
+   ],
+   "correctIndex": 0,
+   "explanation": "ti-ger: “ti” is an open syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "open syllable; review for grades 3-5",
+    "quote": "open: ends with a vowel, vowel has long sound (go)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-4",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “explain”?",
+   "choices": [
+    "Closed",
+    "Vowel team",
+    "Open",
+    "Silent e"
+   ],
+   "correctIndex": 1,
+   "explanation": "ex-plain: “plain” is a vowel team syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; review for grades 3-5",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-5",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “garden”?",
+   "choices": [
+    "Open",
+    "Silent e",
+    "R-controlled",
+    "Vowel team"
+   ],
+   "correctIndex": 2,
+   "explanation": "gar-den: “gar” is a r-controlled syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "r-controlled syllable; review for grades 3-5",
+    "quote": "r controlled: at least 1 vowel followed by r; ar, er, ir, or, ur (star)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-6",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “bubble”?",
+   "choices": [
+    "Silent e",
+    "Vowel team",
+    "R-controlled",
+    "Consonant-le"
+   ],
+   "correctIndex": 3,
+   "explanation": "bub-ble: “ble” is a consonant-le syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "consonant-le syllable; review for grades 3-5",
+    "quote": "consonant -le: ends with a consonant and -le (turtle)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-1",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “volcano”?",
+   "choices": [
+    "Closed",
+    "R-controlled",
+    "Consonant-le",
+    "Open"
+   ],
+   "correctIndex": 0,
+   "explanation": "vol-ca-no: “vol” is a closed syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; review for grades 3-5",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-2",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “costume”?",
+   "choices": [
+    "Consonant-le",
+    "Silent e",
+    "Closed",
+    "Open"
+   ],
+   "correctIndex": 1,
+   "explanation": "cos-tume: “tume” is a silent e syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; review for grades 3-5",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-3",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “solar”?",
+   "choices": [
+    "Closed",
+    "Silent e",
+    "Open",
+    "Vowel team"
+   ],
+   "correctIndex": 2,
+   "explanation": "so-lar: “so” is an open syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "open syllable; review for grades 3-5",
+    "quote": "open: ends with a vowel, vowel has long sound (go)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-4",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “sixteen”?",
+   "choices": [
+    "Open",
+    "Silent e",
+    "R-controlled",
+    "Vowel team"
+   ],
+   "correctIndex": 3,
+   "explanation": "six-teen: “teen” is a vowel team syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; review for grades 3-5",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-5",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “harvest”?",
+   "choices": [
+    "R-controlled",
+    "Silent e",
+    "Vowel team",
+    "Consonant-le"
+   ],
+   "correctIndex": 0,
+   "explanation": "har-vest: “har” is a r-controlled syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "r-controlled syllable; review for grades 3-5",
+    "quote": "r controlled: at least 1 vowel followed by r; ar, er, ir, or, ur (star)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-6",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “sparkle”?",
+   "choices": [
+    "Vowel team",
+    "Consonant-le",
+    "R-controlled",
+    "Closed"
+   ],
+   "correctIndex": 1,
+   "explanation": "spar-kle: “kle” is a consonant-le syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "consonant-le syllable; review for grades 3-5",
+    "quote": "consonant -le: ends with a consonant and -le (turtle)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-1",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “basketball”?",
+   "choices": [
+    "Consonant-le",
+    "Open",
+    "Closed",
+    "Silent e"
+   ],
+   "correctIndex": 2,
+   "explanation": "bas-ket-ball: “bas” is a closed syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "closed syllable; review for grades 3-5",
+    "quote": "closed: ends in a consonant, short vowel sound (cat)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-2",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “celebrate”?",
+   "choices": [
+    "Closed",
+    "Open",
+    "Vowel team",
+    "Silent e"
+   ],
+   "correctIndex": 3,
+   "explanation": "cel-e-brate: “brate” is a silent e syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "silent e syllable; review for grades 3-5",
+    "quote": "magic e: ends with a silent e, long vowel sound, 1 consonant between the vowel and silent e (cake)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-3",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “dinosaur”?",
+   "choices": [
+    "Open",
+    "Silent e",
+    "Vowel team",
+    "R-controlled"
+   ],
+   "correctIndex": 0,
+   "explanation": "di-no-saur: “di” is an open syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "open syllable; review for grades 3-5",
+    "quote": "open: ends with a vowel, vowel has long sound (go)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-4",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “mermaid”?",
+   "choices": [
+    "Silent e",
+    "Vowel team",
+    "R-controlled",
+    "Consonant-le"
+   ],
+   "correctIndex": 1,
+   "explanation": "mer-maid: “maid” is a vowel team syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "vowel team syllable; review for grades 3-5",
+    "quote": "vowel team: 2 vowels making 1 sound (boat)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-5",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the first part of “orbit”?",
+   "choices": [
+    "Vowel team",
+    "Consonant-le",
+    "R-controlled",
+    "Closed"
+   ],
+   "correctIndex": 2,
+   "explanation": "or-bit: “or” is a r-controlled syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "r-controlled syllable; review for grades 3-5",
+    "quote": "r controlled: at least 1 vowel followed by r; ar, er, ir, or, ur (star)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-6",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "What kind of syllable is the last part of “obstacle”?",
+   "choices": [
+    "R-controlled",
+    "Closed",
+    "Open",
+    "Consonant-le"
+   ],
+   "correctIndex": 3,
+   "explanation": "ob-sta-cle: “cle” is a consonant-le syllable.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "6 Syllable Types handout (Thrive Literacy Corner), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1gFbE1cmdT684RxZ_yCZ8P_ZW-if-wx79/view",
+    "locator": "consonant-le syllable; review for grades 3-5",
+    "quote": "consonant -le: ends with a consonant and -le (turtle)"
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-7",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “hundred” into syllables?",
+   "choices": [
+    "hun-dred",
+    "hund-red",
+    "hu-ndred",
+    "hundr-ed"
+   ],
+   "correctIndex": 0,
+   "explanation": "hun-dred. 3 consonants between vowels: line between them, keep blends together.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "More Than 2 Consonants between the Vowels",
+    "quote": "When a word has more than 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-8",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “monster” into syllables?",
+   "choices": [
+    "mons-ter",
+    "mon-ster",
+    "mo-nster",
+    "monst-er"
+   ],
+   "correctIndex": 1,
+   "explanation": "mon-ster. 3 consonants between vowels: line between them, keep blends together.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "More Than 2 Consonants between the Vowels",
+    "quote": "When a word has more than 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5.",
+   "Keeps the st blend together, as the handout says."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-9",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “pilot” into syllables?",
+   "choices": [
+    "pil-ot",
+    "p-ilot",
+    "pi-lot",
+    "pilo-t"
+   ],
+   "correctIndex": 2,
+   "explanation": "pi-lot. 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "1 Consonant between the vowels",
+    "quote": "When a word has 1 consonant in between the vowels, draw a line before the consonant."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "3-dc-10",
+  "grade": "3",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “December” into syllables?",
+   "choices": [
+    "Dec-em-ber",
+    "D-ecem-ber",
+    "De-ce-mber",
+    "De-cem-ber"
+   ],
+   "correctIndex": 3,
+   "explanation": "De-cem-ber. 1 consonant between vowels: line before it; 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "1 Consonant between the vowels",
+    "quote": "When a word has 1 consonant in between the vowels, draw a line before the consonant."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-7",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “tornado” into syllables?",
+   "choices": [
+    "tor-na-do",
+    "torn-ad-o",
+    "to-rna-do",
+    "tor-nad-o"
+   ],
+   "correctIndex": 0,
+   "explanation": "tor-na-do. 2 consonants between vowels: line between them; 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-8",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “electric” into syllables?",
+   "choices": [
+    "el-ect-ric",
+    "e-lec-tric",
+    "e-lect-ric",
+    "elec-tr-ic"
+   ],
+   "correctIndex": 1,
+   "explanation": "e-lec-tric. 3 consonants between vowels: line between them, keep blends together; 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "More Than 2 Consonants between the Vowels",
+    "quote": "When a word has more than 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5.",
+   "Keeps the tr blend together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-9",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “astronaut” into syllables?",
+   "choices": [
+    "ast-ro-naut",
+    "a-stron-aut",
+    "as-tro-naut",
+    "astr-on-aut"
+   ],
+   "correctIndex": 2,
+   "explanation": "as-tro-naut. 3 consonants between vowels: line between them, keep blends together; 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "More Than 2 Consonants between the Vowels",
+    "quote": "When a word has more than 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5.",
+   "Keeps the tr blend together."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "4-dc-10",
+  "grade": "4",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “hamburger” into syllables?",
+   "choices": [
+    "hamb-ur-ger",
+    "ha-mbur-ger",
+    "ham-burg-er",
+    "ham-bur-ger"
+   ],
+   "correctIndex": 3,
+   "explanation": "ham-bur-ger. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-7",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “independent” into syllables?",
+   "choices": [
+    "in-de-pen-dent",
+    "ind-ep-end-ent",
+    "in-dep-en-dent",
+    "i-nde-pen-dent"
+   ],
+   "correctIndex": 0,
+   "explanation": "in-de-pen-dent. 2 consonants between vowels: line between them; 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-8",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “September” into syllables?",
+   "choices": [
+    "Sept-em-ber",
+    "Sep-tem-ber",
+    "Se-ptem-ber",
+    "Sep-te-mber"
+   ],
+   "correctIndex": 1,
+   "explanation": "Sep-tem-ber. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-9",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “appetite” into syllables?",
+   "choices": [
+    "app-et-ite",
+    "a-ppe-tite",
+    "ap-pe-tite",
+    "ap-pet-ite"
+   ],
+   "correctIndex": 2,
+   "explanation": "ap-pe-tite. 2 consonants between vowels: line between them; 1 consonant between vowels: line before it.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "5-dc-10",
+  "grade": "5",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "decoding",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "needsLook": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 3,
+   "topic": "decoding",
+   "question": "How do you split “unhappy” into syllables?",
+   "choices": [
+    "unh-ap-py",
+    "u-nhap-py",
+    "un-happ-y",
+    "un-hap-py"
+   ],
+   "correctIndex": 3,
+   "explanation": "un-hap-py. 2 consonants between vowels: line between them.",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": "2026-11-20",
+   "teacherRead": false,
+   "evidence": {
+    "sourceTitle": "Decoding Strategies handout (LETRS, Moats & Tolman), shared at Sweetwater PL Nov 2026",
+    "sourceUrl": "https://drive.google.com/file/d/1eEuoQey7t5N58Uv3TSXsHu4Z7BunFIvd/view",
+    "locator": "2 Consonants between the vowels",
+    "quote": "When a word has 2 consonants in between the vowels, draw a line between the consonants."
+   }
+  },
+  "checks": [
+   "Prior-grade review for grades 3-5."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ }
+]

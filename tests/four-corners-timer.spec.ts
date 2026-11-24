@@ -1,5 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import { secondsRemaining } from '../src/games/four-corners/movementTimer';
+import { bank } from '../src/games/four-corners/engine';
+import { SPOKEN_TIMER } from '../src/games/four-corners/spoken';
 const key = 'curricuplay.four-corners.v1';
 const timerKey = 'curricuplay.four-corners.timer.v1';
 const countdown = (page: Page) => page.getByRole('timer', { name: 'Movement countdown' });
@@ -35,7 +37,9 @@ test('Manual start, TIME!, and Next reset never reveal or collect responses auto
   await page.screenshot({ path: 'test-results/four-corners-timer-countdown.png' });
   await page.clock.runFor(1000); await expect(countdown(page)).toHaveText('2');
   await page.clock.runFor(1000); await expect(countdown(page)).toHaveText('1');
-  await page.clock.runFor(1000); await expect(countdown(page)).toHaveText('TIME!'); await fits(page);
+  // A Kindergarten sight-word round (live from Aug 24) prints no sight word, so its timer says STOP! instead of TIME!.
+  const spoken = !!bank.find(q => q.id === initial.questionIds[0])!.spokenTarget;
+  await page.clock.runFor(1000); await expect(countdown(page)).toHaveText(spoken ? SPOKEN_TIMER.count : 'TIME!'); await fits(page);
   await page.screenshot({ path: 'test-results/four-corners-timer-time.png' });
   expect(await state(page)).toEqual(initial);
   await expect(page.locator('.fc-correct')).toHaveCount(0);
@@ -71,13 +75,14 @@ test('A running timer resets on refresh; expired state restores TIME without cha
   await page.getByRole('button', { name: 'Start 10 Seconds', exact: true }).click();
   await page.clock.runFor(4000); await expect(countdown(page)).toHaveText('6');
   const initial = await state(page);
+  const spoken = !!bank.find(q => q.id === initial.questionIds[initial.currentRound])!.spokenTarget; // sight-word rounds use word-free timer text
   await page.reload(); await expect(countdown(page)).toHaveText('10');
-  await expect(page.getByText('Timer reset after returning. Start when ready.')).toBeVisible();
+  await expect(page.getByText(spoken ? SPOKEN_TIMER.reset : 'Timer reset after returning. Start when ready.')).toBeVisible();
   await page.clock.runFor(20000); await expect(countdown(page)).toHaveText('10');
   expect(await state(page)).toEqual(initial);
   await page.getByRole('button', { name: 'Start 10 Seconds', exact: true }).click();
-  await page.clock.runFor(10000); await expect(countdown(page)).toHaveText('TIME!');
-  await page.reload(); await expect(countdown(page)).toHaveText('TIME!'); expect(await state(page)).toEqual(initial);
+  await page.clock.runFor(10000); await expect(countdown(page)).toHaveText(spoken ? SPOKEN_TIMER.count : 'TIME!');
+  await page.reload(); await expect(countdown(page)).toHaveText(spoken ? SPOKEN_TIMER.count : 'TIME!'); expect(await state(page)).toEqual(initial);
   await page.getByRole('button', { name: 'Restart 10 Seconds', exact: true }).click();
   await expect(countdown(page)).toHaveText('10');
   await page.getByRole('button', { name: 'Cancel Timer', exact: true }).click();
