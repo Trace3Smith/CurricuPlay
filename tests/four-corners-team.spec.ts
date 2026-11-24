@@ -2,6 +2,7 @@ import { test, expect, type Page } from '@playwright/test';
 import pack from '../src/data/four-corners.json' with { type: 'json' };
 import pacedCorners from '../src/data/paced-four-corners.json' with { type: 'json' };
 import { questionTaughtDate } from '../src/services/questionEngine';
+import { spokenPrompt } from '../src/games/four-corners/engine';
 // Games run on Sept 17. Paced batches taught by then join the base pack (the Kindergarten sight-word list starts Aug 24).
 const live = [...pack, ...(pacedCorners as unknown as typeof pack).filter(q => questionTaughtDate(q as never)! <= '2026-09-17')];
 const key = 'curricuplay.four-corners.v1';
@@ -62,7 +63,7 @@ test('Team scoring toggles, clears, recovers, and commits only on Next; live vie
   expect(s.session.responses.map((r: any) => r.correct)).toEqual([true, false, false, false, false, true]);
   expect(s.session.responses.map((r: any) => r.pointsAwarded)).toEqual([1, 0, 0, 0, 0, 1]);
   const q = live.find(q => q.id === s.questionIds[0])!;
-  expect(s.session.questions[0]).toMatchObject({ questionId: q.id, subject: q.subject, prompt: q.question });
+  expect(s.session.questions[0]).toMatchObject({ questionId: q.id, subject: q.subject, prompt: spokenPrompt(q as never) }); // spoken rounds name the word
   expect(s.session.questions[0].standards).toEqual(q.standard ? [q.standard] : undefined);
   await page.reload(); expect((await state(page)).session).toEqual(s.session);
   await page.getByRole('button', { name: 'Assessment', exact: true }).click();

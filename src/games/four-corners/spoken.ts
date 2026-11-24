@@ -4,13 +4,20 @@
  * must recognise the word they hear instead of matching letters on the screen.
  * scripts/validate-paced-batch.py repeats these labels; keep the two in step.
  */
-export const SPOKEN_BANNER = 'LISTEN: TEACHER SAYS THE WORD';
-export const SAY_WORD = 'Say the word';
+// Labels use no word from the Kindergarten sight-word list ("the", "to", "a"… are all on it).
+export const SPOKEN_BANNER = 'LISTEN!';
+export const SAY_WORD = 'Speak';
 export const SHOW_WORD = 'Show word';
 export const HIDE_WORD = 'Hide word';
 /** Four Corners' hint line on spoken rounds (the usual "Choose A, B, C, or D…" prints "or" and "in"). */
 export const SPOKEN_HINT = 'Listen. Run. Reveal.';
-const screenLabels = [SPOKEN_BANNER, SAY_WORD, SHOW_WORD, HIDE_WORD, SPOKEN_HINT];
+/** Team Mode before Reveal (the usual line prints "the" and "to"). */
+export const SPOKEN_SCORING = 'Reveal answer. Mark correct teams.';
+/** Movement timer on spoken rounds (the usual text prints "to", "your", "at", "the", "when", "time"…). */
+export const SPOKEN_TIMER = { count: 'STOP!', running: 'MOVE!', expired: 'STOP!', idle: 'MOVEMENT TIMER', reset: 'Timer reset.', reveal: 'Teacher: reveal answer.', ready: 'Silent countdown.', unsaved: 'Timer save failed.' };
+/** Every label a spoken round can print outside the four choices (buttons such as Start / Cancel Timer / End Game too). */
+export const spokenScreenText = [SPOKEN_BANNER, SAY_WORD, SHOW_WORD, HIDE_WORD, SPOKEN_HINT, SPOKEN_SCORING, ...Object.values(SPOKEN_TIMER)];
+const screenLabels = spokenScreenText;
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 /** Whole word, ignoring case: "a" is in "Run to a word", not in "Listen". */

@@ -113,14 +113,339 @@
   "K-sw-108": "approve",
   "K-sw-109": "approve"
  },
- "edits": {},
- "held": {
-  "K-sw-1": "Target word appears in the on-screen prompt \"Listen! Run to the word your teacher says.\"; Trace chose to hold until reworded (Nov 24) (also in the LISTEN banner and the Say the word button)",
-  "K-sw-5": "Target word appears in the on-screen prompt \"Listen! Run to the word your teacher says.\"; Trace chose to hold until reworded (Nov 24)",
-  "K-sw-40": "Target word appears in the on-screen prompt \"Listen! Run to the word your teacher says.\"; Trace chose to hold until reworded (Nov 24)"
+ "edits": {
+  "K-sw-1": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-2": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-3": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-4": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-5": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-6": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-7": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-8": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-9": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-10": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-11": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-12": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-13": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-14": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-15": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-16": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-17": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-18": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-19": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-20": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-21": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-22": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-23": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-24": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-25": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-26": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-27": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-28": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-29": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-30": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-31": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-32": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-33": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-34": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-35": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-36": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-37": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-38": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-39": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-40": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-41": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-42": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-43": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-44": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-45": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-46": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-47": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-48": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-49": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-50": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-51": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-52": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-53": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-54": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-55": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-56": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-57": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-58": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-59": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-60": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-61": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-62": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-63": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-64": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-65": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-66": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-67": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-68": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-69": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-70": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-71": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-72": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-73": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-74": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-75": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-76": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-77": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-78": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-79": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-80": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-81": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-82": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-83": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-84": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-85": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-86": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-87": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-88": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-89": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-90": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-91": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-92": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-93": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-94": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-95": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-96": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-97": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-98": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-99": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-100": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-101": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-102": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-103": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-104": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-105": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-106": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-107": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-108": {
+   "question": "Listen. Run!"
+  },
+  "K-sw-109": {
+   "question": "Listen. Run!"
+  }
  },
+ "held": {},
  "notes": [
   "Whole-year Kindergarten sight-word list (Four Corners, spokenTarget rounds). Taught on the Friday of each listed week.",
-  "Decoding items (-dc-) from the same bundle are left out while Trace reworks them."
+  "Decoding items (-dc-) from the same bundle are left out while Trace reworks them.",
+  "Nov 24: Trace changed the prompt on all 109 to \"Listen. Run!\" (no sight words) and released K-sw-1, K-sw-5 and K-sw-40."
  ]
 }

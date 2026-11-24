@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { canSpeak, HIDE_WORD, SAY_WORD, SHOW_WORD, speakWord } from './spoken';
 
 /**
- * "Say the word" (when the browser can speak) and a small teacher-only "Show word" toggle.
+ * "Speak" says the word (when the browser can speak) and a small teacher-only "Show word" toggle.
  * The word starts hidden. Render with key={question id} so it hides again on the next question.
  */
 export default function SpokenWord({ word, className }: { word: string; className: string }) {

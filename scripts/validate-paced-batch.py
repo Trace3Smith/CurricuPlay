@@ -28,8 +28,8 @@ base_j, base_fc = read('src/data/tomorrow-pack.json'), read('src/data/four-corne
 sb = read('src/data/spelling-bee-pacing.json')
 evidence = {e['id']: e for e in read('content/spelling-bee/evidence.json')}
 
-# The labels a spoken-target round shows (src/games/four-corners/spoken.ts). A target word may not appear in any of them.
-SPOKEN_LABELS = ['LISTEN: TEACHER SAYS THE WORD', 'Say the word', 'Show word', 'Hide word', 'Listen. Run. Reveal.']
+# The labels a spoken-target round shows (spokenScreenText in src/games/four-corners/spoken.ts). A target word may not appear in any of them.
+SPOKEN_LABELS = ['Reveal answer. Mark correct teams.', 'STOP!', 'MOVE!', 'MOVEMENT TIMER', 'Timer reset.', 'Teacher: reveal answer.', 'Silent countdown.', 'Timer save failed.', 'LISTEN!', 'Speak', 'Show word', 'Hide word', 'Listen. Run. Reveal.']
 def has_word(text, word):
     return re.search(r"(^|[^\w'’])" + re.escape(word.strip()) + r"($|[^\w'’])", text, re.I) is not None
 def prompt_key(q):

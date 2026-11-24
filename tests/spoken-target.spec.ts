@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import { bank as cornerBank, beginGame, eligible, freshState as cornerFresh, STORAGE_KEY as CORNER_KEY, type CornerQuestion } from '../src/games/four-corners/engine';
-import { containsWord, spokenTargetOk, SPOKEN_BANNER, SAY_WORD, SHOW_WORD, HIDE_WORD } from '../src/games/four-corners/spoken';
+import { containsWord, spokenScreenText, spokenTargetOk, SPOKEN_BANNER, SAY_WORD, SHOW_WORD, HIDE_WORD, SPOKEN_TIMER } from '../src/games/four-corners/spoken';
 import { begin, freshState as quickFresh, isQuickState, pool, QUICK_CHECK_KEY } from '../src/games/quick-check/engine';
 import { questionStatus, questionTaughtDate } from '../src/services/questionEngine';
 import pacedCorners from '../src/data/paced-four-corners.json' with { type: 'json' };
@@ -33,15 +33,19 @@ async function speech(page: Page) {
 }
 const said = (page: Page) => page.evaluate(() => (window as unknown as { said: string[] }).said.filter(s => s !== '<cancel>'));
 
-test('Sight-word batch: 106 approved spoken rounds ship; the three with the word in the prompt are held', () => {
+test('Sight-word batch: all 109 approved spoken rounds ship with the prompt “Listen. Run!”', () => {
   expect(review).toHaveLength(109);
   expect(Object.values(approvals.decisions).every(d => d === 'approve')).toBe(true);
-  expect(Object.keys(approvals.held).sort()).toEqual(['K-sw-1', 'K-sw-40', 'K-sw-5']);
-  expect(shipped).toHaveLength(106);
+  expect(approvals.held).toEqual({});
+  expect(shipped).toHaveLength(109);
   expect(review.some(r => r.id.includes('-dc-'))).toBe(false); // decoding items are left out for now
   const ids = shipped.map(q => q.batchItemId);
-  for (const id of ['K-sw-1', 'K-sw-5', 'K-sw-40']) expect(ids).not.toContain(id);
-  expect(new Set(shipped.map(q => q.id)).size).toBe(106);
+  // Released Nov 24 once the prompt and labels no longer printed their words.
+  for (const [id, word] of [['K-sw-1', 'the'], ['K-sw-5', 'to'], ['K-sw-40', 'your']]) expect(shipped.find(q => q.batchItemId === id)!.spokenTarget).toBe(word);
+  expect(new Set(shipped.map(q => q.id)).size).toBe(109);
+  expect(shipped.every(q => q.question === 'Listen. Run!')).toBe(true);
+  // No word on the whole list (shipped or future) is printed in the shared prompt or any spoken-round label.
+  for (const word of taughtWeek.keys()) for (const text of ['Listen. Run!', ...spokenScreenText]) expect(containsWord(text, word), `${word} in ${text}`).toBe(false);
   for (const q of shipped) {
     expect(cornerBank.some(c => c.id === q.id)).toBe(true); // the game accepts it
     expect([q.grade, q.subject, q.topic]).toEqual(['K', 'Literacy', 'sight-words']);
@@ -73,7 +77,8 @@ test('spokenTarget rule: the word is the answer, appears once, and never in the 
   expect(spokenTargetOk({ ...ok, question: 'Run! IS it?' })).toBe(false); // any case
   expect(spokenTargetOk({ ...ok, question: 'This is it', spokenTarget: 'it', correctIndex: 2 })).toBe(false);
   expect(spokenTargetOk({ ...ok, question: 'This one', spokenTarget: 'is' })).toBe(true); // whole words only: "is" is not in "This"
-  expect(spokenTargetOk({ question: 'Listen!', choices: ['the', 'a', 'to', 'of'], correctIndex: 0, spokenTarget: 'the' })).toBe(false); // in the banner
+  expect(spokenTargetOk({ question: 'Listen!', choices: ['the', 'a', 'to', 'of'], correctIndex: 0, spokenTarget: 'the' })).toBe(true);
+  expect(spokenTargetOk({ question: 'Listen!', choices: ['listen', 'a', 'to', 'of'], correctIndex: 0, spokenTarget: 'listen' })).toBe(false); // in the banner
   expect(spokenTargetOk({ question: 'Listen!', choices: ['the', 'a', 'to', 'of'], correctIndex: 3, spokenTarget: 'of' })).toBe(true);
   // Quick Check refuses a saved spoken round that breaks the rule.
   const spoken = pool('K', FRIDAY).find(q => q.spokenTarget)!;
@@ -96,7 +101,7 @@ async function openCorners(page: Page, state: object) {
   await page.reload();
 }
 
-test('Four Corners spoken round: LISTEN banner, the word never printed outside the choices, Say the word, Show word hides on Next', async ({ page }) => {
+test('Four Corners spoken round: LISTEN banner, the word never printed outside the choices, Speak, Show word hides on Next', async ({ page }) => {
   await speech(page);
   const { spoken, state } = cornerGame('classic');
   const [first, second] = spoken;
@@ -154,7 +159,24 @@ for (const [width, height] of [[1920, 1080], [1536, 864], [1280, 720]]) test(`Fo
   expect(await page.locator('.fc-game h1, .fc-choice, .fc-controls button').evaluateAll(els => els.every(e => { const r = e.getBoundingClientRect(); return r.top >= 0 && r.bottom <= innerHeight && e.scrollHeight <= e.clientHeight + 1; }))).toBe(true);
 });
 
-test('Quick Check spoken round: LISTEN banner, Say the word instead of Read it to me, word hidden until Reveal, named in history', async ({ page }) => {
+test('Four Corners spoken round with the movement timer: no sight word printed while idle, running or stopped', async ({ page }) => {
+  const { state } = cornerGame('team', 6);
+  await page.clock.install({ time: new Date(`${FRIDAY}T12:00:00-05:00`) });
+  await page.goto('/games/four-corners');
+  await page.evaluate(([key, value]) => localStorage.setItem(key, value), [CORNER_KEY, JSON.stringify({ ...state, movementDuration: 10 })]);
+  await page.reload();
+  const timer = page.getByRole('region', { name: 'Movement timer' });
+  await expect(timer).toContainText(SPOKEN_TIMER.idle);
+  expect(printedTargets(await textOutside(page, '.fc-choice'))).toEqual([]);
+  await page.getByRole('button', { name: 'Start 10 Seconds' }).click();
+  await expect(timer).toContainText(SPOKEN_TIMER.running);
+  expect(printedTargets(await textOutside(page, '.fc-choice'))).toEqual([]);
+  await page.clock.runFor(11000);
+  await expect(timer).toContainText(SPOKEN_TIMER.reveal);
+  expect(printedTargets(await textOutside(page, '.fc-choice'))).toEqual([]);
+});
+
+test('Quick Check spoken round: LISTEN banner, Speak instead of Read it to me, word hidden until Reveal, named in history', async ({ page }) => {
   await speech(page);
   const available = pool('K', FRIDAY), spoken = available.filter(q => q.spokenTarget);
   expect(spoken.length).toBeGreaterThan(40);

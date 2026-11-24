@@ -9992,10 +9992,54 @@
   "batchItemId": "5-fc-13"
  },
  {
+  "id": "fc-paced-2026-27-k-sight-words-K-say-the",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Listen. Run!",
+  "answer": "the",
+  "choices": [
+   "the",
+   "and",
+   "to",
+   "a"
+  ],
+  "correctIndex": 0,
+  "explanation": "The word was “the.”",
+  "standard": null,
+  "session": "Row dated 8/24",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "topic": "sight-words",
+  "spokenTarget": "the",
+  "grade": "K",
+  "weekIntroduced": "2026-08-24",
+  "alignedWeeks": [
+   "2026-08-24"
+  ],
+  "source": "ClassThread paced content (2026-27-k-sight-words)",
+  "packId": "classthread-paced-2026-27-k-sight-words",
+  "packName": "ClassThread paced content (2026-27-k-sight-words)",
+  "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+  "evidence": {
+   "document": "k-sight-words-2026-27.json",
+   "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+   "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+   "section": "Row dated 8/24",
+   "quote": "[2026-08-24] the, of, and, a, to"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-27-k-sight-words review page (item K-sw-1).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-sw-1"
+ },
+ {
   "id": "fc-paced-2026-27-k-sight-words-K-say-of",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "of",
   "choices": [
    "to",
@@ -10039,7 +10083,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-and",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "and",
   "choices": [
    "of",
@@ -10083,7 +10127,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-a",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "a",
   "choices": [
    "the",
@@ -10124,10 +10168,54 @@
   "batchItemId": "K-sw-4"
  },
  {
+  "id": "fc-paced-2026-27-k-sight-words-K-say-to",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Listen. Run!",
+  "answer": "to",
+  "choices": [
+   "to",
+   "a",
+   "of",
+   "and"
+  ],
+  "correctIndex": 0,
+  "explanation": "The word was “to.”",
+  "standard": null,
+  "session": "Row dated 8/24",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "topic": "sight-words",
+  "spokenTarget": "to",
+  "grade": "K",
+  "weekIntroduced": "2026-08-24",
+  "alignedWeeks": [
+   "2026-08-24"
+  ],
+  "source": "ClassThread paced content (2026-27-k-sight-words)",
+  "packId": "classthread-paced-2026-27-k-sight-words",
+  "packName": "ClassThread paced content (2026-27-k-sight-words)",
+  "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+  "evidence": {
+   "document": "k-sight-words-2026-27.json",
+   "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+   "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+   "section": "Row dated 8/24",
+   "quote": "[2026-08-24] the, of, and, a, to"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-27-k-sight-words review page (item K-sw-5).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-sw-5"
+ },
+ {
   "id": "fc-paced-2026-27-k-sight-words-K-say-in",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "in",
   "choices": [
    "and",
@@ -10171,7 +10259,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-is",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "is",
   "choices": [
    "to",
@@ -10215,7 +10303,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-you",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "you",
   "choices": [
    "of",
@@ -10259,7 +10347,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-that",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "that",
   "choices": [
    "that",
@@ -10303,7 +10391,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-it",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "it",
   "choices": [
    "is",
@@ -10347,7 +10435,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-he",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "he",
   "choices": [
    "are",
@@ -10391,7 +10479,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-for",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "for",
   "choices": [
    "he",
@@ -10435,7 +10523,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-was",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "was",
   "choices": [
    "was",
@@ -10479,7 +10567,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-on",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "on",
   "choices": [
    "in",
@@ -10523,7 +10611,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-are",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "are",
   "choices": [
    "was",
@@ -10567,7 +10655,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-as",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "as",
   "choices": [
    "are",
@@ -10611,7 +10699,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-with",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "with",
   "choices": [
    "with",
@@ -10655,7 +10743,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-his",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "his",
   "choices": [
    "he",
@@ -10699,7 +10787,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-they",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "they",
   "choices": [
    "that",
@@ -10743,7 +10831,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-at",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "at",
   "choices": [
    "are",
@@ -10787,7 +10875,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-be",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "be",
   "choices": [
    "be",
@@ -10831,7 +10919,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-this",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "this",
   "choices": [
    "they",
@@ -10875,7 +10963,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-from",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "from",
   "choices": [
    "have",
@@ -10919,7 +11007,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-i",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "I",
   "choices": [
    "it",
@@ -10963,7 +11051,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-have",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "have",
   "choices": [
    "have",
@@ -11007,7 +11095,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-or",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "or",
   "choices": [
    "you",
@@ -11051,7 +11139,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-by",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "by",
   "choices": [
    "be",
@@ -11095,7 +11183,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-one",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "one",
   "choices": [
    "they",
@@ -11139,7 +11227,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-had",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "had",
   "choices": [
    "had",
@@ -11183,7 +11271,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-not",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "not",
   "choices": [
    "one",
@@ -11227,7 +11315,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-but",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "but",
   "choices": [
    "with",
@@ -11271,7 +11359,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-what",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "what",
   "choices": [
    "were",
@@ -11315,7 +11403,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-all",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "all",
   "choices": [
    "all",
@@ -11359,7 +11447,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-were",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "were",
   "choices": [
    "what",
@@ -11403,7 +11491,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-when",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "when",
   "choices": [
    "with",
@@ -11447,7 +11535,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-we",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "we",
   "choices": [
    "with",
@@ -11491,7 +11579,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-there",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "there",
   "choices": [
    "there",
@@ -11535,7 +11623,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-can",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "can",
   "choices": [
    "are",
@@ -11579,7 +11667,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-an",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "an",
   "choices": [
    "a",
@@ -11620,10 +11708,54 @@
   "batchItemId": "K-sw-39"
  },
  {
+  "id": "fc-paced-2026-27-k-sight-words-K-say-your",
+  "subject": "Literacy",
+  "difficulty": 1,
+  "question": "Listen. Run!",
+  "answer": "your",
+  "choices": [
+   "they",
+   "you",
+   "are",
+   "your"
+  ],
+  "correctIndex": 3,
+  "explanation": "The word was “your.”",
+  "standard": null,
+  "session": "Row dated 11/2",
+  "questionType": "four-corners",
+  "teacherRead": true,
+  "topic": "sight-words",
+  "spokenTarget": "your",
+  "grade": "K",
+  "weekIntroduced": "2026-11-02",
+  "alignedWeeks": [
+   "2026-11-02"
+  ],
+  "source": "ClassThread paced content (2026-27-k-sight-words)",
+  "packId": "classthread-paced-2026-27-k-sight-words",
+  "packName": "ClassThread paced content (2026-27-k-sight-words)",
+  "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+  "evidence": {
+   "document": "k-sight-words-2026-27.json",
+   "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+   "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+   "section": "Row dated 11/2",
+   "quote": "[2026-11-02] we, there, can, an, your"
+  },
+  "reviewStatus": "approved",
+  "approvalBasis": "teacher-review",
+  "reviewNote": "Approved by the teacher on the 2026-27-k-sight-words review page (item K-sw-40).",
+  "requiresExternalClassroomMaterial": false,
+  "materialReviewNote": "Self-contained classroom question.",
+  "reviewQuestion": false,
+  "batchItemId": "K-sw-40"
+ },
+ {
   "id": "fc-paced-2026-27-k-sight-words-K-say-which",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "which",
   "choices": [
    "which",
@@ -11667,7 +11799,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-their",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "their",
   "choices": [
    "they",
@@ -11711,7 +11843,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-said",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "said",
   "choices": [
    "this",
@@ -11755,7 +11887,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-if",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "if",
   "choices": [
    "I",
@@ -11799,7 +11931,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-do",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "do",
   "choices": [
    "do",
@@ -11843,7 +11975,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-will",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "will",
   "choices": [
    "what",
@@ -11887,7 +12019,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-each",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "each",
   "choices": [
    "had",
@@ -11931,7 +12063,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-about",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "about",
   "choices": [
    "an",
@@ -11975,7 +12107,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-how",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "how",
   "choices": [
    "how",
@@ -12019,7 +12151,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-up",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "up",
   "choices": [
    "he",
@@ -12063,7 +12195,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-out",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "out",
   "choices": [
    "you",
@@ -12107,7 +12239,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-them",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "them",
   "choices": [
    "the",
@@ -12151,7 +12283,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-then",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "then",
   "choices": [
    "then",
@@ -12195,7 +12327,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-she",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "she",
   "choices": [
    "said",
@@ -12239,7 +12371,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-many",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "many",
   "choices": [
    "then",
@@ -12283,7 +12415,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-some",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "some",
   "choices": [
    "other",
@@ -12327,7 +12459,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-so",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "so",
   "choices": [
    "so",
@@ -12371,7 +12503,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-these",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "these",
   "choices": [
    "their",
@@ -12415,7 +12547,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-would",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "would",
   "choices": [
    "which",
@@ -12459,7 +12591,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-other",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "other",
   "choices": [
    "out",
@@ -12503,7 +12635,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-into",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "into",
   "choices": [
    "into",
@@ -12547,7 +12679,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-has",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "has",
   "choices": [
    "how",
@@ -12591,7 +12723,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-more",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "more",
   "choices": [
    "from",
@@ -12635,7 +12767,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-her",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "her",
   "choices": [
    "had",
@@ -12679,7 +12811,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-two",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "two",
   "choices": [
    "two",
@@ -12723,7 +12855,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-like",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "like",
   "choices": [
    "their",
@@ -12767,7 +12899,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-him",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "him",
   "choices": [
    "has",
@@ -12811,7 +12943,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-see",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "see",
   "choices": [
    "so",
@@ -12855,7 +12987,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-time",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "time",
   "choices": [
    "time",
@@ -12899,7 +13031,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-could",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "could",
   "choices": [
    "your",
@@ -12943,7 +13075,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-no",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "no",
   "choices": [
    "one",
@@ -12987,7 +13119,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-make",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "make",
   "choices": [
    "have",
@@ -13031,7 +13163,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-than",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "than",
   "choices": [
    "than",
@@ -13075,7 +13207,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-first",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "first",
   "choices": [
    "these",
@@ -13119,7 +13251,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-been",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "been",
   "choices": [
    "by",
@@ -13163,7 +13295,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-its",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "its",
   "choices": [
    "if",
@@ -13207,7 +13339,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-who",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "who",
   "choices": [
    "who",
@@ -13251,7 +13383,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-now",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "now",
   "choices": [
    "into",
@@ -13295,7 +13427,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-people",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "people",
   "choices": [
    "there",
@@ -13339,7 +13471,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-my",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "my",
   "choices": [
    "make",
@@ -13383,7 +13515,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-made",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "made",
   "choices": [
    "made",
@@ -13427,7 +13559,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-over",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "over",
   "choices": [
    "one",
@@ -13471,7 +13603,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-did",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "did",
   "choices": [
    "and",
@@ -13515,7 +13647,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-down",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "down",
   "choices": [
    "do",
@@ -13559,7 +13691,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-only",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "only",
   "choices": [
    "only",
@@ -13603,7 +13735,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-way",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "way",
   "choices": [
    "were",
@@ -13647,7 +13779,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-find",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "find",
   "choices": [
    "first",
@@ -13691,7 +13823,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-use",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "use",
   "choices": [
    "make",
@@ -13735,7 +13867,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-may",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "may",
   "choices": [
    "may",
@@ -13779,7 +13911,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-water",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "water",
   "choices": [
    "which",
@@ -13823,7 +13955,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-long",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "long",
   "choices": [
    "like",
@@ -13867,7 +13999,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-little",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "little",
   "choices": [
    "like",
@@ -13911,7 +14043,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-very",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "very",
   "choices": [
    "very",
@@ -13955,7 +14087,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-after",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "after",
   "choices": [
    "are",
@@ -13999,7 +14131,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-words",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "words",
   "choices": [
    "what",
@@ -14043,7 +14175,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-called",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "called",
   "choices": [
    "would",
@@ -14087,7 +14219,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-just",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "just",
   "choices": [
    "just",
@@ -14131,7 +14263,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-where",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "where",
   "choices": [
    "were",
@@ -14175,7 +14307,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-most",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "most",
   "choices": [
    "some",
@@ -14219,7 +14351,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-know",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "know",
   "choices": [
    "down",
@@ -14263,7 +14395,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-get",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "get",
   "choices": [
    "get",
@@ -14307,7 +14439,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-through",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "through",
   "choices": [
    "than",
@@ -14351,7 +14483,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-back",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "back",
   "choices": [
    "been",
@@ -14395,7 +14527,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-much",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "much",
   "choices": [
    "most",
@@ -14439,7 +14571,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-before",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "before",
   "choices": [
    "before",
@@ -14483,7 +14615,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-go",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "go",
   "choices": [
    "for",
@@ -14527,7 +14659,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-good",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "good",
   "choices": [
    "would",
@@ -14571,7 +14703,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-new",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "new",
   "choices": [
    "now",
@@ -14615,7 +14747,7 @@
   "id": "fc-paced-2026-27-k-sight-words-K-say-write",
   "subject": "Literacy",
   "difficulty": 1,
-  "question": "Listen! Run to the word your teacher says.",
+  "question": "Listen. Run!",
   "answer": "write",
   "choices": [
    "write",

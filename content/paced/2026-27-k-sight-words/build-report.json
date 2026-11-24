@@ -1,21 +1,8 @@
 {
  "batch": "2026-27-k-sight-words",
  "jeopardy": 0,
- "fourCorners": 106,
+ "fourCorners": 109,
  "spellingBeeNew": 0,
  "spellingBeeResolved": [],
- "skipped": [
-  {
-   "id": "K-sw-1",
-   "reason": "held: Target word appears in the on-screen prompt \"Listen! Run to the word your teacher says.\"; Trace chose to hold until reworded (Nov 24) (also in the LISTEN banner and the Say the word button)"
-  },
-  {
-   "id": "K-sw-5",
-   "reason": "held: Target word appears in the on-screen prompt \"Listen! Run to the word your teacher says.\"; Trace chose to hold until reworded (Nov 24)"
-  },
-  {
-   "id": "K-sw-40",
-   "reason": "held: Target word appears in the on-screen prompt \"Listen! Run to the word your teacher says.\"; Trace chose to hold until reworded (Nov 24)"
-  }
- ]
+ "skipped": []
 }

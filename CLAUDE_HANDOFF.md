@@ -12,14 +12,15 @@ From bundle `classthread-batch-2026-11-20-sightwords-decoding.json`. Trace check
 
 - **`spokenTarget`** (optional Four Corners item field): the teacher says the word and children run to it. Rules are in `src/games/four-corners/spoken.ts` and repeated in `scripts/validate-paced-batch.py`:
   - the word is the answer and appears exactly once among the choices;
-  - it is never printed in the question or in the round's labels: banner "LISTEN: TEACHER SAYS THE WORD", "Say the word", "Show word" / "Hide word", and the hint "Listen. Run. Reveal.". Matching is whole-word and ignores case. The engine drops any item that breaks this.
+  - it is never printed in the question or in the round's labels: banner "LISTEN!", "Speak", "Show word" / "Hide word", and the hint "Listen. Run. Reveal." (none of these is on the sight-word list; Trace's first wording, "LISTEN: TEACHER SAYS THE WORD" / "Say the word", printed "the"). Matching is whole-word and ignores case. The engine drops any item that breaks this.
+  - On spoken rounds, the Team Mode line before Reveal reads "Reveal answer. Mark correct teams.", and the movement timer reads "MOVE!" / "STOP!" / "Teacher: reveal answer.". All of these strings are `spokenScreenText` in `spoken.ts`, and a test checks each against the whole sight-word list.
   - On spoken rounds, game text that would print a sight word changes: "Round 3/15" instead of "of", "Classroom" instead of "My Classroom" (the accessible name is unchanged), and Quick Check's "← Previous" instead of "← Back". `tests/spoken-target.spec.ts` renders spoken rounds and fails if any shipped sight word appears outside the four choices.
-  - "Say the word" uses speech synthesis at Spelling Bee's settings. "Show word" is a small teacher toggle; it resets on every new question and after a refresh.
+  - "Speak" says the word using speech synthesis at Spelling Bee's settings. "Show word" is a small teacher toggle; it resets on every new question and after a refresh.
   - Reports and history name the word: the prompt is saved as `… (Word: “said”)`.
-  - **Quick Check** supports it the same way: the banner, and Say / Show word in place of Read it to me.
+  - **Quick Check** supports it the same way: the banner, and Speak / Show word in place of Read it to me.
   - Not built yet: Trace's pregame **Topic** filter. Items carry `topic` (`sight-words`, and later `syllable-types` and `syllable-division`).
 - **Batch `content/paced/2026-27-k-sight-words/`:** the whole-year Kindergarten sight-word list (Aug 24, 2026 – Mar 29, 2027), from the photographed handout `content/sources/k-sight-words-2026-27.json`. Each word unlocks on the Friday of its week, and distractors are only words taught by then.
-  - Trace approved all 109. **K-sw-1 "the", K-sw-5 "to" and K-sw-40 "your" are held**, because the word is in the prompt "Listen! Run to the word your teacher says." ("the" is also in the banner). They wait for new wording; 106 ship.
+  - Trace approved all 109, and all 109 ship. On Nov 24 Trace changed the prompt on every item to **"Listen. Run!"** (an `edits` entry per id in `approvals.json`). The bundle's prompt, "Listen! Run to the word your teacher says.", printed "the", "to" and "your", so K-sw-1, K-sw-5 and K-sw-40 had been held until then.
   - The **decoding items** (`-dc-`, grades 1–5) and their PL snapshots are in the bundle but not applied; Trace is reworking them.
 - **Existing tests updated:** the list reaches back to August, so on the old test dates (Sept 17, Oct 18) Kindergarten now has 8 extra live questions, and on Oct 18 some Current ones.
   - `four-corners.spec` and `four-corners-team.spec` now count the base pack plus paced items taught by Sept 17.

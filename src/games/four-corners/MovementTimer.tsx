@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
+import { SPOKEN_TIMER } from './spoken';
 import { restoreMovementTimer, saveMovementTimer, secondsRemaining, type TimerPhase } from './movementTimer';
 
-/** Presentation-only countdown. It has no access to reveal, score, or assessment callbacks. */
-export default function MovementTimer({ roundKey, duration }: { roundKey: string; duration: number }) {
+/** Presentation-only countdown. It has no access to reveal, score, or assessment callbacks.
+ * `spoken`: a spoken sight-word round, whose text may not print any sight word (see spoken.ts). */
+export default function MovementTimer({ roundKey, duration, spoken = false }: { roundKey: string; duration: number; spoken?: boolean }) {
   const [restored] = useState(() => restoreMovementTimer(roundKey, duration));
   const [phase, setPhase] = useState<TimerPhase>(restored.phase);
   const [remaining, setRemaining] = useState(restored.phase === 'expired' ? 0 : duration);
@@ -26,10 +28,10 @@ export default function MovementTimer({ roundKey, duration }: { roundKey: string
   }
   function cancel() { setResetNotice(false); setRemaining(duration); setPhase('idle'); }
   return <section className={`fc-movement-timer fc-timer-${phase}`} aria-label="Movement timer">
-    <div className="fc-timer-count" role="timer" aria-label="Movement countdown" aria-live="off">{phase === 'expired' ? 'TIME!' : remaining}</div>
-    <div className="fc-timer-instructions"><strong>{phase === 'running' ? 'MOVE TO YOUR CORNER' : phase === 'expired' ? 'STOP AT YOUR CORNER' : 'MOVEMENT TIMER'}</strong>
-      <p role="status">{resetNotice ? 'Timer reset after returning. Start when ready.' : phase === 'expired' ? 'Teacher reveals the answer when ready.' : 'Teacher starts after reading. Silent countdown.'}</p>
-      {!saved && <p role="alert">Timer cannot be saved. It will reset after refresh.</p>}
+    <div className="fc-timer-count" role="timer" aria-label="Movement countdown" aria-live="off">{phase === 'expired' ? (spoken ? SPOKEN_TIMER.count : 'TIME!') : remaining}</div>
+    <div className="fc-timer-instructions"><strong>{spoken ? SPOKEN_TIMER[phase === 'running' ? 'running' : phase === 'expired' ? 'expired' : 'idle'] : phase === 'running' ? 'MOVE TO YOUR CORNER' : phase === 'expired' ? 'STOP AT YOUR CORNER' : 'MOVEMENT TIMER'}</strong>
+      <p role="status">{spoken ? SPOKEN_TIMER[resetNotice ? 'reset' : phase === 'expired' ? 'reveal' : 'ready'] : resetNotice ? 'Timer reset after returning. Start when ready.' : phase === 'expired' ? 'Teacher reveals the answer when ready.' : 'Teacher starts after reading. Silent countdown.'}</p>
+      {!saved && <p role="alert">{spoken ? SPOKEN_TIMER.unsaved : 'Timer cannot be saved. It will reset after refresh.'}</p>}
     </div>
     <div className="fc-timer-buttons"><button onClick={start}>{phase === 'idle' ? 'Start' : 'Restart'} {duration} Seconds</button><button disabled={phase === 'idle'} onClick={cancel}>Cancel Timer</button></div>
   </section>;
