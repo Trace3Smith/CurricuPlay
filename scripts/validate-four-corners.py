@@ -41,6 +41,7 @@ for q in questions:
     e = q['evidence']; document = read('content/sources/' + e['document'])
     check(e['quote'] in document['content'], prefix + 'evidence quote not in local source')
     check(len(q['question']) <= 240 and max(map(len, q['choices'])) <= 95, prefix + 'excessive length')
+    check('spokenTarget' not in q, prefix + 'spokenTarget is only supported in teacher-reviewed paced batches (validate-paced-batch.py)')
     check(not re.search(r'\b(teacher checks|worksheet|word wall|textbook|nuclear fusion|cleavage|streak test)\b', q['question'] + ' ' + ' '.join(q['choices']), re.I), prefix + 'material/teacher-facing/advanced wording')
     if q.get('visual'):
         v = q['visual']; check(v['src'].startswith('/four-corners/') and (root / ('public' + v['src'])).is_file() and len(v['alt']) > 15, prefix + 'invalid local visual or alt')

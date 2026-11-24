@@ -3,7 +3,8 @@ import { classroomQuestions } from '../../services/classroomPack';
 import { createQuestionEngine, familyOf, questionTaughtDate } from '../../services/questionEngine';
 import { readReviews, type Decisions } from '../../services/questionReview';
 import { validDate } from '../../services/curriculumService';
-import { bank as cornerBank, eligible as cornerPool, type CornerQuestion } from '../four-corners/engine';
+import { bank as cornerBank, eligible as cornerPool, spokenPrompt, type CornerQuestion } from '../four-corners/engine';
+import { spokenTargetOk } from '../four-corners/spoken';
 import { teamColors } from '../four-corners/teams';
 import { schoolDate } from '../../curriculum/eligibility';
 import { fridayOf } from '../../curriculum/pacing';
@@ -27,6 +28,8 @@ export interface QuickQuestion {
   id: string; bank: 'jeopardy' | 'four-corners'; subject: Subject; standard: string | null;
   question: string; answer: string; taught: string;
   choices?: string[]; correctIndex?: number; explanation?: string; visual?: { src: string; alt: string };
+  /** Four Corners spoken-target round: the word is said, not printed, until Reveal. */
+  spokenTarget?: string;
 }
 /** A question as asked in a game. `key` is unique in the game: the id, or id~2, id~3… after the list starts over. */
 export type AskedQuestion = QuickQuestion & { key: string };
@@ -59,7 +62,7 @@ export function pool(grade: Grade, asOf: string, decisions: Decisions = readRevi
   const out: QuickQuestion[] = [];
   for (const q of jeopardy) out.push({ id: q.id, bank: 'jeopardy', subject: q.subject, standard: q.standard, question: q.question, answer: q.answer, taught: questionTaughtDate(q)! });
   for (const q of corners as CornerQuestion[]) out.push({ id: q.id, bank: 'four-corners', subject: q.subject, standard: q.standard, question: q.question, answer: q.answer, taught: questionTaughtDate(q)!,
-    choices: [...q.choices], correctIndex: q.correctIndex, ...(q.explanation ? { explanation: q.explanation } : {}), ...(q.visual ? { visual: { src: q.visual.src, alt: q.visual.alt } } : {}) });
+    choices: [...q.choices], correctIndex: q.correctIndex, ...(q.explanation ? { explanation: q.explanation } : {}), ...(q.spokenTarget ? { spokenTarget: q.spokenTarget } : {}), ...(q.visual ? { visual: { src: q.visual.src, alt: q.visual.alt } } : {}) });
   // Belt and braces: the engines already exclude untaught content.
   return out.filter(q => q.taught && q.taught <= asOf);
 }
@@ -166,7 +169,7 @@ export function toSession(s: QuickState): GameSession | null {
   if (s.screen !== 'complete' || !s.sessionId || !s.startedAt || !s.endedAt || !s.grade) return null;
   const teams = s.teams ?? [];
   let session = createSession({ id: s.sessionId, gameType: 'quick-check', grade: s.grade, mode: teams.length ? 'team' : 'classic', teams, startedAt: s.startedAt });
-  for (const q of s.asked) session = commitQuestion(session, { questionId: q.key, subject: q.subject, prompt: q.question, ...(q.standard ? { standards: [q.standard] } : {}) },
+  for (const q of s.asked) session = commitQuestion(session, { questionId: q.key, subject: q.subject, prompt: spokenPrompt(q), ...(q.standard ? { standards: [q.standard] } : {}) },
     teams.map(t => { const correct = (s.marks[q.key] ?? []).includes(t.id); return { teamId: t.id, correct, pointsAwarded: correct ? 1 : 0 }; }), s.endedAt);
   return endSession(session, s.endedAt);
 }
@@ -176,7 +179,8 @@ function isQuestion(q: unknown): q is QuickQuestion {
   const x = q as QuickQuestion;
   return !!x && text(x.id) && (x.bank === 'jeopardy' || x.bank === 'four-corners') && subjects.includes(x.subject) && text(x.question) && text(x.answer) && validDate(x.taught) &&
     (x.standard === null || text(x.standard)) &&
-    (x.choices === undefined || (Array.isArray(x.choices) && x.choices.length === 4 && x.choices.every(text) && Number.isInteger(x.correctIndex) && x.correctIndex! >= 0 && x.correctIndex! < 4));
+    (x.choices === undefined || (Array.isArray(x.choices) && x.choices.length === 4 && x.choices.every(text) && Number.isInteger(x.correctIndex) && x.correctIndex! >= 0 && x.correctIndex! < 4)) &&
+    (x.spokenTarget === undefined || (!!x.choices && spokenTargetOk({ question: x.question, choices: x.choices, correctIndex: x.correctIndex!, spokenTarget: x.spokenTarget })));
 }
 export function isQuickState(v: unknown): v is QuickState {
   const s = v as QuickState;

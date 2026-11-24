@@ -5,15 +5,17 @@ import SessionHistory from '../../assessment/SessionHistory';
 import { saveCompletedSession } from '../../assessment/storage';
 import { grades, type Grade } from '../../types';
 import { planningAhead, PLANNING_AHEAD } from '../../curriculum/pacing';
+import { spokenPrompt } from '../four-corners/engine';
 import { back, begin, current, end, isRevealed, keepGoing, loadState, MAX_TEAMS, MIN_TEAMS, mondayOf, NAME_LIMIT, next, pool, readAloudGrades, reveal, saveState, scores, startOver, teamDefaultName, quickTeamColors, toggleTeam, toSession, toSetup, winners, type QuickState } from './engine';
 import '../../assessment/assessment.css';
 import '../board-mode.css';
 import './quick-check-board.css';
+import SpokenWord from '../four-corners/SpokenWord';
+import { canSpeak, SPOKEN_BANNER } from '../four-corners/spoken';
 
 const gradeLabel = (g: Grade) => g === 'K' ? 'Kindergarten' : `Grade ${g}`;
 const subjectLabel = (subject: string) => subject === 'Literacy' ? 'Reading / ELA' : subject;
 const teamOptions = [0, ...Array.from({ length: MAX_TEAMS - MIN_TEAMS + 1 }, (_, i) => i + MIN_TEAMS)];
-const canSpeak = () => typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
 const now = () => new Date().toISOString();
 
 // Presentation only: the question starts large and shrinks just enough to fit (same approach as Four Corners).
@@ -42,6 +44,8 @@ export default function QuickCheck({ onHome, onClassroom }: { onHome: () => void
   const question = current(state);
   const revealed = isRevealed(state);
   const teamMode = state.teamCount > 0;
+  // Spoken sight-word rounds print no word outside the four choices before Reveal (see four-corners/spoken.ts).
+  const spokenRound = !!question?.spokenTarget;
   useEffect(() => { setSaved(saveState(state)); }, [state]);
   useEffect(() => { title.current?.focus(); }, [state.screen, state.index, state.exhausted]);
   // Saving is idempotent by session id, so a refresh on the end screen never adds a second copy.
@@ -85,7 +89,7 @@ export default function QuickCheck({ onHome, onClassroom }: { onHome: () => void
 
   return <div className={`app qc-app board-mode ${state.screen === 'play' ? 'qc-playing' : ''}`}>
     <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
-      <div className="header-actions"><button onClick={onClassroom}>My Classroom</button>{state.screen !== 'play' && <button onClick={() => setHistory(true)}>Session History</button>}<button onClick={onHome}>Home</button><button onClick={fullscreen}>Full Screen</button></div>
+      <div className="header-actions"><button onClick={onClassroom} aria-label="My Classroom">{spokenRound ? 'Classroom' : 'My Classroom'}</button>{state.screen !== 'play' && <button onClick={() => setHistory(true)}>Session History</button>}<button onClick={onHome}>Home</button><button onClick={fullscreen}>Full Screen</button></div>
     </header>
     {!saved && <p role="alert" className="warning">Progress cannot be saved in this browser. Keep this tab open during class.</p>}
     {historyError && <p role="alert" className="warning">{historyError} <button onClick={() => { const session = toSession(state); if (session) setHistoryError(saveCompletedSession(session)); }}>Retry Save</button></p>}
@@ -109,13 +113,13 @@ export default function QuickCheck({ onHome, onClassroom }: { onHome: () => void
     </main>}
 
     {question && <main className={`qc-game ${teamMode ? 'qc-with-teams' : ''}`} ref={game}>
-      <div className="qc-meta"><span data-testid="qc-progress">Question {state.index + 1}</span><span>{gradeLabel(state.grade!)} · {subjectLabel(question.subject)}</span>{readAloudGrades.includes(state.grade!) && canSpeak() && <button onClick={speak}>Read it to me</button>}</div>
-      <div className="qc-prompt"><h1 ref={title} tabIndex={-1}>{question.question}</h1>{question.visual && <img src={question.visual.src} alt={question.visual.alt} />}</div>
+      <div className="qc-meta"><span data-testid="qc-progress">Question {state.index + 1}</span><span>{gradeLabel(state.grade!)} · {subjectLabel(question.subject)}</span>{question.spokenTarget ? <SpokenWord key={question.key} word={question.spokenTarget} className="qc-spoken" /> : readAloudGrades.includes(state.grade!) && canSpeak() && <button onClick={speak}>Read it to me</button>}</div>
+      <div className="qc-prompt">{question.spokenTarget ? <div><p className="qc-listen">{SPOKEN_BANNER}</p><h1 ref={title} tabIndex={-1}>{question.question}</h1></div> : <h1 ref={title} tabIndex={-1}>{question.question}</h1>}{question.visual && <img src={question.visual.src} alt={question.visual.alt} />}</div>
       {question.choices && <ol className="qc-choices" aria-label="Choices">{question.choices.map((choice, i) => <li key={i} className={`qc-choice ${revealed && i === question.correctIndex ? 'qc-correct' : ''}`}><b>{i + 1}</b><span>{choice}</span>{revealed && i === question.correctIndex && <strong className="qc-check">✓ Correct</strong>}</li>)}</ol>}
       {revealed && !question.choices && <div className="qc-answer" role="status"><span>Answer</span><p>{question.answer}</p></div>}
       {revealed && question.choices && <p className="qc-answer-line" role="status">Answer: {question.correctIndex! + 1} · {question.answer}</p>}
       {teamMode && revealed && <section className="qc-mark" aria-label="Mark teams that got it right"><span>Tap each team that got it right</span><div>{state.teams!.map(t => <button key={t.id} aria-pressed={marked.includes(t.id)} onClick={() => change(s => toggleTeam(s, t.id))}><TeamName team={t} /></button>)}</div></section>}
-      <footer className="qc-controls"><button disabled={state.index === 0 && !revealed} onClick={() => change(back)}>← Back</button><div className="qc-controls-main">{endButton}{revealed
+      <footer className="qc-controls"><button disabled={state.index === 0 && !revealed} onClick={() => change(back)} aria-label="← Back">{spokenRound ? '← Previous' : '← Back'}</button><div className="qc-controls-main">{endButton}{revealed
         ? <button className="primary" onClick={() => change(s => next(s, available))}>Next →</button>
         : <button className="primary" onClick={() => change(reveal)}>Reveal</button>}</div></footer>
       {teamMode && <div className="qc-scorebar" aria-label="Scores">{teamScores.map(t => <span key={t.id} data-testid={`qc-score-${t.id}`}><TeamName team={t} /> <b>{t.score}</b></span>)}</div>}
@@ -126,7 +130,7 @@ export default function QuickCheck({ onHome, onClassroom }: { onHome: () => void
       <p className="qc-end-count">{state.asked.length} {state.asked.length === 1 ? 'question' : 'questions'} asked</p>
       {teamMode && <section className="qc-final" aria-label="Final scores"><p className="qc-winner" data-testid="qc-winner">{winnerLine(state)}</p>
         <div className="qc-final-scores">{teamScores.map(t => <span key={t.id}><TeamName team={t} /> <b>{t.score}</b></span>)}</div></section>}
-      <ol className="qc-summary">{state.asked.map((q, i) => <li key={q.key}><span className="qc-summary-meta">{i + 1} · {subjectLabel(q.subject)}{q.standard ? ` · ${q.standard}` : ''}</span><p>{q.question}</p><p className="qc-summary-answer">{q.choices ? `${q.correctIndex! + 1} · ` : ''}{q.answer}</p></li>)}</ol>
+      <ol className="qc-summary">{state.asked.map((q, i) => <li key={q.key}><span className="qc-summary-meta">{i + 1} · {subjectLabel(q.subject)}{q.standard ? ` · ${q.standard}` : ''}</span><p>{spokenPrompt(q)}</p><p className="qc-summary-answer">{q.choices ? `${q.correctIndex! + 1} · ` : ''}{q.answer}</p></li>)}</ol>
       <div className="qc-end-actions"><button className="primary" disabled={!!historyError} onClick={() => setState(toSetup(state))}>New Quick Check</button><button onClick={() => change(keepGoing)}>Keep going</button><button onClick={onHome}>Games</button></div>
     </main>}
     {history && <AssessmentDialog onClose={() => setHistory(false)}><SessionHistory /></AssessmentDialog>}

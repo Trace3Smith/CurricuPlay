@@ -139,3 +139,13 @@
 .app.fc-app .dialog-actions button:not(.primary){min-height:calc(88 * var(--u))}
 
 @media(max-width:900px){.app.fc-app .fc-setup legend{float:none;width:auto;padding:0;margin-bottom:12px}.app.fc-app .fc-setup fieldset>:not(legend){margin-left:0}.app.fc-app .grade-options{grid-template-columns:repeat(3,minmax(0,1fr))}.app.fc-app .fc-choice>b{font-size:36px}.app.fc-app .fc-team-buttons{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Spoken-target rounds: the orange LISTEN banner replaces "teacher reads", and the teacher's Say / Show word
+   controls sit in the lower bar beside Reveal. The shown word is small and stays out of the corners. */
+.app.fc-app .fc-listen{color:var(--ds-highlight);font-size:calc(40 * var(--u))}
+.app.fc-app .fc-spoken{display:flex;align-items:center;gap:max(16px,calc(16 * var(--u)));margin-left:auto;flex:none}
+.app.fc-app .fc-spoken button{min-height:calc(72 * var(--u));padding:calc(8 * var(--u)) calc(24 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;line-height:1.15}
+.app.fc-app .fc-spoken button:hover{background:var(--ds-primary-dark)}
+.app.fc-app .fc-spoken button[aria-pressed=true]{background:var(--ds-on-board);color:var(--ds-board)}
+.app.fc-app .fc-spoken button{transition:none}
+.app.fc-app .spoken-peek{padding:calc(6 * var(--u)) calc(16 * var(--u));border:2px dashed var(--ds-on-board);border-radius:var(--ds-rounded-md);font-size:var(--board-text);color:var(--ds-on-board)}

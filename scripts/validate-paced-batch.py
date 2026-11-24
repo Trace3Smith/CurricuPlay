@@ -7,6 +7,8 @@ built from a paced batch:
   - taught dates fall inside the aligned week; week-only items unlock on Friday (rolling-month rule handles review)
   - ids and prompts are unique across the existing banks; Four Corners has four distinct choices and one answer
   - prompts are short enough for a shared screen; no Math in Four Corners
+  - spoken-target rounds: the word is the answer, appears once among the choices, and is never printed in the
+    question or in the round's on-screen labels (same rule as src/games/four-corners/spoken.ts)
 """
 import datetime, json, re
 from pathlib import Path
@@ -26,6 +28,14 @@ base_j, base_fc = read('src/data/tomorrow-pack.json'), read('src/data/four-corne
 sb = read('src/data/spelling-bee-pacing.json')
 evidence = {e['id']: e for e in read('content/spelling-bee/evidence.json')}
 
+# The labels a spoken-target round shows (src/games/four-corners/spoken.ts). A target word may not appear in any of them.
+SPOKEN_LABELS = ['LISTEN: TEACHER SAYS THE WORD', 'Say the word', 'Show word', 'Hide word', 'Listen. Run. Reveal.']
+def has_word(text, word):
+    return re.search(r"(^|[^\w'’])" + re.escape(word.strip()) + r"($|[^\w'’])", text, re.I) is not None
+def prompt_key(q):
+    # Spoken rounds share one prompt; the word said makes each one distinct.
+    return key(q['question']) + (' :: ' + key(q['spokenTarget']) if q.get('spokenTarget') else '')
+
 def batch_of(q):
     return q['packId'].replace('classthread-paced-', '')
 
@@ -44,7 +54,7 @@ for name, coll, base in (('jeopardy', jeopardy, base_j), ('four-corners', corner
     for q in coll:
         p = f"{name} {q['id']}: "
         check(q['id'] not in base_ids and q['id'] not in seen_ids, p + 'duplicate id'); seen_ids.add(q['id'])
-        check(key(q['question']) not in base_prompts and key(q['question']) not in seen_prompts, p + 'duplicate prompt'); seen_prompts.add(key(q['question']))
+        check(prompt_key(q) not in base_prompts and prompt_key(q) not in seen_prompts, p + 'duplicate prompt'); seen_prompts.add(prompt_key(q))
         check((batch_of(q), q['batchItemId']) in approved, p + 'not approved by the teacher')
         check(q['reviewStatus'] == 'approved' and q['approvalBasis'] == 'teacher-review' and q['requiresExternalClassroomMaterial'] is False, p + 'approval fields')
         check(quote_ok(q['evidence']['document'], q['sourceUrl'], q['evidence']['quote']), p + 'evidence quote not in local snapshot')
@@ -58,6 +68,12 @@ for name, coll, base in (('jeopardy', jeopardy, base_j), ('four-corners', corner
             check(len(q['choices']) == 4 and len({key(c) for c in q['choices']}) == 4, p + 'four distinct choices')
             check(q['choices'][q['correctIndex']] == q['answer'] and q['choices'].count(q['answer']) == 1, p + 'answer mapping')
             check(max(map(len, q['choices'])) <= 95, p + 'choice too long')
+            if 'spokenTarget' in q:
+                t = q['spokenTarget']
+                check(isinstance(t, str) and t.strip() and t == q['answer'] and q['choices'].count(t) == 1, p + 'spokenTarget must be the answer and one of the choices')
+                if isinstance(t, str) and t.strip():
+                    check(not has_word(q['question'], t), p + f'spokenTarget "{t}" appears in the question text')
+                    check(not any(has_word(label, t) for label in SPOKEN_LABELS), p + f'spokenTarget "{t}" appears in an on-screen label')
 
 for w in sb:
     if not w['evidenceId'].startswith('paced-'): continue

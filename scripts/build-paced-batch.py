@@ -117,10 +117,14 @@ for r in review:
             questionType='short-answer', teacherRead=bool(it.get('teacherRead', False)), **common))
     elif game == 'fourCorners':
         choices = it['choices']; answer = choices[it['correctIndex']]
-        corners.append(dict(id=f'fc-paced-{BATCH}-{g}-{slug(it["question"])}', subject=it['subject'], difficulty=it.get('difficulty', 1),
+        # Spoken-target rounds share one prompt ("Listen! Run to the word..."), so their id names the word instead.
+        spoken = it.get('spokenTarget')
+        qid = f'fc-paced-{BATCH}-{g}-say-{slug(spoken)}' if spoken else f'fc-paced-{BATCH}-{g}-{slug(it["question"])}'
+        extra = {k: it[k] for k in ('topic', 'spokenTarget') if it.get(k)}
+        corners.append(dict(id=qid, subject=it['subject'], difficulty=it.get('difficulty', 1),
             question=it['question'], answer=answer, choices=choices, correctIndex=it['correctIndex'], explanation=it.get('explanation', ''),
             standard=it.get('standard') or None, session=None if it.get('standard') else ev['locator'],
-            questionType='four-corners', teacherRead=True, **common))
+            questionType='four-corners', teacherRead=True, **extra, **common))
     else:
         word = it['word']; taught = it.get('taughtOn')
         period = {'start': taught, 'end': taught} if taught else {'start': week, 'end': friday(week)}

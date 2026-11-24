@@ -9,6 +9,7 @@ import { classroomQuestions } from '../../services/classroomPack';
 import { readReviews } from '../../services/questionReview';
 import { validDate } from '../../services/curriculumService';
 import { schoolDate } from '../../curriculum/eligibility';
+import { spokenTargetOk } from './spoken';
 
 export const mixes = ['Mixed Academic', 'Science', 'Social Studies', 'Reading / ELA'] as const;
 export type Mix = typeof mixes[number];
@@ -21,6 +22,9 @@ export interface CornerQuestion extends Question {
   delivery?: 'look-at-print';
   adaptation?: { kind: 'conversion' | 'source-exercise'; sourceQuestionId?: string };
   visual?: { src: string; alt: string; kind?: 'illustration' | 'diagram' | 'photo' };
+  /** The teacher says this word; it is printed only as one of the four identical choices. See spoken.ts. */
+  spokenTarget?: string;
+  topic?: string;
 }
 const raw: unknown[] = [...baseCorners, ...pacedCorners];
 const validated = validateQuestions(raw);
@@ -28,7 +32,7 @@ const validated = validateQuestions(raw);
 const standalone = (q: CornerQuestion) => !q.originId && q.approvalBasis === 'teacher-review' && q.reviewStatus === 'approved';
 export const bank: CornerQuestion[] = validated.errors.length ? [] : validated.questions.filter(q => {
   const c = q as CornerQuestion;
-  return c.subject !== 'Math' && c.choices?.length === 4 && new Set(c.choices).size === 4 && Number.isInteger(c.correctIndex) && c.correctIndex >= 0 && c.correctIndex < 4 && c.choices[c.correctIndex] === c.answer && (!c.visual || (c.visual.src.startsWith('/four-corners/') && c.visual.alt.trim()));
+  return c.subject !== 'Math' && c.choices?.length === 4 && new Set(c.choices).size === 4 && Number.isInteger(c.correctIndex) && c.correctIndex >= 0 && c.correctIndex < 4 && c.choices[c.correctIndex] === c.answer && spokenTargetOk(c) && (!c.visual || (c.visual.src.startsWith('/four-corners/') && c.visual.alt.trim()));
 }) as CornerQuestion[];
 export const subjectLabel = (subject: string) => subject === 'Literacy' ? 'Reading / ELA' : subject;
 export const gradeLabel = (g: Grade) => g === 'K' ? 'Kindergarten' : `${g}${g === '1' ? 'st' : g === '2' ? 'nd' : g === '3' ? 'rd' : 'th'} Grade`;
@@ -96,8 +100,11 @@ export function saveState(state: CornerState): boolean {
 
 export const validTeamCount = (count: unknown): count is number => typeof count === 'number' && Number.isInteger(count) && count >= 1 && count <= 12;
 export const isTeamMode = (s: CornerState) => s.mode === 'team';
+/** Teacher-facing text for reports and history (never the board during play). */
+export const spokenPrompt = (q: { question: string; spokenTarget?: string }) => q.spokenTarget ? `${q.question} (Word: “${q.spokenTarget}”)` : q.question;
 export function questionSnapshot(q: CornerQuestion): AssessmentQuestionSnapshot {
-  return { questionId: q.id, subject: q.subject, prompt: q.question, ...(q.standard ? { standards: [q.standard] } : {}) };
+  // Spoken rounds share one prompt, so reports name the word that was said.
+  return { questionId: q.id, subject: q.subject, prompt: spokenPrompt(q), ...(q.standard ? { standards: [q.standard] } : {}) };
 }
 function validAssessmentState(s: CornerState): boolean {
   if (s.mode !== undefined && s.mode !== 'team' && s.mode !== 'classic') return false;

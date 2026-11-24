@@ -13,6 +13,8 @@ import { bank, buildQueue, beginGame, advanceRound, finishEarly, isTeamMode, tog
 import { schoolDate } from '../../curriculum/eligibility';
 import { currentWindow, planningAhead, PLANNING_AHEAD, shortDate } from '../../curriculum/pacing';
 import type { PacedRange } from '../../types';
+import SpokenWord from './SpokenWord';
+import { canSpeak, SPOKEN_BANNER, SPOKEN_HINT } from './spoken';
 import './four-corners.css';
 import '../board-mode.css';
 import './four-corners-board.css';
@@ -46,6 +48,9 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
   useEffect(() => { setSaved(saveState(state)); }, [state]);
   useEffect(() => { if (state.session?.endedAt) setHistoryError(saveCompletedSession(state.session)); }, [state.session]);
   useEffect(() => { title.current?.focus(); }, [state.screen, state.currentRound]);
+  // A spoken word never carries over to the next question or screen.
+  useEffect(() => { if (canSpeak()) window.speechSynthesis.cancel(); }, [state.screen, state.currentRound]);
+  useEffect(() => () => { if (canSpeak()) window.speechSynthesis.cancel(); }, []);
   useEffect(() => { if (confirm) dialog.current?.showModal(); else dialog.current?.close(); }, [confirm]);
   useEffect(() => {
     const check = () => setState(s => s.screen !== 'setup' && !validSession(s) ? { ...freshState(), grade: s.grade, mix: s.mix, rounds: s.rounds, mode: s.mode ?? 'classic', teamCount: s.teamCount ?? 6, movementDuration: movementDuration(s.movementDuration), content: s.content ?? 'mixed' } : s);
@@ -60,6 +65,8 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
   const question = bank.find(q => q.id === state.questionIds[state.currentRound]);
   const active = state.screen === 'play' && question;
   const teamMode = isTeamMode(state);
+  // Spoken sight-word rounds print no word outside the four corners before Reveal (see spoken.ts).
+  const spokenRound = !!(active && question.spokenTarget);
   const timerSeconds = movementDuration(state.movementDuration);
   const timerKey = `${state.session?.id ?? 'legacy'}:${question?.id ?? ''}`;
   const displaySession = state.session ? presentCornerSession(state.session) : undefined;
@@ -107,7 +114,7 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
   }
   return <div className={`app fc-app board-mode ${active ? 'fc-playing' : ''} ${active && teamMode ? 'fc-team-playing' : ''}`}>
     <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
-      <div className="header-actions"><button onClick={onClassroom}>My Classroom</button>{active && <><button onClick={() => setConfirm('end')}>End Game</button>{teamMode && <button onClick={() => setPanel('live')}>Assessment</button>}</>}{!active && <button onClick={() => setPanel('history')}>Session History</button>}{state.screen !== 'setup' && <><button onClick={() => setConfirm('grade')}>Change Grade</button><button onClick={() => setConfirm('reset')}>Reset Game</button></>}<button onClick={onHome}>Home</button><button onClick={fullscreen}>Full Screen</button></div>
+      <div className="header-actions"><button onClick={onClassroom} aria-label="My Classroom">{spokenRound ? 'Classroom' : 'My Classroom'}</button>{active && <><button onClick={() => setConfirm('end')}>End Game</button>{teamMode && <button onClick={() => setPanel('live')}>Assessment</button>}</>}{!active && <button onClick={() => setPanel('history')}>Session History</button>}{state.screen !== 'setup' && <><button onClick={() => setConfirm('grade')}>Change Grade</button><button onClick={() => setConfirm('reset')}>Reset Game</button></>}<button onClick={onHome}>Home</button><button onClick={fullscreen}>Full Screen</button></div>
     </header>
     {!saved && <p role="alert" className="warning">Progress cannot be saved in this browser. Keep this tab open during class.</p>}
     {historyError && <p role="alert" className="warning">{historyError} {state.session?.endedAt && <button onClick={() => setHistoryError(saveCompletedSession(state.session!))}>Retry Save</button>}</p>}
@@ -128,13 +135,13 @@ export default function FourCorners({ onHome, onClassroom }: { onHome: () => voi
     </main>}
     {active && teamMode && <div className="fc-scoreboard" aria-label="Live scoreboard">{assessment?.teams.map(t => <span key={t.id} data-testid={`score-${t.id}`}><TeamName team={t} /> <b>{t.score + ((state.correctTeamIds ?? []).includes(t.id) ? 1 : 0)}</b></span>)}<small>{state.revealed ? 'Round marks pending Next Question' : 'LOOK → THINK → RUN → REVEAL → SCORE → ROTATE → NEXT'}</small></div>}
     {active && <main className="fc-game" ref={game}>
-      <div className="fc-meta"><span>{gradeLabel(state.grade)} · {subjectLabel(question.subject)}</span><span>Round {state.currentRound + 1}{state.rounds !== 'all' && ` of ${state.rounds}`}</span></div>
-      <div className="fc-prompt"><div>{question.delivery === 'look-at-print' ? <p className="fc-read">LOOK AT THE PRINTED LETTERS · TEACHER READS THE QUESTION ONLY</p> : question.teacherRead && <p className="fc-read">TEACHER READS QUESTION ALOUD</p>}<h1 ref={title} tabIndex={-1}>{question.question}</h1></div>{question.visual && <img src={question.visual.src} alt={question.visual.alt} />}</div>
+      <div className="fc-meta"><span>{gradeLabel(state.grade)} · {subjectLabel(question.subject)}</span><span>Round {state.currentRound + 1}{state.rounds !== 'all' && (spokenRound ? `/${state.rounds}` : ` of ${state.rounds}`)}</span></div>
+      <div className="fc-prompt"><div>{question.spokenTarget ? <p className="fc-read fc-listen">{SPOKEN_BANNER}</p> : question.delivery === 'look-at-print' ? <p className="fc-read">LOOK AT THE PRINTED LETTERS · TEACHER READS THE QUESTION ONLY</p> : question.teacherRead && <p className="fc-read">TEACHER READS QUESTION ALOUD</p>}<h1 ref={title} tabIndex={-1}>{question.question}</h1></div>{question.visual && <img src={question.visual.src} alt={question.visual.alt} />}</div>
       <div className="fc-answers">{question.choices.map((choice, index) => <div key={index} className={`fc-choice ${isPrintRound(question.delivery) ? 'fc-choice-print' : ''} ${state.revealed && index === question.correctIndex ? 'fc-correct' : ''}`}>{isPrintRound(question.delivery)
         ? <b className="fc-corner"><i className="fc-token" aria-hidden="true">{CORNER_TOKENS[index]}</i>Corner {'ABCD'[index]}</b>
         : <b>{'ABCD'[index]}</b>}<span className={isPrintRound(question.delivery) ? 'fc-letter' : undefined}>{choice}</span>{state.revealed && index === question.correctIndex && <strong className="fc-check">✓ Correct</strong>}</div>)}</div>
       {teamMode && timerSeconds > 0 && !state.revealed ? <MovementTimer key={timerKey} roundKey={timerKey} duration={timerSeconds} /> : teamMode && <section className="fc-round-scoring" aria-label="Score this round"><div><strong>{state.revealed ? 'Mark every correct team. Tap again to undo.' : 'Reveal the answer to mark correct teams.'}</strong>{state.revealed && <button onClick={() => update({ correctTeamIds: [] })}>Clear Round</button>}</div><div className="fc-team-buttons">{displaySession?.teams.map(t => <button key={t.id} disabled={!state.revealed} aria-pressed={(state.correctTeamIds ?? []).includes(t.id)} onClick={() => setState(s => toggleCorrectTeam(s, t.id))}><TeamName team={t} />{(state.correctTeamIds ?? []).includes(t.id) ? ' ✓ +1' : ''}</button>)}</div></section>}
-      <footer className="fc-controls"><p aria-live="polite">{state.revealed ? <>{'Correct answer: '}{isPrintRound(question.delivery) && <i className="fc-token fc-token-inline" aria-hidden="true">{CORNER_TOKENS[question.correctIndex]}</i>}{isPrintRound(question.delivery) ? ` corner ${'ABCD'[question.correctIndex]}` : 'ABCD'[question.correctIndex]}{question.explanation ? ` — ${question.explanation}` : ''}</> : 'Choose A, B, C, or D. Everyone stays in the game.'}</p>{state.revealed ? <button className="primary" onClick={next}>{state.rounds !== 'all' && state.currentRound === state.questionIds.length - 1 ? 'Finish Game' : 'Next Question'}</button> : <button className="primary" onClick={() => update({ revealed: true })}>Reveal Answer</button>}</footer>
+      <footer className="fc-controls"><p aria-live="polite">{state.revealed ? <>{'Correct answer: '}{isPrintRound(question.delivery) && <i className="fc-token fc-token-inline" aria-hidden="true">{CORNER_TOKENS[question.correctIndex]}</i>}{isPrintRound(question.delivery) ? ` corner ${'ABCD'[question.correctIndex]}` : 'ABCD'[question.correctIndex]}{question.explanation ? ` — ${question.explanation}` : ''}</> : spokenRound ? SPOKEN_HINT : 'Choose A, B, C, or D. Everyone stays in the game.'}</p>{question.spokenTarget && <SpokenWord key={question.id} word={question.spokenTarget} className="fc-spoken" />}{state.revealed ? <button className="primary" onClick={next}>{state.rounds !== 'all' && state.currentRound === state.questionIds.length - 1 ? 'Finish Game' : 'Next Question'}</button> : <button className="primary" onClick={() => update({ revealed: true })}>Reveal Answer</button>}</footer>
     </main>}
     {state.screen === 'complete' && <main className="assessment-report"><h2>{state.endedEarly ? 'Game ended.' : state.rounds === 'all' ? 'Every question explored!' : `All ${state.rounds} rounds complete!`}</h2>{state.rounds === 'all' && !state.endedEarly && <p>You've used every available question in this content pool.</p>}{state.session && <AssessmentView key={state.session.id} session={displaySession!} />}<div className="assessment-report-actions"><button className="primary" disabled={!!historyError} onClick={start}>Play Again</button><button disabled={!!historyError} onClick={() => update({ screen: 'setup' })}>Change Setup</button></div></main>}
     {panel && <AssessmentDialog onClose={() => setPanel(null)}>{panel === 'history' ? <SessionHistory presentSession={presentCornerSession} /> : state.session && <AssessmentView session={displaySession!} live />}</AssessmentDialog>}

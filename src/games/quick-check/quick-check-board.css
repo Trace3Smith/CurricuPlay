@@ -81,3 +81,9 @@
 .app.qc-app .qc-end-actions{display:flex;gap:calc(24 * var(--u));padding-bottom:calc(24 * var(--u))}
 @media(max-width:900px){.app.qc-app .qc-setup fieldset{flex-direction:column;align-items:stretch}.app.qc-app .qc-setup legend{float:none;width:auto;margin-bottom:8px}.app.qc-app .qc-grades{grid-template-columns:repeat(3,1fr)}.app.qc-app .qc-name-inputs{grid-template-columns:1fr 1fr}.app.qc-app .qc-start{flex-wrap:wrap}.app.qc-app .qc-summary{grid-template-columns:1fr}.app.qc-app .qc-choices{grid-template-columns:1fr;grid-template-rows:none}}
 @media(prefers-reduced-motion:no-preference){.app.qc-app button{transition:background-color .15s,border-color .15s,color .15s}}
+/* Spoken-target rounds (Four Corners sight words): orange LISTEN banner over the prompt; Say / Show word replace Read it to me. */
+.app.qc-app .qc-listen{margin-bottom:calc(16 * var(--u));color:var(--ds-highlight);font-size:calc(40 * var(--u));letter-spacing:.08em}
+.app.qc-app .qc-spoken{display:flex;align-items:center;gap:max(16px,calc(16 * var(--u)));margin-left:auto}
+.app.qc-app .qc-spoken button{margin-left:0;transition:none}
+.app.qc-app .qc-spoken button[aria-pressed=true]{background:var(--ds-on-board);color:var(--ds-board)}
+.app.qc-app .spoken-peek{padding:calc(6 * var(--u)) calc(16 * var(--u));border:2px dashed var(--ds-on-board);border-radius:var(--ds-rounded-md);font-size:var(--board-text)}
