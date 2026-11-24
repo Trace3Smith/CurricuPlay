@@ -5,7 +5,7 @@ import SessionHistory from '../../assessment/SessionHistory';
 import { saveCompletedSession } from '../../assessment/storage';
 import { grades, type Grade } from '../../types';
 import { planningAhead, PLANNING_AHEAD } from '../../curriculum/pacing';
-import { spokenPrompt } from '../four-corners/engine';
+import { gradeTopics, spokenPrompt, topicFor, topicLabels } from '../four-corners/engine';
 import { back, begin, current, end, isRevealed, keepGoing, loadState, MAX_TEAMS, MIN_TEAMS, mondayOf, NAME_LIMIT, next, pool, readAloudGrades, reveal, saveState, scores, startOver, teamDefaultName, quickTeamColors, toggleTeam, toSession, toSetup, winners, type QuickState } from './engine';
 import '../../assessment/assessment.css';
 import '../board-mode.css';
@@ -40,7 +40,8 @@ export default function QuickCheck({ onHome, onClassroom }: { onHome: () => void
   const [history, setHistory] = useState(false);
   const title = useRef<HTMLHeadingElement>(null);
   const game = useRef<HTMLElement>(null);
-  const available = useMemo(() => state.grade ? pool(state.grade, state.asOf) : [], [state.grade, state.asOf]);
+  const topic = state.grade ? topicFor(state.grade, state.topic) : 'all';
+  const available = useMemo(() => state.grade ? pool(state.grade, state.asOf, undefined, topic) : [], [state.grade, state.asOf, topic]);
   const question = current(state);
   const revealed = isRevealed(state);
   const teamMode = state.teamCount > 0;
@@ -97,11 +98,12 @@ export default function QuickCheck({ onHome, onClassroom }: { onHome: () => void
 
     {state.screen === 'setup' && <main className="qc-setup">
       <div className="eyebrow">QUICK CHECK</div><h1 ref={title} tabIndex={-1}>A quick review to end class.</h1>
-      <fieldset><legend>Grade</legend><div className="qc-options qc-grades">{grades.map(g => <button key={g} aria-pressed={state.grade === g} onClick={() => change(s => ({ ...s, grade: g }))}>{gradeLabel(g)}</button>)}</div></fieldset>
+      <fieldset><legend>Grade</legend><div className="qc-options qc-grades">{grades.map(g => <button key={g} aria-pressed={state.grade === g} onClick={() => change(s => ({ ...s, grade: g, topic: topicFor(g, s.topic) }))}>{gradeLabel(g)}</button>)}</div></fieldset>
+      {state.grade && gradeTopics(state.grade).length > 1 && <fieldset><legend>Topic</legend><div className="qc-options qc-topics">{gradeTopics(state.grade).map(t => <button key={t} aria-pressed={topic === t} onClick={() => change(s => ({ ...s, topic: t }))}>{topicLabels[t]}</button>)}</div></fieldset>}
       <fieldset><legend>Teams</legend><div className="qc-options qc-team-counts">{teamOptions.map(n => <button key={n} aria-pressed={state.teamCount === n} aria-label={n ? `${n} teams` : 'Teams off'} onClick={() => change(s => ({ ...s, teamCount: n }))}>{n || 'Off'}</button>)}</div></fieldset>
       {teamMode && <fieldset className="qc-names"><legend>Team names</legend><div className="qc-name-inputs">{Array.from({ length: state.teamCount }, (_, i) => <label key={i}><i className="assessment-team-accent" style={{ backgroundColor: quickTeamColors[i].accent }} aria-hidden="true" /><input aria-label={`Name for team ${i + 1}`} placeholder={teamDefaultName(i)} maxLength={NAME_LIMIT} value={state.names[i]} onChange={e => change(s => ({ ...s, names: s.names.map((n, j) => j === i ? e.target.value : n) }))} /></label>)}</div></fieldset>}
       <div className="qc-start"><label>Teaching date <input aria-label="Teaching date" type="date" value={state.asOf} onChange={e => { if (e.target.value) change(s => ({ ...s, asOf: e.target.value })); }} /></label>
-        <p role="status">{!state.grade ? 'Choose a grade to start.' : available.length ? `${thisWeek} this week, then ${available.length - thisWeek} review · keeps going until you tap End` : `No questions taught yet for ${gradeLabel(state.grade)} on this date.`}</p>
+        <p role="status">{!state.grade ? 'Choose a grade to start.' : available.length ? `${thisWeek} this week, then ${available.length - thisWeek} review · keeps going until you tap End` : `No ${topic !== 'all' ? `${topicLabels[topic]} ` : ''}questions taught yet for ${gradeLabel(state.grade)} on this date.`}</p>
         <button className="primary" disabled={!available.length} onClick={start}>Start →</button></div>
       {planningAhead(state.asOf) && <p className="content-notice" role="status" data-testid="planning-ahead">{PLANNING_AHEAD}</p>}
     </main>}

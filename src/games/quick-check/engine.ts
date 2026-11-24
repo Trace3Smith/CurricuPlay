@@ -3,7 +3,7 @@ import { classroomQuestions } from '../../services/classroomPack';
 import { createQuestionEngine, familyOf, questionTaughtDate } from '../../services/questionEngine';
 import { readReviews, type Decisions } from '../../services/questionReview';
 import { validDate } from '../../services/curriculumService';
-import { bank as cornerBank, eligible as cornerPool, spokenPrompt, type CornerQuestion } from '../four-corners/engine';
+import { bank as cornerBank, eligible as cornerPool, isTopic, spokenPrompt, type CornerQuestion, type Topic } from '../four-corners/engine';
 import { spokenTargetOk } from '../four-corners/spoken';
 import { teamColors } from '../four-corners/teams';
 import { schoolDate } from '../../curriculum/eligibility';
@@ -44,8 +44,10 @@ export interface QuickState {
   sessionId?: string; startedAt?: string; endedAt?: string; teams?: AssessmentTeam[];
   /** Question ids already used per grade, so games avoid repeats until that grade's bank runs out. */
   seen: Partial<Record<Grade, string[]>>;
+  /** Pregame Topic; absent in saves from before the setting (All). A topic game asks only that topic's Four Corners items. */
+  topic?: Topic;
 }
-export const freshState = (): QuickState => ({ version: 1, screen: 'setup', grade: null, teamCount: 0, names: Array(MAX_TEAMS).fill(''), asOf: schoolDate(), asked: [], queue: [], pass: 1, index: 0, revealed: [], marks: {}, exhausted: false, seen: {} });
+export const freshState = (): QuickState => ({ version: 1, screen: 'setup', grade: null, teamCount: 0, names: Array(MAX_TEAMS).fill(''), asOf: schoolDate(), asked: [], queue: [], pass: 1, index: 0, revealed: [], marks: {}, exhausted: false, seen: {}, topic: 'all' });
 
 export const teamDefaultName = (i: number) => quickTeamColors[i].name;
 export function createTeams(count: number, names: readonly string[]): AssessmentTeam[] {
@@ -55,10 +57,11 @@ export function createTeams(count: number, names: readonly string[]): Assessment
 /** Monday of the school week containing `date`. */
 export const mondayOf = (date: string) => { const d = new Date(`${fridayOf(date)}T12:00:00Z`); d.setUTCDate(d.getUTCDate() - 4); return d.toISOString().slice(0, 10); };
 
-/** Approved, unvetoed Jeopardy and Four Corners questions for the grade that are taught by the teaching date. */
-export function pool(grade: Grade, asOf: string, decisions: Decisions = readReviews().decisions): QuickQuestion[] {
-  const jeopardy = createQuestionEngine(classroomQuestions(decisions)).getQuestions({ grade, range: 'mixed', asOf, unused: false });
-  const corners = cornerPool(grade, 'Mixed Academic', 'mixed', asOf);
+/** Approved, unvetoed Jeopardy and Four Corners questions for the grade that are taught by the teaching date.
+ * With a topic, only Four Corners items with that topic (Jeopardy questions have no topic). */
+export function pool(grade: Grade, asOf: string, decisions: Decisions = readReviews().decisions, topic: Topic = 'all'): QuickQuestion[] {
+  const jeopardy = topic === 'all' ? createQuestionEngine(classroomQuestions(decisions)).getQuestions({ grade, range: 'mixed', asOf, unused: false }) : [];
+  const corners = cornerPool(grade, 'Mixed Academic', 'mixed', asOf, topic);
   const out: QuickQuestion[] = [];
   for (const q of jeopardy) out.push({ id: q.id, bank: 'jeopardy', subject: q.subject, standard: q.standard, question: q.question, answer: q.answer, taught: questionTaughtDate(q)! });
   for (const q of corners as CornerQuestion[]) out.push({ id: q.id, bank: 'four-corners', subject: q.subject, standard: q.standard, question: q.question, answer: q.answer, taught: questionTaughtDate(q)!,
@@ -113,7 +116,8 @@ export function begin(s: QuickState, available: QuickQuestion[], id: string, now
   if (!s.grade || !available.length) return s;
   let seen = s.seen[s.grade] ?? [], queue = orderQueue(available, seen, s.asOf, random);
   // Every question was used in earlier games: this game starts the list over.
-  if (!queue.length) { seen = []; queue = orderQueue(available, seen, s.asOf, random); }
+  // Only this game's questions are forgotten, so a topic game never clears the grade's other history.
+  if (!queue.length) { seen = seen.filter(id => !available.some(q => q.id === id)); queue = orderQueue(available, seen, s.asOf, random); }
   const started: QuickState = { ...s, screen: 'play', asked: [], queue, pass: 1, index: 0, revealed: [], marks: {}, exhausted: false, sessionId: id, startedAt: now, endedAt: undefined,
     teams: s.teamCount ? createTeams(s.teamCount, s.names) : [], seen: { ...s.seen, [s.grade]: seen } };
   return ask(started, available);
@@ -142,7 +146,7 @@ export function startOver(s: QuickState, available: QuickQuestion[], random = Ma
   if (s.screen !== 'play' || !s.exhausted || !s.grade) return s;
   const queue = orderQueue(available, [], s.asOf, random);
   if (!queue.length) return s;
-  return ask({ ...s, pass: s.pass + 1, queue, seen: { ...s.seen, [s.grade]: [] } }, available);
+  return ask({ ...s, pass: s.pass + 1, queue, seen: { ...s.seen, [s.grade]: (s.seen[s.grade] ?? []).filter(id => !available.some(q => q.id === id)) } }, available);
 }
 /** Back steps the flow backwards: leave "every question", hide the answer, or return to the previous question. Marks are kept. */
 export function back(s: QuickState): QuickState {
@@ -190,7 +194,7 @@ export function isQuickState(v: unknown): v is QuickState {
     !Array.isArray(s.asked) || !s.asked.every(q => isQuestion(q) && text(q.key)) || new Set(s.asked.map(q => q.key)).size !== s.asked.length ||
     !Array.isArray(s.queue) || !s.queue.every(isQuestion) || !Number.isInteger(s.pass) || s.pass < 1 || typeof s.exhausted !== 'boolean' ||
     !Number.isInteger(s.index) || !Array.isArray(s.revealed) || !s.revealed.every(k => s.asked.some(q => q.key === k)) ||
-    !s.marks || typeof s.marks !== 'object' || !s.seen || typeof s.seen !== 'object') return false;
+    !s.marks || typeof s.marks !== 'object' || !s.seen || typeof s.seen !== 'object' || (s.topic !== undefined && !isTopic(s.topic))) return false;
   if (!Object.entries(s.seen).every(([g, ids]) => grades.includes(g as Grade) && Array.isArray(ids) && ids.every(text))) return false;
   if (s.screen === 'setup') return true;
   const teams = s.teams ?? [];
@@ -211,4 +215,4 @@ export function saveState(s: QuickState, store: Pick<Storage, 'setItem'> = local
   try { store.setItem(QUICK_CHECK_KEY, JSON.stringify(s)); return true; } catch { return false; }
 }
 /** Back to setup with the same choices; question history is kept. */
-export const toSetup = (s: QuickState): QuickState => ({ ...freshState(), grade: s.grade, teamCount: s.teamCount, names: s.names, seen: s.seen });
+export const toSetup = (s: QuickState): QuickState => ({ ...freshState(), grade: s.grade, teamCount: s.teamCount, names: s.names, seen: s.seen, topic: s.topic ?? 'all' });

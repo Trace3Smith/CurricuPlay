@@ -149,3 +149,7 @@
 .app.fc-app .fc-spoken button[aria-pressed=true]{background:var(--ds-on-board);color:var(--ds-board)}
 .app.fc-app .fc-spoken button{transition:none}
 .app.fc-app .spoken-peek{padding:calc(6 * var(--u)) calc(16 * var(--u));border:2px dashed var(--ds-on-board);border-radius:var(--ds-rounded-md);font-size:var(--board-text);color:var(--ds-on-board)}
+.app.fc-app .fc-topic-note{align-self:center;margin:0;color:var(--ds-on-board);font-size:var(--board-text);line-height:1.2}
+.app.fc-app .fc-short{color:var(--ds-highlight)}
+/* Topic choices switch instantly (no fade), like Quick Check's selected buttons. */
+.app.fc-app .fc-topic button{transition:none}

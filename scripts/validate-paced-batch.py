@@ -32,9 +32,13 @@ evidence = {e['id']: e for e in read('content/spelling-bee/evidence.json')}
 SPOKEN_LABELS = ['Reveal answer. Mark correct teams.', 'STOP!', 'MOVE!', 'MOVEMENT TIMER', 'Timer reset.', 'Teacher: reveal answer.', 'Silent countdown.', 'Timer save failed.', 'LISTEN!', 'Speak', 'Show word', 'Hide word', 'Listen. Run. Reveal.']
 def has_word(text, word):
     return re.search(r"(^|[^\w'’])" + re.escape(word.strip()) + r"($|[^\w'’])", text, re.I) is not None
+TOPICS = ('sight-words', 'decoding')
 def prompt_key(q):
-    # Spoken rounds share one prompt; the word said makes each one distinct.
-    return key(q['question']) + (' :: ' + key(q['spokenTarget']) if q.get('spokenTarget') else '')
+    # Topic drills share prompts: a spoken round is its prompt plus the word said; any other topic item is its prompt
+    # plus its four choices. Items without a topic must still have a unique prompt.
+    if q.get('spokenTarget'): return key(q['question']) + ' :: ' + key(q['spokenTarget'])
+    if q.get('topic'): return key(q['question']) + ' :: ' + ' | '.join(sorted(key(c) for c in q['choices']))
+    return key(q['question'])
 
 def batch_of(q):
     return q['packId'].replace('classthread-paced-', '')
@@ -68,6 +72,7 @@ for name, coll, base in (('jeopardy', jeopardy, base_j), ('four-corners', corner
             check(len(q['choices']) == 4 and len({key(c) for c in q['choices']}) == 4, p + 'four distinct choices')
             check(q['choices'][q['correctIndex']] == q['answer'] and q['choices'].count(q['answer']) == 1, p + 'answer mapping')
             check(max(map(len, q['choices'])) <= 95, p + 'choice too long')
+            check(q.get('topic') in (None,) + TOPICS, p + f'unknown topic {q.get("topic")!r}')
             if 'spokenTarget' in q:
                 t = q['spokenTarget']
                 check(isinstance(t, str) and t.strip() and t == q['answer'] and q['choices'].count(t) == 1, p + 'spokenTarget must be the answer and one of the choices')

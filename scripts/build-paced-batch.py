@@ -117,9 +117,11 @@ for r in review:
             questionType='short-answer', teacherRead=bool(it.get('teacherRead', False)), **common))
     elif game == 'fourCorners':
         choices = it['choices']; answer = choices[it['correctIndex']]
-        # Spoken-target rounds share one prompt ("Listen! Run to the word..."), so their id names the word instead.
+        # Topic drills reuse prompts ("Which word has a vowel team?"), so their id names the word said (sight words)
+        # or the batch item (decoding) instead of the prompt.
         spoken = it.get('spokenTarget')
-        qid = f'fc-paced-{BATCH}-{g}-say-{slug(spoken)}' if spoken else f'fc-paced-{BATCH}-{g}-{slug(it["question"])}'
+        qid = (f'fc-paced-{BATCH}-{g}-say-{slug(spoken)}' if spoken else f'fc-paced-{BATCH}-{slug(rid)}' if it.get('topic')
+               else f'fc-paced-{BATCH}-{g}-{slug(it["question"])}')
         extra = {k: it[k] for k in ('topic', 'spokenTarget') if it.get(k)}
         corners.append(dict(id=qid, subject=it['subject'], difficulty=it.get('difficulty', 1),
             question=it['question'], answer=answer, choices=choices, correctIndex=it['correctIndex'], explanation=it.get('explanation', ''),
