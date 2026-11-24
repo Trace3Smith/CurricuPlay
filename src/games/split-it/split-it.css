@@ -90,3 +90,16 @@
 .app.si-app .si-end-actions{display:flex;gap:calc(24 * var(--u));padding-bottom:calc(24 * var(--u))}
 @media(max-width:900px){.app.si-app .si-setup fieldset{flex-direction:column;align-items:stretch}.app.si-app .si-setup legend{float:none;width:auto;margin-bottom:8px}.app.si-app .si-name-inputs{grid-template-columns:1fr 1fr}.app.si-app .si-start,.app.si-app .si-controls,.app.si-app .si-controls-main{flex-wrap:wrap}.app.si-app .si-summary{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:no-preference){.app.si-app :is(.primary,.si-controls button,.si-end-actions button,.si-timer button){transition:background-color .15s,border-color .15s,color .15s}}
+/* Teams on, after a wrong one try: the team's taps against the answer. Red ✗ = wrong, green + = missed; a badge and a
+   written legend go with every colour, so the marking never depends on colour alone. */
+.app.si-app .si-badge{position:absolute;top:calc(-18 * var(--u));right:calc(-14 * var(--u));display:inline-flex;align-items:center;justify-content:center;min-width:max(32px,calc(48 * var(--u)));height:max(32px,calc(48 * var(--u)));border:3px solid var(--ds-on-board);border-radius:999px;font-size:max(22px,calc(32 * var(--u)));line-height:1;color:var(--ds-on-danger)}
+.app.si-app .si-tile.si-wrong{border-color:var(--ds-danger);border-width:6px}
+.app.si-app .si-tile.si-wrong::after{content:'';position:absolute;left:12%;right:12%;bottom:calc(var(--tile) * .08);height:max(8px,calc(var(--tile) * .09));border-radius:999px;background:var(--ds-danger);outline:2px solid var(--ds-on-board)}
+.app.si-app .si-wrong .si-badge,.app.si-app .si-line-wrong .si-badge{background:var(--ds-danger)}
+.app.si-app .si-tile.si-missed{border-color:var(--ds-secondary);border-width:6px}
+.app.si-app .si-tile.si-missed::after{content:'';position:absolute;left:12%;right:12%;bottom:calc(var(--tile) * .08);height:max(8px,calc(var(--tile) * .09));border-radius:999px;background:var(--ds-secondary)}
+.app.si-app .si-missed .si-badge,.app.si-app .si-line-missed .si-badge{background:var(--ds-success)}
+.app.si-app .si-gap{position:relative}
+.app.si-app .si-gap .si-badge{top:calc(-36 * var(--u));right:auto;left:50%;transform:translateX(-50%)}
+.app.si-app .si-gap.si-line-wrong i{background:var(--ds-danger);outline:2px solid var(--ds-on-board)}
+.app.si-app .si-gap.si-line-missed i{background:var(--ds-secondary)}

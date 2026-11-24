@@ -1,7 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import {
   back, bank, begin, checkLines, checkVowels, current, end, freshState, isSplitState, keepGoing, lineRules, loadState, mondayOf, next, notes, orderQueue, pool,
-  scores, showLines, showVowels, splitGrades, startOver, toggleLine, toggleVowel, toLines, toSession, toSetup, validWord, winners, wordFor, wordId,
+  scores, showLines, showVowels, splitGrades, startOver, toggleLine, toggleVowel, toLines, toSession, toSetup, validWord, winners, wordFor, wordId, marking, wrongCheck,
   SPLIT_IT_KEY, type SplitState, type SplitWord,
 } from '../src/games/split-it/engine';
 import { isGameSession } from '../src/assessment/engine';
@@ -87,43 +87,57 @@ test('No repeats until the list runs out; starting over keeps the rest of the gr
   expect(kept.seen['3']).toContain('3:future');
 });
 
-test('Steps and scoring: taps only in their step, 1 point each for vowels and lines right on the first Check', () => {
+test('Teams on: each step gets one try; a wrong try is marked and the game moves on, 0 points, no Show me', () => {
   let s = game('2', 3);
   const w = wordFor(current(s)!.id)!;
   expect(toggleLine(s, 1)).toEqual(s); // no lines while finding vowels
-  s = toggleVowel(s, w.underline[0]);
-  s = checkVowels(s); // incomplete: wrong
-  expect(current(s)).toMatchObject({ phase: 'vowels', vowelChecks: 1, vowelsFirst: false });
-  for (const i of w.underline.slice(1)) s = toggleVowel(s, i);
-  s = checkVowels(s); // now right, but not on the first Check
-  expect(current(s)).toMatchObject({ phase: 'notes', vowelsFirst: false });
-  expect(toggleVowel(s, 0)).toEqual(s); // vowels are locked after the check
-  s = toLines(s);
-  for (const k of w.splitAfterLetter) s = toggleLine(s, k);
-  s = checkLines(s);
-  expect(current(s)).toMatchObject({ phase: 'done', linesFirst: true });
-  expect(scores(s).map(t => t.score)).toEqual([1, 0, 0]);
-  // Back steps through the word without losing the result; Next returns to it.
-  s = back(back(s));
-  expect(current(s)!.phase).toBe('notes');
-  expect(scores(s).map(t => t.score)).toEqual([1, 0, 0]);
-  s = toLines(s); s = checkLines(s);
-  expect(current(s)!.lineChecks).toBe(2); expect(current(s)!.linesFirst).toBe(true);
-  // Teams take turns, one word each.
-  s = next(s);
-  expect(current(s)!.teamId).toBe('team-2');
-  s = next(solve(s)); expect(current(s)!.teamId).toBe('team-3');
-  s = next(solve(s)); expect(current(s)!.teamId).toBe('team-1');
-  expect(scores(s).map(t => t.score)).toEqual([1, 2, 2]);
-  expect(winners(s).map(t => t.name)).toEqual(['Purple', 'Green']);
-  // Show me after a wrong Check fills in the answer for no point.
+  const wrongLetter = [...w.word].findIndex((_, i) => !w.underline.includes(i));
+  s = toggleVowel(toggleVowel(s, w.underline[0]), wrongLetter); // one right, one wrong, the rest missed
   s = checkVowels(s);
-  expect(showVowels(game('2'))).toEqual(game('2')); // only after a wrong Check
-  s = showVowels(s);
-  expect(current(s)).toMatchObject({ phase: 'notes', vowelsShown: true, vowelsFirst: false });
-  s = checkLines(toLines(s)); s = showLines(s);
+  expect(current(s)).toMatchObject({ phase: 'notes', vowelChecks: 1, vowelsFirst: false });
+  expect(marking(current(s)!, w)).toMatchObject({ wrongLetters: [wrongLetter], missedVowels: w.underline.slice(1) });
+  expect(wrongCheck(current(s)!)).toBe(false); // no "Not yet" and no Show me
+  expect(showVowels(s)).toEqual(s);
+  expect(checkVowels(s)).toEqual(s); expect(toggleVowel(s, 0)).toEqual(s); // locked after the one try
+  // Back never reopens a checked step: lines (unchecked) back to the notes, otherwise the previous word.
+  s = toLines(s);
+  expect(current(back(s))!.phase).toBe('notes');
+  const wrongGap = [1, 2, 3].find(k => !w.splitAfterLetter.includes(k))!;
+  s = checkLines(toggleLine(s, wrongGap));
+  expect(current(s)).toMatchObject({ phase: 'done', lineChecks: 1, linesFirst: false });
+  expect(marking(current(s)!, w)).toMatchObject({ wrongLines: [wrongGap], missedLines: w.splitAfterLetter });
+  expect(back(s)).toEqual(s); // first word: nothing earlier, and its checks stay closed
+  expect(scores(s).map(t => t.score)).toEqual([0, 0, 0]);
+  // Right on the one try: 1 point each; teams take turns, one word each.
+  s = next(s); expect(current(s)!.teamId).toBe('team-2');
+  s = solve(s); expect(scores(s).map(t => t.score)).toEqual([0, 2, 0]);
+  expect(marking(current(s)!, wordFor(current(s)!.id)!)).toEqual({ wrongLetters: [], missedVowels: [], wrongLines: [], missedLines: [] });
+  s = next(s); expect(current(s)!.teamId).toBe('team-3');
+  s = back(s); expect(current(s)!.teamId).toBe('team-2'); // previous word, results kept
+  s = next(next(s)); expect(current(s)!.teamId).toBe('team-3');
+  s = next(solve(s)); expect(current(s)!.teamId).toBe('team-1');
+  expect(scores(s).map(t => t.score)).toEqual([0, 2, 2]);
+  expect(winners(s).map(t => t.name)).toEqual(['Purple', 'Green']);
+});
+
+test('Teams Off (class practice): "Not yet" keeps the step open for another try, and Show me fills in the answer', () => {
+  let s = game('2');
+  const w = wordFor(current(s)!.id)!;
+  s = checkVowels(toggleVowel(s, w.underline[0]));
+  expect(current(s)).toMatchObject({ phase: 'vowels', vowelChecks: 1, vowelsFirst: false });
+  expect(wrongCheck(current(s)!)).toBe(true);
+  expect(marking(current(s)!, w).wrongLetters).toEqual([]); // no team marking in practice
+  for (const i of w.underline.slice(1)) s = toggleVowel(s, i);
+  s = checkVowels(s);
+  expect(current(s)).toMatchObject({ phase: 'notes', vowelChecks: 2 });
+  s = checkLines(toLines(s));
+  expect(current(s)!.phase).toBe('lines');
+  expect(showVowels(game('2'))).toEqual(game('2')); // Show me only after a wrong Check
+  s = showLines(s);
   expect(current(s)).toMatchObject({ phase: 'done', linesShown: true, linesFirst: false });
-  expect(scores(s).map(t => t.score)).toEqual([1, 2, 2]);
+  // Back steps through the word's steps.
+  expect(current(back(s))!.phase).toBe('lines');
+  expect(current(back(back(back(s))))!.phase).toBe('vowels');
 });
 
 test('History: a vowels step and a lines step per word, credited to the team at the board; Teams Off records no responses', () => {
@@ -219,26 +233,73 @@ test('Teams Off: grade then Start; underline, check, notes, draw lines, check, r
   await expect(page.getByRole('dialog')).toContainText('Split It!');
 });
 
-test('Teams On: the team at the board earns the points; score bar; end screen names the winner', async ({ page }) => {
+test('Teams On: one try per step; a wrong try is marked red/green at once with 0 points and no Show me; winner named', async ({ page }) => {
   let s = solve(game('5', 2));
   await open(page, s);
   await expect(page.getByTestId('si-turn')).toContainText('Orange');
-  await expect(page.getByText('Vowels: ✓ first try · +1 Orange')).toBeVisible();
+  await expect(page.getByText('Vowels: ✓ right · +1 Orange')).toBeVisible();
   await expect(page.getByTestId('si-score-team-1')).toHaveText('Orange 2');
   await page.getByRole('button', { name: 'Next word →' }).click();
   await expect(page.getByTestId('si-turn')).toContainText('Purple');
   s = await saved(page);
   const w = wordFor(current(s)!.id)!;
-  await page.getByRole('button', { name: 'Check vowels' }).click(); // wrong first try
-  await page.getByRole('button', { name: 'Show me' }).click();
-  await expect(page.getByText('Vowels: no point this time')).toBeVisible();
+  // Vowels: one right, one wrong letter, the rest missed. One Check marks it and moves straight on to the notes.
+  const wrongLetter = [...w.word].findIndex((_, i) => !w.underline.includes(i));
+  await page.getByRole('button', { name: `Letter ${w.underline[0] + 1}: ${w.word[w.underline[0]]}`, exact: true }).click();
+  await page.getByRole('button', { name: `Letter ${wrongLetter + 1}: ${w.word[wrongLetter]}`, exact: true }).click();
+  await page.getByRole('button', { name: 'Check vowels' }).click();
+  await expect(page.getByText('STEP 2 · VOWEL NOTES')).toBeVisible();
+  await expect(page.getByTestId('si-marked')).toHaveText('Not right, 0 points. ✗ red: not a vowel. + green: a vowel that was missed.');
+  await expect(page.locator('.si-tile.si-wrong')).toHaveCount(1);
+  await expect(page.locator(`.si-tile[data-letter="${wrongLetter}"]`)).toHaveClass(/si-wrong/);
+  await expect(page.locator(`.si-tile[data-letter="${wrongLetter}"] .si-badge`)).toHaveText('✗');
+  await expect(page.locator('.si-tile.si-missed')).toHaveCount(w.underline.length - 1);
+  await expect(page.locator(`.si-tile[data-letter="${w.underline[0]}"]`)).toHaveClass(/si-underlined/);
+  expect(await page.locator('.si-tile.si-wrong').evaluate(e => getComputedStyle(e).borderColor)).toBe('rgb(179, 38, 30)');
+  expect(await page.locator('.si-tile.si-missed').first().evaluate(e => getComputedStyle(e).borderColor)).toBe('rgb(61, 181, 74)');
+  await expect(page.getByText('Vowels: ✗ not right · 0 points')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Show me' })).toHaveCount(0);
+  await expect(page.getByText(/^Not yet/)).toHaveCount(0);
+  for (const n of notes(w)) await expect(page.getByText(n, { exact: true })).toBeVisible();
+  // A refresh keeps the marking.
+  await page.reload();
+  await expect(page.locator('.si-tile.si-wrong')).toHaveCount(1);
+  // Lines: one wrong gap. One Check marks the wrong line red and the right lines green, then Say it.
   await page.getByRole('button', { name: 'Draw lines →' }).click();
-  for (const k of w.splitAfterLetter) await page.getByRole('button', { name: new RegExp(`^Gap ${k}:`) }).click();
+  const wrongGap = [1, 2, 3].find(k => !w.splitAfterLetter.includes(k))!;
+  await page.getByRole('button', { name: new RegExp(`^Gap ${wrongGap}:`) }).click();
   await page.getByRole('button', { name: 'Check lines' }).click();
-  await expect(page.getByTestId('si-score-team-2')).toHaveText('Purple 1');
+  await expect(page.getByText('STEP 4 · SAY IT')).toBeVisible();
+  await expect(page.getByTestId('si-marked')).toHaveText('Not right, 0 points. ✗ red: the wrong place. + green: where the line goes.');
+  await expect(page.locator(`.si-gap[data-gap="${wrongGap}"]`)).toHaveClass(/si-line-wrong/);
+  for (const k of w.splitAfterLetter) await expect(page.locator(`.si-gap[data-gap="${k}"]`)).toHaveClass(/si-line-missed/);
+  await expect(page.getByRole('button', { name: 'Show me' })).toHaveCount(0);
+  for (const r of lineRules(w)) await expect(page.getByText(r.text, { exact: true })).toBeVisible();
+  await expect(page.getByTestId('si-score-team-2')).toHaveText('Purple 0');
   expect(await fits(page)).toBe(true);
+  // Back goes to the previous word; it never reopens Purple's checked steps.
+  await page.getByRole('button', { name: '← Back' }).click();
+  await expect(page.getByTestId('si-turn')).toContainText('Orange');
+  await page.getByRole('button', { name: 'Next word →' }).click();
+  await expect(page.getByText('STEP 4 · SAY IT')).toBeVisible();
   await page.getByRole('button', { name: 'End', exact: true }).click();
   await expect(page.getByTestId('si-winner')).toHaveText('Winner: Orange');
+});
+
+test('Teams Off keeps practice mode: "Not yet", another try, and Show me', async ({ page }) => {
+  const s = game('5');
+  await open(page, s);
+  await page.getByRole('button', { name: 'Check vowels' }).click();
+  await expect(page.getByText(/^Not yet\. Look again/)).toBeVisible();
+  await expect(page.getByText('STEP 1 · UNDERLINE EVERY VOWEL')).toBeVisible();
+  await page.getByRole('button', { name: 'Show me' }).click();
+  await expect(page.getByText('STEP 2 · VOWEL NOTES')).toBeVisible();
+  await expect(page.locator('.si-wrong, .si-missed, [data-testid=si-marked]')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Draw lines →' }).click();
+  await page.getByRole('button', { name: 'Check lines' }).click();
+  await expect(page.getByText(/^Not yet\. Count the consonants/)).toBeVisible();
+  await page.getByRole('button', { name: 'Show me' }).click();
+  await expect(page.getByText('STEP 4 · SAY IT')).toBeVisible();
 });
 
 test('Movement: no timer when Off; when On, a 15 s exercise timer the teacher starts, which never moves the game on', async ({ page }) => {

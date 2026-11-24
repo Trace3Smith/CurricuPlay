@@ -9,7 +9,7 @@ import ExerciseTimer from './ExerciseTimer';
 import {
   back, bankError, begin, checkLines, checkVowels, current, end, exerciseDurations, keepGoing, lineRules, loadState, MAX_TEAMS, MIN_TEAMS,
   mondayOf, NAME_LIMIT, next, notes, pool, saveState, scores, showLines, showVowels, splitGrades, splitTeamColors, startOver, syllables,
-  teamDefaultName, toggleLine, toggleVowel, toLines, toSession, toSetup, winners, wordFor, wordPoints, wrongCheck, type AskedWord, type SplitState, type SplitWord,
+  teamDefaultName, toggleLine, toggleVowel, toLines, toSession, toSetup, winners, wordFor, wordPoints, wrongCheck, marking, oneTry, type AskedWord, type SplitState, type SplitWord,
 } from './engine';
 import '../../assessment/assessment.css';
 import '../board-mode.css';
@@ -40,8 +40,15 @@ function winnerLine(s: SplitState) {
 function WordTiles({ word: w, asked: a, onLetter, onGap }: { word: SplitWord; asked: AskedWord; onLetter: (i: number) => void; onGap: (after: number) => void }) {
   const letters = [...w.word], n = letters.length;
   const found = a.phase !== 'vowels';
-  const underlined = (i: number) => found ? w.underline.includes(i) : a.vowels.includes(i);
-  const lines = a.phase === 'done' ? w.splitAfterLetter : a.lines;
+  // Teams on, after a wrong one try: right after the check, the team's taps are marked against the answer.
+  const m = marking(a, w);
+  const markVowels = a.phase === 'notes', markLines = a.phase === 'done';
+  const wrongLetter = (i: number) => markVowels && m.wrongLetters.includes(i), missedVowel = (i: number) => markVowels && m.missedVowels.includes(i);
+  const underlined = (i: number) => found ? w.underline.includes(i) && !missedVowel(i) : a.vowels.includes(i);
+  const lines = a.phase === 'done' ? [...new Set([...w.splitAfterLetter, ...m.wrongLines])] : a.lines;
+  const lineClass = (k: number) => markLines && m.wrongLines.includes(k) ? 'si-line-wrong' : markLines && m.missedLines.includes(k) ? 'si-line-missed' : '';
+  const tileClass = (i: number) => `si-tile ${underlined(i) ? 'si-underlined' : ''} ${wrongLetter(i) ? 'si-wrong' : ''} ${missedVowel(i) ? 'si-missed' : ''}`;
+  const badge = (i: number) => wrongLetter(i) ? <b className="si-badge" aria-label="not a vowel">✗</b> : missedVowel(i) ? <b className="si-badge" aria-label="missed vowel">+</b> : null;
   const marks: { from: number; to: number; label: string }[] = found ? [
     ...w.silentE.map(i => ({ from: i, to: i, label: 'silent' })),
     ...w.vowelTeams.map(([x, y]) => ({ from: x, to: y, label: 'team' })),
@@ -51,15 +58,15 @@ function WordTiles({ word: w, asked: a, onLetter, onGap }: { word: SplitWord; as
   return <div className="si-word" style={{ '--n': n, gridTemplateColumns: `repeat(${n - 1}, var(--tile) var(--gapw)) var(--tile)` } as React.CSSProperties} data-testid="si-word">
     {letters.map((letter, i) => <span key={i} className="si-cell" style={{ gridColumn: 2 * i + 1 }}>
       {a.phase === 'vowels'
-        ? <button className={`si-tile ${underlined(i) ? 'si-underlined' : ''}`} aria-pressed={underlined(i)} aria-label={`Letter ${i + 1}: ${letter}`} onClick={() => onLetter(i)}>{letter}</button>
-        : <span className={`si-tile ${underlined(i) ? 'si-underlined' : ''}`} data-letter={i}>{letter}</span>}
+        ? <button className={tileClass(i)} aria-pressed={underlined(i)} aria-label={`Letter ${i + 1}: ${letter}`} onClick={() => onLetter(i)}>{letter}</button>
+        : <span className={tileClass(i)} data-letter={i}>{letter}{badge(i)}</span>}
     </span>)}
     {letters.slice(0, -1).map((_, i) => {
       const after = i + 1, drawn = lines.includes(after);
       return <span key={`g${after}`} className="si-gap-cell" style={{ gridColumn: 2 * i + 2 }}>
         {a.phase === 'lines'
           ? <button className={`si-gap ${drawn ? 'si-drawn' : ''}`} aria-pressed={drawn} aria-label={`Gap ${after}: between ${letters[i]} and ${letters[i + 1]}`} onClick={() => onGap(after)}><i aria-hidden="true" /></button>
-          : <span className={`si-gap ${drawn ? 'si-drawn' : ''}`} data-gap={after}><i aria-hidden="true" /></span>}
+          : <span className={`si-gap ${drawn ? 'si-drawn' : ''} ${lineClass(after)}`} data-gap={after}><i aria-hidden="true" />{lineClass(after) && <b className="si-badge" aria-label={lineClass(after) === 'si-line-wrong' ? 'wrong line' : 'missed line'}>{lineClass(after) === 'si-line-wrong' ? '✗' : '+'}</b>}</span>}
       </span>;
     })}
     {marks.map(m => <span key={`${m.label}${m.from}`} className="si-mark" style={{ gridColumn: `${2 * m.from + 1} / ${2 * m.to + 2}` }}>{m.label}</span>)}
@@ -101,7 +108,7 @@ export default function SplitIt({ onHome, onClassroom }: { onHome: () => void; o
   const endButton = <button className="si-end-button" onClick={() => change(s => end(s, now()))}>End</button>;
   const scorebar = teamMode && <div className="si-scorebar" aria-label="Scores">{teamScores.map(t => <span key={t.id} data-testid={`si-score-${t.id}`} className={t.id === asked?.teamId ? 'si-up' : undefined}><TeamName team={t} /> <b>{t.score}</b></span>)}</div>;
   // The first Check decides the point; say so once it has happened.
-  const result = (first: boolean | null, label: string) => first === null ? null : <span className={`si-result ${first ? 'si-result-yes' : ''}`}>{label}: {first ? `✓ first try${team ? ` · +1 ${team.name}` : ''}` : 'no point this time'}</span>;
+  const result = (first: boolean | null, label: string) => first === null ? null : <span className={`si-result ${first ? 'si-result-yes' : ''}`}>{label}: {first ? (team ? `✓ right · +1 ${team.name}` : '✓ first try') : team ? '✗ not right · 0 points' : 'no point this time'}</span>;
 
   return <div className={`app si-app board-mode ${state.screen === 'play' ? 'si-playing' : ''}`}>
     <header><button className="wordmark" onClick={onHome} aria-label="ClassThread Games home"><img src="/branding/classthread-logo-dark.png" alt="" width="800" height="155" /></button>
@@ -140,8 +147,10 @@ export default function SplitIt({ onHome, onClassroom }: { onHome: () => void; o
       <div className="si-stage"><WordTiles word={word} asked={asked} onLetter={i => change(s => toggleVowel(s, i))} onGap={g => change(s => toggleLine(s, g))} /></div>
       <div className="si-info" aria-live="polite">
         {asked.phase === 'vowels' && (wrongCheck(asked) ? <p className="si-feedback" role="status">Not yet. Look again: every a, e, i, o, u, and y at the end of a word.</p> : <p>Tap each vowel letter: a, e, i, o, u, and y at the end of a word. Silent e and the e in -le count too.</p>)}
+        {asked.phase === 'notes' && oneTry(asked) && asked.vowelsFirst === false && <p className="si-feedback" role="status" data-testid="si-marked">Not right, 0 points. ✗ red: not a vowel. + green: a vowel that was missed.</p>}
         {asked.phase === 'notes' && <ul className="si-notes">{notes(word).map(n => <li key={n}>{n}</li>)}</ul>}
         {asked.phase === 'lines' && (wrongCheck(asked) ? <p className="si-feedback" role="status">Not yet. Count the consonants between the vowels.</p> : <p>Tap between letters to draw a line. Tap again to take it away.</p>)}
+        {asked.phase === 'done' && oneTry(asked) && asked.linesFirst === false && <p className="si-feedback" role="status" data-testid="si-marked">Not right, 0 points. ✗ red: the wrong place. + green: where the line goes.</p>}
         {asked.phase === 'done' && <><ul className="si-rules">{lineRules(word).map(r => <li key={r.after}>{r.text}</li>)}</ul><p className="si-syllables" data-testid="si-syllables">{syllables(word).join(' · ')}</p></>}
         {(asked.vowelsFirst !== null || asked.linesFirst !== null) && <p className="si-results">{result(asked.vowelsFirst, 'Vowels')}{result(asked.linesFirst, 'Lines')}</p>}
       </div>

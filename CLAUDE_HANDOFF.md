@@ -19,9 +19,10 @@ A Smart Board syllable game for grades 1–5. Route `/games/split-it`; the sixth
   2. Notes: the number of vowel sounds and syllables, plus any silent e, vowel team, consonant + le, or y at the end.
   3. Tap the gaps to draw lines, then Check lines.
   4. The rule for each line in plain words (`lineRules()`), the syllables, and **Speak** (each syllable, then the word, at Spelling Bee's voice settings).
-  - A wrong Check says "Not yet" and offers **Show me**.
+  - **Teams on: each step gets ONE try** (Trace, Nov 24). A wrong Check vowels is marked at once: wrong letters red with ✗, missed vowels green with +, a written legend, 0 points; then the notes and on to lines. A wrong Check lines marks the wrong line red ✗ and the right line green +, 0 points, then Say it. There is no "Not yet" and no Show me. Back never reopens a checked step: it goes to the previous word (only lines, before Check lines, goes back to the notes).
+  - **Teams Off (class practice):** a wrong Check says "Not yet" and offers **Show me**, and the class can try again.
 - **Setup:** grade 1–5, Teams Off/2–8 with names, Movement Off/On (10/15/20 s), teaching date. The last choices are remembered.
-- **Teams:** teams take turns at the board, one word each, in colour order. The team at the board gets 1 point for vowels right on the first Check and 1 for lines right on the first Check. Show me and retries earn nothing.
+- **Teams:** teams take turns at the board, one word each, in colour order. The team at the board gets 1 point for vowels right on its one try and 1 for lines right on its one try.
 - **Movement On** shows a teacher-started exercise timer during each word. It never checks, scores or moves the game on, and it isn't saved across a refresh.
 - **Same as Quick Check:**
   - this week's words first, then review;

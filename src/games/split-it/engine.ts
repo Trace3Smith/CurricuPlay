@@ -149,28 +149,40 @@ function patch(s: SplitState, change: (a: AskedWord, w: SplitWord) => AskedWord)
   return a && w ? { ...s, asked: s.asked.map((x, i) => i === s.index ? change(a, w) : x) } : s;
 }
 const sameSet = (a: readonly number[], b: readonly number[]) => a.length === b.length && a.every(x => b.includes(x));
+/** Teams on: each step gets one try. The team's own taps are kept so the board can mark them; Teams Off may retry. */
+export const oneTry = (a: AskedWord) => !!a.teamId;
 const toggle = (list: readonly number[], n: number) => list.includes(n) ? list.filter(x => x !== n) : [...list, n].sort((x, y) => x - y);
 
 /** Tap a letter to underline it (or remove the underline). Only while finding vowels. */
-export const toggleVowel = (s: SplitState, letter: number) => patch(s, (a, w) => a.phase === 'vowels' && letter >= 0 && letter < w.word.length ? { ...a, vowels: toggle(a.vowels, letter) } : a);
+export const toggleVowel = (s: SplitState, letter: number) => patch(s, (a, w) => a.phase === 'vowels' && !(oneTry(a) && a.vowelChecks) && letter >= 0 && letter < w.word.length ? { ...a, vowels: toggle(a.vowels, letter) } : a);
 /** Tap the gap after a letter to draw a line (or remove it). Only while drawing lines. */
-export const toggleLine = (s: SplitState, after: number) => patch(s, (a, w) => a.phase === 'lines' && after > 0 && after < w.word.length ? { ...a, lines: toggle(a.lines, after) } : a);
-/** Check vowels: right moves on to the notes; the first Check decides the point. */
+export const toggleLine = (s: SplitState, after: number) => patch(s, (a, w) => a.phase === 'lines' && !(oneTry(a) && a.lineChecks) && after > 0 && after < w.word.length ? { ...a, lines: toggle(a.lines, after) } : a);
+/** Check vowels. Teams on: one try, right or wrong it moves on to the notes (a wrong try is marked on the board).
+ * Teams Off: right moves on; wrong stays for another try. The first Check decides the point. */
 export const checkVowels = (s: SplitState) => patch(s, (a, w) => {
-  if (a.phase !== 'vowels') return a;
+  if (a.phase !== 'vowels' || (oneTry(a) && a.vowelChecks)) return a;
   const right = sameSet(a.vowels, w.underline);
-  return { ...a, vowelChecks: a.vowelChecks + 1, vowelsFirst: a.vowelsFirst ?? right, phase: right ? 'notes' : 'vowels' };
+  return { ...a, vowelChecks: a.vowelChecks + 1, vowelsFirst: a.vowelsFirst ?? right, phase: right || oneTry(a) ? 'notes' : 'vowels' };
 });
-/** After a wrong Check: show the right vowels (no point). */
-export const showVowels = (s: SplitState) => patch(s, (a, w) => a.phase === 'vowels' && a.vowelChecks > 0 ? { ...a, vowels: [...w.underline], vowelsShown: true, phase: 'notes' } : a);
+/** Teams Off, after a wrong Check: show the right vowels (no point). */
+export const showVowels = (s: SplitState) => patch(s, (a, w) => a.phase === 'vowels' && a.vowelChecks > 0 && !oneTry(a) ? { ...a, vowels: [...w.underline], vowelsShown: true, phase: 'notes' } : a);
 export const toLines = (s: SplitState) => patch(s, a => a.phase === 'notes' ? { ...a, phase: 'lines' } : a);
 export const checkLines = (s: SplitState) => patch(s, (a, w) => {
-  if (a.phase !== 'lines') return a;
+  if (a.phase !== 'lines' || (oneTry(a) && a.lineChecks)) return a;
   const right = sameSet(a.lines, w.splitAfterLetter);
-  return { ...a, lineChecks: a.lineChecks + 1, linesFirst: a.linesFirst ?? right, phase: right ? 'done' : 'lines' };
+  return { ...a, lineChecks: a.lineChecks + 1, linesFirst: a.linesFirst ?? right, phase: right || oneTry(a) ? 'done' : 'lines' };
 });
-export const showLines = (s: SplitState) => patch(s, (a, w) => a.phase === 'lines' && a.lineChecks > 0 ? { ...a, lines: [...w.splitAfterLetter], linesShown: true, phase: 'done' } : a);
-export const wrongCheck = (a: AskedWord) => (a.phase === 'vowels' && a.vowelChecks > 0) || (a.phase === 'lines' && a.lineChecks > 0);
+export const showLines = (s: SplitState) => patch(s, (a, w) => a.phase === 'lines' && a.lineChecks > 0 && !oneTry(a) ? { ...a, lines: [...w.splitAfterLetter], linesShown: true, phase: 'done' } : a);
+/** Teams Off only: a wrong Check leaves the step open with "Not yet" and Show me. */
+export const wrongCheck = (a: AskedWord) => !oneTry(a) && ((a.phase === 'vowels' && a.vowelChecks > 0) || (a.phase === 'lines' && a.lineChecks > 0));
+/** Teams on, after a wrong one try: the team's taps against the answer. */
+export function marking(a: AskedWord, w: SplitWord) {
+  const vowels = oneTry(a) && a.vowelsFirst === false, lines = oneTry(a) && a.linesFirst === false;
+  return {
+    wrongLetters: vowels ? a.vowels.filter(i => !w.underline.includes(i)) : [], missedVowels: vowels ? w.underline.filter(i => !a.vowels.includes(i)) : [],
+    wrongLines: lines ? a.lines.filter(k => !w.splitAfterLetter.includes(k)) : [], missedLines: lines ? w.splitAfterLetter.filter(k => !a.lines.includes(k)) : [],
+  };
+}
 
 /** Next after a word is done: forward through words already asked (after Back), else the next word, else "every word". */
 export function next(s: SplitState): SplitState {
@@ -180,12 +192,17 @@ export function next(s: SplitState): SplitState {
   return s.queue.length ? ask(s) : { ...s, exhausted: true };
 }
 /** Back steps the flow backwards: leave "every word", go back one step in the word, or return to the previous word.
- * Checks already made (and their points) are kept. */
+ * Checks already made (and their points) are kept. Teams on, a checked step is never reopened for a second try:
+ * Back goes to the previous word, except from lines (not yet checked) back to the notes. */
 export function back(s: SplitState): SplitState {
   if (s.screen !== 'play') return s;
   if (s.exhausted) return { ...s, exhausted: false };
   const a = current(s)!;
   const step = phases.indexOf(a.phase);
+  if (oneTry(a)) {
+    if (a.phase === 'lines' && !a.lineChecks) return patch(s, x => ({ ...x, phase: 'notes' }));
+    return s.index > 0 ? { ...s, index: s.index - 1 } : s;
+  }
   if (step > 0) return patch(s, x => ({ ...x, phase: phases[step - 1] }));
   return s.index > 0 ? { ...s, index: s.index - 1 } : s;
 }
@@ -237,8 +254,12 @@ function isAsked(a: unknown, teams: readonly AssessmentTeam[]): a is AskedWord {
     typeof x.vowelsShown === 'boolean' && typeof x.linesShown === 'boolean' &&
     (x.vowelsFirst === null ? x.vowelChecks === 0 : typeof x.vowelsFirst === 'boolean' && x.vowelChecks > 0) &&
     (x.linesFirst === null ? x.lineChecks === 0 : typeof x.linesFirst === 'boolean' && x.lineChecks > 0) &&
-    // Past the vowels step means the vowels were found (or shown); past lines means the lines were.
-    (x.phase === 'vowels' || sameSet(x.vowels, w.underline)) && (x.phase !== 'done' || sameSet(x.lines, w.splitAfterLetter));
+    (x.teamId === undefined
+      // Teams Off: past the vowels step means the vowels were found (or shown); past lines means the lines were.
+      ? (x.phase === 'vowels' || sameSet(x.vowels, w.underline)) && (x.phase !== 'done' || sameSet(x.lines, w.splitAfterLetter))
+      // Teams on: one try per step, checked exactly when the word is past that step, and scored on the taps kept.
+      : x.vowelChecks === (x.phase === 'vowels' ? 0 : 1) && x.lineChecks === (x.phase === 'done' ? 1 : 0) && !x.vowelsShown && !x.linesShown &&
+        (x.vowelsFirst === null || x.vowelsFirst === sameSet(x.vowels, w.underline)) && (x.linesFirst === null || x.linesFirst === sameSet(x.lines, w.splitAfterLetter)));
 }
 export function isSplitState(v: unknown): v is SplitState {
   const s = v as SplitState;
