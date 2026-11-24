@@ -1,7 +1,8 @@
 import { teamColors } from '../four-corners/teams';
+import { SCOREBOARD_KEY } from './keys';
 
 /** Browser-local only. Holds team names, colors and scores; no student data. */
-export const SCOREBOARD_KEY = 'classthread.scoreboard.v1';
+export { SCOREBOARD_KEY };
 export const MIN_TEAMS = 2, MAX_TEAMS = 15, NAME_LIMIT = 16, HISTORY_LIMIT = 100;
 export const STEPS = [1, 2, 3, 5] as const;
 export type Step = typeof STEPS[number];
