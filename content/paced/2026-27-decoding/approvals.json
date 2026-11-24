@@ -56,10 +56,21 @@
   "5-dc-9": "approve",
   "5-dc-10": "approve"
  },
- "edits": {},
+ "edits": {
+  "3-dc-5": {
+   "explanation": "gar-den: “gar” is an r-controlled syllable."
+  },
+  "4-dc-5": {
+   "explanation": "har-vest: “har” is an r-controlled syllable."
+  },
+  "5-dc-5": {
+   "explanation": "or-bit: “or” is an r-controlled syllable."
+  }
+ },
  "held": {},
  "notes": [
   "Replaces the -dc- items of the Nov 20 bundle, which were never applied.",
-  "Nov 24: Trace approved 1-dc-3, 1-dc-4, 2-dc-5 (1st and 2nd grade can split words)."
+  "Nov 24: Trace approved 1-dc-3, 1-dc-4, 2-dc-5 (1st and 2nd grade can split words).",
+  "Nov 24: Trace corrected \"a r-controlled\" to \"an r-controlled\" in the explanations of 3-dc-5, 4-dc-5 and 5-dc-5."
  ]
 }

@@ -36,6 +36,9 @@ test('Decoding batch: all 52 approved items ship, grades 1–5, each unlocking o
   expect(new Set(keys).size).toBe(52);
   expect(decoding.filter(q => q.question === 'Which word has a vowel team?')).toHaveLength(4);
   expect(new Set(decoding.map(q => q.correctIndex)).size).toBe(4);
+  // Trace's Nov 24 wording edit.
+  for (const id of ['3-dc-5', '4-dc-5', '5-dc-5']) expect(decoding.find(q => q.batchItemId === id)!.explanation).toContain('is an r-controlled syllable');
+  expect(decoding.some(q => q.explanation!.includes('a r-controlled'))).toBe(false);
 });
 
 test('Topic: offered per grade; a topic plays only its items, still paced; All is unchanged', () => {

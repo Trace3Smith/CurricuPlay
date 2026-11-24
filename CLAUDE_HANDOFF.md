@@ -18,7 +18,7 @@ From bundle `classthread-batch-2026-11-24-decoding.json`. It replaces the Nov 20
   - When a Quick Check topic runs out and starts over, only that topic's questions are cleared from the grade's history of used questions.
 - **Batch `content/paced/2026-27-decoding/`:** 52 items, all approved, none held. Topic `decoding`. Counts: Grade 1 10, Grade 2 12, Grades 3–5 10 each. Sources are the three PL snapshots in `content/sources/pl/`.
   - The prompts repeat ("Which word has a vowel team?" ×4). So topic items without a spoken word are named by item id (`fc-paced-2026-27-decoding-1-dc-1`), and the duplicate-prompt check treats a topic item as its prompt plus its choices. Items without a topic must still have unique prompts.
-  - 3-dc-5, 4-dc-5 and 5-dc-5 explanations say "a r-controlled" (approved as written).
+  - Trace's edit in `approvals.json`: the 3-dc-5, 4-dc-5 and 5-dc-5 explanations say "an r-controlled" (the bundle had "a r-controlled").
   - Grade 2's Sept 25 items are Current on Oct 18, so `pacing-games.spec` now expects only topic items to be Current then (Kindergarten and Grade 2).
 - Tests: `tests/topic-setting.spec.ts`.
 
