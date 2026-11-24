@@ -1,6 +1,6 @@
 # CurricuPlay (ClassThread) — handoff to Claude Code
 
-Last updated November 24, 2026: spoken sight words, the Topic setting and the decoding batch are live on `main`; 24 more Grade 1–2 decoding items are on Preview (branch `decoding-grades-1-2`). Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
+Last updated November 24, 2026: spoken sight words, the Topic setting and the decoding batch (76 items, including the 24 Grade 1–2 items added from the Nov 24b bundle) are live on `main` (5573d16). Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
 
 **Release flow (applies to every change):** work on a feature branch, push it for a GitHub/Vercel Preview, let Trace check the Preview, then fast-forward `main`. **A merge to `main` is a production release.** Never merge, force-push, or promote to production without Trace's explicit approval for that specific change. Approval for one release does not carry over to the next. Do not change other games' behavior, existing storage keys, security settings, or anything in FantasyEdge or Sideline Creator unless asked.
 
@@ -8,7 +8,7 @@ Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corner
 
 ## Topic setting and decoding batch (released Nov 24, 2026; `main` at e20687a)
 
-From bundle `classthread-batch-2026-11-24-decoding.json`. It replaces the Nov 20 bundle's `-dc-` drafts, which were never applied. Bundle `classthread-batch-2026-11-24b-decoding-grades-1-2.json` then appended 24 Grade 1–2 items (on Preview, branch `decoding-grades-1-2`, until Trace checks it).
+From bundle `classthread-batch-2026-11-24-decoding.json`. It replaces the Nov 20 bundle's `-dc-` drafts, which were never applied. Bundle `classthread-batch-2026-11-24b-decoding-grades-1-2.json` then appended 24 Grade 1–2 items, released Nov 24 (`main` at 5573d16).
 
 - **Topic** is a pregame setting in Four Corners (step 3) and Quick Check (after Grade): **All** (default, the usual game), **Sight Words** and **Decoding**.
   - A topic button shows only if the grade has items with that topic on any date (`gradeTopics()` in `four-corners/engine.ts`): Kindergarten gets Sight Words, grades 1–5 get Decoding.
