@@ -7,6 +7,7 @@ import { ACTIVE_KEY, HISTORY_KEY, LISTS_KEY } from '../src/games/spelling-bee/st
 import { BINGO_ACTIVE_KEY } from '../src/games/state-lingo-bingo/keys';
 import { LAST_OPENED_KEY } from '../src/games/lastOpened';
 import { QUICK_CHECK_KEY } from '../src/games/quick-check/keys';
+import { SPLIT_IT_KEY } from '../src/games/split-it/keys';
 import { beginGame } from '../src/games/spelling-bee/engine';
 import { samples } from '../src/games/spelling-bee/words';
 import { isGameSession, summarizeSession } from '../src/assessment/engine';
@@ -59,8 +60,8 @@ test('Versioned compatibility fixture preserves scored history independently of 
   expect(summarizeSession(active.session).teams.map(team => team.score)).toEqual([1, 0]);
 });
 
-test('Version 2 export copies all 11 allowlisted records verbatim with SHA-256 fingerprints', async () => {
-  const original = { ...fixture.records, 'curricuplay.game.v1': '{corrupt but recoverable', ...bee, [BINGO_ACTIVE_KEY]: '{"version":1,"screen":"setup"}', [LAST_OPENED_KEY]: '{"version":1,"game":"spelling-bee","at":"2026-10-26T15:00:00.000Z"}', [QUICK_CHECK_KEY]: '{"version":1,"screen":"setup"}', 'auth-token': 'never export' };
+test('Version 2 export copies all 12 allowlisted records verbatim with SHA-256 fingerprints', async () => {
+  const original = { ...fixture.records, 'curricuplay.game.v1': '{corrupt but recoverable', ...bee, [BINGO_ACTIVE_KEY]: '{"version":1,"screen":"setup"}', [LAST_OPENED_KEY]: '{"version":1,"game":"spelling-bee","at":"2026-10-26T15:00:00.000Z"}', [QUICK_CHECK_KEY]: '{"version":1,"screen":"setup"}', [SPLIT_IT_KEY]: '{"version":1,"screen":"setup"}', 'auth-token': 'never export' };
   const store = storage(original);
   const writes: string[] = [];
   const spy = { getItem: store.getItem, setItem: (key: string) => { writes.push(key); } };
@@ -68,7 +69,7 @@ test('Version 2 export copies all 11 allowlisted records verbatim with SHA-256 f
   expect(archive.format).toBe('classthread-browser-archive');
   expect(archive.version).toBe(2);
   expect(Object.keys(archive.records)).toEqual([...exportKeys]);
-  expect(exportKeys).toHaveLength(11);
+  expect(exportKeys).toHaveLength(12);
   for (const key of exportKeys) expect(archive.records[key]).toBe(original[key]);
   const file = await withChecksums(archive);
   expect(Object.keys(file.checksums)).toEqual([...exportKeys]);
@@ -130,6 +131,6 @@ test('When the preservation write fails, the download keeps pre-mount legacy val
   const archive = JSON.parse(await readFile((await download.path())!, 'utf8'));
   expect(archive.version).toBe(2);
   expect(Object.keys(archive.records)).toEqual([...exportKeys]);
-  expect(archive.records).toEqual({ ...fixture.records, ...bee, [BINGO_ACTIVE_KEY]: null, [LAST_OPENED_KEY]: null, [QUICK_CHECK_KEY]: null });
+  expect(archive.records).toEqual({ ...fixture.records, ...bee, [BINGO_ACTIVE_KEY]: null, [LAST_OPENED_KEY]: null, [QUICK_CHECK_KEY]: null, [SPLIT_IT_KEY]: null });
   for (const key of exportKeys) expect(archive.checksums[key]).toBe(sha256(archive.records[key]));
 });

@@ -1,0 +1,92 @@
+/* Split It! in DESIGN.md board mode (shared basics: games/board-mode.css). Scoped to .app.si-app.
+   The word is the one focal point: big Barlow letter tiles, each underline a thick orange bar (a shape, not just a
+   colour), each syllable line a thick white bar in a finger-wide gap. Team colours appear only beside written names. */
+.app.si-app .primary{display:inline-flex;align-items:center;justify-content:center;min-height:calc(88 * var(--u));min-width:calc(300 * var(--u));padding:0 calc(48 * var(--u));border:2px solid var(--ds-highlight);border-radius:var(--ds-rounded-pill);background:var(--ds-highlight);color:var(--ds-on-highlight);font-family:var(--ds-font-board);font-size:calc(36 * var(--u));font-weight:700;line-height:1.1}
+.app.si-app .primary:hover:not(:disabled){background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-on-highlight)}
+.app.si-app :where(.si-options button,.si-controls button:not(.primary),.si-end-actions button:not(.primary),.si-timer button,.warning button){display:inline-flex;align-items:center;justify-content:center;gap:calc(12 * var(--u));min-height:calc(72 * var(--u));padding:calc(8 * var(--u)) calc(28 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-pill);background:transparent;color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;line-height:1.15}
+.app.si-app :where(.si-options button,.si-controls button:not(.primary),.si-end-actions button:not(.primary),.si-timer button):hover:not(:disabled){background:var(--ds-primary-dark)}
+/* Selected options: solid white with navy text and a ✓, switching instantly (as in Quick Check). */
+.app.si-app .si-options button{transition:none;min-width:calc(120 * var(--u))}
+.app.si-app .si-options button[aria-pressed=true],.app.si-app .si-options button[aria-pressed=true]:is(:hover,:focus,:active){background:var(--ds-on-board);border-color:var(--ds-on-board);color:var(--ds-board)}
+.app.si-app .si-options button[aria-pressed=true]::before{content:'✓ ' / '';white-space:pre}
+.app.si-app .eyebrow{font-size:var(--board-text);font-weight:700;line-height:1.2;letter-spacing:.08em;color:var(--ds-secondary)}
+.app.si-app .assessment-team-accent{width:calc(26 * var(--u));height:calc(26 * var(--u));min-width:14px;min-height:14px}
+
+/* Setup: one screen, no scrolling. Each label sits beside its buttons. */
+.app.si-app .si-setup{margin:calc(24 * var(--u)) 0 0}
+.app.si-app .si-setup h1{font-family:var(--ds-font-board);font-size:calc(64 * var(--u));font-weight:700;line-height:1.05;margin:calc(12 * var(--u)) 0 calc(32 * var(--u))}
+.app.si-app .si-setup fieldset{display:flex;align-items:center;margin:0 0 calc(24 * var(--u))}
+.app.si-app .si-setup legend{float:left;flex:none;width:calc(260 * var(--u));margin:0;padding:0;color:var(--ds-secondary);font-size:calc(36 * var(--u));font-weight:700;line-height:1.2}
+.app.si-app .si-options{display:flex;flex-wrap:wrap;gap:calc(16 * var(--u));flex:1}
+.app.si-app .si-grades{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.app.si-app .si-options .si-duration{margin-left:calc(8 * var(--u))}
+.app.si-app .si-name-inputs{flex:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(16 * var(--u))}
+.app.si-app .si-name-inputs label{display:flex;align-items:center;gap:calc(12 * var(--u))}
+.app.si-app :is(.si-name-inputs input,.si-start input){min-width:0;width:100%;min-height:calc(64 * var(--u));padding:0 calc(16 * var(--u));border:2px solid var(--ds-on-board);border-radius:var(--ds-rounded-md);background:var(--ds-board);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:var(--board-text);font-weight:700;color-scheme:dark}
+.app.si-app .si-name-inputs input::placeholder{color:var(--ds-on-board);opacity:.75}
+.app.si-app .si-start{display:flex;align-items:center;gap:calc(32 * var(--u));margin-top:calc(32 * var(--u))}
+.app.si-app .si-start label{display:flex;align-items:center;gap:calc(16 * var(--u));font-size:var(--board-text);white-space:nowrap}
+.app.si-app .si-start input{width:auto}
+.app.si-app .si-start p{flex:1;font-size:var(--board-text);line-height:1.25}
+
+/* Play: progress and whose turn, the step, the word (focal), notes / rules, controls in the lower half, scores. */
+.app.si-app.si-playing{height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+.app.si-app.si-playing header{flex-shrink:0}
+.app.si-app .si-game{flex:1;min-height:0;display:flex;flex-direction:column;gap:calc(16 * var(--u));padding:calc(16 * var(--u)) 0 0}
+.app.si-app .si-meta{flex:none;display:flex;align-items:center;gap:calc(32 * var(--u));font-size:calc(36 * var(--u));letter-spacing:.04em}
+.app.si-app .si-meta [data-testid=si-progress]{color:var(--ds-highlight)}
+.app.si-app .si-turn{margin-left:auto;display:inline-flex;align-items:center;gap:calc(12 * var(--u))}
+.app.si-app .si-step{flex:none;font-family:var(--ds-font-board);font-size:calc(40 * var(--u));letter-spacing:.06em;color:var(--ds-secondary);text-align:center}
+.app.si-app .si-stage{flex:1 1 0;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.app.si-app .si-exhausted .si-stage h1{font-size:calc(80 * var(--u))}
+.app.si-app .si-exhausted .si-stage p{margin-top:calc(24 * var(--u));font-size:calc(40 * var(--u));line-height:1.25}
+
+/* The word: tile and gap columns alternate. --tile shrinks for long words so 11 letters still fit the board;
+   gaps stay at least 48px wide so a finger can hit them on a Smart Board. */
+.app.si-app .si-word{--gapw:max(48px,calc(64 * var(--u)));
+  --tile:min(calc(176 * var(--u)),calc((100vw - 2 * 64 * var(--u) - 40px - (var(--n) - 1) * var(--gapw)) / var(--n)));
+  display:grid;grid-template-rows:auto auto;row-gap:calc(8 * var(--u));justify-content:center}
+.app.si-app .si-cell,.app.si-app .si-gap-cell{grid-row:1;display:flex}
+.app.si-app .si-tile{display:flex;align-items:center;justify-content:center;width:var(--tile);height:calc(var(--tile) * 1.3);min-height:0;padding:0 0 calc(var(--tile) * .12);border:3px solid var(--ds-sky);border-radius:var(--ds-rounded-md);background:var(--ds-primary);color:var(--ds-on-board);font-family:var(--ds-font-board);font-size:calc(var(--tile) * .8);font-weight:700;line-height:1;transition:none;position:relative}
+.app.si-app button.si-tile:hover{background:var(--ds-primary-dark)}
+/* Underline: a thick orange bar under the letter (shape and colour), plus aria-pressed on the tile. */
+.app.si-app .si-tile.si-underlined::after{content:'';position:absolute;left:12%;right:12%;bottom:calc(var(--tile) * .08);height:max(8px,calc(var(--tile) * .09));border-radius:999px;background:var(--ds-highlight)}
+.app.si-app .si-gap{display:flex;align-items:center;justify-content:center;width:var(--gapw);height:calc(var(--tile) * 1.3);min-height:0;padding:0;border:0;border-radius:var(--ds-rounded-sm);background:transparent;transition:none}
+.app.si-app button.si-gap{border:2px dashed var(--ds-sky)}
+.app.si-app button.si-gap:hover{background:var(--ds-primary-dark)}
+.app.si-app .si-gap i{display:block;width:max(8px,calc(12 * var(--u)));height:0;border-radius:999px;background:var(--ds-on-board)}
+.app.si-app .si-gap.si-drawn i{height:calc(var(--tile) * 1.5)}
+.app.si-app .si-mark{grid-row:2;justify-self:stretch;padding:calc(4 * var(--u)) calc(8 * var(--u));border-top:max(4px,calc(6 * var(--u))) solid var(--ds-secondary);color:var(--ds-on-board);font-size:var(--board-text);line-height:1.1;text-align:center;white-space:nowrap}
+
+.app.si-app .si-info{flex:none;min-height:calc(150 * var(--u));display:flex;flex-direction:column;align-items:center;gap:calc(8 * var(--u));font-size:calc(32 * var(--u));line-height:1.25;text-align:center}
+.app.si-app .si-info ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:calc(6 * var(--u))}
+.app.si-app .si-feedback{color:var(--ds-highlight)}
+.app.si-app .si-syllables{font-size:calc(56 * var(--u));color:var(--ds-highlight);letter-spacing:.04em}
+.app.si-app .si-results{display:flex;flex-wrap:wrap;justify-content:center;gap:calc(12 * var(--u)) calc(32 * var(--u));font-size:var(--board-text)}
+.app.si-app .si-result-yes{color:var(--ds-secondary)}
+.app.si-app .si-controls{flex:none;display:flex;align-items:center;justify-content:space-between;gap:calc(24 * var(--u));padding:0 calc(24 * var(--u)) calc(8 * var(--u))}
+.app.si-app .si-controls-main{display:flex;align-items:center;gap:calc(32 * var(--u))}
+.app.si-app .si-end-button{min-height:calc(88 * var(--u));min-width:calc(160 * var(--u));font-size:calc(36 * var(--u))}
+.app.si-app .si-timer{display:flex;align-items:center;gap:calc(20 * var(--u));padding:calc(6 * var(--u)) calc(20 * var(--u));border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);font-size:var(--board-text)}
+.app.si-app .si-timer-count{min-width:calc(80 * var(--u));font-size:calc(56 * var(--u));line-height:1;color:var(--ds-highlight);text-align:center}
+.app.si-app .si-timer-done{border-color:var(--ds-highlight)}
+.app.si-app .si-scorebar{flex:none;display:flex;flex-wrap:wrap;justify-content:center;gap:calc(12 * var(--u)) calc(32 * var(--u));padding:calc(10 * var(--u)) 0;border-top:2px solid var(--ds-primary-dark);font-size:var(--board-text)}
+.app.si-app .si-scorebar>span{display:inline-flex;align-items:center;padding:calc(4 * var(--u)) calc(16 * var(--u));border:2px solid transparent;border-radius:var(--ds-rounded-pill)}
+/* Whose turn: outlined in orange and named in the meta line, never by colour alone. */
+.app.si-app .si-scorebar>.si-up{border-color:var(--ds-highlight)}
+.app.si-app .si-scorebar b,.app.si-app .si-final-scores b{color:var(--ds-highlight);margin-left:calc(8 * var(--u))}
+
+/* End screen */
+.app.si-app .si-end{margin:calc(24 * var(--u)) 0 0;display:flex;flex-direction:column;gap:calc(20 * var(--u))}
+.app.si-app .si-end h1{font-family:var(--ds-font-board);font-size:calc(96 * var(--u));line-height:1;color:var(--ds-highlight)}
+.app.si-app .si-end-count{font-size:calc(36 * var(--u))}
+.app.si-app .si-final{display:flex;align-items:center;flex-wrap:wrap;gap:calc(16 * var(--u)) calc(40 * var(--u))}
+.app.si-app .si-winner{font-size:calc(48 * var(--u))}
+.app.si-app .si-final-scores{display:flex;flex-wrap:wrap;gap:calc(12 * var(--u)) calc(32 * var(--u));font-size:calc(36 * var(--u))}
+.app.si-app .si-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(16 * var(--u));margin:0;padding:0;list-style:none}
+.app.si-app .si-summary li{padding:calc(12 * var(--u)) calc(20 * var(--u));border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);font-size:var(--board-text);line-height:1.2}
+.app.si-app .si-summary-meta{color:var(--ds-secondary)}
+.app.si-app .si-summary p{margin-top:calc(6 * var(--u));font-size:calc(40 * var(--u));overflow-wrap:anywhere}
+.app.si-app .si-end-actions{display:flex;gap:calc(24 * var(--u));padding-bottom:calc(24 * var(--u))}
+@media(max-width:900px){.app.si-app .si-setup fieldset{flex-direction:column;align-items:stretch}.app.si-app .si-setup legend{float:none;width:auto;margin-bottom:8px}.app.si-app .si-name-inputs{grid-template-columns:1fr 1fr}.app.si-app .si-start,.app.si-app .si-controls,.app.si-app .si-controls-main{flex-wrap:wrap}.app.si-app .si-summary{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:no-preference){.app.si-app :is(.primary,.si-controls button,.si-end-actions button,.si-timer button){transition:background-color .15s,border-color .15s,color .15s}}

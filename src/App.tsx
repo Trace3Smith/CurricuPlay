@@ -4,6 +4,7 @@ import FourCorners from './games/four-corners/FourCorners';
 import { readActive as readSpellingBee } from './games/spelling-bee/storage';
 import { readActive as readBingo } from './games/state-lingo-bingo/storage';
 import { loadState as loadQuickCheck } from './games/quick-check/engine';
+import { loadState as loadSplitIt } from './games/split-it/engine';
 import { isTeamMode, loadState as loadFourCornersState } from './games/four-corners/engine';
 import { readReviews, REVIEW_KEY } from './services/questionReview';
 import { grades, type Filters, type GameState, type Grade } from './types';
@@ -84,8 +85,10 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
   const resumableBingo = bingoState?.screen === 'play' ? bingoState : null;
   const quickState = screen === 'home' ? loadQuickCheck() : null;
   const resumableQuick = quickState?.screen === 'play' ? quickState : null;
+  const splitState = screen === 'home' ? loadSplitIt() : null;
+  const resumableSplit = splitState?.screen === 'play' ? splitState : null;
   // Only one saved game gets the orange board spotlight; the others show a white-outlined CONTINUE.
-  const savedGames = ([['quick-check', !!resumableQuick], ['jeopardy', !!state.selectedGame], ['four-corners', !!resumableCorners], ['spelling-bee', resumableBee], ['state-lingo-bingo', !!resumableBingo]] as const).filter(([, saved]) => saved).map(([game]) => game);
+  const savedGames = ([['quick-check', !!resumableQuick], ['jeopardy', !!state.selectedGame], ['four-corners', !!resumableCorners], ['spelling-bee', resumableBee], ['state-lingo-bingo', !!resumableBingo], ['split-it', !!resumableSplit]] as const).filter(([, saved]) => saved).map(([game]) => game);
   const spotlight = screen === 'home' ? spotlightGame(savedGames, readLastOpened()) : null;
   const spot = (game: HubGame) => (spotlight === game ? '' : undefined);
   return <div className={`app board-mode ${active ? 'playing' : ''} ${screen === 'home' ? 'hub' : 'jeopardy'}`}>
@@ -109,6 +112,7 @@ export default function App({ gamePath, reviewDirect, onNavigate, onExit, onBack
         <button className="game-card live" data-spotlight={spot('four-corners')} onClick={() => onNavigate('/games/four-corners')}><span className="fc-home-art" aria-hidden="true">{['A', 'B', 'C', 'D'].map(letter => <b key={letter}>{letter}</b>)}</span><span className="card-bottom"><strong>FOUR CORNERS</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableCorners ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableCorners ? `${gradeLabel(resumableCorners.grade)} · ${isTeamMode(resumableCorners) ? 'Team Mode' : 'Classic'}` : 'Think. Move. Everyone stays in.'}</span></button>
         <button className="game-card live" data-spotlight={spot('spelling-bee')} onClick={() => onNavigate('/games/spelling-bee')}><span className="bee-home-art" aria-hidden="true">A B C</span><span className="card-bottom"><strong>SPELLING BEE</strong><span className="play-tag">{resumableBee ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">Collect letters. Build words. Play together.</span></button>
         <button className="game-card live" data-spotlight={spot('state-lingo-bingo')} onClick={() => onNavigate('/games/state-lingo-bingo')}><span className="slb-home-art" aria-hidden="true">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span><span className="card-bottom"><strong>STATE LINGO BINGO</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableBingo ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableBingo ? `${resumableBingo.teams!.length} teams` : 'Roll. Move. Dig for the capital.'}</span></button>
+        <button className="game-card live" data-spotlight={spot('split-it')} onClick={() => onNavigate('/games/split-it')}><span className="si-home-art" aria-hidden="true"><b>nap</b><i /><b>kin</b></span><span className="card-bottom"><strong>SPLIT IT!</strong><span className="play-tag" style={{ whiteSpace: 'nowrap' }}>{resumableSplit ? 'CONTINUE' : 'PLAY'} ↗</span></span><span className="card-description">{resumableSplit ? `Grade ${resumableSplit.grade} · Word ${resumableSplit.index + 1}` : 'Find the vowels. Split the word.'}</span></button>
       </div>
       <button className="review-entry" data-testid="open-scoreboard" onClick={() => onNavigate('/games/scoreboard')}>Teaching tools · Scoreboard</button>
       <button className="review-entry" onClick={() => onNavigate('/games/review', true)}>Teacher tools · Question Review</button>

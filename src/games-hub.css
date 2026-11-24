@@ -9,7 +9,7 @@
 .app.hub .home h1{font-family:var(--ds-font-board);font-size:calc(64 * var(--u));font-weight:700;line-height:1.05;letter-spacing:0;margin:calc(16 * var(--u)) 0}
 .app.hub .home h1 span{color:var(--ds-on-board)}
 .app.hub .intro{font-size:var(--board-text);line-height:1.25;color:var(--ds-on-board)}
-.app.hub .game-cards{grid-template-columns:repeat(5,minmax(0,1fr));gap:calc(32 * var(--u));margin-top:calc(32 * var(--u))}
+.app.hub .game-cards{grid-template-columns:repeat(6,minmax(0,1fr));gap:calc(32 * var(--u));margin-top:calc(32 * var(--u))}
 /* Bright-blue cards on the navy page so they stand out; each has a navy band that previews the game board, with the art centred in it. */
 .app.hub .game-card{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:var(--panel) auto 1fr auto;gap:0;min-height:0;padding:0 0 calc(24 * var(--u));text-align:left;color:var(--ds-on-board);background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary);border:2px solid var(--ds-sky);border-radius:var(--ds-rounded-lg);box-shadow:none;overflow:hidden}
 .app.hub .game-card:hover:not(:disabled){background:linear-gradient(var(--ds-board),var(--ds-board)) top/100% var(--panel) no-repeat var(--ds-primary-dark);border-color:var(--ds-on-board)}
@@ -34,3 +34,6 @@
 @media(prefers-reduced-motion:no-preference){.app.hub .play-tag{transition:background-color .15s,border-color .15s,color .15s}}
 @media(max-width:900px){.app.hub .game-cards{grid-template-columns:1fr 1fr}.app.hub .home>.home-note{flex-basis:100%;align-items:flex-start;text-align:left;margin-top:calc(24 * var(--u))}}
 @media(max-width:560px){.app.hub .game-cards{grid-template-columns:1fr}}
+.app.hub .si-home-art{display:inline-flex;align-items:center;gap:calc(10 * var(--u));font-family:var(--ds-font-board);font-size:calc(52 * var(--u));line-height:1}
+.app.hub .si-home-art b{padding:calc(4 * var(--u)) calc(10 * var(--u));border-bottom:calc(6 * var(--u)) solid var(--ds-highlight);color:var(--ds-on-board)}
+.app.hub .si-home-art i{width:calc(8 * var(--u));height:calc(72 * var(--u));border-radius:999px;background:var(--ds-on-board)}

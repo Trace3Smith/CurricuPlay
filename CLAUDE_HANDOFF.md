@@ -1,10 +1,35 @@
 # CurricuPlay (ClassThread) — handoff to Claude Code
 
-Last updated November 24, 2026: spoken sight words, the Topic setting and the decoding batch (76 items, including the 24 Grade 1–2 items added from the Nov 24b bundle) are live on `main` (5573d16). Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
+Last updated November 24, 2026: Split It! Phase 1 is on Preview (branch `split-it`). Spoken sight words, the Topic setting and the decoding batch (76 items, including the 24 Grade 1–2 items added from the Nov 24b bundle) are live on `main` (5573d16). Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
 
 **Release flow (applies to every change):** work on a feature branch, push it for a GitHub/Vercel Preview, let Trace check the Preview, then fast-forward `main`. **A merge to `main` is a production release.** Never merge, force-push, or promote to production without Trace's explicit approval for that specific change. Approval for one release does not carry over to the next. Do not change other games' behavior, existing storage keys, security settings, or anything in FantasyEdge or Sideline Creator unless asked.
 
 Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The Quick Check, State Lingo Bingo and paced content batch sections come first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
+
+## Split It! Phase 1 (branch `split-it`, Preview Nov 24, 2026; not on main yet)
+
+A Smart Board syllable game for grades 1–5. Route `/games/split-it`; the sixth card on the Games hub. Code in `src/games/split-it/` (`engine.ts`, `SplitIt.tsx`, `ExerciseTimer.tsx`, `split-it.css`, `keys.ts`).
+
+- **Words:** `src/data/split-it-words.json`, Trace's word bank copied as is (63 words; costume, basketball and celebrate are left out on purpose).
+  - Each word gives its grade, unlock date, split, every vowel position (including silent e, the e in -le, and y at the end), silent e, vowel teams and consonant-le.
+  - The words come from the live `2026-27-decoding` batch. A word unlocks on the day its split-the-word item is taught.
+  - The engine refuses the whole bank if any entry disagrees with itself (fail closed). `tests/split-it.spec.ts` checks every word against the decoding batch, and every line against the handout rules.
+- **Steps per word:**
+  1. Underline every vowel, then Check vowels.
+  2. Notes: the number of vowel sounds and syllables, plus any silent e, vowel team, consonant + le, or y at the end.
+  3. Tap the gaps to draw lines, then Check lines.
+  4. The rule for each line in plain words (`lineRules()`), the syllables, and **Speak** (each syllable, then the word, at Spelling Bee's voice settings).
+  - A wrong Check says "Not yet" and offers **Show me**.
+- **Setup:** grade 1–5, Teams Off/2–8 with names, Movement Off/On (10/15/20 s), teaching date. The last choices are remembered.
+- **Teams:** teams take turns at the board, one word each, in colour order. The team at the board gets 1 point for vowels right on the first Check and 1 for lines right on the first Check. Show me and retries earn nothing.
+- **Movement On** shows a teacher-started exercise timer during each word. It never checks, scores or moves the game on, and it isn't saved across a refresh.
+- **Same as Quick Check:**
+  - this week's words first, then review;
+  - no repeats per grade; "That's every word for now!" with Start the list over;
+  - Back steps back through the word's steps, then to the previous word, keeping results; End and Keep going;
+  - refresh recovery: the save `classthread.split-it.v1` is included in "Export browser Games data", and an invalid save opens a fresh setup.
+- **History:** gameType `split-it` ("Split It!"). Each word records a vowels step and a lines step once each has been checked, credited to the team at the board; with Teams Off there are no responses. These are class practice records.
+- No student names are stored. No other game's behaviour changed. The hub grid is now 6 columns, and the hub and export tests were updated for the sixth card and the new key.
 
 ## Topic setting and decoding batch (released Nov 24, 2026; `main` at e20687a)
 

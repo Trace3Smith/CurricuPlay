@@ -1,0 +1,1264 @@
+{
+ "name": "Split It! word bank",
+ "generated": "2026-11-24",
+ "howToRead": "splitAfterLetter = the line goes after that many letters (napkin [3] = nap|kin). underline = 0-based positions of EVERY vowel letter (a, e, i, o, u, plus y at the end of a word); students underline all of them, including silent e and the e in -le (Trace, Nov 24). After Check vowels the game marks silentE (e.g. a small 'silent' tag: it makes no sound and gets no line before it), consonantLe (the c+le chunk stays together), and vowelTeams (two vowels, one sound: no line between them). Words and dates come from the live decoding batch (content/paced/2026-27-decoding).",
+ "excluded": {
+  "costume, basketball": "splitting them by sound breaks the 'st'/'sk' blend rule in the handout",
+  "celebrate": "the 1-consonant rule gives ce-le-brate but it is said cel-e-brate; too confusing to check"
+ },
+ "words": [
+  {
+   "grade": "1",
+   "word": "cupcake",
+   "split": "cup-cake",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    4,
+    6
+   ],
+   "silentE": [
+    6
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "inside",
+   "split": "in-side",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    0,
+    3,
+    5
+   ],
+   "silentE": [
+    5
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "magnet",
+   "split": "mag-net",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "picnic",
+   "split": "pic-nic",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "sunshine",
+   "split": "sun-shine",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    5,
+    7
+   ],
+   "silentE": [
+    7
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "kitten",
+   "split": "kit-ten",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "napkin",
+   "split": "nap-kin",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "sunset",
+   "split": "sun-set",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "muffin",
+   "split": "muf-fin",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "rabbit",
+   "split": "rab-bit",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "pancake",
+   "split": "pan-cake",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    6
+   ],
+   "silentE": [
+    6
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "bedtime",
+   "split": "bed-time",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    6
+   ],
+   "silentE": [
+    6
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "insect",
+   "split": "in-sect",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "rainbow",
+   "split": "rain-bow",
+   "splitAfterLetter": [
+    4
+   ],
+   "unlocks": "2027-01-15",
+   "underline": [
+    1,
+    2,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     1,
+     2
+    ],
+    [
+     5,
+     6
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "mailbox",
+   "split": "mail-box",
+   "splitAfterLetter": [
+    4
+   ],
+   "unlocks": "2027-01-15",
+   "underline": [
+    1,
+    2,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     1,
+     2
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "garden",
+   "split": "gar-den",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2027-03-05",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "popcorn",
+   "split": "pop-corn",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2027-03-05",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "puzzle",
+   "split": "puz-zle",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2027-04-16",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [
+    [
+     3,
+     5
+    ]
+   ],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "1",
+   "word": "candle",
+   "split": "can-dle",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2027-04-16",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [
+    [
+     3,
+     5
+    ]
+   ],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "reptile",
+   "split": "rep-tile",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-09-25",
+   "underline": [
+    1,
+    4,
+    6
+   ],
+   "silentE": [
+    6
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "invite",
+   "split": "in-vite",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-09-25",
+   "underline": [
+    0,
+    3,
+    5
+   ],
+   "silentE": [
+    5
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "explode",
+   "split": "ex-plode",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-09-25",
+   "underline": [
+    0,
+    4,
+    6
+   ],
+   "silentE": [
+    6
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "contest",
+   "split": "con-test",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-09-25",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "until",
+   "split": "un-til",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-09-25",
+   "underline": [
+    0,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "dentist",
+   "split": "den-tist",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "oatmeal",
+   "split": "oat-meal",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    0,
+    1,
+    4,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "seaweed",
+   "split": "sea-weed",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    2,
+    4,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     1,
+     2
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "peanut",
+   "split": "pea-nut",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    2,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     1,
+     2
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "teapot",
+   "split": "tea-pot",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    2,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     1,
+     2
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "raincoat",
+   "split": "rain-coat",
+   "splitAfterLetter": [
+    4
+   ],
+   "unlocks": "2026-11-13",
+   "underline": [
+    1,
+    2,
+    5,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     1,
+     2
+    ],
+    [
+     5,
+     6
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "robot",
+   "split": "ro-bot",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2027-01-15",
+   "underline": [
+    1,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "music",
+   "split": "mu-sic",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2027-01-15",
+   "underline": [
+    1,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "harvest",
+   "split": "har-vest",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2027-03-05",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "thunder",
+   "split": "thun-der",
+   "splitAfterLetter": [
+    4
+   ],
+   "unlocks": "2027-03-05",
+   "underline": [
+    2,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "tumble",
+   "split": "tum-ble",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2027-04-16",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [
+    [
+     3,
+     5
+    ]
+   ],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "2",
+   "word": "simple",
+   "split": "sim-ple",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2027-04-16",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [
+    [
+     3,
+     5
+    ]
+   ],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "pumpkin",
+   "split": "pump-kin",
+   "splitAfterLetter": [
+    4
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "complete",
+   "split": "com-plete",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    5,
+    7
+   ],
+   "silentE": [
+    7
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "tiger",
+   "split": "ti-ger",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "explain",
+   "split": "ex-plain",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    4,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     4,
+     5
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "garden",
+   "split": "gar-den",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "bubble",
+   "split": "bub-ble",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [
+    [
+     3,
+     5
+    ]
+   ],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "hundred",
+   "split": "hun-dred",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "monster",
+   "split": "mon-ster",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "pilot",
+   "split": "pi-lot",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "3",
+   "word": "December",
+   "split": "De-cem-ber",
+   "splitAfterLetter": [
+    2,
+    5
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    3,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "volcano",
+   "split": "vol-ca-no",
+   "splitAfterLetter": [
+    3,
+    5
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "solar",
+   "split": "so-lar",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "sixteen",
+   "split": "six-teen",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     4,
+     5
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "harvest",
+   "split": "har-vest",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "sparkle",
+   "split": "spar-kle",
+   "splitAfterLetter": [
+    4
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    2,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [
+    [
+     4,
+     6
+    ]
+   ],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "tornado",
+   "split": "tor-na-do",
+   "splitAfterLetter": [
+    3,
+    5
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "electric",
+   "split": "e-lec-tric",
+   "splitAfterLetter": [
+    1,
+    4
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    2,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "astronaut",
+   "split": "as-tro-naut",
+   "splitAfterLetter": [
+    2,
+    5
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    4,
+    6,
+    7
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     6,
+     7
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "4",
+   "word": "hamburger",
+   "split": "ham-bur-ger",
+   "splitAfterLetter": [
+    3,
+    6
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    7
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "dinosaur",
+   "split": "di-no-saur",
+   "splitAfterLetter": [
+    2,
+    4
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     5,
+     6
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "mermaid",
+   "split": "mer-maid",
+   "splitAfterLetter": [
+    3
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    5
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [
+    [
+     4,
+     5
+    ]
+   ],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "orbit",
+   "split": "or-bit",
+   "splitAfterLetter": [
+    2
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    3
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "obstacle",
+   "split": "ob-sta-cle",
+   "splitAfterLetter": [
+    2,
+    5
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    4,
+    7
+   ],
+   "silentE": [],
+   "consonantLe": [
+    [
+     5,
+     7
+    ]
+   ],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "independent",
+   "split": "in-de-pen-dent",
+   "splitAfterLetter": [
+    2,
+    4,
+    7
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    3,
+    5,
+    8
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "September",
+   "split": "Sep-tem-ber",
+   "splitAfterLetter": [
+    3,
+    6
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    1,
+    4,
+    7
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "appetite",
+   "split": "ap-pe-tite",
+   "splitAfterLetter": [
+    2,
+    4
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    3,
+    5,
+    7
+   ],
+   "silentE": [
+    7
+   ],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": false
+  },
+  {
+   "grade": "5",
+   "word": "unhappy",
+   "split": "un-hap-py",
+   "splitAfterLetter": [
+    2,
+    5
+   ],
+   "unlocks": "2026-11-20",
+   "underline": [
+    0,
+    3,
+    6
+   ],
+   "silentE": [],
+   "consonantLe": [],
+   "vowelTeams": [],
+   "yAsVowel": true
+  }
+ ]
+}
