@@ -1,5 +1,9 @@
 import { test, expect, type Page } from '@playwright/test';
 import pack from '../src/data/four-corners.json' with { type: 'json' };
+import pacedCorners from '../src/data/paced-four-corners.json' with { type: 'json' };
+import { questionTaughtDate } from '../src/services/questionEngine';
+// Games run on Sept 17. Paced batches taught by then join the base pack (the Kindergarten sight-word list starts Aug 24).
+const live = [...pack, ...(pacedCorners as unknown as typeof pack).filter(q => questionTaughtDate(q as never)! <= '2026-09-17')];
 const key = 'curricuplay.four-corners.v1';
 const historyKey = 'curricuplay.sessions.v1';
 const colorNames = ['Orange', 'Purple', 'Green', 'Yellow', 'Red', 'Blue'];
@@ -57,7 +61,7 @@ test('Team scoring toggles, clears, recovers, and commits only on Next; live vie
   expect(s.session.responses).toHaveLength(6); expect(s.session.questions).toHaveLength(1);
   expect(s.session.responses.map((r: any) => r.correct)).toEqual([true, false, false, false, false, true]);
   expect(s.session.responses.map((r: any) => r.pointsAwarded)).toEqual([1, 0, 0, 0, 0, 1]);
-  const q = pack.find(q => q.id === s.questionIds[0])!;
+  const q = live.find(q => q.id === s.questionIds[0])!;
   expect(s.session.questions[0]).toMatchObject({ questionId: q.id, subject: q.subject, prompt: q.question });
   expect(s.session.questions[0].standards).toEqual(q.standard ? [q.standard] : undefined);
   await page.reload(); expect((await state(page)).session).toEqual(s.session);
@@ -98,13 +102,13 @@ for (const [grade, teams] of [['K', 6], ['1', 1], ['2', 8], ['3', 12], ['4', 6],
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await setup(page, grade, teams); await page.getByRole('button', { name: /^Start Game/ }).click();
   const initial = await state(page); const ids = initial.questionIds;
-  expect(new Set(ids).size).toBe(ids.length); expect(ids).toHaveLength(pack.filter(q => q.grade === grade).length);
-  const subjects = ids.map((id: string) => pack.find(q => q.id === id)!.subject);
+  expect(new Set(ids).size).toBe(ids.length); expect(ids).toHaveLength(live.filter(q => q.grade === grade).length);
+  const subjects = ids.map((id: string) => live.find(q => q.id === id)!.subject);
   expect(subjects.every((s: string, i: number) => !i || s !== subjects[i - 1])).toBe(true);
   for (let i = 0; i < ids.length; i++) {
     await expect(page.getByText(`Round ${i + 1}`, { exact: true })).toBeVisible();
     await fits(page);
-    const q = pack.find(q => q.id === ids[i])!;
+    const q = live.find(q => q.id === ids[i])!;
     await expect(page.locator('.fc-game h1')).toHaveText(q.question);
     if ('visual' in q && q.visual) expect(await page.locator('.fc-prompt img').evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
     await page.getByRole('button', { name: 'Reveal Answer' }).click();
@@ -120,7 +124,7 @@ for (const [grade, teams] of [['K', 6], ['1', 1], ['2', 8], ['3', 12], ['4', 6],
   expect(final.session.questions.map((q: any) => q.questionId)).toEqual(ids);
   expect(final.session.responses).toHaveLength(ids.length * teams);
   expect(final.session.responses.filter((r: any) => r.correct)).toHaveLength(ids.length);
-  expect(final.session.responses.every((r: any) => r.subject === pack.find(q => q.id === r.questionId)!.subject)).toBe(true);
+  expect(final.session.responses.every((r: any) => r.subject === live.find(q => q.id === r.questionId)!.subject)).toBe(true);
   await page.getByRole('button', { name: 'Team Performance', exact: true }).click();
   await fits(page, '.assessment-team-grid article, .assessment-paging button');
   await page.reload(); expect((await state(page)).session).toEqual(final.session);

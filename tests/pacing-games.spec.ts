@@ -102,7 +102,10 @@ test('Four Corners content choice splits Current and Review; Math stays excluded
     const current = eligible(grade, mix, 'current', '2026-09-20'), review = eligible(grade, mix, 'review', '2026-09-20'), both = eligible(grade, mix, 'mixed', '2026-09-20');
     expect(current.length + review.length).toBe(both.length);
     expect(both.some(q => q.subject === 'Math')).toBe(false);
-    expect(eligible(grade, mix, 'current', '2026-10-18')).toEqual([]);
+    // Oct 18 falls between the Sept 13 bank and the October batch. Only Kindergarten's whole-year
+    // sight-word list (weeks of Sept 21 and 28) is Current then.
+    expect(eligible(grade, mix, 'current', '2026-10-18').filter(q => q.packId !== 'classthread-paced-2026-27-k-sight-words')).toEqual([]);
+    if (grade !== 'K') expect(eligible(grade, mix, 'current', '2026-10-18')).toEqual([]);
   }
 });
 
@@ -158,9 +161,13 @@ test('Four Corners offers Current, Review, and Current + Review with the teachin
   await page.getByLabel('Teaching date').fill('2026-10-18');
   await expect(page.getByTestId('planning-ahead')).toHaveCount(0);
   await page.getByRole('button', { name: 'Current', exact: true }).click();
+  // Kindergarten's sight words are Current on Oct 18, so the no-Current notice is checked on 3rd Grade.
+  await expect(page.getByText(`${eligible('K', 'Mixed Academic', 'current', '2026-10-18').length} eligible unique questions`)).toBeVisible();
+  await page.getByRole('button', { name: '3rd Grade', exact: true }).click();
   await expect(page.getByText('0 eligible unique questions')).toBeVisible();
-  await expect(page.getByText('No Current questions yet for Kindergarten on this date. Choose Review or Current + Review.')).toBeVisible();
+  await expect(page.getByText('No Current questions yet for 3rd Grade on this date. Choose Review or Current + Review.')).toBeVisible();
   await expect(page.getByRole('button', { name: /^Start Game/ })).toBeDisabled();
+  await page.getByRole('button', { name: 'Kindergarten', exact: true }).click();
   await page.getByLabel('Teaching date').fill('2026-09-20');
   const current = eligible('K', 'Mixed Academic', 'current', '2026-09-20').length;
   await expect(page.getByText(`${current} eligible unique questions`)).toBeVisible();

@@ -3,6 +3,12 @@ import fs from 'node:fs';
 import pack from '../src/data/four-corners.json' with { type: 'json' };
 import parents from '../src/data/tomorrow-pack.json' with { type: 'json' };
 import curriculum from '../src/data/curriculum.json' with { type: 'json' };
+import pacedCorners from '../src/data/paced-four-corners.json' with { type: 'json' };
+import { questionTaughtDate } from '../src/services/questionEngine';
+// Games below run on Sept 17. Paced batches taught by then join the base pack: the whole-year Kindergarten
+// sight-word list starts Aug 24, so its first two weeks are live (spoken rounds, shown as "Round 3/15").
+const live = [...pack, ...(pacedCorners as unknown as typeof pack).filter(q => questionTaughtDate(q as never)! <= '2026-09-17')];
+const roundText = (n: number, of: number) => new RegExp(`^Round ${n}( of |/)${of}$`);
 const key = 'curricuplay.four-corners.v1';
 const labels: Record<string, string> = { K: 'Kindergarten', '1': '1st Grade', '2': '2nd Grade', '3': '3rd Grade', '4': '4th Grade', '5': '5th Grade' };
 async function setup(page: Page, grade = 'K') {
@@ -52,10 +58,10 @@ for (const grade of Object.keys(labels)) test(`Four Corners ${grade}: complete r
   const seen = new Set<string>(); const subjects: string[] = [];
   for (let round = 0; round < 15; round++) {
     const s = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), key);
-    const q = pack.find(q => q.id === s.questionIds[round])!;
+    const q = live.find(q => q.id === s.questionIds[round])!;
     expect(q.grade).toBe(grade); expect(seen.has(q.id)).toBe(false); seen.add(q.id); subjects.push(q.subject);
     expect(s.usedQuestionIds).toEqual(s.questionIds.slice(0, round + 1));
-    await expect(page.getByText(`Round ${round + 1} of 15`, { exact: true })).toBeVisible();
+    await expect(page.getByText('spokenTarget' in q ? `Round ${round + 1}/15` : `Round ${round + 1} of 15`, { exact: true })).toBeVisible();
     await expect(page.locator('.fc-choice')).toHaveCount(4); await expect(page.locator('.fc-correct')).toHaveCount(0);
     await expect(page.getByRole('button', { name: 'Next Question', exact: true })).toHaveCount(0);
     await expect(page.locator('.fc-game h1')).toHaveText(q.question);
@@ -77,12 +83,12 @@ for (const grade of Object.keys(labels)) test(`Four Corners ${grade}: complete r
   await page.reload(); await expect(page.getByRole('heading', { name: 'All 15 rounds complete!' })).toBeVisible();
   await page.getByRole('button', { name: 'Reset Game', exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Reset Game', exact: true }).click();
-  await expect(page.getByText('Round 1 of 15', { exact: true })).toBeVisible(); await expect(page.locator('.fc-correct')).toHaveCount(0);
+  await expect(page.getByText(roundText(1, 15))).toBeVisible(); await expect(page.locator('.fc-correct')).toHaveCount(0);
   await page.getByRole('button', { name: 'Home', exact: true }).click();
-  await page.getByRole('button', { name: /FOUR CORNERS/ }).click(); await expect(page.getByText('Round 1 of 15', { exact: true })).toBeVisible();
+  await page.getByRole('button', { name: /FOUR CORNERS/ }).click(); await expect(page.getByText(roundText(1, 15))).toBeVisible();
   await page.getByRole('button', { name: 'Change Grade', exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Cancel', exact: true }).click();
-  await expect(page.getByText('Round 1 of 15', { exact: true })).toBeVisible();
+  await expect(page.getByText(roundText(1, 15))).toBeVisible();
   await page.getByRole('button', { name: 'Change Grade', exact: true }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Change Grade', exact: true }).click();
   await page.getByRole('button', { name: labels[grade === 'K' ? '1' : 'K'], exact: true }).click();
@@ -93,7 +99,7 @@ for (const grade of Object.keys(labels)) test(`Four Corners ${grade}: all availa
   test.setTimeout(60000); await setup(page, grade);
   for (const mix of ['Science', 'Social Studies', 'Reading / ELA']) {
     const subject = mix === 'Reading / ELA' ? 'Literacy' : mix;
-    const count = pack.filter(q => q.grade === grade && q.subject === subject).length;
+    const count = live.filter(q => q.grade === grade && q.subject === subject).length;
     await page.getByRole('button', { name: mix, exact: true }).click();
     await expect(page.getByText(`${count} eligible unique questions`)).toBeVisible();
     for (const rounds of [10, 15, 20, 30]) {
@@ -104,7 +110,7 @@ for (const grade of Object.keys(labels)) test(`Four Corners ${grade}: all availa
       const seen = new Set<string>();
       for (let i = 0; i < rounds; i++) {
         const s = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), key);
-        const q = pack.find(q => q.id === s.questionIds[i])!; expect(q.subject).toBe(subject); expect(seen.has(q.id)).toBe(false); seen.add(q.id);
+        const q = live.find(q => q.id === s.questionIds[i])!; expect(q.subject).toBe(subject); expect(seen.has(q.id)).toBe(false); seen.add(q.id);
         await page.getByRole('button', { name: 'Reveal Answer' }).click(); await expect(page.locator('.fc-correct > span')).toHaveText(q.answer); await fits(page);
         await page.getByRole('button', { name: i === rounds - 1 ? 'Finish Game' : 'Next Question' }).click();
       }
@@ -119,21 +125,21 @@ for (const grade of Object.keys(labels)) for (const mode of [30, 'all'] as const
   await page.reload(); await expect(page.getByRole('button', { name: mode === 'all' ? 'Play Until I Stop' : '30 rounds', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: /^Start Game/ }).click();
   const initial = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), key);
-  const count = mode === 'all' ? pack.filter(q => q.grade === grade).length : mode;
+  const count = mode === 'all' ? live.filter(q => q.grade === grade).length : mode;
   expect(initial.questionIds).toHaveLength(count); expect(new Set(initial.questionIds).size).toBe(count);
-  const subjects = initial.questionIds.map((id: string) => pack.find(q => q.id === id)!.subject);
+  const subjects = initial.questionIds.map((id: string) => live.find(q => q.id === id)!.subject);
   if (mode === 30) for (const subject of ['Science', 'Social Studies', 'Literacy']) expect(subjects.filter((s: string) => s === subject)).toHaveLength(10);
-  if (mode === 'all') expect([...initial.questionIds].sort()).toEqual(pack.filter(q => q.grade === grade).map(q => q.id).sort());
+  if (mode === 'all') expect([...initial.questionIds].sort()).toEqual(live.filter(q => q.grade === grade).map(q => q.id).sort());
   // No adjacent subject repeats are necessary for these real pools.
   expect(subjects.every((s: string, i: number) => i === 0 || s !== subjects[i - 1])).toBe(true);
   const seen = new Set<string>(); let visuals = 0; let textOnly = 0;
   for (let i = 0; i < count; i++) {
     const s = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), key);
-    const q = pack.find(q => q.id === s.questionIds[i])!;
+    const q = live.find(q => q.id === s.questionIds[i])!;
     expect(q.grade).toBe(grade); expect(q.weekIntroduced <= '2026-09-13').toBe(true);
     expect(seen.has(q.id)).toBe(false); seen.add(q.id); expect(s.questionIds).toEqual(initial.questionIds);
     expect(s.usedQuestionIds).toEqual(initial.questionIds.slice(0, i + 1));
-    await expect(page.getByText(mode === 'all' ? `Round ${i + 1}` : `Round ${i + 1} of 30`, { exact: true })).toBeVisible();
+    await expect(page.getByText(mode === 'all' ? `Round ${i + 1}` : roundText(i + 1, 30), mode === 'all' ? { exact: true } : {})).toBeVisible();
     await expect(page.locator('.fc-game h1')).toHaveText(q.question); await expect(page.locator('.fc-correct')).toHaveCount(0); await fits(page);
     if ('visual' in q && q.visual) {
       visuals++; await expect(page.getByRole('img', { name: q.visual.alt })).toBeVisible();
@@ -185,13 +191,13 @@ test('Four Corners invalid saved sessions fail safely; teacher veto and storage 
     await page.evaluate(({ key, state }) => localStorage.setItem(key, JSON.stringify(state)), { key, state: { ...good, ...patch } });
     await page.reload(); await expect(page.getByRole('button', { name: /^Start Game/ })).toBeVisible();
   }
-  const parent = pack.find(q => q.id === good.questionIds[0])!.originId;
+  const parent = pack.find(q => good.questionIds.includes(q.id))!.originId; // a base-pack question in the saved game (paced ones have no parent to veto)
   await page.evaluate(({ key, good, parent }) => {
     localStorage.setItem(key, JSON.stringify(good));
     localStorage.setItem('curricuplay.reviews.v1', JSON.stringify({ version: 1, decisions: { [parent]: { status: 'rejected', original: '{}', question: '', answer: '', reviewedAt: '' } } }));
   }, { key, good, parent });
   await page.reload(); await expect(page.getByRole('button', { name: /^Start Game/ })).toBeVisible();
-  const expected = pack.filter(q => q.grade === 'K' && q.originId !== parent && (!('adaptation' in q) || q.adaptation?.sourceQuestionId !== parent)).length;
+  const expected = live.filter(q => q.grade === 'K' && q.originId !== parent && (!('adaptation' in q) || q.adaptation?.sourceQuestionId !== parent)).length;
   await expect(page.getByText(`${expected} eligible unique questions`)).toBeVisible();
   await page.evaluate(() => { localStorage.clear(); Storage.prototype.setItem = () => { throw new Error('quota'); }; });
   await page.getByRole('button', { name: '1st Grade', exact: true }).click(); await expect(page.getByRole('alert')).toContainText('Progress cannot be saved');

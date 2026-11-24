@@ -1,0 +1,4491 @@
+[
+ {
+  "id": "K-sw-1",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-24",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-08-28",
+  "review": "2026-09-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "the",
+   "choices": [
+    "the",
+    "and",
+    "to",
+    "a"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “the.”",
+   "standard": null,
+   "weekOf": "2026-08-24",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/24",
+    "quote": "[2026-08-24] the, of, and, a, to"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-2",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-24",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-08-28",
+  "review": "2026-09-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "of",
+   "choices": [
+    "to",
+    "of",
+    "a",
+    "and"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “of.”",
+   "standard": null,
+   "weekOf": "2026-08-24",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/24",
+    "quote": "[2026-08-24] the, of, and, a, to"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-3",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-24",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-08-28",
+  "review": "2026-09-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "and",
+   "choices": [
+    "of",
+    "the",
+    "and",
+    "to"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “and.”",
+   "standard": null,
+   "weekOf": "2026-08-24",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/24",
+    "quote": "[2026-08-24] the, of, and, a, to"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-4",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-24",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-08-28",
+  "review": "2026-09-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "a",
+   "choices": [
+    "the",
+    "and",
+    "to",
+    "a"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “a.”",
+   "standard": null,
+   "weekOf": "2026-08-24",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/24",
+    "quote": "[2026-08-24] the, of, and, a, to"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-5",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-24",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-08-28",
+  "review": "2026-09-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "to",
+   "choices": [
+    "to",
+    "a",
+    "of",
+    "and"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “to.”",
+   "standard": null,
+   "weekOf": "2026-08-24",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/24",
+    "quote": "[2026-08-24] the, of, and, a, to"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-6",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-31",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-04",
+  "review": "2026-10-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "in",
+   "choices": [
+    "and",
+    "in",
+    "is",
+    "it"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “in.”",
+   "standard": null,
+   "weekOf": "2026-08-31",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/31",
+    "quote": "[2026-08-31] in, is, you, that, it"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-7",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-31",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-04",
+  "review": "2026-10-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "is",
+   "choices": [
+    "to",
+    "you",
+    "is",
+    "in"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “is.”",
+   "standard": null,
+   "weekOf": "2026-08-31",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/31",
+    "quote": "[2026-08-31] in, is, you, that, it"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-8",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-31",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-04",
+  "review": "2026-10-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "you",
+   "choices": [
+    "of",
+    "the",
+    "in",
+    "you"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “you.”",
+   "standard": null,
+   "weekOf": "2026-08-31",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/31",
+    "quote": "[2026-08-31] in, is, you, that, it"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-9",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-31",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-04",
+  "review": "2026-10-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "that",
+   "choices": [
+    "that",
+    "the",
+    "a",
+    "to"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “that.”",
+   "standard": null,
+   "weekOf": "2026-08-31",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/31",
+    "quote": "[2026-08-31] in, is, you, that, it"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-10",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-08-31",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-04",
+  "review": "2026-10-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "it",
+   "choices": [
+    "is",
+    "it",
+    "in",
+    "and"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “it.”",
+   "standard": null,
+   "weekOf": "2026-08-31",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 8/31",
+    "quote": "[2026-08-31] in, is, you, that, it"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-11",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-14",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-18",
+  "review": "2026-10-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "he",
+   "choices": [
+    "are",
+    "you",
+    "he",
+    "on"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “he.”",
+   "standard": null,
+   "weekOf": "2026-09-14",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/14",
+    "quote": "[2026-09-14] he, for, was, on, are"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-12",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-14",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-18",
+  "review": "2026-10-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "for",
+   "choices": [
+    "he",
+    "to",
+    "on",
+    "for"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “for.”",
+   "standard": null,
+   "weekOf": "2026-09-14",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/14",
+    "quote": "[2026-09-14] he, for, was, on, are"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-13",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-14",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-18",
+  "review": "2026-10-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "was",
+   "choices": [
+    "was",
+    "that",
+    "and",
+    "is"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “was.”",
+   "standard": null,
+   "weekOf": "2026-09-14",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/14",
+    "quote": "[2026-09-14] he, for, was, on, are"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-14",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-14",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-18",
+  "review": "2026-10-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "on",
+   "choices": [
+    "in",
+    "on",
+    "to",
+    "and"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “on.”",
+   "standard": null,
+   "weekOf": "2026-09-14",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/14",
+    "quote": "[2026-09-14] he, for, was, on, are"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-15",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-14",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-18",
+  "review": "2026-10-18",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "are",
+   "choices": [
+    "was",
+    "that",
+    "are",
+    "he"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “are.”",
+   "standard": null,
+   "weekOf": "2026-09-14",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/14",
+    "quote": "[2026-09-14] he, for, was, on, are"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-16",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "as",
+   "choices": [
+    "are",
+    "a",
+    "at",
+    "as"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “as.”",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/21",
+    "quote": "[2026-09-21] as, with, his, they, at"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-17",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "with",
+   "choices": [
+    "with",
+    "was",
+    "and",
+    "they"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “with.”",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/21",
+    "quote": "[2026-09-21] as, with, his, they, at"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-18",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "his",
+   "choices": [
+    "he",
+    "his",
+    "is",
+    "in"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “his.”",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/21",
+    "quote": "[2026-09-21] as, with, his, they, at"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-19",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "they",
+   "choices": [
+    "that",
+    "his",
+    "they",
+    "the"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “they.”",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/21",
+    "quote": "[2026-09-21] as, with, his, they, at"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-20",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-21",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-09-25",
+  "review": "2026-10-25",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "at",
+   "choices": [
+    "are",
+    "and",
+    "was",
+    "at"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “at.”",
+   "standard": null,
+   "weekOf": "2026-09-21",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/21",
+    "quote": "[2026-09-21] as, with, his, they, at"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-21",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-28",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-02",
+  "review": "2026-11-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "be",
+   "choices": [
+    "be",
+    "he",
+    "on",
+    "his"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “be.”",
+   "standard": null,
+   "weekOf": "2026-09-28",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/28",
+    "quote": "[2026-09-28] be, this, from, I, have"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-22",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-28",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-02",
+  "review": "2026-11-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "this",
+   "choices": [
+    "they",
+    "this",
+    "his",
+    "with"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “this.”",
+   "standard": null,
+   "weekOf": "2026-09-28",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/28",
+    "quote": "[2026-09-28] be, this, from, I, have"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-23",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-28",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-02",
+  "review": "2026-11-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "from",
+   "choices": [
+    "have",
+    "they",
+    "from",
+    "for"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “from.”",
+   "standard": null,
+   "weekOf": "2026-09-28",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/28",
+    "quote": "[2026-09-28] be, this, from, I, have"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-24",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-28",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-02",
+  "review": "2026-11-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "I",
+   "choices": [
+    "it",
+    "of",
+    "on",
+    "I"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “I.”",
+   "standard": null,
+   "weekOf": "2026-09-28",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/28",
+    "quote": "[2026-09-28] be, this, from, I, have"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-25",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-09-28",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-02",
+  "review": "2026-11-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "have",
+   "choices": [
+    "have",
+    "are",
+    "that",
+    "the"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “have.”",
+   "standard": null,
+   "weekOf": "2026-09-28",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 9/28",
+    "quote": "[2026-09-28] be, this, from, I, have"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-26",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-19",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-23",
+  "review": "2026-11-23",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "or",
+   "choices": [
+    "you",
+    "or",
+    "on",
+    "for"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “or.”",
+   "standard": null,
+   "weekOf": "2026-10-19",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/19",
+    "quote": "[2026-10-19] or, by, one, had, not"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-27",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-19",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-23",
+  "review": "2026-11-23",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "by",
+   "choices": [
+    "be",
+    "you",
+    "by",
+    "is"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “by.”",
+   "standard": null,
+   "weekOf": "2026-10-19",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/19",
+    "quote": "[2026-10-19] or, by, one, had, not"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-28",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-19",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-23",
+  "review": "2026-11-23",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "one",
+   "choices": [
+    "they",
+    "or",
+    "of",
+    "one"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “one.”",
+   "standard": null,
+   "weekOf": "2026-10-19",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/19",
+    "quote": "[2026-10-19] or, by, one, had, not"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-29",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-19",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-23",
+  "review": "2026-11-23",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "had",
+   "choices": [
+    "had",
+    "with",
+    "he",
+    "that"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “had.”",
+   "standard": null,
+   "weekOf": "2026-10-19",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/19",
+    "quote": "[2026-10-19] or, by, one, had, not"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-30",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-19",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-23",
+  "review": "2026-11-23",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "not",
+   "choices": [
+    "one",
+    "not",
+    "to",
+    "from"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “not.”",
+   "standard": null,
+   "weekOf": "2026-10-19",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/19",
+    "quote": "[2026-10-19] or, by, one, had, not"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-31",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-26",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-30",
+  "review": "2026-11-30",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "but",
+   "choices": [
+    "with",
+    "be",
+    "but",
+    "at"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “but.”",
+   "standard": null,
+   "weekOf": "2026-10-26",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/26",
+    "quote": "[2026-10-26] but, what, all, were, when"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-32",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-26",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-30",
+  "review": "2026-11-30",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "what",
+   "choices": [
+    "were",
+    "was",
+    "that",
+    "what"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “what.”",
+   "standard": null,
+   "weekOf": "2026-10-26",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/26",
+    "quote": "[2026-10-26] but, what, all, were, when"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-33",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-26",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-30",
+  "review": "2026-11-30",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "all",
+   "choices": [
+    "all",
+    "a",
+    "at",
+    "and"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “all.”",
+   "standard": null,
+   "weekOf": "2026-10-26",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/26",
+    "quote": "[2026-10-26] but, what, all, were, when"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-34",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-26",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-30",
+  "review": "2026-11-30",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "were",
+   "choices": [
+    "what",
+    "were",
+    "was",
+    "are"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “were.”",
+   "standard": null,
+   "weekOf": "2026-10-26",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/26",
+    "quote": "[2026-10-26] but, what, all, were, when"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-35",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-10-26",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-10-30",
+  "review": "2026-11-30",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "when",
+   "choices": [
+    "with",
+    "was",
+    "when",
+    "what"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “when.”",
+   "standard": null,
+   "weekOf": "2026-10-26",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 10/26",
+    "quote": "[2026-10-26] but, what, all, were, when"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-36",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "we",
+   "choices": [
+    "with",
+    "when",
+    "what",
+    "we"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “we.”",
+   "standard": null,
+   "weekOf": "2026-11-02",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/2",
+    "quote": "[2026-11-02] we, there, can, an, your"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-37",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "there",
+   "choices": [
+    "there",
+    "this",
+    "that",
+    "to"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “there.”",
+   "standard": null,
+   "weekOf": "2026-11-02",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/2",
+    "quote": "[2026-11-02] we, there, can, an, your"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-38",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "can",
+   "choices": [
+    "are",
+    "can",
+    "and",
+    "an"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “can.”",
+   "standard": null,
+   "weekOf": "2026-11-02",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/2",
+    "quote": "[2026-11-02] we, there, can, an, your"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-39",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "an",
+   "choices": [
+    "a",
+    "are",
+    "an",
+    "as"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “an.”",
+   "standard": null,
+   "weekOf": "2026-11-02",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/2",
+    "quote": "[2026-11-02] we, there, can, an, your"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-40",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-02",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-06",
+  "review": "2026-12-06",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "your",
+   "choices": [
+    "they",
+    "you",
+    "are",
+    "your"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “your.”",
+   "standard": null,
+   "weekOf": "2026-11-02",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/2",
+    "quote": "[2026-11-02] we, there, can, an, your"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-41",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "which",
+   "choices": [
+    "which",
+    "with",
+    "when",
+    "we"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “which.”",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/16",
+    "quote": "[2026-11-16] which, their, said, if, do, will"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Sheet shows '(4)' beside 'will' in this row; read as a note, not a word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-42",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "their",
+   "choices": [
+    "they",
+    "their",
+    "this",
+    "with"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “their.”",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/16",
+    "quote": "[2026-11-16] which, their, said, if, do, will"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Sheet shows '(4)' beside 'will' in this row; read as a note, not a word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-43",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "said",
+   "choices": [
+    "this",
+    "was",
+    "said",
+    "all"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “said.”",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/16",
+    "quote": "[2026-11-16] which, their, said, if, do, will"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Sheet shows '(4)' beside 'will' in this row; read as a note, not a word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-44",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "if",
+   "choices": [
+    "I",
+    "in",
+    "is",
+    "if"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “if.”",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/16",
+    "quote": "[2026-11-16] which, their, said, if, do, will"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Sheet shows '(4)' beside 'will' in this row; read as a note, not a word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-45",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "do",
+   "choices": [
+    "do",
+    "had",
+    "of",
+    "for"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “do.”",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/16",
+    "quote": "[2026-11-16] which, their, said, if, do, will"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Sheet shows '(4)' beside 'will' in this row; read as a note, not a word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-46",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-16",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-11-20",
+  "review": "2026-12-20",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "will",
+   "choices": [
+    "what",
+    "will",
+    "was",
+    "which"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “will.”",
+   "standard": null,
+   "weekOf": "2026-11-16",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/16",
+    "quote": "[2026-11-16] which, their, said, if, do, will"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Sheet shows '(4)' beside 'will' in this row; read as a note, not a word."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-47",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "each",
+   "choices": [
+    "had",
+    "the",
+    "each",
+    "have"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “each.”",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/30",
+    "quote": "[2026-11-30] each, about, how, up, out, them, then"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-48",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "about",
+   "choices": [
+    "an",
+    "as",
+    "at",
+    "about"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “about.”",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/30",
+    "quote": "[2026-11-30] each, about, how, up, out, them, then"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-49",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "how",
+   "choices": [
+    "how",
+    "had",
+    "his",
+    "he"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “how.”",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/30",
+    "quote": "[2026-11-30] each, about, how, up, out, them, then"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-50",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "up",
+   "choices": [
+    "he",
+    "up",
+    "of",
+    "out"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “up.”",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/30",
+    "quote": "[2026-11-30] each, about, how, up, out, them, then"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-51",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "out",
+   "choices": [
+    "you",
+    "one",
+    "out",
+    "or"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “out.”",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/30",
+    "quote": "[2026-11-30] each, about, how, up, out, them, then"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-52",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "them",
+   "choices": [
+    "the",
+    "there",
+    "that",
+    "them"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “them.”",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/30",
+    "quote": "[2026-11-30] each, about, how, up, out, them, then"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-53",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-11-30",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-04",
+  "review": "2027-01-04",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "then",
+   "choices": [
+    "then",
+    "there",
+    "the",
+    "that"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “then.”",
+   "standard": null,
+   "weekOf": "2026-11-30",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 11/30",
+    "quote": "[2026-11-30] each, about, how, up, out, them, then"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-54",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-07",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-11",
+  "review": "2027-01-11",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "she",
+   "choices": [
+    "said",
+    "she",
+    "the",
+    "some"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “she.”",
+   "standard": null,
+   "weekOf": "2026-12-07",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 12/7",
+    "quote": "[2026-12-07] she, many, some, so, these, would, other"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-55",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-07",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-11",
+  "review": "2027-01-11",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "many",
+   "choices": [
+    "then",
+    "what",
+    "many",
+    "and"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “many.”",
+   "standard": null,
+   "weekOf": "2026-12-07",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 12/7",
+    "quote": "[2026-12-07] she, many, some, so, these, would, other"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-56",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-07",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-11",
+  "review": "2027-01-11",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "some",
+   "choices": [
+    "other",
+    "one",
+    "so",
+    "some"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “some.”",
+   "standard": null,
+   "weekOf": "2026-12-07",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 12/7",
+    "quote": "[2026-12-07] she, many, some, so, these, would, other"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-57",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-07",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-11",
+  "review": "2027-01-11",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "so",
+   "choices": [
+    "so",
+    "she",
+    "some",
+    "said"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “so.”",
+   "standard": null,
+   "weekOf": "2026-12-07",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 12/7",
+    "quote": "[2026-12-07] she, many, some, so, these, would, other"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-58",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-07",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-11",
+  "review": "2027-01-11",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "these",
+   "choices": [
+    "their",
+    "these",
+    "then",
+    "they"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “these.”",
+   "standard": null,
+   "weekOf": "2026-12-07",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 12/7",
+    "quote": "[2026-12-07] she, many, some, so, these, would, other"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-59",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-07",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-11",
+  "review": "2027-01-11",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "would",
+   "choices": [
+    "which",
+    "with",
+    "would",
+    "when"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “would.”",
+   "standard": null,
+   "weekOf": "2026-12-07",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 12/7",
+    "quote": "[2026-12-07] she, many, some, so, these, would, other"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-60",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2026-12-07",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2026-12-11",
+  "review": "2027-01-11",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "other",
+   "choices": [
+    "out",
+    "or",
+    "one",
+    "other"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “other.”",
+   "standard": null,
+   "weekOf": "2026-12-07",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 12/7",
+    "quote": "[2026-12-07] she, many, some, so, these, would, other"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week.",
+   "Row has 7 words; matches the '(7)' note on the sheet."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-61",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "into",
+   "choices": [
+    "into",
+    "if",
+    "not",
+    "it"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “into.”",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/4",
+    "quote": "[2027-01-04] into, has, more, her, two"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-62",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "has",
+   "choices": [
+    "how",
+    "has",
+    "have",
+    "her"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “has.”",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/4",
+    "quote": "[2027-01-04] into, has, more, her, two"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-63",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "more",
+   "choices": [
+    "from",
+    "many",
+    "more",
+    "their"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “more.”",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/4",
+    "quote": "[2027-01-04] into, has, more, her, two"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-64",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "her",
+   "choices": [
+    "had",
+    "have",
+    "his",
+    "her"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “her.”",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/4",
+    "quote": "[2027-01-04] into, has, more, her, two"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-65",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-04",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-08",
+  "review": "2027-02-08",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "two",
+   "choices": [
+    "two",
+    "them",
+    "the",
+    "then"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “two.”",
+   "standard": null,
+   "weekOf": "2027-01-04",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/4",
+    "quote": "[2027-01-04] into, has, more, her, two"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-66",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "like",
+   "choices": [
+    "their",
+    "like",
+    "time",
+    "will"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “like.”",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/11",
+    "quote": "[2027-01-11] like, him, see, time, could"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-67",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "him",
+   "choices": [
+    "has",
+    "her",
+    "him",
+    "have"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “him.”",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/11",
+    "quote": "[2027-01-11] like, him, see, time, could"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-68",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "see",
+   "choices": [
+    "so",
+    "some",
+    "said",
+    "see"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “see.”",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/11",
+    "quote": "[2027-01-11] like, him, see, time, could"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-69",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "time",
+   "choices": [
+    "time",
+    "these",
+    "the",
+    "their"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “time.”",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/11",
+    "quote": "[2027-01-11] like, him, see, time, could"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-70",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-11",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-15",
+  "review": "2027-02-15",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "could",
+   "choices": [
+    "your",
+    "could",
+    "can",
+    "about"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “could.”",
+   "standard": null,
+   "weekOf": "2027-01-11",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/11",
+    "quote": "[2027-01-11] like, him, see, time, could"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-71",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-18",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-22",
+  "review": "2027-02-22",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "no",
+   "choices": [
+    "one",
+    "on",
+    "no",
+    "do"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “no.”",
+   "standard": null,
+   "weekOf": "2027-01-18",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/18",
+    "quote": "[2027-01-18] no, make, than, first, been"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-72",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-18",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-22",
+  "review": "2027-02-22",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "make",
+   "choices": [
+    "have",
+    "are",
+    "like",
+    "make"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “make.”",
+   "standard": null,
+   "weekOf": "2027-01-18",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/18",
+    "quote": "[2027-01-18] no, make, than, first, been"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-73",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-18",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-22",
+  "review": "2027-02-22",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "than",
+   "choices": [
+    "than",
+    "that",
+    "then",
+    "these"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “than.”",
+   "standard": null,
+   "weekOf": "2027-01-18",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/18",
+    "quote": "[2027-01-18] no, make, than, first, been"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-74",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-18",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-22",
+  "review": "2027-02-22",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "first",
+   "choices": [
+    "these",
+    "first",
+    "their",
+    "said"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “first.”",
+   "standard": null,
+   "weekOf": "2027-01-18",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/18",
+    "quote": "[2027-01-18] no, make, than, first, been"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-75",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-18",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-22",
+  "review": "2027-02-22",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "been",
+   "choices": [
+    "by",
+    "be",
+    "been",
+    "one"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “been.”",
+   "standard": null,
+   "weekOf": "2027-01-18",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/18",
+    "quote": "[2027-01-18] no, make, than, first, been"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-76",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-25",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-29",
+  "review": "2027-02-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "its",
+   "choices": [
+    "if",
+    "into",
+    "it",
+    "its"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “its.”",
+   "standard": null,
+   "weekOf": "2027-01-25",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/25",
+    "quote": "[2027-01-25] its, who, now, people, my"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-77",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-25",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-29",
+  "review": "2027-02-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "who",
+   "choices": [
+    "who",
+    "will",
+    "with",
+    "what"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “who.”",
+   "standard": null,
+   "weekOf": "2027-01-25",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/25",
+    "quote": "[2027-01-25] its, who, now, people, my"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-78",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-25",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-29",
+  "review": "2027-02-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "now",
+   "choices": [
+    "into",
+    "now",
+    "not",
+    "when"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “now.”",
+   "standard": null,
+   "weekOf": "2027-01-25",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/25",
+    "quote": "[2027-01-25] its, who, now, people, my"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-79",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-25",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-29",
+  "review": "2027-02-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "people",
+   "choices": [
+    "there",
+    "could",
+    "people",
+    "their"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “people.”",
+   "standard": null,
+   "weekOf": "2027-01-25",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/25",
+    "quote": "[2027-01-25] its, who, now, people, my"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-80",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-01-25",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-01-29",
+  "review": "2027-02-28",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "my",
+   "choices": [
+    "make",
+    "by",
+    "many",
+    "my"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “my.”",
+   "standard": null,
+   "weekOf": "2027-01-25",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 1/25",
+    "quote": "[2027-01-25] its, who, now, people, my"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-81",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-08",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-12",
+  "review": "2027-03-12",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "made",
+   "choices": [
+    "made",
+    "many",
+    "are",
+    "my"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “made.”",
+   "standard": null,
+   "weekOf": "2027-02-08",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/8",
+    "quote": "[2027-02-08] made, over, did, down, only"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-82",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-08",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-12",
+  "review": "2027-03-12",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "over",
+   "choices": [
+    "one",
+    "over",
+    "only",
+    "or"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “over.”",
+   "standard": null,
+   "weekOf": "2027-02-08",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/8",
+    "quote": "[2027-02-08] made, over, did, down, only"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-83",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-08",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-12",
+  "review": "2027-03-12",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "did",
+   "choices": [
+    "and",
+    "do",
+    "did",
+    "down"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “did.”",
+   "standard": null,
+   "weekOf": "2027-02-08",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/8",
+    "quote": "[2027-02-08] made, over, did, down, only"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-84",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-08",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-12",
+  "review": "2027-03-12",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "down",
+   "choices": [
+    "do",
+    "did",
+    "now",
+    "down"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “down.”",
+   "standard": null,
+   "weekOf": "2027-02-08",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/8",
+    "quote": "[2027-02-08] made, over, did, down, only"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-85",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-08",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-12",
+  "review": "2027-03-12",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "only",
+   "choices": [
+    "only",
+    "one",
+    "on",
+    "over"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “only.”",
+   "standard": null,
+   "weekOf": "2027-02-08",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/8",
+    "quote": "[2027-02-08] made, over, did, down, only"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-86",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-26",
+  "review": "2027-03-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "way",
+   "choices": [
+    "were",
+    "way",
+    "was",
+    "when"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “way.”",
+   "standard": null,
+   "weekOf": "2027-02-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/22",
+    "quote": "[2027-02-22] way, find, use, may, water"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-87",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-26",
+  "review": "2027-03-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "find",
+   "choices": [
+    "first",
+    "into",
+    "find",
+    "for"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “find.”",
+   "standard": null,
+   "weekOf": "2027-02-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/22",
+    "quote": "[2027-02-22] way, find, use, may, water"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-88",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-26",
+  "review": "2027-03-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "use",
+   "choices": [
+    "make",
+    "she",
+    "up",
+    "use"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “use.”",
+   "standard": null,
+   "weekOf": "2027-02-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/22",
+    "quote": "[2027-02-22] way, find, use, may, water"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-89",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-26",
+  "review": "2027-03-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "may",
+   "choices": [
+    "may",
+    "many",
+    "make",
+    "more"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “may.”",
+   "standard": null,
+   "weekOf": "2027-02-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/22",
+    "quote": "[2027-02-22] way, find, use, may, water"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-90",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-02-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-02-26",
+  "review": "2027-03-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "water",
+   "choices": [
+    "which",
+    "water",
+    "were",
+    "with"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “water.”",
+   "standard": null,
+   "weekOf": "2027-02-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 2/22",
+    "quote": "[2027-02-22] way, find, use, may, water"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-91",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "long",
+   "choices": [
+    "like",
+    "little",
+    "long",
+    "one"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “long.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/1",
+    "quote": "[2027-03-01] long, little, very, after, words"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-92",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "little",
+   "choices": [
+    "like",
+    "their",
+    "water",
+    "little"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “little.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/1",
+    "quote": "[2027-03-01] long, little, very, after, words"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-93",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "very",
+   "choices": [
+    "very",
+    "water",
+    "they",
+    "over"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “very.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/1",
+    "quote": "[2027-03-01] long, little, very, after, words"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-94",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "after",
+   "choices": [
+    "are",
+    "after",
+    "about",
+    "a"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “after.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/1",
+    "quote": "[2027-03-01] long, little, very, after, words"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-95",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-01",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-05",
+  "review": "2027-04-05",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "words",
+   "choices": [
+    "what",
+    "were",
+    "words",
+    "water"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “words.”",
+   "standard": null,
+   "weekOf": "2027-03-01",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/1",
+    "quote": "[2027-03-01] long, little, very, after, words"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-96",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-15",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-19",
+  "review": "2027-04-19",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "called",
+   "choices": [
+    "would",
+    "can",
+    "little",
+    "called"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “called.”",
+   "standard": null,
+   "weekOf": "2027-03-15",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/15",
+    "quote": "[2027-03-15] called, just, where, most, know"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-97",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-15",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-19",
+  "review": "2027-04-19",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "just",
+   "choices": [
+    "just",
+    "these",
+    "out",
+    "but"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “just.”",
+   "standard": null,
+   "weekOf": "2027-03-15",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/15",
+    "quote": "[2027-03-15] called, just, where, most, know"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-98",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-15",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-19",
+  "review": "2027-04-19",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "where",
+   "choices": [
+    "were",
+    "where",
+    "which",
+    "words"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “where.”",
+   "standard": null,
+   "weekOf": "2027-03-15",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/15",
+    "quote": "[2027-03-15] called, just, where, most, know"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-99",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-15",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-19",
+  "review": "2027-04-19",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "most",
+   "choices": [
+    "some",
+    "many",
+    "most",
+    "more"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “most.”",
+   "standard": null,
+   "weekOf": "2027-03-15",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/15",
+    "quote": "[2027-03-15] called, just, where, most, know"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-100",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-15",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-19",
+  "review": "2027-04-19",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "know",
+   "choices": [
+    "down",
+    "would",
+    "now",
+    "know"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “know.”",
+   "standard": null,
+   "weekOf": "2027-03-15",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/15",
+    "quote": "[2027-03-15] called, just, where, most, know"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-101",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-26",
+  "review": "2027-04-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "get",
+   "choices": [
+    "get",
+    "time",
+    "then",
+    "they"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “get.”",
+   "standard": null,
+   "weekOf": "2027-03-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/22",
+    "quote": "[2027-03-22] get, through, back, much, before"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-102",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-26",
+  "review": "2027-04-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "through",
+   "choices": [
+    "than",
+    "through",
+    "that",
+    "the"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “through.”",
+   "standard": null,
+   "weekOf": "2027-03-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/22",
+    "quote": "[2027-03-22] get, through, back, much, before"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-103",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-26",
+  "review": "2027-04-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "back",
+   "choices": [
+    "been",
+    "before",
+    "back",
+    "but"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “back.”",
+   "standard": null,
+   "weekOf": "2027-03-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/22",
+    "quote": "[2027-03-22] get, through, back, much, before"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-104",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-26",
+  "review": "2027-04-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "much",
+   "choices": [
+    "most",
+    "more",
+    "may",
+    "much"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “much.”",
+   "standard": null,
+   "weekOf": "2027-03-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/22",
+    "quote": "[2027-03-22] get, through, back, much, before"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-105",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-22",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-03-26",
+  "review": "2027-04-26",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "before",
+   "choices": [
+    "before",
+    "been",
+    "back",
+    "after"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “before.”",
+   "standard": null,
+   "weekOf": "2027-03-22",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/22",
+    "quote": "[2027-03-22] get, through, back, much, before"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-106",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-29",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-04-02",
+  "review": "2027-05-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "go",
+   "choices": [
+    "for",
+    "go",
+    "do",
+    "one"
+   ],
+   "correctIndex": 1,
+   "explanation": "The word was “go.”",
+   "standard": null,
+   "weekOf": "2027-03-29",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/29",
+    "quote": "[2027-03-29] go, good, new, write"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-107",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-29",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-04-02",
+  "review": "2027-05-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "good",
+   "choices": [
+    "would",
+    "get",
+    "good",
+    "could"
+   ],
+   "correctIndex": 2,
+   "explanation": "The word was “good.”",
+   "standard": null,
+   "weekOf": "2027-03-29",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/29",
+    "quote": "[2027-03-29] go, good, new, write"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-108",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-29",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-04-02",
+  "review": "2027-05-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "new",
+   "choices": [
+    "now",
+    "then",
+    "no",
+    "new"
+   ],
+   "correctIndex": 3,
+   "explanation": "The word was “new.”",
+   "standard": null,
+   "weekOf": "2027-03-29",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/29",
+    "quote": "[2027-03-29] go, good, new, write"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ },
+ {
+  "id": "K-sw-109",
+  "grade": "K",
+  "game": "fourCorners",
+  "week": "2027-03-29",
+  "subject": "Literacy",
+  "topic": "sight-words",
+  "showsUp": "2027-04-02",
+  "review": "2027-05-02",
+  "dayNamed": false,
+  "item": {
+   "subject": "Literacy",
+   "difficulty": 1,
+   "topic": "sight-words",
+   "question": "Listen! Run to the word your teacher says.",
+   "spokenTarget": "write",
+   "choices": [
+    "write",
+    "where",
+    "what",
+    "were"
+   ],
+   "correctIndex": 0,
+   "explanation": "The word was “write.”",
+   "standard": null,
+   "weekOf": "2027-03-29",
+   "taughtOn": null,
+   "teacherRead": true,
+   "evidence": {
+    "sourceTitle": "Sweetwater Kindergarten 2026–2027 Sight Words list (paper handout, photographed Nov 20, 2026)",
+    "sourceUrl": "classthread:source/k-sight-words-2026-27-photo-2026-11-20",
+    "locator": "Row dated 3/29",
+    "quote": "[2027-03-29] go, good, new, write"
+   }
+  },
+  "checks": [
+   "Choices use only sight words taught on or before this week."
+  ],
+  "plan": "unchecked",
+  "planEvidence": null
+ }
+]

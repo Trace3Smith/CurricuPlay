@@ -1,10 +1,30 @@
 # CurricuPlay (ClassThread) — handoff to Claude Code
 
-Last updated November 16, 2026, when the Nov 16 paced-content review was released. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
+Last updated November 24, 2026, for the spoken sight-word Preview (not yet released); before that, November 16, when the Nov 16 paced-content review was released. Work only in `/home/trace3smith/curricuplay/CurricuPlay`. Origin: `https://github.com/Trace3Smith/CurricuPlay.git`.
 
 **Release flow (applies to every change):** work on a feature branch, push it for a GitHub/Vercel Preview, let Trace check the Preview, then fast-forward `main`. **A merge to `main` is a production release.** Never merge, force-push, or promote to production without Trace's explicit approval for that specific change. Approval for one release does not carry over to the next. Do not change other games' behavior, existing storage keys, security settings, or anything in FantasyEdge or Sideline Creator unless asked.
 
 Games are public at `/games/*` with no login: Quick Check, Jeopardy, Four Corners, Spelling Bee, and State Lingo Bingo. The Quick Check, State Lingo Bingo and paced content batch sections come first below. The Four Corners sections after it are the September 17 handoff, kept as written; their branch and test-count details are historical.
+
+## Spoken sight words in Four Corners (branch `four-corners-spoken-target`, Preview Nov 24, 2026; not on main yet)
+
+From bundle `classthread-batch-2026-11-20-sightwords-decoding.json`. Trace checks the Preview on the Smart Board before it is merged.
+
+- **`spokenTarget`** (optional Four Corners item field): the teacher says the word and children run to it. Rules are in `src/games/four-corners/spoken.ts` and repeated in `scripts/validate-paced-batch.py`:
+  - the word is the answer and appears exactly once among the choices;
+  - it is never printed in the question or in the round's labels: banner "LISTEN: TEACHER SAYS THE WORD", "Say the word", "Show word" / "Hide word", and the hint "Listen. Run. Reveal.". Matching is whole-word and ignores case. The engine drops any item that breaks this.
+  - On spoken rounds, game text that would print a sight word changes: "Round 3/15" instead of "of", "Classroom" instead of "My Classroom" (the accessible name is unchanged), and Quick Check's "← Previous" instead of "← Back". `tests/spoken-target.spec.ts` renders spoken rounds and fails if any shipped sight word appears outside the four choices.
+  - "Say the word" uses speech synthesis at Spelling Bee's settings. "Show word" is a small teacher toggle; it resets on every new question and after a refresh.
+  - Reports and history name the word: the prompt is saved as `… (Word: “said”)`.
+  - **Quick Check** supports it the same way: the banner, and Say / Show word in place of Read it to me.
+  - Not built yet: Trace's pregame **Topic** filter. Items carry `topic` (`sight-words`, and later `syllable-types` and `syllable-division`).
+- **Batch `content/paced/2026-27-k-sight-words/`:** the whole-year Kindergarten sight-word list (Aug 24, 2026 – Mar 29, 2027), from the photographed handout `content/sources/k-sight-words-2026-27.json`. Each word unlocks on the Friday of its week, and distractors are only words taught by then.
+  - Trace approved all 109. **K-sw-1 "the", K-sw-5 "to" and K-sw-40 "your" are held**, because the word is in the prompt "Listen! Run to the word your teacher says." ("the" is also in the banner). They wait for new wording; 106 ship.
+  - The **decoding items** (`-dc-`, grades 1–5) and their PL snapshots are in the bundle but not applied; Trace is reworking them.
+- **Existing tests updated:** the list reaches back to August, so on the old test dates (Sept 17, Oct 18) Kindergarten now has 8 extra live questions, and on Oct 18 some Current ones.
+  - `four-corners.spec` and `four-corners-team.spec` now count the base pack plus paced items taught by Sept 17.
+  - `pacing-games.spec` checks the "no Current questions" notice on 3rd Grade, and checks that on Oct 18 Kindergarten's only Current items are the sight words.
+- **K Mixed Academic** games now include many sight-word rounds. That is the case for the Topic filter.
 
 ## Quick Check (released November 3, 2026)
 
